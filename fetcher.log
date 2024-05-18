@@ -675,3 +675,33 @@
 [2024-05-19 01:12:48] INFO root fetch - processPackages [garth]: Remove: archive file [/home/abi/fetcher/tmp/garth-0.4.9.tar.gz]
 [2024-05-19 01:12:48] INFO root fetch - main [MainThread]: End processing [garth]: success
 [2024-05-19 01:12:48] INFO root fetch - main [MainThread]: Store serial: [23271779]
+[2024-05-19 01:14:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271779]
+[2024-05-19 01:14:57] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 01:14:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: naan
+[2024-05-19 01:14:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spaceandtime
+[2024-05-19 01:14:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pypki3
+[2024-05-19 01:14:57] INFO root fetch - processPackages [spaceandtime]: New version: [1.1.8] Old Version: [1.1.7]
+[2024-05-19 01:14:57] INFO root fetch - processPackages [naan]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-19 01:14:57] INFO root fetch - processPackages [pypki3]: New version: [2024.139.1394] Old Version: [2023.353.243]
+[2024-05-19 01:14:57] INFO root fetch - processPackages [spaceandtime]: Downloading https://files.pythonhosted.org/packages/db/f7/cecf5b632d3e2c0d5a55b40ee882616609ab0e9760386bc3c3cb31675f71/spaceandtime-1.1.7.tar.gz
+[2024-05-19 01:14:57] INFO root fetch - processPackages [naan]: Downloading https://files.pythonhosted.org/packages/19/b8/236c6475a8c6770ca04f69c94f66c5e94aa379692d3f8be95dd912fb58ed/naan-0.0.3.tar.gz
+[2024-05-19 01:14:57] INFO root fetch - processPackages [pypki3]: Downloading https://files.pythonhosted.org/packages/bd/5b/1896b275441d62ddfbcc4e4fcc71edf9411845c9af69cda97f78b3a554e0/pypki3-2023.353.243.tar.gz
+[2024-05-19 01:14:58] INFO root fetch - processPackages [naan]: Downloading https://files.pythonhosted.org/packages/31/53/d2182f75c917b40fe8679f2ff9f847f5a2400bce534b4546ed7953737397/naan-0.0.4.tar.gz
+[2024-05-19 01:14:58] INFO root fetch - processPackages [naan]: executing diffoscope
+[2024-05-19 01:14:58] INFO root fetch - processPackages [naan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naan-0.0.3.tar.gz tmp/naan-0.0.4.tar.gz --markdown 20240519/n/naan/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-19 01:14:58] INFO root fetch - processPackages [pypki3]: Downloading https://files.pythonhosted.org/packages/b5/c7/3c928fbfa048c0aa61886f00eae21f0688d57956e0486f8a1db71c16e030/pypki3-2024.139.1394.tar.gz
+[2024-05-19 01:14:58] INFO root fetch - processPackages [spaceandtime]: Downloading https://files.pythonhosted.org/packages/b7/4f/4cb9b80d6f282199216862cfb89c45b14d334cc8061feb5f7dce564ca32a/spaceandtime-1.1.8.tar.gz
+[2024-05-19 01:14:58] INFO root fetch - processPackages [pypki3]: executing diffoscope
+[2024-05-19 01:14:58] INFO root fetch - processPackages [pypki3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypki3-2023.353.243.tar.gz tmp/pypki3-2024.139.1394.tar.gz --markdown 20240519/p/pypki3/2023.353.243-2024.139.1394/README.md --exclude *.pyd
+[2024-05-19 01:14:58] INFO root fetch - processPackages [spaceandtime]: executing diffoscope
+[2024-05-19 01:14:58] INFO root fetch - processPackages [spaceandtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spaceandtime-1.1.7.tar.gz tmp/spaceandtime-1.1.8.tar.gz --markdown 20240519/s/spaceandtime/1.1.7-1.1.8/README.md --exclude *.pyd
+[2024-05-19 01:14:58] INFO root fetch - processPackages [naan]: Remove: archive file [/home/abi/fetcher/tmp/naan-0.0.3.tar.gz]
+[2024-05-19 01:14:58] INFO root fetch - processPackages [naan]: Remove: archive file [/home/abi/fetcher/tmp/naan-0.0.4.tar.gz]
+[2024-05-19 01:14:58] INFO root fetch - main [MainThread]: End processing [naan]: success
+[2024-05-19 01:14:59] INFO root fetch - processPackages [pypki3]: Remove: archive file [/home/abi/fetcher/tmp/pypki3-2023.353.243.tar.gz]
+[2024-05-19 01:14:59] INFO root fetch - processPackages [pypki3]: Remove: archive file [/home/abi/fetcher/tmp/pypki3-2024.139.1394.tar.gz]
+[2024-05-19 01:14:59] INFO root fetch - main [MainThread]: End processing [pypki3]: success
+[2024-05-19 01:14:59] INFO root fetch - processPackages [spaceandtime]: Remove: archive file [/home/abi/fetcher/tmp/spaceandtime-1.1.7.tar.gz]
+[2024-05-19 01:14:59] INFO root fetch - processPackages [spaceandtime]: Remove: archive file [/home/abi/fetcher/tmp/spaceandtime-1.1.8.tar.gz]
+[2024-05-19 01:14:59] INFO root fetch - main [MainThread]: End processing [spaceandtime]: success
+[2024-05-19 01:14:59] INFO root fetch - main [MainThread]: Store serial: [23271785]
