@@ -231,3 +231,24 @@
 [2024-05-19 00:31:35] INFO root fetch - processPackages [rag-cli]: Remove: archive file [/home/abi/fetcher/tmp/rag_cli-0.2.2.tar.gz]
 [2024-05-19 00:31:35] INFO root fetch - main [MainThread]: End processing [rag-cli]: success
 [2024-05-19 00:31:35] INFO root fetch - main [MainThread]: Store serial: [23271613]
+[2024-05-19 00:33:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271613]
+[2024-05-19 00:33:45] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 00:33:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: abcli
+[2024-05-19 00:33:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PygameXtras
+[2024-05-19 00:33:45] INFO root fetch - processPackages [abcli]: New version: [8.177.1] Old Version: [8.176.1]
+[2024-05-19 00:33:45] INFO root fetch - processPackages [PygameXtras]: New version: [1.1.7] Old Version: [1.1.6]
+[2024-05-19 00:33:45] INFO root fetch - processPackages [PygameXtras]: Downloading https://files.pythonhosted.org/packages/96/44/ec52d602db37b7dcecb8b13aa1a530cc7d00e6311b3aa688c31094873b94/pygamextras-1.1.6.tar.gz
+[2024-05-19 00:33:45] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/b6/4c/17bf8203d68b11ec753f3d8bbb649fd7b60a6f359cd13bf17d2a48c7f0b3/abcli-8.176.1.tar.gz
+[2024-05-19 00:33:45] INFO root fetch - processPackages [PygameXtras]: Downloading https://files.pythonhosted.org/packages/f2/24/680a81c83252db5c5c4fe4f9241b09344514a8d832a83dfafd1e81447f3d/pygamextras-1.1.7.tar.gz
+[2024-05-19 00:33:45] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/9e/0b/0dfa5fd0c4f87afbe90f0c4bd60ff3388f36abeb983837bb07c6c35f3a89/abcli-8.177.1.tar.gz
+[2024-05-19 00:33:45] INFO root fetch - processPackages [abcli]: executing diffoscope
+[2024-05-19 00:33:45] INFO root fetch - processPackages [abcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abcli-8.176.1.tar.gz tmp/abcli-8.177.1.tar.gz --markdown 20240519/a/abcli/8.176.1-8.177.1/README.md --exclude *.pyd
+[2024-05-19 00:33:46] INFO root fetch - processPackages [PygameXtras]: executing diffoscope
+[2024-05-19 00:33:46] INFO root fetch - processPackages [PygameXtras]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygamextras-1.1.6.tar.gz tmp/pygamextras-1.1.7.tar.gz --markdown 20240519/P/PygameXtras/1.1.6-1.1.7/README.md --exclude *.pyd
+[2024-05-19 00:33:46] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-8.176.1.tar.gz]
+[2024-05-19 00:33:46] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-8.177.1.tar.gz]
+[2024-05-19 00:33:46] INFO root fetch - main [MainThread]: End processing [abcli]: success
+[2024-05-19 00:33:46] INFO root fetch - processPackages [PygameXtras]: Remove: archive file [/home/abi/fetcher/tmp/pygamextras-1.1.6.tar.gz]
+[2024-05-19 00:33:46] INFO root fetch - processPackages [PygameXtras]: Remove: archive file [/home/abi/fetcher/tmp/pygamextras-1.1.7.tar.gz]
+[2024-05-19 00:33:46] INFO root fetch - main [MainThread]: End processing [PygameXtras]: success
+[2024-05-19 00:33:46] INFO root fetch - main [MainThread]: Store serial: [23271619]
