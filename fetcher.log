@@ -1,0 +1,15 @@
+[2024-05-19 00:01:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271513]
+[2024-05-19 00:01:16] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 00:01:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ubo-gui
+[2024-05-19 00:01:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: overslownessz
+[2024-05-19 00:01:16] WARNING root fetch - processPackages [overslownessz]: Skipping, unable to determine old version
+[2024-05-19 00:01:16] INFO root fetch - main [MainThread]: End processing [overslownessz] error
+[2024-05-19 00:01:16] INFO root fetch - processPackages [ubo-gui]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-19 00:01:17] INFO root fetch - processPackages [ubo-gui]: Downloading https://files.pythonhosted.org/packages/52/ff/3d11671b088eea21a50272125230db635fc5cebc64b0112631f2264aa075/ubo_gui-0.9.8.tar.gz
+[2024-05-19 00:01:17] INFO root fetch - processPackages [ubo-gui]: Downloading https://files.pythonhosted.org/packages/49/be/d5e94619625fa02651110d759ce75c827dbed83a0a373d6609eabcdde8af/ubo_gui-0.9.9.tar.gz
+[2024-05-19 00:01:19] INFO root fetch - processPackages [ubo-gui]: executing diffoscope
+[2024-05-19 00:01:19] INFO root fetch - processPackages [ubo-gui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ubo_gui-0.9.8.tar.gz tmp/ubo_gui-0.9.9.tar.gz --markdown 20240519/u/ubo-gui/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-19 00:01:20] INFO root fetch - processPackages [ubo-gui]: Remove: archive file [/home/abi/fetcher/tmp/ubo_gui-0.9.8.tar.gz]
+[2024-05-19 00:01:20] INFO root fetch - processPackages [ubo-gui]: Remove: archive file [/home/abi/fetcher/tmp/ubo_gui-0.9.9.tar.gz]
+[2024-05-19 00:01:20] INFO root fetch - main [MainThread]: End processing [ubo-gui]: success
+[2024-05-19 00:01:20] INFO root fetch - main [MainThread]: Store serial: [23271520]
