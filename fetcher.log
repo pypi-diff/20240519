@@ -471,3 +471,18 @@
 [2024-05-19 00:55:28] INFO root fetch - processPackages [socketwrench]: Remove: archive file [/home/abi/fetcher/tmp/socketwrench-2.0.0.tar.gz]
 [2024-05-19 00:55:28] INFO root fetch - main [MainThread]: End processing [socketwrench]: success
 [2024-05-19 00:55:28] INFO root fetch - main [MainThread]: Store serial: [23271708]
+[2024-05-19 00:57:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271708]
+[2024-05-19 00:57:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 00:57:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: offbeatz
+[2024-05-19 00:57:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyselenscrapr
+[2024-05-19 00:57:37] WARNING root fetch - processPackages [offbeatz]: Skipping, unable to determine old version
+[2024-05-19 00:57:37] INFO root fetch - main [MainThread]: End processing [offbeatz] error
+[2024-05-19 00:57:37] INFO root fetch - processPackages [pyselenscrapr]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-19 00:57:37] INFO root fetch - processPackages [pyselenscrapr]: Downloading https://files.pythonhosted.org/packages/a2/06/980657ccffb237dfea956866d01021e6008ca11bd5647dbf5b58836c2812/pyselenscrapr-0.0.5.tar.gz
+[2024-05-19 00:57:37] INFO root fetch - processPackages [pyselenscrapr]: Downloading https://files.pythonhosted.org/packages/b5/de/d9683052135e536ba14e328178a21ed4bc6d8ce4bfc73dcd9717e5534abd/pyselenscrapr-0.0.6.tar.gz
+[2024-05-19 00:57:38] INFO root fetch - processPackages [pyselenscrapr]: executing diffoscope
+[2024-05-19 00:57:38] INFO root fetch - processPackages [pyselenscrapr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyselenscrapr-0.0.5.tar.gz tmp/pyselenscrapr-0.0.6.tar.gz --markdown 20240519/p/pyselenscrapr/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-19 00:57:38] INFO root fetch - processPackages [pyselenscrapr]: Remove: archive file [/home/abi/fetcher/tmp/pyselenscrapr-0.0.5.tar.gz]
+[2024-05-19 00:57:38] INFO root fetch - processPackages [pyselenscrapr]: Remove: archive file [/home/abi/fetcher/tmp/pyselenscrapr-0.0.6.tar.gz]
+[2024-05-19 00:57:38] INFO root fetch - main [MainThread]: End processing [pyselenscrapr]: success
+[2024-05-19 00:57:38] INFO root fetch - main [MainThread]: Store serial: [23271714]
