@@ -28,3 +28,27 @@
 [2024-05-19 00:03:30] INFO root fetch - processPackages [sms-message-inforu-local]: Remove: archive file [/home/abi/fetcher/tmp/sms_message_inforu_local-0.0.3.tar.gz]
 [2024-05-19 00:03:30] INFO root fetch - main [MainThread]: End processing [sms-message-inforu-local]: success
 [2024-05-19 00:03:30] INFO root fetch - main [MainThread]: Store serial: [23271527]
+[2024-05-19 00:05:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271527]
+[2024-05-19 00:05:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 00:05:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gucken
+[2024-05-19 00:05:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mychamp
+[2024-05-19 00:05:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gregarinaez
+[2024-05-19 00:05:39] INFO root fetch - processPackages [gucken]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-19 00:05:39] INFO root fetch - processPackages [gucken]: Downloading https://files.pythonhosted.org/packages/e8/1e/e1a54cea83fb432d4388e22eaaeafcae7534aae42370fb23dd9bfb163405/gucken-0.1.2.tar.gz
+[2024-05-19 00:05:39] INFO root fetch - processPackages [mychamp]: New version: [0.0.2] Old Version: [0.0.0]
+[2024-05-19 00:05:39] WARNING root fetch - processPackages [gregarinaez]: Skipping, unable to determine old version
+[2024-05-19 00:05:39] INFO root fetch - main [MainThread]: End processing [gregarinaez] error
+[2024-05-19 00:05:39] INFO root fetch - processPackages [mychamp]: Downloading https://files.pythonhosted.org/packages/80/8e/36f3ec6829ef6e180940ee5b05d880fc76eedae7508ae26a2e4129c69d8f/mychamp-0.0.0.tar.gz
+[2024-05-19 00:05:39] INFO root fetch - processPackages [gucken]: Downloading https://files.pythonhosted.org/packages/6b/fe/c06fb767d81c6351cb48091c300ca15b6dd7140bc6b7ba9363b03ee945d0/gucken-0.1.3.tar.gz
+[2024-05-19 00:05:39] INFO root fetch - processPackages [gucken]: executing diffoscope
+[2024-05-19 00:05:39] INFO root fetch - processPackages [gucken]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gucken-0.1.2.tar.gz tmp/gucken-0.1.3.tar.gz --markdown 20240519/g/gucken/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-19 00:05:39] INFO root fetch - processPackages [mychamp]: Downloading https://files.pythonhosted.org/packages/16/b6/f50c48abeb9dedf753807f69d1b6ad27949284cae1eaa60936cda4078347/mychamp-0.0.2.tar.gz
+[2024-05-19 00:05:39] INFO root fetch - processPackages [mychamp]: executing diffoscope
+[2024-05-19 00:05:39] INFO root fetch - processPackages [mychamp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mychamp-0.0.0.tar.gz tmp/mychamp-0.0.2.tar.gz --markdown 20240519/m/mychamp/0.0.0-0.0.2/README.md --exclude *.pyd
+[2024-05-19 00:05:40] INFO root fetch - processPackages [gucken]: Remove: archive file [/home/abi/fetcher/tmp/gucken-0.1.2.tar.gz]
+[2024-05-19 00:05:40] INFO root fetch - processPackages [gucken]: Remove: archive file [/home/abi/fetcher/tmp/gucken-0.1.3.tar.gz]
+[2024-05-19 00:05:40] INFO root fetch - main [MainThread]: End processing [gucken]: success
+[2024-05-19 00:05:40] INFO root fetch - processPackages [mychamp]: Remove: archive file [/home/abi/fetcher/tmp/mychamp-0.0.0.tar.gz]
+[2024-05-19 00:05:40] INFO root fetch - processPackages [mychamp]: Remove: archive file [/home/abi/fetcher/tmp/mychamp-0.0.2.tar.gz]
+[2024-05-19 00:05:40] INFO root fetch - main [MainThread]: End processing [mychamp]: success
+[2024-05-19 00:05:40] INFO root fetch - main [MainThread]: Store serial: [23271536]
