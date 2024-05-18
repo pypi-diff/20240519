@@ -893,3 +893,15 @@
 [2024-05-19 01:34:32] INFO root fetch - processPackages [yt-dlp]: Remove: archive file [/home/abi/fetcher/tmp/yt_dlp-2024.5.8.232715.dev0.tar.gz]
 [2024-05-19 01:34:33] INFO root fetch - main [MainThread]: End processing [yt-dlp]: success
 [2024-05-19 01:34:33] INFO root fetch - main [MainThread]: Store serial: [23271856]
+[2024-05-19 01:36:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271856]
+[2024-05-19 01:36:41] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 01:36:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: my-table-db
+[2024-05-19 01:36:41] INFO root fetch - processPackages [my-table-db]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-05-19 01:36:41] INFO root fetch - processPackages [my-table-db]: Downloading https://files.pythonhosted.org/packages/c6/d5/22f9708e0e6eae0fc51473ce2f84528e9ed5b716498f4d044acdf6f3c4f4/my_table_db-2.0.0.tar.gz
+[2024-05-19 01:36:42] INFO root fetch - processPackages [my-table-db]: Downloading https://files.pythonhosted.org/packages/9b/0a/a72c301e72f6fb4c92f9d8013ed1bf69ba02b6abce096f7a4b9558e636bb/my_table_db-2.0.1.tar.gz
+[2024-05-19 01:36:42] INFO root fetch - processPackages [my-table-db]: executing diffoscope
+[2024-05-19 01:36:42] INFO root fetch - processPackages [my-table-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/my_table_db-2.0.0.tar.gz tmp/my_table_db-2.0.1.tar.gz --markdown 20240519/m/my-table-db/2.0.0-2.0.1/README.md --exclude *.pyd
+[2024-05-19 01:36:42] INFO root fetch - processPackages [my-table-db]: Remove: archive file [/home/abi/fetcher/tmp/my_table_db-2.0.0.tar.gz]
+[2024-05-19 01:36:42] INFO root fetch - processPackages [my-table-db]: Remove: archive file [/home/abi/fetcher/tmp/my_table_db-2.0.1.tar.gz]
+[2024-05-19 01:36:42] INFO root fetch - main [MainThread]: End processing [my-table-db]: success
+[2024-05-19 01:36:42] INFO root fetch - main [MainThread]: Store serial: [23271859]
