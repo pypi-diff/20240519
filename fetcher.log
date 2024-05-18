@@ -276,3 +276,24 @@
 [2024-05-19 00:38:06] WARNING root fetch - processPackages [py-alpaca-daily-losers]: Skipping, unable to determine old version
 [2024-05-19 00:38:06] INFO root fetch - main [MainThread]: End processing [py-alpaca-daily-losers] error
 [2024-05-19 00:38:06] INFO root fetch - main [MainThread]: Store serial: [23271633]
+[2024-05-19 00:40:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271633]
+[2024-05-19 00:40:16] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 00:40:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PygameXtras
+[2024-05-19 00:40:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: twitch-archiver
+[2024-05-19 00:40:16] INFO root fetch - processPackages [PygameXtras]: New version: [1.1.7] Old Version: [1.1.6]
+[2024-05-19 00:40:16] INFO root fetch - processPackages [PygameXtras]: Downloading https://files.pythonhosted.org/packages/96/44/ec52d602db37b7dcecb8b13aa1a530cc7d00e6311b3aa688c31094873b94/pygamextras-1.1.6.tar.gz
+[2024-05-19 00:40:16] INFO root fetch - processPackages [twitch-archiver]: New version: [4.0.8] Old Version: [4.0.7]
+[2024-05-19 00:40:16] INFO root fetch - processPackages [twitch-archiver]: Downloading https://files.pythonhosted.org/packages/66/bd/a4cfff42349c7571e42432b5626a33caa32c31af83576c31ffe9968f8ba2/twitch_archiver-4.0.7.tar.gz
+[2024-05-19 00:40:16] INFO root fetch - processPackages [PygameXtras]: Downloading https://files.pythonhosted.org/packages/f2/24/680a81c83252db5c5c4fe4f9241b09344514a8d832a83dfafd1e81447f3d/pygamextras-1.1.7.tar.gz
+[2024-05-19 00:40:16] INFO root fetch - processPackages [PygameXtras]: executing diffoscope
+[2024-05-19 00:40:16] INFO root fetch - processPackages [PygameXtras]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygamextras-1.1.6.tar.gz tmp/pygamextras-1.1.7.tar.gz --markdown 20240519/P/PygameXtras/1.1.6-1.1.7/README.md --exclude *.pyd
+[2024-05-19 00:40:16] INFO root fetch - processPackages [twitch-archiver]: Downloading https://files.pythonhosted.org/packages/a3/2f/1b9422342fcf89544ca9b0f7661c3e7f9933b84bd6e997de47295c20ca85/twitch_archiver-4.0.8.tar.gz
+[2024-05-19 00:40:16] INFO root fetch - processPackages [twitch-archiver]: executing diffoscope
+[2024-05-19 00:40:16] INFO root fetch - processPackages [twitch-archiver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitch_archiver-4.0.7.tar.gz tmp/twitch_archiver-4.0.8.tar.gz --markdown 20240519/t/twitch-archiver/4.0.7-4.0.8/README.md --exclude *.pyd
+[2024-05-19 00:40:17] INFO root fetch - processPackages [PygameXtras]: Remove: archive file [/home/abi/fetcher/tmp/pygamextras-1.1.6.tar.gz]
+[2024-05-19 00:40:17] INFO root fetch - processPackages [PygameXtras]: Remove: archive file [/home/abi/fetcher/tmp/pygamextras-1.1.7.tar.gz]
+[2024-05-19 00:40:17] INFO root fetch - main [MainThread]: End processing [PygameXtras]: success
+[2024-05-19 00:40:17] INFO root fetch - processPackages [twitch-archiver]: Remove: archive file [/home/abi/fetcher/tmp/twitch_archiver-4.0.7.tar.gz]
+[2024-05-19 00:40:17] INFO root fetch - processPackages [twitch-archiver]: Remove: archive file [/home/abi/fetcher/tmp/twitch_archiver-4.0.8.tar.gz]
+[2024-05-19 00:40:17] INFO root fetch - main [MainThread]: End processing [twitch-archiver]: success
+[2024-05-19 00:40:17] INFO root fetch - main [MainThread]: Store serial: [23271639]
