@@ -597,3 +597,42 @@
 [2024-05-19 01:04:09] INFO root fetch - processPackages [synnax]: Remove: archive file [/home/abi/fetcher/tmp/synnax-0.9.0.tar.gz]
 [2024-05-19 01:04:09] INFO root fetch - main [MainThread]: End processing [synnax]: success
 [2024-05-19 01:04:09] INFO root fetch - main [MainThread]: Store serial: [23271750]
+[2024-05-19 01:06:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271750]
+[2024-05-19 01:06:17] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 01:06:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: juntagrico-assignment-request
+[2024-05-19 01:06:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: my-table-db
+[2024-05-19 01:06:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tmnt
+[2024-05-19 01:06:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: glpic
+[2024-05-19 01:06:18] INFO root fetch - processPackages [my-table-db]: New version: [2.0.0] Old Version: [1.0.4]
+[2024-05-19 01:06:18] INFO root fetch - processPackages [glpic]: New version: [99.0.202405182303] Old Version: [99.0.202405120947]
+[2024-05-19 01:06:18] INFO root fetch - processPackages [tmnt]: New version: [0.7.52b20240517] Old Version: [0.7.52b20240516]
+[2024-05-19 01:06:18] INFO root fetch - processPackages [juntagrico-assignment-request]: New version: [1.6.1] Old Version: [1.6.0]
+[2024-05-19 01:06:18] INFO root fetch - processPackages [my-table-db]: Downloading https://files.pythonhosted.org/packages/bc/01/c340223707b0b5aea36e293cfa718e93b90fd8199ab824056d423247a135/my_table_db-1.0.4.tar.gz
+[2024-05-19 01:06:18] INFO root fetch - processPackages [glpic]: Downloading https://files.pythonhosted.org/packages/d7/93/bc49d773802acd2fd151af83fcf1c0d1b1cf9bf976623cc078311873563c/glpic-99.0.202405120947.tar.gz
+[2024-05-19 01:06:18] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/f2/17/cc463b6908f44ba1ad2415ee8f03be777bd5b9263a888260be2877646491/tmnt-0.7.52b20240516.tar.gz
+[2024-05-19 01:06:18] INFO root fetch - processPackages [juntagrico-assignment-request]: Downloading https://files.pythonhosted.org/packages/55/9e/efebe4a6deecca6d9ecf1d029633979bcf12fa03314633c9320abc49e9db/juntagrico-assignment-request-1.6.0.tar.gz
+[2024-05-19 01:06:18] INFO root fetch - processPackages [glpic]: Downloading https://files.pythonhosted.org/packages/42/67/1fdd844d06996d7be80da35cfce908350dc61eeb40c4574846e4c31b4e80/glpic-99.0.202405182303.tar.gz
+[2024-05-19 01:06:18] INFO root fetch - processPackages [my-table-db]: Downloading https://files.pythonhosted.org/packages/c6/d5/22f9708e0e6eae0fc51473ce2f84528e9ed5b716498f4d044acdf6f3c4f4/my_table_db-2.0.0.tar.gz
+[2024-05-19 01:06:18] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/ac/39/df3651a939fb5d60190803344334c01114e6ebe480cfcc76cc3f3d9619ee/tmnt-0.7.52b20240517.tar.gz
+[2024-05-19 01:06:18] INFO root fetch - processPackages [glpic]: executing diffoscope
+[2024-05-19 01:06:18] INFO root fetch - processPackages [glpic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glpic-99.0.202405120947.tar.gz tmp/glpic-99.0.202405182303.tar.gz --markdown 20240519/g/glpic/99.0.202405120947-99.0.202405182303/README.md --exclude *.pyd
+[2024-05-19 01:06:18] INFO root fetch - processPackages [my-table-db]: executing diffoscope
+[2024-05-19 01:06:18] INFO root fetch - processPackages [my-table-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/my_table_db-1.0.4.tar.gz tmp/my_table_db-2.0.0.tar.gz --markdown 20240519/m/my-table-db/1.0.4-2.0.0/README.md --exclude *.pyd
+[2024-05-19 01:06:18] INFO root fetch - processPackages [tmnt]: executing diffoscope
+[2024-05-19 01:06:18] INFO root fetch - processPackages [tmnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-0.7.52b20240516.tar.gz tmp/tmnt-0.7.52b20240517.tar.gz --markdown 20240519/t/tmnt/0.7.52b20240516-0.7.52b20240517/README.md --exclude *.pyd
+[2024-05-19 01:06:18] INFO root fetch - processPackages [juntagrico-assignment-request]: Downloading https://files.pythonhosted.org/packages/67/a6/1cf9648d2bd852214d1112aa036075be1cb4a78efa569bf75c94c4c61eb4/juntagrico_assignment_request-1.6.1.tar.gz
+[2024-05-19 01:06:18] INFO root fetch - processPackages [juntagrico-assignment-request]: executing diffoscope
+[2024-05-19 01:06:18] INFO root fetch - processPackages [juntagrico-assignment-request]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/juntagrico-assignment-request-1.6.0.tar.gz tmp/juntagrico_assignment_request-1.6.1.tar.gz --markdown 20240519/j/juntagrico-assignment-request/1.6.0-1.6.1/README.md --exclude *.pyd
+[2024-05-19 01:06:19] INFO root fetch - processPackages [glpic]: Remove: archive file [/home/abi/fetcher/tmp/glpic-99.0.202405120947.tar.gz]
+[2024-05-19 01:06:19] INFO root fetch - processPackages [glpic]: Remove: archive file [/home/abi/fetcher/tmp/glpic-99.0.202405182303.tar.gz]
+[2024-05-19 01:06:19] INFO root fetch - main [MainThread]: End processing [glpic]: success
+[2024-05-19 01:06:19] INFO root fetch - processPackages [my-table-db]: Remove: archive file [/home/abi/fetcher/tmp/my_table_db-1.0.4.tar.gz]
+[2024-05-19 01:06:19] INFO root fetch - processPackages [my-table-db]: Remove: archive file [/home/abi/fetcher/tmp/my_table_db-2.0.0.tar.gz]
+[2024-05-19 01:06:19] INFO root fetch - main [MainThread]: End processing [my-table-db]: success
+[2024-05-19 01:06:19] INFO root fetch - processPackages [tmnt]: Remove: archive file [/home/abi/fetcher/tmp/tmnt-0.7.52b20240516.tar.gz]
+[2024-05-19 01:06:19] INFO root fetch - processPackages [tmnt]: Remove: archive file [/home/abi/fetcher/tmp/tmnt-0.7.52b20240517.tar.gz]
+[2024-05-19 01:06:19] INFO root fetch - main [MainThread]: End processing [tmnt]: success
+[2024-05-19 01:06:19] INFO root fetch - processPackages [juntagrico-assignment-request]: Remove: archive file [/home/abi/fetcher/tmp/juntagrico-assignment-request-1.6.0.tar.gz]
+[2024-05-19 01:06:19] INFO root fetch - processPackages [juntagrico-assignment-request]: Remove: archive file [/home/abi/fetcher/tmp/juntagrico_assignment_request-1.6.1.tar.gz]
+[2024-05-19 01:06:19] INFO root fetch - main [MainThread]: End processing [juntagrico-assignment-request]: success
+[2024-05-19 01:06:19] INFO root fetch - main [MainThread]: Store serial: [23271761]
