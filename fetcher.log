@@ -360,3 +360,9 @@
 [2024-05-19 00:44:38] INFO root fetch - processPackages [coiled]: Remove: archive file [/home/abi/fetcher/tmp/coiled-1.9.1.dev9.tar.gz]
 [2024-05-19 00:44:38] INFO root fetch - main [MainThread]: End processing [coiled]: success
 [2024-05-19 00:44:38] INFO root fetch - main [MainThread]: Store serial: [23271660]
+[2024-05-19 00:46:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271660]
+[2024-05-19 00:46:48] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 00:46:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mollisiaceaez
+[2024-05-19 00:46:48] WARNING root fetch - processPackages [mollisiaceaez]: Skipping, unable to determine old version
+[2024-05-19 00:46:48] INFO root fetch - main [MainThread]: End processing [mollisiaceaez] error
+[2024-05-19 00:46:48] INFO root fetch - main [MainThread]: Store serial: [23271664]
