@@ -750,3 +750,24 @@
 [2024-05-19 01:19:20] INFO root fetch - processPackages [my-road]: Remove: archive file [/home/abi/fetcher/tmp/my_road-2.0.3.tar.gz]
 [2024-05-19 01:19:20] INFO root fetch - main [MainThread]: End processing [my-road]: success
 [2024-05-19 01:19:20] INFO root fetch - main [MainThread]: Store serial: [23271801]
+[2024-05-19 01:21:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271801]
+[2024-05-19 01:21:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 01:21:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: my-road
+[2024-05-19 01:21:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bosesoundtouchapi
+[2024-05-19 01:21:29] INFO root fetch - processPackages [my-road]: New version: [2.0.3] Old Version: [2.0.2]
+[2024-05-19 01:21:29] INFO root fetch - processPackages [bosesoundtouchapi]: New version: [1.0.9] Old Version: [1.0.7]
+[2024-05-19 01:21:29] INFO root fetch - processPackages [my-road]: Downloading https://files.pythonhosted.org/packages/50/34/a86286e0923ceeabe696ade6ecef4c1dfabd10d3d6c330f734c6da00c7c5/my_road-2.0.2.tar.gz
+[2024-05-19 01:21:29] INFO root fetch - processPackages [bosesoundtouchapi]: Downloading https://files.pythonhosted.org/packages/cf/e2/27416aa49fec3f7e18b1a22c5d976f2267ab5715d97c1314236a77e3a30a/bosesoundtouchapi-1.0.7-py3-none-any.whl
+[2024-05-19 01:21:29] INFO root fetch - processPackages [my-road]: Downloading https://files.pythonhosted.org/packages/55/ef/9c029f7c82f1fd3d5d62f92edf0a7af1fc95bd1d6116ac9d9d9f01c27d7d/my_road-2.0.3.tar.gz
+[2024-05-19 01:21:30] INFO root fetch - processPackages [my-road]: executing diffoscope
+[2024-05-19 01:21:30] INFO root fetch - processPackages [my-road]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/my_road-2.0.2.tar.gz tmp/my_road-2.0.3.tar.gz --markdown 20240519/m/my-road/2.0.2-2.0.3/README.md --exclude *.pyd
+[2024-05-19 01:21:30] INFO root fetch - processPackages [bosesoundtouchapi]: Downloading https://files.pythonhosted.org/packages/2d/eb/4a9e6b4a41569551a0d849ecbd1619975ae1d3dc5f7649e91fdf88547693/bosesoundtouchapi-1.0.9-py3-none-any.whl
+[2024-05-19 01:21:30] INFO root fetch - processPackages [bosesoundtouchapi]: executing diffoscope
+[2024-05-19 01:21:30] INFO root fetch - processPackages [bosesoundtouchapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bosesoundtouchapi-1.0.7-py3-none-any.whl.zip tmp/bosesoundtouchapi-1.0.9-py3-none-any.whl.zip --markdown 20240519/b/bosesoundtouchapi/1.0.7-1.0.9/README.md --exclude *.pyd
+[2024-05-19 01:21:30] INFO root fetch - processPackages [my-road]: Remove: archive file [/home/abi/fetcher/tmp/my_road-2.0.2.tar.gz]
+[2024-05-19 01:21:30] INFO root fetch - processPackages [my-road]: Remove: archive file [/home/abi/fetcher/tmp/my_road-2.0.3.tar.gz]
+[2024-05-19 01:21:30] INFO root fetch - main [MainThread]: End processing [my-road]: success
+[2024-05-19 01:21:32] INFO root fetch - processPackages [bosesoundtouchapi]: Remove: archive file [/home/abi/fetcher/tmp/bosesoundtouchapi-1.0.7-py3-none-any.whl.zip]
+[2024-05-19 01:21:32] INFO root fetch - processPackages [bosesoundtouchapi]: Remove: archive file [/home/abi/fetcher/tmp/bosesoundtouchapi-1.0.9-py3-none-any.whl.zip]
+[2024-05-19 01:21:32] INFO root fetch - main [MainThread]: End processing [bosesoundtouchapi]: success
+[2024-05-19 01:21:32] INFO root fetch - main [MainThread]: Store serial: [23271805]
