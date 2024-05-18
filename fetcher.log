@@ -905,3 +905,18 @@
 [2024-05-19 01:36:42] INFO root fetch - processPackages [my-table-db]: Remove: archive file [/home/abi/fetcher/tmp/my_table_db-2.0.1.tar.gz]
 [2024-05-19 01:36:42] INFO root fetch - main [MainThread]: End processing [my-table-db]: success
 [2024-05-19 01:36:42] INFO root fetch - main [MainThread]: Store serial: [23271859]
+[2024-05-19 01:38:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271859]
+[2024-05-19 01:38:51] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 01:38:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pilotz
+[2024-05-19 01:38:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: powerset-generator
+[2024-05-19 01:38:51] WARNING root fetch - processPackages [pilotz]: Skipping, unable to determine old version
+[2024-05-19 01:38:51] INFO root fetch - main [MainThread]: End processing [pilotz] error
+[2024-05-19 01:38:51] INFO root fetch - processPackages [powerset-generator]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-19 01:38:52] INFO root fetch - processPackages [powerset-generator]: Downloading https://files.pythonhosted.org/packages/22/09/d3d97935e62f6a7179e9dfc823d07aa74e6ee96452cb478b2f36c10e414e/powerset_generator-0.1.1.tar.gz
+[2024-05-19 01:38:52] INFO root fetch - processPackages [powerset-generator]: Downloading https://files.pythonhosted.org/packages/4b/7b/56da0b0d7d0ab74db5320d8b48bf8f37caa903bba483ba1e08be14fa2368/powerset_generator-0.1.2.tar.gz
+[2024-05-19 01:38:52] INFO root fetch - processPackages [powerset-generator]: executing diffoscope
+[2024-05-19 01:38:52] INFO root fetch - processPackages [powerset-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/powerset_generator-0.1.1.tar.gz tmp/powerset_generator-0.1.2.tar.gz --markdown 20240519/p/powerset-generator/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-19 01:38:53] INFO root fetch - processPackages [powerset-generator]: Remove: archive file [/home/abi/fetcher/tmp/powerset_generator-0.1.1.tar.gz]
+[2024-05-19 01:38:53] INFO root fetch - processPackages [powerset-generator]: Remove: archive file [/home/abi/fetcher/tmp/powerset_generator-0.1.2.tar.gz]
+[2024-05-19 01:38:53] INFO root fetch - main [MainThread]: End processing [powerset-generator]: success
+[2024-05-19 01:38:53] INFO root fetch - main [MainThread]: Store serial: [23271868]
