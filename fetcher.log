@@ -213,3 +213,21 @@
 [2024-05-19 00:29:25] INFO root fetch - processPackages [surfkit]: Remove: archive file [/home/abi/fetcher/tmp/surfkit-0.1.99.tar.gz]
 [2024-05-19 00:29:25] INFO root fetch - main [MainThread]: End processing [surfkit]: success
 [2024-05-19 00:29:25] INFO root fetch - main [MainThread]: Store serial: [23271601]
+[2024-05-19 00:31:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271601]
+[2024-05-19 00:31:34] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 00:31:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torch-phase-shift
+[2024-05-19 00:31:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: annabelz
+[2024-05-19 00:31:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rag-cli
+[2024-05-19 00:31:34] INFO root fetch - processPackages [rag-cli]: New version: [0.2.2] Old Version: [0.2.0]
+[2024-05-19 00:31:34] INFO root fetch - processPackages [rag-cli]: Downloading https://files.pythonhosted.org/packages/4c/6b/87a0af47370f538cd48cf85b80b8a0e0361fd2e9b3f9193e8de875c76b92/rag_cli-0.2.0.tar.gz
+[2024-05-19 00:31:34] WARNING root fetch - processPackages [annabelz]: Skipping, unable to determine old version
+[2024-05-19 00:31:34] INFO root fetch - main [MainThread]: End processing [annabelz] error
+[2024-05-19 00:31:34] WARNING root fetch - processPackages [torch-phase-shift]: Skipping, unable to determine old version
+[2024-05-19 00:31:34] INFO root fetch - main [MainThread]: End processing [torch-phase-shift] error
+[2024-05-19 00:31:34] INFO root fetch - processPackages [rag-cli]: Downloading https://files.pythonhosted.org/packages/c8/60/46ca282fd568261290d173685f3977fe45e6f2cc71c990c83698e0bc7d2c/rag_cli-0.2.2.tar.gz
+[2024-05-19 00:31:34] INFO root fetch - processPackages [rag-cli]: executing diffoscope
+[2024-05-19 00:31:34] INFO root fetch - processPackages [rag-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rag_cli-0.2.0.tar.gz tmp/rag_cli-0.2.2.tar.gz --markdown 20240519/r/rag-cli/0.2.0-0.2.2/README.md --exclude *.pyd
+[2024-05-19 00:31:35] INFO root fetch - processPackages [rag-cli]: Remove: archive file [/home/abi/fetcher/tmp/rag_cli-0.2.0.tar.gz]
+[2024-05-19 00:31:35] INFO root fetch - processPackages [rag-cli]: Remove: archive file [/home/abi/fetcher/tmp/rag_cli-0.2.2.tar.gz]
+[2024-05-19 00:31:35] INFO root fetch - main [MainThread]: End processing [rag-cli]: success
+[2024-05-19 00:31:35] INFO root fetch - main [MainThread]: Store serial: [23271613]
