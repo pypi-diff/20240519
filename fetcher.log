@@ -142,3 +142,11 @@
 [2024-05-19 00:16:30] WARNING root fetch - processPackages [yomz]: Skipping, unable to determine old version
 [2024-05-19 00:16:30] INFO root fetch - main [MainThread]: End processing [yomz] error
 [2024-05-19 00:16:30] INFO root fetch - main [MainThread]: Store serial: [23271573]
+[2024-05-19 00:18:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271573]
+[2024-05-19 00:18:40] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-19 00:20:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271573]
+[2024-05-19 00:20:45] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 00:20:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: glandaceousz
+[2024-05-19 00:20:45] WARNING root fetch - processPackages [glandaceousz]: Skipping, unable to determine old version
+[2024-05-19 00:20:45] INFO root fetch - main [MainThread]: End processing [glandaceousz] error
+[2024-05-19 00:20:45] INFO root fetch - main [MainThread]: Store serial: [23271577]
