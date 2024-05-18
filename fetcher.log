@@ -252,3 +252,15 @@
 [2024-05-19 00:33:46] INFO root fetch - processPackages [PygameXtras]: Remove: archive file [/home/abi/fetcher/tmp/pygamextras-1.1.7.tar.gz]
 [2024-05-19 00:33:46] INFO root fetch - main [MainThread]: End processing [PygameXtras]: success
 [2024-05-19 00:33:46] INFO root fetch - main [MainThread]: Store serial: [23271619]
+[2024-05-19 00:35:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271619]
+[2024-05-19 00:35:56] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 00:35:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qs-codec
+[2024-05-19 00:35:56] INFO root fetch - processPackages [qs-codec]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-19 00:35:56] INFO root fetch - processPackages [qs-codec]: Downloading https://files.pythonhosted.org/packages/2c/83/0108b30f623db5d28089a296b0809972ea27a98395044bf1ec6b2b6d3c67/qs_codec-0.2.1.tar.gz
+[2024-05-19 00:35:56] INFO root fetch - processPackages [qs-codec]: Downloading https://files.pythonhosted.org/packages/a4/6c/540c8efc81127595302c6b87c4b9f3da7c300d03adabcc028c43d8acde33/qs_codec-0.2.2.tar.gz
+[2024-05-19 00:35:56] INFO root fetch - processPackages [qs-codec]: executing diffoscope
+[2024-05-19 00:35:56] INFO root fetch - processPackages [qs-codec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qs_codec-0.2.1.tar.gz tmp/qs_codec-0.2.2.tar.gz --markdown 20240519/q/qs-codec/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-19 00:35:57] INFO root fetch - processPackages [qs-codec]: Remove: archive file [/home/abi/fetcher/tmp/qs_codec-0.2.1.tar.gz]
+[2024-05-19 00:35:57] INFO root fetch - processPackages [qs-codec]: Remove: archive file [/home/abi/fetcher/tmp/qs_codec-0.2.2.tar.gz]
+[2024-05-19 00:35:57] INFO root fetch - main [MainThread]: End processing [qs-codec]: success
+[2024-05-19 00:35:57] INFO root fetch - main [MainThread]: Store serial: [23271622]
