@@ -79,3 +79,30 @@
 [2024-05-19 00:10:01] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.9.tar.gz]
 [2024-05-19 00:10:01] INFO root fetch - main [MainThread]: End processing [BigEDA]: success
 [2024-05-19 00:10:01] INFO root fetch - main [MainThread]: Store serial: [23271549]
+[2024-05-19 00:12:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271549]
+[2024-05-19 00:12:09] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 00:12:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: curranz
+[2024-05-19 00:12:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: paramiko-mock
+[2024-05-19 00:12:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: madokami
+[2024-05-19 00:12:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ipyslides
+[2024-05-19 00:12:09] INFO root fetch - processPackages [madokami]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-19 00:12:09] INFO root fetch - processPackages [ipyslides]: New version: [3.8.8] Old Version: [3.8.7]
+[2024-05-19 00:12:09] WARNING root fetch - processPackages [curranz]: Skipping, unable to determine old version
+[2024-05-19 00:12:09] INFO root fetch - main [MainThread]: End processing [curranz] error
+[2024-05-19 00:12:09] WARNING root fetch - processPackages [paramiko-mock]: Skipping, unable to determine old version
+[2024-05-19 00:12:09] INFO root fetch - main [MainThread]: End processing [paramiko-mock] error
+[2024-05-19 00:12:09] INFO root fetch - processPackages [ipyslides]: Downloading https://files.pythonhosted.org/packages/37/d4/f7804a12472333735ed1d9f4f46d43b202ffba4a93798ddba6b13c6fd484/ipyslides-3.8.7.tar.gz
+[2024-05-19 00:12:09] INFO root fetch - processPackages [madokami]: Downloading https://files.pythonhosted.org/packages/29/db/7416ecfb4327fc3314db45f894c8a3237b687c388ea6d32ab0236ac82a5e/madokami-0.1.0.tar.gz
+[2024-05-19 00:12:09] INFO root fetch - processPackages [ipyslides]: Downloading https://files.pythonhosted.org/packages/43/4c/76a82e5cb3668c412cfaa512d04b86033be1b557adabc996ca799e77a39f/ipyslides-3.8.8.tar.gz
+[2024-05-19 00:12:09] INFO root fetch - processPackages [ipyslides]: executing diffoscope
+[2024-05-19 00:12:09] INFO root fetch - processPackages [ipyslides]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipyslides-3.8.7.tar.gz tmp/ipyslides-3.8.8.tar.gz --markdown 20240519/i/ipyslides/3.8.7-3.8.8/README.md --exclude *.pyd
+[2024-05-19 00:12:09] INFO root fetch - processPackages [madokami]: Downloading https://files.pythonhosted.org/packages/fe/91/2f6a7815523221b58cb395851b8bdc6b0f5304315b5f18c18ddf700325d9/madokami-0.1.1.tar.gz
+[2024-05-19 00:12:09] INFO root fetch - processPackages [madokami]: executing diffoscope
+[2024-05-19 00:12:09] INFO root fetch - processPackages [madokami]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/madokami-0.1.0.tar.gz tmp/madokami-0.1.1.tar.gz --markdown 20240519/m/madokami/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-19 00:12:10] INFO root fetch - processPackages [madokami]: Remove: archive file [/home/abi/fetcher/tmp/madokami-0.1.0.tar.gz]
+[2024-05-19 00:12:10] INFO root fetch - processPackages [madokami]: Remove: archive file [/home/abi/fetcher/tmp/madokami-0.1.1.tar.gz]
+[2024-05-19 00:12:10] INFO root fetch - main [MainThread]: End processing [madokami]: success
+[2024-05-19 00:12:10] INFO root fetch - processPackages [ipyslides]: Remove: archive file [/home/abi/fetcher/tmp/ipyslides-3.8.7.tar.gz]
+[2024-05-19 00:12:10] INFO root fetch - processPackages [ipyslides]: Remove: archive file [/home/abi/fetcher/tmp/ipyslides-3.8.8.tar.gz]
+[2024-05-19 00:12:10] INFO root fetch - main [MainThread]: End processing [ipyslides]: success
+[2024-05-19 00:12:10] INFO root fetch - main [MainThread]: Store serial: [23271561]
