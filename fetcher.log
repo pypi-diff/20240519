@@ -729,3 +729,24 @@
 [2024-05-19 01:17:09] INFO root fetch - processPackages [muttdown]: Remove: archive file [/home/abi/fetcher/tmp/muttdown-0.4.0.tar.gz]
 [2024-05-19 01:17:09] INFO root fetch - main [MainThread]: End processing [muttdown]: success
 [2024-05-19 01:17:09] INFO root fetch - main [MainThread]: Store serial: [23271795]
+[2024-05-19 01:19:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271795]
+[2024-05-19 01:19:19] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 01:19:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: my-road
+[2024-05-19 01:19:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ipyslides
+[2024-05-19 01:19:19] INFO root fetch - processPackages [ipyslides]: New version: [3.8.9] Old Version: [3.8.8]
+[2024-05-19 01:19:19] INFO root fetch - processPackages [my-road]: New version: [2.0.3] Old Version: [2.0.2]
+[2024-05-19 01:19:19] INFO root fetch - processPackages [ipyslides]: Downloading https://files.pythonhosted.org/packages/43/4c/76a82e5cb3668c412cfaa512d04b86033be1b557adabc996ca799e77a39f/ipyslides-3.8.8.tar.gz
+[2024-05-19 01:19:19] INFO root fetch - processPackages [my-road]: Downloading https://files.pythonhosted.org/packages/50/34/a86286e0923ceeabe696ade6ecef4c1dfabd10d3d6c330f734c6da00c7c5/my_road-2.0.2.tar.gz
+[2024-05-19 01:19:19] INFO root fetch - processPackages [ipyslides]: Downloading https://files.pythonhosted.org/packages/64/20/a5419f436b2a9f1bd1762326590cde737225f6ada9150514c3abd9c98417/ipyslides-3.8.9.tar.gz
+[2024-05-19 01:19:20] INFO root fetch - processPackages [my-road]: Downloading https://files.pythonhosted.org/packages/55/ef/9c029f7c82f1fd3d5d62f92edf0a7af1fc95bd1d6116ac9d9d9f01c27d7d/my_road-2.0.3.tar.gz
+[2024-05-19 01:19:20] INFO root fetch - processPackages [ipyslides]: executing diffoscope
+[2024-05-19 01:19:20] INFO root fetch - processPackages [ipyslides]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipyslides-3.8.8.tar.gz tmp/ipyslides-3.8.9.tar.gz --markdown 20240519/i/ipyslides/3.8.8-3.8.9/README.md --exclude *.pyd
+[2024-05-19 01:19:20] INFO root fetch - processPackages [my-road]: executing diffoscope
+[2024-05-19 01:19:20] INFO root fetch - processPackages [my-road]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/my_road-2.0.2.tar.gz tmp/my_road-2.0.3.tar.gz --markdown 20240519/m/my-road/2.0.2-2.0.3/README.md --exclude *.pyd
+[2024-05-19 01:19:20] INFO root fetch - processPackages [ipyslides]: Remove: archive file [/home/abi/fetcher/tmp/ipyslides-3.8.8.tar.gz]
+[2024-05-19 01:19:20] INFO root fetch - processPackages [ipyslides]: Remove: archive file [/home/abi/fetcher/tmp/ipyslides-3.8.9.tar.gz]
+[2024-05-19 01:19:20] INFO root fetch - main [MainThread]: End processing [ipyslides]: success
+[2024-05-19 01:19:20] INFO root fetch - processPackages [my-road]: Remove: archive file [/home/abi/fetcher/tmp/my_road-2.0.2.tar.gz]
+[2024-05-19 01:19:20] INFO root fetch - processPackages [my-road]: Remove: archive file [/home/abi/fetcher/tmp/my_road-2.0.3.tar.gz]
+[2024-05-19 01:19:20] INFO root fetch - main [MainThread]: End processing [my-road]: success
+[2024-05-19 01:19:20] INFO root fetch - main [MainThread]: Store serial: [23271801]
