@@ -1059,3 +1059,18 @@
 [2024-05-19 01:54:00] INFO root fetch - main [MainThread]: End processing [gizai]: success
 [2024-05-19 01:54:00] INFO root fetch - main [MainThread]: End processing [gizai]: success
 [2024-05-19 01:54:00] INFO root fetch - main [MainThread]: Store serial: [23271938]
+[2024-05-19 01:56:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271938]
+[2024-05-19 01:56:10] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 01:56:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: HiggsML
+[2024-05-19 01:56:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dare-rf
+[2024-05-19 01:56:10] WARNING root fetch - processPackages [HiggsML]: Skipping, unable to determine old version
+[2024-05-19 01:56:10] INFO root fetch - main [MainThread]: End processing [HiggsML] error
+[2024-05-19 01:56:10] INFO root fetch - processPackages [dare-rf]: New version: [1.1.4] Old Version: [1.1.3]
+[2024-05-19 01:56:10] INFO root fetch - processPackages [dare-rf]: Downloading https://files.pythonhosted.org/packages/5b/f0/f539e9ae2fca38147c90463d37fa774a7c8935c437cb6f147f6da004334d/dare-rf-1.1.3.tar.gz
+[2024-05-19 01:56:11] INFO root fetch - processPackages [dare-rf]: Downloading https://files.pythonhosted.org/packages/ca/15/61f6af29f5f70920bf42d6aa7f6bcb4abeb174b68fbaa53c39a167f6c8fb/dare_rf-1.1.4.tar.gz
+[2024-05-19 01:56:11] INFO root fetch - processPackages [dare-rf]: executing diffoscope
+[2024-05-19 01:56:11] INFO root fetch - processPackages [dare-rf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dare-rf-1.1.3.tar.gz tmp/dare_rf-1.1.4.tar.gz --markdown 20240519/d/dare-rf/1.1.3-1.1.4/README.md --exclude *.pyd
+[2024-05-19 01:56:15] INFO root fetch - processPackages [dare-rf]: Remove: archive file [/home/abi/fetcher/tmp/dare-rf-1.1.3.tar.gz]
+[2024-05-19 01:56:15] INFO root fetch - processPackages [dare-rf]: Remove: archive file [/home/abi/fetcher/tmp/dare_rf-1.1.4.tar.gz]
+[2024-05-19 01:56:15] INFO root fetch - main [MainThread]: End processing [dare-rf]: success
+[2024-05-19 01:56:15] INFO root fetch - main [MainThread]: Store serial: [23271973]
