@@ -1027,3 +1027,35 @@
 [2024-05-19 01:51:50] INFO root fetch - processPackages [conf-mat]: Remove: archive file [/home/abi/fetcher/tmp/conf-mat-1.0.5.tar.gz]
 [2024-05-19 01:51:50] INFO root fetch - main [MainThread]: End processing [conf-mat]: success
 [2024-05-19 01:51:50] INFO root fetch - main [MainThread]: Store serial: [23271920]
+[2024-05-19 01:53:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271920]
+[2024-05-19 01:53:58] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 01:53:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gizai
+[2024-05-19 01:53:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: retrusez
+[2024-05-19 01:53:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gizai
+[2024-05-19 01:53:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gizai
+[2024-05-19 01:53:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: creatorcore-junction
+[2024-05-19 01:53:58] INFO root fetch - processPackages [gizai]: New version: [5.2.1] Old Version: [5.1.1]
+[2024-05-19 01:53:58] INFO root fetch - processPackages [gizai]: New version: [5.2.1] Old Version: [5.1.1]
+[2024-05-19 01:53:58] INFO root fetch - processPackages [gizai]: New version: [5.2.1] Old Version: [5.1.1]
+[2024-05-19 01:53:59] ERROR root fetch - processPackages [creatorcore-junction]: Unable to get metadata: No such project 'creatorcore-junction'
+[2024-05-19 01:53:59] INFO root fetch - main [MainThread]: End processing [creatorcore-junction] error
+[2024-05-19 01:53:59] WARNING root fetch - processPackages [retrusez]: Skipping, unable to determine old version
+[2024-05-19 01:53:59] INFO root fetch - main [MainThread]: End processing [retrusez] error
+[2024-05-19 01:53:59] INFO root fetch - processPackages [gizai]: Downloading https://files.pythonhosted.org/packages/c6/b8/b74710dc488115d3fe7f7b4f465455de35f6202d2221c85d1c72ab82c931/gizai-5.1.1.tar.gz
+[2024-05-19 01:53:59] INFO root fetch - processPackages [gizai]: Downloading https://files.pythonhosted.org/packages/c6/b8/b74710dc488115d3fe7f7b4f465455de35f6202d2221c85d1c72ab82c931/gizai-5.1.1.tar.gz
+[2024-05-19 01:53:59] INFO root fetch - processPackages [gizai]: Downloading https://files.pythonhosted.org/packages/c6/b8/b74710dc488115d3fe7f7b4f465455de35f6202d2221c85d1c72ab82c931/gizai-5.1.1.tar.gz
+[2024-05-19 01:53:59] INFO root fetch - processPackages [gizai]: Downloading https://files.pythonhosted.org/packages/c6/a8/bf69f1b9aa951a0f0690c7477a131fae8f70bd561940adf7dc613a1257df/gizai-5.2.1.tar.gz
+[2024-05-19 01:53:59] INFO root fetch - processPackages [gizai]: Downloading https://files.pythonhosted.org/packages/c6/a8/bf69f1b9aa951a0f0690c7477a131fae8f70bd561940adf7dc613a1257df/gizai-5.2.1.tar.gz
+[2024-05-19 01:53:59] INFO root fetch - processPackages [gizai]: Downloading https://files.pythonhosted.org/packages/c6/a8/bf69f1b9aa951a0f0690c7477a131fae8f70bd561940adf7dc613a1257df/gizai-5.2.1.tar.gz
+[2024-05-19 01:53:59] INFO root fetch - processPackages [gizai]: executing diffoscope
+[2024-05-19 01:53:59] INFO root fetch - processPackages [gizai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gizai-5.1.1.tar.gz tmp/gizai-5.2.1.tar.gz --markdown 20240519/g/gizai/5.1.1-5.2.1/README.md --exclude *.pyd
+[2024-05-19 01:53:59] INFO root fetch - processPackages [gizai]: executing diffoscope
+[2024-05-19 01:53:59] INFO root fetch - processPackages [gizai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gizai-5.1.1.tar.gz tmp/gizai-5.2.1.tar.gz --markdown 20240519/g/gizai/5.1.1-5.2.1/README.md --exclude *.pyd
+[2024-05-19 01:53:59] INFO root fetch - processPackages [gizai]: executing diffoscope
+[2024-05-19 01:53:59] INFO root fetch - processPackages [gizai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gizai-5.1.1.tar.gz tmp/gizai-5.2.1.tar.gz --markdown 20240519/g/gizai/5.1.1-5.2.1/README.md --exclude *.pyd
+[2024-05-19 01:54:00] INFO root fetch - processPackages [gizai]: Remove: archive file [/home/abi/fetcher/tmp/gizai-5.1.1.tar.gz]
+[2024-05-19 01:54:00] INFO root fetch - processPackages [gizai]: Remove: archive file [/home/abi/fetcher/tmp/gizai-5.2.1.tar.gz]
+[2024-05-19 01:54:00] INFO root fetch - main [MainThread]: End processing [gizai]: success
+[2024-05-19 01:54:00] INFO root fetch - main [MainThread]: End processing [gizai]: success
+[2024-05-19 01:54:00] INFO root fetch - main [MainThread]: End processing [gizai]: success
+[2024-05-19 01:54:00] INFO root fetch - main [MainThread]: Store serial: [23271938]
