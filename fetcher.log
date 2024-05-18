@@ -558,3 +558,42 @@
 [2024-05-19 01:01:58] INFO root fetch - processPackages [pyutplugins]: Remove: archive file [/home/abi/fetcher/tmp/pyutplugins-2.4.1.tar.gz]
 [2024-05-19 01:01:58] INFO root fetch - main [MainThread]: End processing [pyutplugins]: success
 [2024-05-19 01:01:58] INFO root fetch - main [MainThread]: Store serial: [23271738]
+[2024-05-19 01:04:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271738]
+[2024-05-19 01:04:07] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 01:04:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: synnax-freighter
+[2024-05-19 01:04:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: synnax
+[2024-05-19 01:04:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: glpic
+[2024-05-19 01:04:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: WeatherPlug
+[2024-05-19 01:04:07] INFO root fetch - processPackages [WeatherPlug]: New version: [1.0.2] Old Version: [1.0]
+[2024-05-19 01:04:07] INFO root fetch - processPackages [WeatherPlug]: Downloading https://files.pythonhosted.org/packages/0b/39/0d77c044777b70169388cfa49b6e42145e7ac1b9a23d3433049639d99806/weatherplug-1.0.tar.gz
+[2024-05-19 01:04:07] INFO root fetch - processPackages [glpic]: New version: [99.0.202405182303] Old Version: [99.0.202405120947]
+[2024-05-19 01:04:07] INFO root fetch - processPackages [synnax-freighter]: New version: [0.6.9] Old Version: [0.6.8]
+[2024-05-19 01:04:07] INFO root fetch - processPackages [synnax]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-19 01:04:07] INFO root fetch - processPackages [glpic]: Downloading https://files.pythonhosted.org/packages/d7/93/bc49d773802acd2fd151af83fcf1c0d1b1cf9bf976623cc078311873563c/glpic-99.0.202405120947.tar.gz
+[2024-05-19 01:04:08] INFO root fetch - processPackages [synnax-freighter]: Downloading https://files.pythonhosted.org/packages/47/1d/b44d0a666ad7dfde7a8635a95d6241671db501c8ed9f7dd576bdf7fe184e/synnax_freighter-0.6.8.tar.gz
+[2024-05-19 01:04:08] INFO root fetch - processPackages [synnax]: Downloading https://files.pythonhosted.org/packages/89/a1/f0d76d0706e47ba3dcdbf0fe8c7b2e90c98bd073d40a3c4c7c1c1025aab8/synnax-0.8.0.tar.gz
+[2024-05-19 01:04:08] INFO root fetch - processPackages [WeatherPlug]: Downloading https://files.pythonhosted.org/packages/03/9e/ae6194d2c00fb5aea7aeeb26fda657a79a3107030568663861fcc9328d6c/weatherplug-1.0.2.tar.gz
+[2024-05-19 01:04:08] INFO root fetch - processPackages [WeatherPlug]: executing diffoscope
+[2024-05-19 01:04:08] INFO root fetch - processPackages [WeatherPlug]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/weatherplug-1.0.tar.gz tmp/weatherplug-1.0.2.tar.gz --markdown 20240519/W/WeatherPlug/1.0-1.0.2/README.md --exclude *.pyd
+[2024-05-19 01:04:08] INFO root fetch - processPackages [glpic]: Downloading https://files.pythonhosted.org/packages/42/67/1fdd844d06996d7be80da35cfce908350dc61eeb40c4574846e4c31b4e80/glpic-99.0.202405182303.tar.gz
+[2024-05-19 01:04:08] INFO root fetch - processPackages [synnax-freighter]: Downloading https://files.pythonhosted.org/packages/97/99/8375d1635ab3481a144b8507f5f4be9c85b138a7ecc2c616808ded325e74/synnax_freighter-0.6.9.tar.gz
+[2024-05-19 01:04:08] INFO root fetch - processPackages [synnax]: Downloading https://files.pythonhosted.org/packages/b3/bc/76e9b03b96c7ab72f4b39e5e03c396b86efd6fb650bedcff8a7118679e9b/synnax-0.9.0.tar.gz
+[2024-05-19 01:04:08] INFO root fetch - processPackages [synnax-freighter]: executing diffoscope
+[2024-05-19 01:04:08] INFO root fetch - processPackages [synnax-freighter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synnax_freighter-0.6.8.tar.gz tmp/synnax_freighter-0.6.9.tar.gz --markdown 20240519/s/synnax-freighter/0.6.8-0.6.9/README.md --exclude *.pyd
+[2024-05-19 01:04:08] INFO root fetch - processPackages [synnax]: executing diffoscope
+[2024-05-19 01:04:08] INFO root fetch - processPackages [synnax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synnax-0.8.0.tar.gz tmp/synnax-0.9.0.tar.gz --markdown 20240519/s/synnax/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-19 01:04:08] INFO root fetch - processPackages [glpic]: executing diffoscope
+[2024-05-19 01:04:08] INFO root fetch - processPackages [glpic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glpic-99.0.202405120947.tar.gz tmp/glpic-99.0.202405182303.tar.gz --markdown 20240519/g/glpic/99.0.202405120947-99.0.202405182303/README.md --exclude *.pyd
+[2024-05-19 01:04:08] INFO root fetch - processPackages [WeatherPlug]: Remove: archive file [/home/abi/fetcher/tmp/weatherplug-1.0.tar.gz]
+[2024-05-19 01:04:08] INFO root fetch - processPackages [WeatherPlug]: Remove: archive file [/home/abi/fetcher/tmp/weatherplug-1.0.2.tar.gz]
+[2024-05-19 01:04:08] INFO root fetch - main [MainThread]: End processing [WeatherPlug]: success
+[2024-05-19 01:04:09] INFO root fetch - processPackages [synnax-freighter]: Remove: archive file [/home/abi/fetcher/tmp/synnax_freighter-0.6.8.tar.gz]
+[2024-05-19 01:04:09] INFO root fetch - processPackages [synnax-freighter]: Remove: archive file [/home/abi/fetcher/tmp/synnax_freighter-0.6.9.tar.gz]
+[2024-05-19 01:04:09] INFO root fetch - main [MainThread]: End processing [synnax-freighter]: success
+[2024-05-19 01:04:09] INFO root fetch - processPackages [glpic]: Remove: archive file [/home/abi/fetcher/tmp/glpic-99.0.202405120947.tar.gz]
+[2024-05-19 01:04:09] INFO root fetch - processPackages [glpic]: Remove: archive file [/home/abi/fetcher/tmp/glpic-99.0.202405182303.tar.gz]
+[2024-05-19 01:04:09] INFO root fetch - main [MainThread]: End processing [glpic]: success
+[2024-05-19 01:04:09] INFO root fetch - processPackages [synnax]: Remove: archive file [/home/abi/fetcher/tmp/synnax-0.8.0.tar.gz]
+[2024-05-19 01:04:09] INFO root fetch - processPackages [synnax]: Remove: archive file [/home/abi/fetcher/tmp/synnax-0.9.0.tar.gz]
+[2024-05-19 01:04:09] INFO root fetch - main [MainThread]: End processing [synnax]: success
+[2024-05-19 01:04:09] INFO root fetch - main [MainThread]: Store serial: [23271750]
