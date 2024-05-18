@@ -994,3 +994,15 @@
 [2024-05-19 01:47:30] INFO root fetch - processPackages [pih]: Remove: archive file [/home/abi/fetcher/tmp/pih-0.36.9.tar.gz]
 [2024-05-19 01:47:30] INFO root fetch - main [MainThread]: End processing [pih]: success
 [2024-05-19 01:47:30] INFO root fetch - main [MainThread]: Store serial: [23271912]
+[2024-05-19 01:49:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271912]
+[2024-05-19 01:49:39] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 01:49:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: expyre-wfl
+[2024-05-19 01:49:39] INFO root fetch - processPackages [expyre-wfl]: New version: [0.1.5b0] Old Version: [0.1.4]
+[2024-05-19 01:49:39] INFO root fetch - processPackages [expyre-wfl]: Downloading https://files.pythonhosted.org/packages/3a/83/7aa2dbb8d70fbfcb99b4fc927e20f7dcd39c74a22bee3c624e311da45929/expyre_wfl-0.1.4.tar.gz
+[2024-05-19 01:49:39] INFO root fetch - processPackages [expyre-wfl]: Downloading https://files.pythonhosted.org/packages/43/aa/e1d46b6e53da88e945a8465a3d0c37da52e46333912a981c7fc2f0a75497/expyre_wfl-0.1.5b0.tar.gz
+[2024-05-19 01:49:40] INFO root fetch - processPackages [expyre-wfl]: executing diffoscope
+[2024-05-19 01:49:40] INFO root fetch - processPackages [expyre-wfl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/expyre_wfl-0.1.4.tar.gz tmp/expyre_wfl-0.1.5b0.tar.gz --markdown 20240519/e/expyre-wfl/0.1.4-0.1.5b0/README.md --exclude *.pyd
+[2024-05-19 01:49:40] INFO root fetch - processPackages [expyre-wfl]: Remove: archive file [/home/abi/fetcher/tmp/expyre_wfl-0.1.4.tar.gz]
+[2024-05-19 01:49:40] INFO root fetch - processPackages [expyre-wfl]: Remove: archive file [/home/abi/fetcher/tmp/expyre_wfl-0.1.5b0.tar.gz]
+[2024-05-19 01:49:40] INFO root fetch - main [MainThread]: End processing [expyre-wfl]: success
+[2024-05-19 01:49:40] INFO root fetch - main [MainThread]: Store serial: [23271915]
