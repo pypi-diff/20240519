@@ -297,3 +297,27 @@
 [2024-05-19 00:40:17] INFO root fetch - processPackages [twitch-archiver]: Remove: archive file [/home/abi/fetcher/tmp/twitch_archiver-4.0.8.tar.gz]
 [2024-05-19 00:40:17] INFO root fetch - main [MainThread]: End processing [twitch-archiver]: success
 [2024-05-19 00:40:17] INFO root fetch - main [MainThread]: Store serial: [23271639]
+[2024-05-19 00:42:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271639]
+[2024-05-19 00:42:26] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 00:42:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vital-ai-haley-kg
+[2024-05-19 00:42:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: intendednessz
+[2024-05-19 00:42:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: audio-upscaler
+[2024-05-19 00:42:26] WARNING root fetch - processPackages [intendednessz]: Skipping, unable to determine old version
+[2024-05-19 00:42:26] INFO root fetch - processPackages [audio-upscaler]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-19 00:42:26] INFO root fetch - main [MainThread]: End processing [intendednessz] error
+[2024-05-19 00:42:26] INFO root fetch - processPackages [vital-ai-haley-kg]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-19 00:42:26] INFO root fetch - processPackages [audio-upscaler]: Downloading https://files.pythonhosted.org/packages/01/d8/44e061a03d66487dd226c5d260767a0503d1c65ecf2102615948b27b59ce/audio_upscaler-0.1.3.tar.gz
+[2024-05-19 00:42:26] INFO root fetch - processPackages [vital-ai-haley-kg]: Downloading https://files.pythonhosted.org/packages/9d/5b/8e87c4b112927a3251b44d8d8495048ebcdce48c622f49b6179685feff9e/vital-ai-haley-kg-0.1.5.tar.gz
+[2024-05-19 00:42:26] INFO root fetch - processPackages [vital-ai-haley-kg]: Downloading https://files.pythonhosted.org/packages/6e/5d/9101f5a19c826133423d3473151ea4fad95f8d26fa3d5f96d950515324df/vital-ai-haley-kg-0.1.6.tar.gz
+[2024-05-19 00:42:26] INFO root fetch - processPackages [vital-ai-haley-kg]: executing diffoscope
+[2024-05-19 00:42:26] INFO root fetch - processPackages [vital-ai-haley-kg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vital-ai-haley-kg-0.1.5.tar.gz tmp/vital-ai-haley-kg-0.1.6.tar.gz --markdown 20240519/v/vital-ai-haley-kg/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-19 00:42:27] INFO root fetch - processPackages [audio-upscaler]: Downloading https://files.pythonhosted.org/packages/2c/f2/8a56de0628530aedea7bf39b655141c3c7e8ce2c804a1306e6908814069d/audio_upscaler-0.1.4.tar.gz
+[2024-05-19 00:42:27] INFO root fetch - processPackages [audio-upscaler]: executing diffoscope
+[2024-05-19 00:42:27] INFO root fetch - processPackages [audio-upscaler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audio_upscaler-0.1.3.tar.gz tmp/audio_upscaler-0.1.4.tar.gz --markdown 20240519/a/audio-upscaler/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-19 00:42:28] INFO root fetch - processPackages [audio-upscaler]: Remove: archive file [/home/abi/fetcher/tmp/audio_upscaler-0.1.3.tar.gz]
+[2024-05-19 00:42:28] INFO root fetch - processPackages [audio-upscaler]: Remove: archive file [/home/abi/fetcher/tmp/audio_upscaler-0.1.4.tar.gz]
+[2024-05-19 00:42:28] INFO root fetch - main [MainThread]: End processing [audio-upscaler]: success
+[2024-05-19 00:42:28] INFO root fetch - processPackages [vital-ai-haley-kg]: Remove: archive file [/home/abi/fetcher/tmp/vital-ai-haley-kg-0.1.5.tar.gz]
+[2024-05-19 00:42:28] INFO root fetch - processPackages [vital-ai-haley-kg]: Remove: archive file [/home/abi/fetcher/tmp/vital-ai-haley-kg-0.1.6.tar.gz]
+[2024-05-19 00:42:28] INFO root fetch - main [MainThread]: End processing [vital-ai-haley-kg]: success
+[2024-05-19 00:42:28] INFO root fetch - main [MainThread]: Store serial: [23271648]
