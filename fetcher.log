@@ -67,3 +67,15 @@
 [2024-05-19 00:07:51] INFO root fetch - processPackages [avtdl]: Remove: archive file [/home/abi/fetcher/tmp/avtdl-0.9.9.tar.gz]
 [2024-05-19 00:07:51] INFO root fetch - main [MainThread]: End processing [avtdl]: success
 [2024-05-19 00:07:51] INFO root fetch - main [MainThread]: Store serial: [23271545]
+[2024-05-19 00:09:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271545]
+[2024-05-19 00:10:00] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 00:10:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: BigEDA
+[2024-05-19 00:10:00] INFO root fetch - processPackages [BigEDA]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 00:10:00] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/2f/fe/5c10bf9dfaa50e4e1234e81e022638b3ef20c821e939dae4cdc3da332e46/bigeda-0.0.8.tar.gz
+[2024-05-19 00:10:00] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/b1/5d/ec41b2b9af7223a14c0e82d4f64cbeb0d0339a0d8bca37dbb041af6ef14d/bigeda-0.0.9.tar.gz
+[2024-05-19 00:10:00] INFO root fetch - processPackages [BigEDA]: executing diffoscope
+[2024-05-19 00:10:00] INFO root fetch - processPackages [BigEDA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigeda-0.0.8.tar.gz tmp/bigeda-0.0.9.tar.gz --markdown 20240519/B/BigEDA/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 00:10:01] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.8.tar.gz]
+[2024-05-19 00:10:01] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.9.tar.gz]
+[2024-05-19 00:10:01] INFO root fetch - main [MainThread]: End processing [BigEDA]: success
+[2024-05-19 00:10:01] INFO root fetch - main [MainThread]: Store serial: [23271549]
