@@ -937,3 +937,11 @@
 [2024-05-19 01:43:09] INFO root fetch - processPackages [dash-pydantic-form]: Remove: archive file [/home/abi/fetcher/tmp/dash_pydantic_form-0.1.4.tar.gz]
 [2024-05-19 01:43:09] INFO root fetch - main [MainThread]: End processing [dash-pydantic-form]: success
 [2024-05-19 01:43:09] INFO root fetch - main [MainThread]: Store serial: [23271885]
+[2024-05-19 01:45:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271885]
+[2024-05-19 01:45:19] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 01:45:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: my-table-db
+[2024-05-19 01:45:19] INFO root fetch - processPackages [my-table-db]: New version: [9.9.9] Old Version: [2.0.1]
+[2024-05-19 01:45:19] INFO root fetch - processPackages [my-table-db]: Downloading https://files.pythonhosted.org/packages/9b/0a/a72c301e72f6fb4c92f9d8013ed1bf69ba02b6abce096f7a4b9558e636bb/my_table_db-2.0.1.tar.gz
+[2024-05-19 01:45:19] ERROR root fetch - processPackages [my-table-db]: Unable to fetch info: No such project/version 'my-table-db' 9.9.9
+[2024-05-19 01:45:19] INFO root fetch - main [MainThread]: End processing [my-table-db] error
+[2024-05-19 01:45:19] INFO root fetch - main [MainThread]: Store serial: [23271889]
