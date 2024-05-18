@@ -321,3 +321,42 @@
 [2024-05-19 00:42:28] INFO root fetch - processPackages [vital-ai-haley-kg]: Remove: archive file [/home/abi/fetcher/tmp/vital-ai-haley-kg-0.1.6.tar.gz]
 [2024-05-19 00:42:28] INFO root fetch - main [MainThread]: End processing [vital-ai-haley-kg]: success
 [2024-05-19 00:42:28] INFO root fetch - main [MainThread]: Store serial: [23271648]
+[2024-05-19 00:44:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271648]
+[2024-05-19 00:44:37] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 00:44:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sapiopycommons
+[2024-05-19 00:44:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: abcli
+[2024-05-19 00:44:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: coiled
+[2024-05-19 00:44:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: my-road-c
+[2024-05-19 00:44:37] INFO root fetch - processPackages [abcli]: New version: [8.177.1] Old Version: [8.176.1]
+[2024-05-19 00:44:37] INFO root fetch - processPackages [my-road-c]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-19 00:44:37] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/b6/4c/17bf8203d68b11ec753f3d8bbb649fd7b60a6f359cd13bf17d2a48c7f0b3/abcli-8.176.1.tar.gz
+[2024-05-19 00:44:37] INFO root fetch - processPackages [sapiopycommons]: New version: [32.0.0.24.5] Old Version: [31.3.0.23.12.3]
+[2024-05-19 00:44:37] INFO root fetch - processPackages [coiled]: New version: [1.9.1.dev9] Old Version: [1.9.1.dev8]
+[2024-05-19 00:44:37] INFO root fetch - processPackages [my-road-c]: Downloading https://files.pythonhosted.org/packages/58/f8/c657efcdbb324d0f321f12dd9a9ff406e51ccb955af2d46ccedcebb45443/my_road_c-1.0.0.tar.gz
+[2024-05-19 00:44:37] INFO root fetch - processPackages [sapiopycommons]: Downloading https://files.pythonhosted.org/packages/65/85/c26462638385d6921c9e6e2dd91d7bb1d0ce38c3a35ccf5becf78fea900d/sapiopycommons-31.3.0.23.12.3.tar.gz
+[2024-05-19 00:44:37] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/9e/0b/0dfa5fd0c4f87afbe90f0c4bd60ff3388f36abeb983837bb07c6c35f3a89/abcli-8.177.1.tar.gz
+[2024-05-19 00:44:37] INFO root fetch - processPackages [coiled]: Downloading https://files.pythonhosted.org/packages/8b/97/14337c08d9fc8bec2c9c7a5961519e141cf75d7dffa582bb987eecacefa4/coiled-1.9.1.dev8.tar.gz
+[2024-05-19 00:44:37] INFO root fetch - processPackages [abcli]: executing diffoscope
+[2024-05-19 00:44:37] INFO root fetch - processPackages [abcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abcli-8.176.1.tar.gz tmp/abcli-8.177.1.tar.gz --markdown 20240519/a/abcli/8.176.1-8.177.1/README.md --exclude *.pyd
+[2024-05-19 00:44:37] INFO root fetch - processPackages [my-road-c]: Downloading https://files.pythonhosted.org/packages/8c/2c/2c238e288ecb88e3d40d258dc0af22c7772d762c3a4b2c83ca6be410e954/my_road_c-1.0.1.tar.gz
+[2024-05-19 00:44:37] INFO root fetch - processPackages [sapiopycommons]: Downloading https://files.pythonhosted.org/packages/0c/8b/0170bd70e4900ced2aa4175842870794a40878c22e225984082dc82568b7/sapiopycommons-32.0.0.24.5.tar.gz
+[2024-05-19 00:44:38] INFO root fetch - processPackages [my-road-c]: executing diffoscope
+[2024-05-19 00:44:38] INFO root fetch - processPackages [my-road-c]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/my_road_c-1.0.0.tar.gz tmp/my_road_c-1.0.1.tar.gz --markdown 20240519/m/my-road-c/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-19 00:44:38] INFO root fetch - processPackages [sapiopycommons]: executing diffoscope
+[2024-05-19 00:44:38] INFO root fetch - processPackages [sapiopycommons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sapiopycommons-31.3.0.23.12.3.tar.gz tmp/sapiopycommons-32.0.0.24.5.tar.gz --markdown 20240519/s/sapiopycommons/31.3.0.23.12.3-32.0.0.24.5/README.md --exclude *.pyd
+[2024-05-19 00:44:38] INFO root fetch - processPackages [coiled]: Downloading https://files.pythonhosted.org/packages/58/16/aec6b9100728dfee740792b7dd55fc6e56240fdadb5ef317a1d120e019d7/coiled-1.9.1.dev9.tar.gz
+[2024-05-19 00:44:38] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2024-05-19 00:44:38] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-1.9.1.dev8.tar.gz tmp/coiled-1.9.1.dev9.tar.gz --markdown 20240519/c/coiled/1.9.1.dev8-1.9.1.dev9/README.md --exclude *.pyd
+[2024-05-19 00:44:38] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-8.176.1.tar.gz]
+[2024-05-19 00:44:38] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-8.177.1.tar.gz]
+[2024-05-19 00:44:38] INFO root fetch - main [MainThread]: End processing [abcli]: success
+[2024-05-19 00:44:38] INFO root fetch - processPackages [my-road-c]: Remove: archive file [/home/abi/fetcher/tmp/my_road_c-1.0.0.tar.gz]
+[2024-05-19 00:44:38] INFO root fetch - processPackages [my-road-c]: Remove: archive file [/home/abi/fetcher/tmp/my_road_c-1.0.1.tar.gz]
+[2024-05-19 00:44:38] INFO root fetch - main [MainThread]: End processing [my-road-c]: success
+[2024-05-19 00:44:38] INFO root fetch - processPackages [sapiopycommons]: Remove: archive file [/home/abi/fetcher/tmp/sapiopycommons-31.3.0.23.12.3.tar.gz]
+[2024-05-19 00:44:38] INFO root fetch - processPackages [sapiopycommons]: Remove: archive file [/home/abi/fetcher/tmp/sapiopycommons-32.0.0.24.5.tar.gz]
+[2024-05-19 00:44:38] INFO root fetch - main [MainThread]: End processing [sapiopycommons]: success
+[2024-05-19 00:44:38] INFO root fetch - processPackages [coiled]: Remove: archive file [/home/abi/fetcher/tmp/coiled-1.9.1.dev8.tar.gz]
+[2024-05-19 00:44:38] INFO root fetch - processPackages [coiled]: Remove: archive file [/home/abi/fetcher/tmp/coiled-1.9.1.dev9.tar.gz]
+[2024-05-19 00:44:38] INFO root fetch - main [MainThread]: End processing [coiled]: success
+[2024-05-19 00:44:38] INFO root fetch - main [MainThread]: Store serial: [23271660]
