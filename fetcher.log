@@ -162,3 +162,15 @@
 [2024-05-19 00:22:56] INFO root fetch - processPackages [greatbrowser]: Remove: archive file [/home/abi/fetcher/tmp/greatbrowser-1.0.2.tar.gz]
 [2024-05-19 00:22:56] INFO root fetch - main [MainThread]: End processing [greatbrowser]: success
 [2024-05-19 00:22:56] INFO root fetch - main [MainThread]: Store serial: [23271580]
+[2024-05-19 00:24:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271580]
+[2024-05-19 00:25:04] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 00:25:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: uwebserver
+[2024-05-19 00:25:05] INFO root fetch - processPackages [uwebserver]: New version: [0.2.0] Old Version: [0.1.3]
+[2024-05-19 00:25:05] INFO root fetch - processPackages [uwebserver]: Downloading https://files.pythonhosted.org/packages/72/9d/fc41012c35b6d18a64e4c5eff891d98ce1d7fbbd489c1c8363fba0ba0e5a/uwebserver-0.1.3.tar.gz
+[2024-05-19 00:25:05] INFO root fetch - processPackages [uwebserver]: Downloading https://files.pythonhosted.org/packages/65/5e/d5f9ba8a2da0ad2ced5247b47da2a007ddfafcd06dc583f54ecd4e04dc15/uwebserver-0.2.0.tar.gz
+[2024-05-19 00:25:05] INFO root fetch - processPackages [uwebserver]: executing diffoscope
+[2024-05-19 00:25:05] INFO root fetch - processPackages [uwebserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uwebserver-0.1.3.tar.gz tmp/uwebserver-0.2.0.tar.gz --markdown 20240519/u/uwebserver/0.1.3-0.2.0/README.md --exclude *.pyd
+[2024-05-19 00:25:06] INFO root fetch - processPackages [uwebserver]: Remove: archive file [/home/abi/fetcher/tmp/uwebserver-0.1.3.tar.gz]
+[2024-05-19 00:25:06] INFO root fetch - processPackages [uwebserver]: Remove: archive file [/home/abi/fetcher/tmp/uwebserver-0.2.0.tar.gz]
+[2024-05-19 00:25:06] INFO root fetch - main [MainThread]: End processing [uwebserver]: success
+[2024-05-19 00:25:06] INFO root fetch - main [MainThread]: Store serial: [23271583]
