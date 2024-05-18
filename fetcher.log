@@ -174,3 +174,30 @@
 [2024-05-19 00:25:06] INFO root fetch - processPackages [uwebserver]: Remove: archive file [/home/abi/fetcher/tmp/uwebserver-0.2.0.tar.gz]
 [2024-05-19 00:25:06] INFO root fetch - main [MainThread]: End processing [uwebserver]: success
 [2024-05-19 00:25:06] INFO root fetch - main [MainThread]: Store serial: [23271583]
+[2024-05-19 00:27:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271583]
+[2024-05-19 00:27:14] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 00:27:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: agentdesk
+[2024-05-19 00:27:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: epigaeousz
+[2024-05-19 00:27:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rdfvr
+[2024-05-19 00:27:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mnistvit
+[2024-05-19 00:27:14] INFO root fetch - processPackages [agentdesk]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-19 00:27:14] INFO root fetch - processPackages [agentdesk]: Downloading https://files.pythonhosted.org/packages/cf/ca/cd5dfbf2d07fb86e168858977c8668fdff291aaf19cf93c8ae884b0959b1/agentdesk-0.2.8.tar.gz
+[2024-05-19 00:27:14] WARNING root fetch - processPackages [mnistvit]: Skipping, unable to determine old version
+[2024-05-19 00:27:14] INFO root fetch - main [MainThread]: End processing [mnistvit] error
+[2024-05-19 00:27:14] INFO root fetch - processPackages [rdfvr]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-05-19 00:27:14] WARNING root fetch - processPackages [epigaeousz]: Skipping, unable to determine old version
+[2024-05-19 00:27:14] INFO root fetch - main [MainThread]: End processing [epigaeousz] error
+[2024-05-19 00:27:14] INFO root fetch - processPackages [rdfvr]: Downloading https://files.pythonhosted.org/packages/8f/a4/8851ea677f5a8d8d328fea99f5382bd91ae4736c151ddd50e8e6ab92489b/rdfvr-0.3.2.tar.gz
+[2024-05-19 00:27:15] INFO root fetch - processPackages [agentdesk]: Downloading https://files.pythonhosted.org/packages/24/26/ad035fd9f7aedb4d5a78e0198ca36d0599d9ed6d9f5cfeeb84e922907596/agentdesk-0.2.9.tar.gz
+[2024-05-19 00:27:15] INFO root fetch - processPackages [agentdesk]: executing diffoscope
+[2024-05-19 00:27:15] INFO root fetch - processPackages [agentdesk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agentdesk-0.2.8.tar.gz tmp/agentdesk-0.2.9.tar.gz --markdown 20240519/a/agentdesk/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-19 00:27:15] INFO root fetch - processPackages [rdfvr]: Downloading https://files.pythonhosted.org/packages/35/9b/4d518f62215bdb1f443637550208955832d73b30577e598af7ddc4d9030b/rdfvr-0.3.3.tar.gz
+[2024-05-19 00:27:15] INFO root fetch - processPackages [rdfvr]: executing diffoscope
+[2024-05-19 00:27:15] INFO root fetch - processPackages [rdfvr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rdfvr-0.3.2.tar.gz tmp/rdfvr-0.3.3.tar.gz --markdown 20240519/r/rdfvr/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-05-19 00:27:15] INFO root fetch - processPackages [agentdesk]: Remove: archive file [/home/abi/fetcher/tmp/agentdesk-0.2.8.tar.gz]
+[2024-05-19 00:27:15] INFO root fetch - processPackages [agentdesk]: Remove: archive file [/home/abi/fetcher/tmp/agentdesk-0.2.9.tar.gz]
+[2024-05-19 00:27:15] INFO root fetch - main [MainThread]: End processing [agentdesk]: success
+[2024-05-19 00:27:15] INFO root fetch - processPackages [rdfvr]: Remove: archive file [/home/abi/fetcher/tmp/rdfvr-0.3.2.tar.gz]
+[2024-05-19 00:27:15] INFO root fetch - processPackages [rdfvr]: Remove: archive file [/home/abi/fetcher/tmp/rdfvr-0.3.3.tar.gz]
+[2024-05-19 00:27:15] INFO root fetch - main [MainThread]: End processing [rdfvr]: success
+[2024-05-19 00:27:15] INFO root fetch - main [MainThread]: Store serial: [23271598]
