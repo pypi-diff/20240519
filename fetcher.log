@@ -636,3 +636,9 @@
 [2024-05-19 01:06:19] INFO root fetch - processPackages [juntagrico-assignment-request]: Remove: archive file [/home/abi/fetcher/tmp/juntagrico_assignment_request-1.6.1.tar.gz]
 [2024-05-19 01:06:19] INFO root fetch - main [MainThread]: End processing [juntagrico-assignment-request]: success
 [2024-05-19 01:06:19] INFO root fetch - main [MainThread]: Store serial: [23271761]
+[2024-05-19 01:08:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271761]
+[2024-05-19 01:08:29] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 01:08:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gullingz
+[2024-05-19 01:08:29] WARNING root fetch - processPackages [gullingz]: Skipping, unable to determine old version
+[2024-05-19 01:08:29] INFO root fetch - main [MainThread]: End processing [gullingz] error
+[2024-05-19 01:08:29] INFO root fetch - main [MainThread]: Store serial: [23271765]
