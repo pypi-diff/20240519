@@ -507,3 +507,54 @@
 [2024-05-19 00:59:48] INFO root fetch - processPackages [pyluba]: Remove: archive file [/home/abi/fetcher/tmp/pyluba-0.0.6.tar.gz]
 [2024-05-19 00:59:48] INFO root fetch - main [MainThread]: End processing [pyluba]: success
 [2024-05-19 00:59:48] INFO root fetch - main [MainThread]: Store serial: [23271720]
+[2024-05-19 01:01:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271720]
+[2024-05-19 01:01:56] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-19 01:01:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: my-table-db
+[2024-05-19 01:01:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aurum-hikari
+[2024-05-19 01:01:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyutplugins
+[2024-05-19 01:01:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: briefcasez
+[2024-05-19 01:01:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: alamos
+[2024-05-19 01:01:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mo-files
+[2024-05-19 01:01:56] INFO root fetch - processPackages [my-table-db]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-19 01:01:57] INFO root fetch - processPackages [my-table-db]: Downloading https://files.pythonhosted.org/packages/56/86/19d4377bed49de97e6768e762e5905cd4ca439248d75ccbebb5e1b6c5bea/my_table_db-1.0.3.tar.gz
+[2024-05-19 01:01:57] INFO root fetch - processPackages [pyutplugins]: New version: [2.4.1] Old Version: [2.4.0]
+[2024-05-19 01:01:57] WARNING root fetch - processPackages [briefcasez]: Skipping, unable to determine old version
+[2024-05-19 01:01:57] INFO root fetch - main [MainThread]: End processing [briefcasez] error
+[2024-05-19 01:01:57] INFO root fetch - processPackages [alamos]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-19 01:01:57] INFO root fetch - processPackages [mo-files]: New version: [6.635.24139] Old Version: [6.624.24125]
+[2024-05-19 01:01:57] INFO root fetch - processPackages [aurum-hikari]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-19 01:01:57] INFO root fetch - processPackages [aurum-hikari]: Downloading https://files.pythonhosted.org/packages/f7/da/3c0a6e734053a80dd4f6920ab56df60429f2e81dfda02ab2ce49ed65a1dc/aurum_hikari-0.1.3.tar.gz
+[2024-05-19 01:01:57] INFO root fetch - processPackages [pyutplugins]: Downloading https://files.pythonhosted.org/packages/cf/1a/512666f936addc2cfd901f4ff0fda84efbae66f33cf11e030e19b9359fbd/pyutplugins-2.4.0.tar.gz
+[2024-05-19 01:01:57] INFO root fetch - processPackages [alamos]: Downloading https://files.pythonhosted.org/packages/c5/2b/b12c4308c7fb396e018ffbe6ec0f046170906ae98b188985b537619e0f55/alamos-0.3.8.tar.gz
+[2024-05-19 01:01:57] INFO root fetch - processPackages [mo-files]: Downloading https://files.pythonhosted.org/packages/5c/61/acbd027819e61ec3686446b4078cf2a10aa2d7e529347d29744ebc34c2e7/mo_files-6.624.24125.tar.gz
+[2024-05-19 01:01:57] INFO root fetch - processPackages [my-table-db]: Downloading https://files.pythonhosted.org/packages/bc/01/c340223707b0b5aea36e293cfa718e93b90fd8199ab824056d423247a135/my_table_db-1.0.4.tar.gz
+[2024-05-19 01:01:57] INFO root fetch - processPackages [my-table-db]: executing diffoscope
+[2024-05-19 01:01:57] INFO root fetch - processPackages [my-table-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/my_table_db-1.0.3.tar.gz tmp/my_table_db-1.0.4.tar.gz --markdown 20240519/m/my-table-db/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-19 01:01:57] INFO root fetch - processPackages [aurum-hikari]: Downloading https://files.pythonhosted.org/packages/11/94/ce4ec06577884ccf414d69c280b2a82208592c96cf8243fdb7949d6fdc74/aurum_hikari-0.1.4.tar.gz
+[2024-05-19 01:01:57] INFO root fetch - processPackages [alamos]: Downloading https://files.pythonhosted.org/packages/c1/08/cf40db715e810dc50be82dd822b41aefe7a4903f73ac57533c85bc63cf9d/alamos-0.3.9.tar.gz
+[2024-05-19 01:01:57] INFO root fetch - processPackages [pyutplugins]: Downloading https://files.pythonhosted.org/packages/2c/d0/75471423185a3a4162221699d478d56ec1a921023dd42638487e5eb43ffc/pyutplugins-2.4.1.tar.gz
+[2024-05-19 01:01:57] INFO root fetch - processPackages [mo-files]: Downloading https://files.pythonhosted.org/packages/c1/b1/365dee076a6d4d6ddc4dc4680066fc270f9eb5a186d0ab297fcf628b90b6/mo_files-6.635.24139.tar.gz
+[2024-05-19 01:01:57] INFO root fetch - processPackages [aurum-hikari]: executing diffoscope
+[2024-05-19 01:01:57] INFO root fetch - processPackages [aurum-hikari]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aurum_hikari-0.1.3.tar.gz tmp/aurum_hikari-0.1.4.tar.gz --markdown 20240519/a/aurum-hikari/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-19 01:01:57] INFO root fetch - processPackages [alamos]: executing diffoscope
+[2024-05-19 01:01:57] INFO root fetch - processPackages [alamos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alamos-0.3.8.tar.gz tmp/alamos-0.3.9.tar.gz --markdown 20240519/a/alamos/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-19 01:01:58] INFO root fetch - processPackages [pyutplugins]: executing diffoscope
+[2024-05-19 01:01:58] INFO root fetch - processPackages [pyutplugins]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyutplugins-2.4.0.tar.gz tmp/pyutplugins-2.4.1.tar.gz --markdown 20240519/p/pyutplugins/2.4.0-2.4.1/README.md --exclude *.pyd
+[2024-05-19 01:01:58] INFO root fetch - processPackages [mo-files]: executing diffoscope
+[2024-05-19 01:01:58] INFO root fetch - processPackages [mo-files]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_files-6.624.24125.tar.gz tmp/mo_files-6.635.24139.tar.gz --markdown 20240519/m/mo-files/6.624.24125-6.635.24139/README.md --exclude *.pyd
+[2024-05-19 01:01:58] INFO root fetch - processPackages [my-table-db]: Remove: archive file [/home/abi/fetcher/tmp/my_table_db-1.0.3.tar.gz]
+[2024-05-19 01:01:58] INFO root fetch - processPackages [my-table-db]: Remove: archive file [/home/abi/fetcher/tmp/my_table_db-1.0.4.tar.gz]
+[2024-05-19 01:01:58] INFO root fetch - main [MainThread]: End processing [my-table-db]: success
+[2024-05-19 01:01:58] INFO root fetch - processPackages [alamos]: Remove: archive file [/home/abi/fetcher/tmp/alamos-0.3.8.tar.gz]
+[2024-05-19 01:01:58] INFO root fetch - processPackages [alamos]: Remove: archive file [/home/abi/fetcher/tmp/alamos-0.3.9.tar.gz]
+[2024-05-19 01:01:58] INFO root fetch - main [MainThread]: End processing [alamos]: success
+[2024-05-19 01:01:58] INFO root fetch - processPackages [aurum-hikari]: Remove: archive file [/home/abi/fetcher/tmp/aurum_hikari-0.1.3.tar.gz]
+[2024-05-19 01:01:58] INFO root fetch - processPackages [aurum-hikari]: Remove: archive file [/home/abi/fetcher/tmp/aurum_hikari-0.1.4.tar.gz]
+[2024-05-19 01:01:58] INFO root fetch - main [MainThread]: End processing [aurum-hikari]: success
+[2024-05-19 01:01:58] INFO root fetch - processPackages [mo-files]: Remove: archive file [/home/abi/fetcher/tmp/mo_files-6.624.24125.tar.gz]
+[2024-05-19 01:01:58] INFO root fetch - processPackages [mo-files]: Remove: archive file [/home/abi/fetcher/tmp/mo_files-6.635.24139.tar.gz]
+[2024-05-19 01:01:58] INFO root fetch - main [MainThread]: End processing [mo-files]: success
+[2024-05-19 01:01:58] INFO root fetch - processPackages [pyutplugins]: Remove: archive file [/home/abi/fetcher/tmp/pyutplugins-2.4.0.tar.gz]
+[2024-05-19 01:01:58] INFO root fetch - processPackages [pyutplugins]: Remove: archive file [/home/abi/fetcher/tmp/pyutplugins-2.4.1.tar.gz]
+[2024-05-19 01:01:58] INFO root fetch - main [MainThread]: End processing [pyutplugins]: success
+[2024-05-19 01:01:58] INFO root fetch - main [MainThread]: Store serial: [23271738]
