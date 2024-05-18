@@ -13,3 +13,18 @@
 [2024-05-19 00:01:20] INFO root fetch - processPackages [ubo-gui]: Remove: archive file [/home/abi/fetcher/tmp/ubo_gui-0.9.9.tar.gz]
 [2024-05-19 00:01:20] INFO root fetch - main [MainThread]: End processing [ubo-gui]: success
 [2024-05-19 00:01:20] INFO root fetch - main [MainThread]: Store serial: [23271520]
+[2024-05-19 00:03:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271520]
+[2024-05-19 00:03:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 00:03:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sms-message-inforu-local
+[2024-05-19 00:03:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: paramiko-mock
+[2024-05-19 00:03:29] INFO root fetch - processPackages [sms-message-inforu-local]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-19 00:03:29] INFO root fetch - processPackages [sms-message-inforu-local]: Downloading https://files.pythonhosted.org/packages/5e/b9/5c39850f549ba52dcd543a85c9c891f18f732652fb5af28b2b623a6bf09c/sms-message-inforu-local-0.0.2.tar.gz
+[2024-05-19 00:03:29] ERROR root fetch - processPackages [paramiko-mock]: Unable to get metadata: No such project 'paramiko-mock'
+[2024-05-19 00:03:29] INFO root fetch - main [MainThread]: End processing [paramiko-mock] error
+[2024-05-19 00:03:29] INFO root fetch - processPackages [sms-message-inforu-local]: Downloading https://files.pythonhosted.org/packages/14/a4/0157fee2ed9daefe9b5b0fc90fc5e61d550d25a15e3d1b9274773e06af3d/sms_message_inforu_local-0.0.3.tar.gz
+[2024-05-19 00:03:29] INFO root fetch - processPackages [sms-message-inforu-local]: executing diffoscope
+[2024-05-19 00:03:29] INFO root fetch - processPackages [sms-message-inforu-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sms-message-inforu-local-0.0.2.tar.gz tmp/sms_message_inforu_local-0.0.3.tar.gz --markdown 20240519/s/sms-message-inforu-local/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-19 00:03:30] INFO root fetch - processPackages [sms-message-inforu-local]: Remove: archive file [/home/abi/fetcher/tmp/sms-message-inforu-local-0.0.2.tar.gz]
+[2024-05-19 00:03:30] INFO root fetch - processPackages [sms-message-inforu-local]: Remove: archive file [/home/abi/fetcher/tmp/sms_message_inforu_local-0.0.3.tar.gz]
+[2024-05-19 00:03:30] INFO root fetch - main [MainThread]: End processing [sms-message-inforu-local]: success
+[2024-05-19 00:03:30] INFO root fetch - main [MainThread]: Store serial: [23271527]
