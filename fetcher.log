@@ -52,3 +52,18 @@
 [2024-05-19 00:05:40] INFO root fetch - processPackages [mychamp]: Remove: archive file [/home/abi/fetcher/tmp/mychamp-0.0.2.tar.gz]
 [2024-05-19 00:05:40] INFO root fetch - main [MainThread]: End processing [mychamp]: success
 [2024-05-19 00:05:40] INFO root fetch - main [MainThread]: Store serial: [23271536]
+[2024-05-19 00:07:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271536]
+[2024-05-19 00:07:49] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 00:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: geowebi
+[2024-05-19 00:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: avtdl
+[2024-05-19 00:07:50] WARNING root fetch - processPackages [geowebi]: Skipping, unable to determine old version
+[2024-05-19 00:07:50] INFO root fetch - main [MainThread]: End processing [geowebi] error
+[2024-05-19 00:07:50] INFO root fetch - processPackages [avtdl]: New version: [0.9.9] Old Version: [0.9.18]
+[2024-05-19 00:07:50] INFO root fetch - processPackages [avtdl]: Downloading https://files.pythonhosted.org/packages/d0/4c/aea32f730eff463507efec6554a372fbd3a602b93a21d9b194015db9ab7a/avtdl-0.9.18.tar.gz
+[2024-05-19 00:07:50] INFO root fetch - processPackages [avtdl]: Downloading https://files.pythonhosted.org/packages/57/f2/1b50ba48422edde9ac3e722c752a043bd064d5f016c1630c297bb7c31684/avtdl-0.9.9.tar.gz
+[2024-05-19 00:07:50] INFO root fetch - processPackages [avtdl]: executing diffoscope
+[2024-05-19 00:07:50] INFO root fetch - processPackages [avtdl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/avtdl-0.9.18.tar.gz tmp/avtdl-0.9.9.tar.gz --markdown 20240519/a/avtdl/0.9.18-0.9.9/README.md --exclude *.pyd
+[2024-05-19 00:07:51] INFO root fetch - processPackages [avtdl]: Remove: archive file [/home/abi/fetcher/tmp/avtdl-0.9.18.tar.gz]
+[2024-05-19 00:07:51] INFO root fetch - processPackages [avtdl]: Remove: archive file [/home/abi/fetcher/tmp/avtdl-0.9.9.tar.gz]
+[2024-05-19 00:07:51] INFO root fetch - main [MainThread]: End processing [avtdl]: success
+[2024-05-19 00:07:51] INFO root fetch - main [MainThread]: Store serial: [23271545]
