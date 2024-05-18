@@ -393,3 +393,51 @@
 [2024-05-19 00:51:07] WARNING root fetch - processPackages [my-road]: Skipping, unable to determine old version
 [2024-05-19 00:51:07] INFO root fetch - main [MainThread]: End processing [my-road] error
 [2024-05-19 00:51:07] INFO root fetch - main [MainThread]: Store serial: [23271676]
+[2024-05-19 00:53:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271676]
+[2024-05-19 00:53:16] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-19 00:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: daresz
+[2024-05-19 00:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: folder-indexer
+[2024-05-19 00:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cocoon-data
+[2024-05-19 00:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: py-alpaca-daily-losers
+[2024-05-19 00:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sqlframe
+[2024-05-19 00:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: folder-indexer
+[2024-05-19 00:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lama2923
+[2024-05-19 00:53:16] INFO root fetch - processPackages [lama2923]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-19 00:53:16] WARNING root fetch - processPackages [py-alpaca-daily-losers]: Skipping, unable to determine old version
+[2024-05-19 00:53:16] INFO root fetch - main [MainThread]: End processing [py-alpaca-daily-losers] error
+[2024-05-19 00:53:16] INFO root fetch - processPackages [lama2923]: Downloading https://files.pythonhosted.org/packages/06/32/c97b8e90d61a7705600dec5123eee4755d735c1aa5a24707a092b6acef15/lama2923-1.0.3.tar.gz
+[2024-05-19 00:53:16] INFO root fetch - processPackages [folder-indexer]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-19 00:53:16] INFO root fetch - processPackages [folder-indexer]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-19 00:53:16] WARNING root fetch - processPackages [daresz]: Skipping, unable to determine old version
+[2024-05-19 00:53:16] INFO root fetch - main [MainThread]: End processing [daresz] error
+[2024-05-19 00:53:16] INFO root fetch - processPackages [sqlframe]: New version: [0.1.dev3] Old Version: [0.0.2]
+[2024-05-19 00:53:16] INFO root fetch - processPackages [cocoon-data]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-19 00:53:17] INFO root fetch - processPackages [sqlframe]: Downloading https://files.pythonhosted.org/packages/68/75/257cf6459bf474a3b542207f87ab6ed2f27e4db0e5da7f54ba1dcfb59915/sqlframe-0.0.2.tar.gz
+[2024-05-19 00:53:17] INFO root fetch - processPackages [folder-indexer]: Downloading https://files.pythonhosted.org/packages/b9/ea/5724846abae363e2e3b840630de5286d6e85996b038f48b219e5498cfb94/folder_indexer-0.1.0.tar.gz
+[2024-05-19 00:53:17] INFO root fetch - processPackages [folder-indexer]: Downloading https://files.pythonhosted.org/packages/b9/ea/5724846abae363e2e3b840630de5286d6e85996b038f48b219e5498cfb94/folder_indexer-0.1.0.tar.gz
+[2024-05-19 00:53:17] INFO root fetch - processPackages [cocoon-data]: Downloading https://files.pythonhosted.org/packages/ac/3c/a1a6c95be4d731fc0db8d40b132730891186370f3cd304837773aa0dcce9/cocoon_data-0.1.8.tar.gz
+[2024-05-19 00:53:17] WARNING root fetch - processPackages [sqlframe]: Skipping package: exceeds size limit 17076909>=10485760
+[2024-05-19 00:53:17] INFO root fetch - main [MainThread]: End processing [sqlframe] error
+[2024-05-19 00:53:17] INFO root fetch - processPackages [lama2923]: Downloading https://files.pythonhosted.org/packages/93/1e/b0d04dcc1fca29fe8da9fc79a999721ffb87e6be93dc5d1fd297f31ba9d6/lama2923-1.0.4.tar.gz
+[2024-05-19 00:53:17] INFO root fetch - processPackages [lama2923]: executing diffoscope
+[2024-05-19 00:53:17] INFO root fetch - processPackages [lama2923]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lama2923-1.0.3.tar.gz tmp/lama2923-1.0.4.tar.gz --markdown 20240519/l/lama2923/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-19 00:53:17] INFO root fetch - processPackages [cocoon-data]: Downloading https://files.pythonhosted.org/packages/0b/b9/048ffb4abe066854ebc4d24ca277250c5668844b84d602ff0be9adf8b231/cocoon_data-0.1.9.tar.gz
+[2024-05-19 00:53:17] INFO root fetch - processPackages [folder-indexer]: Downloading https://files.pythonhosted.org/packages/5a/a5/4b27d3c7cac919884a79d4f034b8d0cc7149c2eca50a8a5451636db53bbd/folder_indexer-0.1.1.tar.gz
+[2024-05-19 00:53:17] INFO root fetch - processPackages [folder-indexer]: Downloading https://files.pythonhosted.org/packages/5a/a5/4b27d3c7cac919884a79d4f034b8d0cc7149c2eca50a8a5451636db53bbd/folder_indexer-0.1.1.tar.gz
+[2024-05-19 00:53:17] INFO root fetch - processPackages [cocoon-data]: executing diffoscope
+[2024-05-19 00:53:17] INFO root fetch - processPackages [cocoon-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cocoon_data-0.1.8.tar.gz tmp/cocoon_data-0.1.9.tar.gz --markdown 20240519/c/cocoon-data/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-19 00:53:17] INFO root fetch - processPackages [folder-indexer]: executing diffoscope
+[2024-05-19 00:53:17] INFO root fetch - processPackages [folder-indexer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/folder_indexer-0.1.0.tar.gz tmp/folder_indexer-0.1.1.tar.gz --markdown 20240519/f/folder-indexer/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-19 00:53:17] INFO root fetch - processPackages [folder-indexer]: executing diffoscope
+[2024-05-19 00:53:17] INFO root fetch - processPackages [folder-indexer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/folder_indexer-0.1.0.tar.gz tmp/folder_indexer-0.1.1.tar.gz --markdown 20240519/f/folder-indexer/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-19 00:53:17] INFO root fetch - processPackages [lama2923]: Remove: archive file [/home/abi/fetcher/tmp/lama2923-1.0.3.tar.gz]
+[2024-05-19 00:53:17] INFO root fetch - processPackages [lama2923]: Remove: archive file [/home/abi/fetcher/tmp/lama2923-1.0.4.tar.gz]
+[2024-05-19 00:53:17] INFO root fetch - main [MainThread]: End processing [lama2923]: success
+[2024-05-19 00:53:18] INFO root fetch - processPackages [folder-indexer]: Remove: archive file [/home/abi/fetcher/tmp/folder_indexer-0.1.0.tar.gz]
+[2024-05-19 00:53:18] INFO root fetch - processPackages [folder-indexer]: Remove: archive file [/home/abi/fetcher/tmp/folder_indexer-0.1.1.tar.gz]
+[2024-05-19 00:53:18] INFO root fetch - main [MainThread]: End processing [folder-indexer]: success
+[2024-05-19 00:53:18] INFO root fetch - processPackages [cocoon-data]: Remove: archive file [/home/abi/fetcher/tmp/cocoon_data-0.1.8.tar.gz]
+[2024-05-19 00:53:18] INFO root fetch - processPackages [cocoon-data]: Remove: archive file [/home/abi/fetcher/tmp/cocoon_data-0.1.9.tar.gz]
+[2024-05-19 00:53:18] INFO root fetch - main [MainThread]: End processing [cocoon-data]: success
+[2024-05-19 00:53:18] INFO root fetch - main [MainThread]: End processing [folder-indexer]: success
+[2024-05-19 00:53:18] INFO root fetch - main [MainThread]: Store serial: [23271700]
