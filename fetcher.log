@@ -486,3 +486,24 @@
 [2024-05-19 00:57:38] INFO root fetch - processPackages [pyselenscrapr]: Remove: archive file [/home/abi/fetcher/tmp/pyselenscrapr-0.0.6.tar.gz]
 [2024-05-19 00:57:38] INFO root fetch - main [MainThread]: End processing [pyselenscrapr]: success
 [2024-05-19 00:57:38] INFO root fetch - main [MainThread]: Store serial: [23271714]
+[2024-05-19 00:59:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271714]
+[2024-05-19 00:59:47] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 00:59:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyselenscrapr
+[2024-05-19 00:59:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyluba
+[2024-05-19 00:59:47] INFO root fetch - processPackages [pyselenscrapr]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-19 00:59:47] INFO root fetch - processPackages [pyluba]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-19 00:59:47] INFO root fetch - processPackages [pyselenscrapr]: Downloading https://files.pythonhosted.org/packages/a2/06/980657ccffb237dfea956866d01021e6008ca11bd5647dbf5b58836c2812/pyselenscrapr-0.0.5.tar.gz
+[2024-05-19 00:59:47] INFO root fetch - processPackages [pyluba]: Downloading https://files.pythonhosted.org/packages/1b/09/95a94317caced7dcf365a5f7e9130bf5127baa9d35a6b3ccec895d70f087/pyluba-0.0.5.tar.gz
+[2024-05-19 00:59:47] INFO root fetch - processPackages [pyselenscrapr]: Downloading https://files.pythonhosted.org/packages/b5/de/d9683052135e536ba14e328178a21ed4bc6d8ce4bfc73dcd9717e5534abd/pyselenscrapr-0.0.6.tar.gz
+[2024-05-19 00:59:47] INFO root fetch - processPackages [pyluba]: Downloading https://files.pythonhosted.org/packages/2e/7d/efc6ba05831890453810261e04727a36950001059bab64b1b7a667dc9ee1/pyluba-0.0.6.tar.gz
+[2024-05-19 00:59:47] INFO root fetch - processPackages [pyselenscrapr]: executing diffoscope
+[2024-05-19 00:59:47] INFO root fetch - processPackages [pyselenscrapr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyselenscrapr-0.0.5.tar.gz tmp/pyselenscrapr-0.0.6.tar.gz --markdown 20240519/p/pyselenscrapr/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-19 00:59:47] INFO root fetch - processPackages [pyluba]: executing diffoscope
+[2024-05-19 00:59:47] INFO root fetch - processPackages [pyluba]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyluba-0.0.5.tar.gz tmp/pyluba-0.0.6.tar.gz --markdown 20240519/p/pyluba/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-19 00:59:48] INFO root fetch - processPackages [pyselenscrapr]: Remove: archive file [/home/abi/fetcher/tmp/pyselenscrapr-0.0.5.tar.gz]
+[2024-05-19 00:59:48] INFO root fetch - processPackages [pyselenscrapr]: Remove: archive file [/home/abi/fetcher/tmp/pyselenscrapr-0.0.6.tar.gz]
+[2024-05-19 00:59:48] INFO root fetch - main [MainThread]: End processing [pyselenscrapr]: success
+[2024-05-19 00:59:48] INFO root fetch - processPackages [pyluba]: Remove: archive file [/home/abi/fetcher/tmp/pyluba-0.0.5.tar.gz]
+[2024-05-19 00:59:48] INFO root fetch - processPackages [pyluba]: Remove: archive file [/home/abi/fetcher/tmp/pyluba-0.0.6.tar.gz]
+[2024-05-19 00:59:48] INFO root fetch - main [MainThread]: End processing [pyluba]: success
+[2024-05-19 00:59:48] INFO root fetch - main [MainThread]: Store serial: [23271720]
