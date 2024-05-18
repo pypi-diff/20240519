@@ -845,3 +845,51 @@
 [2024-05-19 01:32:17] WARNING root fetch - processPackages [impart]: Skipping, unable to determine old version
 [2024-05-19 01:32:17] INFO root fetch - main [MainThread]: End processing [impart] error
 [2024-05-19 01:32:17] INFO root fetch - main [MainThread]: Store serial: [23271842]
+[2024-05-19 01:34:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271842]
+[2024-05-19 01:34:26] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 01:34:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: veg2hab
+[2024-05-19 01:34:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dearwatson
+[2024-05-19 01:34:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: abcli
+[2024-05-19 01:34:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yt-dlp
+[2024-05-19 01:34:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: my-decimal
+[2024-05-19 01:34:26] INFO root fetch - processPackages [abcli]: New version: [8.182.1] Old Version: [8.179.1]
+[2024-05-19 01:34:26] INFO root fetch - processPackages [yt-dlp]: New version: [2024.5.8.232715.dev0] Old Version: [2024.5.5.232701.dev0]
+[2024-05-19 01:34:26] INFO root fetch - processPackages [my-decimal]: New version: [9.9.9] Old Version: [1.1.3]
+[2024-05-19 01:34:26] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/87/4a/322b9b8c6cc3f5a410a56981bb2a6b31b69ec4b38d6b321d251cca4dfc44/abcli-8.179.1.tar.gz
+[2024-05-19 01:34:26] INFO root fetch - processPackages [veg2hab]: New version: [0.2.2a1] Old Version: [0.2.2a0]
+[2024-05-19 01:34:26] INFO root fetch - processPackages [dearwatson]: New version: [0.9.9] Old Version: [0.9.7]
+[2024-05-19 01:34:26] INFO root fetch - processPackages [yt-dlp]: Downloading https://files.pythonhosted.org/packages/84/b9/776c1dd6af3d11b008b3d15993bd9675fea67e86f7b78a1dac88febb9fcf/yt_dlp-2024.5.5.232701.dev0.tar.gz
+[2024-05-19 01:34:26] INFO root fetch - processPackages [veg2hab]: Downloading https://files.pythonhosted.org/packages/a0/ce/8bf5213b3b29fa1b3c8f4720949096f422036ff981b402bb37e9e3ac1b30/veg2hab-0.2.2a0.tar.gz
+[2024-05-19 01:34:26] INFO root fetch - processPackages [dearwatson]: Downloading https://files.pythonhosted.org/packages/0f/ba/b35bd970c84ce962034af18fa9204693d404680e78cdfb8927d1c8166e80/dearwatson-0.9.7.tar.gz
+[2024-05-19 01:34:27] INFO root fetch - processPackages [my-decimal]: Downloading https://files.pythonhosted.org/packages/e2/3e/a3d08b3cea0a1e7838a74d1b672b0cad1b368e4638f376421d452a4aaf7b/my_decimal-1.1.3.tar.gz
+[2024-05-19 01:34:27] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/ea/bc/d11ede22c34d04789f848f615e9a813ebcc5bb8945793feb7da9ada826eb/abcli-8.182.1.tar.gz
+[2024-05-19 01:34:27] INFO root fetch - processPackages [yt-dlp]: Downloading https://files.pythonhosted.org/packages/29/37/4d7e7b1d095d515aef0e3e9af758d0dc33fceebfe46ebce02a1a240d274c/yt_dlp-2024.5.8.232715.dev0.tar.gz
+[2024-05-19 01:34:27] INFO root fetch - processPackages [abcli]: executing diffoscope
+[2024-05-19 01:34:27] INFO root fetch - processPackages [abcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abcli-8.179.1.tar.gz tmp/abcli-8.182.1.tar.gz --markdown 20240519/a/abcli/8.179.1-8.182.1/README.md --exclude *.pyd
+[2024-05-19 01:34:27] INFO root fetch - processPackages [dearwatson]: Downloading https://files.pythonhosted.org/packages/51/ef/a9231ae823323fefdd6b2c48396a26841d854f32c634d25ea73af29197dc/dearwatson-0.9.9.tar.gz
+[2024-05-19 01:34:27] INFO root fetch - processPackages [veg2hab]: Downloading https://files.pythonhosted.org/packages/7f/55/6bbeb620c6d7028e5ab22a7803bb237ae1c0bd055d81ff7d7192de9e32ef/veg2hab-0.2.2a1.tar.gz
+[2024-05-19 01:34:27] INFO root fetch - processPackages [my-decimal]: Downloading https://files.pythonhosted.org/packages/db/fb/164581cdba0d71108a80506fc9502c5b0d69603ba7aaf95598f8ec565a5a/my_decimal-9.9.9.tar.gz
+[2024-05-19 01:34:27] INFO root fetch - processPackages [dearwatson]: executing diffoscope
+[2024-05-19 01:34:27] INFO root fetch - processPackages [dearwatson]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dearwatson-0.9.7.tar.gz tmp/dearwatson-0.9.9.tar.gz --markdown 20240519/d/dearwatson/0.9.7-0.9.9/README.md --exclude *.pyd
+[2024-05-19 01:34:27] INFO root fetch - processPackages [yt-dlp]: executing diffoscope
+[2024-05-19 01:34:27] INFO root fetch - processPackages [yt-dlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yt_dlp-2024.5.5.232701.dev0.tar.gz tmp/yt_dlp-2024.5.8.232715.dev0.tar.gz --markdown 20240519/y/yt-dlp/2024.5.5.232701.dev0-2024.5.8.232715.dev0/README.md --exclude *.pyd
+[2024-05-19 01:34:27] INFO root fetch - processPackages [my-decimal]: executing diffoscope
+[2024-05-19 01:34:27] INFO root fetch - processPackages [my-decimal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/my_decimal-1.1.3.tar.gz tmp/my_decimal-9.9.9.tar.gz --markdown 20240519/m/my-decimal/1.1.3-9.9.9/README.md --exclude *.pyd
+[2024-05-19 01:34:27] INFO root fetch - processPackages [veg2hab]: executing diffoscope
+[2024-05-19 01:34:27] INFO root fetch - processPackages [veg2hab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/veg2hab-0.2.2a0.tar.gz tmp/veg2hab-0.2.2a1.tar.gz --markdown 20240519/v/veg2hab/0.2.2a0-0.2.2a1/README.md --exclude *.pyd
+[2024-05-19 01:34:28] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-8.179.1.tar.gz]
+[2024-05-19 01:34:28] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-8.182.1.tar.gz]
+[2024-05-19 01:34:28] INFO root fetch - main [MainThread]: End processing [abcli]: success
+[2024-05-19 01:34:28] INFO root fetch - processPackages [my-decimal]: Remove: archive file [/home/abi/fetcher/tmp/my_decimal-1.1.3.tar.gz]
+[2024-05-19 01:34:28] INFO root fetch - processPackages [my-decimal]: Remove: archive file [/home/abi/fetcher/tmp/my_decimal-9.9.9.tar.gz]
+[2024-05-19 01:34:28] INFO root fetch - main [MainThread]: End processing [my-decimal]: success
+[2024-05-19 01:34:28] INFO root fetch - processPackages [dearwatson]: Remove: archive file [/home/abi/fetcher/tmp/dearwatson-0.9.7.tar.gz]
+[2024-05-19 01:34:28] INFO root fetch - processPackages [dearwatson]: Remove: archive file [/home/abi/fetcher/tmp/dearwatson-0.9.9.tar.gz]
+[2024-05-19 01:34:28] INFO root fetch - main [MainThread]: End processing [dearwatson]: success
+[2024-05-19 01:34:29] INFO root fetch - processPackages [veg2hab]: Remove: archive file [/home/abi/fetcher/tmp/veg2hab-0.2.2a0.tar.gz]
+[2024-05-19 01:34:29] INFO root fetch - processPackages [veg2hab]: Remove: archive file [/home/abi/fetcher/tmp/veg2hab-0.2.2a1.tar.gz]
+[2024-05-19 01:34:29] INFO root fetch - main [MainThread]: End processing [veg2hab]: success
+[2024-05-19 01:34:32] INFO root fetch - processPackages [yt-dlp]: Remove: archive file [/home/abi/fetcher/tmp/yt_dlp-2024.5.5.232701.dev0.tar.gz]
+[2024-05-19 01:34:32] INFO root fetch - processPackages [yt-dlp]: Remove: archive file [/home/abi/fetcher/tmp/yt_dlp-2024.5.8.232715.dev0.tar.gz]
+[2024-05-19 01:34:33] INFO root fetch - main [MainThread]: End processing [yt-dlp]: success
+[2024-05-19 01:34:33] INFO root fetch - main [MainThread]: Store serial: [23271856]
