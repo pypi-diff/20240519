@@ -771,3 +771,9 @@
 [2024-05-19 01:21:32] INFO root fetch - processPackages [bosesoundtouchapi]: Remove: archive file [/home/abi/fetcher/tmp/bosesoundtouchapi-1.0.9-py3-none-any.whl.zip]
 [2024-05-19 01:21:32] INFO root fetch - main [MainThread]: End processing [bosesoundtouchapi]: success
 [2024-05-19 01:21:32] INFO root fetch - main [MainThread]: Store serial: [23271805]
+[2024-05-19 01:23:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271805]
+[2024-05-19 01:23:40] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 01:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: skiplanesz
+[2024-05-19 01:23:41] WARNING root fetch - processPackages [skiplanesz]: Skipping, unable to determine old version
+[2024-05-19 01:23:41] INFO root fetch - main [MainThread]: End processing [skiplanesz] error
+[2024-05-19 01:23:41] INFO root fetch - main [MainThread]: Store serial: [23271809]
