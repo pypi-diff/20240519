@@ -106,3 +106,33 @@
 [2024-05-19 00:12:10] INFO root fetch - processPackages [ipyslides]: Remove: archive file [/home/abi/fetcher/tmp/ipyslides-3.8.8.tar.gz]
 [2024-05-19 00:12:10] INFO root fetch - main [MainThread]: End processing [ipyslides]: success
 [2024-05-19 00:12:10] INFO root fetch - main [MainThread]: Store serial: [23271561]
+[2024-05-19 00:14:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271561]
+[2024-05-19 00:14:19] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 00:14:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pg-sync-roles
+[2024-05-19 00:14:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: indipydriver
+[2024-05-19 00:14:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: huracan
+[2024-05-19 00:14:19] INFO root fetch - processPackages [pg-sync-roles]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 00:14:19] INFO root fetch - processPackages [huracan]: New version: [0.9] Old Version: [0.0a2]
+[2024-05-19 00:14:19] INFO root fetch - processPackages [pg-sync-roles]: Downloading https://files.pythonhosted.org/packages/e5/00/689dce1c71a269fc31a6f29e65d7d555fd7ddbc8cc79da2dff482ce5e687/pg_sync_roles-0.0.8.tar.gz
+[2024-05-19 00:14:19] INFO root fetch - processPackages [indipydriver]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-05-19 00:14:19] INFO root fetch - processPackages [huracan]: Downloading https://files.pythonhosted.org/packages/70/fb/0b9d3b1ad89d3a78e468a9ce3ffb340d3607e22f11279f47674b04265c07/huracan-0.0a2.tar.gz
+[2024-05-19 00:14:19] INFO root fetch - processPackages [indipydriver]: Downloading https://files.pythonhosted.org/packages/5e/26/8185b53e0d2998fe6bc7e64843d2ae363bc58fbdfbc35634873be5770162/indipydriver-1.2.0.tar.gz
+[2024-05-19 00:14:19] INFO root fetch - processPackages [pg-sync-roles]: Downloading https://files.pythonhosted.org/packages/57/16/3555015cd988ece14b511219460af3c22de1b955c715d90322aa11026bd9/pg_sync_roles-0.0.9.tar.gz
+[2024-05-19 00:14:19] INFO root fetch - processPackages [pg-sync-roles]: executing diffoscope
+[2024-05-19 00:14:19] INFO root fetch - processPackages [pg-sync-roles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pg_sync_roles-0.0.8.tar.gz tmp/pg_sync_roles-0.0.9.tar.gz --markdown 20240519/p/pg-sync-roles/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 00:14:19] INFO root fetch - processPackages [huracan]: Downloading https://files.pythonhosted.org/packages/0e/a0/8714ef7f183ceb918c3f1832cd63fad9856f090fa719ef55fff999d9cced/huracan-0.9.tar.gz
+[2024-05-19 00:14:19] INFO root fetch - processPackages [indipydriver]: Downloading https://files.pythonhosted.org/packages/f5/1c/28ba48332cbd4098d16705ebd00eff699b2f41a64179a70609c6700d22bd/indipydriver-1.2.1.tar.gz
+[2024-05-19 00:14:19] INFO root fetch - processPackages [huracan]: executing diffoscope
+[2024-05-19 00:14:19] INFO root fetch - processPackages [huracan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/huracan-0.0a2.tar.gz tmp/huracan-0.9.tar.gz --markdown 20240519/h/huracan/0.0a2-0.9/README.md --exclude *.pyd
+[2024-05-19 00:14:19] INFO root fetch - processPackages [indipydriver]: executing diffoscope
+[2024-05-19 00:14:19] INFO root fetch - processPackages [indipydriver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/indipydriver-1.2.0.tar.gz tmp/indipydriver-1.2.1.tar.gz --markdown 20240519/i/indipydriver/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-05-19 00:14:20] INFO root fetch - processPackages [pg-sync-roles]: Remove: archive file [/home/abi/fetcher/tmp/pg_sync_roles-0.0.8.tar.gz]
+[2024-05-19 00:14:20] INFO root fetch - processPackages [pg-sync-roles]: Remove: archive file [/home/abi/fetcher/tmp/pg_sync_roles-0.0.9.tar.gz]
+[2024-05-19 00:14:20] INFO root fetch - main [MainThread]: End processing [pg-sync-roles]: success
+[2024-05-19 00:14:20] INFO root fetch - processPackages [indipydriver]: Remove: archive file [/home/abi/fetcher/tmp/indipydriver-1.2.0.tar.gz]
+[2024-05-19 00:14:20] INFO root fetch - processPackages [indipydriver]: Remove: archive file [/home/abi/fetcher/tmp/indipydriver-1.2.1.tar.gz]
+[2024-05-19 00:14:20] INFO root fetch - main [MainThread]: End processing [indipydriver]: success
+[2024-05-19 00:14:20] INFO root fetch - processPackages [huracan]: Remove: archive file [/home/abi/fetcher/tmp/huracan-0.0a2.tar.gz]
+[2024-05-19 00:14:20] INFO root fetch - processPackages [huracan]: Remove: archive file [/home/abi/fetcher/tmp/huracan-0.9.tar.gz]
+[2024-05-19 00:14:20] INFO root fetch - main [MainThread]: End processing [huracan]: success
+[2024-05-19 00:14:20] INFO root fetch - main [MainThread]: Store serial: [23271569]
