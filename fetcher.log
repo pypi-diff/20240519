@@ -642,3 +642,12 @@
 [2024-05-19 01:08:29] WARNING root fetch - processPackages [gullingz]: Skipping, unable to determine old version
 [2024-05-19 01:08:29] INFO root fetch - main [MainThread]: End processing [gullingz] error
 [2024-05-19 01:08:29] INFO root fetch - main [MainThread]: Store serial: [23271765]
+[2024-05-19 01:10:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271765]
+[2024-05-19 01:10:38] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 01:10:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: my-road
+[2024-05-19 01:10:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: my-road
+[2024-05-19 01:10:38] WARNING root fetch - processPackages [my-road]: Skipping, unable to determine old version
+[2024-05-19 01:10:38] INFO root fetch - main [MainThread]: End processing [my-road] error
+[2024-05-19 01:10:38] WARNING root fetch - processPackages [my-road]: Skipping, unable to determine old version
+[2024-05-19 01:10:38] INFO root fetch - main [MainThread]: End processing [my-road] error
+[2024-05-19 01:10:38] INFO root fetch - main [MainThread]: Store serial: [23271769]
