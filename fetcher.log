@@ -441,3 +441,33 @@
 [2024-05-19 00:53:18] INFO root fetch - main [MainThread]: End processing [cocoon-data]: success
 [2024-05-19 00:53:18] INFO root fetch - main [MainThread]: End processing [folder-indexer]: success
 [2024-05-19 00:53:18] INFO root fetch - main [MainThread]: Store serial: [23271700]
+[2024-05-19 00:55:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271700]
+[2024-05-19 00:55:26] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 00:55:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: abcli
+[2024-05-19 00:55:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: socketwrench
+[2024-05-19 00:55:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: my-table-db
+[2024-05-19 00:55:26] INFO root fetch - processPackages [abcli]: New version: [8.179.1] Old Version: [8.177.1]
+[2024-05-19 00:55:26] INFO root fetch - processPackages [my-table-db]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-19 00:55:26] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/9e/0b/0dfa5fd0c4f87afbe90f0c4bd60ff3388f36abeb983837bb07c6c35f3a89/abcli-8.177.1.tar.gz
+[2024-05-19 00:55:26] INFO root fetch - processPackages [my-table-db]: Downloading https://files.pythonhosted.org/packages/41/6b/4aa22f0e2d4be0597ab7701d467d85baa7deb3dcbd64e900ca44ad611776/my_table_db-1.0.2.tar.gz
+[2024-05-19 00:55:26] INFO root fetch - processPackages [socketwrench]: New version: [2.0.0] Old Version: [1.9.3]
+[2024-05-19 00:55:27] INFO root fetch - processPackages [socketwrench]: Downloading https://files.pythonhosted.org/packages/d0/a8/ddccd4461e069cd2af19ac76b05a796f5f4b10e744e9fced7a1e88e3e85f/socketwrench-1.9.3.tar.gz
+[2024-05-19 00:55:27] INFO root fetch - processPackages [my-table-db]: Downloading https://files.pythonhosted.org/packages/56/86/19d4377bed49de97e6768e762e5905cd4ca439248d75ccbebb5e1b6c5bea/my_table_db-1.0.3.tar.gz
+[2024-05-19 00:55:27] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/87/4a/322b9b8c6cc3f5a410a56981bb2a6b31b69ec4b38d6b321d251cca4dfc44/abcli-8.179.1.tar.gz
+[2024-05-19 00:55:27] INFO root fetch - processPackages [my-table-db]: executing diffoscope
+[2024-05-19 00:55:27] INFO root fetch - processPackages [my-table-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/my_table_db-1.0.2.tar.gz tmp/my_table_db-1.0.3.tar.gz --markdown 20240519/m/my-table-db/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-19 00:55:27] INFO root fetch - processPackages [abcli]: executing diffoscope
+[2024-05-19 00:55:27] INFO root fetch - processPackages [abcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abcli-8.177.1.tar.gz tmp/abcli-8.179.1.tar.gz --markdown 20240519/a/abcli/8.177.1-8.179.1/README.md --exclude *.pyd
+[2024-05-19 00:55:27] INFO root fetch - processPackages [socketwrench]: Downloading https://files.pythonhosted.org/packages/e4/22/c1346e1114b03d3eff1c531c4282a11bb2577c1bee4702f33b1f3ea9b7cf/socketwrench-2.0.0.tar.gz
+[2024-05-19 00:55:27] INFO root fetch - processPackages [socketwrench]: executing diffoscope
+[2024-05-19 00:55:27] INFO root fetch - processPackages [socketwrench]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/socketwrench-1.9.3.tar.gz tmp/socketwrench-2.0.0.tar.gz --markdown 20240519/s/socketwrench/1.9.3-2.0.0/README.md --exclude *.pyd
+[2024-05-19 00:55:27] INFO root fetch - processPackages [my-table-db]: Remove: archive file [/home/abi/fetcher/tmp/my_table_db-1.0.2.tar.gz]
+[2024-05-19 00:55:27] INFO root fetch - processPackages [my-table-db]: Remove: archive file [/home/abi/fetcher/tmp/my_table_db-1.0.3.tar.gz]
+[2024-05-19 00:55:27] INFO root fetch - main [MainThread]: End processing [my-table-db]: success
+[2024-05-19 00:55:28] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-8.177.1.tar.gz]
+[2024-05-19 00:55:28] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-8.179.1.tar.gz]
+[2024-05-19 00:55:28] INFO root fetch - main [MainThread]: End processing [abcli]: success
+[2024-05-19 00:55:28] INFO root fetch - processPackages [socketwrench]: Remove: archive file [/home/abi/fetcher/tmp/socketwrench-1.9.3.tar.gz]
+[2024-05-19 00:55:28] INFO root fetch - processPackages [socketwrench]: Remove: archive file [/home/abi/fetcher/tmp/socketwrench-2.0.0.tar.gz]
+[2024-05-19 00:55:28] INFO root fetch - main [MainThread]: End processing [socketwrench]: success
+[2024-05-19 00:55:28] INFO root fetch - main [MainThread]: Store serial: [23271708]
