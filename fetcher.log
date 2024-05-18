@@ -1006,3 +1006,24 @@
 [2024-05-19 01:49:40] INFO root fetch - processPackages [expyre-wfl]: Remove: archive file [/home/abi/fetcher/tmp/expyre_wfl-0.1.5b0.tar.gz]
 [2024-05-19 01:49:40] INFO root fetch - main [MainThread]: End processing [expyre-wfl]: success
 [2024-05-19 01:49:40] INFO root fetch - main [MainThread]: Store serial: [23271915]
+[2024-05-19 01:51:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271915]
+[2024-05-19 01:51:48] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 01:51:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sapiopylib
+[2024-05-19 01:51:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: conf-mat
+[2024-05-19 01:51:48] INFO root fetch - processPackages [sapiopylib]: New version: [2024.5.7rc197] Old Version: [2024.5.7rc196]
+[2024-05-19 01:51:48] INFO root fetch - processPackages [sapiopylib]: Downloading https://files.pythonhosted.org/packages/4c/1c/e9dfacf3de6421604293f1430f02b27537d91ae272fd6cb9c434f5c2e890/sapiopylib-2024.5.7rc196.tar.gz
+[2024-05-19 01:51:49] INFO root fetch - processPackages [conf-mat]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-19 01:51:49] INFO root fetch - processPackages [sapiopylib]: Downloading https://files.pythonhosted.org/packages/92/c8/f09b37dfd891960344707d28a95f88dbcf245edb008e226ee6476ee0a5a5/sapiopylib-2024.5.7rc197.tar.gz
+[2024-05-19 01:51:49] INFO root fetch - processPackages [conf-mat]: Downloading https://files.pythonhosted.org/packages/76/8d/eaac54bf413dbe36218494d5f6e82c078fbd9bd0a8d0aed36741df701af5/conf-mat-1.0.4.tar.gz
+[2024-05-19 01:51:49] INFO root fetch - processPackages [sapiopylib]: executing diffoscope
+[2024-05-19 01:51:49] INFO root fetch - processPackages [sapiopylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sapiopylib-2024.5.7rc196.tar.gz tmp/sapiopylib-2024.5.7rc197.tar.gz --markdown 20240519/s/sapiopylib/2024.5.7rc196-2024.5.7rc197/README.md --exclude *.pyd
+[2024-05-19 01:51:49] INFO root fetch - processPackages [conf-mat]: Downloading https://files.pythonhosted.org/packages/ea/9f/154d1430fc09d3c77fa27fa7b3c92cedef5fa5dff434abc9f1308ca4789b/conf-mat-1.0.5.tar.gz
+[2024-05-19 01:51:49] INFO root fetch - processPackages [conf-mat]: executing diffoscope
+[2024-05-19 01:51:49] INFO root fetch - processPackages [conf-mat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/conf-mat-1.0.4.tar.gz tmp/conf-mat-1.0.5.tar.gz --markdown 20240519/c/conf-mat/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-19 01:51:50] INFO root fetch - processPackages [sapiopylib]: Remove: archive file [/home/abi/fetcher/tmp/sapiopylib-2024.5.7rc196.tar.gz]
+[2024-05-19 01:51:50] INFO root fetch - processPackages [sapiopylib]: Remove: archive file [/home/abi/fetcher/tmp/sapiopylib-2024.5.7rc197.tar.gz]
+[2024-05-19 01:51:50] INFO root fetch - main [MainThread]: End processing [sapiopylib]: success
+[2024-05-19 01:51:50] INFO root fetch - processPackages [conf-mat]: Remove: archive file [/home/abi/fetcher/tmp/conf-mat-1.0.4.tar.gz]
+[2024-05-19 01:51:50] INFO root fetch - processPackages [conf-mat]: Remove: archive file [/home/abi/fetcher/tmp/conf-mat-1.0.5.tar.gz]
+[2024-05-19 01:51:50] INFO root fetch - main [MainThread]: End processing [conf-mat]: success
+[2024-05-19 01:51:50] INFO root fetch - main [MainThread]: Store serial: [23271920]
