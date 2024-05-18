@@ -777,3 +777,33 @@
 [2024-05-19 01:23:41] WARNING root fetch - processPackages [skiplanesz]: Skipping, unable to determine old version
 [2024-05-19 01:23:41] INFO root fetch - main [MainThread]: End processing [skiplanesz] error
 [2024-05-19 01:23:41] INFO root fetch - main [MainThread]: Store serial: [23271809]
+[2024-05-19 01:25:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271809]
+[2024-05-19 01:25:49] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 01:25:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: camino
+[2024-05-19 01:25:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cplayer
+[2024-05-19 01:25:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: just
+[2024-05-19 01:25:49] INFO root fetch - processPackages [camino]: New version: [1.7.0] Old Version: [1.6.1]
+[2024-05-19 01:25:49] INFO root fetch - processPackages [cplayer]: New version: [1.3.2] Old Version: [1.3.1]
+[2024-05-19 01:25:49] INFO root fetch - processPackages [just]: New version: [0.8.162] Old Version: [0.8.161]
+[2024-05-19 01:25:50] INFO root fetch - processPackages [camino]: Downloading https://files.pythonhosted.org/packages/b7/6e/670df1363dc8076c32b67d6b511dc385fc1b9a442c26aedb464c86456cff/camino-1.6.1.tar.gz
+[2024-05-19 01:25:50] INFO root fetch - processPackages [cplayer]: Downloading https://files.pythonhosted.org/packages/15/15/33e60074f0635c9a273cd8accd09ff85a40cbab518bdaf56fa8a112006b9/cplayer-1.3.1.tar.gz
+[2024-05-19 01:25:50] INFO root fetch - processPackages [just]: Downloading https://files.pythonhosted.org/packages/8c/2e/3df843da595a747dc9b3d0c3df53f5b96c89172fff9dac89050af5c877cc/just-0.8.161.tar.gz
+[2024-05-19 01:25:50] INFO root fetch - processPackages [just]: Downloading https://files.pythonhosted.org/packages/4c/8e/692f044619e041b5e6c53af93a43392ce5c9bd8ae17e1d6cca6afa3e4ff0/just-0.8.162.tar.gz
+[2024-05-19 01:25:50] INFO root fetch - processPackages [camino]: Downloading https://files.pythonhosted.org/packages/bd/ae/fd24eb7d6359a4df3dee68221a0e109597750ef41843797fd89e5db68c6c/camino-1.7.0.tar.gz
+[2024-05-19 01:25:50] INFO root fetch - processPackages [cplayer]: Downloading https://files.pythonhosted.org/packages/3f/1b/f6e09c53f81a690927119f05dafb6ef74a3b705f59fd3065ebc5c5fa7955/cplayer-1.3.2.tar.gz
+[2024-05-19 01:25:50] INFO root fetch - processPackages [camino]: executing diffoscope
+[2024-05-19 01:25:50] INFO root fetch - processPackages [camino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/camino-1.6.1.tar.gz tmp/camino-1.7.0.tar.gz --markdown 20240519/c/camino/1.6.1-1.7.0/README.md --exclude *.pyd
+[2024-05-19 01:25:50] INFO root fetch - processPackages [just]: executing diffoscope
+[2024-05-19 01:25:50] INFO root fetch - processPackages [just]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/just-0.8.161.tar.gz tmp/just-0.8.162.tar.gz --markdown 20240519/j/just/0.8.161-0.8.162/README.md --exclude *.pyd
+[2024-05-19 01:25:50] INFO root fetch - processPackages [cplayer]: executing diffoscope
+[2024-05-19 01:25:50] INFO root fetch - processPackages [cplayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cplayer-1.3.1.tar.gz tmp/cplayer-1.3.2.tar.gz --markdown 20240519/c/cplayer/1.3.1-1.3.2/README.md --exclude *.pyd
+[2024-05-19 01:25:51] INFO root fetch - processPackages [camino]: Remove: archive file [/home/abi/fetcher/tmp/camino-1.6.1.tar.gz]
+[2024-05-19 01:25:51] INFO root fetch - processPackages [camino]: Remove: archive file [/home/abi/fetcher/tmp/camino-1.7.0.tar.gz]
+[2024-05-19 01:25:51] INFO root fetch - main [MainThread]: End processing [camino]: success
+[2024-05-19 01:25:51] INFO root fetch - processPackages [just]: Remove: archive file [/home/abi/fetcher/tmp/just-0.8.161.tar.gz]
+[2024-05-19 01:25:51] INFO root fetch - processPackages [just]: Remove: archive file [/home/abi/fetcher/tmp/just-0.8.162.tar.gz]
+[2024-05-19 01:25:51] INFO root fetch - main [MainThread]: End processing [just]: success
+[2024-05-19 01:25:51] INFO root fetch - processPackages [cplayer]: Remove: archive file [/home/abi/fetcher/tmp/cplayer-1.3.1.tar.gz]
+[2024-05-19 01:25:51] INFO root fetch - processPackages [cplayer]: Remove: archive file [/home/abi/fetcher/tmp/cplayer-1.3.2.tar.gz]
+[2024-05-19 01:25:51] INFO root fetch - main [MainThread]: End processing [cplayer]: success
+[2024-05-19 01:25:51] INFO root fetch - main [MainThread]: Store serial: [23271819]
