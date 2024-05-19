@@ -16809,3 +16809,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 20:44:36] INFO root fetch - processPackages [leads]: Remove: archive file [/home/abi/fetcher/tmp/leads-0.8.9.tar.gz]
 [2024-05-19 20:44:36] INFO root fetch - main [MainThread]: End processing [leads]: success
 [2024-05-19 20:44:36] INFO root fetch - main [MainThread]: Store serial: [23279382]
+[2024-05-19 20:46:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279382]
+[2024-05-19 20:46:45] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 20:46:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SplashStand
+[2024-05-19 20:46:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: simpleai-base
+[2024-05-19 20:46:45] INFO root fetch - processPackages [simpleai-base]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-05-19 20:46:45] INFO root fetch - processPackages [SplashStand]: New version: [3.0.3] Old Version: [3.0.2]
+[2024-05-19 20:46:45] INFO root fetch - processPackages [simpleai-base]: Downloading https://files.pythonhosted.org/packages/1f/c8/8cf212a104fd7cc965ea5c685bea598d1799d6c9de9689427e7a05630e9a/simpleai_base-0.3.1-pp310-pypy310_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-19 20:46:45] INFO root fetch - processPackages [SplashStand]: Downloading https://files.pythonhosted.org/packages/1c/5a/b3719211c0e9dfc286755f1a51c11c89e1c21e63263ed23bd8206ee2e30b/splashstand-3.0.2.tar.gz
+[2024-05-19 20:46:45] INFO root fetch - processPackages [SplashStand]: Downloading https://files.pythonhosted.org/packages/f5/1f/181835a43d12a7cc1cc108c081a962fae72a6f8ac24a80aa697a1ce945a7/splashstand-3.0.3.tar.gz
+[2024-05-19 20:46:45] INFO root fetch - processPackages [SplashStand]: executing diffoscope
+[2024-05-19 20:46:45] INFO root fetch - processPackages [SplashStand]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splashstand-3.0.2.tar.gz tmp/splashstand-3.0.3.tar.gz --markdown 20240519/S/SplashStand/3.0.2-3.0.3/README.md --exclude *.pyd
+[2024-05-19 20:46:46] INFO root fetch - processPackages [simpleai-base]: Downloading https://files.pythonhosted.org/packages/c8/69/a93e2ddba777e1540a7199c01d2072107228463c172dad05f0d447201f5f/simpleai_base-0.3.2-pp310-pypy310_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-19 20:46:46] INFO root fetch - processPackages [simpleai-base]: executing diffoscope
+[2024-05-19 20:46:46] INFO root fetch - processPackages [simpleai-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simpleai_base-0.3.1-pp310-pypy310_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/simpleai_base-0.3.2-pp310-pypy310_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240519/s/simpleai-base/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-05-19 20:46:46] INFO root fetch - processPackages [SplashStand]: Remove: archive file [/home/abi/fetcher/tmp/splashstand-3.0.2.tar.gz]
+[2024-05-19 20:46:46] INFO root fetch - processPackages [SplashStand]: Remove: archive file [/home/abi/fetcher/tmp/splashstand-3.0.3.tar.gz]
+[2024-05-19 20:46:46] INFO root fetch - main [MainThread]: End processing [SplashStand]: success
+[2024-05-19 20:47:25] INFO root fetch - processPackages [simpleai-base]: Remove: archive file [/home/abi/fetcher/tmp/simpleai_base-0.3.1-pp310-pypy310_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-19 20:47:25] INFO root fetch - processPackages [simpleai-base]: Remove: archive file [/home/abi/fetcher/tmp/simpleai_base-0.3.2-pp310-pypy310_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-19 20:47:25] INFO root fetch - main [MainThread]: End processing [simpleai-base]: success
+[2024-05-19 20:47:25] INFO root fetch - main [MainThread]: Store serial: [23279394]
