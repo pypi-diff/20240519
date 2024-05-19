@@ -11150,3 +11150,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 15:20:56] INFO root fetch - processPackages [spaceone-inventory]: Remove: archive file [/home/abi/fetcher/tmp/spaceone-inventory-2.0.dev99.tar.gz]
 [2024-05-19 15:20:56] INFO root fetch - main [MainThread]: End processing [spaceone-inventory]: success
 [2024-05-19 15:20:56] INFO root fetch - main [MainThread]: Store serial: [23276681]
+[2024-05-19 15:23:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276681]
+[2024-05-19 15:23:05] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 15:23:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gipsyfyz
+[2024-05-19 15:23:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: monstr-terminal
+[2024-05-19 15:23:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyddm
+[2024-05-19 15:23:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gradio-textlabeler
+[2024-05-19 15:23:05] WARNING root fetch - processPackages [gradio-textlabeler]: Skipping, unable to determine old version
+[2024-05-19 15:23:05] INFO root fetch - main [MainThread]: End processing [gradio-textlabeler] error
+[2024-05-19 15:23:05] WARNING root fetch - processPackages [gipsyfyz]: Skipping, unable to determine old version
+[2024-05-19 15:23:05] INFO root fetch - main [MainThread]: End processing [gipsyfyz] error
+[2024-05-19 15:23:05] WARNING root fetch - processPackages [monstr-terminal]: Skipping, unable to determine old version
+[2024-05-19 15:23:05] INFO root fetch - main [MainThread]: End processing [monstr-terminal] error
+[2024-05-19 15:23:05] INFO root fetch - processPackages [pyddm]: New version: [0.8.0] Old Version: [0.7.0]
+[2024-05-19 15:23:06] INFO root fetch - processPackages [pyddm]: Downloading https://files.pythonhosted.org/packages/05/90/80494fad5ebcc4b3956f6b1163ce4f10c695a05e393b0e723ac7a5f688a0/pyddm-0.7.0.tar.gz
+[2024-05-19 15:23:06] INFO root fetch - processPackages [pyddm]: Downloading https://files.pythonhosted.org/packages/f8/29/f0b9a6555bb709f09a9f48a1df547de7e774a27489515a3d97ff372697cc/pyddm-0.8.0-cp310-cp310-win32.whl
+[2024-05-19 15:23:06] INFO root fetch - processPackages [pyddm]: executing diffoscope
+[2024-05-19 15:23:06] INFO root fetch - processPackages [pyddm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyddm-0.7.0.tar.gz tmp/pyddm-0.8.0-cp310-cp310-win32.whl.zip --markdown 20240519/p/pyddm/0.7.0-0.8.0/README.md --exclude *.pyd
+[2024-05-19 15:23:07] INFO root fetch - processPackages [pyddm]: Remove: archive file [/home/abi/fetcher/tmp/pyddm-0.7.0.tar.gz]
+[2024-05-19 15:23:07] INFO root fetch - processPackages [pyddm]: Remove: archive file [/home/abi/fetcher/tmp/pyddm-0.8.0-cp310-cp310-win32.whl.zip]
+[2024-05-19 15:23:07] INFO root fetch - main [MainThread]: End processing [pyddm]: success
+[2024-05-19 15:23:07] INFO root fetch - main [MainThread]: Store serial: [23276702]
