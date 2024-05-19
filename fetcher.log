@@ -10824,3 +10824,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 15:00:08] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240519-py3-none-win_amd64.whl.zip]
 [2024-05-19 15:00:08] INFO root fetch - main [MainThread]: End processing [ipex-llm]: success
 [2024-05-19 15:00:08] INFO root fetch - main [MainThread]: Store serial: [23276533]
+[2024-05-19 15:02:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276533]
+[2024-05-19 15:02:18] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 15:02:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: airstripsz
+[2024-05-19 15:02:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aiondata
+[2024-05-19 15:02:18] WARNING root fetch - processPackages [airstripsz]: Skipping, unable to determine old version
+[2024-05-19 15:02:18] INFO root fetch - processPackages [aiondata]: New version: [0.4.6] Old Version: [0.4.5]
+[2024-05-19 15:02:18] INFO root fetch - main [MainThread]: End processing [airstripsz] error
+[2024-05-19 15:02:18] INFO root fetch - processPackages [aiondata]: Downloading https://files.pythonhosted.org/packages/24/29/648614b1f1b7bed454d6d5c85c753f57cbfc3f2b3ebe88223c6230959487/aiondata-0.4.5.tar.gz
+[2024-05-19 15:02:18] INFO root fetch - processPackages [aiondata]: Downloading https://files.pythonhosted.org/packages/e2/7e/4e666596b3084d2eee74f6cd8d7e4df3eab2705f0b203a74b1a2db79238d/aiondata-0.4.6.tar.gz
+[2024-05-19 15:02:18] INFO root fetch - processPackages [aiondata]: executing diffoscope
+[2024-05-19 15:02:18] INFO root fetch - processPackages [aiondata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiondata-0.4.5.tar.gz tmp/aiondata-0.4.6.tar.gz --markdown 20240519/a/aiondata/0.4.5-0.4.6/README.md --exclude *.pyd
+[2024-05-19 15:02:19] INFO root fetch - processPackages [aiondata]: Remove: archive file [/home/abi/fetcher/tmp/aiondata-0.4.5.tar.gz]
+[2024-05-19 15:02:19] INFO root fetch - processPackages [aiondata]: Remove: archive file [/home/abi/fetcher/tmp/aiondata-0.4.6.tar.gz]
+[2024-05-19 15:02:19] INFO root fetch - main [MainThread]: End processing [aiondata]: success
+[2024-05-19 15:02:19] INFO root fetch - main [MainThread]: Store serial: [23276541]
