@@ -9848,3 +9848,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 13:57:39] INFO root fetch - processPackages [pytest-asyncio]: Remove: archive file [/home/abi/fetcher/tmp/pytest-asyncio-0.9.0.tar.gz]
 [2024-05-19 13:57:39] INFO root fetch - main [MainThread]: End processing [pytest-asyncio]: success
 [2024-05-19 13:57:39] INFO root fetch - main [MainThread]: Store serial: [23276058]
+[2024-05-19 13:59:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276058]
+[2024-05-19 13:59:47] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 13:59:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pih
+[2024-05-19 13:59:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: RTS-DocsBuilder
+[2024-05-19 13:59:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openplantbook-sdk
+[2024-05-19 13:59:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: steriliserz
+[2024-05-19 13:59:47] INFO root fetch - processPackages [RTS-DocsBuilder]: New version: [0.3] Old Version: [0.2]
+[2024-05-19 13:59:47] INFO root fetch - processPackages [pih]: New version: [0.36.9] Old Version: [0.36.8]
+[2024-05-19 13:59:47] WARNING root fetch - processPackages [steriliserz]: Skipping, unable to determine old version
+[2024-05-19 13:59:47] INFO root fetch - main [MainThread]: End processing [steriliserz] error
+[2024-05-19 13:59:47] INFO root fetch - processPackages [openplantbook-sdk]: New version: [0.4.6] Old Version: [0.4.5]
+[2024-05-19 13:59:47] INFO root fetch - processPackages [RTS-DocsBuilder]: Downloading https://files.pythonhosted.org/packages/cb/7a/9dc66ed879a48b21f4dd8d388c822a2921cabbdeb19dd6f80c7a5dbf1434/RTS_DocsBuilder-0.2.tar.gz
+[2024-05-19 13:59:47] INFO root fetch - processPackages [pih]: Downloading https://files.pythonhosted.org/packages/15/e3/22ec9d9aa00889ba5428e575aec5461f921ebc7cd055bcbe8a4d08c33218/pih-0.36.8.tar.gz
+[2024-05-19 13:59:48] INFO root fetch - processPackages [openplantbook-sdk]: Downloading https://files.pythonhosted.org/packages/b3/48/b42c69cbacd4046450cdd0630d54ec73975c3c150d55fa754c049bd2ba06/openplantbook-sdk-0.4.5.tar.gz
+[2024-05-19 13:59:48] INFO root fetch - processPackages [pih]: Downloading https://files.pythonhosted.org/packages/68/1a/6491ba90ae40918db4f8dc253ce837f95f5404e51728f862a2c86457d528/pih-0.36.9.tar.gz
+[2024-05-19 13:59:48] INFO root fetch - processPackages [RTS-DocsBuilder]: Downloading https://files.pythonhosted.org/packages/c8/4a/2ba5d6644b6954fb5c49b5e9484f87889fe73739ce1745000d34299df4a8/RTS_DocsBuilder-0.3.tar.gz
+[2024-05-19 13:59:48] INFO root fetch - processPackages [pih]: executing diffoscope
+[2024-05-19 13:59:48] INFO root fetch - processPackages [pih]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pih-0.36.8.tar.gz tmp/pih-0.36.9.tar.gz --markdown 20240519/p/pih/0.36.8-0.36.9/README.md --exclude *.pyd
+[2024-05-19 13:59:48] INFO root fetch - processPackages [RTS-DocsBuilder]: executing diffoscope
+[2024-05-19 13:59:48] INFO root fetch - processPackages [RTS-DocsBuilder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RTS_DocsBuilder-0.2.tar.gz tmp/RTS_DocsBuilder-0.3.tar.gz --markdown 20240519/R/RTS-DocsBuilder/0.2-0.3/README.md --exclude *.pyd
+[2024-05-19 13:59:48] INFO root fetch - processPackages [openplantbook-sdk]: Downloading https://files.pythonhosted.org/packages/da/ea/6ce5a55eae0a66c1ab4cda3dfbd767f1fb14277756d20b34bc74efc56a54/openplantbook_sdk-0.4.6.tar.gz
+[2024-05-19 13:59:48] INFO root fetch - processPackages [openplantbook-sdk]: executing diffoscope
+[2024-05-19 13:59:48] INFO root fetch - processPackages [openplantbook-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openplantbook-sdk-0.4.5.tar.gz tmp/openplantbook_sdk-0.4.6.tar.gz --markdown 20240519/o/openplantbook-sdk/0.4.5-0.4.6/README.md --exclude *.pyd
+[2024-05-19 13:59:48] INFO root fetch - processPackages [RTS-DocsBuilder]: Remove: archive file [/home/abi/fetcher/tmp/RTS_DocsBuilder-0.2.tar.gz]
+[2024-05-19 13:59:48] INFO root fetch - processPackages [RTS-DocsBuilder]: Remove: archive file [/home/abi/fetcher/tmp/RTS_DocsBuilder-0.3.tar.gz]
+[2024-05-19 13:59:48] INFO root fetch - main [MainThread]: End processing [RTS-DocsBuilder]: success
+[2024-05-19 13:59:49] INFO root fetch - processPackages [pih]: Remove: archive file [/home/abi/fetcher/tmp/pih-0.36.8.tar.gz]
+[2024-05-19 13:59:49] INFO root fetch - processPackages [pih]: Remove: archive file [/home/abi/fetcher/tmp/pih-0.36.9.tar.gz]
+[2024-05-19 13:59:49] INFO root fetch - main [MainThread]: End processing [pih]: success
+[2024-05-19 13:59:49] INFO root fetch - processPackages [openplantbook-sdk]: Remove: archive file [/home/abi/fetcher/tmp/openplantbook-sdk-0.4.5.tar.gz]
+[2024-05-19 13:59:49] INFO root fetch - processPackages [openplantbook-sdk]: Remove: archive file [/home/abi/fetcher/tmp/openplantbook_sdk-0.4.6.tar.gz]
+[2024-05-19 13:59:49] INFO root fetch - main [MainThread]: End processing [openplantbook-sdk]: success
+[2024-05-19 13:59:49] INFO root fetch - main [MainThread]: Store serial: [23276071]
