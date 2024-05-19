@@ -2692,3 +2692,63 @@
 [2024-05-19 04:24:48] INFO root fetch - processPackages [types-influxdb-client]: Remove: archive file [/home/abi/fetcher/tmp/types-influxdb-client-1.42.0.20240425.tar.gz]
 [2024-05-19 04:24:48] INFO root fetch - main [MainThread]: End processing [types-influxdb-client]: success
 [2024-05-19 04:24:48] INFO root fetch - main [MainThread]: Store serial: [23272775]
+[2024-05-19 04:26:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272775]
+[2024-05-19 04:26:57] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-19 04:26:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: types-flake8
+[2024-05-19 04:26:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: types-fpdf2
+[2024-05-19 04:26:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pkscreener
+[2024-05-19 04:26:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: types-docker
+[2024-05-19 04:26:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: monbuttuz
+[2024-05-19 04:26:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: naif-eop-high-prec
+[2024-05-19 04:26:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: iam-actions
+[2024-05-19 04:26:57] INFO root fetch - processPackages [iam-actions]: New version: [1.2.20240518] Old Version: [1.2.20240517]
+[2024-05-19 04:26:57] INFO root fetch - processPackages [naif-eop-high-prec]: New version: [2024.5.18] Old Version: [2024.5.17]
+[2024-05-19 04:26:57] INFO root fetch - processPackages [types-fpdf2]: New version: [2.7.9.20240519] Old Version: [2.7.8.20240423]
+[2024-05-19 04:26:57] INFO root fetch - processPackages [types-docker]: New version: [7.0.0.20240519] Old Version: [7.0.0.20240515]
+[2024-05-19 04:26:57] WARNING root fetch - processPackages [monbuttuz]: Skipping, unable to determine old version
+[2024-05-19 04:26:57] INFO root fetch - main [MainThread]: End processing [monbuttuz] error
+[2024-05-19 04:26:57] INFO root fetch - processPackages [types-flake8]: New version: [7.0.0.20240519] Old Version: [7.0.0.20240511]
+[2024-05-19 04:26:57] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/e3/9f/eba458934acabf883af31caaae2b01818ff0cae78d66794d4cc65cdd0def/iam_actions-1.2.20240517.tar.gz
+[2024-05-19 04:26:57] INFO root fetch - processPackages [naif-eop-high-prec]: Downloading https://files.pythonhosted.org/packages/5f/b6/0cd0b83361a70dfaf2ef2919d7edc8471e4da512c6ad8fb5bff0400805c9/naif_eop_high_prec-2024.5.17.tar.gz
+[2024-05-19 04:26:58] INFO root fetch - processPackages [pkscreener]: New version: [0.45.20240519.385] Old Version: [0.45.20240518.383]
+[2024-05-19 04:26:58] INFO root fetch - processPackages [types-fpdf2]: Downloading https://files.pythonhosted.org/packages/36/67/351eb4f53bf0b4044c636be2a761373e2551df4cc94f76dee3201c96ce9f/types-fpdf2-2.7.8.20240423.tar.gz
+[2024-05-19 04:26:58] INFO root fetch - processPackages [types-flake8]: Downloading https://files.pythonhosted.org/packages/b1/60/cc1758bed5868a2348e206e6e2e5e4bec4141eb39ddac63101f40c3a938e/types-flake8-7.0.0.20240511.tar.gz
+[2024-05-19 04:26:58] INFO root fetch - processPackages [types-docker]: Downloading https://files.pythonhosted.org/packages/58/9f/48d7477376bc1bf8952ec36cdbb9fbf2eed7f1464ee3b0ea6889e5cd5ad2/types-docker-7.0.0.20240515.tar.gz
+[2024-05-19 04:26:58] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/88/4b/baf90f1d460611191eead663c2e0dcdb001801f5599cb311c2d196f7ef0d/pkscreener-0.45.20240518.383.tar.gz
+[2024-05-19 04:26:58] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/6e/85/81121a74c17616841c9be7cb515fc374eb8637f6937e41146576ea6c56b7/iam_actions-1.2.20240518.tar.gz
+[2024-05-19 04:26:58] INFO root fetch - processPackages [types-flake8]: Downloading https://files.pythonhosted.org/packages/14/5c/c3a69718c69a44b6c827c9b9fff7ec1025ee1b8c85a373cb62aa42f2b126/types-flake8-7.0.0.20240519.tar.gz
+[2024-05-19 04:26:58] INFO root fetch - processPackages [types-docker]: Downloading https://files.pythonhosted.org/packages/4f/0b/c4c756849714ccd60951fe24374e2f6334aa9ca0d5f9c8d08cc004e41022/types-docker-7.0.0.20240519.tar.gz
+[2024-05-19 04:26:58] INFO root fetch - processPackages [types-fpdf2]: Downloading https://files.pythonhosted.org/packages/6a/e4/f9e0775aa4b355ce8a34a66686f850c47d5bf0ae0e04df019f36cbf7dbbf/types-fpdf2-2.7.9.20240519.tar.gz
+[2024-05-19 04:26:58] INFO root fetch - processPackages [naif-eop-high-prec]: Downloading https://files.pythonhosted.org/packages/e2/a4/70386a4de9135bf30df72c54e912ea3a8479d64ba3995d8bc1170891f360/naif_eop_high_prec-2024.5.18.tar.gz
+[2024-05-19 04:26:58] INFO root fetch - processPackages [types-flake8]: executing diffoscope
+[2024-05-19 04:26:58] INFO root fetch - processPackages [types-flake8]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-flake8-7.0.0.20240511.tar.gz tmp/types-flake8-7.0.0.20240519.tar.gz --markdown 20240519/t/types-flake8/7.0.0.20240511-7.0.0.20240519/README.md --exclude *.pyd
+[2024-05-19 04:26:58] INFO root fetch - processPackages [types-docker]: executing diffoscope
+[2024-05-19 04:26:58] INFO root fetch - processPackages [types-docker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-docker-7.0.0.20240515.tar.gz tmp/types-docker-7.0.0.20240519.tar.gz --markdown 20240519/t/types-docker/7.0.0.20240515-7.0.0.20240519/README.md --exclude *.pyd
+[2024-05-19 04:26:58] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/b2/64/4f2422f765225c5fde08d771f28ceba5c191107eaa2032ff51706cf7f6f3/pkscreener-0.45.20240519.385.tar.gz
+[2024-05-19 04:26:58] INFO root fetch - processPackages [types-fpdf2]: executing diffoscope
+[2024-05-19 04:26:58] INFO root fetch - processPackages [types-fpdf2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-fpdf2-2.7.8.20240423.tar.gz tmp/types-fpdf2-2.7.9.20240519.tar.gz --markdown 20240519/t/types-fpdf2/2.7.8.20240423-2.7.9.20240519/README.md --exclude *.pyd
+[2024-05-19 04:26:58] INFO root fetch - processPackages [iam-actions]: executing diffoscope
+[2024-05-19 04:26:58] INFO root fetch - processPackages [iam-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iam_actions-1.2.20240517.tar.gz tmp/iam_actions-1.2.20240518.tar.gz --markdown 20240519/i/iam-actions/1.2.20240517-1.2.20240518/README.md --exclude *.pyd
+[2024-05-19 04:26:58] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-05-19 04:26:58] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.45.20240518.383.tar.gz tmp/pkscreener-0.45.20240519.385.tar.gz --markdown 20240519/p/pkscreener/0.45.20240518.383-0.45.20240519.385/README.md --exclude *.pyd
+[2024-05-19 04:26:58] INFO root fetch - processPackages [naif-eop-high-prec]: executing diffoscope
+[2024-05-19 04:26:58] INFO root fetch - processPackages [naif-eop-high-prec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naif_eop_high_prec-2024.5.17.tar.gz tmp/naif_eop_high_prec-2024.5.18.tar.gz --markdown 20240519/n/naif-eop-high-prec/2024.5.17-2024.5.18/README.md --exclude *.pyd
+[2024-05-19 04:26:59] INFO root fetch - processPackages [types-docker]: Remove: archive file [/home/abi/fetcher/tmp/types-docker-7.0.0.20240515.tar.gz]
+[2024-05-19 04:26:59] INFO root fetch - processPackages [types-docker]: Remove: archive file [/home/abi/fetcher/tmp/types-docker-7.0.0.20240519.tar.gz]
+[2024-05-19 04:26:59] INFO root fetch - main [MainThread]: End processing [types-docker]: success
+[2024-05-19 04:26:59] INFO root fetch - processPackages [types-flake8]: Remove: archive file [/home/abi/fetcher/tmp/types-flake8-7.0.0.20240511.tar.gz]
+[2024-05-19 04:26:59] INFO root fetch - processPackages [types-flake8]: Remove: archive file [/home/abi/fetcher/tmp/types-flake8-7.0.0.20240519.tar.gz]
+[2024-05-19 04:26:59] INFO root fetch - main [MainThread]: End processing [types-flake8]: success
+[2024-05-19 04:26:59] INFO root fetch - processPackages [types-fpdf2]: Remove: archive file [/home/abi/fetcher/tmp/types-fpdf2-2.7.8.20240423.tar.gz]
+[2024-05-19 04:26:59] INFO root fetch - processPackages [types-fpdf2]: Remove: archive file [/home/abi/fetcher/tmp/types-fpdf2-2.7.9.20240519.tar.gz]
+[2024-05-19 04:26:59] INFO root fetch - main [MainThread]: End processing [types-fpdf2]: success
+[2024-05-19 04:26:59] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240518.383.tar.gz]
+[2024-05-19 04:26:59] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240519.385.tar.gz]
+[2024-05-19 04:26:59] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-05-19 04:27:00] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240517.tar.gz]
+[2024-05-19 04:27:00] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240518.tar.gz]
+[2024-05-19 04:27:00] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
+[2024-05-19 04:27:02] INFO root fetch - processPackages [naif-eop-high-prec]: Remove: archive file [/home/abi/fetcher/tmp/naif_eop_high_prec-2024.5.17.tar.gz]
+[2024-05-19 04:27:02] INFO root fetch - processPackages [naif-eop-high-prec]: Remove: archive file [/home/abi/fetcher/tmp/naif_eop_high_prec-2024.5.18.tar.gz]
+[2024-05-19 04:27:02] INFO root fetch - main [MainThread]: End processing [naif-eop-high-prec]: success
+[2024-05-19 04:27:02] INFO root fetch - main [MainThread]: Store serial: [23272798]
