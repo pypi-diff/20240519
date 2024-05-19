@@ -4939,3 +4939,69 @@
 [2024-05-19 08:06:57] INFO root fetch - processPackages [torspy]: Remove: archive file [/home/abi/fetcher/tmp/torspy-2.0.0.tar.gz]
 [2024-05-19 08:06:57] INFO root fetch - main [MainThread]: End processing [torspy]: success
 [2024-05-19 08:06:57] INFO root fetch - main [MainThread]: Store serial: [23273692]
+[2024-05-19 08:09:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273692]
+[2024-05-19 08:09:06] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-19 08:09:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: func2stream
+[2024-05-19 08:09:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: func2stream
+[2024-05-19 08:09:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sportswrangler
+[2024-05-19 08:09:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PayNexus
+[2024-05-19 08:09:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mentabotix
+[2024-05-19 08:09:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hd2-macros
+[2024-05-19 08:09:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nonebot-plugin-pcrjjc
+[2024-05-19 08:09:06] INFO root fetch - processPackages [PayNexus]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-05-19 08:09:06] INFO root fetch - processPackages [sportswrangler]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-19 08:09:06] INFO root fetch - processPackages [func2stream]: New version: [0.0.1.dev20240519] Old Version: [0.0.1.20240519]
+[2024-05-19 08:09:06] INFO root fetch - processPackages [func2stream]: New version: [0.0.1.dev240519060655] Old Version: [0.0.1.dev240519060652]
+[2024-05-19 08:09:06] INFO root fetch - processPackages [hd2-macros]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-05-19 08:09:06] INFO root fetch - processPackages [mentabotix]: New version: [0.1.4.8] Old Version: [0.1.4.7]
+[2024-05-19 08:09:06] INFO root fetch - processPackages [PayNexus]: Downloading https://files.pythonhosted.org/packages/1a/04/48972b73b52fd01b893fc205f1560a0b5810dcae9bbb7683fbf10a07f734/paynexus-0.2.3.tar.gz
+[2024-05-19 08:09:06] INFO root fetch - processPackages [nonebot-plugin-pcrjjc]: New version: [0.8.1] Old Version: [0.8.0]
+[2024-05-19 08:09:06] INFO root fetch - processPackages [sportswrangler]: Downloading https://files.pythonhosted.org/packages/c5/f7/18a5f091eb03e3b97386024f883237775f5874d25a1678ed538b8c1090ba/sportswrangler-0.1.5.tar.gz
+[2024-05-19 08:09:06] INFO root fetch - processPackages [func2stream]: Downloading https://files.pythonhosted.org/packages/6c/fb/d14e3c1a05f840a62f3fd540094b6502f222adf3e20e30397e80d2468fd7/func2stream-0.0.1.20240519.tar.gz
+[2024-05-19 08:09:06] INFO root fetch - processPackages [func2stream]: Downloading https://files.pythonhosted.org/packages/c9/cc/2d95f7ad1671be4a40c2144e57fd6a3722b8e041231cd870f83705f9867a/func2stream-0.0.1.dev240519060652.tar.gz
+[2024-05-19 08:09:07] INFO root fetch - processPackages [hd2-macros]: Downloading https://files.pythonhosted.org/packages/20/a1/197134577c2444d3b4d307c3d37be1fa10f78c6ee8966c2eecadb8a27a0d/hd2_macros-1.2.1.tar.gz
+[2024-05-19 08:09:07] INFO root fetch - processPackages [nonebot-plugin-pcrjjc]: Downloading https://files.pythonhosted.org/packages/da/c9/ba461c2a2a87b0bbd7fe7cb42f08461d73a1de4c27d2a2738e5746e28085/nonebot_plugin_pcrjjc-0.8.0.tar.gz
+[2024-05-19 08:09:07] INFO root fetch - processPackages [mentabotix]: Downloading https://files.pythonhosted.org/packages/2a/b4/d056e996382000e8ea5e4d0c8b6be49447ccc364281398cb9f9c886962ce/mentabotix-0.1.4.7.tar.gz
+[2024-05-19 08:09:07] INFO root fetch - processPackages [func2stream]: Downloading https://files.pythonhosted.org/packages/6c/5e/e3bbd0e09b7eb15919cfcdffb6483fe919fc27af449576605e66938834ab/func2stream-0.0.1.dev20240519.tar.gz
+[2024-05-19 08:09:07] INFO root fetch - processPackages [PayNexus]: Downloading https://files.pythonhosted.org/packages/79/9d/433fb0c277f5474f624e7201338d8b620f3d313a361ef4b15651a708f4c5/paynexus-0.2.4.tar.gz
+[2024-05-19 08:09:07] INFO root fetch - processPackages [sportswrangler]: Downloading https://files.pythonhosted.org/packages/5e/8d/16fb3929bbf5624b5c3d71c49b894ee1086d93b4224b782916211a64ab38/sportswrangler-0.1.6.tar.gz
+[2024-05-19 08:09:07] INFO root fetch - processPackages [func2stream]: executing diffoscope
+[2024-05-19 08:09:07] INFO root fetch - processPackages [func2stream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/func2stream-0.0.1.20240519.tar.gz tmp/func2stream-0.0.1.dev20240519.tar.gz --markdown 20240519/f/func2stream/0.0.1.20240519-0.0.1.dev20240519/README.md --exclude *.pyd
+[2024-05-19 08:09:07] INFO root fetch - processPackages [PayNexus]: executing diffoscope
+[2024-05-19 08:09:07] INFO root fetch - processPackages [PayNexus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paynexus-0.2.3.tar.gz tmp/paynexus-0.2.4.tar.gz --markdown 20240519/P/PayNexus/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-05-19 08:09:07] INFO root fetch - processPackages [func2stream]: Downloading https://files.pythonhosted.org/packages/91/85/aed22fcd31d04bbd38159338638cddf9e7252e0df77bcf2430963f1d2af9/func2stream-0.0.1.dev240519060655-py3-none-any.whl
+[2024-05-19 08:09:07] INFO root fetch - processPackages [hd2-macros]: Downloading https://files.pythonhosted.org/packages/01/c8/a712a0be7a7a3fbe1931ebb869ddd25fb8874d4ec829b3c133f1587113a4/hd2_macros-1.2.2.tar.gz
+[2024-05-19 08:09:07] INFO root fetch - processPackages [sportswrangler]: executing diffoscope
+[2024-05-19 08:09:07] INFO root fetch - processPackages [sportswrangler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sportswrangler-0.1.5.tar.gz tmp/sportswrangler-0.1.6.tar.gz --markdown 20240519/s/sportswrangler/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-19 08:09:07] INFO root fetch - processPackages [mentabotix]: Downloading https://files.pythonhosted.org/packages/6a/24/652f96945a74a866a43e5aa5ceee192a738aeba9b9529058a3052e64c2ac/mentabotix-0.1.4.8.tar.gz
+[2024-05-19 08:09:07] INFO root fetch - processPackages [nonebot-plugin-pcrjjc]: Downloading https://files.pythonhosted.org/packages/64/82/2fad7f125731ef0b4e5f0f48bf36c1522f5960cd7ff73e7ca330e4cabbf8/nonebot_plugin_pcrjjc-0.8.1.tar.gz
+[2024-05-19 08:09:07] INFO root fetch - processPackages [hd2-macros]: executing diffoscope
+[2024-05-19 08:09:07] INFO root fetch - processPackages [hd2-macros]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hd2_macros-1.2.1.tar.gz tmp/hd2_macros-1.2.2.tar.gz --markdown 20240519/h/hd2-macros/1.2.1-1.2.2/README.md --exclude *.pyd
+[2024-05-19 08:09:07] INFO root fetch - processPackages [func2stream]: executing diffoscope
+[2024-05-19 08:09:07] INFO root fetch - processPackages [func2stream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/func2stream-0.0.1.dev240519060652.tar.gz tmp/func2stream-0.0.1.dev240519060655-py3-none-any.whl.zip --markdown 20240519/f/func2stream/0.0.1.dev240519060652-0.0.1.dev240519060655/README.md --exclude *.pyd
+[2024-05-19 08:09:07] INFO root fetch - processPackages [mentabotix]: executing diffoscope
+[2024-05-19 08:09:07] INFO root fetch - processPackages [mentabotix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mentabotix-0.1.4.7.tar.gz tmp/mentabotix-0.1.4.8.tar.gz --markdown 20240519/m/mentabotix/0.1.4.7-0.1.4.8/README.md --exclude *.pyd
+[2024-05-19 08:09:07] INFO root fetch - processPackages [nonebot-plugin-pcrjjc]: executing diffoscope
+[2024-05-19 08:09:07] INFO root fetch - processPackages [nonebot-plugin-pcrjjc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_pcrjjc-0.8.0.tar.gz tmp/nonebot_plugin_pcrjjc-0.8.1.tar.gz --markdown 20240519/n/nonebot-plugin-pcrjjc/0.8.0-0.8.1/README.md --exclude *.pyd
+[2024-05-19 08:09:07] INFO root fetch - processPackages [func2stream]: Remove: archive file [/home/abi/fetcher/tmp/func2stream-0.0.1.20240519.tar.gz]
+[2024-05-19 08:09:07] INFO root fetch - processPackages [func2stream]: Remove: archive file [/home/abi/fetcher/tmp/func2stream-0.0.1.dev20240519.tar.gz]
+[2024-05-19 08:09:07] INFO root fetch - main [MainThread]: End processing [func2stream]: success
+[2024-05-19 08:09:07] INFO root fetch - processPackages [PayNexus]: Remove: archive file [/home/abi/fetcher/tmp/paynexus-0.2.3.tar.gz]
+[2024-05-19 08:09:07] INFO root fetch - processPackages [PayNexus]: Remove: archive file [/home/abi/fetcher/tmp/paynexus-0.2.4.tar.gz]
+[2024-05-19 08:09:07] INFO root fetch - main [MainThread]: End processing [PayNexus]: success
+[2024-05-19 08:09:08] INFO root fetch - processPackages [func2stream]: Remove: archive file [/home/abi/fetcher/tmp/func2stream-0.0.1.dev240519060652.tar.gz]
+[2024-05-19 08:09:08] INFO root fetch - processPackages [func2stream]: Remove: archive file [/home/abi/fetcher/tmp/func2stream-0.0.1.dev240519060655-py3-none-any.whl.zip]
+[2024-05-19 08:09:08] INFO root fetch - main [MainThread]: End processing [func2stream]: success
+[2024-05-19 08:09:08] INFO root fetch - processPackages [sportswrangler]: Remove: archive file [/home/abi/fetcher/tmp/sportswrangler-0.1.5.tar.gz]
+[2024-05-19 08:09:08] INFO root fetch - processPackages [sportswrangler]: Remove: archive file [/home/abi/fetcher/tmp/sportswrangler-0.1.6.tar.gz]
+[2024-05-19 08:09:08] INFO root fetch - main [MainThread]: End processing [sportswrangler]: success
+[2024-05-19 08:09:08] INFO root fetch - processPackages [nonebot-plugin-pcrjjc]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_pcrjjc-0.8.0.tar.gz]
+[2024-05-19 08:09:08] INFO root fetch - processPackages [nonebot-plugin-pcrjjc]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_pcrjjc-0.8.1.tar.gz]
+[2024-05-19 08:09:08] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-pcrjjc]: success
+[2024-05-19 08:09:08] INFO root fetch - processPackages [hd2-macros]: Remove: archive file [/home/abi/fetcher/tmp/hd2_macros-1.2.1.tar.gz]
+[2024-05-19 08:09:08] INFO root fetch - processPackages [hd2-macros]: Remove: archive file [/home/abi/fetcher/tmp/hd2_macros-1.2.2.tar.gz]
+[2024-05-19 08:09:08] INFO root fetch - main [MainThread]: End processing [hd2-macros]: success
+[2024-05-19 08:09:08] INFO root fetch - processPackages [mentabotix]: Remove: archive file [/home/abi/fetcher/tmp/mentabotix-0.1.4.7.tar.gz]
+[2024-05-19 08:09:08] INFO root fetch - processPackages [mentabotix]: Remove: archive file [/home/abi/fetcher/tmp/mentabotix-0.1.4.8.tar.gz]
+[2024-05-19 08:09:08] INFO root fetch - main [MainThread]: End processing [mentabotix]: success
+[2024-05-19 08:09:08] INFO root fetch - main [MainThread]: Store serial: [23273712]
