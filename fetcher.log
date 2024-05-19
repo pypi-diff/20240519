@@ -8709,3 +8709,23 @@
 [2024-05-19 12:48:15] WARNING root fetch - processPackages [blackneckz]: Skipping, unable to determine old version
 [2024-05-19 12:48:15] INFO root fetch - main [MainThread]: End processing [blackneckz] error
 [2024-05-19 12:48:15] INFO root fetch - main [MainThread]: Store serial: [23275628]
+[2024-05-19 12:50:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275628]
+[2024-05-19 12:50:24] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 12:50:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moto
+[2024-05-19 12:50:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fast-multi-regex
+[2024-05-19 12:50:24] INFO root fetch - processPackages [fast-multi-regex]: New version: [0.2] Old Version: [0.1]
+[2024-05-19 12:50:24] INFO root fetch - processPackages [moto]: New version: [5.0.8.dev8] Old Version: [5.0.8.dev7]
+[2024-05-19 12:50:24] INFO root fetch - processPackages [fast-multi-regex]: Downloading https://files.pythonhosted.org/packages/44/d6/a3d952e8dd6519ccead90d79e9f02719fbc0aaa6813f28e4581cc73f3a35/fast_multi_regex-0.1.tar.gz
+[2024-05-19 12:50:24] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/77/27/8761f6cb762f14d00d573cd0cfad74d5af5b7a1f30d9721091d6e1435743/moto-5.0.8.dev7.tar.gz
+[2024-05-19 12:50:24] INFO root fetch - processPackages [fast-multi-regex]: Downloading https://files.pythonhosted.org/packages/d5/7e/4d439e756c694206844f9eabadb4ab321e22ff2eceb1037ab735b664fe74/fast_multi_regex-0.2.tar.gz
+[2024-05-19 12:50:24] INFO root fetch - processPackages [fast-multi-regex]: executing diffoscope
+[2024-05-19 12:50:24] INFO root fetch - processPackages [fast-multi-regex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fast_multi_regex-0.1.tar.gz tmp/fast_multi_regex-0.2.tar.gz --markdown 20240519/f/fast-multi-regex/0.1-0.2/README.md --exclude *.pyd
+[2024-05-19 12:50:25] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/3b/ac/06a0859bde65d51176d1bc211894343ba012b690fa8ca460b05853a4cc62/moto-5.0.8.dev8.tar.gz
+[2024-05-19 12:50:25] INFO root fetch - processPackages [fast-multi-regex]: Remove: archive file [/home/abi/fetcher/tmp/fast_multi_regex-0.1.tar.gz]
+[2024-05-19 12:50:25] INFO root fetch - processPackages [fast-multi-regex]: Remove: archive file [/home/abi/fetcher/tmp/fast_multi_regex-0.2.tar.gz]
+[2024-05-19 12:50:25] INFO root fetch - main [MainThread]: End processing [fast-multi-regex]: success
+[2024-05-19 12:50:25] INFO root fetch - processPackages [moto]: executing diffoscope
+[2024-05-19 12:50:25] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-5.0.8.dev7.tar.gz tmp/moto-5.0.8.dev8.tar.gz --markdown 20240519/m/moto/5.0.8.dev7-5.0.8.dev8/README.md --exclude *.pyd
+[2024-05-19 12:53:25] ERROR root fetch - processPackages [moto]: Timeout during execution of pkgdiff
+[2024-05-19 12:53:25] INFO root fetch - main [MainThread]: End processing [moto] error
+[2024-05-19 12:53:25] INFO root fetch - main [MainThread]: Store serial: [23275633]
