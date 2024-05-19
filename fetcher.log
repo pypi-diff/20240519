@@ -5890,3 +5890,30 @@
 [2024-05-19 09:23:57] INFO root fetch - processPackages [cmeel-casadi-kin-dyn]: Remove: archive file [/home/abi/fetcher/tmp/cmeel_casadi_kin_dyn-1.6.9-0-cp39-cp39-manylinux_2_28_x86_64.whl.zip]
 [2024-05-19 09:23:57] INFO root fetch - main [MainThread]: End processing [cmeel-casadi-kin-dyn]: success
 [2024-05-19 09:23:57] INFO root fetch - main [MainThread]: Store serial: [23274119]
+[2024-05-19 09:26:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274119]
+[2024-05-19 09:26:10] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 09:26:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: redhat-qe-cloud-tools
+[2024-05-19 09:26:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: actionlint-py
+[2024-05-19 09:26:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: FleekAPI
+[2024-05-19 09:26:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: translator-uabthehack
+[2024-05-19 09:26:10] WARNING root fetch - processPackages [FleekAPI]: Skipping, unable to determine old version
+[2024-05-19 09:26:10] INFO root fetch - main [MainThread]: End processing [FleekAPI] error
+[2024-05-19 09:26:10] INFO root fetch - processPackages [redhat-qe-cloud-tools]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-19 09:26:10] INFO root fetch - processPackages [redhat-qe-cloud-tools]: Downloading https://files.pythonhosted.org/packages/bb/ba/b006d094180ea2c9d36260eb23821d2bdf0bc3e11192b77282a510ac39ee/redhat_qe_cloud_tools-1.0.8.tar.gz
+[2024-05-19 09:26:10] INFO root fetch - processPackages [actionlint-py]: New version: [1.7.0.14] Old Version: [1.6.27.13]
+[2024-05-19 09:26:10] WARNING root fetch - processPackages [translator-uabthehack]: Skipping, unable to determine old version
+[2024-05-19 09:26:10] INFO root fetch - main [MainThread]: End processing [translator-uabthehack] error
+[2024-05-19 09:26:10] INFO root fetch - processPackages [actionlint-py]: Downloading https://files.pythonhosted.org/packages/00/cd/8e07d39e805949613607b521cdafdcadb989dd1e73ef37a9800efbe2f737/actionlint_py-1.6.27.13.tar.gz
+[2024-05-19 09:26:10] INFO root fetch - processPackages [redhat-qe-cloud-tools]: Downloading https://files.pythonhosted.org/packages/73/ee/78f15b2144832b2da8cfd67c1d7f49253a5bbeabe351e94adf1af190017c/redhat_qe_cloud_tools-1.0.9.tar.gz
+[2024-05-19 09:26:10] INFO root fetch - processPackages [redhat-qe-cloud-tools]: executing diffoscope
+[2024-05-19 09:26:10] INFO root fetch - processPackages [redhat-qe-cloud-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redhat_qe_cloud_tools-1.0.8.tar.gz tmp/redhat_qe_cloud_tools-1.0.9.tar.gz --markdown 20240519/r/redhat-qe-cloud-tools/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-19 09:26:11] INFO root fetch - processPackages [actionlint-py]: Downloading https://files.pythonhosted.org/packages/5c/74/f7ae08b0d09defee6b36871d806aed39bb6ae84ed11b97b585cc73e6eb81/actionlint_py-1.7.0.14.tar.gz
+[2024-05-19 09:26:11] INFO root fetch - processPackages [actionlint-py]: executing diffoscope
+[2024-05-19 09:26:11] INFO root fetch - processPackages [actionlint-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/actionlint_py-1.6.27.13.tar.gz tmp/actionlint_py-1.7.0.14.tar.gz --markdown 20240519/a/actionlint-py/1.6.27.13-1.7.0.14/README.md --exclude *.pyd
+[2024-05-19 09:26:11] INFO root fetch - processPackages [redhat-qe-cloud-tools]: Remove: archive file [/home/abi/fetcher/tmp/redhat_qe_cloud_tools-1.0.8.tar.gz]
+[2024-05-19 09:26:11] INFO root fetch - processPackages [redhat-qe-cloud-tools]: Remove: archive file [/home/abi/fetcher/tmp/redhat_qe_cloud_tools-1.0.9.tar.gz]
+[2024-05-19 09:26:11] INFO root fetch - main [MainThread]: End processing [redhat-qe-cloud-tools]: success
+[2024-05-19 09:26:11] INFO root fetch - processPackages [actionlint-py]: Remove: archive file [/home/abi/fetcher/tmp/actionlint_py-1.6.27.13.tar.gz]
+[2024-05-19 09:26:11] INFO root fetch - processPackages [actionlint-py]: Remove: archive file [/home/abi/fetcher/tmp/actionlint_py-1.7.0.14.tar.gz]
+[2024-05-19 09:26:11] INFO root fetch - main [MainThread]: End processing [actionlint-py]: success
+[2024-05-19 09:26:11] INFO root fetch - main [MainThread]: Store serial: [23274126]
