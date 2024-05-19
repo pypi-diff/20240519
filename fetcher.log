@@ -8053,3 +8053,51 @@
 [2024-05-19 12:03:09] INFO root fetch - processPackages [HiggsML]: Remove: archive file [/home/abi/fetcher/tmp/higgsml-0.0.2.tar.gz]
 [2024-05-19 12:03:09] INFO root fetch - main [MainThread]: End processing [HiggsML]: success
 [2024-05-19 12:03:09] INFO root fetch - main [MainThread]: Store serial: [23275290]
+[2024-05-19 12:05:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275290]
+[2024-05-19 12:05:18] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 12:05:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TreeSAK
+[2024-05-19 12:05:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dash-spread-grid
+[2024-05-19 12:05:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fotolab
+[2024-05-19 12:05:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: akshare
+[2024-05-19 12:05:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: uwebserver
+[2024-05-19 12:05:18] INFO root fetch - processPackages [dash-spread-grid]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 12:05:18] INFO root fetch - processPackages [TreeSAK]: New version: [1.9.2] Old Version: [1.9.1]
+[2024-05-19 12:05:18] INFO root fetch - processPackages [uwebserver]: New version: [0.2.0] Old Version: [0.1.3]
+[2024-05-19 12:05:18] INFO root fetch - processPackages [akshare]: New version: [1.9.99] Old Version: [1.9.98]
+[2024-05-19 12:05:18] INFO root fetch - processPackages [fotolab]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-05-19 12:05:18] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/9f/39/3477f65f22676264317bcb1d617b220ddcc8d09f85a7eb7904d8c2676dae/dash_spread_grid-0.0.8.tar.gz
+[2024-05-19 12:05:18] INFO root fetch - processPackages [TreeSAK]: Downloading https://files.pythonhosted.org/packages/33/3d/03ab6748b3aed0610812e461492b58278718c5c15236ce439a758aa3fc27/TreeSAK-1.9.1.tar.gz
+[2024-05-19 12:05:18] INFO root fetch - processPackages [uwebserver]: Downloading https://files.pythonhosted.org/packages/72/9d/fc41012c35b6d18a64e4c5eff891d98ce1d7fbbd489c1c8363fba0ba0e5a/uwebserver-0.1.3.tar.gz
+[2024-05-19 12:05:18] INFO root fetch - processPackages [akshare]: Downloading https://files.pythonhosted.org/packages/ec/a4/f1c21d8fbb349e15f0bf76d32a496003bcff9b66215f81b940337a510e36/akshare-1.9.98.tar.gz
+[2024-05-19 12:05:18] INFO root fetch - processPackages [fotolab]: Downloading https://files.pythonhosted.org/packages/a2/ab/c10acca0ef62a7fc9ee21e1a91f04225aa100f106ea8efe4bafd9b0ec125/fotolab-0.9.0.tar.gz
+[2024-05-19 12:05:18] INFO root fetch - processPackages [uwebserver]: Downloading https://files.pythonhosted.org/packages/65/5e/d5f9ba8a2da0ad2ced5247b47da2a007ddfafcd06dc583f54ecd4e04dc15/uwebserver-0.2.0.tar.gz
+[2024-05-19 12:05:18] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/37/f7/3991c1c5cd26d592773df3381df4e17ae14f51d47af4fd52b7419949494b/dash_spread_grid-0.0.9.tar.gz
+[2024-05-19 12:05:18] INFO root fetch - processPackages [TreeSAK]: Downloading https://files.pythonhosted.org/packages/3d/18/0b0f8a2c565de5415024065f522c859677184cac283a7e4af0060f267891/TreeSAK-1.9.2.tar.gz
+[2024-05-19 12:05:18] INFO root fetch - processPackages [akshare]: Downloading https://files.pythonhosted.org/packages/53/e8/f58e96016752567ca09f3f67abdc7e935d0afa919aded528d50590ed9170/akshare-1.9.99.tar.gz
+[2024-05-19 12:05:18] INFO root fetch - processPackages [uwebserver]: executing diffoscope
+[2024-05-19 12:05:18] INFO root fetch - processPackages [uwebserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uwebserver-0.1.3.tar.gz tmp/uwebserver-0.2.0.tar.gz --markdown 20240519/u/uwebserver/0.1.3-0.2.0/README.md --exclude *.pyd
+[2024-05-19 12:05:18] INFO root fetch - processPackages [dash-spread-grid]: executing diffoscope
+[2024-05-19 12:05:18] INFO root fetch - processPackages [dash-spread-grid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_spread_grid-0.0.8.tar.gz tmp/dash_spread_grid-0.0.9.tar.gz --markdown 20240519/d/dash-spread-grid/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 12:05:18] INFO root fetch - processPackages [TreeSAK]: executing diffoscope
+[2024-05-19 12:05:18] INFO root fetch - processPackages [TreeSAK]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TreeSAK-1.9.1.tar.gz tmp/TreeSAK-1.9.2.tar.gz --markdown 20240519/T/TreeSAK/1.9.1-1.9.2/README.md --exclude *.pyd
+[2024-05-19 12:05:18] INFO root fetch - processPackages [akshare]: executing diffoscope
+[2024-05-19 12:05:18] INFO root fetch - processPackages [akshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akshare-1.9.98.tar.gz tmp/akshare-1.9.99.tar.gz --markdown 20240519/a/akshare/1.9.98-1.9.99/README.md --exclude *.pyd
+[2024-05-19 12:05:19] INFO root fetch - processPackages [fotolab]: Downloading https://files.pythonhosted.org/packages/f8/7b/ec556508973366d646773454865fe94705524c44efe6ab092e8b0b223dba/fotolab-0.9.1.tar.gz
+[2024-05-19 12:05:19] INFO root fetch - processPackages [fotolab]: executing diffoscope
+[2024-05-19 12:05:19] INFO root fetch - processPackages [fotolab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fotolab-0.9.0.tar.gz tmp/fotolab-0.9.1.tar.gz --markdown 20240519/f/fotolab/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-05-19 12:05:19] INFO root fetch - processPackages [uwebserver]: Remove: archive file [/home/abi/fetcher/tmp/uwebserver-0.1.3.tar.gz]
+[2024-05-19 12:05:19] INFO root fetch - processPackages [uwebserver]: Remove: archive file [/home/abi/fetcher/tmp/uwebserver-0.2.0.tar.gz]
+[2024-05-19 12:05:19] INFO root fetch - main [MainThread]: End processing [uwebserver]: success
+[2024-05-19 12:05:19] INFO root fetch - processPackages [TreeSAK]: Remove: archive file [/home/abi/fetcher/tmp/TreeSAK-1.9.1.tar.gz]
+[2024-05-19 12:05:19] INFO root fetch - processPackages [TreeSAK]: Remove: archive file [/home/abi/fetcher/tmp/TreeSAK-1.9.2.tar.gz]
+[2024-05-19 12:05:19] INFO root fetch - main [MainThread]: End processing [TreeSAK]: success
+[2024-05-19 12:05:19] INFO root fetch - processPackages [fotolab]: Remove: archive file [/home/abi/fetcher/tmp/fotolab-0.9.0.tar.gz]
+[2024-05-19 12:05:19] INFO root fetch - processPackages [fotolab]: Remove: archive file [/home/abi/fetcher/tmp/fotolab-0.9.1.tar.gz]
+[2024-05-19 12:05:19] INFO root fetch - main [MainThread]: End processing [fotolab]: success
+[2024-05-19 12:05:20] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.8.tar.gz]
+[2024-05-19 12:05:20] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.9.tar.gz]
+[2024-05-19 12:05:20] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
+[2024-05-19 12:05:21] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.98.tar.gz]
+[2024-05-19 12:05:21] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.99.tar.gz]
+[2024-05-19 12:05:21] INFO root fetch - main [MainThread]: End processing [akshare]: success
+[2024-05-19 12:05:21] INFO root fetch - main [MainThread]: Store serial: [23275305]
