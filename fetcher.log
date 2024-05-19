@@ -3871,3 +3871,30 @@
 [2024-05-19 06:22:34] WARNING root fetch - processPackages [rikibot]: Skipping, unable to determine old version
 [2024-05-19 06:22:34] INFO root fetch - main [MainThread]: End processing [rikibot] error
 [2024-05-19 06:22:34] INFO root fetch - main [MainThread]: Store serial: [23273232]
+[2024-05-19 06:24:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273232]
+[2024-05-19 06:24:42] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 06:24:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytest-scenario-files
+[2024-05-19 06:24:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: donware
+[2024-05-19 06:24:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: covalentlyz
+[2024-05-19 06:24:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sqlman
+[2024-05-19 06:24:43] WARNING root fetch - processPackages [pytest-scenario-files]: Skipping, unable to determine old version
+[2024-05-19 06:24:43] INFO root fetch - main [MainThread]: End processing [pytest-scenario-files] error
+[2024-05-19 06:24:43] INFO root fetch - processPackages [donware]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-19 06:24:43] WARNING root fetch - processPackages [covalentlyz]: Skipping, unable to determine old version
+[2024-05-19 06:24:43] INFO root fetch - main [MainThread]: End processing [covalentlyz] error
+[2024-05-19 06:24:43] INFO root fetch - processPackages [sqlman]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-05-19 06:24:43] INFO root fetch - processPackages [donware]: Downloading https://files.pythonhosted.org/packages/42/d6/df15d21c4edbf064ea0e779ca7a5e21a513e82d3c6f1e32c837f79a7aa15/donware-0.1.7.tar.gz
+[2024-05-19 06:24:43] INFO root fetch - processPackages [sqlman]: Downloading https://files.pythonhosted.org/packages/ab/99/16dff4e6dba3e4e1d621b9c9862706f64215d0e7ac34568fc9e418cb1ae4/sqlman-0.3.3.tar.gz
+[2024-05-19 06:24:43] INFO root fetch - processPackages [sqlman]: Downloading https://files.pythonhosted.org/packages/2c/7f/1b8529d8d6aff94e924164edfeaa09fd0a8b278214ec2c8e21021001cd9f/sqlman-0.3.4.tar.gz
+[2024-05-19 06:24:43] INFO root fetch - processPackages [donware]: Downloading https://files.pythonhosted.org/packages/b6/8e/6279c7455ba2ded02e6d8b7675c22e35382803218049011a9578b7fde49b/donware-0.1.8.tar.gz
+[2024-05-19 06:24:43] INFO root fetch - processPackages [sqlman]: executing diffoscope
+[2024-05-19 06:24:43] INFO root fetch - processPackages [sqlman]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlman-0.3.3.tar.gz tmp/sqlman-0.3.4.tar.gz --markdown 20240519/s/sqlman/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-05-19 06:24:43] INFO root fetch - processPackages [donware]: executing diffoscope
+[2024-05-19 06:24:43] INFO root fetch - processPackages [donware]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/donware-0.1.7.tar.gz tmp/donware-0.1.8.tar.gz --markdown 20240519/d/donware/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-19 06:24:44] INFO root fetch - processPackages [sqlman]: Remove: archive file [/home/abi/fetcher/tmp/sqlman-0.3.3.tar.gz]
+[2024-05-19 06:24:44] INFO root fetch - processPackages [sqlman]: Remove: archive file [/home/abi/fetcher/tmp/sqlman-0.3.4.tar.gz]
+[2024-05-19 06:24:44] INFO root fetch - main [MainThread]: End processing [sqlman]: success
+[2024-05-19 06:24:44] INFO root fetch - processPackages [donware]: Remove: archive file [/home/abi/fetcher/tmp/donware-0.1.7.tar.gz]
+[2024-05-19 06:24:44] INFO root fetch - processPackages [donware]: Remove: archive file [/home/abi/fetcher/tmp/donware-0.1.8.tar.gz]
+[2024-05-19 06:24:44] INFO root fetch - main [MainThread]: End processing [donware]: success
+[2024-05-19 06:24:44] INFO root fetch - main [MainThread]: Store serial: [23273246]
