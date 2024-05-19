@@ -4215,3 +4215,124 @@
 [2024-05-19 06:59:29] INFO root fetch - main [MainThread]: End processing [otwhlkrvzfstosfh]: success
 [2024-05-19 06:59:29] INFO root fetch - main [MainThread]: End processing [otwhlkrvzfstosfh]: success
 [2024-05-19 06:59:29] INFO root fetch - main [MainThread]: Store serial: [23273375]
+[2024-05-19 07:01:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273375]
+[2024-05-19 07:01:40] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2024-05-19 07:01:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vmafdynlwobwewal
+[2024-05-19 07:01:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ralium
+[2024-05-19 07:01:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: otwhlkrvzfstosfh
+[2024-05-19 07:01:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bozalz
+[2024-05-19 07:01:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: brioqpwyupmfveul
+[2024-05-19 07:01:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: brioqpwyupmfveul
+[2024-05-19 07:01:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: plmvnojeqfeiejqb
+[2024-05-19 07:01:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: brioqpwyupmfveul
+[2024-05-19 07:01:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: brioqpwyupmfveul
+[2024-05-19 07:01:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: plmvnojeqfeiejqb
+[2024-05-19 07:01:41] INFO root fetch - processPackages [vmafdynlwobwewal]: New version: [1.10000.10002] Old Version: [1.10000.10001]
+[2024-05-19 07:01:41] INFO root fetch - processPackages [otwhlkrvzfstosfh]: New version: [1.10000.10001] Old Version: [1.10000.10000]
+[2024-05-19 07:01:41] INFO root fetch - processPackages [ralium]: New version: [0.3.7] Old Version: [0.3.6]
+[2024-05-19 07:01:41] INFO root fetch - processPackages [brioqpwyupmfveul]: New version: [1.10000.10006] Old Version: [1.10000.10005]
+[2024-05-19 07:01:41] INFO root fetch - processPackages [brioqpwyupmfveul]: New version: [1.10000.10006] Old Version: [1.10000.10005]
+[2024-05-19 07:01:41] INFO root fetch - processPackages [brioqpwyupmfveul]: New version: [1.10000.10006] Old Version: [1.10000.10005]
+[2024-05-19 07:01:41] INFO root fetch - processPackages [brioqpwyupmfveul]: New version: [1.10000.10006] Old Version: [1.10000.10005]
+[2024-05-19 07:01:41] INFO root fetch - processPackages [vmafdynlwobwewal]: Downloading https://files.pythonhosted.org/packages/a7/8a/35ffa47a5df42e6e56bab6220e5e3aa172e62ff417318e672babed2aca0b/vmafdynlwobwewal-1.10000.10001.tar.gz
+[2024-05-19 07:01:41] WARNING root fetch - processPackages [bozalz]: Skipping, unable to determine old version
+[2024-05-19 07:01:41] INFO root fetch - processPackages [bozalz]: Start processing: nogtcnkmqmafjrjl
+[2024-05-19 07:01:41] INFO root fetch - main [MainThread]: End processing [bozalz] error
+[2024-05-19 07:01:41] INFO root fetch - processPackages [plmvnojeqfeiejqb]: New version: [1.10000.10004] Old Version: [1.10000.10003]
+[2024-05-19 07:01:41] INFO root fetch - processPackages [plmvnojeqfeiejqb]: New version: [1.10000.10004] Old Version: [1.10000.10003]
+[2024-05-19 07:01:41] INFO root fetch - processPackages [otwhlkrvzfstosfh]: Downloading https://files.pythonhosted.org/packages/a1/21/beeec0b7960be09984dd1410aa395071563b2539899f214a40933bc0d08e/otwhlkrvzfstosfh-1.10000.10000.tar.gz
+[2024-05-19 07:01:41] INFO root fetch - processPackages [ralium]: Downloading https://files.pythonhosted.org/packages/28/d7/1f211990f134cb07101c879b01c550e2a6b1454b3f258298403ec034df9f/ralium-0.3.6.tar.gz
+[2024-05-19 07:01:41] INFO root fetch - processPackages [nogtcnkmqmafjrjl]: New version: [1.10000.10008] Old Version: [1.10000.10007]
+[2024-05-19 07:01:41] WARNING root fetch - processPackages [vmafdynlwobwewal]: Skipping package: exceeds size limit 15087794>=10485760
+[2024-05-19 07:01:41] INFO root fetch - processPackages [vmafdynlwobwewal]: Start processing: pnxehdqkyocawpec
+[2024-05-19 07:01:41] INFO root fetch - main [MainThread]: End processing [vmafdynlwobwewal] error
+[2024-05-19 07:01:41] INFO root fetch - processPackages [brioqpwyupmfveul]: Downloading https://files.pythonhosted.org/packages/81/03/9cb2bc6249497934cacc92243eb74949669581ebe2ef04ed276370106db4/brioqpwyupmfveul-1.10000.10005.tar.gz
+[2024-05-19 07:01:41] INFO root fetch - processPackages [brioqpwyupmfveul]: Downloading https://files.pythonhosted.org/packages/81/03/9cb2bc6249497934cacc92243eb74949669581ebe2ef04ed276370106db4/brioqpwyupmfveul-1.10000.10005.tar.gz
+[2024-05-19 07:01:41] INFO root fetch - processPackages [brioqpwyupmfveul]: Downloading https://files.pythonhosted.org/packages/81/03/9cb2bc6249497934cacc92243eb74949669581ebe2ef04ed276370106db4/brioqpwyupmfveul-1.10000.10005.tar.gz
+[2024-05-19 07:01:41] INFO root fetch - processPackages [brioqpwyupmfveul]: Downloading https://files.pythonhosted.org/packages/81/03/9cb2bc6249497934cacc92243eb74949669581ebe2ef04ed276370106db4/brioqpwyupmfveul-1.10000.10005.tar.gz
+[2024-05-19 07:01:41] INFO root fetch - processPackages [plmvnojeqfeiejqb]: Downloading https://files.pythonhosted.org/packages/1c/f7/06657f89e84b635d61e8a34a75a044d8ecf8deea4a88137b6b4baf5d4b19/plmvnojeqfeiejqb-1.10000.10003.tar.gz
+[2024-05-19 07:01:41] INFO root fetch - processPackages [plmvnojeqfeiejqb]: Downloading https://files.pythonhosted.org/packages/1c/f7/06657f89e84b635d61e8a34a75a044d8ecf8deea4a88137b6b4baf5d4b19/plmvnojeqfeiejqb-1.10000.10003.tar.gz
+[2024-05-19 07:01:41] INFO root fetch - processPackages [pnxehdqkyocawpec]: New version: [1.10000.10006] Old Version: [1.10000.10005]
+[2024-05-19 07:01:41] WARNING root fetch - processPackages [brioqpwyupmfveul]: Skipping package: exceeds size limit 95034076>=10485760
+[2024-05-19 07:01:41] INFO root fetch - processPackages [otwhlkrvzfstosfh]: Downloading https://files.pythonhosted.org/packages/d8/06/f6f02168a8192c8754085d59619a211a5dfc45c60dee60ef0f8c2094ff8d/otwhlkrvzfstosfh-1.10000.10001.tar.gz
+[2024-05-19 07:01:41] INFO root fetch - processPackages [brioqpwyupmfveul]: Start processing: nogtcnkmqmafjrjl
+[2024-05-19 07:01:41] INFO root fetch - main [MainThread]: End processing [brioqpwyupmfveul] error
+[2024-05-19 07:01:41] WARNING root fetch - processPackages [brioqpwyupmfveul]: Skipping package: exceeds size limit 95034076>=10485760
+[2024-05-19 07:01:41] WARNING root fetch - processPackages [brioqpwyupmfveul]: Skipping package: exceeds size limit 95034076>=10485760
+[2024-05-19 07:01:41] INFO root fetch - processPackages [brioqpwyupmfveul]: Start processing: pnxehdqkyocawpec
+[2024-05-19 07:01:41] INFO root fetch - main [MainThread]: End processing [brioqpwyupmfveul] error
+[2024-05-19 07:01:41] INFO root fetch - processPackages [brioqpwyupmfveul]: Start processing: pypomes-s3
+[2024-05-19 07:01:41] INFO root fetch - main [MainThread]: End processing [brioqpwyupmfveul] error
+[2024-05-19 07:01:41] WARNING root fetch - processPackages [brioqpwyupmfveul]: Skipping package: exceeds size limit 95034076>=10485760
+[2024-05-19 07:01:41] INFO root fetch - processPackages [brioqpwyupmfveul]: Start processing: reqs-cli
+[2024-05-19 07:01:41] INFO root fetch - main [MainThread]: End processing [brioqpwyupmfveul] error
+[2024-05-19 07:01:41] INFO root fetch - processPackages [nogtcnkmqmafjrjl]: Downloading https://files.pythonhosted.org/packages/6d/a3/8a163fa87ffd5b026444b313a4096b1fd5c7785eddc999798e5ad4591f13/nogtcnkmqmafjrjl-1.10000.10007.tar.gz
+[2024-05-19 07:01:41] INFO root fetch - processPackages [nogtcnkmqmafjrjl]: New version: [1.10000.10008] Old Version: [1.10000.10007]
+[2024-05-19 07:01:41] INFO root fetch - processPackages [pnxehdqkyocawpec]: New version: [1.10000.10006] Old Version: [1.10000.10005]
+[2024-05-19 07:01:41] WARNING root fetch - processPackages [pypomes-s3]: Skipping, unable to determine old version
+[2024-05-19 07:01:41] INFO root fetch - processPackages [pypomes-s3]: Start processing: cute-robot-voice
+[2024-05-19 07:01:41] INFO root fetch - main [MainThread]: End processing [pypomes-s3] error
+[2024-05-19 07:01:41] INFO root fetch - processPackages [reqs-cli]: New version: [0.20240518.0a0] Old Version: [0.20240517.2.post1]
+[2024-05-19 07:01:41] WARNING root fetch - processPackages [nogtcnkmqmafjrjl]: Skipping package: exceeds size limit 50065062>=10485760
+[2024-05-19 07:01:41] INFO root fetch - processPackages [nogtcnkmqmafjrjl]: Start processing: cute-robot-voice
+[2024-05-19 07:01:41] INFO root fetch - main [MainThread]: End processing [nogtcnkmqmafjrjl] error
+[2024-05-19 07:01:41] INFO root fetch - processPackages [ralium]: Downloading https://files.pythonhosted.org/packages/e0/b0/15becc182741bf3f58190d12ee379871b7ad3ebeebabe0d79ab832b52f6a/ralium-0.3.7.tar.gz
+[2024-05-19 07:01:41] WARNING root fetch - processPackages [cute-robot-voice]: Skipping, unable to determine old version
+[2024-05-19 07:01:41] INFO root fetch - processPackages [cute-robot-voice]: Start processing: qrawl
+[2024-05-19 07:01:41] INFO root fetch - main [MainThread]: End processing [cute-robot-voice] error
+[2024-05-19 07:01:41] INFO root fetch - processPackages [otwhlkrvzfstosfh]: executing diffoscope
+[2024-05-19 07:01:41] INFO root fetch - processPackages [otwhlkrvzfstosfh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otwhlkrvzfstosfh-1.10000.10000.tar.gz tmp/otwhlkrvzfstosfh-1.10000.10001.tar.gz --markdown 20240519/o/otwhlkrvzfstosfh/1.10000.10000-1.10000.10001/README.md --exclude *.pyd
+[2024-05-19 07:01:41] INFO root fetch - processPackages [pnxehdqkyocawpec]: Downloading https://files.pythonhosted.org/packages/8a/25/0625c951eb08fd8311b2303a8c364f209d787e98353efc30db182a1e918b/pnxehdqkyocawpec-1.10000.10005.tar.gz
+[2024-05-19 07:01:41] INFO root fetch - processPackages [nogtcnkmqmafjrjl]: Downloading https://files.pythonhosted.org/packages/6d/a3/8a163fa87ffd5b026444b313a4096b1fd5c7785eddc999798e5ad4591f13/nogtcnkmqmafjrjl-1.10000.10007.tar.gz
+[2024-05-19 07:01:41] WARNING root fetch - processPackages [cute-robot-voice]: Skipping, unable to determine old version
+[2024-05-19 07:01:41] INFO root fetch - processPackages [cute-robot-voice]: Start processing: airtrain
+[2024-05-19 07:01:41] INFO root fetch - main [MainThread]: End processing [cute-robot-voice] error
+[2024-05-19 07:01:41] INFO root fetch - processPackages [pnxehdqkyocawpec]: Downloading https://files.pythonhosted.org/packages/8a/25/0625c951eb08fd8311b2303a8c364f209d787e98353efc30db182a1e918b/pnxehdqkyocawpec-1.10000.10005.tar.gz
+[2024-05-19 07:01:41] INFO root fetch - processPackages [qrawl]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-05-19 07:01:41] INFO root fetch - processPackages [reqs-cli]: Downloading https://files.pythonhosted.org/packages/e4/37/c817d0b4f92c89aefc3fb026bb16b13d271e1b2cd03d896f4c6f4ef6ae15/reqs_cli-0.20240517.2.post1.tar.gz
+[2024-05-19 07:01:41] WARNING root fetch - processPackages [nogtcnkmqmafjrjl]: Skipping package: exceeds size limit 50065062>=10485760
+[2024-05-19 07:01:41] INFO root fetch - main [MainThread]: End processing [nogtcnkmqmafjrjl] error
+[2024-05-19 07:01:41] INFO root fetch - processPackages [ralium]: executing diffoscope
+[2024-05-19 07:01:41] INFO root fetch - processPackages [ralium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ralium-0.3.6.tar.gz tmp/ralium-0.3.7.tar.gz --markdown 20240519/r/ralium/0.3.6-0.3.7/README.md --exclude *.pyd
+[2024-05-19 07:01:41] INFO root fetch - processPackages [qrawl]: Downloading https://files.pythonhosted.org/packages/b0/18/6fdcf515e5c076ae9b0ef8f11a81d9858e21ea00f375a0cfe00a8f478e02/qrawl-0.2.3.tar.gz
+[2024-05-19 07:01:41] WARNING root fetch - processPackages [airtrain]: Skipping, unable to determine old version
+[2024-05-19 07:01:41] INFO root fetch - main [MainThread]: End processing [airtrain] error
+[2024-05-19 07:01:41] INFO root fetch - processPackages [plmvnojeqfeiejqb]: Downloading https://files.pythonhosted.org/packages/80/e2/d42d6e2ab66ca8ca02ff5ea8c741b436433cd00ddfd04cc66d1bbfc44968/plmvnojeqfeiejqb-1.10000.10004.tar.gz
+[2024-05-19 07:01:41] INFO root fetch - processPackages [plmvnojeqfeiejqb]: Downloading https://files.pythonhosted.org/packages/80/e2/d42d6e2ab66ca8ca02ff5ea8c741b436433cd00ddfd04cc66d1bbfc44968/plmvnojeqfeiejqb-1.10000.10004.tar.gz
+[2024-05-19 07:01:42] INFO root fetch - processPackages [plmvnojeqfeiejqb]: executing diffoscope
+[2024-05-19 07:01:42] INFO root fetch - processPackages [plmvnojeqfeiejqb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plmvnojeqfeiejqb-1.10000.10003.tar.gz tmp/plmvnojeqfeiejqb-1.10000.10004.tar.gz --markdown 20240519/p/plmvnojeqfeiejqb/1.10000.10003-1.10000.10004/README.md --exclude *.pyd
+[2024-05-19 07:01:42] INFO root fetch - processPackages [plmvnojeqfeiejqb]: executing diffoscope
+[2024-05-19 07:01:42] INFO root fetch - processPackages [plmvnojeqfeiejqb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plmvnojeqfeiejqb-1.10000.10003.tar.gz tmp/plmvnojeqfeiejqb-1.10000.10004.tar.gz --markdown 20240519/p/plmvnojeqfeiejqb/1.10000.10003-1.10000.10004/README.md --exclude *.pyd
+[2024-05-19 07:01:42] INFO root fetch - processPackages [pnxehdqkyocawpec]: Downloading https://files.pythonhosted.org/packages/c6/6d/63c16e54c8a5372ffda8747cd745e3f0f7b59db44ccac39b18303abf8192/pnxehdqkyocawpec-1.10000.10006.tar.gz
+[2024-05-19 07:01:42] INFO root fetch - processPackages [pnxehdqkyocawpec]: Downloading https://files.pythonhosted.org/packages/c6/6d/63c16e54c8a5372ffda8747cd745e3f0f7b59db44ccac39b18303abf8192/pnxehdqkyocawpec-1.10000.10006.tar.gz
+[2024-05-19 07:01:42] INFO root fetch - processPackages [reqs-cli]: Downloading https://files.pythonhosted.org/packages/32/f6/3acb3fec1356eb0d9e0eb482ad5560f95cac893b761997d92192e8ee505a/reqs_cli-0.20240518.0a0.tar.gz
+[2024-05-19 07:01:42] INFO root fetch - processPackages [qrawl]: Downloading https://files.pythonhosted.org/packages/81/85/6649621e4958120947783835f4ef679bc90a31cf73455cfb63135758e245/qrawl-0.2.4.tar.gz
+[2024-05-19 07:01:42] INFO root fetch - processPackages [pnxehdqkyocawpec]: executing diffoscope
+[2024-05-19 07:01:42] INFO root fetch - processPackages [pnxehdqkyocawpec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pnxehdqkyocawpec-1.10000.10005.tar.gz tmp/pnxehdqkyocawpec-1.10000.10006.tar.gz --markdown 20240519/p/pnxehdqkyocawpec/1.10000.10005-1.10000.10006/README.md --exclude *.pyd
+[2024-05-19 07:01:42] INFO root fetch - processPackages [pnxehdqkyocawpec]: executing diffoscope
+[2024-05-19 07:01:42] INFO root fetch - processPackages [pnxehdqkyocawpec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pnxehdqkyocawpec-1.10000.10005.tar.gz tmp/pnxehdqkyocawpec-1.10000.10006.tar.gz --markdown 20240519/p/pnxehdqkyocawpec/1.10000.10005-1.10000.10006/README.md --exclude *.pyd
+[2024-05-19 07:01:42] INFO root fetch - processPackages [reqs-cli]: executing diffoscope
+[2024-05-19 07:01:42] INFO root fetch - processPackages [reqs-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reqs_cli-0.20240517.2.post1.tar.gz tmp/reqs_cli-0.20240518.0a0.tar.gz --markdown 20240519/r/reqs-cli/0.20240517.2.post1-0.20240518.0a0/README.md --exclude *.pyd
+[2024-05-19 07:01:42] INFO root fetch - processPackages [qrawl]: executing diffoscope
+[2024-05-19 07:01:42] INFO root fetch - processPackages [qrawl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qrawl-0.2.3.tar.gz tmp/qrawl-0.2.4.tar.gz --markdown 20240519/q/qrawl/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-05-19 07:01:42] INFO root fetch - processPackages [ralium]: Remove: archive file [/home/abi/fetcher/tmp/ralium-0.3.6.tar.gz]
+[2024-05-19 07:01:42] INFO root fetch - processPackages [ralium]: Remove: archive file [/home/abi/fetcher/tmp/ralium-0.3.7.tar.gz]
+[2024-05-19 07:01:42] INFO root fetch - main [MainThread]: End processing [ralium]: success
+[2024-05-19 07:01:43] INFO root fetch - processPackages [reqs-cli]: Remove: archive file [/home/abi/fetcher/tmp/reqs_cli-0.20240517.2.post1.tar.gz]
+[2024-05-19 07:01:43] INFO root fetch - processPackages [reqs-cli]: Remove: archive file [/home/abi/fetcher/tmp/reqs_cli-0.20240518.0a0.tar.gz]
+[2024-05-19 07:01:43] INFO root fetch - main [MainThread]: End processing [reqs-cli]: success
+[2024-05-19 07:01:43] INFO root fetch - processPackages [qrawl]: Remove: archive file [/home/abi/fetcher/tmp/qrawl-0.2.3.tar.gz]
+[2024-05-19 07:01:43] INFO root fetch - processPackages [qrawl]: Remove: archive file [/home/abi/fetcher/tmp/qrawl-0.2.4.tar.gz]
+[2024-05-19 07:01:43] INFO root fetch - main [MainThread]: End processing [qrawl]: success
+[2024-05-19 07:01:55] INFO root fetch - processPackages [otwhlkrvzfstosfh]: Remove: archive file [/home/abi/fetcher/tmp/otwhlkrvzfstosfh-1.10000.10000.tar.gz]
+[2024-05-19 07:01:55] INFO root fetch - processPackages [otwhlkrvzfstosfh]: Remove: archive file [/home/abi/fetcher/tmp/otwhlkrvzfstosfh-1.10000.10001.tar.gz]
+[2024-05-19 07:01:55] INFO root fetch - main [MainThread]: End processing [otwhlkrvzfstosfh]: success
+[2024-05-19 07:01:56] INFO root fetch - processPackages [pnxehdqkyocawpec]: Remove: archive file [/home/abi/fetcher/tmp/pnxehdqkyocawpec-1.10000.10005.tar.gz]
+[2024-05-19 07:01:56] INFO root fetch - processPackages [pnxehdqkyocawpec]: Remove: archive file [/home/abi/fetcher/tmp/pnxehdqkyocawpec-1.10000.10006.tar.gz]
+[2024-05-19 07:01:56] INFO root fetch - main [MainThread]: End processing [pnxehdqkyocawpec]: success
+[2024-05-19 07:01:56] INFO root fetch - main [MainThread]: End processing [pnxehdqkyocawpec]: success
+[2024-05-19 07:01:56] INFO root fetch - processPackages [plmvnojeqfeiejqb]: Remove: archive file [/home/abi/fetcher/tmp/plmvnojeqfeiejqb-1.10000.10003.tar.gz]
+[2024-05-19 07:01:56] INFO root fetch - processPackages [plmvnojeqfeiejqb]: Remove: archive file [/home/abi/fetcher/tmp/plmvnojeqfeiejqb-1.10000.10004.tar.gz]
+[2024-05-19 07:01:56] INFO root fetch - main [MainThread]: End processing [plmvnojeqfeiejqb]: success
+[2024-05-19 07:01:56] INFO root fetch - main [MainThread]: End processing [plmvnojeqfeiejqb]: success
+[2024-05-19 07:01:56] INFO root fetch - main [MainThread]: Store serial: [23273433]
