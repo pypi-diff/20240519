@@ -10561,3 +10561,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 14:42:10] INFO root fetch - processPackages [bigdl-llm]: Remove: archive file [/home/abi/fetcher/tmp/bigdl_llm-2.5.0b20240519-py3-none-win_amd64.whl.zip]
 [2024-05-19 14:42:10] INFO root fetch - main [MainThread]: End processing [bigdl-llm]: success
 [2024-05-19 14:42:10] INFO root fetch - main [MainThread]: Store serial: [23276356]
+[2024-05-19 14:44:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276356]
+[2024-05-19 14:44:18] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 14:44:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vgazer
+[2024-05-19 14:44:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wol-api
+[2024-05-19 14:44:18] INFO root fetch - processPackages [vgazer]: New version: [75] Old Version: [74]
+[2024-05-19 14:44:19] INFO root fetch - processPackages [vgazer]: Downloading https://files.pythonhosted.org/packages/3a/63/ccb2e684ca3ac676d3987458dab33b876cbf96c14c754feceb709e553b53/vgazer-74.tar.gz
+[2024-05-19 14:44:19] INFO root fetch - processPackages [wol-api]: New version: [1.0.0] Old Version: [0.1.6]
+[2024-05-19 14:44:19] INFO root fetch - processPackages [vgazer]: Downloading https://files.pythonhosted.org/packages/98/9a/6b6278c1335c45ac8c1ec0248563e1e8e5d8a179c21da769cfe0c794e5a9/vgazer-75.tar.gz
+[2024-05-19 14:44:19] INFO root fetch - processPackages [wol-api]: Downloading https://files.pythonhosted.org/packages/c9/77/f98774f2184688b67e0558533ba61854236478c20cd2413ab6cb12bb47dd/wol_api-0.1.6.tar.gz
+[2024-05-19 14:44:19] INFO root fetch - processPackages [vgazer]: executing diffoscope
+[2024-05-19 14:44:19] INFO root fetch - processPackages [vgazer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vgazer-74.tar.gz tmp/vgazer-75.tar.gz --markdown 20240519/v/vgazer/74-75/README.md --exclude *.pyd
+[2024-05-19 14:44:19] INFO root fetch - processPackages [wol-api]: Downloading https://files.pythonhosted.org/packages/29/9b/07375780b12803f99c1844e6a1039d1fce26325241c32e28ca9c94e069de/wol_api-1.0.0.tar.gz
+[2024-05-19 14:44:19] INFO root fetch - processPackages [wol-api]: executing diffoscope
+[2024-05-19 14:44:19] INFO root fetch - processPackages [wol-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wol_api-0.1.6.tar.gz tmp/wol_api-1.0.0.tar.gz --markdown 20240519/w/wol-api/0.1.6-1.0.0/README.md --exclude *.pyd
+[2024-05-19 14:44:20] INFO root fetch - processPackages [wol-api]: Remove: archive file [/home/abi/fetcher/tmp/wol_api-0.1.6.tar.gz]
+[2024-05-19 14:44:20] INFO root fetch - processPackages [wol-api]: Remove: archive file [/home/abi/fetcher/tmp/wol_api-1.0.0.tar.gz]
+[2024-05-19 14:44:20] INFO root fetch - main [MainThread]: End processing [wol-api]: success
+[2024-05-19 14:44:20] INFO root fetch - processPackages [vgazer]: Remove: archive file [/home/abi/fetcher/tmp/vgazer-74.tar.gz]
+[2024-05-19 14:44:20] INFO root fetch - processPackages [vgazer]: Remove: archive file [/home/abi/fetcher/tmp/vgazer-75.tar.gz]
+[2024-05-19 14:44:20] INFO root fetch - main [MainThread]: End processing [vgazer]: success
+[2024-05-19 14:44:20] INFO root fetch - main [MainThread]: Store serial: [23276367]
