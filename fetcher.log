@@ -4101,3 +4101,18 @@
 [2024-05-19 06:48:31] INFO root fetch - processPackages [flowmancer]: Remove: archive file [/home/abi/fetcher/tmp/flowmancer-0.9.5.tar.gz]
 [2024-05-19 06:48:31] INFO root fetch - main [MainThread]: End processing [flowmancer]: success
 [2024-05-19 06:48:31] INFO root fetch - main [MainThread]: Store serial: [23273320]
+[2024-05-19 06:50:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273320]
+[2024-05-19 06:50:39] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 06:50:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qrawl
+[2024-05-19 06:50:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fogdogsz
+[2024-05-19 06:50:40] INFO root fetch - processPackages [qrawl]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-05-19 06:50:40] WARNING root fetch - processPackages [fogdogsz]: Skipping, unable to determine old version
+[2024-05-19 06:50:40] INFO root fetch - main [MainThread]: End processing [fogdogsz] error
+[2024-05-19 06:50:40] INFO root fetch - processPackages [qrawl]: Downloading https://files.pythonhosted.org/packages/5c/fa/b1fa6cc83befa541e8d415a44f873a8909491c2712c0292882abaae3edfb/qrawl-0.2.2.tar.gz
+[2024-05-19 06:50:40] INFO root fetch - processPackages [qrawl]: Downloading https://files.pythonhosted.org/packages/b0/18/6fdcf515e5c076ae9b0ef8f11a81d9858e21ea00f375a0cfe00a8f478e02/qrawl-0.2.3.tar.gz
+[2024-05-19 06:50:40] INFO root fetch - processPackages [qrawl]: executing diffoscope
+[2024-05-19 06:50:40] INFO root fetch - processPackages [qrawl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qrawl-0.2.2.tar.gz tmp/qrawl-0.2.3.tar.gz --markdown 20240519/q/qrawl/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-05-19 06:50:41] INFO root fetch - processPackages [qrawl]: Remove: archive file [/home/abi/fetcher/tmp/qrawl-0.2.2.tar.gz]
+[2024-05-19 06:50:41] INFO root fetch - processPackages [qrawl]: Remove: archive file [/home/abi/fetcher/tmp/qrawl-0.2.3.tar.gz]
+[2024-05-19 06:50:41] INFO root fetch - main [MainThread]: End processing [qrawl]: success
+[2024-05-19 06:50:41] INFO root fetch - main [MainThread]: Store serial: [23273327]
