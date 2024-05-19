@@ -17216,3 +17216,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 21:15:53] INFO root fetch - processPackages [teams-ai]: Remove: archive file [/home/abi/fetcher/tmp/teams_ai-1.2.0.tar.gz]
 [2024-05-19 21:15:53] INFO root fetch - main [MainThread]: End processing [teams-ai]: success
 [2024-05-19 21:15:53] INFO root fetch - main [MainThread]: Store serial: [23279623]
+[2024-05-19 21:17:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279623]
+[2024-05-19 21:18:02] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 21:18:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Simba-UW-tf-dev
+[2024-05-19 21:18:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: thoughtcli
+[2024-05-19 21:18:02] INFO root fetch - processPackages [Simba-UW-tf-dev]: New version: [1.92.7] Old Version: [1.92.6]
+[2024-05-19 21:18:02] WARNING root fetch - processPackages [thoughtcli]: Skipping, unable to determine old version
+[2024-05-19 21:18:02] INFO root fetch - main [MainThread]: End processing [thoughtcli] error
+[2024-05-19 21:18:02] INFO root fetch - processPackages [Simba-UW-tf-dev]: Downloading https://files.pythonhosted.org/packages/66/7e/3f595b19b9959e93d99c5f180ca568dc200ee9ec826838f67d8b2d3f8a39/Simba-UW-tf-dev-1.92.6.tar.gz
+[2024-05-19 21:18:03] INFO root fetch - processPackages [Simba-UW-tf-dev]: Downloading https://files.pythonhosted.org/packages/b5/c5/e2bceb17b116650f24b366cb058f278d1e5885c67366837390f276f101d5/Simba-UW-tf-dev-1.92.7.tar.gz
+[2024-05-19 21:18:05] INFO root fetch - processPackages [Simba-UW-tf-dev]: executing diffoscope
+[2024-05-19 21:18:05] INFO root fetch - processPackages [Simba-UW-tf-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Simba-UW-tf-dev-1.92.6.tar.gz tmp/Simba-UW-tf-dev-1.92.7.tar.gz --markdown 20240519/S/Simba-UW-tf-dev/1.92.6-1.92.7/README.md --exclude *.pyd
+[2024-05-19 21:18:08] INFO root fetch - processPackages [Simba-UW-tf-dev]: Remove: archive file [/home/abi/fetcher/tmp/Simba-UW-tf-dev-1.92.6.tar.gz]
+[2024-05-19 21:18:08] INFO root fetch - processPackages [Simba-UW-tf-dev]: Remove: archive file [/home/abi/fetcher/tmp/Simba-UW-tf-dev-1.92.7.tar.gz]
+[2024-05-19 21:18:08] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
+[2024-05-19 21:18:08] INFO root fetch - main [MainThread]: Store serial: [23279631]
