@@ -9145,3 +9145,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 13:14:09] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.8.dev9.tar.gz]
 [2024-05-19 13:14:09] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2024-05-19 13:14:09] INFO root fetch - main [MainThread]: Store serial: [23275786]
+[2024-05-19 13:16:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275786]
+[2024-05-19 13:16:21] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 13:16:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: iac-init
+[2024-05-19 13:16:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Maslib
+[2024-05-19 13:16:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: docugenr8-core
+[2024-05-19 13:16:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bigdl-core-cpp
+[2024-05-19 13:16:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Maslib
+[2024-05-19 13:16:21] INFO root fetch - processPackages [Maslib]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-19 13:16:21] INFO root fetch - processPackages [Maslib]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-19 13:16:21] INFO root fetch - processPackages [bigdl-core-cpp]: New version: [2.5.0b20240519] Old Version: [2.5.0b20240518]
+[2024-05-19 13:16:21] INFO root fetch - processPackages [docugenr8-core]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-19 13:16:21] INFO root fetch - processPackages [iac-init]: New version: [0.7.8] Old Version: [0.7.7]
+[2024-05-19 13:16:21] INFO root fetch - processPackages [iac-init]: Downloading https://files.pythonhosted.org/packages/61/48/212f02fcef1e6bd50398a23bed9ef7037765f996438b573e1d5a1768be66/iac_init-0.7.7.tar.gz
+[2024-05-19 13:16:21] INFO root fetch - processPackages [Maslib]: Downloading https://files.pythonhosted.org/packages/db/b8/ca7f3932c58ecb52d1747414479ddf552b8d4f046dfec4afea95cfda823f/Maslib-0.0.5.tar.gz
+[2024-05-19 13:16:21] INFO root fetch - processPackages [Maslib]: Downloading https://files.pythonhosted.org/packages/db/b8/ca7f3932c58ecb52d1747414479ddf552b8d4f046dfec4afea95cfda823f/Maslib-0.0.5.tar.gz
+[2024-05-19 13:16:21] INFO root fetch - processPackages [bigdl-core-cpp]: Downloading https://files.pythonhosted.org/packages/64/52/6ab5494fa11d49c2dddb1a1a35fb05b9b6422cbc2c36dadfcad459a46b4c/bigdl_core_cpp-2.5.0b20240518-py3-none-win_amd64.whl
+[2024-05-19 13:16:21] INFO root fetch - processPackages [docugenr8-core]: Downloading https://files.pythonhosted.org/packages/0f/aa/b4514dd9ba0da121a326865161a18a46eeb6921a045f04d56330ac8cc411/docugenr8_core-0.0.4.tar.gz
+[2024-05-19 13:16:21] WARNING root fetch - processPackages [bigdl-core-cpp]: Skipping package: exceeds size limit 33300191>=10485760
+[2024-05-19 13:16:21] INFO root fetch - main [MainThread]: End processing [bigdl-core-cpp] error
+[2024-05-19 13:16:21] INFO root fetch - processPackages [Maslib]: Downloading https://files.pythonhosted.org/packages/22/df/7ff6c12ff83b102134bf365d30d23483f140c1915dbabeea59d2d0d109ba/Maslib-0.0.6.tar.gz
+[2024-05-19 13:16:21] INFO root fetch - processPackages [Maslib]: Downloading https://files.pythonhosted.org/packages/22/df/7ff6c12ff83b102134bf365d30d23483f140c1915dbabeea59d2d0d109ba/Maslib-0.0.6.tar.gz
+[2024-05-19 13:16:21] INFO root fetch - processPackages [docugenr8-core]: Downloading https://files.pythonhosted.org/packages/a0/83/0d13a3ebf6ede58ab2156780bbb03001f6f85818079da3dbab63df3bd9d1/docugenr8_core-0.0.5.tar.gz
+[2024-05-19 13:16:21] INFO root fetch - processPackages [iac-init]: Downloading https://files.pythonhosted.org/packages/04/f7/cca7a1ff924e0f7bf4dac001563392666b6b6bd2d7518b61165afb3c4420/iac_init-0.7.8.tar.gz
+[2024-05-19 13:16:21] INFO root fetch - processPackages [Maslib]: executing diffoscope
+[2024-05-19 13:16:21] INFO root fetch - processPackages [Maslib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Maslib-0.0.5.tar.gz tmp/Maslib-0.0.6.tar.gz --markdown 20240519/M/Maslib/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-19 13:16:21] INFO root fetch - processPackages [Maslib]: executing diffoscope
+[2024-05-19 13:16:21] INFO root fetch - processPackages [Maslib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Maslib-0.0.5.tar.gz tmp/Maslib-0.0.6.tar.gz --markdown 20240519/M/Maslib/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-19 13:16:21] INFO root fetch - processPackages [docugenr8-core]: executing diffoscope
+[2024-05-19 13:16:21] INFO root fetch - processPackages [docugenr8-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docugenr8_core-0.0.4.tar.gz tmp/docugenr8_core-0.0.5.tar.gz --markdown 20240519/d/docugenr8-core/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-19 13:16:22] INFO root fetch - processPackages [iac-init]: executing diffoscope
+[2024-05-19 13:16:22] INFO root fetch - processPackages [iac-init]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iac_init-0.7.7.tar.gz tmp/iac_init-0.7.8.tar.gz --markdown 20240519/i/iac-init/0.7.7-0.7.8/README.md --exclude *.pyd
+[2024-05-19 13:16:22] INFO root fetch - processPackages [docugenr8-core]: Remove: archive file [/home/abi/fetcher/tmp/docugenr8_core-0.0.4.tar.gz]
+[2024-05-19 13:16:22] INFO root fetch - processPackages [docugenr8-core]: Remove: archive file [/home/abi/fetcher/tmp/docugenr8_core-0.0.5.tar.gz]
+[2024-05-19 13:16:22] INFO root fetch - main [MainThread]: End processing [docugenr8-core]: success
+[2024-05-19 13:16:22] INFO root fetch - processPackages [Maslib]: Remove: archive file [/home/abi/fetcher/tmp/Maslib-0.0.5.tar.gz]
+[2024-05-19 13:16:22] INFO root fetch - processPackages [Maslib]: Remove: archive file [/home/abi/fetcher/tmp/Maslib-0.0.6.tar.gz]
+[2024-05-19 13:16:22] INFO root fetch - main [MainThread]: End processing [Maslib]: success
+[2024-05-19 13:16:22] INFO root fetch - main [MainThread]: End processing [Maslib]: success
+[2024-05-19 13:16:22] INFO root fetch - processPackages [iac-init]: Remove: archive file [/home/abi/fetcher/tmp/iac_init-0.7.7.tar.gz]
+[2024-05-19 13:16:22] INFO root fetch - processPackages [iac-init]: Remove: archive file [/home/abi/fetcher/tmp/iac_init-0.7.8.tar.gz]
+[2024-05-19 13:16:22] INFO root fetch - main [MainThread]: End processing [iac-init]: success
+[2024-05-19 13:16:22] INFO root fetch - main [MainThread]: Store serial: [23275799]
