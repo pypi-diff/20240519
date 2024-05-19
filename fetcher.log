@@ -2312,3 +2312,27 @@
 [2024-05-19 03:58:40] INFO root fetch - processPackages [pyperf]: Remove: archive file [/home/abi/fetcher/tmp/pyperf-2.7.0.tar.gz]
 [2024-05-19 03:58:40] INFO root fetch - main [MainThread]: End processing [pyperf]: success
 [2024-05-19 03:58:40] INFO root fetch - main [MainThread]: Store serial: [23272558]
+[2024-05-19 04:00:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272558]
+[2024-05-19 04:00:48] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 04:00:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gpt-pr
+[2024-05-19 04:00:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yoto-api
+[2024-05-19 04:00:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cringingz
+[2024-05-19 04:00:48] INFO root fetch - processPackages [gpt-pr]: New version: [0.3.0] Old Version: [0.2.1]
+[2024-05-19 04:00:48] INFO root fetch - processPackages [gpt-pr]: Downloading https://files.pythonhosted.org/packages/96/f5/aec48b38a94e4eb2e1aba737c9c8bbb9093dae5cd9a3dfddc1c68a72e974/gpt-pr-0.2.1.tar.gz
+[2024-05-19 04:00:48] WARNING root fetch - processPackages [cringingz]: Skipping, unable to determine old version
+[2024-05-19 04:00:48] INFO root fetch - main [MainThread]: End processing [cringingz] error
+[2024-05-19 04:00:48] INFO root fetch - processPackages [yoto-api]: New version: [1.9.0] Old Version: [1.8.0]
+[2024-05-19 04:00:49] INFO root fetch - processPackages [yoto-api]: Downloading https://files.pythonhosted.org/packages/0c/ce/e8631b9319eccf4ffbaef962e56044d41f29cb3f8c07be1556f741f2569a/yoto_api-1.8.0.tar.gz
+[2024-05-19 04:00:49] INFO root fetch - processPackages [gpt-pr]: Downloading https://files.pythonhosted.org/packages/4e/f6/49184ec34768da82b73c81d929dc5541ef4d66dd3393ee6e50384d46439b/gpt-pr-0.3.0.tar.gz
+[2024-05-19 04:00:49] INFO root fetch - processPackages [yoto-api]: Downloading https://files.pythonhosted.org/packages/28/bc/e9d37198654bf82ae9be692dd9ee95b753eb8ca5b6edf44ab69ecca38f17/yoto_api-1.9.0.tar.gz
+[2024-05-19 04:00:49] INFO root fetch - processPackages [gpt-pr]: executing diffoscope
+[2024-05-19 04:00:49] INFO root fetch - processPackages [gpt-pr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt-pr-0.2.1.tar.gz tmp/gpt-pr-0.3.0.tar.gz --markdown 20240519/g/gpt-pr/0.2.1-0.3.0/README.md --exclude *.pyd
+[2024-05-19 04:00:49] INFO root fetch - processPackages [yoto-api]: executing diffoscope
+[2024-05-19 04:00:49] INFO root fetch - processPackages [yoto-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yoto_api-1.8.0.tar.gz tmp/yoto_api-1.9.0.tar.gz --markdown 20240519/y/yoto-api/1.8.0-1.9.0/README.md --exclude *.pyd
+[2024-05-19 04:00:49] INFO root fetch - processPackages [gpt-pr]: Remove: archive file [/home/abi/fetcher/tmp/gpt-pr-0.2.1.tar.gz]
+[2024-05-19 04:00:49] INFO root fetch - processPackages [gpt-pr]: Remove: archive file [/home/abi/fetcher/tmp/gpt-pr-0.3.0.tar.gz]
+[2024-05-19 04:00:49] INFO root fetch - main [MainThread]: End processing [gpt-pr]: success
+[2024-05-19 04:00:49] INFO root fetch - processPackages [yoto-api]: Remove: archive file [/home/abi/fetcher/tmp/yoto_api-1.8.0.tar.gz]
+[2024-05-19 04:00:49] INFO root fetch - processPackages [yoto-api]: Remove: archive file [/home/abi/fetcher/tmp/yoto_api-1.9.0.tar.gz]
+[2024-05-19 04:00:49] INFO root fetch - main [MainThread]: End processing [yoto-api]: success
+[2024-05-19 04:00:49] INFO root fetch - main [MainThread]: Store serial: [23272568]
