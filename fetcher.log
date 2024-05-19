@@ -10513,3 +10513,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 14:37:49] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.9.tar.gz]
 [2024-05-19 14:37:49] INFO root fetch - main [MainThread]: End processing [flatpack]: success
 [2024-05-19 14:37:49] INFO root fetch - main [MainThread]: Store serial: [23276337]
+[2024-05-19 14:39:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276337]
+[2024-05-19 14:39:57] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 14:39:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: action-items-local
+[2024-05-19 14:39:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PixPayloadGen
+[2024-05-19 14:39:58] INFO root fetch - processPackages [action-items-local]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-19 14:39:58] WARNING root fetch - processPackages [PixPayloadGen]: Skipping, unable to determine old version
+[2024-05-19 14:39:58] INFO root fetch - main [MainThread]: End processing [PixPayloadGen] error
+[2024-05-19 14:39:58] INFO root fetch - processPackages [action-items-local]: Downloading https://files.pythonhosted.org/packages/ff/80/3dfd6742338e8da06b922cddd28300d64caf2c2e5f64bbd80c1ea9b18f6e/action-items-local-0.0.7.tar.gz
+[2024-05-19 14:39:58] INFO root fetch - processPackages [action-items-local]: Downloading https://files.pythonhosted.org/packages/11/c1/054f943aa3e05c8fbc6f343b312555b4ad862fd1f41c9dd4ff0503c6d53b/action_items_local-0.0.8.tar.gz
+[2024-05-19 14:39:58] INFO root fetch - processPackages [action-items-local]: executing diffoscope
+[2024-05-19 14:39:58] INFO root fetch - processPackages [action-items-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/action-items-local-0.0.7.tar.gz tmp/action_items_local-0.0.8.tar.gz --markdown 20240519/a/action-items-local/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-19 14:39:59] INFO root fetch - processPackages [action-items-local]: Remove: archive file [/home/abi/fetcher/tmp/action-items-local-0.0.7.tar.gz]
+[2024-05-19 14:39:59] INFO root fetch - processPackages [action-items-local]: Remove: archive file [/home/abi/fetcher/tmp/action_items_local-0.0.8.tar.gz]
+[2024-05-19 14:39:59] INFO root fetch - main [MainThread]: End processing [action-items-local]: success
+[2024-05-19 14:39:59] INFO root fetch - main [MainThread]: Store serial: [23276344]
