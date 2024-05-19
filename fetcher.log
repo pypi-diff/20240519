@@ -5388,3 +5388,15 @@
 [2024-05-19 08:42:13] INFO root fetch - processPackages [sportswrangler]: Remove: archive file [/home/abi/fetcher/tmp/sportswrangler-0.1.7.tar.gz]
 [2024-05-19 08:42:13] INFO root fetch - main [MainThread]: End processing [sportswrangler]: success
 [2024-05-19 08:42:13] INFO root fetch - main [MainThread]: Store serial: [23273898]
+[2024-05-19 08:44:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273898]
+[2024-05-19 08:44:21] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 08:44:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: func2stream
+[2024-05-19 08:44:21] INFO root fetch - processPackages [func2stream]: New version: [0.0.1.dev240519063726] Old Version: [0.0.1.dev240519063723]
+[2024-05-19 08:44:22] INFO root fetch - processPackages [func2stream]: Downloading https://files.pythonhosted.org/packages/92/cf/e278e340aff4941753fe37dc8019494e3c8bebc618df67c94367d10dbcda/func2stream-0.0.1.dev240519063723.tar.gz
+[2024-05-19 08:44:22] INFO root fetch - processPackages [func2stream]: Downloading https://files.pythonhosted.org/packages/db/43/d546ac958e37cd898bef128e33f711738687bc2123fc83214205ccf52f02/func2stream-0.0.1.dev240519063726-py3-none-any.whl
+[2024-05-19 08:44:22] INFO root fetch - processPackages [func2stream]: executing diffoscope
+[2024-05-19 08:44:22] INFO root fetch - processPackages [func2stream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/func2stream-0.0.1.dev240519063723.tar.gz tmp/func2stream-0.0.1.dev240519063726-py3-none-any.whl.zip --markdown 20240519/f/func2stream/0.0.1.dev240519063723-0.0.1.dev240519063726/README.md --exclude *.pyd
+[2024-05-19 08:44:23] INFO root fetch - processPackages [func2stream]: Remove: archive file [/home/abi/fetcher/tmp/func2stream-0.0.1.dev240519063723.tar.gz]
+[2024-05-19 08:44:23] INFO root fetch - processPackages [func2stream]: Remove: archive file [/home/abi/fetcher/tmp/func2stream-0.0.1.dev240519063726-py3-none-any.whl.zip]
+[2024-05-19 08:44:23] INFO root fetch - main [MainThread]: End processing [func2stream]: success
+[2024-05-19 08:44:23] INFO root fetch - main [MainThread]: Store serial: [23273901]
