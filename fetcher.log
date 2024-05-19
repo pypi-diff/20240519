@@ -6938,3 +6938,18 @@
 [2024-05-19 10:32:36] INFO root fetch - processPackages [pyselenscrapr]: Remove: archive file [/home/abi/fetcher/tmp/pyselenscrapr-0.0.7.tar.gz]
 [2024-05-19 10:32:36] INFO root fetch - main [MainThread]: End processing [pyselenscrapr]: success
 [2024-05-19 10:32:36] INFO root fetch - main [MainThread]: Store serial: [23274652]
+[2024-05-19 10:34:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274652]
+[2024-05-19 10:34:46] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 10:34:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hypopharyngesz
+[2024-05-19 10:34:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kuzu
+[2024-05-19 10:34:46] INFO root fetch - processPackages [kuzu]: New version: [0.4.3.dev4] Old Version: [0.4.3.dev3]
+[2024-05-19 10:34:46] WARNING root fetch - processPackages [hypopharyngesz]: Skipping, unable to determine old version
+[2024-05-19 10:34:46] INFO root fetch - main [MainThread]: End processing [hypopharyngesz] error
+[2024-05-19 10:34:46] INFO root fetch - processPackages [kuzu]: Downloading https://files.pythonhosted.org/packages/fd/a5/f0c3b18f44a2009a8b36e3518a643167c36338fbf4d7452e36e10978870f/kuzu-0.4.3.dev3.tar.gz
+[2024-05-19 10:34:46] INFO root fetch - processPackages [kuzu]: Downloading https://files.pythonhosted.org/packages/41/0e/fd6b297339c0e1e60a83a08bd54bc2d02181797d0e44273b90807e776d0b/kuzu-0.4.3.dev4.tar.gz
+[2024-05-19 10:34:47] INFO root fetch - processPackages [kuzu]: executing diffoscope
+[2024-05-19 10:34:47] INFO root fetch - processPackages [kuzu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kuzu-0.4.3.dev3.tar.gz tmp/kuzu-0.4.3.dev4.tar.gz --markdown 20240519/k/kuzu/0.4.3.dev3-0.4.3.dev4/README.md --exclude *.pyd
+[2024-05-19 10:34:54] INFO root fetch - processPackages [kuzu]: Remove: archive file [/home/abi/fetcher/tmp/kuzu-0.4.3.dev3.tar.gz]
+[2024-05-19 10:34:54] INFO root fetch - processPackages [kuzu]: Remove: archive file [/home/abi/fetcher/tmp/kuzu-0.4.3.dev4.tar.gz]
+[2024-05-19 10:34:54] INFO root fetch - main [MainThread]: End processing [kuzu]: success
+[2024-05-19 10:34:54] INFO root fetch - main [MainThread]: Store serial: [23274664]
