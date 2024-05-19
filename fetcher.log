@@ -4552,3 +4552,56 @@
 [2024-05-19 07:32:01] INFO root fetch - main [MainThread]: End processing [grpc-requests]: success
 [2024-05-19 07:32:01] INFO root fetch - main [MainThread]: End processing [sop-deutils]: success
 [2024-05-19 07:32:01] INFO root fetch - main [MainThread]: Store serial: [23273543]
+[2024-05-19 07:34:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273543]
+[2024-05-19 07:34:10] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-19 07:34:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sop-deutils
+[2024-05-19 07:34:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ctrip-app-ui
+[2024-05-19 07:34:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sop-deutils
+[2024-05-19 07:34:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ntdgotv-langtools
+[2024-05-19 07:34:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sop-deutils
+[2024-05-19 07:34:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tesla-fleet-api
+[2024-05-19 07:34:10] INFO root fetch - processPackages [ctrip-app-ui]: New version: [0.6.0] Old Version: [0.5.9]
+[2024-05-19 07:34:10] INFO root fetch - processPackages [sop-deutils]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-19 07:34:10] INFO root fetch - processPackages [sop-deutils]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-19 07:34:10] INFO root fetch - processPackages [sop-deutils]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-19 07:34:10] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/3f/f9/aac7a50eb6986de9513e1af6b5d43a4f2c7944b1f2d42ddb680217a85e7a/ctrip-app-ui-0.5.9.tar.gz
+[2024-05-19 07:34:10] INFO root fetch - processPackages [ntdgotv-langtools]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-19 07:34:10] INFO root fetch - processPackages [tesla-fleet-api]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-05-19 07:34:10] INFO root fetch - processPackages [sop-deutils]: Downloading https://files.pythonhosted.org/packages/90/25/061e7abb0dc44de63510dded7da9654bc6f0a284ca9a978c052e8bdcd739/sop_deutils-0.9.8.tar.gz
+[2024-05-19 07:34:10] INFO root fetch - processPackages [sop-deutils]: Downloading https://files.pythonhosted.org/packages/90/25/061e7abb0dc44de63510dded7da9654bc6f0a284ca9a978c052e8bdcd739/sop_deutils-0.9.8.tar.gz
+[2024-05-19 07:34:10] INFO root fetch - processPackages [sop-deutils]: Downloading https://files.pythonhosted.org/packages/90/25/061e7abb0dc44de63510dded7da9654bc6f0a284ca9a978c052e8bdcd739/sop_deutils-0.9.8.tar.gz
+[2024-05-19 07:34:10] INFO root fetch - processPackages [ntdgotv-langtools]: Downloading https://files.pythonhosted.org/packages/28/d2/58d47b1d56fe3647dd7ea2726e4f984295d434d19c1e3556a5e833c62ec1/ntdgotv_langtools-0.2.0.tar.gz
+[2024-05-19 07:34:10] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/bc/d7/3dd9ba484855c40b29d1de09dddf73edfd9da05f657bdf3edf2d71a05e6d/ctrip-app-ui-0.6.0.tar.gz
+[2024-05-19 07:34:10] INFO root fetch - processPackages [tesla-fleet-api]: Downloading https://files.pythonhosted.org/packages/a8/43/22557f5eee1dcbb990fc879c88f0eabf17ee6ceed249b0680f354698798e/tesla_fleet_api-0.5.8.tar.gz
+[2024-05-19 07:34:10] INFO root fetch - processPackages [sop-deutils]: Downloading https://files.pythonhosted.org/packages/72/95/95da46c4d54440e29e58711f950067fb490f12e5d5cd23f645102a47e372/sop_deutils-0.9.9.tar.gz
+[2024-05-19 07:34:10] INFO root fetch - processPackages [sop-deutils]: Downloading https://files.pythonhosted.org/packages/72/95/95da46c4d54440e29e58711f950067fb490f12e5d5cd23f645102a47e372/sop_deutils-0.9.9.tar.gz
+[2024-05-19 07:34:10] INFO root fetch - processPackages [sop-deutils]: Downloading https://files.pythonhosted.org/packages/72/95/95da46c4d54440e29e58711f950067fb490f12e5d5cd23f645102a47e372/sop_deutils-0.9.9.tar.gz
+[2024-05-19 07:34:10] INFO root fetch - processPackages [ctrip-app-ui]: executing diffoscope
+[2024-05-19 07:34:10] INFO root fetch - processPackages [ctrip-app-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctrip-app-ui-0.5.9.tar.gz tmp/ctrip-app-ui-0.6.0.tar.gz --markdown 20240519/c/ctrip-app-ui/0.5.9-0.6.0/README.md --exclude *.pyd
+[2024-05-19 07:34:10] INFO root fetch - processPackages [sop-deutils]: executing diffoscope
+[2024-05-19 07:34:10] INFO root fetch - processPackages [sop-deutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sop_deutils-0.9.8.tar.gz tmp/sop_deutils-0.9.9.tar.gz --markdown 20240519/s/sop-deutils/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-19 07:34:10] INFO root fetch - processPackages [sop-deutils]: executing diffoscope
+[2024-05-19 07:34:10] INFO root fetch - processPackages [sop-deutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sop_deutils-0.9.8.tar.gz tmp/sop_deutils-0.9.9.tar.gz --markdown 20240519/s/sop-deutils/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-19 07:34:10] INFO root fetch - processPackages [sop-deutils]: executing diffoscope
+[2024-05-19 07:34:10] INFO root fetch - processPackages [sop-deutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sop_deutils-0.9.8.tar.gz tmp/sop_deutils-0.9.9.tar.gz --markdown 20240519/s/sop-deutils/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-19 07:34:10] INFO root fetch - processPackages [ntdgotv-langtools]: Downloading https://files.pythonhosted.org/packages/af/03/7c0aa713f5dcbce0082dfe1db47cc59c47e74df449c38ed0eab5dcf0656c/ntdgotv_langtools-0.2.1.tar.gz
+[2024-05-19 07:34:10] INFO root fetch - processPackages [tesla-fleet-api]: Downloading https://files.pythonhosted.org/packages/05/b5/2095dab08ad055d1a9d7d6fb069e7e1febca6ec8343a72456b3ff6cce41e/tesla_fleet_api-0.5.9.tar.gz
+[2024-05-19 07:34:10] INFO root fetch - processPackages [ntdgotv-langtools]: executing diffoscope
+[2024-05-19 07:34:10] INFO root fetch - processPackages [ntdgotv-langtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ntdgotv_langtools-0.2.0.tar.gz tmp/ntdgotv_langtools-0.2.1.tar.gz --markdown 20240519/n/ntdgotv-langtools/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-19 07:34:11] INFO root fetch - processPackages [tesla-fleet-api]: executing diffoscope
+[2024-05-19 07:34:11] INFO root fetch - processPackages [tesla-fleet-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tesla_fleet_api-0.5.8.tar.gz tmp/tesla_fleet_api-0.5.9.tar.gz --markdown 20240519/t/tesla-fleet-api/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-05-19 07:34:11] INFO root fetch - processPackages [sop-deutils]: Remove: archive file [/home/abi/fetcher/tmp/sop_deutils-0.9.8.tar.gz]
+[2024-05-19 07:34:11] INFO root fetch - processPackages [sop-deutils]: Remove: archive file [/home/abi/fetcher/tmp/sop_deutils-0.9.9.tar.gz]
+[2024-05-19 07:34:11] INFO root fetch - main [MainThread]: End processing [sop-deutils]: success
+[2024-05-19 07:34:11] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.5.9.tar.gz]
+[2024-05-19 07:34:11] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.6.0.tar.gz]
+[2024-05-19 07:34:11] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
+[2024-05-19 07:34:11] INFO root fetch - main [MainThread]: End processing [sop-deutils]: success
+[2024-05-19 07:34:11] INFO root fetch - processPackages [ntdgotv-langtools]: Remove: archive file [/home/abi/fetcher/tmp/ntdgotv_langtools-0.2.0.tar.gz]
+[2024-05-19 07:34:11] INFO root fetch - processPackages [ntdgotv-langtools]: Remove: archive file [/home/abi/fetcher/tmp/ntdgotv_langtools-0.2.1.tar.gz]
+[2024-05-19 07:34:11] INFO root fetch - main [MainThread]: End processing [ntdgotv-langtools]: success
+[2024-05-19 07:34:11] INFO root fetch - main [MainThread]: End processing [sop-deutils]: success
+[2024-05-19 07:34:11] INFO root fetch - processPackages [tesla-fleet-api]: Remove: archive file [/home/abi/fetcher/tmp/tesla_fleet_api-0.5.8.tar.gz]
+[2024-05-19 07:34:11] INFO root fetch - processPackages [tesla-fleet-api]: Remove: archive file [/home/abi/fetcher/tmp/tesla_fleet_api-0.5.9.tar.gz]
+[2024-05-19 07:34:11] INFO root fetch - main [MainThread]: End processing [tesla-fleet-api]: success
+[2024-05-19 07:34:11] INFO root fetch - main [MainThread]: Store serial: [23273561]
