@@ -11984,3 +11984,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 16:11:59] INFO root fetch - processPackages [itkwasm-dicom]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_dicom-7.0.0.tar.gz]
 [2024-05-19 16:11:59] INFO root fetch - main [MainThread]: End processing [itkwasm-dicom]: success
 [2024-05-19 16:11:59] INFO root fetch - main [MainThread]: Store serial: [23277141]
+[2024-05-19 16:14:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277141]
+[2024-05-19 16:14:08] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 16:14:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TestGeneratorPluginLib
+[2024-05-19 16:14:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: apygee
+[2024-05-19 16:14:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scarferz
+[2024-05-19 16:14:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: textual
+[2024-05-19 16:14:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cortexannotate
+[2024-05-19 16:14:08] INFO root fetch - processPackages [TestGeneratorPluginLib]: New version: [1.2.3] Old Version: [1.2.2]
+[2024-05-19 16:14:08] INFO root fetch - processPackages [TestGeneratorPluginLib]: Downloading https://files.pythonhosted.org/packages/d2/3e/9d068917ac0b9e88c275def7c9ec67d28831ea8a4b90e0ad108c201248a1/TestGeneratorPluginLib-1.2.2.tar.gz
+[2024-05-19 16:14:08] WARNING root fetch - processPackages [scarferz]: Skipping, unable to determine old version
+[2024-05-19 16:14:08] INFO root fetch - main [MainThread]: End processing [scarferz] error
+[2024-05-19 16:14:08] INFO root fetch - processPackages [textual]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-05-19 16:14:08] WARNING root fetch - processPackages [cortexannotate]: Skipping, unable to determine old version
+[2024-05-19 16:14:08] INFO root fetch - main [MainThread]: End processing [cortexannotate] error
+[2024-05-19 16:14:08] INFO root fetch - processPackages [apygee]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-19 16:14:09] INFO root fetch - processPackages [apygee]: Downloading https://files.pythonhosted.org/packages/03/3a/4b60282bb4ea57fc82c8e41968b034f47558d8a4815215cb4b5be2f0b772/apygee-1.0.3.tar.gz
+[2024-05-19 16:14:09] INFO root fetch - processPackages [textual]: Downloading https://files.pythonhosted.org/packages/17/d2/002affba91d339187f5699c26fecc3fa3bf966f17c5d08bb696c724b63ee/textual-0.9.0.tar.gz
+[2024-05-19 16:14:09] INFO root fetch - processPackages [TestGeneratorPluginLib]: Downloading https://files.pythonhosted.org/packages/2c/21/7f966c1ac69a8858a7c473a3116345620765573ffb5b1ae74cc905869d65/TestGeneratorPluginLib-1.2.3.tar.gz
+[2024-05-19 16:14:09] INFO root fetch - processPackages [TestGeneratorPluginLib]: executing diffoscope
+[2024-05-19 16:14:09] INFO root fetch - processPackages [TestGeneratorPluginLib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TestGeneratorPluginLib-1.2.2.tar.gz tmp/TestGeneratorPluginLib-1.2.3.tar.gz --markdown 20240519/T/TestGeneratorPluginLib/1.2.2-1.2.3/README.md --exclude *.pyd
+[2024-05-19 16:14:09] INFO root fetch - processPackages [apygee]: Downloading https://files.pythonhosted.org/packages/c4/3d/8096ade983c0895917a453a265c4a836a491bb2c0a2307064a756e50c453/apygee-1.0.4.tar.gz
+[2024-05-19 16:14:09] INFO root fetch - processPackages [textual]: Downloading https://files.pythonhosted.org/packages/0e/7d/2155bf024c3bdf1dc6365e109a16bab46098e032e62666565176ebc9f84a/textual-0.9.1.tar.gz
+[2024-05-19 16:14:09] INFO root fetch - processPackages [textual]: executing diffoscope
+[2024-05-19 16:14:09] INFO root fetch - processPackages [textual]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textual-0.9.0.tar.gz tmp/textual-0.9.1.tar.gz --markdown 20240519/t/textual/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-05-19 16:14:09] INFO root fetch - processPackages [apygee]: executing diffoscope
+[2024-05-19 16:14:09] INFO root fetch - processPackages [apygee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apygee-1.0.3.tar.gz tmp/apygee-1.0.4.tar.gz --markdown 20240519/a/apygee/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-19 16:14:09] INFO root fetch - processPackages [TestGeneratorPluginLib]: Remove: archive file [/home/abi/fetcher/tmp/TestGeneratorPluginLib-1.2.2.tar.gz]
+[2024-05-19 16:14:09] INFO root fetch - processPackages [TestGeneratorPluginLib]: Remove: archive file [/home/abi/fetcher/tmp/TestGeneratorPluginLib-1.2.3.tar.gz]
+[2024-05-19 16:14:09] INFO root fetch - main [MainThread]: End processing [TestGeneratorPluginLib]: success
+[2024-05-19 16:14:10] INFO root fetch - processPackages [apygee]: Remove: archive file [/home/abi/fetcher/tmp/apygee-1.0.3.tar.gz]
+[2024-05-19 16:14:10] INFO root fetch - processPackages [apygee]: Remove: archive file [/home/abi/fetcher/tmp/apygee-1.0.4.tar.gz]
+[2024-05-19 16:14:10] INFO root fetch - main [MainThread]: End processing [apygee]: success
+[2024-05-19 16:14:10] INFO root fetch - processPackages [textual]: Remove: archive file [/home/abi/fetcher/tmp/textual-0.9.0.tar.gz]
+[2024-05-19 16:14:10] INFO root fetch - processPackages [textual]: Remove: archive file [/home/abi/fetcher/tmp/textual-0.9.1.tar.gz]
+[2024-05-19 16:14:10] INFO root fetch - main [MainThread]: End processing [textual]: success
+[2024-05-19 16:14:10] INFO root fetch - main [MainThread]: Store serial: [23277159]
