@@ -9403,3 +9403,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 13:31:33] INFO root fetch - processPackages [alphainspect]: Remove: archive file [/home/abi/fetcher/tmp/alphainspect-0.4.2.tar.gz]
 [2024-05-19 13:31:33] INFO root fetch - main [MainThread]: End processing [alphainspect]: success
 [2024-05-19 13:31:33] INFO root fetch - main [MainThread]: Store serial: [23275894]
+[2024-05-19 13:33:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275894]
+[2024-05-19 13:33:41] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 13:33:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyawsopstoolkit
+[2024-05-19 13:33:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: eurepoc
+[2024-05-19 13:33:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: asterinaz
+[2024-05-19 13:33:41] INFO root fetch - processPackages [pyawsopstoolkit]: New version: [0.1.4] Old Version: [0.1.2]
+[2024-05-19 13:33:41] INFO root fetch - processPackages [eurepoc]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-19 13:33:41] WARNING root fetch - processPackages [asterinaz]: Skipping, unable to determine old version
+[2024-05-19 13:33:41] INFO root fetch - main [MainThread]: End processing [asterinaz] error
+[2024-05-19 13:33:41] INFO root fetch - processPackages [eurepoc]: Downloading https://files.pythonhosted.org/packages/cb/55/971ae165a330eaa4a6ea08cd91f5f18edbc6cfb8f833c99ce63d33878c68/eurepoc-0.1.2.tar.gz
+[2024-05-19 13:33:42] INFO root fetch - processPackages [pyawsopstoolkit]: Downloading https://files.pythonhosted.org/packages/70/ac/70eb4a0a227f878b74a24bbeb037c25214b188d19e64629fceec1024e540/pyawsopstoolkit-0.1.2-py3-none-any.whl
+[2024-05-19 13:33:42] INFO root fetch - processPackages [eurepoc]: Downloading https://files.pythonhosted.org/packages/aa/46/c38ba9409761a28b1155d0fc149c49395cd68089ccee7961c907cb26d945/eurepoc-0.1.3.tar.gz
+[2024-05-19 13:33:42] INFO root fetch - processPackages [pyawsopstoolkit]: Downloading https://files.pythonhosted.org/packages/06/db/f620a98731006c9622f4dfd8b0371fad3f459e433d996ae9b67344ca2484/pyawsopstoolkit-0.1.4-py3-none-any.whl
+[2024-05-19 13:33:42] INFO root fetch - processPackages [eurepoc]: executing diffoscope
+[2024-05-19 13:33:42] INFO root fetch - processPackages [eurepoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eurepoc-0.1.2.tar.gz tmp/eurepoc-0.1.3.tar.gz --markdown 20240519/e/eurepoc/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-19 13:33:42] INFO root fetch - processPackages [pyawsopstoolkit]: executing diffoscope
+[2024-05-19 13:33:42] INFO root fetch - processPackages [pyawsopstoolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyawsopstoolkit-0.1.2-py3-none-any.whl.zip tmp/pyawsopstoolkit-0.1.4-py3-none-any.whl.zip --markdown 20240519/p/pyawsopstoolkit/0.1.2-0.1.4/README.md --exclude *.pyd
+[2024-05-19 13:33:43] INFO root fetch - processPackages [pyawsopstoolkit]: Remove: archive file [/home/abi/fetcher/tmp/pyawsopstoolkit-0.1.2-py3-none-any.whl.zip]
+[2024-05-19 13:33:43] INFO root fetch - processPackages [pyawsopstoolkit]: Remove: archive file [/home/abi/fetcher/tmp/pyawsopstoolkit-0.1.4-py3-none-any.whl.zip]
+[2024-05-19 13:33:43] INFO root fetch - main [MainThread]: End processing [pyawsopstoolkit]: success
+[2024-05-19 13:33:43] INFO root fetch - processPackages [eurepoc]: Remove: archive file [/home/abi/fetcher/tmp/eurepoc-0.1.2.tar.gz]
+[2024-05-19 13:33:43] INFO root fetch - processPackages [eurepoc]: Remove: archive file [/home/abi/fetcher/tmp/eurepoc-0.1.3.tar.gz]
+[2024-05-19 13:33:43] INFO root fetch - main [MainThread]: End processing [eurepoc]: success
+[2024-05-19 13:33:43] INFO root fetch - main [MainThread]: Store serial: [23275903]
