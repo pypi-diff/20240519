@@ -5105,3 +5105,36 @@
 [2024-05-19 08:17:59] INFO root fetch - processPackages [checkov]: Remove: archive file [/home/abi/fetcher/tmp/checkov-3.2.96.tar.gz]
 [2024-05-19 08:17:59] INFO root fetch - main [MainThread]: End processing [checkov]: success
 [2024-05-19 08:17:59] INFO root fetch - main [MainThread]: Store serial: [23273771]
+[2024-05-19 08:20:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273771]
+[2024-05-19 08:20:08] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 08:20:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fake-bpy-module-latest
+[2024-05-19 08:20:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sentry-k8s-libsonnet
+[2024-05-19 08:20:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fake-bpy-module
+[2024-05-19 08:20:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vr180-convert
+[2024-05-19 08:20:08] WARNING root fetch - processPackages [sentry-k8s-libsonnet]: Skipping, unable to determine old version
+[2024-05-19 08:20:08] INFO root fetch - main [MainThread]: End processing [sentry-k8s-libsonnet] error
+[2024-05-19 08:20:08] INFO root fetch - processPackages [fake-bpy-module]: New version: [20240518] Old Version: [20240517]
+[2024-05-19 08:20:08] INFO root fetch - processPackages [fake-bpy-module-latest]: New version: [20240518] Old Version: [20240517]
+[2024-05-19 08:20:08] INFO root fetch - processPackages [fake-bpy-module]: Downloading https://files.pythonhosted.org/packages/eb/af/44614990d3ec1ac8e5265560e820b2f166d2675ffe32306cb92f1b9cb494/fake_bpy_module-20240517.tar.gz
+[2024-05-19 08:20:08] INFO root fetch - processPackages [vr180-convert]: New version: [0.3.0] Old Version: [0.2.2]
+[2024-05-19 08:20:08] INFO root fetch - processPackages [fake-bpy-module-latest]: Downloading https://files.pythonhosted.org/packages/4b/06/1b88d371a1b283f721334a9f4abf4ea191e1509b1f649f080105aebd5912/fake_bpy_module_latest-20240517.tar.gz
+[2024-05-19 08:20:08] INFO root fetch - processPackages [vr180-convert]: Downloading https://files.pythonhosted.org/packages/1e/da/e6305d2f6ff7abf8d86c5cf244ba6e1e475e98d774236a53739f324caefc/vr180_convert-0.2.2.tar.gz
+[2024-05-19 08:20:08] INFO root fetch - processPackages [fake-bpy-module]: Downloading https://files.pythonhosted.org/packages/ba/5e/456b7e5bfb41848af187520ca1fdc813896d268847592a2a8671f9011797/fake_bpy_module-20240518.tar.gz
+[2024-05-19 08:20:08] INFO root fetch - processPackages [fake-bpy-module-latest]: Downloading https://files.pythonhosted.org/packages/a2/4f/3370f012bed1848f6ee12e672907ed5d2799fcc87b24a08d972e4573de92/fake_bpy_module_latest-20240518.tar.gz
+[2024-05-19 08:20:08] INFO root fetch - processPackages [vr180-convert]: Downloading https://files.pythonhosted.org/packages/b4/65/f72373df6962476c96b48af0f3c7271932d67aeb94dbcb700ca898738eab/vr180_convert-0.3.0.tar.gz
+[2024-05-19 08:20:08] INFO root fetch - processPackages [vr180-convert]: executing diffoscope
+[2024-05-19 08:20:08] INFO root fetch - processPackages [vr180-convert]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vr180_convert-0.2.2.tar.gz tmp/vr180_convert-0.3.0.tar.gz --markdown 20240519/v/vr180-convert/0.2.2-0.3.0/README.md --exclude *.pyd
+[2024-05-19 08:20:09] INFO root fetch - processPackages [fake-bpy-module]: executing diffoscope
+[2024-05-19 08:20:09] INFO root fetch - processPackages [fake-bpy-module]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake_bpy_module-20240517.tar.gz tmp/fake_bpy_module-20240518.tar.gz --markdown 20240519/f/fake-bpy-module/20240517-20240518/README.md --exclude *.pyd
+[2024-05-19 08:20:09] INFO root fetch - processPackages [fake-bpy-module-latest]: executing diffoscope
+[2024-05-19 08:20:09] INFO root fetch - processPackages [fake-bpy-module-latest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake_bpy_module_latest-20240517.tar.gz tmp/fake_bpy_module_latest-20240518.tar.gz --markdown 20240519/f/fake-bpy-module-latest/20240517-20240518/README.md --exclude *.pyd
+[2024-05-19 08:20:09] INFO root fetch - processPackages [vr180-convert]: Remove: archive file [/home/abi/fetcher/tmp/vr180_convert-0.2.2.tar.gz]
+[2024-05-19 08:20:09] INFO root fetch - processPackages [vr180-convert]: Remove: archive file [/home/abi/fetcher/tmp/vr180_convert-0.3.0.tar.gz]
+[2024-05-19 08:20:09] INFO root fetch - main [MainThread]: End processing [vr180-convert]: success
+[2024-05-19 08:20:21] INFO root fetch - processPackages [fake-bpy-module-latest]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module_latest-20240517.tar.gz]
+[2024-05-19 08:20:21] INFO root fetch - processPackages [fake-bpy-module-latest]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module_latest-20240518.tar.gz]
+[2024-05-19 08:20:21] INFO root fetch - main [MainThread]: End processing [fake-bpy-module-latest]: success
+[2024-05-19 08:20:21] INFO root fetch - processPackages [fake-bpy-module]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module-20240517.tar.gz]
+[2024-05-19 08:20:21] INFO root fetch - processPackages [fake-bpy-module]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module-20240518.tar.gz]
+[2024-05-19 08:20:21] INFO root fetch - main [MainThread]: End processing [fake-bpy-module]: success
+[2024-05-19 08:20:21] INFO root fetch - main [MainThread]: Store serial: [23273782]
