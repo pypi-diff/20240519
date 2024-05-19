@@ -2394,3 +2394,51 @@
 [2024-05-19 04:11:38] WARNING root fetch - processPackages [pymeili]: Skipping package: exceeds size limit 14296961>=10485760
 [2024-05-19 04:11:38] INFO root fetch - main [MainThread]: End processing [pymeili] error
 [2024-05-19 04:11:38] INFO root fetch - main [MainThread]: Store serial: [23272590]
+[2024-05-19 04:13:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272590]
+[2024-05-19 04:13:46] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 04:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cs.fsm
+[2024-05-19 04:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nacos-sdk-rust-binding-py
+[2024-05-19 04:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: undetected-playwright
+[2024-05-19 04:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mb-pytorch
+[2024-05-19 04:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vesselasid
+[2024-05-19 04:13:46] INFO root fetch - processPackages [vesselasid]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-19 04:13:46] INFO root fetch - processPackages [vesselasid]: Downloading https://files.pythonhosted.org/packages/a2/14/baf06cb7af9f5a80ebfeb8f960dbb13c70196f61bd5759c357fe5dacd0ea/vesselasid-1.0.8.tar.gz
+[2024-05-19 04:13:46] INFO root fetch - processPackages [undetected-playwright]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-05-19 04:13:46] INFO root fetch - processPackages [mb-pytorch]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-19 04:13:46] INFO root fetch - processPackages [cs.fsm]: New version: [20240519] Old Version: [20240316]
+[2024-05-19 04:13:47] INFO root fetch - processPackages [undetected-playwright]: Downloading https://files.pythonhosted.org/packages/96/72/bce9861844102787d908108d2b0923437174983e846cc41fb21f4df66e54/undetected_playwright-0.2.0.tar.gz
+[2024-05-19 04:13:47] INFO root fetch - processPackages [mb-pytorch]: Downloading https://files.pythonhosted.org/packages/58/e8/2f828969066e1873b4359ae2a186f78135f5ac14d0abdd28ebd0b153ca53/mb_pytorch-1.0.4.tar.gz
+[2024-05-19 04:13:47] INFO root fetch - processPackages [nacos-sdk-rust-binding-py]: New version: [0.4.0] Old Version: [0.3.7a0]
+[2024-05-19 04:13:47] INFO root fetch - processPackages [cs.fsm]: Downloading https://files.pythonhosted.org/packages/69/29/6a7936564357508108b52dbba438b45e398a81f5e0bc644839c40582565a/cs.fsm-20240316.tar.gz
+[2024-05-19 04:13:47] INFO root fetch - processPackages [vesselasid]: Downloading https://files.pythonhosted.org/packages/81/b5/ae62f72cdc101114a8434c7f5b8a6946677975c20649428b068f8f9f1afc/vesselasid-1.0.9.tar.gz
+[2024-05-19 04:13:47] INFO root fetch - processPackages [vesselasid]: executing diffoscope
+[2024-05-19 04:13:47] INFO root fetch - processPackages [vesselasid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vesselasid-1.0.8.tar.gz tmp/vesselasid-1.0.9.tar.gz --markdown 20240519/v/vesselasid/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-19 04:13:47] INFO root fetch - processPackages [nacos-sdk-rust-binding-py]: Downloading https://files.pythonhosted.org/packages/cb/54/f481810ab83498984eeb9801c0df8b3377fc79febed4bc46dad33f75cc75/nacos_sdk_rust_binding_py-0.3.7a0.tar.gz
+[2024-05-19 04:13:47] INFO root fetch - processPackages [mb-pytorch]: Downloading https://files.pythonhosted.org/packages/18/ae/b46b20b02b5f2c2a25fcae91a88f80ab1e1c18413f89f662d20e5475e824/mb_pytorch-1.0.5.tar.gz
+[2024-05-19 04:13:47] INFO root fetch - processPackages [cs.fsm]: Downloading https://files.pythonhosted.org/packages/a9/2c/6939ad6543a50c16e38db2374f54004e30f0350219b78997b5ef00238003/cs.fsm-20240519.tar.gz
+[2024-05-19 04:13:47] INFO root fetch - processPackages [undetected-playwright]: Downloading https://files.pythonhosted.org/packages/52/6a/867b2fb3386e82f902e1d3da0be52266f854209f9f6a4b08b89b9d5d6f3f/undetected_playwright-0.3.0.tar.gz
+[2024-05-19 04:13:47] INFO root fetch - processPackages [cs.fsm]: executing diffoscope
+[2024-05-19 04:13:47] INFO root fetch - processPackages [mb-pytorch]: executing diffoscope
+[2024-05-19 04:13:47] INFO root fetch - processPackages [cs.fsm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs.fsm-20240316.tar.gz tmp/cs.fsm-20240519.tar.gz --markdown 20240519/c/cs.fsm/20240316-20240519/README.md --exclude *.pyd
+[2024-05-19 04:13:47] INFO root fetch - processPackages [mb-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mb_pytorch-1.0.4.tar.gz tmp/mb_pytorch-1.0.5.tar.gz --markdown 20240519/m/mb-pytorch/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-19 04:13:47] INFO root fetch - processPackages [undetected-playwright]: executing diffoscope
+[2024-05-19 04:13:47] INFO root fetch - processPackages [undetected-playwright]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/undetected_playwright-0.2.0.tar.gz tmp/undetected_playwright-0.3.0.tar.gz --markdown 20240519/u/undetected-playwright/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-05-19 04:13:47] INFO root fetch - processPackages [nacos-sdk-rust-binding-py]: Downloading https://files.pythonhosted.org/packages/17/b1/afeb9072b5d211698205e9a2f802c261b1722bc01627809f310b428500cb/nacos_sdk_rust_binding_py-0.4.0-cp37-none-win_amd64.whl
+[2024-05-19 04:13:48] INFO root fetch - processPackages [vesselasid]: Remove: archive file [/home/abi/fetcher/tmp/vesselasid-1.0.8.tar.gz]
+[2024-05-19 04:13:48] INFO root fetch - processPackages [vesselasid]: Remove: archive file [/home/abi/fetcher/tmp/vesselasid-1.0.9.tar.gz]
+[2024-05-19 04:13:48] INFO root fetch - main [MainThread]: End processing [vesselasid]: success
+[2024-05-19 04:13:48] INFO root fetch - processPackages [cs.fsm]: Remove: archive file [/home/abi/fetcher/tmp/cs.fsm-20240316.tar.gz]
+[2024-05-19 04:13:48] INFO root fetch - processPackages [cs.fsm]: Remove: archive file [/home/abi/fetcher/tmp/cs.fsm-20240519.tar.gz]
+[2024-05-19 04:13:48] INFO root fetch - main [MainThread]: End processing [cs.fsm]: success
+[2024-05-19 04:13:48] INFO root fetch - processPackages [mb-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/mb_pytorch-1.0.4.tar.gz]
+[2024-05-19 04:13:48] INFO root fetch - processPackages [mb-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/mb_pytorch-1.0.5.tar.gz]
+[2024-05-19 04:13:48] INFO root fetch - main [MainThread]: End processing [mb-pytorch]: success
+[2024-05-19 04:13:48] INFO root fetch - processPackages [undetected-playwright]: Remove: archive file [/home/abi/fetcher/tmp/undetected_playwright-0.2.0.tar.gz]
+[2024-05-19 04:13:48] INFO root fetch - processPackages [undetected-playwright]: Remove: archive file [/home/abi/fetcher/tmp/undetected_playwright-0.3.0.tar.gz]
+[2024-05-19 04:13:48] INFO root fetch - main [MainThread]: End processing [undetected-playwright]: success
+[2024-05-19 04:13:49] INFO root fetch - processPackages [nacos-sdk-rust-binding-py]: executing diffoscope
+[2024-05-19 04:13:49] INFO root fetch - processPackages [nacos-sdk-rust-binding-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nacos_sdk_rust_binding_py-0.3.7a0.tar.gz tmp/nacos_sdk_rust_binding_py-0.4.0-cp37-none-win_amd64.whl.zip --markdown 20240519/n/nacos-sdk-rust-binding-py/0.3.7a0-0.4.0/README.md --exclude *.pyd
+[2024-05-19 04:13:49] INFO root fetch - processPackages [nacos-sdk-rust-binding-py]: Remove: archive file [/home/abi/fetcher/tmp/nacos_sdk_rust_binding_py-0.3.7a0.tar.gz]
+[2024-05-19 04:13:49] INFO root fetch - processPackages [nacos-sdk-rust-binding-py]: Remove: archive file [/home/abi/fetcher/tmp/nacos_sdk_rust_binding_py-0.4.0-cp37-none-win_amd64.whl.zip]
+[2024-05-19 04:13:49] INFO root fetch - main [MainThread]: End processing [nacos-sdk-rust-binding-py]: success
+[2024-05-19 04:13:49] INFO root fetch - main [MainThread]: Store serial: [23272639]
