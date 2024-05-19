@@ -6953,3 +6953,38 @@
 [2024-05-19 10:34:54] INFO root fetch - processPackages [kuzu]: Remove: archive file [/home/abi/fetcher/tmp/kuzu-0.4.3.dev4.tar.gz]
 [2024-05-19 10:34:54] INFO root fetch - main [MainThread]: End processing [kuzu]: success
 [2024-05-19 10:34:54] INFO root fetch - main [MainThread]: Store serial: [23274664]
+[2024-05-19 10:36:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274664]
+[2024-05-19 10:37:03] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 10:37:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nepattern
+[2024-05-19 10:37:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gymconnectx
+[2024-05-19 10:37:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: people-local
+[2024-05-19 10:37:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ngsolve
+[2024-05-19 10:37:03] INFO root fetch - processPackages [gymconnectx]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-19 10:37:03] INFO root fetch - processPackages [gymconnectx]: Downloading https://files.pythonhosted.org/packages/89/37/b797f355e05b9bc71cc75e1402e896a5b9bad5da387401328dcf712bec98/gymconnectx-1.0.4.tar.gz
+[2024-05-19 10:37:03] INFO root fetch - processPackages [people-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 10:37:03] INFO root fetch - processPackages [nepattern]: New version: [0.7.3] Old Version: [0.7.2]
+[2024-05-19 10:37:03] INFO root fetch - processPackages [ngsolve]: New version: [6.2.2403.post5.dev0] Old Version: [6.2.2403.post4.dev0]
+[2024-05-19 10:37:03] INFO root fetch - processPackages [people-local]: Downloading https://files.pythonhosted.org/packages/8b/1c/6315cdb848f482a3caf92189f2b65376a69c68543b2b6f4db62d865cb36e/people-local-0.0.8.tar.gz
+[2024-05-19 10:37:03] INFO root fetch - processPackages [ngsolve]: Downloading https://files.pythonhosted.org/packages/c8/bb/03ffbecd2f5e8bb43ee9c772ac51a97022964f1a1989bd92ebb8674596d1/ngsolve-6.2.2403.post4.dev0-cp39-cp39-macosx_10_15_universal2.whl
+[2024-05-19 10:37:03] INFO root fetch - processPackages [nepattern]: Downloading https://files.pythonhosted.org/packages/78/23/bf72be352c7c9f58e90ad0a3eaff845da0aeaa98addbcfe3c979c955c145/nepattern-0.7.2.tar.gz
+[2024-05-19 10:37:04] WARNING root fetch - processPackages [ngsolve]: Skipping package: exceeds size limit 34291225>=10485760
+[2024-05-19 10:37:04] INFO root fetch - main [MainThread]: End processing [ngsolve] error
+[2024-05-19 10:37:04] INFO root fetch - processPackages [gymconnectx]: Downloading https://files.pythonhosted.org/packages/99/27/a9bab6d2979f7fb5c5046c11863c067a69b4100913aa651aaa2c4b580636/gymconnectx-1.0.5.tar.gz
+[2024-05-19 10:37:04] INFO root fetch - processPackages [gymconnectx]: executing diffoscope
+[2024-05-19 10:37:04] INFO root fetch - processPackages [gymconnectx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gymconnectx-1.0.4.tar.gz tmp/gymconnectx-1.0.5.tar.gz --markdown 20240519/g/gymconnectx/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-19 10:37:04] INFO root fetch - processPackages [people-local]: Downloading https://files.pythonhosted.org/packages/cc/ba/07a77e133c7523ecf4191eb3efb5529e4cee964e55f5dff0504d09de7d34/people-local-0.0.9.tar.gz
+[2024-05-19 10:37:04] INFO root fetch - processPackages [nepattern]: Downloading https://files.pythonhosted.org/packages/d4/19/12e3e203e4864a283a7299ffa9c0b1d013a6aea088b53178fe973a354b42/nepattern-0.7.3.tar.gz
+[2024-05-19 10:37:04] INFO root fetch - processPackages [people-local]: executing diffoscope
+[2024-05-19 10:37:04] INFO root fetch - processPackages [people-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/people-local-0.0.8.tar.gz tmp/people-local-0.0.9.tar.gz --markdown 20240519/p/people-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 10:37:04] INFO root fetch - processPackages [nepattern]: executing diffoscope
+[2024-05-19 10:37:04] INFO root fetch - processPackages [nepattern]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nepattern-0.7.2.tar.gz tmp/nepattern-0.7.3.tar.gz --markdown 20240519/n/nepattern/0.7.2-0.7.3/README.md --exclude *.pyd
+[2024-05-19 10:37:04] INFO root fetch - processPackages [gymconnectx]: Remove: archive file [/home/abi/fetcher/tmp/gymconnectx-1.0.4.tar.gz]
+[2024-05-19 10:37:04] INFO root fetch - processPackages [gymconnectx]: Remove: archive file [/home/abi/fetcher/tmp/gymconnectx-1.0.5.tar.gz]
+[2024-05-19 10:37:04] INFO root fetch - main [MainThread]: End processing [gymconnectx]: success
+[2024-05-19 10:37:04] INFO root fetch - processPackages [people-local]: Remove: archive file [/home/abi/fetcher/tmp/people-local-0.0.8.tar.gz]
+[2024-05-19 10:37:04] INFO root fetch - processPackages [people-local]: Remove: archive file [/home/abi/fetcher/tmp/people-local-0.0.9.tar.gz]
+[2024-05-19 10:37:04] INFO root fetch - main [MainThread]: End processing [people-local]: success
+[2024-05-19 10:37:04] INFO root fetch - processPackages [nepattern]: Remove: archive file [/home/abi/fetcher/tmp/nepattern-0.7.2.tar.gz]
+[2024-05-19 10:37:04] INFO root fetch - processPackages [nepattern]: Remove: archive file [/home/abi/fetcher/tmp/nepattern-0.7.3.tar.gz]
+[2024-05-19 10:37:04] INFO root fetch - main [MainThread]: End processing [nepattern]: success
+[2024-05-19 10:37:04] INFO root fetch - main [MainThread]: Store serial: [23274698]
