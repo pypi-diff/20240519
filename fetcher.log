@@ -1872,3 +1872,29 @@
 [2024-05-19 03:11:06] INFO root fetch - processPackages [salgorithm]: Remove: archive file [/home/abi/fetcher/tmp/salgorithm-0.2.1.tar.gz]
 [2024-05-19 03:11:06] INFO root fetch - main [MainThread]: End processing [salgorithm]: success
 [2024-05-19 03:11:06] INFO root fetch - main [MainThread]: Store serial: [23272329]
+[2024-05-19 03:13:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272329]
+[2024-05-19 03:13:15] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-19 03:15:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272329]
+[2024-05-19 03:15:21] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 03:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scorev
+[2024-05-19 03:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonconficientz
+[2024-05-19 03:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aboto3
+[2024-05-19 03:15:21] WARNING root fetch - processPackages [nonconficientz]: Skipping, unable to determine old version
+[2024-05-19 03:15:21] INFO root fetch - main [MainThread]: End processing [nonconficientz] error
+[2024-05-19 03:15:21] INFO root fetch - processPackages [scorev]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-19 03:15:21] INFO root fetch - processPackages [aboto3]: New version: [0.1.2] Old Version: [0.1.1rc1]
+[2024-05-19 03:15:21] INFO root fetch - processPackages [scorev]: Downloading https://files.pythonhosted.org/packages/ef/45/0cfd0786bd8591c0b3a610bb78ddb17fdfaaa37d0ef117864e10fdfd0ea8/scorev-0.0.4.tar.gz
+[2024-05-19 03:15:21] INFO root fetch - processPackages [aboto3]: Downloading https://files.pythonhosted.org/packages/c5/df/6c2d9252d8c9fc0e88a049ca1394f5a73d537892f8c0081a04e4c62ba874/aboto3-0.1.1rc1.tar.gz
+[2024-05-19 03:15:22] INFO root fetch - processPackages [scorev]: Downloading https://files.pythonhosted.org/packages/f6/d9/b74dcc30f4e2ec56cf1070dd7275379a547a16330ae1573ccfaeb7f22466/scorev-0.0.5.tar.gz
+[2024-05-19 03:15:22] INFO root fetch - processPackages [scorev]: executing diffoscope
+[2024-05-19 03:15:22] INFO root fetch - processPackages [scorev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scorev-0.0.4.tar.gz tmp/scorev-0.0.5.tar.gz --markdown 20240519/s/scorev/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-19 03:15:22] INFO root fetch - processPackages [aboto3]: Downloading https://files.pythonhosted.org/packages/30/05/a31f99f1776c4f4d7dc987e1305af7b4eb22c8fb7e31999c19917a07bcbd/aboto3-0.1.2.tar.gz
+[2024-05-19 03:15:22] INFO root fetch - processPackages [aboto3]: executing diffoscope
+[2024-05-19 03:15:22] INFO root fetch - processPackages [aboto3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aboto3-0.1.1rc1.tar.gz tmp/aboto3-0.1.2.tar.gz --markdown 20240519/a/aboto3/0.1.1rc1-0.1.2/README.md --exclude *.pyd
+[2024-05-19 03:15:22] INFO root fetch - processPackages [scorev]: Remove: archive file [/home/abi/fetcher/tmp/scorev-0.0.4.tar.gz]
+[2024-05-19 03:15:22] INFO root fetch - processPackages [scorev]: Remove: archive file [/home/abi/fetcher/tmp/scorev-0.0.5.tar.gz]
+[2024-05-19 03:15:22] INFO root fetch - main [MainThread]: End processing [scorev]: success
+[2024-05-19 03:15:22] INFO root fetch - processPackages [aboto3]: Remove: archive file [/home/abi/fetcher/tmp/aboto3-0.1.1rc1.tar.gz]
+[2024-05-19 03:15:22] INFO root fetch - processPackages [aboto3]: Remove: archive file [/home/abi/fetcher/tmp/aboto3-0.1.2.tar.gz]
+[2024-05-19 03:15:22] INFO root fetch - main [MainThread]: End processing [aboto3]: success
+[2024-05-19 03:15:22] INFO root fetch - main [MainThread]: Store serial: [23272339]
