@@ -15983,3 +15983,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 19:57:43] INFO root fetch - processPackages [Simba-UW-tf-dev]: Remove: archive file [/home/abi/fetcher/tmp/Simba-UW-tf-dev-1.92.5.tar.gz]
 [2024-05-19 19:57:43] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
 [2024-05-19 19:57:43] INFO root fetch - main [MainThread]: Store serial: [23279017]
+[2024-05-19 19:59:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279017]
+[2024-05-19 19:59:53] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-19 19:59:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pygamepal
+[2024-05-19 19:59:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scarletberryz
+[2024-05-19 19:59:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: coti-sdk
+[2024-05-19 19:59:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gen-wrappers
+[2024-05-19 19:59:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: klqanbacjnwbwbez
+[2024-05-19 19:59:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: qgtnkldqegoapuew
+[2024-05-19 19:59:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: klqanbacjnwbwbez
+[2024-05-19 19:59:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: xdmhcylxseklcbcx
+[2024-05-19 19:59:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: routersploit
+[2024-05-19 19:59:53] INFO root fetch - processPackages [coti-sdk]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-19 19:59:53] INFO root fetch - processPackages [gen-wrappers]: New version: [0.4.0] Old Version: [0.3.9]
+[2024-05-19 19:59:53] INFO root fetch - processPackages [pygamepal]: New version: [0.6.3] Old Version: [0.6.1]
+[2024-05-19 19:59:53] WARNING root fetch - processPackages [scarletberryz]: Skipping, unable to determine old version
+[2024-05-19 19:59:53] INFO root fetch - main [MainThread]: End processing [scarletberryz] error
+[2024-05-19 19:59:53] INFO root fetch - processPackages [routersploit]: New version: [3.4.3] Old Version: [3.4.2]
+[2024-05-19 19:59:53] INFO root fetch - processPackages [klqanbacjnwbwbez]: New version: [1.10000.10001] Old Version: [1.10000.10000]
+[2024-05-19 19:59:53] INFO root fetch - processPackages [klqanbacjnwbwbez]: New version: [1.10000.10001] Old Version: [1.10000.10000]
+[2024-05-19 19:59:53] WARNING root fetch - processPackages [qgtnkldqegoapuew]: Skipping, unable to determine old version
+[2024-05-19 19:59:53] INFO root fetch - main [MainThread]: End processing [qgtnkldqegoapuew] error
+[2024-05-19 19:59:53] WARNING root fetch - processPackages [xdmhcylxseklcbcx]: Skipping, unable to determine old version
+[2024-05-19 19:59:53] INFO root fetch - main [MainThread]: End processing [xdmhcylxseklcbcx] error
+[2024-05-19 19:59:53] INFO root fetch - processPackages [coti-sdk]: Downloading https://files.pythonhosted.org/packages/a2/ef/1de8f0ae683e0b87d4d8a8a30c5016779c23f83150daeb36fc5dbb674597/coti_sdk-0.1.3.tar.gz
+[2024-05-19 19:59:53] INFO root fetch - processPackages [gen-wrappers]: Downloading https://files.pythonhosted.org/packages/da/d2/cea6eb359ae796407af265388a7c76b05bef5c9351f6a64fb2a47e1928c8/gen_wrappers-0.3.9.tar.gz
+[2024-05-19 19:59:53] INFO root fetch - processPackages [klqanbacjnwbwbez]: Downloading https://files.pythonhosted.org/packages/1e/ef/071b0fd73406ed44f2615103f3219081f03f029da02a5cdb19d1913b4b57/klqanbacjnwbwbez-1.10000.10000.tar.gz
+[2024-05-19 19:59:53] INFO root fetch - processPackages [klqanbacjnwbwbez]: Downloading https://files.pythonhosted.org/packages/1e/ef/071b0fd73406ed44f2615103f3219081f03f029da02a5cdb19d1913b4b57/klqanbacjnwbwbez-1.10000.10000.tar.gz
+[2024-05-19 19:59:53] INFO root fetch - processPackages [pygamepal]: Downloading https://files.pythonhosted.org/packages/09/9d/d7ab4efd1f9e4381f4c14414fa22f0413a33f81832b7e5c815745dbb21a5/pygamepal-0.6.1.tar.gz
+[2024-05-19 19:59:53] INFO root fetch - processPackages [routersploit]: Downloading https://files.pythonhosted.org/packages/4a/06/672f83183c899500014047d76369fb5d288b84a920a32ed382db5f9b3ff0/routersploit-3.4.2.tar.gz
+[2024-05-19 19:59:53] WARNING root fetch - processPackages [pygamepal]: Skipping package: exceeds size limit 20277360>=10485760
+[2024-05-19 19:59:53] INFO root fetch - main [MainThread]: End processing [pygamepal] error
+[2024-05-19 19:59:53] INFO root fetch - processPackages [gen-wrappers]: Downloading https://files.pythonhosted.org/packages/db/dd/ce52820c0eb0a130f78a2d00c55f6931485487667fb26f6d44c5b4cb4a72/gen_wrappers-0.4.0.tar.gz
+[2024-05-19 19:59:53] INFO root fetch - processPackages [coti-sdk]: Downloading https://files.pythonhosted.org/packages/ca/28/98fcfbde3ee7355ab214d1bef25c4bc5799a2bce236239936ccfd9976733/coti_sdk-0.1.4.tar.gz
+[2024-05-19 19:59:54] INFO root fetch - processPackages [routersploit]: Downloading https://files.pythonhosted.org/packages/fd/b8/9ebbe0c7cbee3e95ed15f0c96d962e53c87ea72155f461fe9a27f3d0acbd/routersploit-3.4.3.tar.gz
+[2024-05-19 19:59:54] INFO root fetch - processPackages [klqanbacjnwbwbez]: Downloading https://files.pythonhosted.org/packages/39/04/e7424d52b6a0e18ea54ecd2a141a7decfa70a553a127d8caa28288cbedbb/klqanbacjnwbwbez-1.10000.10001.tar.gz
+[2024-05-19 19:59:54] INFO root fetch - processPackages [klqanbacjnwbwbez]: Downloading https://files.pythonhosted.org/packages/39/04/e7424d52b6a0e18ea54ecd2a141a7decfa70a553a127d8caa28288cbedbb/klqanbacjnwbwbez-1.10000.10001.tar.gz
+[2024-05-19 19:59:54] INFO root fetch - processPackages [coti-sdk]: executing diffoscope
+[2024-05-19 19:59:54] INFO root fetch - processPackages [coti-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coti_sdk-0.1.3.tar.gz tmp/coti_sdk-0.1.4.tar.gz --markdown 20240519/c/coti-sdk/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-19 19:59:54] INFO root fetch - processPackages [gen-wrappers]: executing diffoscope
+[2024-05-19 19:59:54] INFO root fetch - processPackages [gen-wrappers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gen_wrappers-0.3.9.tar.gz tmp/gen_wrappers-0.4.0.tar.gz --markdown 20240519/g/gen-wrappers/0.3.9-0.4.0/README.md --exclude *.pyd
+[2024-05-19 19:59:54] INFO root fetch - processPackages [routersploit]: executing diffoscope
+[2024-05-19 19:59:54] INFO root fetch - processPackages [routersploit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/routersploit-3.4.2.tar.gz tmp/routersploit-3.4.3.tar.gz --markdown 20240519/r/routersploit/3.4.2-3.4.3/README.md --exclude *.pyd
+[2024-05-19 19:59:54] INFO root fetch - processPackages [klqanbacjnwbwbez]: executing diffoscope
+[2024-05-19 19:59:54] INFO root fetch - processPackages [klqanbacjnwbwbez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/klqanbacjnwbwbez-1.10000.10000.tar.gz tmp/klqanbacjnwbwbez-1.10000.10001.tar.gz --markdown 20240519/k/klqanbacjnwbwbez/1.10000.10000-1.10000.10001/README.md --exclude *.pyd
+[2024-05-19 19:59:54] INFO root fetch - processPackages [klqanbacjnwbwbez]: executing diffoscope
+[2024-05-19 19:59:54] INFO root fetch - processPackages [klqanbacjnwbwbez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/klqanbacjnwbwbez-1.10000.10000.tar.gz tmp/klqanbacjnwbwbez-1.10000.10001.tar.gz --markdown 20240519/k/klqanbacjnwbwbez/1.10000.10000-1.10000.10001/README.md --exclude *.pyd
+[2024-05-19 19:59:54] INFO root fetch - processPackages [coti-sdk]: Remove: archive file [/home/abi/fetcher/tmp/coti_sdk-0.1.3.tar.gz]
+[2024-05-19 19:59:54] INFO root fetch - processPackages [coti-sdk]: Remove: archive file [/home/abi/fetcher/tmp/coti_sdk-0.1.4.tar.gz]
+[2024-05-19 19:59:54] INFO root fetch - main [MainThread]: End processing [coti-sdk]: success
+[2024-05-19 19:59:54] INFO root fetch - processPackages [gen-wrappers]: Remove: archive file [/home/abi/fetcher/tmp/gen_wrappers-0.3.9.tar.gz]
+[2024-05-19 19:59:54] INFO root fetch - processPackages [gen-wrappers]: Remove: archive file [/home/abi/fetcher/tmp/gen_wrappers-0.4.0.tar.gz]
+[2024-05-19 19:59:54] INFO root fetch - main [MainThread]: End processing [gen-wrappers]: success
+[2024-05-19 19:59:56] INFO root fetch - processPackages [routersploit]: Remove: archive file [/home/abi/fetcher/tmp/routersploit-3.4.2.tar.gz]
+[2024-05-19 19:59:56] INFO root fetch - processPackages [routersploit]: Remove: archive file [/home/abi/fetcher/tmp/routersploit-3.4.3.tar.gz]
+[2024-05-19 19:59:56] INFO root fetch - main [MainThread]: End processing [routersploit]: success
+[2024-05-19 20:00:05] INFO root fetch - processPackages [klqanbacjnwbwbez]: Remove: archive file [/home/abi/fetcher/tmp/klqanbacjnwbwbez-1.10000.10000.tar.gz]
+[2024-05-19 20:00:05] INFO root fetch - processPackages [klqanbacjnwbwbez]: Remove: archive file [/home/abi/fetcher/tmp/klqanbacjnwbwbez-1.10000.10001.tar.gz]
+[2024-05-19 20:00:05] INFO root fetch - main [MainThread]: End processing [klqanbacjnwbwbez]: success
+[2024-05-19 20:00:05] INFO root fetch - main [MainThread]: End processing [klqanbacjnwbwbez]: success
+[2024-05-19 20:00:05] INFO root fetch - main [MainThread]: Store serial: [23279045]
