@@ -3118,3 +3118,15 @@
 [2024-05-19 05:04:05] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-account-invoicing]: success
 [2024-05-19 05:04:05] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-account-invoicing]: success
 [2024-05-19 05:04:05] INFO root fetch - main [MainThread]: Store serial: [23272939]
+[2024-05-19 05:06:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272939]
+[2024-05-19 05:06:15] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 05:06:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xcpcio-board-spider
+[2024-05-19 05:06:15] INFO root fetch - processPackages [xcpcio-board-spider]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 05:06:15] INFO root fetch - processPackages [xcpcio-board-spider]: Downloading https://files.pythonhosted.org/packages/d5/e8/93eb07becf872b6db723095bb3f0908214a3d2b21dc599973ab1af8f8e97/xcpcio_board_spider-0.0.8.tar.gz
+[2024-05-19 05:06:15] INFO root fetch - processPackages [xcpcio-board-spider]: Downloading https://files.pythonhosted.org/packages/23/85/7e2bcc229940ed51da5d1c47693efc3f82ae21eecd44490b8897c460f772/xcpcio_board_spider-0.0.9.tar.gz
+[2024-05-19 05:06:15] INFO root fetch - processPackages [xcpcio-board-spider]: executing diffoscope
+[2024-05-19 05:06:15] INFO root fetch - processPackages [xcpcio-board-spider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xcpcio_board_spider-0.0.8.tar.gz tmp/xcpcio_board_spider-0.0.9.tar.gz --markdown 20240519/x/xcpcio-board-spider/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 05:06:16] INFO root fetch - processPackages [xcpcio-board-spider]: Remove: archive file [/home/abi/fetcher/tmp/xcpcio_board_spider-0.0.8.tar.gz]
+[2024-05-19 05:06:16] INFO root fetch - processPackages [xcpcio-board-spider]: Remove: archive file [/home/abi/fetcher/tmp/xcpcio_board_spider-0.0.9.tar.gz]
+[2024-05-19 05:06:16] INFO root fetch - main [MainThread]: End processing [xcpcio-board-spider]: success
+[2024-05-19 05:06:16] INFO root fetch - main [MainThread]: Store serial: [23272942]
