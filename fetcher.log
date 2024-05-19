@@ -6410,3 +6410,39 @@
 [2024-05-19 09:52:50] INFO root fetch - processPackages [odoo12-addon-web-widget-one2many-product-picker]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_web_widget_one2many_product_picker-12.0.3.0.1-py3-none-any.whl.zip]
 [2024-05-19 09:52:50] INFO root fetch - main [MainThread]: End processing [odoo12-addon-web-widget-one2many-product-picker]: success
 [2024-05-19 09:52:50] INFO root fetch - main [MainThread]: Store serial: [23274366]
+[2024-05-19 09:54:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274366]
+[2024-05-19 09:55:00] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 09:55:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: epidermicz
+[2024-05-19 09:55:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: data-preprocessing-lib
+[2024-05-19 09:55:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addons-oca-web
+[2024-05-19 09:55:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo14-addons-oca-web
+[2024-05-19 09:55:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: entity-type-local
+[2024-05-19 09:55:00] INFO root fetch - processPackages [entity-type-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 09:55:00] INFO root fetch - processPackages [odoo-addons-oca-web]: New version: [16.0.20240415.1] Old Version: [16.0.20240322.0]
+[2024-05-19 09:55:00] WARNING root fetch - processPackages [epidermicz]: Skipping, unable to determine old version
+[2024-05-19 09:55:00] INFO root fetch - main [MainThread]: End processing [epidermicz] error
+[2024-05-19 09:55:00] INFO root fetch - processPackages [entity-type-local]: Downloading https://files.pythonhosted.org/packages/e1/49/dae38bddfbf5a5379aa666cc312ab320273bd0087679dac56d18476bd2e0/entity-type-local-0.0.8.tar.gz
+[2024-05-19 09:55:00] INFO root fetch - processPackages [odoo14-addons-oca-web]: New version: [14.0.20240518.0] Old Version: [14.0.20240309.0]
+[2024-05-19 09:55:00] WARNING root fetch - processPackages [data-preprocessing-lib]: Skipping, unable to determine old version
+[2024-05-19 09:55:00] INFO root fetch - main [MainThread]: End processing [data-preprocessing-lib] error
+[2024-05-19 09:55:01] INFO root fetch - processPackages [odoo-addons-oca-web]: Downloading https://files.pythonhosted.org/packages/41/45/2d26383462884e4072c6b553bf051da610b7e8ac60e0bbc3a973a1132b0f/odoo_addons_oca_web-16.0.20240322.0-py3-none-any.whl
+[2024-05-19 09:55:01] INFO root fetch - processPackages [odoo14-addons-oca-web]: Downloading https://files.pythonhosted.org/packages/64/7b/6f4a5b9e876fcbbcb24718e42aac58e42ffcec896f3042e6e60073b8fd2f/odoo14_addons_oca_web-14.0.20240309.0-py3-none-any.whl
+[2024-05-19 09:55:01] INFO root fetch - processPackages [entity-type-local]: Downloading https://files.pythonhosted.org/packages/6d/56/eb9f4b8a5bb633ce9314fab5889a48bc8776e95725798bddf4a63e205caa/entity-type-local-0.0.9.tar.gz
+[2024-05-19 09:55:01] INFO root fetch - processPackages [entity-type-local]: executing diffoscope
+[2024-05-19 09:55:01] INFO root fetch - processPackages [entity-type-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/entity-type-local-0.0.8.tar.gz tmp/entity-type-local-0.0.9.tar.gz --markdown 20240519/e/entity-type-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 09:55:01] INFO root fetch - processPackages [odoo-addons-oca-web]: Downloading https://files.pythonhosted.org/packages/c6/5c/15e74fa4589b90b99d0919ab74e62670e6907e69f2fdd04f828739778476/odoo_addons_oca_web-16.0.20240415.1-py3-none-any.whl
+[2024-05-19 09:55:01] INFO root fetch - processPackages [odoo14-addons-oca-web]: Downloading https://files.pythonhosted.org/packages/de/ef/6eaee15c16bd0c4b01f7fac31e1d71ad73c7001256750a52648d503431bb/odoo14_addons_oca_web-14.0.20240518.0-py3-none-any.whl
+[2024-05-19 09:55:01] INFO root fetch - processPackages [odoo-addons-oca-web]: executing diffoscope
+[2024-05-19 09:55:01] INFO root fetch - processPackages [odoo-addons-oca-web]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_web-16.0.20240322.0-py3-none-any.whl.zip tmp/odoo_addons_oca_web-16.0.20240415.1-py3-none-any.whl.zip --markdown 20240519/o/odoo-addons-oca-web/16.0.20240322.0-16.0.20240415.1/README.md --exclude *.pyd
+[2024-05-19 09:55:01] INFO root fetch - processPackages [odoo14-addons-oca-web]: executing diffoscope
+[2024-05-19 09:55:01] INFO root fetch - processPackages [odoo14-addons-oca-web]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addons_oca_web-14.0.20240309.0-py3-none-any.whl.zip tmp/odoo14_addons_oca_web-14.0.20240518.0-py3-none-any.whl.zip --markdown 20240519/o/odoo14-addons-oca-web/14.0.20240309.0-14.0.20240518.0/README.md --exclude *.pyd
+[2024-05-19 09:55:01] INFO root fetch - processPackages [entity-type-local]: Remove: archive file [/home/abi/fetcher/tmp/entity-type-local-0.0.8.tar.gz]
+[2024-05-19 09:55:01] INFO root fetch - processPackages [entity-type-local]: Remove: archive file [/home/abi/fetcher/tmp/entity-type-local-0.0.9.tar.gz]
+[2024-05-19 09:55:01] INFO root fetch - main [MainThread]: End processing [entity-type-local]: success
+[2024-05-19 09:55:02] INFO root fetch - processPackages [odoo14-addons-oca-web]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addons_oca_web-14.0.20240309.0-py3-none-any.whl.zip]
+[2024-05-19 09:55:02] INFO root fetch - processPackages [odoo14-addons-oca-web]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addons_oca_web-14.0.20240518.0-py3-none-any.whl.zip]
+[2024-05-19 09:55:02] INFO root fetch - main [MainThread]: End processing [odoo14-addons-oca-web]: success
+[2024-05-19 09:55:02] INFO root fetch - processPackages [odoo-addons-oca-web]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_web-16.0.20240322.0-py3-none-any.whl.zip]
+[2024-05-19 09:55:02] INFO root fetch - processPackages [odoo-addons-oca-web]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_web-16.0.20240415.1-py3-none-any.whl.zip]
+[2024-05-19 09:55:02] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-web]: success
+[2024-05-19 09:55:02] INFO root fetch - main [MainThread]: Store serial: [23274382]
