@@ -14520,3 +14520,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 18:49:43] WARNING root fetch - processPackages [django-tinywiki]: Skipping package: exceeds size limit 24509041>=10485760
 [2024-05-19 18:49:43] INFO root fetch - main [MainThread]: End processing [django-tinywiki] error
 [2024-05-19 18:49:43] INFO root fetch - main [MainThread]: Store serial: [23278316]
+[2024-05-19 18:51:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23278316]
+[2024-05-19 18:51:52] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-19 18:51:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: servicenow-api
+[2024-05-19 18:51:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: desktop-env
+[2024-05-19 18:51:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: syncloud-lib
+[2024-05-19 18:51:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: floatingparser
+[2024-05-19 18:51:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: streamlit_pandera
+[2024-05-19 18:51:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: freshenedz
+[2024-05-19 18:51:52] INFO root fetch - processPackages [syncloud-lib]: New version: [99] Old Version: [98]
+[2024-05-19 18:51:52] INFO root fetch - processPackages [floatingparser]: New version: [1.0.1] Old Version: [1.0]
+[2024-05-19 18:51:52] WARNING root fetch - processPackages [streamlit_pandera]: Skipping, unable to determine old version
+[2024-05-19 18:51:52] INFO root fetch - main [MainThread]: End processing [streamlit_pandera] error
+[2024-05-19 18:51:52] INFO root fetch - processPackages [servicenow-api]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-19 18:51:52] WARNING root fetch - processPackages [freshenedz]: Skipping, unable to determine old version
+[2024-05-19 18:51:52] INFO root fetch - main [MainThread]: End processing [freshenedz] error
+[2024-05-19 18:51:52] INFO root fetch - processPackages [syncloud-lib]: Downloading https://files.pythonhosted.org/packages/eb/47/46fcc907c66f84d54bb4511b19d9a23d7c91adea96f7e60ce0c74aa570ef/syncloud-lib-98.tar.gz
+[2024-05-19 18:51:52] INFO root fetch - processPackages [desktop-env]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-19 18:51:52] INFO root fetch - processPackages [servicenow-api]: Downloading https://files.pythonhosted.org/packages/2a/96/cc447e9247636a3ca7fe607e05a327a7076f254221c5c20c960f2d6689fd/servicenow_api-0.8.0-py2.py3-none-any.whl
+[2024-05-19 18:51:52] INFO root fetch - processPackages [floatingparser]: Downloading https://files.pythonhosted.org/packages/4b/3c/4b57ecde750b27856596e44ec92cc1efb64b953ced1b5f6b3c3f14b260ea/floatingparser-1.0.tar.gz
+[2024-05-19 18:51:52] INFO root fetch - processPackages [desktop-env]: Downloading https://files.pythonhosted.org/packages/56/31/7b6552d8199fbe4871c70de1fd81920b3869270b706439d1c214499d6b22/desktop_env-0.1.8.tar.gz
+[2024-05-19 18:51:52] INFO root fetch - processPackages [syncloud-lib]: Downloading https://files.pythonhosted.org/packages/44/7a/6896c6fbe515ce1d82cba0202681a2dab694b82a4fcab8fe2813ac3b6806/syncloud-lib-99.tar.gz
+[2024-05-19 18:51:52] INFO root fetch - processPackages [servicenow-api]: Downloading https://files.pythonhosted.org/packages/76/cb/16788288b3e511d9ebf0b67d4e1cd59966bc918931d1953e5f137a9ff712/servicenow_api-0.9.0-py2.py3-none-any.whl
+[2024-05-19 18:51:53] INFO root fetch - processPackages [syncloud-lib]: executing diffoscope
+[2024-05-19 18:51:53] INFO root fetch - processPackages [syncloud-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syncloud-lib-98.tar.gz tmp/syncloud-lib-99.tar.gz --markdown 20240519/s/syncloud-lib/98-99/README.md --exclude *.pyd
+[2024-05-19 18:51:53] INFO root fetch - processPackages [servicenow-api]: executing diffoscope
+[2024-05-19 18:51:53] INFO root fetch - processPackages [servicenow-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/servicenow_api-0.8.0-py2.py3-none-any.whl.zip tmp/servicenow_api-0.9.0-py2.py3-none-any.whl.zip --markdown 20240519/s/servicenow-api/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-19 18:51:53] INFO root fetch - processPackages [floatingparser]: Downloading https://files.pythonhosted.org/packages/da/6b/6c0ccf68b97bffd90c74c2f97c96b79f76c269f57a098c2065bfb2fee7b0/floatingparser-1.0.1.tar.gz
+[2024-05-19 18:51:53] INFO root fetch - processPackages [floatingparser]: executing diffoscope
+[2024-05-19 18:51:53] INFO root fetch - processPackages [floatingparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/floatingparser-1.0.tar.gz tmp/floatingparser-1.0.1.tar.gz --markdown 20240519/f/floatingparser/1.0-1.0.1/README.md --exclude *.pyd
+[2024-05-19 18:51:53] INFO root fetch - processPackages [desktop-env]: Downloading https://files.pythonhosted.org/packages/34/c2/44dbe104fd250bc98e5640f34fa477ed837da112a8e7f87030a9d64589a9/desktop_env-0.1.9.tar.gz
+[2024-05-19 18:51:53] INFO root fetch - processPackages [desktop-env]: executing diffoscope
+[2024-05-19 18:51:53] INFO root fetch - processPackages [desktop-env]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/desktop_env-0.1.8.tar.gz tmp/desktop_env-0.1.9.tar.gz --markdown 20240519/d/desktop-env/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-19 18:51:53] INFO root fetch - processPackages [servicenow-api]: Remove: archive file [/home/abi/fetcher/tmp/servicenow_api-0.8.0-py2.py3-none-any.whl.zip]
+[2024-05-19 18:51:53] INFO root fetch - processPackages [servicenow-api]: Remove: archive file [/home/abi/fetcher/tmp/servicenow_api-0.9.0-py2.py3-none-any.whl.zip]
+[2024-05-19 18:51:53] INFO root fetch - main [MainThread]: End processing [servicenow-api]: success
+[2024-05-19 18:51:53] INFO root fetch - processPackages [syncloud-lib]: Remove: archive file [/home/abi/fetcher/tmp/syncloud-lib-98.tar.gz]
+[2024-05-19 18:51:53] INFO root fetch - processPackages [syncloud-lib]: Remove: archive file [/home/abi/fetcher/tmp/syncloud-lib-99.tar.gz]
+[2024-05-19 18:51:53] INFO root fetch - main [MainThread]: End processing [syncloud-lib]: success
+[2024-05-19 18:51:53] INFO root fetch - processPackages [floatingparser]: Remove: archive file [/home/abi/fetcher/tmp/floatingparser-1.0.tar.gz]
+[2024-05-19 18:51:53] INFO root fetch - processPackages [floatingparser]: Remove: archive file [/home/abi/fetcher/tmp/floatingparser-1.0.1.tar.gz]
+[2024-05-19 18:51:53] INFO root fetch - main [MainThread]: End processing [floatingparser]: success
+[2024-05-19 18:51:53] INFO root fetch - processPackages [desktop-env]: Remove: archive file [/home/abi/fetcher/tmp/desktop_env-0.1.8.tar.gz]
+[2024-05-19 18:51:53] INFO root fetch - processPackages [desktop-env]: Remove: archive file [/home/abi/fetcher/tmp/desktop_env-0.1.9.tar.gz]
+[2024-05-19 18:51:53] INFO root fetch - main [MainThread]: End processing [desktop-env]: success
+[2024-05-19 18:51:53] INFO root fetch - main [MainThread]: Store serial: [23278332]
