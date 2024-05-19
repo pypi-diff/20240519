@@ -2348,3 +2348,15 @@
 [2024-05-19 04:02:59] INFO root fetch - processPackages [pyluba]: Remove: archive file [/home/abi/fetcher/tmp/pyluba-0.0.8.tar.gz]
 [2024-05-19 04:02:59] INFO root fetch - main [MainThread]: End processing [pyluba]: success
 [2024-05-19 04:02:59] INFO root fetch - main [MainThread]: Store serial: [23272571]
+[2024-05-19 04:05:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272571]
+[2024-05-19 04:05:07] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 04:05:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: RNASQLite
+[2024-05-19 04:05:07] INFO root fetch - processPackages [RNASQLite]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-19 04:05:07] INFO root fetch - processPackages [RNASQLite]: Downloading https://files.pythonhosted.org/packages/da/fd/52b58ef46a4eb1f8de4e064a7e354424edc56d489347b8a8062f99fa8e98/rnasqlite-0.1.7.tar.gz
+[2024-05-19 04:05:08] INFO root fetch - processPackages [RNASQLite]: Downloading https://files.pythonhosted.org/packages/54/9f/8af932e6e4134ff12cabd6244912a8eaa55ab78bcb65779659352f362d70/rnasqlite-0.1.8.tar.gz
+[2024-05-19 04:05:08] INFO root fetch - processPackages [RNASQLite]: executing diffoscope
+[2024-05-19 04:05:08] INFO root fetch - processPackages [RNASQLite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rnasqlite-0.1.7.tar.gz tmp/rnasqlite-0.1.8.tar.gz --markdown 20240519/R/RNASQLite/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-19 04:05:09] INFO root fetch - processPackages [RNASQLite]: Remove: archive file [/home/abi/fetcher/tmp/rnasqlite-0.1.7.tar.gz]
+[2024-05-19 04:05:09] INFO root fetch - processPackages [RNASQLite]: Remove: archive file [/home/abi/fetcher/tmp/rnasqlite-0.1.8.tar.gz]
+[2024-05-19 04:05:09] INFO root fetch - main [MainThread]: End processing [RNASQLite]: success
+[2024-05-19 04:05:09] INFO root fetch - main [MainThread]: Store serial: [23272574]
