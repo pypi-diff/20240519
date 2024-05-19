@@ -4663,3 +4663,29 @@
 [2024-05-19 07:40:43] INFO root fetch - main [MainThread]: End processing [sop-deutils]: success
 [2024-05-19 07:40:43] INFO root fetch - main [MainThread]: End processing [sop-deutils]: success
 [2024-05-19 07:40:43] INFO root fetch - main [MainThread]: Store serial: [23273582]
+[2024-05-19 07:42:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273582]
+[2024-05-19 07:42:53] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 07:42:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quantplay
+[2024-05-19 07:42:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: smtm
+[2024-05-19 07:42:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sop-deutils
+[2024-05-19 07:42:53] INFO root fetch - processPackages [sop-deutils]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-19 07:42:53] INFO root fetch - processPackages [quantplay]: New version: [1.5.9] Old Version: [1.5.8]
+[2024-05-19 07:42:53] INFO root fetch - processPackages [sop-deutils]: Downloading https://files.pythonhosted.org/packages/90/25/061e7abb0dc44de63510dded7da9654bc6f0a284ca9a978c052e8bdcd739/sop_deutils-0.9.8.tar.gz
+[2024-05-19 07:42:53] INFO root fetch - processPackages [smtm]: New version: [1.5.0] Old Version: [1.4.0]
+[2024-05-19 07:42:53] INFO root fetch - processPackages [quantplay]: Downloading https://files.pythonhosted.org/packages/71/23/85a802491d69beb714dd8831f123c9440301eb94caca43392e50be63fff6/quantplay-1.5.8.tar.gz
+[2024-05-19 07:42:53] INFO root fetch - processPackages [sop-deutils]: Downloading https://files.pythonhosted.org/packages/72/95/95da46c4d54440e29e58711f950067fb490f12e5d5cd23f645102a47e372/sop_deutils-0.9.9.tar.gz
+[2024-05-19 07:42:53] INFO root fetch - processPackages [quantplay]: Downloading https://files.pythonhosted.org/packages/29/44/bc619a0a4e2ecba52ee7f6eac8f51f600a1d90bb67f88a28638d7d9f9c62/quantplay-1.5.9.tar.gz
+[2024-05-19 07:42:53] INFO root fetch - processPackages [smtm]: Downloading https://files.pythonhosted.org/packages/44/51/7583a47be609b13836722c7f5ba6ec64d2ea24f9e29d4ffa9aa9ee349f50/smtm-1.4.0.tar.gz
+[2024-05-19 07:42:53] INFO root fetch - processPackages [sop-deutils]: executing diffoscope
+[2024-05-19 07:42:53] INFO root fetch - processPackages [sop-deutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sop_deutils-0.9.8.tar.gz tmp/sop_deutils-0.9.9.tar.gz --markdown 20240519/s/sop-deutils/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-19 07:42:53] INFO root fetch - processPackages [quantplay]: executing diffoscope
+[2024-05-19 07:42:53] INFO root fetch - processPackages [quantplay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantplay-1.5.8.tar.gz tmp/quantplay-1.5.9.tar.gz --markdown 20240519/q/quantplay/1.5.8-1.5.9/README.md --exclude *.pyd
+[2024-05-19 07:42:53] WARNING root fetch - processPackages [smtm]: Skipping package: exceeds size limit 48529514>=10485760
+[2024-05-19 07:42:53] INFO root fetch - main [MainThread]: End processing [smtm] error
+[2024-05-19 07:42:54] INFO root fetch - processPackages [sop-deutils]: Remove: archive file [/home/abi/fetcher/tmp/sop_deutils-0.9.8.tar.gz]
+[2024-05-19 07:42:54] INFO root fetch - processPackages [sop-deutils]: Remove: archive file [/home/abi/fetcher/tmp/sop_deutils-0.9.9.tar.gz]
+[2024-05-19 07:42:54] INFO root fetch - main [MainThread]: End processing [sop-deutils]: success
+[2024-05-19 07:42:54] INFO root fetch - processPackages [quantplay]: Remove: archive file [/home/abi/fetcher/tmp/quantplay-1.5.8.tar.gz]
+[2024-05-19 07:42:54] INFO root fetch - processPackages [quantplay]: Remove: archive file [/home/abi/fetcher/tmp/quantplay-1.5.9.tar.gz]
+[2024-05-19 07:42:54] INFO root fetch - main [MainThread]: End processing [quantplay]: success
+[2024-05-19 07:42:54] INFO root fetch - main [MainThread]: Store serial: [23273592]
