@@ -12904,3 +12904,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 17:06:42] INFO root fetch - processPackages [libsrg]: Remove: archive file [/home/abi/fetcher/tmp/libsrg-5.2.2.tar.gz]
 [2024-05-19 17:06:42] INFO root fetch - main [MainThread]: End processing [libsrg]: success
 [2024-05-19 17:06:42] INFO root fetch - main [MainThread]: Store serial: [23277522]
+[2024-05-19 17:08:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277522]
+[2024-05-19 17:08:51] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 17:08:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: requestrepo
+[2024-05-19 17:08:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fbgemm-gpu-nightly
+[2024-05-19 17:08:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: p-template-generator
+[2024-05-19 17:08:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: floatingparse
+[2024-05-19 17:08:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: floatingparse
+[2024-05-19 17:08:51] INFO root fetch - processPackages [requestrepo]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-19 17:08:51] INFO root fetch - processPackages [requestrepo]: Downloading https://files.pythonhosted.org/packages/38/ec/5af605fbb4e00378b9933fa6f00cb5df15679b6431990fd90529b94a3542/requestrepo-0.0.7.tar.gz
+[2024-05-19 17:08:51] INFO root fetch - processPackages [floatingparse]: New version: [1.0] Old Version: [0.1.0]
+[2024-05-19 17:08:51] INFO root fetch - processPackages [floatingparse]: New version: [1.0] Old Version: [0.1.0]
+[2024-05-19 17:08:51] INFO root fetch - processPackages [p-template-generator]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-05-19 17:08:51] INFO root fetch - processPackages [fbgemm-gpu-nightly]: New version: [2024.5.19] Old Version: [2024.5.18]
+[2024-05-19 17:08:51] INFO root fetch - processPackages [p-template-generator]: Downloading https://files.pythonhosted.org/packages/5c/a2/02f0b3cf41b76949deb937b95c8970f032447d82aa090fc0b68084fc59df/p-template-generator-0.1.98.tar.gz
+[2024-05-19 17:08:51] INFO root fetch - processPackages [floatingparse]: Downloading https://files.pythonhosted.org/packages/86/f6/f09bdcf9c780d678a7477c4daaf68c3176b6da7fed6f74dfc2a79376369e/floatingparse-0.1.0.tar.gz
+[2024-05-19 17:08:51] INFO root fetch - processPackages [floatingparse]: Downloading https://files.pythonhosted.org/packages/86/f6/f09bdcf9c780d678a7477c4daaf68c3176b6da7fed6f74dfc2a79376369e/floatingparse-0.1.0.tar.gz
+[2024-05-19 17:08:51] INFO root fetch - processPackages [fbgemm-gpu-nightly]: Downloading https://files.pythonhosted.org/packages/d3/61/873fa59b8d46e4fbb9116a1afb7a0c28c89024252bf02e4bcdb3f2ed556a/fbgemm_gpu_nightly-2024.5.18-cp39-cp39-manylinux2014_x86_64.whl
+[2024-05-19 17:08:51] INFO root fetch - processPackages [requestrepo]: Downloading https://files.pythonhosted.org/packages/c4/fe/b56449a0b98d0424753e659b6d5b5e16f7850f8df35136d8c8e5c9678c3c/requestrepo-0.0.8.tar.gz
+[2024-05-19 17:08:51] WARNING root fetch - processPackages [fbgemm-gpu-nightly]: Skipping package: exceeds size limit 223618517>=10485760
+[2024-05-19 17:08:51] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly] error
+[2024-05-19 17:08:51] INFO root fetch - processPackages [requestrepo]: executing diffoscope
+[2024-05-19 17:08:51] INFO root fetch - processPackages [requestrepo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/requestrepo-0.0.7.tar.gz tmp/requestrepo-0.0.8.tar.gz --markdown 20240519/r/requestrepo/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-19 17:08:52] INFO root fetch - processPackages [floatingparse]: Downloading https://files.pythonhosted.org/packages/e1/4d/5d63ec5f217ee50ec7794e254d51ad736f00ee16357f3a91c707de0e220d/floatingparse-1.0.tar.gz
+[2024-05-19 17:08:52] INFO root fetch - processPackages [floatingparse]: Downloading https://files.pythonhosted.org/packages/e1/4d/5d63ec5f217ee50ec7794e254d51ad736f00ee16357f3a91c707de0e220d/floatingparse-1.0.tar.gz
+[2024-05-19 17:08:52] INFO root fetch - processPackages [floatingparse]: executing diffoscope
+[2024-05-19 17:08:52] INFO root fetch - processPackages [floatingparse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/floatingparse-0.1.0.tar.gz tmp/floatingparse-1.0.tar.gz --markdown 20240519/f/floatingparse/0.1.0-1.0/README.md --exclude *.pyd
+[2024-05-19 17:08:52] INFO root fetch - processPackages [floatingparse]: executing diffoscope
+[2024-05-19 17:08:52] INFO root fetch - processPackages [floatingparse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/floatingparse-0.1.0.tar.gz tmp/floatingparse-1.0.tar.gz --markdown 20240519/f/floatingparse/0.1.0-1.0/README.md --exclude *.pyd
+[2024-05-19 17:08:52] INFO root fetch - processPackages [requestrepo]: Remove: archive file [/home/abi/fetcher/tmp/requestrepo-0.0.7.tar.gz]
+[2024-05-19 17:08:52] INFO root fetch - processPackages [requestrepo]: Remove: archive file [/home/abi/fetcher/tmp/requestrepo-0.0.8.tar.gz]
+[2024-05-19 17:08:52] INFO root fetch - main [MainThread]: End processing [requestrepo]: success
+[2024-05-19 17:08:52] INFO root fetch - processPackages [floatingparse]: Remove: archive file [/home/abi/fetcher/tmp/floatingparse-0.1.0.tar.gz]
+[2024-05-19 17:08:52] INFO root fetch - processPackages [floatingparse]: Remove: archive file [/home/abi/fetcher/tmp/floatingparse-1.0.tar.gz]
+[2024-05-19 17:08:52] INFO root fetch - main [MainThread]: End processing [floatingparse]: success
+[2024-05-19 17:08:52] INFO root fetch - main [MainThread]: End processing [floatingparse]: success
+[2024-05-19 17:08:56] INFO root fetch - processPackages [p-template-generator]: Downloading https://files.pythonhosted.org/packages/f6/11/746908384a91b5aacce7afb9782527293e24c5740c72a201daffb937e988/p-template-generator-0.1.99.tar.gz
+[2024-05-19 17:09:01] INFO root fetch - processPackages [p-template-generator]: executing diffoscope
+[2024-05-19 17:09:01] INFO root fetch - processPackages [p-template-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p-template-generator-0.1.98.tar.gz tmp/p-template-generator-0.1.99.tar.gz --markdown 20240519/p/p-template-generator/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-05-19 17:09:02] INFO root fetch - processPackages [p-template-generator]: Remove: archive file [/home/abi/fetcher/tmp/p-template-generator-0.1.98.tar.gz]
+[2024-05-19 17:09:02] INFO root fetch - processPackages [p-template-generator]: Remove: archive file [/home/abi/fetcher/tmp/p-template-generator-0.1.99.tar.gz]
+[2024-05-19 17:09:02] INFO root fetch - main [MainThread]: End processing [p-template-generator]: success
+[2024-05-19 17:09:02] INFO root fetch - main [MainThread]: Store serial: [23277540]
