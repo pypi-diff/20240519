@@ -7822,3 +7822,18 @@
 [2024-05-19 11:42:41] INFO root fetch - processPackages [aa-ledger]: Remove: archive file [/home/abi/fetcher/tmp/aa_ledger-0.3.5.tar.gz]
 [2024-05-19 11:42:41] INFO root fetch - main [MainThread]: End processing [aa-ledger]: success
 [2024-05-19 11:42:41] INFO root fetch - main [MainThread]: Store serial: [23275181]
+[2024-05-19 11:44:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275181]
+[2024-05-19 11:44:50] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 11:44:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mazegroup
+[2024-05-19 11:44:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wwbot
+[2024-05-19 11:44:50] WARNING root fetch - processPackages [wwbot]: Skipping, unable to determine old version
+[2024-05-19 11:44:50] INFO root fetch - main [MainThread]: End processing [wwbot] error
+[2024-05-19 11:44:50] INFO root fetch - processPackages [mazegroup]: New version: [0.1.4.1] Old Version: [0.1.4.0.1]
+[2024-05-19 11:44:50] INFO root fetch - processPackages [mazegroup]: Downloading https://files.pythonhosted.org/packages/e4/ca/9af1f02dcc4038c570bf41819805911038a10868b07f04596ffe9019a985/mazegroup-0.1.4.0.1.tar.gz
+[2024-05-19 11:44:51] INFO root fetch - processPackages [mazegroup]: Downloading https://files.pythonhosted.org/packages/3b/e5/4c9d0712fae4a45ff968da6e3e04fcb07f78078b48bbb1ed6fc28f936679/mazegroup-0.1.4.1.tar.gz
+[2024-05-19 11:44:51] INFO root fetch - processPackages [mazegroup]: executing diffoscope
+[2024-05-19 11:44:51] INFO root fetch - processPackages [mazegroup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mazegroup-0.1.4.0.1.tar.gz tmp/mazegroup-0.1.4.1.tar.gz --markdown 20240519/m/mazegroup/0.1.4.0.1-0.1.4.1/README.md --exclude *.pyd
+[2024-05-19 11:44:52] INFO root fetch - processPackages [mazegroup]: Remove: archive file [/home/abi/fetcher/tmp/mazegroup-0.1.4.0.1.tar.gz]
+[2024-05-19 11:44:52] INFO root fetch - processPackages [mazegroup]: Remove: archive file [/home/abi/fetcher/tmp/mazegroup-0.1.4.1.tar.gz]
+[2024-05-19 11:44:52] INFO root fetch - main [MainThread]: End processing [mazegroup]: success
+[2024-05-19 11:44:52] INFO root fetch - main [MainThread]: Store serial: [23275187]
