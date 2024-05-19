@@ -8182,3 +8182,18 @@
 [2024-05-19 12:09:42] INFO root fetch - processPackages [txt2ebook]: Remove: archive file [/home/abi/fetcher/tmp/txt2ebook-0.1.9.tar.gz]
 [2024-05-19 12:09:42] INFO root fetch - main [MainThread]: End processing [txt2ebook]: success
 [2024-05-19 12:09:42] INFO root fetch - main [MainThread]: Store serial: [23275350]
+[2024-05-19 12:11:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275350]
+[2024-05-19 12:11:50] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 12:11:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: retk
+[2024-05-19 12:11:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wonderberriesz
+[2024-05-19 12:11:50] INFO root fetch - processPackages [retk]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-05-19 12:11:50] WARNING root fetch - processPackages [wonderberriesz]: Skipping, unable to determine old version
+[2024-05-19 12:11:50] INFO root fetch - main [MainThread]: End processing [wonderberriesz] error
+[2024-05-19 12:11:50] INFO root fetch - processPackages [retk]: Downloading https://files.pythonhosted.org/packages/ab/5c/e65d0951f91784f354ec73863b327d6a6317356b8fa6a2980d7c7d2de97d/retk-0.2.7.tar.gz
+[2024-05-19 12:11:51] INFO root fetch - processPackages [retk]: Downloading https://files.pythonhosted.org/packages/35/1a/ebd41575bab32e217427787eec48745903fc4d1eff31cdc73a5828a6f034/retk-0.2.8.tar.gz
+[2024-05-19 12:11:52] INFO root fetch - processPackages [retk]: executing diffoscope
+[2024-05-19 12:11:52] INFO root fetch - processPackages [retk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/retk-0.2.7.tar.gz tmp/retk-0.2.8.tar.gz --markdown 20240519/r/retk/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-05-19 12:12:58] INFO root fetch - processPackages [retk]: Remove: archive file [/home/abi/fetcher/tmp/retk-0.2.7.tar.gz]
+[2024-05-19 12:12:58] INFO root fetch - processPackages [retk]: Remove: archive file [/home/abi/fetcher/tmp/retk-0.2.8.tar.gz]
+[2024-05-19 12:12:58] INFO root fetch - main [MainThread]: End processing [retk]: success
+[2024-05-19 12:12:58] INFO root fetch - main [MainThread]: Store serial: [23275357]
