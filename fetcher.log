@@ -5481,3 +5481,54 @@
 [2024-05-19 08:53:03] INFO root fetch - processPackages [docugami-langchain]: Remove: archive file [/home/abi/fetcher/tmp/docugami_langchain-0.0.9rc9.tar.gz]
 [2024-05-19 08:53:03] INFO root fetch - main [MainThread]: End processing [docugami-langchain]: success
 [2024-05-19 08:53:03] INFO root fetch - main [MainThread]: Store serial: [23273944]
+[2024-05-19 08:55:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273944]
+[2024-05-19 08:55:11] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-19 08:55:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: func2stream
+[2024-05-19 08:55:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tahrir-api
+[2024-05-19 08:55:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyDolarVenezuela
+[2024-05-19 08:55:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sarcharts
+[2024-05-19 08:55:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wiliot-testers
+[2024-05-19 08:55:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dcm2nii
+[2024-05-19 08:55:11] INFO root fetch - processPackages [func2stream]: New version: [0.0.1.dev2405190643] Old Version: [0.0.1.dev240519063726]
+[2024-05-19 08:55:11] INFO root fetch - processPackages [sarcharts]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-05-19 08:55:11] INFO root fetch - processPackages [tahrir-api]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-05-19 08:55:11] INFO root fetch - processPackages [func2stream]: Downloading https://files.pythonhosted.org/packages/db/43/d546ac958e37cd898bef128e33f711738687bc2123fc83214205ccf52f02/func2stream-0.0.1.dev240519063726-py3-none-any.whl
+[2024-05-19 08:55:11] ERROR root fetch - processPackages [dcm2nii]: Unable to get metadata: No such project 'dcm2nii'
+[2024-05-19 08:55:11] INFO root fetch - main [MainThread]: End processing [dcm2nii] error
+[2024-05-19 08:55:11] INFO root fetch - processPackages [pyDolarVenezuela]: New version: [1.5.6] Old Version: [1.5.5]
+[2024-05-19 08:55:11] INFO root fetch - processPackages [wiliot-testers]: New version: [5.4.13] Old Version: [5.3.9]
+[2024-05-19 08:55:11] INFO root fetch - processPackages [tahrir-api]: Downloading https://files.pythonhosted.org/packages/ff/f0/bbf743e5fb1d271c00780ec73afdcb216d6364b994ab103d881333345dc9/tahrir_api-1.0.0.tar.gz
+[2024-05-19 08:55:11] INFO root fetch - processPackages [sarcharts]: Downloading https://files.pythonhosted.org/packages/6f/7b/28bbad9f431bd5f5d12bbe42e9a9a1f5d531dc17c179337bc6bb0111fc18/sarcharts-0.2.3.tar.gz
+[2024-05-19 08:55:12] INFO root fetch - processPackages [wiliot-testers]: Downloading https://files.pythonhosted.org/packages/99/ca/77f070e81b276a7d53840ddcc7ca1676cb89e030a130154426bc2829162a/wiliot-testers-5.3.9.tar.gz
+[2024-05-19 08:55:12] INFO root fetch - processPackages [pyDolarVenezuela]: Downloading https://files.pythonhosted.org/packages/53/b0/640a60c4cfe1fd91e9b570b43145db39dfd831929f43a8b5120510b1d5af/pydolarvenezuela-1.5.5.tar.gz
+[2024-05-19 08:55:12] INFO root fetch - processPackages [tahrir-api]: Downloading https://files.pythonhosted.org/packages/6a/0d/f3e725555e62f8155182d76ee549c4ff28fa6fe8343327e513fc8819f77d/tahrir_api-1.1.0.tar.gz
+[2024-05-19 08:55:12] INFO root fetch - processPackages [func2stream]: Downloading https://files.pythonhosted.org/packages/9f/4e/abba58fab0b1d974bdd34ad27b47a768eb05ee89c9b7572a92514c4e5f3e/func2stream-0.0.1.dev2405190643.tar.gz
+[2024-05-19 08:55:12] INFO root fetch - processPackages [sarcharts]: Downloading https://files.pythonhosted.org/packages/42/b2/f3fdedf4222dcfb9d613a5d83ef90eac398efad23edc74653dcc02be6eeb/sarcharts-0.2.4.tar.gz
+[2024-05-19 08:55:12] INFO root fetch - processPackages [tahrir-api]: executing diffoscope
+[2024-05-19 08:55:12] INFO root fetch - processPackages [tahrir-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tahrir_api-1.0.0.tar.gz tmp/tahrir_api-1.1.0.tar.gz --markdown 20240519/t/tahrir-api/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-05-19 08:55:12] INFO root fetch - processPackages [func2stream]: executing diffoscope
+[2024-05-19 08:55:12] INFO root fetch - processPackages [func2stream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/func2stream-0.0.1.dev240519063726-py3-none-any.whl.zip tmp/func2stream-0.0.1.dev2405190643.tar.gz --markdown 20240519/f/func2stream/0.0.1.dev240519063726-0.0.1.dev2405190643/README.md --exclude *.pyd
+[2024-05-19 08:55:12] INFO root fetch - processPackages [sarcharts]: executing diffoscope
+[2024-05-19 08:55:12] INFO root fetch - processPackages [sarcharts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sarcharts-0.2.3.tar.gz tmp/sarcharts-0.2.4.tar.gz --markdown 20240519/s/sarcharts/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-05-19 08:55:12] INFO root fetch - processPackages [pyDolarVenezuela]: Downloading https://files.pythonhosted.org/packages/81/22/30d7c3902fff57069885f533a2f4155b6df6de45732ad2beba234e43dfda/pydolarvenezuela-1.5.6.tar.gz
+[2024-05-19 08:55:12] INFO root fetch - processPackages [pyDolarVenezuela]: executing diffoscope
+[2024-05-19 08:55:12] INFO root fetch - processPackages [pyDolarVenezuela]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydolarvenezuela-1.5.5.tar.gz tmp/pydolarvenezuela-1.5.6.tar.gz --markdown 20240519/p/pyDolarVenezuela/1.5.5-1.5.6/README.md --exclude *.pyd
+[2024-05-19 08:55:12] INFO root fetch - processPackages [wiliot-testers]: Downloading https://files.pythonhosted.org/packages/21/2a/e541a26a2662755571a9ecfd656cba17fd73484e8bbf96b4932ed3823fdf/wiliot-testers-5.4.13.tar.gz
+[2024-05-19 08:55:12] INFO root fetch - processPackages [wiliot-testers]: executing diffoscope
+[2024-05-19 08:55:12] INFO root fetch - processPackages [wiliot-testers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wiliot-testers-5.3.9.tar.gz tmp/wiliot-testers-5.4.13.tar.gz --markdown 20240519/w/wiliot-testers/5.3.9-5.4.13/README.md --exclude *.pyd
+[2024-05-19 08:55:12] INFO root fetch - processPackages [func2stream]: Remove: archive file [/home/abi/fetcher/tmp/func2stream-0.0.1.dev240519063726-py3-none-any.whl.zip]
+[2024-05-19 08:55:12] INFO root fetch - processPackages [func2stream]: Remove: archive file [/home/abi/fetcher/tmp/func2stream-0.0.1.dev2405190643.tar.gz]
+[2024-05-19 08:55:12] INFO root fetch - main [MainThread]: End processing [func2stream]: success
+[2024-05-19 08:55:13] INFO root fetch - processPackages [tahrir-api]: Remove: archive file [/home/abi/fetcher/tmp/tahrir_api-1.0.0.tar.gz]
+[2024-05-19 08:55:13] INFO root fetch - processPackages [tahrir-api]: Remove: archive file [/home/abi/fetcher/tmp/tahrir_api-1.1.0.tar.gz]
+[2024-05-19 08:55:13] INFO root fetch - main [MainThread]: End processing [tahrir-api]: success
+[2024-05-19 08:55:13] INFO root fetch - processPackages [pyDolarVenezuela]: Remove: archive file [/home/abi/fetcher/tmp/pydolarvenezuela-1.5.5.tar.gz]
+[2024-05-19 08:55:13] INFO root fetch - processPackages [pyDolarVenezuela]: Remove: archive file [/home/abi/fetcher/tmp/pydolarvenezuela-1.5.6.tar.gz]
+[2024-05-19 08:55:13] INFO root fetch - main [MainThread]: End processing [pyDolarVenezuela]: success
+[2024-05-19 08:55:13] INFO root fetch - processPackages [sarcharts]: Remove: archive file [/home/abi/fetcher/tmp/sarcharts-0.2.3.tar.gz]
+[2024-05-19 08:55:13] INFO root fetch - processPackages [sarcharts]: Remove: archive file [/home/abi/fetcher/tmp/sarcharts-0.2.4.tar.gz]
+[2024-05-19 08:55:13] INFO root fetch - main [MainThread]: End processing [sarcharts]: success
+[2024-05-19 08:55:14] INFO root fetch - processPackages [wiliot-testers]: Remove: archive file [/home/abi/fetcher/tmp/wiliot-testers-5.3.9.tar.gz]
+[2024-05-19 08:55:14] INFO root fetch - processPackages [wiliot-testers]: Remove: archive file [/home/abi/fetcher/tmp/wiliot-testers-5.4.13.tar.gz]
+[2024-05-19 08:55:14] INFO root fetch - main [MainThread]: End processing [wiliot-testers]: success
+[2024-05-19 08:55:14] INFO root fetch - main [MainThread]: Store serial: [23273968]
