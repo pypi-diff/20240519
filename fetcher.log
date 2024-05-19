@@ -14975,3 +14975,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 19:16:00] INFO root fetch - processPackages [h3]: Remove: archive file [/home/abi/fetcher/tmp/h3-4.0.0b5.tar.gz]
 [2024-05-19 19:16:00] INFO root fetch - main [MainThread]: End processing [h3]: success
 [2024-05-19 19:16:00] INFO root fetch - main [MainThread]: Store serial: [23278539]
+[2024-05-19 19:18:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23278539]
+[2024-05-19 19:18:08] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 19:18:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: floatingparser
+[2024-05-19 19:18:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sourmash-plugin-betterplot
+[2024-05-19 19:18:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fantasyz
+[2024-05-19 19:18:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: desplice
+[2024-05-19 19:18:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: retriever-search
+[2024-05-19 19:18:08] INFO root fetch - processPackages [floatingparser]: New version: [1.0.2.2] Old Version: [1.0.2.1]
+[2024-05-19 19:18:08] INFO root fetch - processPackages [sourmash-plugin-betterplot]: New version: [0.3] Old Version: [0.2.1]
+[2024-05-19 19:18:08] WARNING root fetch - processPackages [desplice]: Skipping, unable to determine old version
+[2024-05-19 19:18:08] INFO root fetch - main [MainThread]: End processing [desplice] error
+[2024-05-19 19:18:08] INFO root fetch - processPackages [floatingparser]: Downloading https://files.pythonhosted.org/packages/78/80/6ac91e72b2e5e7c09ac0f512e404295f892d63a89d725898b693908439f2/floatingparser-1.0.2.1.tar.gz
+[2024-05-19 19:18:08] INFO root fetch - processPackages [sourmash-plugin-betterplot]: Downloading https://files.pythonhosted.org/packages/ae/26/8ba336cb5b64bed1d05278a60157cdfccd176715958b01f7be7709371d19/sourmash_plugin_betterplot-0.2.1.tar.gz
+[2024-05-19 19:18:08] INFO root fetch - processPackages [retriever-search]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-19 19:18:08] WARNING root fetch - processPackages [fantasyz]: Skipping, unable to determine old version
+[2024-05-19 19:18:08] INFO root fetch - main [MainThread]: End processing [fantasyz] error
+[2024-05-19 19:18:09] INFO root fetch - processPackages [retriever-search]: Downloading https://files.pythonhosted.org/packages/ea/0b/393c7b9c91d99e5160536b98bb1397819b76ee8ed7726aaa89277229508c/retriever_search-0.2.0.tar.gz
+[2024-05-19 19:18:09] INFO root fetch - processPackages [floatingparser]: Downloading https://files.pythonhosted.org/packages/cf/2c/a27cca0ccec9ad086145a292acd4b41b884f98b0371dd724adf2e5065f06/floatingparser-1.0.2.2.tar.gz
+[2024-05-19 19:18:09] INFO root fetch - processPackages [sourmash-plugin-betterplot]: Downloading https://files.pythonhosted.org/packages/f4/cd/1fec60273b2ed1ccecc5010e92f8159f01aa80ef3d4b604fc135ac9d11e9/sourmash_plugin_betterplot-0.3.tar.gz
+[2024-05-19 19:18:09] INFO root fetch - processPackages [floatingparser]: executing diffoscope
+[2024-05-19 19:18:09] INFO root fetch - processPackages [floatingparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/floatingparser-1.0.2.1.tar.gz tmp/floatingparser-1.0.2.2.tar.gz --markdown 20240519/f/floatingparser/1.0.2.1-1.0.2.2/README.md --exclude *.pyd
+[2024-05-19 19:18:09] INFO root fetch - processPackages [sourmash-plugin-betterplot]: executing diffoscope
+[2024-05-19 19:18:09] INFO root fetch - processPackages [sourmash-plugin-betterplot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sourmash_plugin_betterplot-0.2.1.tar.gz tmp/sourmash_plugin_betterplot-0.3.tar.gz --markdown 20240519/s/sourmash-plugin-betterplot/0.2.1-0.3/README.md --exclude *.pyd
+[2024-05-19 19:18:09] INFO root fetch - processPackages [retriever-search]: Downloading https://files.pythonhosted.org/packages/c6/42/40ac323a10da47deffc95f4d96d297e65cd83ecc241b81caa58570578aa5/retriever_search-0.2.1.tar.gz
+[2024-05-19 19:18:09] INFO root fetch - processPackages [retriever-search]: executing diffoscope
+[2024-05-19 19:18:09] INFO root fetch - processPackages [retriever-search]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/retriever_search-0.2.0.tar.gz tmp/retriever_search-0.2.1.tar.gz --markdown 20240519/r/retriever-search/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-19 19:18:09] INFO root fetch - processPackages [floatingparser]: Remove: archive file [/home/abi/fetcher/tmp/floatingparser-1.0.2.1.tar.gz]
+[2024-05-19 19:18:09] INFO root fetch - processPackages [floatingparser]: Remove: archive file [/home/abi/fetcher/tmp/floatingparser-1.0.2.2.tar.gz]
+[2024-05-19 19:18:09] INFO root fetch - main [MainThread]: End processing [floatingparser]: success
+[2024-05-19 19:18:09] INFO root fetch - processPackages [sourmash-plugin-betterplot]: Remove: archive file [/home/abi/fetcher/tmp/sourmash_plugin_betterplot-0.2.1.tar.gz]
+[2024-05-19 19:18:09] INFO root fetch - processPackages [sourmash-plugin-betterplot]: Remove: archive file [/home/abi/fetcher/tmp/sourmash_plugin_betterplot-0.3.tar.gz]
+[2024-05-19 19:18:09] INFO root fetch - main [MainThread]: End processing [sourmash-plugin-betterplot]: success
+[2024-05-19 19:18:09] INFO root fetch - processPackages [retriever-search]: Remove: archive file [/home/abi/fetcher/tmp/retriever_search-0.2.0.tar.gz]
+[2024-05-19 19:18:09] INFO root fetch - processPackages [retriever-search]: Remove: archive file [/home/abi/fetcher/tmp/retriever_search-0.2.1.tar.gz]
+[2024-05-19 19:18:09] INFO root fetch - main [MainThread]: End processing [retriever-search]: success
+[2024-05-19 19:18:09] INFO root fetch - main [MainThread]: Store serial: [23278556]
