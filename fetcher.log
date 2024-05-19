@@ -4880,3 +4880,33 @@
 [2024-05-19 07:58:24] INFO root fetch - processPackages [carbon-registry-indexer]: Remove: archive file [/home/abi/fetcher/tmp/carbon-registry-indexer-0.1.9.tar.gz]
 [2024-05-19 07:58:24] INFO root fetch - main [MainThread]: End processing [carbon-registry-indexer]: success
 [2024-05-19 07:58:24] INFO root fetch - main [MainThread]: Store serial: [23273667]
+[2024-05-19 08:00:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273667]
+[2024-05-19 08:00:32] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 08:00:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypomes-s3
+[2024-05-19 08:00:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: contact-group-local
+[2024-05-19 08:00:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyqt5-concurrent
+[2024-05-19 08:00:32] INFO root fetch - processPackages [pypomes-s3]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-05-19 08:00:32] INFO root fetch - processPackages [pyqt5-concurrent]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-19 08:00:32] INFO root fetch - processPackages [pypomes-s3]: Downloading https://files.pythonhosted.org/packages/17/cc/b3b977c3db8c16e05b50c9cca8daae1ee7b4af9bf984d6d13c14acdfe423/pypomes_s3-0.3.2.tar.gz
+[2024-05-19 08:00:32] INFO root fetch - processPackages [contact-group-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 08:00:32] INFO root fetch - processPackages [pyqt5-concurrent]: Downloading https://files.pythonhosted.org/packages/f7/5b/ac8210ffdf700e20e50fb8196d4bf5e93b728e59ecd3cd6645d46426d432/pyqt5_concurrent-0.1.4.tar.gz
+[2024-05-19 08:00:33] INFO root fetch - processPackages [contact-group-local]: Downloading https://files.pythonhosted.org/packages/63/e5/ff261731db98a38a39f4657a4cd1e04b2a998f175a7af36c640220ff9b00/contact-group-local-0.0.8.tar.gz
+[2024-05-19 08:00:33] INFO root fetch - processPackages [pypomes-s3]: Downloading https://files.pythonhosted.org/packages/d2/9a/fb78a1d0f697e8fba3ca233b101dbfb485b7cbd651b38f36f3227370d503/pypomes_s3-0.3.3.tar.gz
+[2024-05-19 08:00:33] INFO root fetch - processPackages [pyqt5-concurrent]: Downloading https://files.pythonhosted.org/packages/43/59/aa4e1f2bb319fab0c425206dcad230b61b8f9e2cf1a1f34023a6651c6f52/pyqt5_concurrent-0.1.5.tar.gz
+[2024-05-19 08:00:33] INFO root fetch - processPackages [pypomes-s3]: executing diffoscope
+[2024-05-19 08:00:33] INFO root fetch - processPackages [pypomes-s3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypomes_s3-0.3.2.tar.gz tmp/pypomes_s3-0.3.3.tar.gz --markdown 20240519/p/pypomes-s3/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-05-19 08:00:33] INFO root fetch - processPackages [pyqt5-concurrent]: executing diffoscope
+[2024-05-19 08:00:33] INFO root fetch - processPackages [pyqt5-concurrent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqt5_concurrent-0.1.4.tar.gz tmp/pyqt5_concurrent-0.1.5.tar.gz --markdown 20240519/p/pyqt5-concurrent/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-19 08:00:33] INFO root fetch - processPackages [contact-group-local]: Downloading https://files.pythonhosted.org/packages/84/cc/f78576331b2ff0f497f4640872d65b71ec33ae804f6a44bb2f10f1957687/contact-group-local-0.0.9.tar.gz
+[2024-05-19 08:00:33] INFO root fetch - processPackages [contact-group-local]: executing diffoscope
+[2024-05-19 08:00:33] INFO root fetch - processPackages [contact-group-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contact-group-local-0.0.8.tar.gz tmp/contact-group-local-0.0.9.tar.gz --markdown 20240519/c/contact-group-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 08:00:33] INFO root fetch - processPackages [pyqt5-concurrent]: Remove: archive file [/home/abi/fetcher/tmp/pyqt5_concurrent-0.1.4.tar.gz]
+[2024-05-19 08:00:33] INFO root fetch - processPackages [pyqt5-concurrent]: Remove: archive file [/home/abi/fetcher/tmp/pyqt5_concurrent-0.1.5.tar.gz]
+[2024-05-19 08:00:33] INFO root fetch - main [MainThread]: End processing [pyqt5-concurrent]: success
+[2024-05-19 08:00:33] INFO root fetch - processPackages [pypomes-s3]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_s3-0.3.2.tar.gz]
+[2024-05-19 08:00:33] INFO root fetch - processPackages [pypomes-s3]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_s3-0.3.3.tar.gz]
+[2024-05-19 08:00:33] INFO root fetch - main [MainThread]: End processing [pypomes-s3]: success
+[2024-05-19 08:00:34] INFO root fetch - processPackages [contact-group-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-group-local-0.0.8.tar.gz]
+[2024-05-19 08:00:34] INFO root fetch - processPackages [contact-group-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-group-local-0.0.9.tar.gz]
+[2024-05-19 08:00:34] INFO root fetch - main [MainThread]: End processing [contact-group-local]: success
+[2024-05-19 08:00:34] INFO root fetch - main [MainThread]: Store serial: [23273676]
