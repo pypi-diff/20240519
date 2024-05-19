@@ -1175,3 +1175,39 @@
 [2024-05-19 02:07:05] INFO root fetch - processPackages [pyExploitDb]: Remove: archive file [/home/abi/fetcher/tmp/pyExploitDb-0.2.9.tar.gz]
 [2024-05-19 02:07:05] INFO root fetch - main [MainThread]: End processing [pyExploitDb]: success
 [2024-05-19 02:07:05] INFO root fetch - main [MainThread]: Store serial: [23272007]
+[2024-05-19 02:09:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272007]
+[2024-05-19 02:09:14] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 02:09:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: HiggsML
+[2024-05-19 02:09:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-spotinst
+[2024-05-19 02:09:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: undefecatedz
+[2024-05-19 02:09:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-common
+[2024-05-19 02:09:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wizlib
+[2024-05-19 02:09:14] WARNING root fetch - processPackages [HiggsML]: Skipping, unable to determine old version
+[2024-05-19 02:09:14] INFO root fetch - main [MainThread]: End processing [HiggsML] error
+[2024-05-19 02:09:14] INFO root fetch - processPackages [cdk-common]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-05-19 02:09:14] WARNING root fetch - processPackages [undefecatedz]: Skipping, unable to determine old version
+[2024-05-19 02:09:14] INFO root fetch - main [MainThread]: End processing [undefecatedz] error
+[2024-05-19 02:09:14] INFO root fetch - processPackages [wizlib]: New version: [3.0.1] Old Version: [3.0.0]
+[2024-05-19 02:09:14] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/f3/30/796e7080e9a9b293ccf386b0d95f40dde8e214e0415d2c59be9c661105a9/cdk-common-2.0.98.tar.gz
+[2024-05-19 02:09:14] INFO root fetch - processPackages [pulumi-spotinst]: New version: [3.9.0a1633346805] Old Version: [3.9.0]
+[2024-05-19 02:09:15] INFO root fetch - processPackages [pulumi-spotinst]: Downloading https://files.pythonhosted.org/packages/e0/9f/6d2c1a705d6b6019bea4cba0aa49eceea4eb2d84cfdcb18f45db81e06fb5/pulumi_spotinst-3.9.0.tar.gz
+[2024-05-19 02:09:15] INFO root fetch - processPackages [wizlib]: Downloading https://files.pythonhosted.org/packages/5c/0b/ce6aa9d278a2f460c026a8a2d8f4f60071158d49593242da448065c0362d/wizlib-3.0.0.tar.gz
+[2024-05-19 02:09:15] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/11/10/ca183f281275ec945ede082d9491c0bb5bfb9152c437124c86e37cba7079/cdk-common-2.0.99.tar.gz
+[2024-05-19 02:09:15] INFO root fetch - processPackages [wizlib]: Downloading https://files.pythonhosted.org/packages/f6/60/92cd49061baa607f5b305c9fd1734f818529c0008ab9fa88f5d69696530e/wizlib-3.0.1.tar.gz
+[2024-05-19 02:09:15] INFO root fetch - processPackages [pulumi-spotinst]: Downloading https://files.pythonhosted.org/packages/b4/06/83d6eb3763a877d39e3d2a09063ba3fd6542fa6a214e6c3d5240414d041d/pulumi_spotinst-3.9.0a1633346805.tar.gz
+[2024-05-19 02:09:15] INFO root fetch - processPackages [cdk-common]: executing diffoscope
+[2024-05-19 02:09:15] INFO root fetch - processPackages [cdk-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-common-2.0.98.tar.gz tmp/cdk-common-2.0.99.tar.gz --markdown 20240519/c/cdk-common/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-05-19 02:09:15] INFO root fetch - processPackages [wizlib]: executing diffoscope
+[2024-05-19 02:09:15] INFO root fetch - processPackages [wizlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wizlib-3.0.0.tar.gz tmp/wizlib-3.0.1.tar.gz --markdown 20240519/w/wizlib/3.0.0-3.0.1/README.md --exclude *.pyd
+[2024-05-19 02:09:15] INFO root fetch - processPackages [pulumi-spotinst]: executing diffoscope
+[2024-05-19 02:09:15] INFO root fetch - processPackages [pulumi-spotinst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_spotinst-3.9.0.tar.gz tmp/pulumi_spotinst-3.9.0a1633346805.tar.gz --markdown 20240519/p/pulumi-spotinst/3.9.0-3.9.0a1633346805/README.md --exclude *.pyd
+[2024-05-19 02:09:16] INFO root fetch - processPackages [wizlib]: Remove: archive file [/home/abi/fetcher/tmp/wizlib-3.0.0.tar.gz]
+[2024-05-19 02:09:16] INFO root fetch - processPackages [wizlib]: Remove: archive file [/home/abi/fetcher/tmp/wizlib-3.0.1.tar.gz]
+[2024-05-19 02:09:16] INFO root fetch - main [MainThread]: End processing [wizlib]: success
+[2024-05-19 02:09:16] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.98.tar.gz]
+[2024-05-19 02:09:16] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.99.tar.gz]
+[2024-05-19 02:09:16] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
+[2024-05-19 02:09:16] INFO root fetch - processPackages [pulumi-spotinst]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_spotinst-3.9.0.tar.gz]
+[2024-05-19 02:09:16] INFO root fetch - processPackages [pulumi-spotinst]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_spotinst-3.9.0a1633346805.tar.gz]
+[2024-05-19 02:09:16] INFO root fetch - main [MainThread]: End processing [pulumi-spotinst]: success
+[2024-05-19 02:09:16] INFO root fetch - main [MainThread]: Store serial: [23272024]
