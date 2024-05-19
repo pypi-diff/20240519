@@ -5049,3 +5049,59 @@
 [2024-05-19 08:15:41] INFO root fetch - processPackages [pretext]: Remove: archive file [/home/abi/fetcher/tmp/pretext-2.4.1.dev20240511.tar.gz]
 [2024-05-19 08:15:41] INFO root fetch - main [MainThread]: End processing [pretext]: success
 [2024-05-19 08:15:41] INFO root fetch - main [MainThread]: Store serial: [23273744]
+[2024-05-19 08:17:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273744]
+[2024-05-19 08:17:49] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-19 08:17:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: checkov
+[2024-05-19 08:17:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: beadletz
+[2024-05-19 08:17:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyg-nightly
+[2024-05-19 08:17:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pypomes-s3
+[2024-05-19 08:17:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: outpostkit
+[2024-05-19 08:17:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: photobooth-app
+[2024-05-19 08:17:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: donware
+[2024-05-19 08:17:49] INFO root fetch - processPackages [photobooth-app]: New version: [3.0a4] Old Version: [3.0a3]
+[2024-05-19 08:17:49] INFO root fetch - processPackages [pypomes-s3]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-05-19 08:17:49] INFO root fetch - processPackages [donware]: New version: [0.1.9] Old Version: [0.1.13]
+[2024-05-19 08:17:49] INFO root fetch - processPackages [outpostkit]: New version: [0.0.9] Old Version: [0.0.7]
+[2024-05-19 08:17:50] INFO root fetch - processPackages [pypomes-s3]: Downloading https://files.pythonhosted.org/packages/d2/9a/fb78a1d0f697e8fba3ca233b101dbfb485b7cbd651b38f36f3227370d503/pypomes_s3-0.3.3.tar.gz
+[2024-05-19 08:17:50] INFO root fetch - processPackages [photobooth-app]: Downloading https://files.pythonhosted.org/packages/cb/34/79696d8562177d327b41020ad28bdf312f45190d73e532b2d72c94d404d1/photobooth_app-3.0a3.tar.gz
+[2024-05-19 08:17:50] WARNING root fetch - processPackages [beadletz]: Skipping, unable to determine old version
+[2024-05-19 08:17:50] INFO root fetch - main [MainThread]: End processing [beadletz] error
+[2024-05-19 08:17:50] INFO root fetch - processPackages [outpostkit]: Downloading https://files.pythonhosted.org/packages/e8/20/6f4f3b0edb61dd5f691668605b0901894c58c85e728662fff6913423203c/outpostkit-0.0.7.tar.gz
+[2024-05-19 08:17:50] INFO root fetch - processPackages [pyg-nightly]: New version: [2.6.0.dev20240519] Old Version: [2.6.0.dev20240518]
+[2024-05-19 08:17:50] WARNING root fetch - processPackages [photobooth-app]: Skipping package: exceeds size limit 40330603>=10485760
+[2024-05-19 08:17:50] INFO root fetch - main [MainThread]: End processing [photobooth-app] error
+[2024-05-19 08:17:50] INFO root fetch - processPackages [donware]: Downloading https://files.pythonhosted.org/packages/a1/54/09fa8e533e44185111d783351f3237b0e8e2dab471fe77b8aafaed1a06e4/donware-0.1.13.tar.gz
+[2024-05-19 08:17:50] INFO root fetch - processPackages [outpostkit]: Downloading https://files.pythonhosted.org/packages/b3/af/8945c62fc6dc5596e5618810b3971a4c11d217517a24d0cd40a10b5b9553/outpostkit-0.0.9.tar.gz
+[2024-05-19 08:17:50] INFO root fetch - processPackages [pypomes-s3]: Downloading https://files.pythonhosted.org/packages/78/c0/d2e60f06d3ad3443cac0183fb363357557dfd31b33d9debe6a7d3e939ca6/pypomes_s3-0.3.4.tar.gz
+[2024-05-19 08:17:50] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/47/4f/d961f6fa578d81d10677b78af6745c471377344f0d17bf610c944b0beb23/pyg_nightly-2.6.0.dev20240518.tar.gz
+[2024-05-19 08:17:50] INFO root fetch - processPackages [outpostkit]: executing diffoscope
+[2024-05-19 08:17:50] INFO root fetch - processPackages [outpostkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outpostkit-0.0.7.tar.gz tmp/outpostkit-0.0.9.tar.gz --markdown 20240519/o/outpostkit/0.0.7-0.0.9/README.md --exclude *.pyd
+[2024-05-19 08:17:50] INFO root fetch - processPackages [checkov]: New version: [3.2.96] Old Version: [3.2.95]
+[2024-05-19 08:17:50] INFO root fetch - processPackages [pypomes-s3]: executing diffoscope
+[2024-05-19 08:17:50] INFO root fetch - processPackages [pypomes-s3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypomes_s3-0.3.3.tar.gz tmp/pypomes_s3-0.3.4.tar.gz --markdown 20240519/p/pypomes-s3/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-05-19 08:17:50] INFO root fetch - processPackages [donware]: Downloading https://files.pythonhosted.org/packages/fe/8e/83b9db87c05ce764e53c9976cbc2389c98231b770ce8d64a986981faf472/donware-0.1.9.tar.gz
+[2024-05-19 08:17:50] INFO root fetch - processPackages [donware]: executing diffoscope
+[2024-05-19 08:17:50] INFO root fetch - processPackages [donware]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/donware-0.1.13.tar.gz tmp/donware-0.1.9.tar.gz --markdown 20240519/d/donware/0.1.13-0.1.9/README.md --exclude *.pyd
+[2024-05-19 08:17:50] INFO root fetch - processPackages [checkov]: Downloading https://files.pythonhosted.org/packages/1b/dd/ea2cc2bd692036b90b7dccf327b6607b35d6ba59d96323f4804f23556f1b/checkov-3.2.95.tar.gz
+[2024-05-19 08:17:50] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/39/68/a2066d0587c462d343cc1d9aed786723ab0ef18c4b770f126052f3341078/pyg_nightly-2.6.0.dev20240519.tar.gz
+[2024-05-19 08:17:51] INFO root fetch - processPackages [checkov]: Downloading https://files.pythonhosted.org/packages/ab/5c/a4492c6dc4264f40b52a6d2d2f331fd5fb8c645ec09cb97af940b82aad1d/checkov-3.2.96.tar.gz
+[2024-05-19 08:17:51] INFO root fetch - processPackages [pyg-nightly]: executing diffoscope
+[2024-05-19 08:17:51] INFO root fetch - processPackages [pyg-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyg_nightly-2.6.0.dev20240518.tar.gz tmp/pyg_nightly-2.6.0.dev20240519.tar.gz --markdown 20240519/p/pyg-nightly/2.6.0.dev20240518-2.6.0.dev20240519/README.md --exclude *.pyd
+[2024-05-19 08:17:51] INFO root fetch - processPackages [pypomes-s3]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_s3-0.3.3.tar.gz]
+[2024-05-19 08:17:51] INFO root fetch - processPackages [pypomes-s3]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_s3-0.3.4.tar.gz]
+[2024-05-19 08:17:51] INFO root fetch - main [MainThread]: End processing [pypomes-s3]: success
+[2024-05-19 08:17:51] INFO root fetch - processPackages [outpostkit]: Remove: archive file [/home/abi/fetcher/tmp/outpostkit-0.0.7.tar.gz]
+[2024-05-19 08:17:51] INFO root fetch - processPackages [outpostkit]: Remove: archive file [/home/abi/fetcher/tmp/outpostkit-0.0.9.tar.gz]
+[2024-05-19 08:17:51] INFO root fetch - main [MainThread]: End processing [outpostkit]: success
+[2024-05-19 08:17:51] INFO root fetch - processPackages [donware]: Remove: archive file [/home/abi/fetcher/tmp/donware-0.1.13.tar.gz]
+[2024-05-19 08:17:51] INFO root fetch - processPackages [donware]: Remove: archive file [/home/abi/fetcher/tmp/donware-0.1.9.tar.gz]
+[2024-05-19 08:17:51] INFO root fetch - main [MainThread]: End processing [donware]: success
+[2024-05-19 08:17:51] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2024-05-19 08:17:51] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-3.2.95.tar.gz tmp/checkov-3.2.96.tar.gz --markdown 20240519/c/checkov/3.2.95-3.2.96/README.md --exclude *.pyd
+[2024-05-19 08:17:53] INFO root fetch - processPackages [pyg-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyg_nightly-2.6.0.dev20240518.tar.gz]
+[2024-05-19 08:17:53] INFO root fetch - processPackages [pyg-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyg_nightly-2.6.0.dev20240519.tar.gz]
+[2024-05-19 08:17:53] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
+[2024-05-19 08:17:59] INFO root fetch - processPackages [checkov]: Remove: archive file [/home/abi/fetcher/tmp/checkov-3.2.95.tar.gz]
+[2024-05-19 08:17:59] INFO root fetch - processPackages [checkov]: Remove: archive file [/home/abi/fetcher/tmp/checkov-3.2.96.tar.gz]
+[2024-05-19 08:17:59] INFO root fetch - main [MainThread]: End processing [checkov]: success
+[2024-05-19 08:17:59] INFO root fetch - main [MainThread]: Store serial: [23273771]
