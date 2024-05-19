@@ -3802,3 +3802,27 @@
 [2024-05-19 06:11:44] INFO root fetch - processPackages [python-geoacumen]: Remove: archive file [/home/abi/fetcher/tmp/python-geoacumen-2024.5.5.tar.gz]
 [2024-05-19 06:11:44] INFO root fetch - main [MainThread]: End processing [python-geoacumen]: success
 [2024-05-19 06:11:44] INFO root fetch - main [MainThread]: Store serial: [23273211]
+[2024-05-19 06:13:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273211]
+[2024-05-19 06:13:53] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 06:13:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: salgorithm
+[2024-05-19 06:13:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unhopinglyz
+[2024-05-19 06:13:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: origametry
+[2024-05-19 06:13:53] INFO root fetch - processPackages [origametry]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-19 06:13:53] INFO root fetch - processPackages [salgorithm]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-19 06:13:53] INFO root fetch - processPackages [origametry]: Downloading https://files.pythonhosted.org/packages/1f/80/277d48f79553c7dcf267b9574c0510f5d9054ce3bce634f4d676efc80dd7/origametry-0.0.2.tar.gz
+[2024-05-19 06:13:54] WARNING root fetch - processPackages [unhopinglyz]: Skipping, unable to determine old version
+[2024-05-19 06:13:54] INFO root fetch - main [MainThread]: End processing [unhopinglyz] error
+[2024-05-19 06:13:54] INFO root fetch - processPackages [salgorithm]: Downloading https://files.pythonhosted.org/packages/60/92/95ff9524504612cef2f1e8d51efbe3e3ff857c01f37db0d88b20d932fcea/salgorithm-0.2.1.tar.gz
+[2024-05-19 06:13:54] INFO root fetch - processPackages [origametry]: Downloading https://files.pythonhosted.org/packages/0a/5e/cfdc68f2e1daf2d5d276efdb3b8bd749537383d708e636200527d601a293/origametry-0.0.3.tar.gz
+[2024-05-19 06:13:54] INFO root fetch - processPackages [origametry]: executing diffoscope
+[2024-05-19 06:13:54] INFO root fetch - processPackages [origametry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/origametry-0.0.2.tar.gz tmp/origametry-0.0.3.tar.gz --markdown 20240519/o/origametry/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-19 06:13:54] INFO root fetch - processPackages [salgorithm]: Downloading https://files.pythonhosted.org/packages/98/2d/960d4527fcb9b68b3683117ea7254bdfd6225c05243b57c8a556b0168a8b/salgorithm-0.2.2.tar.gz
+[2024-05-19 06:13:54] INFO root fetch - processPackages [salgorithm]: executing diffoscope
+[2024-05-19 06:13:54] INFO root fetch - processPackages [salgorithm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/salgorithm-0.2.1.tar.gz tmp/salgorithm-0.2.2.tar.gz --markdown 20240519/s/salgorithm/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-19 06:13:54] INFO root fetch - processPackages [origametry]: Remove: archive file [/home/abi/fetcher/tmp/origametry-0.0.2.tar.gz]
+[2024-05-19 06:13:54] INFO root fetch - processPackages [origametry]: Remove: archive file [/home/abi/fetcher/tmp/origametry-0.0.3.tar.gz]
+[2024-05-19 06:13:54] INFO root fetch - main [MainThread]: End processing [origametry]: success
+[2024-05-19 06:13:54] INFO root fetch - processPackages [salgorithm]: Remove: archive file [/home/abi/fetcher/tmp/salgorithm-0.2.1.tar.gz]
+[2024-05-19 06:13:54] INFO root fetch - processPackages [salgorithm]: Remove: archive file [/home/abi/fetcher/tmp/salgorithm-0.2.2.tar.gz]
+[2024-05-19 06:13:54] INFO root fetch - main [MainThread]: End processing [salgorithm]: success
+[2024-05-19 06:13:54] INFO root fetch - main [MainThread]: Store serial: [23273220]
