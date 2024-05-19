@@ -17231,3 +17231,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 21:18:08] INFO root fetch - processPackages [Simba-UW-tf-dev]: Remove: archive file [/home/abi/fetcher/tmp/Simba-UW-tf-dev-1.92.7.tar.gz]
 [2024-05-19 21:18:08] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
 [2024-05-19 21:18:08] INFO root fetch - main [MainThread]: Store serial: [23279631]
+[2024-05-19 21:20:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279631]
+[2024-05-19 21:20:17] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 21:20:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: omniblack.secret
+[2024-05-19 21:20:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gammarers.aws-secure-flow-log-bucket
+[2024-05-19 21:20:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: podophthalmiticz
+[2024-05-19 21:20:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: astrometry-net-client
+[2024-05-19 21:20:17] WARNING root fetch - processPackages [podophthalmiticz]: Skipping, unable to determine old version
+[2024-05-19 21:20:17] INFO root fetch - processPackages [omniblack.secret]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-19 21:20:17] INFO root fetch - processPackages [astrometry-net-client]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-05-19 21:20:17] INFO root fetch - main [MainThread]: End processing [podophthalmiticz] error
+[2024-05-19 21:20:17] INFO root fetch - processPackages [gammarers.aws-secure-flow-log-bucket]: New version: [1.4.3] Old Version: [1.4.2]
+[2024-05-19 21:20:17] INFO root fetch - processPackages [omniblack.secret]: Downloading https://files.pythonhosted.org/packages/06/31/e8238843ea4a87f8d49709e0e8933bc050fbb8a112e457dc9f202adcfc5f/omniblack_secret-0.0.1.tar.gz
+[2024-05-19 21:20:17] INFO root fetch - processPackages [astrometry-net-client]: Downloading https://files.pythonhosted.org/packages/df/7d/5c28016fa1c423f36976a6f143abd66264a9f54ced607f299f59f11333cf/astrometry_net_client-0.4.0.tar.gz
+[2024-05-19 21:20:17] INFO root fetch - processPackages [gammarers.aws-secure-flow-log-bucket]: Downloading https://files.pythonhosted.org/packages/0f/f0/32e6ece8ec13420da45b625690f830bfd992df21e5d300414c5566fbee54/gammarers.aws-secure-flow-log-bucket-1.4.2.tar.gz
+[2024-05-19 21:20:18] INFO root fetch - processPackages [astrometry-net-client]: Downloading https://files.pythonhosted.org/packages/e5/6e/2c22ba9f8dbbb9d34811f05b68af0a61ef12180579b77b58f98188222e60/astrometry_net_client-0.5.0.tar.gz
+[2024-05-19 21:20:18] INFO root fetch - processPackages [gammarers.aws-secure-flow-log-bucket]: Downloading https://files.pythonhosted.org/packages/cf/34/9d2aac9a3cfe5446ad5ba84d6659b748ee89974848d8884f4e8f5d34a2b5/gammarers.aws-secure-flow-log-bucket-1.4.3.tar.gz
+[2024-05-19 21:20:18] INFO root fetch - processPackages [omniblack.secret]: Downloading https://files.pythonhosted.org/packages/20/d9/dbe157b8f5e62b4798d277cbc2d55e8703526d6789b8a505c40044842512/omniblack_secret-0.0.2.tar.gz
+[2024-05-19 21:20:18] INFO root fetch - processPackages [astrometry-net-client]: executing diffoscope
+[2024-05-19 21:20:18] INFO root fetch - processPackages [astrometry-net-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astrometry_net_client-0.4.0.tar.gz tmp/astrometry_net_client-0.5.0.tar.gz --markdown 20240519/a/astrometry-net-client/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-05-19 21:20:18] INFO root fetch - processPackages [gammarers.aws-secure-flow-log-bucket]: executing diffoscope
+[2024-05-19 21:20:18] INFO root fetch - processPackages [gammarers.aws-secure-flow-log-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gammarers.aws-secure-flow-log-bucket-1.4.2.tar.gz tmp/gammarers.aws-secure-flow-log-bucket-1.4.3.tar.gz --markdown 20240519/g/gammarers.aws-secure-flow-log-bucket/1.4.2-1.4.3/README.md --exclude *.pyd
+[2024-05-19 21:20:18] INFO root fetch - processPackages [omniblack.secret]: executing diffoscope
+[2024-05-19 21:20:18] INFO root fetch - processPackages [omniblack.secret]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omniblack_secret-0.0.1.tar.gz tmp/omniblack_secret-0.0.2.tar.gz --markdown 20240519/o/omniblack.secret/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-19 21:20:18] INFO root fetch - processPackages [omniblack.secret]: Remove: archive file [/home/abi/fetcher/tmp/omniblack_secret-0.0.1.tar.gz]
+[2024-05-19 21:20:18] INFO root fetch - processPackages [omniblack.secret]: Remove: archive file [/home/abi/fetcher/tmp/omniblack_secret-0.0.2.tar.gz]
+[2024-05-19 21:20:18] INFO root fetch - main [MainThread]: End processing [omniblack.secret]: success
+[2024-05-19 21:20:18] INFO root fetch - processPackages [gammarers.aws-secure-flow-log-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-flow-log-bucket-1.4.2.tar.gz]
+[2024-05-19 21:20:18] INFO root fetch - processPackages [gammarers.aws-secure-flow-log-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-flow-log-bucket-1.4.3.tar.gz]
+[2024-05-19 21:20:18] INFO root fetch - main [MainThread]: End processing [gammarers.aws-secure-flow-log-bucket]: success
+[2024-05-19 21:20:19] INFO root fetch - processPackages [astrometry-net-client]: Remove: archive file [/home/abi/fetcher/tmp/astrometry_net_client-0.4.0.tar.gz]
+[2024-05-19 21:20:19] INFO root fetch - processPackages [astrometry-net-client]: Remove: archive file [/home/abi/fetcher/tmp/astrometry_net_client-0.5.0.tar.gz]
+[2024-05-19 21:20:19] INFO root fetch - main [MainThread]: End processing [astrometry-net-client]: success
+[2024-05-19 21:20:19] INFO root fetch - main [MainThread]: Store serial: [23279644]
