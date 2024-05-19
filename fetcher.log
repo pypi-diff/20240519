@@ -10764,3 +10764,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 14:57:29] INFO root fetch - processPackages [dongraphio]: Remove: archive file [/home/abi/fetcher/tmp/dongraphio-0.3.4.tar.gz]
 [2024-05-19 14:57:29] INFO root fetch - main [MainThread]: End processing [dongraphio]: success
 [2024-05-19 14:57:29] INFO root fetch - main [MainThread]: Store serial: [23276508]
+[2024-05-19 14:59:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276508]
+[2024-05-19 14:59:38] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-19 14:59:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: portpy
+[2024-05-19 14:59:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: HueBLE
+[2024-05-19 14:59:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: poium
+[2024-05-19 14:59:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: knowledge-graph-maker
+[2024-05-19 14:59:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: myjd-api
+[2024-05-19 14:59:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ipex-llm
+[2024-05-19 14:59:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: django-custom-jsonfield
+[2024-05-19 14:59:38] INFO root fetch - processPackages [myjd-api]: New version: [1.2.0] Old Version: [1.1.1]
+[2024-05-19 14:59:38] INFO root fetch - processPackages [HueBLE]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-19 14:59:38] INFO root fetch - processPackages [knowledge-graph-maker]: New version: [0.2.0] Old Version: [0.1.2]
+[2024-05-19 14:59:38] WARNING root fetch - processPackages [django-custom-jsonfield]: Skipping, unable to determine old version
+[2024-05-19 14:59:38] INFO root fetch - main [MainThread]: End processing [django-custom-jsonfield] error
+[2024-05-19 14:59:38] INFO root fetch - processPackages [portpy]: New version: [1.0.3.1] Old Version: [1.0.3]
+[2024-05-19 14:59:38] INFO root fetch - processPackages [poium]: New version: [1.5.2] Old Version: [1.5.1]
+[2024-05-19 14:59:38] INFO root fetch - processPackages [ipex-llm]: New version: [2.1.0b20240519] Old Version: [2.1.0b20240517]
+[2024-05-19 14:59:38] INFO root fetch - processPackages [myjd-api]: Downloading https://files.pythonhosted.org/packages/c6/bc/6affa2f99cb05b76a1c404d604d0a971279c710a5e92ad362ccab093c738/myjd_api-1.1.1.tar.gz
+[2024-05-19 14:59:38] INFO root fetch - processPackages [HueBLE]: Downloading https://files.pythonhosted.org/packages/c4/e6/1bc1ca7e261f8f0f64116d396221beaff4f929d427bb01547a1f67531ea7/hueble-1.0.3.tar.gz
+[2024-05-19 14:59:38] INFO root fetch - processPackages [knowledge-graph-maker]: Downloading https://files.pythonhosted.org/packages/39/a3/59156b257464930588eb9e8a33c3cf0637fc493f79aa25612baef929aabe/knowledge_graph_maker-0.1.2.tar.gz
+[2024-05-19 14:59:38] INFO root fetch - processPackages [portpy]: Downloading https://files.pythonhosted.org/packages/4e/e7/e6663e4ca87378bc48189cebaf11a0bb3e4fd075011cebb63e5beb1800ad/portpy-1.0.3.tar.gz
+[2024-05-19 14:59:38] INFO root fetch - processPackages [poium]: Downloading https://files.pythonhosted.org/packages/c2/82/e1dbdb89bee14a7657c6a92652cadab0d39d96d914e7217a8c5b0ceaa3d3/poium-1.5.1.tar.gz
+[2024-05-19 14:59:38] INFO root fetch - processPackages [ipex-llm]: Downloading https://files.pythonhosted.org/packages/ac/ff/a8b4ff9b1e289fd23326f25f8242f4d30441e704cbab102c38b50afe3a41/ipex_llm-2.1.0b20240517-py3-none-win_amd64.whl
+[2024-05-19 14:59:38] INFO root fetch - processPackages [myjd-api]: Downloading https://files.pythonhosted.org/packages/7c/14/3a16f0dc00ae4541dcc3adb2df8b43dda5220d168ccac601f85b12fbda30/myjd_api-1.2.0.tar.gz
+[2024-05-19 14:59:38] INFO root fetch - processPackages [HueBLE]: Downloading https://files.pythonhosted.org/packages/3e/af/4b39f334f64ac6c13df2719b6516eaaab94b2ba283377961523878ff25ea/hueble-1.0.4.tar.gz
+[2024-05-19 14:59:38] INFO root fetch - processPackages [HueBLE]: executing diffoscope
+[2024-05-19 14:59:38] INFO root fetch - processPackages [HueBLE]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hueble-1.0.3.tar.gz tmp/hueble-1.0.4.tar.gz --markdown 20240519/H/HueBLE/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-19 14:59:38] INFO root fetch - processPackages [myjd-api]: executing diffoscope
+[2024-05-19 14:59:38] INFO root fetch - processPackages [myjd-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myjd_api-1.1.1.tar.gz tmp/myjd_api-1.2.0.tar.gz --markdown 20240519/m/myjd-api/1.1.1-1.2.0/README.md --exclude *.pyd
+[2024-05-19 14:59:38] INFO root fetch - processPackages [knowledge-graph-maker]: Downloading https://files.pythonhosted.org/packages/64/c7/55323fb99d17f7b0303e8c129b6fcd92870899e6767c71484e5ef4767bd3/knowledge_graph_maker-0.2.0.tar.gz
+[2024-05-19 14:59:38] INFO root fetch - processPackages [knowledge-graph-maker]: executing diffoscope
+[2024-05-19 14:59:38] INFO root fetch - processPackages [knowledge-graph-maker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/knowledge_graph_maker-0.1.2.tar.gz tmp/knowledge_graph_maker-0.2.0.tar.gz --markdown 20240519/k/knowledge-graph-maker/0.1.2-0.2.0/README.md --exclude *.pyd
+[2024-05-19 14:59:38] INFO root fetch - processPackages [poium]: Downloading https://files.pythonhosted.org/packages/96/af/c7a8f7d6449b48fe467748cc1bd75537424561583da9f244519dee6fcf55/poium-1.5.2.tar.gz
+[2024-05-19 14:59:39] INFO root fetch - processPackages [portpy]: Downloading https://files.pythonhosted.org/packages/ea/53/fdb269087882e5a032953a62e9821a4a9f22755f52c5926807944227f485/portpy-1.0.3.1.tar.gz
+[2024-05-19 14:59:39] INFO root fetch - processPackages [poium]: executing diffoscope
+[2024-05-19 14:59:39] INFO root fetch - processPackages [poium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poium-1.5.1.tar.gz tmp/poium-1.5.2.tar.gz --markdown 20240519/p/poium/1.5.1-1.5.2/README.md --exclude *.pyd
+[2024-05-19 14:59:39] INFO root fetch - processPackages [portpy]: executing diffoscope
+[2024-05-19 14:59:39] INFO root fetch - processPackages [portpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/portpy-1.0.3.tar.gz tmp/portpy-1.0.3.1.tar.gz --markdown 20240519/p/portpy/1.0.3-1.0.3.1/README.md --exclude *.pyd
+[2024-05-19 14:59:39] INFO root fetch - processPackages [ipex-llm]: Downloading https://files.pythonhosted.org/packages/a3/47/07557b4d1afea782e0f52c85b41236c52d1003f3c0b371fff4e7bd167449/ipex_llm-2.1.0b20240519-py3-none-win_amd64.whl
+[2024-05-19 14:59:39] INFO root fetch - processPackages [HueBLE]: Remove: archive file [/home/abi/fetcher/tmp/hueble-1.0.3.tar.gz]
+[2024-05-19 14:59:39] INFO root fetch - processPackages [HueBLE]: Remove: archive file [/home/abi/fetcher/tmp/hueble-1.0.4.tar.gz]
+[2024-05-19 14:59:39] INFO root fetch - main [MainThread]: End processing [HueBLE]: success
+[2024-05-19 14:59:39] INFO root fetch - processPackages [myjd-api]: Remove: archive file [/home/abi/fetcher/tmp/myjd_api-1.1.1.tar.gz]
+[2024-05-19 14:59:39] INFO root fetch - processPackages [myjd-api]: Remove: archive file [/home/abi/fetcher/tmp/myjd_api-1.2.0.tar.gz]
+[2024-05-19 14:59:39] INFO root fetch - main [MainThread]: End processing [myjd-api]: success
+[2024-05-19 14:59:39] INFO root fetch - processPackages [knowledge-graph-maker]: Remove: archive file [/home/abi/fetcher/tmp/knowledge_graph_maker-0.1.2.tar.gz]
+[2024-05-19 14:59:39] INFO root fetch - processPackages [knowledge-graph-maker]: Remove: archive file [/home/abi/fetcher/tmp/knowledge_graph_maker-0.2.0.tar.gz]
+[2024-05-19 14:59:39] INFO root fetch - main [MainThread]: End processing [knowledge-graph-maker]: success
+[2024-05-19 14:59:39] INFO root fetch - processPackages [poium]: Remove: archive file [/home/abi/fetcher/tmp/poium-1.5.1.tar.gz]
+[2024-05-19 14:59:39] INFO root fetch - processPackages [poium]: Remove: archive file [/home/abi/fetcher/tmp/poium-1.5.2.tar.gz]
+[2024-05-19 14:59:39] INFO root fetch - main [MainThread]: End processing [poium]: success
+[2024-05-19 14:59:40] INFO root fetch - processPackages [portpy]: Remove: archive file [/home/abi/fetcher/tmp/portpy-1.0.3.tar.gz]
+[2024-05-19 14:59:40] INFO root fetch - processPackages [portpy]: Remove: archive file [/home/abi/fetcher/tmp/portpy-1.0.3.1.tar.gz]
+[2024-05-19 14:59:40] INFO root fetch - main [MainThread]: End processing [portpy]: success
+[2024-05-19 14:59:40] INFO root fetch - processPackages [ipex-llm]: executing diffoscope
+[2024-05-19 14:59:40] INFO root fetch - processPackages [ipex-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipex_llm-2.1.0b20240517-py3-none-win_amd64.whl.zip tmp/ipex_llm-2.1.0b20240519-py3-none-win_amd64.whl.zip --markdown 20240519/i/ipex-llm/2.1.0b20240517-2.1.0b20240519/README.md --exclude *.pyd
+[2024-05-19 15:00:08] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240517-py3-none-win_amd64.whl.zip]
+[2024-05-19 15:00:08] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240519-py3-none-win_amd64.whl.zip]
+[2024-05-19 15:00:08] INFO root fetch - main [MainThread]: End processing [ipex-llm]: success
+[2024-05-19 15:00:08] INFO root fetch - main [MainThread]: Store serial: [23276533]
