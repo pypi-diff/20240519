@@ -15109,3 +15109,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 19:24:40] INFO root fetch - processPackages [docketanalyzer]: Remove: archive file [/home/abi/fetcher/tmp/docketanalyzer-0.1.2-py3-none-any.whl.zip]
 [2024-05-19 19:24:40] INFO root fetch - main [MainThread]: End processing [docketanalyzer]: success
 [2024-05-19 19:24:40] INFO root fetch - main [MainThread]: Store serial: [23278587]
+[2024-05-19 19:26:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23278587]
+[2024-05-19 19:26:48] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-19 19:26:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CTK-Desert
+[2024-05-19 19:26:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ctuFaultDetector
+[2024-05-19 19:26:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: startrek
+[2024-05-19 19:26:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: udp
+[2024-05-19 19:26:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: finisterra
+[2024-05-19 19:26:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tcp
+[2024-05-19 19:26:48] INFO root fetch - processPackages [CTK-Desert]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 19:26:48] INFO root fetch - processPackages [udp]: New version: [2.1.1] Old Version: [2.1.0]
+[2024-05-19 19:26:48] INFO root fetch - processPackages [finisterra]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-19 19:26:49] INFO root fetch - processPackages [tcp]: New version: [2.1.1] Old Version: [2.1.0]
+[2024-05-19 19:26:49] WARNING root fetch - processPackages [ctuFaultDetector]: Skipping, unable to determine old version
+[2024-05-19 19:26:49] INFO root fetch - processPackages [startrek]: New version: [2.1.1] Old Version: [2.1.0]
+[2024-05-19 19:26:49] INFO root fetch - main [MainThread]: End processing [ctuFaultDetector] error
+[2024-05-19 19:26:49] INFO root fetch - processPackages [CTK-Desert]: Downloading https://files.pythonhosted.org/packages/9a/73/c7239044a3b6edf571c3f5feded6aab241cff792f7acd98dd42652e44c95/CTK_Desert-0.0.8.tar.gz
+[2024-05-19 19:26:49] INFO root fetch - processPackages [udp]: Downloading https://files.pythonhosted.org/packages/48/89/2501e07f939d8da9e2658041236b4d445239340298baae09d8694822da46/udp-2.1.0.tar.gz
+[2024-05-19 19:26:49] INFO root fetch - processPackages [startrek]: Downloading https://files.pythonhosted.org/packages/dc/b1/472adbba400768f12b16e43931519a12cd43fb2cfbb0aefb9b748296a84d/startrek-2.1.0.tar.gz
+[2024-05-19 19:26:49] INFO root fetch - processPackages [tcp]: Downloading https://files.pythonhosted.org/packages/fe/d6/056d3ad0a8c92f1dc36526a5a359b6b1a3dea98e0063d3269d6de6732ff5/tcp-2.1.0.tar.gz
+[2024-05-19 19:26:49] INFO root fetch - processPackages [finisterra]: Downloading https://files.pythonhosted.org/packages/b6/bf/195a1850e81169f476d3d3ca9ef8c21c89088d98c5739b2e6b3e241d7ac4/finisterra-1.0.8.tar.gz
+[2024-05-19 19:26:49] INFO root fetch - processPackages [CTK-Desert]: Downloading https://files.pythonhosted.org/packages/6d/b4/d3af97e7bf9ae492dceb1aad8191e260b603096af0a9755ffd707156f69f/CTK_Desert-0.0.9.tar.gz
+[2024-05-19 19:26:49] INFO root fetch - processPackages [CTK-Desert]: executing diffoscope
+[2024-05-19 19:26:49] INFO root fetch - processPackages [CTK-Desert]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CTK_Desert-0.0.8.tar.gz tmp/CTK_Desert-0.0.9.tar.gz --markdown 20240519/C/CTK-Desert/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 19:26:49] INFO root fetch - processPackages [udp]: Downloading https://files.pythonhosted.org/packages/12/75/18b6fe82ee8222ea94230808ad2c13f04cf89f3539a689ea2c1b1654277a/udp-2.1.1.tar.gz
+[2024-05-19 19:26:49] INFO root fetch - processPackages [startrek]: Downloading https://files.pythonhosted.org/packages/09/65/81a8aa6d8e5d210c94f1534b03785056d3a326ff2ab7c867d18da09403c9/startrek-2.1.1.tar.gz
+[2024-05-19 19:26:49] INFO root fetch - processPackages [tcp]: Downloading https://files.pythonhosted.org/packages/2a/11/bdc5be63ce48588dca1a26ebb3a937d08e188b0eb86a2b6676fa6b846aec/tcp-2.1.1.tar.gz
+[2024-05-19 19:26:49] INFO root fetch - processPackages [udp]: executing diffoscope
+[2024-05-19 19:26:49] INFO root fetch - processPackages [udp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/udp-2.1.0.tar.gz tmp/udp-2.1.1.tar.gz --markdown 20240519/u/udp/2.1.0-2.1.1/README.md --exclude *.pyd
+[2024-05-19 19:26:49] INFO root fetch - processPackages [startrek]: executing diffoscope
+[2024-05-19 19:26:49] INFO root fetch - processPackages [startrek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/startrek-2.1.0.tar.gz tmp/startrek-2.1.1.tar.gz --markdown 20240519/s/startrek/2.1.0-2.1.1/README.md --exclude *.pyd
+[2024-05-19 19:26:49] INFO root fetch - processPackages [finisterra]: Downloading https://files.pythonhosted.org/packages/68/8a/02f80cdb16a2f8155583c78bc947832a816e1d8d728091c4ac97d9225473/finisterra-1.0.9.tar.gz
+[2024-05-19 19:26:49] INFO root fetch - processPackages [tcp]: executing diffoscope
+[2024-05-19 19:26:49] INFO root fetch - processPackages [tcp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcp-2.1.0.tar.gz tmp/tcp-2.1.1.tar.gz --markdown 20240519/t/tcp/2.1.0-2.1.1/README.md --exclude *.pyd
+[2024-05-19 19:26:49] INFO root fetch - processPackages [finisterra]: executing diffoscope
+[2024-05-19 19:26:49] INFO root fetch - processPackages [finisterra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finisterra-1.0.8.tar.gz tmp/finisterra-1.0.9.tar.gz --markdown 20240519/f/finisterra/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-19 19:26:50] INFO root fetch - processPackages [CTK-Desert]: Remove: archive file [/home/abi/fetcher/tmp/CTK_Desert-0.0.8.tar.gz]
+[2024-05-19 19:26:50] INFO root fetch - processPackages [CTK-Desert]: Remove: archive file [/home/abi/fetcher/tmp/CTK_Desert-0.0.9.tar.gz]
+[2024-05-19 19:26:50] INFO root fetch - main [MainThread]: End processing [CTK-Desert]: success
+[2024-05-19 19:26:50] INFO root fetch - processPackages [startrek]: Remove: archive file [/home/abi/fetcher/tmp/startrek-2.1.0.tar.gz]
+[2024-05-19 19:26:50] INFO root fetch - processPackages [startrek]: Remove: archive file [/home/abi/fetcher/tmp/startrek-2.1.1.tar.gz]
+[2024-05-19 19:26:50] INFO root fetch - main [MainThread]: End processing [startrek]: success
+[2024-05-19 19:26:50] INFO root fetch - processPackages [tcp]: Remove: archive file [/home/abi/fetcher/tmp/tcp-2.1.0.tar.gz]
+[2024-05-19 19:26:50] INFO root fetch - processPackages [tcp]: Remove: archive file [/home/abi/fetcher/tmp/tcp-2.1.1.tar.gz]
+[2024-05-19 19:26:50] INFO root fetch - main [MainThread]: End processing [tcp]: success
+[2024-05-19 19:26:50] INFO root fetch - processPackages [udp]: Remove: archive file [/home/abi/fetcher/tmp/udp-2.1.0.tar.gz]
+[2024-05-19 19:26:50] INFO root fetch - processPackages [udp]: Remove: archive file [/home/abi/fetcher/tmp/udp-2.1.1.tar.gz]
+[2024-05-19 19:26:50] INFO root fetch - main [MainThread]: End processing [udp]: success
+[2024-05-19 19:26:50] INFO root fetch - processPackages [finisterra]: Remove: archive file [/home/abi/fetcher/tmp/finisterra-1.0.8.tar.gz]
+[2024-05-19 19:26:50] INFO root fetch - processPackages [finisterra]: Remove: archive file [/home/abi/fetcher/tmp/finisterra-1.0.9.tar.gz]
+[2024-05-19 19:26:50] INFO root fetch - main [MainThread]: End processing [finisterra]: success
+[2024-05-19 19:26:50] INFO root fetch - main [MainThread]: Store serial: [23278607]
