@@ -9815,3 +9815,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 13:55:29] INFO root fetch - processPackages [nonebot-plugin-mypower]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_mypower-0.1.6.tar.gz]
 [2024-05-19 13:55:29] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-mypower]: success
 [2024-05-19 13:55:29] INFO root fetch - main [MainThread]: Store serial: [23276044]
+[2024-05-19 13:57:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276044]
+[2024-05-19 13:57:38] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 13:57:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytest-asyncio
+[2024-05-19 13:57:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pymtr
+[2024-05-19 13:57:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: deps-rocker
+[2024-05-19 13:57:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yeref
+[2024-05-19 13:57:38] INFO root fetch - processPackages [deps-rocker]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-19 13:57:38] INFO root fetch - processPackages [pytest-asyncio]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-19 13:57:38] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-19 13:57:38] INFO root fetch - processPackages [deps-rocker]: Downloading https://files.pythonhosted.org/packages/99/64/d1291babe737b04245a83eed3091b3520f8245f4a516b18eb1f30a5331d5/deps_rocker-0.1.7.tar.gz
+[2024-05-19 13:57:38] WARNING root fetch - processPackages [pymtr]: Skipping, unable to determine old version
+[2024-05-19 13:57:38] INFO root fetch - main [MainThread]: End processing [pymtr] error
+[2024-05-19 13:57:38] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-19 13:57:38] INFO root fetch - processPackages [pytest-asyncio]: Downloading https://files.pythonhosted.org/packages/c9/28/032baa7ba981928ec31faeb700b19fd7d3434bedff6aaff30b2e630dd82d/pytest-asyncio-0.8.0.tar.gz
+[2024-05-19 13:57:38] INFO root fetch - processPackages [deps-rocker]: Downloading https://files.pythonhosted.org/packages/dd/12/287d3fba5d71707210db52b55695ee7e5dbb9c71450c286f74e535887165/deps_rocker-0.1.8.tar.gz
+[2024-05-19 13:57:38] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-19 13:57:38] INFO root fetch - processPackages [deps-rocker]: executing diffoscope
+[2024-05-19 13:57:38] INFO root fetch - processPackages [deps-rocker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deps_rocker-0.1.7.tar.gz tmp/deps_rocker-0.1.8.tar.gz --markdown 20240519/d/deps-rocker/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-19 13:57:38] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-19 13:57:38] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240519/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-19 13:57:38] INFO root fetch - processPackages [pytest-asyncio]: Downloading https://files.pythonhosted.org/packages/22/fd/6be59ed6eb49798d248730b8c2589e4f862a39b49775a1415972b31a3362/pytest-asyncio-0.9.0.tar.gz
+[2024-05-19 13:57:38] INFO root fetch - processPackages [pytest-asyncio]: executing diffoscope
+[2024-05-19 13:57:38] INFO root fetch - processPackages [pytest-asyncio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-asyncio-0.8.0.tar.gz tmp/pytest-asyncio-0.9.0.tar.gz --markdown 20240519/p/pytest-asyncio/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-19 13:57:39] INFO root fetch - processPackages [deps-rocker]: Remove: archive file [/home/abi/fetcher/tmp/deps_rocker-0.1.7.tar.gz]
+[2024-05-19 13:57:39] INFO root fetch - processPackages [deps-rocker]: Remove: archive file [/home/abi/fetcher/tmp/deps_rocker-0.1.8.tar.gz]
+[2024-05-19 13:57:39] INFO root fetch - main [MainThread]: End processing [deps-rocker]: success
+[2024-05-19 13:57:39] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-19 13:57:39] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-19 13:57:39] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-19 13:57:39] INFO root fetch - processPackages [pytest-asyncio]: Remove: archive file [/home/abi/fetcher/tmp/pytest-asyncio-0.8.0.tar.gz]
+[2024-05-19 13:57:39] INFO root fetch - processPackages [pytest-asyncio]: Remove: archive file [/home/abi/fetcher/tmp/pytest-asyncio-0.9.0.tar.gz]
+[2024-05-19 13:57:39] INFO root fetch - main [MainThread]: End processing [pytest-asyncio]: success
+[2024-05-19 13:57:39] INFO root fetch - main [MainThread]: Store serial: [23276058]
