@@ -2806,3 +2806,15 @@
 [2024-05-19 04:31:30] INFO root fetch - processPackages [ewstools]: Remove: archive file [/home/abi/fetcher/tmp/ewstools-2.1.2.tar.gz]
 [2024-05-19 04:31:30] INFO root fetch - main [MainThread]: End processing [ewstools]: success
 [2024-05-19 04:31:30] INFO root fetch - main [MainThread]: Store serial: [23272817]
+[2024-05-19 04:33:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272817]
+[2024-05-19 04:33:39] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 04:33:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cs.ffmpegutils
+[2024-05-19 04:33:39] INFO root fetch - processPackages [cs.ffmpegutils]: New version: [20240519] Old Version: [20240316.1]
+[2024-05-19 04:33:39] INFO root fetch - processPackages [cs.ffmpegutils]: Downloading https://files.pythonhosted.org/packages/04/3a/1470a155882f7b9f9b768a2e0ec92a853f93f7fcf9909e751bd758ef2db3/cs.ffmpegutils-20240316.1.tar.gz
+[2024-05-19 04:33:39] INFO root fetch - processPackages [cs.ffmpegutils]: Downloading https://files.pythonhosted.org/packages/1f/93/9e9cf8260a7d3c5df382fdb7b477aab657fdd934a3b26d224aec35215e91/cs.ffmpegutils-20240519.tar.gz
+[2024-05-19 04:33:39] INFO root fetch - processPackages [cs.ffmpegutils]: executing diffoscope
+[2024-05-19 04:33:39] INFO root fetch - processPackages [cs.ffmpegutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs.ffmpegutils-20240316.1.tar.gz tmp/cs.ffmpegutils-20240519.tar.gz --markdown 20240519/c/cs.ffmpegutils/20240316.1-20240519/README.md --exclude *.pyd
+[2024-05-19 04:33:40] INFO root fetch - processPackages [cs.ffmpegutils]: Remove: archive file [/home/abi/fetcher/tmp/cs.ffmpegutils-20240316.1.tar.gz]
+[2024-05-19 04:33:40] INFO root fetch - processPackages [cs.ffmpegutils]: Remove: archive file [/home/abi/fetcher/tmp/cs.ffmpegutils-20240519.tar.gz]
+[2024-05-19 04:33:40] INFO root fetch - main [MainThread]: End processing [cs.ffmpegutils]: success
+[2024-05-19 04:33:40] INFO root fetch - main [MainThread]: Store serial: [23272820]
