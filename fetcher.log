@@ -7562,3 +7562,30 @@
 [2024-05-19 11:18:49] INFO root fetch - processPackages [soco-cli]: Remove: archive file [/home/abi/fetcher/tmp/soco-cli-0.4.9.tar.gz]
 [2024-05-19 11:18:49] INFO root fetch - main [MainThread]: End processing [soco-cli]: success
 [2024-05-19 11:18:49] INFO root fetch - main [MainThread]: Store serial: [23275020]
+[2024-05-19 11:20:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275020]
+[2024-05-19 11:20:57] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 11:20:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Project-ppchem-tools-kit
+[2024-05-19 11:20:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ddge
+[2024-05-19 11:20:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pymscada
+[2024-05-19 11:20:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: freakpotz
+[2024-05-19 11:20:57] WARNING root fetch - processPackages [Project-ppchem-tools-kit]: Skipping, unable to determine old version
+[2024-05-19 11:20:57] INFO root fetch - main [MainThread]: End processing [Project-ppchem-tools-kit] error
+[2024-05-19 11:20:57] INFO root fetch - processPackages [ddge]: New version: [0.2.137.3] Old Version: [0.2.137.2]
+[2024-05-19 11:20:57] WARNING root fetch - processPackages [freakpotz]: Skipping, unable to determine old version
+[2024-05-19 11:20:57] INFO root fetch - main [MainThread]: End processing [freakpotz] error
+[2024-05-19 11:20:57] INFO root fetch - processPackages [pymscada]: New version: [0.1.1a2] Old Version: [0.1.0a6]
+[2024-05-19 11:20:58] INFO root fetch - processPackages [ddge]: Downloading https://files.pythonhosted.org/packages/70/1c/2188c7348a75f7a7f98982bbf4be587f119f2e884f110aedee3423db34d8/ddge-0.2.137.2.tar.gz
+[2024-05-19 11:20:58] INFO root fetch - processPackages [pymscada]: Downloading https://files.pythonhosted.org/packages/cb/8e/f8667b83741dc5ef03942e4f733ae5df451bb9a2c4a419cde9d7bc2206f5/pymscada-0.1.0a6.tar.gz
+[2024-05-19 11:20:58] INFO root fetch - processPackages [ddge]: Downloading https://files.pythonhosted.org/packages/74/c6/7979556f21fd04fb14fd6ba1da1b83014e5d45eda1aa15a9ad912a08c826/ddge-0.2.137.3.tar.gz
+[2024-05-19 11:20:58] INFO root fetch - processPackages [pymscada]: Downloading https://files.pythonhosted.org/packages/95/2a/f95134f1619c84beaae350ce5ba7daea7356e0931d4d978f9d0c1fee40fb/pymscada-0.1.1a2.tar.gz
+[2024-05-19 11:20:58] INFO root fetch - processPackages [ddge]: executing diffoscope
+[2024-05-19 11:20:58] INFO root fetch - processPackages [ddge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddge-0.2.137.2.tar.gz tmp/ddge-0.2.137.3.tar.gz --markdown 20240519/d/ddge/0.2.137.2-0.2.137.3/README.md --exclude *.pyd
+[2024-05-19 11:20:58] INFO root fetch - processPackages [pymscada]: executing diffoscope
+[2024-05-19 11:20:58] INFO root fetch - processPackages [pymscada]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymscada-0.1.0a6.tar.gz tmp/pymscada-0.1.1a2.tar.gz --markdown 20240519/p/pymscada/0.1.0a6-0.1.1a2/README.md --exclude *.pyd
+[2024-05-19 11:20:58] INFO root fetch - processPackages [ddge]: Remove: archive file [/home/abi/fetcher/tmp/ddge-0.2.137.2.tar.gz]
+[2024-05-19 11:20:58] INFO root fetch - processPackages [ddge]: Remove: archive file [/home/abi/fetcher/tmp/ddge-0.2.137.3.tar.gz]
+[2024-05-19 11:20:58] INFO root fetch - main [MainThread]: End processing [ddge]: success
+[2024-05-19 11:20:59] INFO root fetch - processPackages [pymscada]: Remove: archive file [/home/abi/fetcher/tmp/pymscada-0.1.0a6.tar.gz]
+[2024-05-19 11:20:59] INFO root fetch - processPackages [pymscada]: Remove: archive file [/home/abi/fetcher/tmp/pymscada-0.1.1a2.tar.gz]
+[2024-05-19 11:20:59] INFO root fetch - main [MainThread]: End processing [pymscada]: success
+[2024-05-19 11:20:59] INFO root fetch - main [MainThread]: Store serial: [23275033]
