@@ -3043,3 +3043,45 @@
 [2024-05-19 04:55:30] INFO root fetch - processPackages [toc-trade-pb-v2]: Remove: archive file [/home/abi/fetcher/tmp/toc_trade_pb_v2-0.1.7.tar.gz]
 [2024-05-19 04:55:30] INFO root fetch - main [MainThread]: End processing [toc-trade-pb-v2]: success
 [2024-05-19 04:55:30] INFO root fetch - main [MainThread]: Store serial: [23272907]
+[2024-05-19 04:57:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272907]
+[2024-05-19 04:57:38] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 04:57:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: promptml
+[2024-05-19 04:57:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ephemetoot
+[2024-05-19 04:57:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pqsdk
+[2024-05-19 04:57:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sphinx-gitref
+[2024-05-19 04:57:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dawenz
+[2024-05-19 04:57:38] INFO root fetch - processPackages [ephemetoot]: New version: [3.2.1] Old Version: [3.2.0]
+[2024-05-19 04:57:38] INFO root fetch - processPackages [sphinx-gitref]: New version: [0.3.0] Old Version: [0.2.1]
+[2024-05-19 04:57:38] INFO root fetch - processPackages [promptml]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-05-19 04:57:38] WARNING root fetch - processPackages [dawenz]: Skipping, unable to determine old version
+[2024-05-19 04:57:38] INFO root fetch - processPackages [pqsdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 04:57:38] INFO root fetch - main [MainThread]: End processing [dawenz] error
+[2024-05-19 04:57:39] INFO root fetch - processPackages [ephemetoot]: Downloading https://files.pythonhosted.org/packages/92/a1/a29f114a1a8f548ac78d85ba8105217480c413661659934975f008690b4d/ephemetoot-3.2.0.tar.gz
+[2024-05-19 04:57:39] INFO root fetch - processPackages [sphinx-gitref]: Downloading https://files.pythonhosted.org/packages/84/81/aec1c231e20c6a967d79eac7af5cb18eeb8063548e5604268cb4ea1021cd/sphinx-gitref-0.2.1.tar.gz
+[2024-05-19 04:57:39] INFO root fetch - processPackages [pqsdk]: Downloading https://files.pythonhosted.org/packages/7d/ef/e1606d8c88536e329ff51d20c43d8c3a8fbf1f139463353e46ce9c5714b7/pqsdk-0.0.8.tar.gz
+[2024-05-19 04:57:39] INFO root fetch - processPackages [promptml]: Downloading https://files.pythonhosted.org/packages/ab/00/938c71850f4f4ace96f0e5ee5cad6affbdb40d5bb39389e8451948c93c1c/promptml-0.5.0.tar.gz
+[2024-05-19 04:57:39] INFO root fetch - processPackages [sphinx-gitref]: Downloading https://files.pythonhosted.org/packages/c2/11/9e79d71298910f4d379c267ca8bb029b45f49ef451c515d790489fbc55ca/sphinx_gitref-0.3.0.tar.gz
+[2024-05-19 04:57:39] INFO root fetch - processPackages [pqsdk]: Downloading https://files.pythonhosted.org/packages/fa/43/18693ceeb86b0759e282a7f78e07c1b9f619ad0a4c2cbb972444d8f2a224/pqsdk-0.0.9.tar.gz
+[2024-05-19 04:57:39] INFO root fetch - processPackages [ephemetoot]: Downloading https://files.pythonhosted.org/packages/15/65/06b4547cc221dfda2f6443d213721699ce6d8a1d3962b864c387ef148428/ephemetoot-3.2.1.tar.gz
+[2024-05-19 04:57:39] INFO root fetch - processPackages [promptml]: Downloading https://files.pythonhosted.org/packages/f8/6b/fe988ed62abada47a48a1abd4a60b374755cff6cba56b2f4c0e66868a388/promptml-0.6.0.tar.gz
+[2024-05-19 04:57:39] INFO root fetch - processPackages [sphinx-gitref]: executing diffoscope
+[2024-05-19 04:57:39] INFO root fetch - processPackages [sphinx-gitref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinx-gitref-0.2.1.tar.gz tmp/sphinx_gitref-0.3.0.tar.gz --markdown 20240519/s/sphinx-gitref/0.2.1-0.3.0/README.md --exclude *.pyd
+[2024-05-19 04:57:39] INFO root fetch - processPackages [pqsdk]: executing diffoscope
+[2024-05-19 04:57:39] INFO root fetch - processPackages [pqsdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pqsdk-0.0.8.tar.gz tmp/pqsdk-0.0.9.tar.gz --markdown 20240519/p/pqsdk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 04:57:39] INFO root fetch - processPackages [ephemetoot]: executing diffoscope
+[2024-05-19 04:57:39] INFO root fetch - processPackages [ephemetoot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ephemetoot-3.2.0.tar.gz tmp/ephemetoot-3.2.1.tar.gz --markdown 20240519/e/ephemetoot/3.2.0-3.2.1/README.md --exclude *.pyd
+[2024-05-19 04:57:39] INFO root fetch - processPackages [promptml]: executing diffoscope
+[2024-05-19 04:57:39] INFO root fetch - processPackages [promptml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/promptml-0.5.0.tar.gz tmp/promptml-0.6.0.tar.gz --markdown 20240519/p/promptml/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-05-19 04:57:40] INFO root fetch - processPackages [sphinx-gitref]: Remove: archive file [/home/abi/fetcher/tmp/sphinx-gitref-0.2.1.tar.gz]
+[2024-05-19 04:57:40] INFO root fetch - processPackages [sphinx-gitref]: Remove: archive file [/home/abi/fetcher/tmp/sphinx_gitref-0.3.0.tar.gz]
+[2024-05-19 04:57:40] INFO root fetch - main [MainThread]: End processing [sphinx-gitref]: success
+[2024-05-19 04:57:40] INFO root fetch - processPackages [pqsdk]: Remove: archive file [/home/abi/fetcher/tmp/pqsdk-0.0.8.tar.gz]
+[2024-05-19 04:57:40] INFO root fetch - processPackages [pqsdk]: Remove: archive file [/home/abi/fetcher/tmp/pqsdk-0.0.9.tar.gz]
+[2024-05-19 04:57:40] INFO root fetch - main [MainThread]: End processing [pqsdk]: success
+[2024-05-19 04:57:40] INFO root fetch - processPackages [ephemetoot]: Remove: archive file [/home/abi/fetcher/tmp/ephemetoot-3.2.0.tar.gz]
+[2024-05-19 04:57:40] INFO root fetch - processPackages [ephemetoot]: Remove: archive file [/home/abi/fetcher/tmp/ephemetoot-3.2.1.tar.gz]
+[2024-05-19 04:57:40] INFO root fetch - main [MainThread]: End processing [ephemetoot]: success
+[2024-05-19 04:57:40] INFO root fetch - processPackages [promptml]: Remove: archive file [/home/abi/fetcher/tmp/promptml-0.5.0.tar.gz]
+[2024-05-19 04:57:40] INFO root fetch - processPackages [promptml]: Remove: archive file [/home/abi/fetcher/tmp/promptml-0.6.0.tar.gz]
+[2024-05-19 04:57:40] INFO root fetch - main [MainThread]: End processing [promptml]: success
+[2024-05-19 04:57:40] INFO root fetch - main [MainThread]: Store serial: [23272922]
