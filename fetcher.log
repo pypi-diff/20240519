@@ -21559,3 +21559,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 23:49:57] INFO root fetch - processPackages [skfolio]: Remove: archive file [/home/abi/fetcher/tmp/skfolio-0.2.0.tar.gz]
 [2024-05-19 23:49:57] INFO root fetch - main [MainThread]: End processing [skfolio]: success
 [2024-05-19 23:49:57] INFO root fetch - main [MainThread]: Store serial: [23281422]
+[2024-05-19 23:52:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23281422]
+[2024-05-19 23:52:06] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 23:52:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: testit-importer-allure
+[2024-05-19 23:52:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: abcli
+[2024-05-19 23:52:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: deep-unfolding
+[2024-05-19 23:52:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nz-seqtech
+[2024-05-19 23:52:06] INFO root fetch - processPackages [deep-unfolding]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-05-19 23:52:06] INFO root fetch - processPackages [abcli]: New version: [8.185.1] Old Version: [8.184.1]
+[2024-05-19 23:52:06] INFO root fetch - processPackages [nz-seqtech]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-19 23:52:06] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/6f/e7/49f43580acabfad049efccc1cf69f0552bb8ec5397317f0fb2d07be5c46a/abcli-8.184.1.tar.gz
+[2024-05-19 23:52:06] INFO root fetch - processPackages [testit-importer-allure]: New version: [1.7.0] Old Version: [1.6.3]
+[2024-05-19 23:52:06] INFO root fetch - processPackages [deep-unfolding]: Downloading https://files.pythonhosted.org/packages/28/e6/cbc73e0fef428f0cbfd661c8f84e8a9d5946799ac5e4e4616d2daca3fdd3/deep_unfolding-0.4.0.tar.gz
+[2024-05-19 23:52:06] INFO root fetch - processPackages [nz-seqtech]: Downloading https://files.pythonhosted.org/packages/ed/9c/c21e7556d4066757db959dfdee685b1a6c45bb1f079b8ef5fb90478b7a5e/nz_seqtech-0.2.8.tar.gz
+[2024-05-19 23:52:06] INFO root fetch - processPackages [testit-importer-allure]: Downloading https://files.pythonhosted.org/packages/9a/bd/0d49166d2a4863f83e2f32b2256e4df87727f02ffe890b4e2391603631d9/testit_importer_allure-1.6.3.tar.gz
+[2024-05-19 23:52:06] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/74/ff/169627edd7f32565fe20033963a6660ec7a079a4a9ad5c214fda4a453393/abcli-8.185.1.tar.gz
+[2024-05-19 23:52:06] INFO root fetch - processPackages [nz-seqtech]: Downloading https://files.pythonhosted.org/packages/96/fb/5aea416a157c21c78e1d00677e360d0b3642e503b32fcdf2ef4de51b34ea/nz_seqtech-0.2.9.tar.gz
+[2024-05-19 23:52:06] INFO root fetch - processPackages [deep-unfolding]: Downloading https://files.pythonhosted.org/packages/90/ea/599a7662953fec5944eea91bade1a67991ea71a7c791877338eff4fb23a9/deep_unfolding-0.4.1.tar.gz
+[2024-05-19 23:52:06] INFO root fetch - processPackages [abcli]: executing diffoscope
+[2024-05-19 23:52:06] INFO root fetch - processPackages [abcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abcli-8.184.1.tar.gz tmp/abcli-8.185.1.tar.gz --markdown 20240519/a/abcli/8.184.1-8.185.1/README.md --exclude *.pyd
+[2024-05-19 23:52:06] INFO root fetch - processPackages [nz-seqtech]: executing diffoscope
+[2024-05-19 23:52:06] INFO root fetch - processPackages [nz-seqtech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nz_seqtech-0.2.8.tar.gz tmp/nz_seqtech-0.2.9.tar.gz --markdown 20240519/n/nz-seqtech/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-19 23:52:06] INFO root fetch - processPackages [testit-importer-allure]: Downloading https://files.pythonhosted.org/packages/b9/03/c33d65f4ecb129769a0bc29d61a7d22c0372da4067c50b3711f2ee8e78df/testit_importer_allure-1.7.0.tar.gz
+[2024-05-19 23:52:06] INFO root fetch - processPackages [deep-unfolding]: executing diffoscope
+[2024-05-19 23:52:06] INFO root fetch - processPackages [deep-unfolding]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deep_unfolding-0.4.0.tar.gz tmp/deep_unfolding-0.4.1.tar.gz --markdown 20240519/d/deep-unfolding/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-05-19 23:52:06] INFO root fetch - processPackages [testit-importer-allure]: executing diffoscope
+[2024-05-19 23:52:06] INFO root fetch - processPackages [testit-importer-allure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/testit_importer_allure-1.6.3.tar.gz tmp/testit_importer_allure-1.7.0.tar.gz --markdown 20240519/t/testit-importer-allure/1.6.3-1.7.0/README.md --exclude *.pyd
+[2024-05-19 23:52:07] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-8.184.1.tar.gz]
+[2024-05-19 23:52:07] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-8.185.1.tar.gz]
+[2024-05-19 23:52:07] INFO root fetch - main [MainThread]: End processing [abcli]: success
+[2024-05-19 23:52:07] INFO root fetch - processPackages [testit-importer-allure]: Remove: archive file [/home/abi/fetcher/tmp/testit_importer_allure-1.6.3.tar.gz]
+[2024-05-19 23:52:07] INFO root fetch - processPackages [testit-importer-allure]: Remove: archive file [/home/abi/fetcher/tmp/testit_importer_allure-1.7.0.tar.gz]
+[2024-05-19 23:52:07] INFO root fetch - main [MainThread]: End processing [testit-importer-allure]: success
+[2024-05-19 23:52:07] INFO root fetch - processPackages [deep-unfolding]: Remove: archive file [/home/abi/fetcher/tmp/deep_unfolding-0.4.0.tar.gz]
+[2024-05-19 23:52:07] INFO root fetch - processPackages [deep-unfolding]: Remove: archive file [/home/abi/fetcher/tmp/deep_unfolding-0.4.1.tar.gz]
+[2024-05-19 23:52:07] INFO root fetch - main [MainThread]: End processing [deep-unfolding]: success
+[2024-05-19 23:52:07] INFO root fetch - processPackages [nz-seqtech]: Remove: archive file [/home/abi/fetcher/tmp/nz_seqtech-0.2.8.tar.gz]
+[2024-05-19 23:52:07] INFO root fetch - processPackages [nz-seqtech]: Remove: archive file [/home/abi/fetcher/tmp/nz_seqtech-0.2.9.tar.gz]
+[2024-05-19 23:52:07] INFO root fetch - main [MainThread]: End processing [nz-seqtech]: success
+[2024-05-19 23:52:07] INFO root fetch - main [MainThread]: Store serial: [23281433]
