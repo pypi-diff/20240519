@@ -6866,3 +6866,27 @@
 [2024-05-19 10:23:56] INFO root fetch - processPackages [python-sdk-remote]: Remove: archive file [/home/abi/fetcher/tmp/python_sdk_remote-0.0.99.tar.gz]
 [2024-05-19 10:23:56] INFO root fetch - main [MainThread]: End processing [python-sdk-remote]: success
 [2024-05-19 10:23:56] INFO root fetch - main [MainThread]: Store serial: [23274573]
+[2024-05-19 10:25:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274573]
+[2024-05-19 10:26:04] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 10:26:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: attitudinizerz
+[2024-05-19 10:26:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tarina
+[2024-05-19 10:26:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Tooldelta
+[2024-05-19 10:26:04] INFO root fetch - processPackages [tarina]: New version: [0.5.0] Old Version: [0.4.4]
+[2024-05-19 10:26:05] WARNING root fetch - processPackages [attitudinizerz]: Skipping, unable to determine old version
+[2024-05-19 10:26:05] INFO root fetch - main [MainThread]: End processing [attitudinizerz] error
+[2024-05-19 10:26:05] INFO root fetch - processPackages [Tooldelta]: New version: [0.6.1] Old Version: [0.6.0]
+[2024-05-19 10:26:05] INFO root fetch - processPackages [tarina]: Downloading https://files.pythonhosted.org/packages/bd/3a/98eb05cf80b2414df49a319f5e0e3a389f9e73ab57cb37d405cfcbff5b7d/tarina-0.4.4.tar.gz
+[2024-05-19 10:26:05] INFO root fetch - processPackages [Tooldelta]: Downloading https://files.pythonhosted.org/packages/1c/54/3743e2a2c64314d1dc29fefb11c4f74f9c413d0855355b07a40d38e373d7/tooldelta-0.6.0.tar.gz
+[2024-05-19 10:26:05] INFO root fetch - processPackages [tarina]: Downloading https://files.pythonhosted.org/packages/99/cc/83b0c929731032381fdd974b3cf0a39fa4f0b3ab0fad83e9eb929c5d0b8b/tarina-0.5.0.tar.gz
+[2024-05-19 10:26:05] INFO root fetch - processPackages [Tooldelta]: Downloading https://files.pythonhosted.org/packages/23/c3/3f29794ec3687b1feebde86d4a5283afcb3ae23d32b724b3ccf910961d90/tooldelta-0.6.1.tar.gz
+[2024-05-19 10:26:05] INFO root fetch - processPackages [tarina]: executing diffoscope
+[2024-05-19 10:26:05] INFO root fetch - processPackages [tarina]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tarina-0.4.4.tar.gz tmp/tarina-0.5.0.tar.gz --markdown 20240519/t/tarina/0.4.4-0.5.0/README.md --exclude *.pyd
+[2024-05-19 10:26:05] INFO root fetch - processPackages [Tooldelta]: executing diffoscope
+[2024-05-19 10:26:05] INFO root fetch - processPackages [Tooldelta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tooldelta-0.6.0.tar.gz tmp/tooldelta-0.6.1.tar.gz --markdown 20240519/T/Tooldelta/0.6.0-0.6.1/README.md --exclude *.pyd
+[2024-05-19 10:26:06] INFO root fetch - processPackages [tarina]: Remove: archive file [/home/abi/fetcher/tmp/tarina-0.4.4.tar.gz]
+[2024-05-19 10:26:06] INFO root fetch - processPackages [tarina]: Remove: archive file [/home/abi/fetcher/tmp/tarina-0.5.0.tar.gz]
+[2024-05-19 10:26:06] INFO root fetch - main [MainThread]: End processing [tarina]: success
+[2024-05-19 10:26:06] INFO root fetch - processPackages [Tooldelta]: Remove: archive file [/home/abi/fetcher/tmp/tooldelta-0.6.0.tar.gz]
+[2024-05-19 10:26:06] INFO root fetch - processPackages [Tooldelta]: Remove: archive file [/home/abi/fetcher/tmp/tooldelta-0.6.1.tar.gz]
+[2024-05-19 10:26:06] INFO root fetch - main [MainThread]: End processing [Tooldelta]: success
+[2024-05-19 10:26:06] INFO root fetch - main [MainThread]: Store serial: [23274623]
