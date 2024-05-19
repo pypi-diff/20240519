@@ -7735,3 +7735,30 @@
 [2024-05-19 11:36:11] INFO root fetch - processPackages [pyrodigal]: Remove: archive file [/home/abi/fetcher/tmp/pyrodigal-3.4.0-pp37-pypy37_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-05-19 11:36:11] INFO root fetch - main [MainThread]: End processing [pyrodigal]: success
 [2024-05-19 11:36:11] INFO root fetch - main [MainThread]: Store serial: [23275124]
+[2024-05-19 11:38:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275124]
+[2024-05-19 11:38:20] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 11:38:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quantization
+[2024-05-19 11:38:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nai3api
+[2024-05-19 11:38:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: toughio
+[2024-05-19 11:38:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: altstore-proxy
+[2024-05-19 11:38:20] INFO root fetch - processPackages [altstore-proxy]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-05-19 11:38:20] INFO root fetch - processPackages [altstore-proxy]: Downloading https://files.pythonhosted.org/packages/5a/7f/c1f8e00d127be92bdee1de060c5609df35c687902fb47b5a86770b17ac70/altstore_proxy-1.1.1.tar.gz
+[2024-05-19 11:38:20] WARNING root fetch - processPackages [quantization]: Skipping, unable to determine old version
+[2024-05-19 11:38:20] INFO root fetch - main [MainThread]: End processing [quantization] error
+[2024-05-19 11:38:20] WARNING root fetch - processPackages [nai3api]: Skipping, unable to determine old version
+[2024-05-19 11:38:20] INFO root fetch - main [MainThread]: End processing [nai3api] error
+[2024-05-19 11:38:20] INFO root fetch - processPackages [toughio]: New version: [1.9.2] Old Version: [1.9.1]
+[2024-05-19 11:38:20] INFO root fetch - processPackages [toughio]: Downloading https://files.pythonhosted.org/packages/a6/44/bd7408c25427343605fd572dbd284905dd2d43dd1b0bb508bf615edbeb71/toughio-1.9.1.tar.gz
+[2024-05-19 11:38:21] INFO root fetch - processPackages [altstore-proxy]: Downloading https://files.pythonhosted.org/packages/5c/ae/f812e331a2d1137d9fda3832737cc36e2d8322fd26fb1f04c3602aa62e18/altstore_proxy-1.1.2.tar.gz
+[2024-05-19 11:38:21] INFO root fetch - processPackages [altstore-proxy]: executing diffoscope
+[2024-05-19 11:38:21] INFO root fetch - processPackages [altstore-proxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altstore_proxy-1.1.1.tar.gz tmp/altstore_proxy-1.1.2.tar.gz --markdown 20240519/a/altstore-proxy/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-05-19 11:38:21] INFO root fetch - processPackages [toughio]: Downloading https://files.pythonhosted.org/packages/97/ad/0a16c6eb316dbe8e0eed65f2d0320d89a2777fdcb1b101b5ff7d2369dad3/toughio-1.9.2.tar.gz
+[2024-05-19 11:38:21] INFO root fetch - processPackages [toughio]: executing diffoscope
+[2024-05-19 11:38:21] INFO root fetch - processPackages [toughio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toughio-1.9.1.tar.gz tmp/toughio-1.9.2.tar.gz --markdown 20240519/t/toughio/1.9.1-1.9.2/README.md --exclude *.pyd
+[2024-05-19 11:38:21] INFO root fetch - processPackages [altstore-proxy]: Remove: archive file [/home/abi/fetcher/tmp/altstore_proxy-1.1.1.tar.gz]
+[2024-05-19 11:38:21] INFO root fetch - processPackages [altstore-proxy]: Remove: archive file [/home/abi/fetcher/tmp/altstore_proxy-1.1.2.tar.gz]
+[2024-05-19 11:38:21] INFO root fetch - main [MainThread]: End processing [altstore-proxy]: success
+[2024-05-19 11:38:22] INFO root fetch - processPackages [toughio]: Remove: archive file [/home/abi/fetcher/tmp/toughio-1.9.1.tar.gz]
+[2024-05-19 11:38:22] INFO root fetch - processPackages [toughio]: Remove: archive file [/home/abi/fetcher/tmp/toughio-1.9.2.tar.gz]
+[2024-05-19 11:38:22] INFO root fetch - main [MainThread]: End processing [toughio]: success
+[2024-05-19 11:38:22] INFO root fetch - main [MainThread]: Store serial: [23275153]
