@@ -10038,3 +10038,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 14:10:35] INFO root fetch - processPackages [aiograpi]: Remove: archive file [/home/abi/fetcher/tmp/aiograpi-0.0.3.tar.gz]
 [2024-05-19 14:10:35] INFO root fetch - main [MainThread]: End processing [aiograpi]: success
 [2024-05-19 14:10:35] INFO root fetch - main [MainThread]: Store serial: [23276133]
+[2024-05-19 14:12:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276133]
+[2024-05-19 14:12:44] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-19 14:12:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: instagrapi
+[2024-05-19 14:12:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: outpostcli
+[2024-05-19 14:12:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vgazer
+[2024-05-19 14:12:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: faststream
+[2024-05-19 14:12:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mergemate
+[2024-05-19 14:12:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: saasyflow
+[2024-05-19 14:12:44] INFO root fetch - processPackages [outpostcli]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 14:12:44] INFO root fetch - processPackages [mergemate]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-19 14:12:44] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/7e/e2/114a39eac567286d0418645c0ea24089c48fcbe4cccec6c79191a5cefccf/outpostcli-0.0.8.tar.gz
+[2024-05-19 14:12:44] INFO root fetch - processPackages [instagrapi]: New version: [2.1.2] Old Version: [2.1.1]
+[2024-05-19 14:12:44] WARNING root fetch - processPackages [saasyflow]: Skipping, unable to determine old version
+[2024-05-19 14:12:44] INFO root fetch - main [MainThread]: End processing [saasyflow] error
+[2024-05-19 14:12:44] INFO root fetch - processPackages [mergemate]: Downloading https://files.pythonhosted.org/packages/14/0a/5a9109e350d5ba41771ea8b78a38aa648b1136487cdf95ddac98acac133e/mergemate-0.1.1.tar.gz
+[2024-05-19 14:12:44] INFO root fetch - processPackages [vgazer]: New version: [75] Old Version: [74]
+[2024-05-19 14:12:44] INFO root fetch - processPackages [faststream]: New version: [0.5.7] Old Version: [0.5.6]
+[2024-05-19 14:12:44] INFO root fetch - processPackages [instagrapi]: Downloading https://files.pythonhosted.org/packages/39/cb/da43331c036470ff99908e190afd71debe31d39d0dd7b8681c3e90defd1e/instagrapi-2.1.1.tar.gz
+[2024-05-19 14:12:44] INFO root fetch - processPackages [vgazer]: Downloading https://files.pythonhosted.org/packages/3a/63/ccb2e684ca3ac676d3987458dab33b876cbf96c14c754feceb709e553b53/vgazer-74.tar.gz
+[2024-05-19 14:12:45] INFO root fetch - processPackages [faststream]: Downloading https://files.pythonhosted.org/packages/52/fb/1d51fce89e9caad6d2f7413cbea988ced449ae77767b29db0164590afb1b/faststream-0.5.6.tar.gz
+[2024-05-19 14:12:45] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/df/ab/82b6853cec170d33c2aff19e3a298b0bf56f7ba1b885f6f7d42a10ae43dc/outpostcli-0.0.9.tar.gz
+[2024-05-19 14:12:45] INFO root fetch - processPackages [mergemate]: Downloading https://files.pythonhosted.org/packages/d6/14/3876e78a9e51a56c88163803fd51ccd141e5e54e5cfea428d96d1e0b992c/mergemate-0.1.2.tar.gz
+[2024-05-19 14:12:45] INFO root fetch - processPackages [outpostcli]: executing diffoscope
+[2024-05-19 14:12:45] INFO root fetch - processPackages [outpostcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outpostcli-0.0.8.tar.gz tmp/outpostcli-0.0.9.tar.gz --markdown 20240519/o/outpostcli/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 14:12:45] INFO root fetch - processPackages [mergemate]: executing diffoscope
+[2024-05-19 14:12:45] INFO root fetch - processPackages [mergemate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mergemate-0.1.1.tar.gz tmp/mergemate-0.1.2.tar.gz --markdown 20240519/m/mergemate/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-19 14:12:45] INFO root fetch - processPackages [instagrapi]: Downloading https://files.pythonhosted.org/packages/37/ea/e47e11bc54a564e57c335acaa7375362e98055001c20721723da3a2035a4/instagrapi-2.1.2.tar.gz
+[2024-05-19 14:12:45] INFO root fetch - processPackages [faststream]: Downloading https://files.pythonhosted.org/packages/2b/39/4129ea714c8fee19ca175305a0deeaaca2d4f182f2df1fcebc81e4c7fda6/faststream-0.5.7.tar.gz
+[2024-05-19 14:12:45] INFO root fetch - processPackages [vgazer]: Downloading https://files.pythonhosted.org/packages/98/9a/6b6278c1335c45ac8c1ec0248563e1e8e5d8a179c21da769cfe0c794e5a9/vgazer-75.tar.gz
+[2024-05-19 14:12:45] INFO root fetch - processPackages [instagrapi]: executing diffoscope
+[2024-05-19 14:12:45] INFO root fetch - processPackages [instagrapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/instagrapi-2.1.1.tar.gz tmp/instagrapi-2.1.2.tar.gz --markdown 20240519/i/instagrapi/2.1.1-2.1.2/README.md --exclude *.pyd
+[2024-05-19 14:12:45] INFO root fetch - processPackages [faststream]: executing diffoscope
+[2024-05-19 14:12:45] INFO root fetch - processPackages [faststream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faststream-0.5.6.tar.gz tmp/faststream-0.5.7.tar.gz --markdown 20240519/f/faststream/0.5.6-0.5.7/README.md --exclude *.pyd
+[2024-05-19 14:12:45] INFO root fetch - processPackages [vgazer]: executing diffoscope
+[2024-05-19 14:12:45] INFO root fetch - processPackages [vgazer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vgazer-74.tar.gz tmp/vgazer-75.tar.gz --markdown 20240519/v/vgazer/74-75/README.md --exclude *.pyd
+[2024-05-19 14:12:45] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.8.tar.gz]
+[2024-05-19 14:12:45] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.9.tar.gz]
+[2024-05-19 14:12:45] INFO root fetch - main [MainThread]: End processing [outpostcli]: success
+[2024-05-19 14:12:45] INFO root fetch - processPackages [mergemate]: Remove: archive file [/home/abi/fetcher/tmp/mergemate-0.1.1.tar.gz]
+[2024-05-19 14:12:45] INFO root fetch - processPackages [mergemate]: Remove: archive file [/home/abi/fetcher/tmp/mergemate-0.1.2.tar.gz]
+[2024-05-19 14:12:45] INFO root fetch - main [MainThread]: End processing [mergemate]: success
+[2024-05-19 14:12:46] INFO root fetch - processPackages [instagrapi]: Remove: archive file [/home/abi/fetcher/tmp/instagrapi-2.1.1.tar.gz]
+[2024-05-19 14:12:46] INFO root fetch - processPackages [instagrapi]: Remove: archive file [/home/abi/fetcher/tmp/instagrapi-2.1.2.tar.gz]
+[2024-05-19 14:12:46] INFO root fetch - main [MainThread]: End processing [instagrapi]: success
+[2024-05-19 14:12:46] INFO root fetch - processPackages [vgazer]: Remove: archive file [/home/abi/fetcher/tmp/vgazer-74.tar.gz]
+[2024-05-19 14:12:46] INFO root fetch - processPackages [vgazer]: Remove: archive file [/home/abi/fetcher/tmp/vgazer-75.tar.gz]
+[2024-05-19 14:12:46] INFO root fetch - main [MainThread]: End processing [vgazer]: success
+[2024-05-19 14:12:46] INFO root fetch - processPackages [faststream]: Remove: archive file [/home/abi/fetcher/tmp/faststream-0.5.6.tar.gz]
+[2024-05-19 14:12:46] INFO root fetch - processPackages [faststream]: Remove: archive file [/home/abi/fetcher/tmp/faststream-0.5.7.tar.gz]
+[2024-05-19 14:12:46] INFO root fetch - main [MainThread]: End processing [faststream]: success
+[2024-05-19 14:12:46] INFO root fetch - main [MainThread]: Store serial: [23276152]
