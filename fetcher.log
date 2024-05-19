@@ -5025,3 +5025,9 @@
 [2024-05-19 08:11:17] INFO root fetch - processPackages [donware]: Remove: archive file [/home/abi/fetcher/tmp/donware-0.1.9.tar.gz]
 [2024-05-19 08:11:17] INFO root fetch - main [MainThread]: End processing [donware]: success
 [2024-05-19 08:11:17] INFO root fetch - main [MainThread]: Store serial: [23273721]
+[2024-05-19 08:13:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273721]
+[2024-05-19 08:13:27] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 08:13:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sentry-k8s-libsonnet
+[2024-05-19 08:13:27] WARNING root fetch - processPackages [sentry-k8s-libsonnet]: Skipping, unable to determine old version
+[2024-05-19 08:13:27] INFO root fetch - main [MainThread]: End processing [sentry-k8s-libsonnet] error
+[2024-05-19 08:13:27] INFO root fetch - main [MainThread]: Store serial: [23273731]
