@@ -6905,3 +6905,12 @@
 [2024-05-19 10:28:17] INFO root fetch - processPackages [python-sdk-remote]: Remove: archive file [/home/abi/fetcher/tmp/python_sdk_remote-0.0.99.tar.gz]
 [2024-05-19 10:28:17] INFO root fetch - main [MainThread]: End processing [python-sdk-remote]: success
 [2024-05-19 10:28:17] INFO root fetch - main [MainThread]: Store serial: [23274634]
+[2024-05-19 10:30:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274634]
+[2024-05-19 10:30:25] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 10:30:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: multiviewz
+[2024-05-19 10:30:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aiozoneinfo
+[2024-05-19 10:30:25] WARNING root fetch - processPackages [multiviewz]: Skipping, unable to determine old version
+[2024-05-19 10:30:25] INFO root fetch - main [MainThread]: End processing [multiviewz] error
+[2024-05-19 10:30:25] ERROR root fetch - processPackages [aiozoneinfo]: Unable to get metadata: No such project 'aiozoneinfo'
+[2024-05-19 10:30:25] INFO root fetch - main [MainThread]: End processing [aiozoneinfo] error
+[2024-05-19 10:30:25] INFO root fetch - main [MainThread]: Store serial: [23274643]
