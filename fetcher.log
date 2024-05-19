@@ -14380,3 +14380,75 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 18:40:52] INFO root fetch - processPackages [script-background-music]: Remove: archive file [/home/abi/fetcher/tmp/script-background-music-1.5.0.tar.gz]
 [2024-05-19 18:40:52] INFO root fetch - main [MainThread]: End processing [script-background-music]: success
 [2024-05-19 18:40:52] INFO root fetch - main [MainThread]: Store serial: [23278258]
+[2024-05-19 18:42:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23278258]
+[2024-05-19 18:43:01] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-19 18:43:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lightweight-charts
+[2024-05-19 18:43:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sh1106-framework
+[2024-05-19 18:43:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ivyz
+[2024-05-19 18:43:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: communex
+[2024-05-19 18:43:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: moto
+[2024-05-19 18:43:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: EmLiLetter
+[2024-05-19 18:43:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aq-geometric
+[2024-05-19 18:43:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ffun
+[2024-05-19 18:43:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: data-place
+[2024-05-19 18:43:01] INFO root fetch - processPackages [sh1106-framework]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-19 18:43:01] INFO root fetch - processPackages [data-place]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-05-19 18:43:01] INFO root fetch - processPackages [communex]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-19 18:43:01] INFO root fetch - processPackages [moto]: New version: [5.0.8.dev9] Old Version: [5.0.8.dev8]
+[2024-05-19 18:43:01] WARNING root fetch - processPackages [ivyz]: Skipping, unable to determine old version
+[2024-05-19 18:43:01] INFO root fetch - main [MainThread]: End processing [ivyz] error
+[2024-05-19 18:43:01] INFO root fetch - processPackages [lightweight-charts]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-19 18:43:01] INFO root fetch - processPackages [ffun]: New version: [1.5.2] Old Version: [1.5.1]
+[2024-05-19 18:43:01] WARNING root fetch - processPackages [EmLiLetter]: Skipping, unable to determine old version
+[2024-05-19 18:43:01] INFO root fetch - main [MainThread]: End processing [EmLiLetter] error
+[2024-05-19 18:43:01] INFO root fetch - processPackages [sh1106-framework]: Downloading https://files.pythonhosted.org/packages/45/7a/a4d5a19ec06f4e961291e84cf51c09654d02012a9a77066a2e1884a04e26/sh1106_framework-0.0.2.tar.gz
+[2024-05-19 18:43:01] INFO root fetch - processPackages [aq-geometric]: New version: [2024.5.19.1] Old Version: [2024.5.1.2]
+[2024-05-19 18:43:01] INFO root fetch - processPackages [data-place]: Downloading https://files.pythonhosted.org/packages/19/dd/01725169e9136657e515c87c1d23c032be9b75fcf40bd76033e16b467c44/data-place-0.3.2.tar.gz
+[2024-05-19 18:43:01] INFO root fetch - processPackages [communex]: Downloading https://files.pythonhosted.org/packages/77/67/00051570e40b098c12038ef6aed5be120d14bfafef5d08885df5a9714f91/communex-0.1.8.tar.gz
+[2024-05-19 18:43:01] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/3b/ac/06a0859bde65d51176d1bc211894343ba012b690fa8ca460b05853a4cc62/moto-5.0.8.dev8.tar.gz
+[2024-05-19 18:43:02] INFO root fetch - processPackages [lightweight-charts]: Downloading https://files.pythonhosted.org/packages/89/47/c4ba1db5b863a175467d66e743b117aff7b293975b8c1494abdafb760b45/lightweight_charts-1.0.8.tar.gz
+[2024-05-19 18:43:02] INFO root fetch - processPackages [aq-geometric]: Downloading https://files.pythonhosted.org/packages/33/73/5f2e757df0a8a0afc8f05dcd8cbdba2ea4a97430f9507cdc11a72b95410a/aq_geometric-2024.5.1.2.tar.gz
+[2024-05-19 18:43:02] INFO root fetch - processPackages [ffun]: Downloading https://files.pythonhosted.org/packages/4b/b9/b4c617366690102ace3e28a04b970249336d7055fa81461e05084254721a/ffun-1.5.1.tar.gz
+[2024-05-19 18:43:02] INFO root fetch - processPackages [data-place]: Downloading https://files.pythonhosted.org/packages/61/20/220774a117296d2a274243799a540aa0956f72e6210f9018dd0032b67c56/data-place-0.3.3.tar.gz
+[2024-05-19 18:43:02] INFO root fetch - processPackages [communex]: Downloading https://files.pythonhosted.org/packages/51/79/c7d8079cf08c4dcf6ea1f984e64a67fe00acfd76303d2f7f6159f574d5da/communex-0.1.9.tar.gz
+[2024-05-19 18:43:02] INFO root fetch - processPackages [sh1106-framework]: Downloading https://files.pythonhosted.org/packages/b9/45/f61e98f8b19f7ae3b948c00562f81d6f544c98ef947ef7aa01c2b6823199/sh1106_framework-0.0.3.tar.gz
+[2024-05-19 18:43:02] INFO root fetch - processPackages [data-place]: executing diffoscope
+[2024-05-19 18:43:02] INFO root fetch - processPackages [data-place]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data-place-0.3.2.tar.gz tmp/data-place-0.3.3.tar.gz --markdown 20240519/d/data-place/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-05-19 18:43:02] INFO root fetch - processPackages [sh1106-framework]: executing diffoscope
+[2024-05-19 18:43:02] INFO root fetch - processPackages [sh1106-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sh1106_framework-0.0.2.tar.gz tmp/sh1106_framework-0.0.3.tar.gz --markdown 20240519/s/sh1106-framework/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-19 18:43:02] INFO root fetch - processPackages [communex]: executing diffoscope
+[2024-05-19 18:43:02] INFO root fetch - processPackages [communex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/communex-0.1.8.tar.gz tmp/communex-0.1.9.tar.gz --markdown 20240519/c/communex/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-19 18:43:02] INFO root fetch - processPackages [lightweight-charts]: Downloading https://files.pythonhosted.org/packages/cf/d4/9663fbc09e849ab1b6fd51555de471f4d107dde6cb568043398b7376aeee/lightweight_charts-1.0.9.tar.gz
+[2024-05-19 18:43:02] INFO root fetch - processPackages [aq-geometric]: Downloading https://files.pythonhosted.org/packages/e6/fb/7249d01254b9d37e68424f1c79bfb5e3d9ae8485f1b9b1234f4b5d9f3cce/aq_geometric-2024.5.19.1.tar.gz
+[2024-05-19 18:43:02] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/cd/82/43857467531c1b56b16670bf50e2d4a85619a54c84ae9aaf1d5deccd41ca/moto-5.0.8.dev9.tar.gz
+[2024-05-19 18:43:02] INFO root fetch - processPackages [ffun]: Downloading https://files.pythonhosted.org/packages/7f/37/bbabd95fec98567d55695a6235050cf7368d07092fe2fcd344065bac0690/ffun-1.5.2.tar.gz
+[2024-05-19 18:43:02] INFO root fetch - processPackages [lightweight-charts]: executing diffoscope
+[2024-05-19 18:43:02] INFO root fetch - processPackages [lightweight-charts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightweight_charts-1.0.8.tar.gz tmp/lightweight_charts-1.0.9.tar.gz --markdown 20240519/l/lightweight-charts/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-19 18:43:02] INFO root fetch - processPackages [aq-geometric]: executing diffoscope
+[2024-05-19 18:43:02] INFO root fetch - processPackages [aq-geometric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aq_geometric-2024.5.1.2.tar.gz tmp/aq_geometric-2024.5.19.1.tar.gz --markdown 20240519/a/aq-geometric/2024.5.1.2-2024.5.19.1/README.md --exclude *.pyd
+[2024-05-19 18:43:02] INFO root fetch - processPackages [ffun]: executing diffoscope
+[2024-05-19 18:43:02] INFO root fetch - processPackages [ffun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ffun-1.5.1.tar.gz tmp/ffun-1.5.2.tar.gz --markdown 20240519/f/ffun/1.5.1-1.5.2/README.md --exclude *.pyd
+[2024-05-19 18:43:02] INFO root fetch - processPackages [moto]: executing diffoscope
+[2024-05-19 18:43:02] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-5.0.8.dev8.tar.gz tmp/moto-5.0.8.dev9.tar.gz --markdown 20240519/m/moto/5.0.8.dev8-5.0.8.dev9/README.md --exclude *.pyd
+[2024-05-19 18:43:03] INFO root fetch - processPackages [sh1106-framework]: Remove: archive file [/home/abi/fetcher/tmp/sh1106_framework-0.0.2.tar.gz]
+[2024-05-19 18:43:03] INFO root fetch - processPackages [sh1106-framework]: Remove: archive file [/home/abi/fetcher/tmp/sh1106_framework-0.0.3.tar.gz]
+[2024-05-19 18:43:03] INFO root fetch - main [MainThread]: End processing [sh1106-framework]: success
+[2024-05-19 18:43:03] INFO root fetch - processPackages [communex]: Remove: archive file [/home/abi/fetcher/tmp/communex-0.1.8.tar.gz]
+[2024-05-19 18:43:03] INFO root fetch - processPackages [communex]: Remove: archive file [/home/abi/fetcher/tmp/communex-0.1.9.tar.gz]
+[2024-05-19 18:43:03] INFO root fetch - main [MainThread]: End processing [communex]: success
+[2024-05-19 18:43:03] INFO root fetch - processPackages [data-place]: Remove: archive file [/home/abi/fetcher/tmp/data-place-0.3.2.tar.gz]
+[2024-05-19 18:43:03] INFO root fetch - processPackages [data-place]: Remove: archive file [/home/abi/fetcher/tmp/data-place-0.3.3.tar.gz]
+[2024-05-19 18:43:03] INFO root fetch - main [MainThread]: End processing [data-place]: success
+[2024-05-19 18:43:03] INFO root fetch - processPackages [lightweight-charts]: Remove: archive file [/home/abi/fetcher/tmp/lightweight_charts-1.0.8.tar.gz]
+[2024-05-19 18:43:03] INFO root fetch - processPackages [lightweight-charts]: Remove: archive file [/home/abi/fetcher/tmp/lightweight_charts-1.0.9.tar.gz]
+[2024-05-19 18:43:03] INFO root fetch - main [MainThread]: End processing [lightweight-charts]: success
+[2024-05-19 18:43:03] INFO root fetch - processPackages [aq-geometric]: Remove: archive file [/home/abi/fetcher/tmp/aq_geometric-2024.5.1.2.tar.gz]
+[2024-05-19 18:43:03] INFO root fetch - processPackages [aq-geometric]: Remove: archive file [/home/abi/fetcher/tmp/aq_geometric-2024.5.19.1.tar.gz]
+[2024-05-19 18:43:03] INFO root fetch - main [MainThread]: End processing [aq-geometric]: success
+[2024-05-19 18:43:03] INFO root fetch - processPackages [ffun]: Remove: archive file [/home/abi/fetcher/tmp/ffun-1.5.1.tar.gz]
+[2024-05-19 18:43:03] INFO root fetch - processPackages [ffun]: Remove: archive file [/home/abi/fetcher/tmp/ffun-1.5.2.tar.gz]
+[2024-05-19 18:43:03] INFO root fetch - main [MainThread]: End processing [ffun]: success
+[2024-05-19 18:43:14] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.8.dev8.tar.gz]
+[2024-05-19 18:43:14] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.8.dev9.tar.gz]
+[2024-05-19 18:43:14] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2024-05-19 18:43:14] INFO root fetch - main [MainThread]: Store serial: [23278286]
