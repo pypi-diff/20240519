@@ -12988,3 +12988,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 17:11:12] INFO root fetch - processPackages [agenta]: Remove: archive file [/home/abi/fetcher/tmp/agenta-0.9.0.tar.gz]
 [2024-05-19 17:11:12] INFO root fetch - main [MainThread]: End processing [agenta]: success
 [2024-05-19 17:11:12] INFO root fetch - main [MainThread]: Store serial: [23277556]
+[2024-05-19 17:13:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277556]
+[2024-05-19 17:13:21] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 17:13:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fleekapi
+[2024-05-19 17:13:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: QtHarmony
+[2024-05-19 17:13:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: funread
+[2024-05-19 17:13:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: webscout
+[2024-05-19 17:13:21] INFO root fetch - processPackages [fleekapi]: New version: [0.1.241] Old Version: [0.1.24]
+[2024-05-19 17:13:21] INFO root fetch - processPackages [fleekapi]: Downloading https://files.pythonhosted.org/packages/2b/73/5ee50f9d94505122bf5942ee7fa020c15dda2ab8cf9dca9d7b2e782f5a5a/fleekapi-0.1.24.tar.gz
+[2024-05-19 17:13:21] INFO root fetch - processPackages [QtHarmony]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-05-19 17:13:21] INFO root fetch - processPackages [funread]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-05-19 17:13:21] INFO root fetch - processPackages [webscout]: New version: [2.7] Old Version: [2.6]
+[2024-05-19 17:13:21] INFO root fetch - processPackages [funread]: Downloading https://files.pythonhosted.org/packages/59/52/fdf969b3e9a5973d1fbcb899f509b88b33136ef855d9cd8d1b4a3cb2ccc7/funread-0.5.8-py3-none-any.whl
+[2024-05-19 17:13:21] INFO root fetch - processPackages [QtHarmony]: Downloading https://files.pythonhosted.org/packages/dd/e4/55eb3e8351e89c3e97934858829f6aba191b6dace16db3639c4615e4ea10/qtharmony-0.3.0.tar.gz
+[2024-05-19 17:13:21] INFO root fetch - processPackages [webscout]: Downloading https://files.pythonhosted.org/packages/2f/26/c11086121aadbcb348a247fd70af0f79f7cdc1544bd853911a951595c5ac/webscout-2.6.tar.gz
+[2024-05-19 17:13:21] INFO root fetch - processPackages [fleekapi]: Downloading https://files.pythonhosted.org/packages/95/56/0878b07add3e454548e64f4607177aa75fb2014e33b1a10f774344bf4f7c/fleekapi-0.1.241-py2.py3-none-any.whl
+[2024-05-19 17:13:21] INFO root fetch - processPackages [fleekapi]: executing diffoscope
+[2024-05-19 17:13:21] INFO root fetch - processPackages [fleekapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fleekapi-0.1.24.tar.gz tmp/fleekapi-0.1.241-py2.py3-none-any.whl.zip --markdown 20240519/f/fleekapi/0.1.24-0.1.241/README.md --exclude *.pyd
+[2024-05-19 17:13:21] INFO root fetch - processPackages [funread]: Downloading https://files.pythonhosted.org/packages/f0/76/53e18f8f375f24948c9d218296c2612cbfffe77f1410d9d22be9cfa54ba7/funread-0.5.9-py3-none-any.whl
+[2024-05-19 17:13:22] INFO root fetch - processPackages [QtHarmony]: Downloading https://files.pythonhosted.org/packages/d6/ff/0bb4e2d7314513bf7af252d0ff93ab303c890866de6d10be742e9751cf27/qtharmony-0.3.1.tar.gz
+[2024-05-19 17:13:22] INFO root fetch - processPackages [funread]: executing diffoscope
+[2024-05-19 17:13:22] INFO root fetch - processPackages [funread]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funread-0.5.8-py3-none-any.whl.zip tmp/funread-0.5.9-py3-none-any.whl.zip --markdown 20240519/f/funread/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-05-19 17:13:22] INFO root fetch - processPackages [webscout]: Downloading https://files.pythonhosted.org/packages/92/a2/1aa7e60e80f18c4829668aba327b2b05bcc52e28275dd6d809fa76bf9778/webscout-2.7.tar.gz
+[2024-05-19 17:13:22] INFO root fetch - processPackages [QtHarmony]: executing diffoscope
+[2024-05-19 17:13:22] INFO root fetch - processPackages [QtHarmony]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qtharmony-0.3.0.tar.gz tmp/qtharmony-0.3.1.tar.gz --markdown 20240519/Q/QtHarmony/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-05-19 17:13:22] INFO root fetch - processPackages [webscout]: executing diffoscope
+[2024-05-19 17:13:22] INFO root fetch - processPackages [webscout]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webscout-2.6.tar.gz tmp/webscout-2.7.tar.gz --markdown 20240519/w/webscout/2.6-2.7/README.md --exclude *.pyd
+[2024-05-19 17:13:22] INFO root fetch - processPackages [fleekapi]: Remove: archive file [/home/abi/fetcher/tmp/fleekapi-0.1.24.tar.gz]
+[2024-05-19 17:13:22] INFO root fetch - processPackages [fleekapi]: Remove: archive file [/home/abi/fetcher/tmp/fleekapi-0.1.241-py2.py3-none-any.whl.zip]
+[2024-05-19 17:13:22] INFO root fetch - main [MainThread]: End processing [fleekapi]: success
+[2024-05-19 17:13:22] INFO root fetch - processPackages [funread]: Remove: archive file [/home/abi/fetcher/tmp/funread-0.5.8-py3-none-any.whl.zip]
+[2024-05-19 17:13:22] INFO root fetch - processPackages [funread]: Remove: archive file [/home/abi/fetcher/tmp/funread-0.5.9-py3-none-any.whl.zip]
+[2024-05-19 17:13:22] INFO root fetch - main [MainThread]: End processing [funread]: success
+[2024-05-19 17:13:22] INFO root fetch - processPackages [QtHarmony]: Remove: archive file [/home/abi/fetcher/tmp/qtharmony-0.3.0.tar.gz]
+[2024-05-19 17:13:22] INFO root fetch - processPackages [QtHarmony]: Remove: archive file [/home/abi/fetcher/tmp/qtharmony-0.3.1.tar.gz]
+[2024-05-19 17:13:22] INFO root fetch - main [MainThread]: End processing [QtHarmony]: success
+[2024-05-19 17:13:23] INFO root fetch - processPackages [webscout]: Remove: archive file [/home/abi/fetcher/tmp/webscout-2.6.tar.gz]
+[2024-05-19 17:13:23] INFO root fetch - processPackages [webscout]: Remove: archive file [/home/abi/fetcher/tmp/webscout-2.7.tar.gz]
+[2024-05-19 17:13:23] INFO root fetch - main [MainThread]: End processing [webscout]: success
+[2024-05-19 17:13:23] INFO root fetch - main [MainThread]: Store serial: [23277569]
