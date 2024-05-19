@@ -11417,3 +11417,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 15:38:18] INFO root fetch - processPackages [rio-ui]: Remove: archive file [/home/abi/fetcher/tmp/rio_ui-0.7.1.tar.gz]
 [2024-05-19 15:38:18] INFO root fetch - main [MainThread]: End processing [rio-ui]: success
 [2024-05-19 15:38:18] INFO root fetch - main [MainThread]: Store serial: [23276873]
+[2024-05-19 15:40:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276873]
+[2024-05-19 15:40:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 15:40:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yeref
+[2024-05-19 15:40:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MailMagician
+[2024-05-19 15:40:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spaceone-inventory
+[2024-05-19 15:40:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flatpack
+[2024-05-19 15:40:27] INFO root fetch - processPackages [MailMagician]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-05-19 15:40:27] INFO root fetch - processPackages [spaceone-inventory]: New version: [2.0.dev99] Old Version: [2.0.dev98]
+[2024-05-19 15:40:27] INFO root fetch - processPackages [flatpack]: New version: [3.4.9] Old Version: [3.4.8]
+[2024-05-19 15:40:27] INFO root fetch - processPackages [spaceone-inventory]: Downloading https://files.pythonhosted.org/packages/2b/23/73e091142fbd007706604f94cc95718e79d9259d998aa9dd424fc7cc6f7f/spaceone-inventory-2.0.dev98.tar.gz
+[2024-05-19 15:40:27] INFO root fetch - processPackages [MailMagician]: Downloading https://files.pythonhosted.org/packages/9c/78/580fdeb90bf34919517d64e69a7ae87cb39a367027f6c33879317d9d5ae6/MailMagician-0.5.0.tar.gz
+[2024-05-19 15:40:27] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-19 15:40:27] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/92/5a/46a0817bd1cfcbeb0f041626a2cc2b28a97a17caa6609495cfb355a5d90e/flatpack-3.4.8.tar.gz
+[2024-05-19 15:40:27] INFO root fetch - processPackages [spaceone-inventory]: Downloading https://files.pythonhosted.org/packages/e7/30/f1229bb9f69283d6576804b473d6fe73ff3118fb5543c89d48b18f899ca2/spaceone-inventory-2.0.dev99.tar.gz
+[2024-05-19 15:40:27] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/29/b6/9545d80064161872f90e25faa6bb7dc31698e88762b3d442b5fb491967fd/flatpack-3.4.9.tar.gz
+[2024-05-19 15:40:27] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-19 15:40:27] INFO root fetch - processPackages [MailMagician]: Downloading https://files.pythonhosted.org/packages/b9/c4/b7d5f3af0865be6e7e82d4ad7a3a050564b6f2710ea559825a1b4be7285a/MailMagician-0.6.0.tar.gz
+[2024-05-19 15:40:27] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-05-19 15:40:27] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.4.8.tar.gz tmp/flatpack-3.4.9.tar.gz --markdown 20240519/f/flatpack/3.4.8-3.4.9/README.md --exclude *.pyd
+[2024-05-19 15:40:27] INFO root fetch - processPackages [spaceone-inventory]: executing diffoscope
+[2024-05-19 15:40:28] INFO root fetch - processPackages [spaceone-inventory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spaceone-inventory-2.0.dev98.tar.gz tmp/spaceone-inventory-2.0.dev99.tar.gz --markdown 20240519/s/spaceone-inventory/2.0.dev98-2.0.dev99/README.md --exclude *.pyd
+[2024-05-19 15:40:28] INFO root fetch - processPackages [MailMagician]: executing diffoscope
+[2024-05-19 15:40:28] INFO root fetch - processPackages [MailMagician]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MailMagician-0.5.0.tar.gz tmp/MailMagician-0.6.0.tar.gz --markdown 20240519/M/MailMagician/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-05-19 15:40:28] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-19 15:40:28] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-19 15:40:28] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240519/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-19 15:40:28] INFO root fetch - processPackages [MailMagician]: Remove: archive file [/home/abi/fetcher/tmp/MailMagician-0.5.0.tar.gz]
+[2024-05-19 15:40:28] INFO root fetch - processPackages [MailMagician]: Remove: archive file [/home/abi/fetcher/tmp/MailMagician-0.6.0.tar.gz]
+[2024-05-19 15:40:28] INFO root fetch - main [MainThread]: End processing [MailMagician]: success
+[2024-05-19 15:40:28] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.8.tar.gz]
+[2024-05-19 15:40:28] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.9.tar.gz]
+[2024-05-19 15:40:28] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-05-19 15:40:28] INFO root fetch - processPackages [spaceone-inventory]: Remove: archive file [/home/abi/fetcher/tmp/spaceone-inventory-2.0.dev98.tar.gz]
+[2024-05-19 15:40:28] INFO root fetch - processPackages [spaceone-inventory]: Remove: archive file [/home/abi/fetcher/tmp/spaceone-inventory-2.0.dev99.tar.gz]
+[2024-05-19 15:40:28] INFO root fetch - main [MainThread]: End processing [spaceone-inventory]: success
+[2024-05-19 15:40:29] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-19 15:40:29] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-19 15:40:29] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-19 15:40:29] INFO root fetch - main [MainThread]: Store serial: [23276886]
