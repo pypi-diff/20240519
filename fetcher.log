@@ -17788,3 +17788,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 21:56:01] INFO root fetch - processPackages [Crackerjack]: Remove: archive file [/home/abi/fetcher/tmp/crackerjack-0.7.9.tar.gz]
 [2024-05-19 21:56:01] INFO root fetch - main [MainThread]: End processing [Crackerjack]: success
 [2024-05-19 21:56:01] INFO root fetch - main [MainThread]: Store serial: [23279856]
+[2024-05-19 21:58:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279856]
+[2024-05-19 21:58:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 21:58:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pluralize
+[2024-05-19 21:58:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: max-random-baseline
+[2024-05-19 21:58:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: symbolipy
+[2024-05-19 21:58:09] INFO root fetch - processPackages [pluralize]: New version: [20240519.1] Old Version: [20240515.1]
+[2024-05-19 21:58:10] INFO root fetch - processPackages [pluralize]: Downloading https://files.pythonhosted.org/packages/38/02/4abf55e8e9a2fe99645f7fdc0280e8f3999f12d7fbf2f3c66610aa19cd73/pluralize-20240515.1.tar.gz
+[2024-05-19 21:58:10] WARNING root fetch - processPackages [symbolipy]: Skipping, unable to determine old version
+[2024-05-19 21:58:10] INFO root fetch - main [MainThread]: End processing [symbolipy] error
+[2024-05-19 21:58:10] WARNING root fetch - processPackages [max-random-baseline]: Skipping, unable to determine old version
+[2024-05-19 21:58:10] INFO root fetch - main [MainThread]: End processing [max-random-baseline] error
+[2024-05-19 21:58:10] INFO root fetch - processPackages [pluralize]: Downloading https://files.pythonhosted.org/packages/d1/42/cd68a0fc4d6fa2f9fed11c1830d9b0bd6a405a4ffab9cfd6fe123e217fb9/pluralize-20240519.1.tar.gz
+[2024-05-19 21:58:10] INFO root fetch - processPackages [pluralize]: executing diffoscope
+[2024-05-19 21:58:10] INFO root fetch - processPackages [pluralize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pluralize-20240515.1.tar.gz tmp/pluralize-20240519.1.tar.gz --markdown 20240519/p/pluralize/20240515.1-20240519.1/README.md --exclude *.pyd
+[2024-05-19 21:58:10] INFO root fetch - processPackages [pluralize]: Remove: archive file [/home/abi/fetcher/tmp/pluralize-20240515.1.tar.gz]
+[2024-05-19 21:58:10] INFO root fetch - processPackages [pluralize]: Remove: archive file [/home/abi/fetcher/tmp/pluralize-20240519.1.tar.gz]
+[2024-05-19 21:58:10] INFO root fetch - main [MainThread]: End processing [pluralize]: success
+[2024-05-19 21:58:10] INFO root fetch - main [MainThread]: Store serial: [23279870]
