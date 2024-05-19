@@ -14452,3 +14452,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 18:43:14] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.8.dev9.tar.gz]
 [2024-05-19 18:43:14] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2024-05-19 18:43:14] INFO root fetch - main [MainThread]: Store serial: [23278286]
+[2024-05-19 18:45:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23278286]
+[2024-05-19 18:45:23] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 18:45:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fast-multi-regex
+[2024-05-19 18:45:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yeref
+[2024-05-19 18:45:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: thingsvision
+[2024-05-19 18:45:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: live-cells-py
+[2024-05-19 18:45:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jaims-py
+[2024-05-19 18:45:23] INFO root fetch - processPackages [jaims-py]: New version: [2.0.0b3] Old Version: [2.0.0b2]
+[2024-05-19 18:45:23] INFO root fetch - processPackages [fast-multi-regex]: New version: [0.8] Old Version: [0.7]
+[2024-05-19 18:45:23] WARNING root fetch - processPackages [live-cells-py]: Skipping, unable to determine old version
+[2024-05-19 18:45:23] INFO root fetch - main [MainThread]: End processing [live-cells-py] error
+[2024-05-19 18:45:23] INFO root fetch - processPackages [jaims-py]: Downloading https://files.pythonhosted.org/packages/ca/70/f3273dc7b95f23230841db7d759f9bacf9e88177afe3f2ee4cc26a9942f7/jaims_py-2.0.0b2.tar.gz
+[2024-05-19 18:45:23] INFO root fetch - processPackages [thingsvision]: New version: [2.6.7] Old Version: [2.6.6]
+[2024-05-19 18:45:23] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-19 18:45:23] INFO root fetch - processPackages [fast-multi-regex]: Downloading https://files.pythonhosted.org/packages/33/3e/bc41e29f30a951cd9ba0d623af1cc163252d33020abf03a9fb29ad52ba31/fast_multi_regex-0.7.tar.gz
+[2024-05-19 18:45:23] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-19 18:45:23] INFO root fetch - processPackages [thingsvision]: Downloading https://files.pythonhosted.org/packages/03/e4/c211234177af5e1a933a6314cc3693982a71a59b4fad1995ebbc747b9c15/thingsvision-2.6.6.tar.gz
+[2024-05-19 18:45:23] INFO root fetch - processPackages [jaims-py]: Downloading https://files.pythonhosted.org/packages/44/18/7065935dc0a34e0172216b277196ae4475a8eedae32eeae521436fa415c5/jaims_py-2.0.0b3.tar.gz
+[2024-05-19 18:45:23] INFO root fetch - processPackages [fast-multi-regex]: Downloading https://files.pythonhosted.org/packages/77/60/18107bb203fe25038d06e2031e5363af72108ddf2031504aa1330a907b00/fast_multi_regex-0.8.tar.gz
+[2024-05-19 18:45:23] INFO root fetch - processPackages [jaims-py]: executing diffoscope
+[2024-05-19 18:45:23] INFO root fetch - processPackages [jaims-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaims_py-2.0.0b2.tar.gz tmp/jaims_py-2.0.0b3.tar.gz --markdown 20240519/j/jaims-py/2.0.0b2-2.0.0b3/README.md --exclude *.pyd
+[2024-05-19 18:45:24] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-19 18:45:24] INFO root fetch - processPackages [thingsvision]: Downloading https://files.pythonhosted.org/packages/8a/02/9bd6d2534a16e6fe3cadc346df27fbdcbea87489b9f5516b6d84a00c3649/thingsvision-2.6.7.tar.gz
+[2024-05-19 18:45:24] INFO root fetch - processPackages [fast-multi-regex]: executing diffoscope
+[2024-05-19 18:45:24] INFO root fetch - processPackages [fast-multi-regex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fast_multi_regex-0.7.tar.gz tmp/fast_multi_regex-0.8.tar.gz --markdown 20240519/f/fast-multi-regex/0.7-0.8/README.md --exclude *.pyd
+[2024-05-19 18:45:24] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-19 18:45:24] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240519/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-19 18:45:24] INFO root fetch - processPackages [thingsvision]: executing diffoscope
+[2024-05-19 18:45:24] INFO root fetch - processPackages [thingsvision]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thingsvision-2.6.6.tar.gz tmp/thingsvision-2.6.7.tar.gz --markdown 20240519/t/thingsvision/2.6.6-2.6.7/README.md --exclude *.pyd
+[2024-05-19 18:45:24] INFO root fetch - processPackages [jaims-py]: Remove: archive file [/home/abi/fetcher/tmp/jaims_py-2.0.0b2.tar.gz]
+[2024-05-19 18:45:24] INFO root fetch - processPackages [jaims-py]: Remove: archive file [/home/abi/fetcher/tmp/jaims_py-2.0.0b3.tar.gz]
+[2024-05-19 18:45:24] INFO root fetch - main [MainThread]: End processing [jaims-py]: success
+[2024-05-19 18:45:24] INFO root fetch - processPackages [fast-multi-regex]: Remove: archive file [/home/abi/fetcher/tmp/fast_multi_regex-0.7.tar.gz]
+[2024-05-19 18:45:24] INFO root fetch - processPackages [fast-multi-regex]: Remove: archive file [/home/abi/fetcher/tmp/fast_multi_regex-0.8.tar.gz]
+[2024-05-19 18:45:24] INFO root fetch - main [MainThread]: End processing [fast-multi-regex]: success
+[2024-05-19 18:45:24] INFO root fetch - processPackages [thingsvision]: Remove: archive file [/home/abi/fetcher/tmp/thingsvision-2.6.6.tar.gz]
+[2024-05-19 18:45:24] INFO root fetch - processPackages [thingsvision]: Remove: archive file [/home/abi/fetcher/tmp/thingsvision-2.6.7.tar.gz]
+[2024-05-19 18:45:24] INFO root fetch - main [MainThread]: End processing [thingsvision]: success
+[2024-05-19 18:45:25] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-19 18:45:25] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-19 18:45:25] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-19 18:45:25] INFO root fetch - main [MainThread]: Store serial: [23278303]
