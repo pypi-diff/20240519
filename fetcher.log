@@ -2258,3 +2258,27 @@
 [2024-05-19 03:54:11] INFO root fetch - processPackages [socketwrench]: Remove: archive file [/home/abi/fetcher/tmp/socketwrench-2.0.0.tar.gz]
 [2024-05-19 03:54:11] INFO root fetch - main [MainThread]: End processing [socketwrench]: success
 [2024-05-19 03:54:11] INFO root fetch - main [MainThread]: Store serial: [23272542]
+[2024-05-19 03:56:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272542]
+[2024-05-19 03:56:20] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 03:56:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gizzernz
+[2024-05-19 03:56:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: watchtower-pipeline
+[2024-05-19 03:56:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ipyslides
+[2024-05-19 03:56:21] INFO root fetch - processPackages [watchtower-pipeline]: New version: [1.0.0b1] Old Version: [1.0.0b0]
+[2024-05-19 03:56:21] INFO root fetch - processPackages [ipyslides]: New version: [3.9.0] Old Version: [3.8.9]
+[2024-05-19 03:56:21] INFO root fetch - processPackages [watchtower-pipeline]: Downloading https://files.pythonhosted.org/packages/83/f5/55f3e65f73cdd71dbd52300a6abadc893ecf908c93daa22ff2ce4a170ed9/watchtower-pipeline-1.0.0b0.tar.gz
+[2024-05-19 03:56:21] WARNING root fetch - processPackages [gizzernz]: Skipping, unable to determine old version
+[2024-05-19 03:56:21] INFO root fetch - main [MainThread]: End processing [gizzernz] error
+[2024-05-19 03:56:21] INFO root fetch - processPackages [ipyslides]: Downloading https://files.pythonhosted.org/packages/64/20/a5419f436b2a9f1bd1762326590cde737225f6ada9150514c3abd9c98417/ipyslides-3.8.9.tar.gz
+[2024-05-19 03:56:21] INFO root fetch - processPackages [watchtower-pipeline]: Downloading https://files.pythonhosted.org/packages/41/34/03d2f4de080349bba0bc01afc4b071109521b4cf17665f0e18803126ca95/watchtower_pipeline-1.0.0b1.tar.gz
+[2024-05-19 03:56:21] INFO root fetch - processPackages [ipyslides]: Downloading https://files.pythonhosted.org/packages/d8/1b/4c99d86aa1e3e7d99151b4f1603da7ba1b8c1ce5a3c613bb90dcb6600da9/ipyslides-3.9.0.tar.gz
+[2024-05-19 03:56:21] INFO root fetch - processPackages [watchtower-pipeline]: executing diffoscope
+[2024-05-19 03:56:21] INFO root fetch - processPackages [watchtower-pipeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/watchtower-pipeline-1.0.0b0.tar.gz tmp/watchtower_pipeline-1.0.0b1.tar.gz --markdown 20240519/w/watchtower-pipeline/1.0.0b0-1.0.0b1/README.md --exclude *.pyd
+[2024-05-19 03:56:21] INFO root fetch - processPackages [ipyslides]: executing diffoscope
+[2024-05-19 03:56:21] INFO root fetch - processPackages [ipyslides]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipyslides-3.8.9.tar.gz tmp/ipyslides-3.9.0.tar.gz --markdown 20240519/i/ipyslides/3.8.9-3.9.0/README.md --exclude *.pyd
+[2024-05-19 03:56:22] INFO root fetch - processPackages [ipyslides]: Remove: archive file [/home/abi/fetcher/tmp/ipyslides-3.8.9.tar.gz]
+[2024-05-19 03:56:22] INFO root fetch - processPackages [ipyslides]: Remove: archive file [/home/abi/fetcher/tmp/ipyslides-3.9.0.tar.gz]
+[2024-05-19 03:56:22] INFO root fetch - main [MainThread]: End processing [ipyslides]: success
+[2024-05-19 03:56:28] INFO root fetch - processPackages [watchtower-pipeline]: Remove: archive file [/home/abi/fetcher/tmp/watchtower-pipeline-1.0.0b0.tar.gz]
+[2024-05-19 03:56:28] INFO root fetch - processPackages [watchtower-pipeline]: Remove: archive file [/home/abi/fetcher/tmp/watchtower_pipeline-1.0.0b1.tar.gz]
+[2024-05-19 03:56:28] INFO root fetch - main [MainThread]: End processing [watchtower-pipeline]: success
+[2024-05-19 03:56:28] INFO root fetch - main [MainThread]: Store serial: [23272552]
