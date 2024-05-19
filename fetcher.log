@@ -9786,3 +9786,32 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 13:53:18] INFO root fetch - processPackages [nonebot-plugin-bf1marneserverlist]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_bf1marneserverlist-0.1.8.tar.gz]
 [2024-05-19 13:53:18] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-bf1marneserverlist]: success
 [2024-05-19 13:53:18] INFO root fetch - main [MainThread]: Store serial: [23276032]
+[2024-05-19 13:55:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276032]
+[2024-05-19 13:55:26] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 13:55:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-mypower
+[2024-05-19 13:55:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: floozyz
+[2024-05-19 13:55:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bigdl-core-xe-21
+[2024-05-19 13:55:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nonebot-plugin-nai3-bot
+[2024-05-19 13:55:26] INFO root fetch - processPackages [nonebot-plugin-nai3-bot]: New version: [1.0.0] Old Version: [0.0.3]
+[2024-05-19 13:55:26] WARNING root fetch - processPackages [floozyz]: Skipping, unable to determine old version
+[2024-05-19 13:55:26] INFO root fetch - processPackages [nonebot-plugin-mypower]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-19 13:55:26] INFO root fetch - main [MainThread]: End processing [floozyz] error
+[2024-05-19 13:55:26] INFO root fetch - processPackages [bigdl-core-xe-21]: New version: [2.5.0b20240519] Old Version: [2.5.0b20240518]
+[2024-05-19 13:55:26] INFO root fetch - processPackages [nonebot-plugin-nai3-bot]: Downloading https://files.pythonhosted.org/packages/b8/36/4061223370b4502a16e5166fc6f0437abd5f93fdf30637ad0a39845951f6/nonebot_plugin_nai3_bot-0.0.3.tar.gz
+[2024-05-19 13:55:26] INFO root fetch - processPackages [nonebot-plugin-mypower]: Downloading https://files.pythonhosted.org/packages/09/a1/f435d9ae7db6441048097ef105f3d94a84f972d299f41183bd8474b63967/nonebot_plugin_mypower-0.1.5.tar.gz
+[2024-05-19 13:55:27] INFO root fetch - processPackages [nonebot-plugin-nai3-bot]: Downloading https://files.pythonhosted.org/packages/bc/13/112fcf7e2ccda5b3afe888720e02cd59564cb56f4b8fe0fba82c06781849/nonebot_plugin_nai3_bot-1.0.0.tar.gz
+[2024-05-19 13:55:27] INFO root fetch - processPackages [bigdl-core-xe-21]: Downloading https://files.pythonhosted.org/packages/1f/15/ac7ec48086fa367f51b435075cba9b43de88b9137287a93609757612c579/bigdl_core_xe_21-2.5.0b20240518-cp39-cp39-win_amd64.whl
+[2024-05-19 13:55:27] INFO root fetch - processPackages [nonebot-plugin-nai3-bot]: executing diffoscope
+[2024-05-19 13:55:27] INFO root fetch - processPackages [nonebot-plugin-nai3-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_nai3_bot-0.0.3.tar.gz tmp/nonebot_plugin_nai3_bot-1.0.0.tar.gz --markdown 20240519/n/nonebot-plugin-nai3-bot/0.0.3-1.0.0/README.md --exclude *.pyd
+[2024-05-19 13:55:27] WARNING root fetch - processPackages [bigdl-core-xe-21]: Skipping package: exceeds size limit 33869856>=10485760
+[2024-05-19 13:55:27] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-21] error
+[2024-05-19 13:55:27] INFO root fetch - processPackages [nonebot-plugin-nai3-bot]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_nai3_bot-0.0.3.tar.gz]
+[2024-05-19 13:55:27] INFO root fetch - processPackages [nonebot-plugin-nai3-bot]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_nai3_bot-1.0.0.tar.gz]
+[2024-05-19 13:55:27] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-nai3-bot]: success
+[2024-05-19 13:55:28] INFO root fetch - processPackages [nonebot-plugin-mypower]: Downloading https://files.pythonhosted.org/packages/3f/69/9d24df8437cf98d0059f88b3a3c7594df4feaaa519906a8842694476eddc/nonebot_plugin_mypower-0.1.6.tar.gz
+[2024-05-19 13:55:28] INFO root fetch - processPackages [nonebot-plugin-mypower]: executing diffoscope
+[2024-05-19 13:55:28] INFO root fetch - processPackages [nonebot-plugin-mypower]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_mypower-0.1.5.tar.gz tmp/nonebot_plugin_mypower-0.1.6.tar.gz --markdown 20240519/n/nonebot-plugin-mypower/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-19 13:55:29] INFO root fetch - processPackages [nonebot-plugin-mypower]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_mypower-0.1.5.tar.gz]
+[2024-05-19 13:55:29] INFO root fetch - processPackages [nonebot-plugin-mypower]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_mypower-0.1.6.tar.gz]
+[2024-05-19 13:55:29] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-mypower]: success
+[2024-05-19 13:55:29] INFO root fetch - main [MainThread]: Store serial: [23276044]
