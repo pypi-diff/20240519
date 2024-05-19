@@ -10528,3 +10528,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 14:39:59] INFO root fetch - processPackages [action-items-local]: Remove: archive file [/home/abi/fetcher/tmp/action_items_local-0.0.8.tar.gz]
 [2024-05-19 14:39:59] INFO root fetch - main [MainThread]: End processing [action-items-local]: success
 [2024-05-19 14:39:59] INFO root fetch - main [MainThread]: Store serial: [23276344]
+[2024-05-19 14:42:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276344]
+[2024-05-19 14:42:07] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 14:42:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: datiscaz
+[2024-05-19 14:42:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bigdl-llm
+[2024-05-19 14:42:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: contact-notes-local
+[2024-05-19 14:42:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: py-alpaca-api
+[2024-05-19 14:42:07] INFO root fetch - processPackages [py-alpaca-api]: New version: [0.4.4] Old Version: [0.4.0]
+[2024-05-19 14:42:07] INFO root fetch - processPackages [py-alpaca-api]: Downloading https://files.pythonhosted.org/packages/cc/2d/6fea6da3d43ab5573d7d23fc3a6b4ba98bbf62c1492f891bfdbc22b1b9f0/py_alpaca_api-0.4.0.tar.gz
+[2024-05-19 14:42:07] WARNING root fetch - processPackages [datiscaz]: Skipping, unable to determine old version
+[2024-05-19 14:42:07] INFO root fetch - main [MainThread]: End processing [datiscaz] error
+[2024-05-19 14:42:07] INFO root fetch - processPackages [contact-notes-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 14:42:07] INFO root fetch - processPackages [bigdl-llm]: New version: [2.5.0b20240519] Old Version: [2.5.0b20240518]
+[2024-05-19 14:42:08] INFO root fetch - processPackages [py-alpaca-api]: Downloading https://files.pythonhosted.org/packages/7d/99/edc1728807fef4ef44090313ddb003e2170c6ddd4e92b76119500b2b0f3a/py_alpaca_api-0.4.4.tar.gz
+[2024-05-19 14:42:08] INFO root fetch - processPackages [contact-notes-local]: Downloading https://files.pythonhosted.org/packages/94/02/401f72b4bc3a22137e39e519a300db91b6d7f6f995ff3fdd5266dd81540c/contact-notes-local-0.0.8.tar.gz
+[2024-05-19 14:42:08] INFO root fetch - processPackages [bigdl-llm]: Downloading https://files.pythonhosted.org/packages/8d/1e/4059dfed3ff325076054fb44fbef5794420caadd699e9c9858c697a8691e/bigdl_llm-2.5.0b20240518-py3-none-win_amd64.whl
+[2024-05-19 14:42:08] INFO root fetch - processPackages [py-alpaca-api]: executing diffoscope
+[2024-05-19 14:42:08] INFO root fetch - processPackages [py-alpaca-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_alpaca_api-0.4.0.tar.gz tmp/py_alpaca_api-0.4.4.tar.gz --markdown 20240519/p/py-alpaca-api/0.4.0-0.4.4/README.md --exclude *.pyd
+[2024-05-19 14:42:08] INFO root fetch - processPackages [contact-notes-local]: Downloading https://files.pythonhosted.org/packages/7d/da/15635ad28159f22874e3fbe243ec786d3658da7812c3243f5feb8d5f8385/contact-notes-local-0.0.9.tar.gz
+[2024-05-19 14:42:08] INFO root fetch - processPackages [contact-notes-local]: executing diffoscope
+[2024-05-19 14:42:08] INFO root fetch - processPackages [contact-notes-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contact-notes-local-0.0.8.tar.gz tmp/contact-notes-local-0.0.9.tar.gz --markdown 20240519/c/contact-notes-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 14:42:08] INFO root fetch - processPackages [bigdl-llm]: Downloading https://files.pythonhosted.org/packages/6f/12/b43d3ce7d7737326784f8018fc9cf1c895b0c935a86a707308a880bc8216/bigdl_llm-2.5.0b20240519-py3-none-win_amd64.whl
+[2024-05-19 14:42:08] INFO root fetch - processPackages [py-alpaca-api]: Remove: archive file [/home/abi/fetcher/tmp/py_alpaca_api-0.4.0.tar.gz]
+[2024-05-19 14:42:08] INFO root fetch - processPackages [py-alpaca-api]: Remove: archive file [/home/abi/fetcher/tmp/py_alpaca_api-0.4.4.tar.gz]
+[2024-05-19 14:42:08] INFO root fetch - main [MainThread]: End processing [py-alpaca-api]: success
+[2024-05-19 14:42:09] INFO root fetch - processPackages [contact-notes-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-notes-local-0.0.8.tar.gz]
+[2024-05-19 14:42:09] INFO root fetch - processPackages [contact-notes-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-notes-local-0.0.9.tar.gz]
+[2024-05-19 14:42:09] INFO root fetch - main [MainThread]: End processing [contact-notes-local]: success
+[2024-05-19 14:42:09] INFO root fetch - processPackages [bigdl-llm]: executing diffoscope
+[2024-05-19 14:42:09] INFO root fetch - processPackages [bigdl-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_llm-2.5.0b20240518-py3-none-win_amd64.whl.zip tmp/bigdl_llm-2.5.0b20240519-py3-none-win_amd64.whl.zip --markdown 20240519/b/bigdl-llm/2.5.0b20240518-2.5.0b20240519/README.md --exclude *.pyd
+[2024-05-19 14:42:10] INFO root fetch - processPackages [bigdl-llm]: Remove: archive file [/home/abi/fetcher/tmp/bigdl_llm-2.5.0b20240518-py3-none-win_amd64.whl.zip]
+[2024-05-19 14:42:10] INFO root fetch - processPackages [bigdl-llm]: Remove: archive file [/home/abi/fetcher/tmp/bigdl_llm-2.5.0b20240519-py3-none-win_amd64.whl.zip]
+[2024-05-19 14:42:10] INFO root fetch - main [MainThread]: End processing [bigdl-llm]: success
+[2024-05-19 14:42:10] INFO root fetch - main [MainThread]: Store serial: [23276356]
