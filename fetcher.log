@@ -13263,3 +13263,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 17:26:28] INFO root fetch - processPackages [argrelay]: Remove: archive file [/home/abi/fetcher/tmp/argrelay-0.7.1.dev3.tar.gz]
 [2024-05-19 17:26:28] INFO root fetch - main [MainThread]: End processing [argrelay]: success
 [2024-05-19 17:26:28] INFO root fetch - main [MainThread]: Store serial: [23277739]
+[2024-05-19 17:28:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277739]
+[2024-05-19 17:28:37] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 17:28:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: daimon
+[2024-05-19 17:28:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yeref
+[2024-05-19 17:28:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: smaht-submitr
+[2024-05-19 17:28:37] WARNING root fetch - processPackages [daimon]: Skipping, unable to determine old version
+[2024-05-19 17:28:37] INFO root fetch - main [MainThread]: End processing [daimon] error
+[2024-05-19 17:28:37] INFO root fetch - processPackages [smaht-submitr]: New version: [0.8.2.1b8] Old Version: [0.8.2.1b7]
+[2024-05-19 17:28:37] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-19 17:28:37] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/ca/18/8abf2fcbfbdf2f6fe7e9782958e92c66e6363db55b896b4e7d49ab704934/smaht_submitr-0.8.2.1b7.tar.gz
+[2024-05-19 17:28:37] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-19 17:28:37] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/94/70/b34d2d34c394fc3e3b347e32bec8900b8b8643db5842d59991c4e84ea528/smaht_submitr-0.8.2.1b8.tar.gz
+[2024-05-19 17:28:37] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-19 17:28:37] INFO root fetch - processPackages [smaht-submitr]: executing diffoscope
+[2024-05-19 17:28:37] INFO root fetch - processPackages [smaht-submitr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smaht_submitr-0.8.2.1b7.tar.gz tmp/smaht_submitr-0.8.2.1b8.tar.gz --markdown 20240519/s/smaht-submitr/0.8.2.1b7-0.8.2.1b8/README.md --exclude *.pyd
+[2024-05-19 17:28:37] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-19 17:28:37] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240519/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-19 17:28:38] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.8.2.1b7.tar.gz]
+[2024-05-19 17:28:38] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.8.2.1b8.tar.gz]
+[2024-05-19 17:28:38] INFO root fetch - main [MainThread]: End processing [smaht-submitr]: success
+[2024-05-19 17:28:38] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-19 17:28:38] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-19 17:28:38] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-19 17:28:38] INFO root fetch - main [MainThread]: Store serial: [23277748]
