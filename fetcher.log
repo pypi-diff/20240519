@@ -14135,3 +14135,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 18:19:07] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
 [2024-05-19 18:19:07] INFO root fetch - main [MainThread]: End processing [yeref]: success
 [2024-05-19 18:19:07] INFO root fetch - main [MainThread]: Store serial: [23278166]
+[2024-05-19 18:21:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23278166]
+[2024-05-19 18:21:16] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 18:21:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ragfmk
+[2024-05-19 18:21:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: webflask
+[2024-05-19 18:21:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: audiblesz
+[2024-05-19 18:21:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: conf-mat
+[2024-05-19 18:21:16] INFO root fetch - processPackages [webflask]: New version: [0.6] Old Version: [0.5.6]
+[2024-05-19 18:21:16] WARNING root fetch - processPackages [audiblesz]: Skipping, unable to determine old version
+[2024-05-19 18:21:16] INFO root fetch - main [MainThread]: End processing [audiblesz] error
+[2024-05-19 18:21:16] INFO root fetch - processPackages [ragfmk]: New version: [0.1.4.7] Old Version: [0.1.4.4]
+[2024-05-19 18:21:16] INFO root fetch - processPackages [conf-mat]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-05-19 18:21:17] INFO root fetch - processPackages [webflask]: Downloading https://files.pythonhosted.org/packages/9f/5c/84c6cfff27500e7847a58e0c7598c56bdb4805498ada4ca7b92066c7a794/webflask-0.5.6.tar.gz
+[2024-05-19 18:21:17] INFO root fetch - processPackages [ragfmk]: Downloading https://files.pythonhosted.org/packages/34/76/f1e20c3035638820987e822f14f20278593769edf59a38378bdcf6f49477/ragfmk-0.1.4.4-py3-none-any.whl
+[2024-05-19 18:21:17] INFO root fetch - processPackages [conf-mat]: Downloading https://files.pythonhosted.org/packages/ea/9f/154d1430fc09d3c77fa27fa7b3c92cedef5fa5dff434abc9f1308ca4789b/conf-mat-1.0.5.tar.gz
+[2024-05-19 18:21:17] INFO root fetch - processPackages [ragfmk]: Downloading https://files.pythonhosted.org/packages/6b/f9/5b5532b03c8fc2b33c269909433ebea1399e5b91e9074d80646405f432e8/ragfmk-0.1.4.7-py3-none-any.whl
+[2024-05-19 18:21:17] INFO root fetch - processPackages [conf-mat]: Downloading https://files.pythonhosted.org/packages/3b/4d/dc7936d0cdee17c2f051000bced069e825108d44d7552da945a959b9f649/conf_mat-1.0.6-py3-none-any.whl
+[2024-05-19 18:21:17] INFO root fetch - processPackages [ragfmk]: executing diffoscope
+[2024-05-19 18:21:17] INFO root fetch - processPackages [ragfmk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ragfmk-0.1.4.4-py3-none-any.whl.zip tmp/ragfmk-0.1.4.7-py3-none-any.whl.zip --markdown 20240519/r/ragfmk/0.1.4.4-0.1.4.7/README.md --exclude *.pyd
+[2024-05-19 18:21:17] INFO root fetch - processPackages [webflask]: Downloading https://files.pythonhosted.org/packages/23/48/f022469e5c2d7d3d9af2cee62e81b1b2dcfb27b736c5ae074e71c9733868/webflask-0.6.tar.gz
+[2024-05-19 18:21:18] INFO root fetch - processPackages [conf-mat]: executing diffoscope
+[2024-05-19 18:21:18] INFO root fetch - processPackages [conf-mat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/conf-mat-1.0.5.tar.gz tmp/conf_mat-1.0.6-py3-none-any.whl.zip --markdown 20240519/c/conf-mat/1.0.5-1.0.6/README.md --exclude *.pyd
+[2024-05-19 18:21:18] INFO root fetch - processPackages [ragfmk]: Remove: archive file [/home/abi/fetcher/tmp/ragfmk-0.1.4.4-py3-none-any.whl.zip]
+[2024-05-19 18:21:18] INFO root fetch - processPackages [ragfmk]: Remove: archive file [/home/abi/fetcher/tmp/ragfmk-0.1.4.7-py3-none-any.whl.zip]
+[2024-05-19 18:21:18] INFO root fetch - main [MainThread]: End processing [ragfmk]: success
+[2024-05-19 18:21:18] INFO root fetch - processPackages [conf-mat]: Remove: archive file [/home/abi/fetcher/tmp/conf-mat-1.0.5.tar.gz]
+[2024-05-19 18:21:18] INFO root fetch - processPackages [conf-mat]: Remove: archive file [/home/abi/fetcher/tmp/conf_mat-1.0.6-py3-none-any.whl.zip]
+[2024-05-19 18:21:18] INFO root fetch - main [MainThread]: End processing [conf-mat]: success
+[2024-05-19 18:21:18] INFO root fetch - processPackages [webflask]: executing diffoscope
+[2024-05-19 18:21:18] INFO root fetch - processPackages [webflask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webflask-0.5.6.tar.gz tmp/webflask-0.6.tar.gz --markdown 20240519/w/webflask/0.5.6-0.6/README.md --exclude *.pyd
+[2024-05-19 18:21:19] INFO root fetch - processPackages [webflask]: Remove: archive file [/home/abi/fetcher/tmp/webflask-0.5.6.tar.gz]
+[2024-05-19 18:21:19] INFO root fetch - processPackages [webflask]: Remove: archive file [/home/abi/fetcher/tmp/webflask-0.6.tar.gz]
+[2024-05-19 18:21:19] INFO root fetch - main [MainThread]: End processing [webflask]: success
+[2024-05-19 18:21:19] INFO root fetch - main [MainThread]: Store serial: [23278175]
