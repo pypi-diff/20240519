@@ -11345,3 +11345,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 15:33:57] WARNING root fetch - processPackages [tacitz]: Skipping, unable to determine old version
 [2024-05-19 15:33:57] INFO root fetch - main [MainThread]: End processing [tacitz] error
 [2024-05-19 15:33:57] INFO root fetch - main [MainThread]: Store serial: [23276800]
+[2024-05-19 15:36:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276800]
+[2024-05-19 15:36:05] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 15:36:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: BPK-CAT
+[2024-05-19 15:36:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nucflag
+[2024-05-19 15:36:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: MailMagician
+[2024-05-19 15:36:06] INFO root fetch - processPackages [nucflag]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-19 15:36:06] INFO root fetch - processPackages [nucflag]: Downloading https://files.pythonhosted.org/packages/bb/1a/19845331cd01d2c8c34c47801da81e179fa3c1058db77447f964aa98f6f0/nucflag-0.0.3.tar.gz
+[2024-05-19 15:36:06] INFO root fetch - processPackages [BPK-CAT]: New version: [2.1.3] Old Version: [1.1.3]
+[2024-05-19 15:36:06] INFO root fetch - processPackages [MailMagician]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-05-19 15:36:06] INFO root fetch - processPackages [BPK-CAT]: Downloading https://files.pythonhosted.org/packages/ee/aa/95d373d53f7d9fdedbfbb8e93213a6178a1f8500e3fadde58438fbc90f89/BPK-CAT-1.1.3.tar.gz
+[2024-05-19 15:36:06] INFO root fetch - processPackages [nucflag]: Downloading https://files.pythonhosted.org/packages/37/b5/eb76b6655351cbdbe7215284ca749a3a53230efcfc032697db5f662e2877/nucflag-0.0.4.tar.gz
+[2024-05-19 15:36:06] INFO root fetch - processPackages [MailMagician]: Downloading https://files.pythonhosted.org/packages/19/d4/55b258cc63386cc9cea5340d47c9a898d6ae5c27e773dd36d1d59b6f40b6/MailMagician-0.4.0.tar.gz
+[2024-05-19 15:36:06] INFO root fetch - processPackages [nucflag]: executing diffoscope
+[2024-05-19 15:36:06] INFO root fetch - processPackages [nucflag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nucflag-0.0.3.tar.gz tmp/nucflag-0.0.4.tar.gz --markdown 20240519/n/nucflag/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-19 15:36:06] INFO root fetch - processPackages [BPK-CAT]: Downloading https://files.pythonhosted.org/packages/78/a1/2b95548f0c82cf7185b83f62f4b4135b93657d45d9c88103246e2d1d5b79/BPK-CAT-2.1.3.tar.gz
+[2024-05-19 15:36:06] INFO root fetch - processPackages [MailMagician]: Downloading https://files.pythonhosted.org/packages/9c/78/580fdeb90bf34919517d64e69a7ae87cb39a367027f6c33879317d9d5ae6/MailMagician-0.5.0.tar.gz
+[2024-05-19 15:36:06] INFO root fetch - processPackages [BPK-CAT]: executing diffoscope
+[2024-05-19 15:36:06] INFO root fetch - processPackages [BPK-CAT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BPK-CAT-1.1.3.tar.gz tmp/BPK-CAT-2.1.3.tar.gz --markdown 20240519/B/BPK-CAT/1.1.3-2.1.3/README.md --exclude *.pyd
+[2024-05-19 15:36:07] INFO root fetch - processPackages [nucflag]: Remove: archive file [/home/abi/fetcher/tmp/nucflag-0.0.3.tar.gz]
+[2024-05-19 15:36:07] INFO root fetch - processPackages [nucflag]: Remove: archive file [/home/abi/fetcher/tmp/nucflag-0.0.4.tar.gz]
+[2024-05-19 15:36:07] INFO root fetch - main [MainThread]: End processing [nucflag]: success
+[2024-05-19 15:36:07] INFO root fetch - processPackages [BPK-CAT]: Remove: archive file [/home/abi/fetcher/tmp/BPK-CAT-1.1.3.tar.gz]
+[2024-05-19 15:36:07] INFO root fetch - processPackages [BPK-CAT]: Remove: archive file [/home/abi/fetcher/tmp/BPK-CAT-2.1.3.tar.gz]
+[2024-05-19 15:36:07] INFO root fetch - main [MainThread]: End processing [BPK-CAT]: success
+[2024-05-19 15:36:07] INFO root fetch - processPackages [MailMagician]: executing diffoscope
+[2024-05-19 15:36:07] INFO root fetch - processPackages [MailMagician]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MailMagician-0.4.0.tar.gz tmp/MailMagician-0.5.0.tar.gz --markdown 20240519/M/MailMagician/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-05-19 15:36:07] INFO root fetch - processPackages [MailMagician]: Remove: archive file [/home/abi/fetcher/tmp/MailMagician-0.4.0.tar.gz]
+[2024-05-19 15:36:07] INFO root fetch - processPackages [MailMagician]: Remove: archive file [/home/abi/fetcher/tmp/MailMagician-0.5.0.tar.gz]
+[2024-05-19 15:36:07] INFO root fetch - main [MainThread]: End processing [MailMagician]: success
+[2024-05-19 15:36:07] INFO root fetch - main [MainThread]: Store serial: [23276810]
