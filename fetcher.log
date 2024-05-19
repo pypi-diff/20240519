@@ -4494,3 +4494,61 @@
 [2024-05-19 07:29:51] INFO root fetch - processPackages [ha-mqtt-discoverable-cli]: Remove: archive file [/home/abi/fetcher/tmp/ha_mqtt_discoverable_cli-0.5.0.tar.gz]
 [2024-05-19 07:29:51] INFO root fetch - main [MainThread]: End processing [ha-mqtt-discoverable-cli]: success
 [2024-05-19 07:29:51] INFO root fetch - main [MainThread]: Store serial: [23273519]
+[2024-05-19 07:31:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273519]
+[2024-05-19 07:31:59] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-19 07:31:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: crazy-thursday
+[2024-05-19 07:31:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mentalisticz
+[2024-05-19 07:31:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sop-deutils
+[2024-05-19 07:31:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: grpc-requests
+[2024-05-19 07:31:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pypomes-s3
+[2024-05-19 07:31:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: yolo-world-onnx
+[2024-05-19 07:31:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sop-deutils
+[2024-05-19 07:31:59] INFO root fetch - processPackages [sop-deutils]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-19 07:31:59] INFO root fetch - processPackages [pypomes-s3]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-05-19 07:32:00] INFO root fetch - processPackages [crazy-thursday]: New version: [2024.5.9.1] Old Version: [2024.5.9.0]
+[2024-05-19 07:32:00] INFO root fetch - processPackages [sop-deutils]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-19 07:32:00] WARNING root fetch - processPackages [mentalisticz]: Skipping, unable to determine old version
+[2024-05-19 07:32:00] INFO root fetch - main [MainThread]: End processing [mentalisticz] error
+[2024-05-19 07:32:00] INFO root fetch - processPackages [sop-deutils]: Downloading https://files.pythonhosted.org/packages/90/25/061e7abb0dc44de63510dded7da9654bc6f0a284ca9a978c052e8bdcd739/sop_deutils-0.9.8.tar.gz
+[2024-05-19 07:32:00] INFO root fetch - processPackages [yolo-world-onnx]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-19 07:32:00] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/3f/0a/108e3af749c5757158be48151418c2bbea49bff2269af8811bade316080a/crazy_thursday-2024.5.9.0.tar.gz
+[2024-05-19 07:32:00] INFO root fetch - processPackages [grpc-requests]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-19 07:32:00] INFO root fetch - processPackages [pypomes-s3]: Downloading https://files.pythonhosted.org/packages/27/76/219c4cf1fa66d4af2e2d855a09f5ca6f3386858dbd3fd519885341254765/pypomes_s3-0.3.1.tar.gz
+[2024-05-19 07:32:00] INFO root fetch - processPackages [sop-deutils]: Downloading https://files.pythonhosted.org/packages/90/25/061e7abb0dc44de63510dded7da9654bc6f0a284ca9a978c052e8bdcd739/sop_deutils-0.9.8.tar.gz
+[2024-05-19 07:32:00] INFO root fetch - processPackages [grpc-requests]: Downloading https://files.pythonhosted.org/packages/8e/94/c551cdc86dbba2e07e5361dd889a007c91e52640d17ded4fb23c7a16d5d0/grpc_requests-0.1.7.tar.gz
+[2024-05-19 07:32:00] INFO root fetch - processPackages [yolo-world-onnx]: Downloading https://files.pythonhosted.org/packages/cf/a8/c23afe01c860a73cf1bfd66847ab272ec616e95428abbfe8363cee97c499/yolo_world_onnx-0.1.0.tar.gz
+[2024-05-19 07:32:00] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/20/70/a719fb059f910b10790f6a51b1c5c3ff943f1349c91c46142f1911323575/crazy_thursday-2024.5.9.1.tar.gz
+[2024-05-19 07:32:00] INFO root fetch - processPackages [sop-deutils]: Downloading https://files.pythonhosted.org/packages/72/95/95da46c4d54440e29e58711f950067fb490f12e5d5cd23f645102a47e372/sop_deutils-0.9.9.tar.gz
+[2024-05-19 07:32:00] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2024-05-19 07:32:00] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy_thursday-2024.5.9.0.tar.gz tmp/crazy_thursday-2024.5.9.1.tar.gz --markdown 20240519/c/crazy-thursday/2024.5.9.0-2024.5.9.1/README.md --exclude *.pyd
+[2024-05-19 07:32:00] INFO root fetch - processPackages [sop-deutils]: Downloading https://files.pythonhosted.org/packages/72/95/95da46c4d54440e29e58711f950067fb490f12e5d5cd23f645102a47e372/sop_deutils-0.9.9.tar.gz
+[2024-05-19 07:32:00] INFO root fetch - processPackages [sop-deutils]: executing diffoscope
+[2024-05-19 07:32:00] INFO root fetch - processPackages [sop-deutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sop_deutils-0.9.8.tar.gz tmp/sop_deutils-0.9.9.tar.gz --markdown 20240519/s/sop-deutils/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-19 07:32:00] INFO root fetch - processPackages [pypomes-s3]: Downloading https://files.pythonhosted.org/packages/17/cc/b3b977c3db8c16e05b50c9cca8daae1ee7b4af9bf984d6d13c14acdfe423/pypomes_s3-0.3.2.tar.gz
+[2024-05-19 07:32:00] INFO root fetch - processPackages [sop-deutils]: executing diffoscope
+[2024-05-19 07:32:00] INFO root fetch - processPackages [sop-deutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sop_deutils-0.9.8.tar.gz tmp/sop_deutils-0.9.9.tar.gz --markdown 20240519/s/sop-deutils/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-19 07:32:00] INFO root fetch - processPackages [yolo-world-onnx]: Downloading https://files.pythonhosted.org/packages/87/3f/1fd84c0871d80577cdc215dc59c4246137fb1376a1166c9921798e6a1395/yolo_world_onnx-0.1.1.tar.gz
+[2024-05-19 07:32:00] INFO root fetch - processPackages [grpc-requests]: Downloading https://files.pythonhosted.org/packages/4f/b3/f1e7646bd9b45995eb1e7ec953e73b9c05451e0b337f9f4ea4f92713e8a4/grpc_requests-0.1.8.tar.gz
+[2024-05-19 07:32:00] INFO root fetch - processPackages [pypomes-s3]: executing diffoscope
+[2024-05-19 07:32:00] INFO root fetch - processPackages [pypomes-s3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypomes_s3-0.3.1.tar.gz tmp/pypomes_s3-0.3.2.tar.gz --markdown 20240519/p/pypomes-s3/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-05-19 07:32:00] INFO root fetch - processPackages [yolo-world-onnx]: executing diffoscope
+[2024-05-19 07:32:00] INFO root fetch - processPackages [yolo-world-onnx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yolo_world_onnx-0.1.0.tar.gz tmp/yolo_world_onnx-0.1.1.tar.gz --markdown 20240519/y/yolo-world-onnx/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-19 07:32:00] INFO root fetch - processPackages [grpc-requests]: executing diffoscope
+[2024-05-19 07:32:00] INFO root fetch - processPackages [grpc-requests]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grpc_requests-0.1.7.tar.gz tmp/grpc_requests-0.1.8.tar.gz --markdown 20240519/g/grpc-requests/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-19 07:32:01] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.5.9.0.tar.gz]
+[2024-05-19 07:32:01] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.5.9.1.tar.gz]
+[2024-05-19 07:32:01] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2024-05-19 07:32:01] INFO root fetch - processPackages [sop-deutils]: Remove: archive file [/home/abi/fetcher/tmp/sop_deutils-0.9.8.tar.gz]
+[2024-05-19 07:32:01] INFO root fetch - processPackages [sop-deutils]: Remove: archive file [/home/abi/fetcher/tmp/sop_deutils-0.9.9.tar.gz]
+[2024-05-19 07:32:01] INFO root fetch - main [MainThread]: End processing [sop-deutils]: success
+[2024-05-19 07:32:01] INFO root fetch - processPackages [pypomes-s3]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_s3-0.3.1.tar.gz]
+[2024-05-19 07:32:01] INFO root fetch - processPackages [pypomes-s3]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_s3-0.3.2.tar.gz]
+[2024-05-19 07:32:01] INFO root fetch - main [MainThread]: End processing [pypomes-s3]: success
+[2024-05-19 07:32:01] INFO root fetch - processPackages [yolo-world-onnx]: Remove: archive file [/home/abi/fetcher/tmp/yolo_world_onnx-0.1.0.tar.gz]
+[2024-05-19 07:32:01] INFO root fetch - processPackages [yolo-world-onnx]: Remove: archive file [/home/abi/fetcher/tmp/yolo_world_onnx-0.1.1.tar.gz]
+[2024-05-19 07:32:01] INFO root fetch - main [MainThread]: End processing [yolo-world-onnx]: success
+[2024-05-19 07:32:01] INFO root fetch - processPackages [grpc-requests]: Remove: archive file [/home/abi/fetcher/tmp/grpc_requests-0.1.7.tar.gz]
+[2024-05-19 07:32:01] INFO root fetch - processPackages [grpc-requests]: Remove: archive file [/home/abi/fetcher/tmp/grpc_requests-0.1.8.tar.gz]
+[2024-05-19 07:32:01] INFO root fetch - main [MainThread]: End processing [grpc-requests]: success
+[2024-05-19 07:32:01] INFO root fetch - main [MainThread]: End processing [sop-deutils]: success
+[2024-05-19 07:32:01] INFO root fetch - main [MainThread]: Store serial: [23273543]
