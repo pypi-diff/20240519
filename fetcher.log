@@ -11837,3 +11837,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 16:00:07] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
 [2024-05-19 16:00:07] INFO root fetch - main [MainThread]: End processing [yeref]: success
 [2024-05-19 16:00:07] INFO root fetch - main [MainThread]: Store serial: [23277082]
+[2024-05-19 16:02:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277082]
+[2024-05-19 16:02:16] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 16:02:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spaceone-inventory
+[2024-05-19 16:02:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bifabrik
+[2024-05-19 16:02:16] INFO root fetch - processPackages [bifabrik]: New version: [0.8.1] Old Version: [0.8.0]
+[2024-05-19 16:02:16] INFO root fetch - processPackages [spaceone-inventory]: New version: [2.0.dev99] Old Version: [2.0.dev98]
+[2024-05-19 16:02:16] INFO root fetch - processPackages [bifabrik]: Downloading https://files.pythonhosted.org/packages/93/4d/54deceeb3850fdb813d8c81bd0da7c09a61e2af4a4725786988b14e32c1f/bifabrik-0.8.0.tar.gz
+[2024-05-19 16:02:16] INFO root fetch - processPackages [spaceone-inventory]: Downloading https://files.pythonhosted.org/packages/2b/23/73e091142fbd007706604f94cc95718e79d9259d998aa9dd424fc7cc6f7f/spaceone-inventory-2.0.dev98.tar.gz
+[2024-05-19 16:02:16] INFO root fetch - processPackages [spaceone-inventory]: Downloading https://files.pythonhosted.org/packages/e7/30/f1229bb9f69283d6576804b473d6fe73ff3118fb5543c89d48b18f899ca2/spaceone-inventory-2.0.dev99.tar.gz
+[2024-05-19 16:02:16] INFO root fetch - processPackages [bifabrik]: Downloading https://files.pythonhosted.org/packages/92/3a/16a7a9ccd48ac91ef868400f4b7e34ce82e57cba7f26dc5f9b6dda73a6af/bifabrik-0.8.1.tar.gz
+[2024-05-19 16:02:16] INFO root fetch - processPackages [bifabrik]: executing diffoscope
+[2024-05-19 16:02:16] INFO root fetch - processPackages [bifabrik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bifabrik-0.8.0.tar.gz tmp/bifabrik-0.8.1.tar.gz --markdown 20240519/b/bifabrik/0.8.0-0.8.1/README.md --exclude *.pyd
+[2024-05-19 16:02:16] INFO root fetch - processPackages [spaceone-inventory]: executing diffoscope
+[2024-05-19 16:02:16] INFO root fetch - processPackages [spaceone-inventory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spaceone-inventory-2.0.dev98.tar.gz tmp/spaceone-inventory-2.0.dev99.tar.gz --markdown 20240519/s/spaceone-inventory/2.0.dev98-2.0.dev99/README.md --exclude *.pyd
+[2024-05-19 16:02:17] INFO root fetch - processPackages [bifabrik]: Remove: archive file [/home/abi/fetcher/tmp/bifabrik-0.8.0.tar.gz]
+[2024-05-19 16:02:17] INFO root fetch - processPackages [bifabrik]: Remove: archive file [/home/abi/fetcher/tmp/bifabrik-0.8.1.tar.gz]
+[2024-05-19 16:02:17] INFO root fetch - main [MainThread]: End processing [bifabrik]: success
+[2024-05-19 16:02:17] INFO root fetch - processPackages [spaceone-inventory]: Remove: archive file [/home/abi/fetcher/tmp/spaceone-inventory-2.0.dev98.tar.gz]
+[2024-05-19 16:02:17] INFO root fetch - processPackages [spaceone-inventory]: Remove: archive file [/home/abi/fetcher/tmp/spaceone-inventory-2.0.dev99.tar.gz]
+[2024-05-19 16:02:17] INFO root fetch - main [MainThread]: End processing [spaceone-inventory]: success
+[2024-05-19 16:02:17] INFO root fetch - main [MainThread]: Store serial: [23277088]
