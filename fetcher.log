@@ -17201,3 +17201,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 21:13:43] INFO root fetch - processPackages [Simba-UW-tf-dev]: Remove: archive file [/home/abi/fetcher/tmp/Simba-UW-tf-dev-1.92.6.tar.gz]
 [2024-05-19 21:13:43] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
 [2024-05-19 21:13:43] INFO root fetch - main [MainThread]: Store serial: [23279616]
+[2024-05-19 21:15:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279616]
+[2024-05-19 21:15:51] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 21:15:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: interjaculatingz
+[2024-05-19 21:15:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: teams-ai
+[2024-05-19 21:15:51] INFO root fetch - processPackages [teams-ai]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-05-19 21:15:51] WARNING root fetch - processPackages [interjaculatingz]: Skipping, unable to determine old version
+[2024-05-19 21:15:51] INFO root fetch - main [MainThread]: End processing [interjaculatingz] error
+[2024-05-19 21:15:52] INFO root fetch - processPackages [teams-ai]: Downloading https://files.pythonhosted.org/packages/81/4f/a62a04aba78ce4d03f85f8381621b784fd91ade68b5bba05096ffb4354ea/teams_ai-1.1.0.tar.gz
+[2024-05-19 21:15:52] INFO root fetch - processPackages [teams-ai]: Downloading https://files.pythonhosted.org/packages/33/22/2a8f6fb23e52f2c2eb3dc4b981ce10924dccd409eadfe5cec28fb7df1e98/teams_ai-1.2.0.tar.gz
+[2024-05-19 21:15:52] INFO root fetch - processPackages [teams-ai]: executing diffoscope
+[2024-05-19 21:15:52] INFO root fetch - processPackages [teams-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/teams_ai-1.1.0.tar.gz tmp/teams_ai-1.2.0.tar.gz --markdown 20240519/t/teams-ai/1.1.0-1.2.0/README.md --exclude *.pyd
+[2024-05-19 21:15:53] INFO root fetch - processPackages [teams-ai]: Remove: archive file [/home/abi/fetcher/tmp/teams_ai-1.1.0.tar.gz]
+[2024-05-19 21:15:53] INFO root fetch - processPackages [teams-ai]: Remove: archive file [/home/abi/fetcher/tmp/teams_ai-1.2.0.tar.gz]
+[2024-05-19 21:15:53] INFO root fetch - main [MainThread]: End processing [teams-ai]: success
+[2024-05-19 21:15:53] INFO root fetch - main [MainThread]: Store serial: [23279623]
