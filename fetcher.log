@@ -14276,3 +14276,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 18:30:00] INFO root fetch - processPackages [yfinance]: Remove: archive file [/home/abi/fetcher/tmp/yfinance-0.2.9.tar.gz]
 [2024-05-19 18:30:00] INFO root fetch - main [MainThread]: End processing [yfinance]: success
 [2024-05-19 18:30:00] INFO root fetch - main [MainThread]: Store serial: [23278216]
+[2024-05-19 18:32:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23278216]
+[2024-05-19 18:32:09] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 18:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: floatingparser
+[2024-05-19 18:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: func2stream
+[2024-05-19 18:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yeref
+[2024-05-19 18:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jusshellz
+[2024-05-19 18:32:09] INFO root fetch - processPackages [func2stream]: New version: [0.0.1.dev2405191627] Old Version: [0.0.1.dev2405190653]
+[2024-05-19 18:32:09] WARNING root fetch - processPackages [floatingparser]: Skipping, unable to determine old version
+[2024-05-19 18:32:09] INFO root fetch - main [MainThread]: End processing [floatingparser] error
+[2024-05-19 18:32:09] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-19 18:32:09] INFO root fetch - processPackages [func2stream]: Downloading https://files.pythonhosted.org/packages/cc/39/1567e7075586c8fee5ddfafa3cc172e8801f8ab404f3408336d3cb49b6bc/func2stream-0.0.1.dev2405190653.tar.gz
+[2024-05-19 18:32:09] WARNING root fetch - processPackages [jusshellz]: Skipping, unable to determine old version
+[2024-05-19 18:32:09] INFO root fetch - main [MainThread]: End processing [jusshellz] error
+[2024-05-19 18:32:09] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-19 18:32:09] INFO root fetch - processPackages [func2stream]: Downloading https://files.pythonhosted.org/packages/34/c2/99e479d13a77b218f661fa7ad633dd8b63a12ee85b59d78b8520e7fd8235/func2stream-0.0.1.dev2405191627.tar.gz
+[2024-05-19 18:32:09] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-19 18:32:09] INFO root fetch - processPackages [func2stream]: executing diffoscope
+[2024-05-19 18:32:09] INFO root fetch - processPackages [func2stream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/func2stream-0.0.1.dev2405190653.tar.gz tmp/func2stream-0.0.1.dev2405191627.tar.gz --markdown 20240519/f/func2stream/0.0.1.dev2405190653-0.0.1.dev2405191627/README.md --exclude *.pyd
+[2024-05-19 18:32:09] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-19 18:32:09] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240519/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-19 18:32:10] INFO root fetch - processPackages [func2stream]: Remove: archive file [/home/abi/fetcher/tmp/func2stream-0.0.1.dev2405190653.tar.gz]
+[2024-05-19 18:32:10] INFO root fetch - processPackages [func2stream]: Remove: archive file [/home/abi/fetcher/tmp/func2stream-0.0.1.dev2405191627.tar.gz]
+[2024-05-19 18:32:10] INFO root fetch - main [MainThread]: End processing [func2stream]: success
+[2024-05-19 18:32:10] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-19 18:32:10] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-19 18:32:10] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-19 18:32:10] INFO root fetch - main [MainThread]: Store serial: [23278228]
