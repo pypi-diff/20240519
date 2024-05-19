@@ -12706,3 +12706,81 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 16:55:49] INFO root fetch - processPackages [n0struct]: Remove: archive file [/home/abi/fetcher/tmp/n0struct-0.2.99.tar.gz]
 [2024-05-19 16:55:49] INFO root fetch - main [MainThread]: End processing [n0struct]: success
 [2024-05-19 16:55:49] INFO root fetch - main [MainThread]: Store serial: [23277454]
+[2024-05-19 16:57:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277454]
+[2024-05-19 16:57:58] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-19 16:57:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: api-deezer
+[2024-05-19 16:57:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TestGeneratorPluginLib
+[2024-05-19 16:57:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sole-bili-get
+[2024-05-19 16:57:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: konfuzio-sdk
+[2024-05-19 16:57:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mns-common
+[2024-05-19 16:57:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pass-operator
+[2024-05-19 16:57:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aiavatar
+[2024-05-19 16:57:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: digitalarztools
+[2024-05-19 16:57:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: saturn-bot
+[2024-05-19 16:57:58] INFO root fetch - processPackages [TestGeneratorPluginLib]: New version: [1.2.4] Old Version: [1.2.3]
+[2024-05-19 16:57:58] INFO root fetch - processPackages [sole-bili-get]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-19 16:57:58] INFO root fetch - processPackages [saturn-bot]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-05-19 16:57:58] WARNING root fetch - processPackages [api-deezer]: Skipping, unable to determine old version
+[2024-05-19 16:57:58] INFO root fetch - main [MainThread]: End processing [api-deezer] error
+[2024-05-19 16:57:58] INFO root fetch - processPackages [pass-operator]: New version: [0.4.0] Old Version: [0.3.2]
+[2024-05-19 16:57:58] INFO root fetch - processPackages [TestGeneratorPluginLib]: Downloading https://files.pythonhosted.org/packages/2c/21/7f966c1ac69a8858a7c473a3116345620765573ffb5b1ae74cc905869d65/TestGeneratorPluginLib-1.2.3.tar.gz
+[2024-05-19 16:57:58] INFO root fetch - processPackages [digitalarztools]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-19 16:57:58] INFO root fetch - processPackages [aiavatar]: New version: [0.5.6] Old Version: [0.5.5]
+[2024-05-19 16:57:58] INFO root fetch - processPackages [mns-common]: New version: [1.1.1.4] Old Version: [1.1.1.3]
+[2024-05-19 16:57:58] INFO root fetch - processPackages [konfuzio-sdk]: New version: [0.3.6.dev20240515214331] Old Version: [0.3.6]
+[2024-05-19 16:57:58] INFO root fetch - processPackages [sole-bili-get]: Downloading https://files.pythonhosted.org/packages/26/be/822045bb3070642efef236b4bd2d055b85eeff5cb6f87430cb65c079cad9/sole_bili_get-0.0.1.tar.gz
+[2024-05-19 16:57:59] INFO root fetch - processPackages [saturn-bot]: Downloading https://files.pythonhosted.org/packages/17/be/cb63498a5238e137037f44ad0f667c1919d742dd24761a78377345ed81c5/saturn_bot-0.3.0.tar.gz
+[2024-05-19 16:57:59] INFO root fetch - processPackages [konfuzio-sdk]: Downloading https://files.pythonhosted.org/packages/be/c7/1c163f407b3f7ea50c13b5ce1bc26bd25297e33e6a45a52eb32fcc18e7e8/konfuzio_sdk-0.3.6.tar.gz
+[2024-05-19 16:57:59] INFO root fetch - processPackages [digitalarztools]: Downloading https://files.pythonhosted.org/packages/b7/70/8b5b8aaee385637088cb6c095a922bf5f17957354ed8b60669d0d25a3811/digitalarztools-0.1.8.tar.gz
+[2024-05-19 16:57:59] INFO root fetch - processPackages [pass-operator]: Downloading https://files.pythonhosted.org/packages/7a/0e/898d04a38b1f0d3808d28619182d2b97a22705621a6190ac80fdd8c8423e/pass_operator-0.3.2.tar.gz
+[2024-05-19 16:57:59] INFO root fetch - processPackages [mns-common]: Downloading https://files.pythonhosted.org/packages/76/04/6f9d7a69485feabdc9d57e88b07063d90a77fc49b9713cb9aacedb36ef64/mns_common-1.1.1.3.tar.gz
+[2024-05-19 16:57:59] INFO root fetch - processPackages [aiavatar]: Downloading https://files.pythonhosted.org/packages/72/3e/c8daa6942807fd31d2be7a9bfe7f1e9a471b3cc352c0d97c1ee45000afde/aiavatar-0.5.5-py3-none-any.whl
+[2024-05-19 16:57:59] INFO root fetch - processPackages [TestGeneratorPluginLib]: Downloading https://files.pythonhosted.org/packages/51/8c/9db880497413df09366baf3f943182aeb72a6765b590256935430cf1218f/TestGeneratorPluginLib-1.2.4.tar.gz
+[2024-05-19 16:57:59] INFO root fetch - processPackages [sole-bili-get]: Downloading https://files.pythonhosted.org/packages/61/f8/fd74859089e820471d4e1fd2d5df2ddbe741a23b83de1645f90ff3e13f1b/sole_bili_get-0.0.2.tar.gz
+[2024-05-19 16:57:59] INFO root fetch - processPackages [TestGeneratorPluginLib]: executing diffoscope
+[2024-05-19 16:57:59] INFO root fetch - processPackages [TestGeneratorPluginLib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TestGeneratorPluginLib-1.2.3.tar.gz tmp/TestGeneratorPluginLib-1.2.4.tar.gz --markdown 20240519/T/TestGeneratorPluginLib/1.2.3-1.2.4/README.md --exclude *.pyd
+[2024-05-19 16:57:59] INFO root fetch - processPackages [sole-bili-get]: executing diffoscope
+[2024-05-19 16:57:59] INFO root fetch - processPackages [sole-bili-get]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sole_bili_get-0.0.1.tar.gz tmp/sole_bili_get-0.0.2.tar.gz --markdown 20240519/s/sole-bili-get/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-19 16:57:59] INFO root fetch - processPackages [saturn-bot]: Downloading https://files.pythonhosted.org/packages/3a/0c/5253fc12a5ba21cc6b7ff38a575be6f735ddd7f37d20749a7b7d7fb41111/saturn_bot-0.4.0.tar.gz
+[2024-05-19 16:57:59] INFO root fetch - processPackages [konfuzio-sdk]: Downloading https://files.pythonhosted.org/packages/13/6f/a64338f18c2b619a911467a4d65b686226eb687714803642840dedf812d4/konfuzio_sdk-0.3.6.dev20240515214331.tar.gz
+[2024-05-19 16:57:59] INFO root fetch - processPackages [mns-common]: Downloading https://files.pythonhosted.org/packages/41/24/fb82228c6ba0d8a4cba396c56e3c371a84cd63bab24104a7abf46c7432d4/mns_common-1.1.1.4.tar.gz
+[2024-05-19 16:57:59] INFO root fetch - processPackages [aiavatar]: Downloading https://files.pythonhosted.org/packages/27/66/f0e8d2d91d60c9d72dc6319adaa034e6795e44c6f75cc6bbf23ca972a5c4/aiavatar-0.5.6-py3-none-any.whl
+[2024-05-19 16:57:59] INFO root fetch - processPackages [digitalarztools]: Downloading https://files.pythonhosted.org/packages/8b/85/2a742b62f2427a45f092ea34127a93f724509fd219511c0838e61833a9a1/digitalarztools-0.1.9.tar.gz
+[2024-05-19 16:57:59] INFO root fetch - processPackages [pass-operator]: Downloading https://files.pythonhosted.org/packages/69/e5/c6221105e99c9c4ac9d3c623df09c8628f0144e64ace959e9a928e629aa4/pass_operator-0.4.0.tar.gz
+[2024-05-19 16:57:59] INFO root fetch - processPackages [saturn-bot]: executing diffoscope
+[2024-05-19 16:57:59] INFO root fetch - processPackages [saturn-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/saturn_bot-0.3.0.tar.gz tmp/saturn_bot-0.4.0.tar.gz --markdown 20240519/s/saturn-bot/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-05-19 16:57:59] INFO root fetch - processPackages [konfuzio-sdk]: executing diffoscope
+[2024-05-19 16:57:59] INFO root fetch - processPackages [konfuzio-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/konfuzio_sdk-0.3.6.tar.gz tmp/konfuzio_sdk-0.3.6.dev20240515214331.tar.gz --markdown 20240519/k/konfuzio-sdk/0.3.6-0.3.6.dev20240515214331/README.md --exclude *.pyd
+[2024-05-19 16:57:59] INFO root fetch - processPackages [aiavatar]: executing diffoscope
+[2024-05-19 16:57:59] INFO root fetch - processPackages [aiavatar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiavatar-0.5.5-py3-none-any.whl.zip tmp/aiavatar-0.5.6-py3-none-any.whl.zip --markdown 20240519/a/aiavatar/0.5.5-0.5.6/README.md --exclude *.pyd
+[2024-05-19 16:57:59] INFO root fetch - processPackages [mns-common]: executing diffoscope
+[2024-05-19 16:57:59] INFO root fetch - processPackages [mns-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mns_common-1.1.1.3.tar.gz tmp/mns_common-1.1.1.4.tar.gz --markdown 20240519/m/mns-common/1.1.1.3-1.1.1.4/README.md --exclude *.pyd
+[2024-05-19 16:57:59] INFO root fetch - processPackages [pass-operator]: executing diffoscope
+[2024-05-19 16:57:59] INFO root fetch - processPackages [pass-operator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pass_operator-0.3.2.tar.gz tmp/pass_operator-0.4.0.tar.gz --markdown 20240519/p/pass-operator/0.3.2-0.4.0/README.md --exclude *.pyd
+[2024-05-19 16:57:59] INFO root fetch - processPackages [digitalarztools]: executing diffoscope
+[2024-05-19 16:57:59] INFO root fetch - processPackages [digitalarztools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digitalarztools-0.1.8.tar.gz tmp/digitalarztools-0.1.9.tar.gz --markdown 20240519/d/digitalarztools/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-19 16:58:00] INFO root fetch - processPackages [TestGeneratorPluginLib]: Remove: archive file [/home/abi/fetcher/tmp/TestGeneratorPluginLib-1.2.3.tar.gz]
+[2024-05-19 16:58:00] INFO root fetch - processPackages [TestGeneratorPluginLib]: Remove: archive file [/home/abi/fetcher/tmp/TestGeneratorPluginLib-1.2.4.tar.gz]
+[2024-05-19 16:58:00] INFO root fetch - main [MainThread]: End processing [TestGeneratorPluginLib]: success
+[2024-05-19 16:58:00] INFO root fetch - processPackages [sole-bili-get]: Remove: archive file [/home/abi/fetcher/tmp/sole_bili_get-0.0.1.tar.gz]
+[2024-05-19 16:58:00] INFO root fetch - processPackages [sole-bili-get]: Remove: archive file [/home/abi/fetcher/tmp/sole_bili_get-0.0.2.tar.gz]
+[2024-05-19 16:58:00] INFO root fetch - main [MainThread]: End processing [sole-bili-get]: success
+[2024-05-19 16:58:00] INFO root fetch - processPackages [saturn-bot]: Remove: archive file [/home/abi/fetcher/tmp/saturn_bot-0.3.0.tar.gz]
+[2024-05-19 16:58:00] INFO root fetch - processPackages [saturn-bot]: Remove: archive file [/home/abi/fetcher/tmp/saturn_bot-0.4.0.tar.gz]
+[2024-05-19 16:58:00] INFO root fetch - main [MainThread]: End processing [saturn-bot]: success
+[2024-05-19 16:58:00] INFO root fetch - processPackages [pass-operator]: Remove: archive file [/home/abi/fetcher/tmp/pass_operator-0.3.2.tar.gz]
+[2024-05-19 16:58:00] INFO root fetch - processPackages [pass-operator]: Remove: archive file [/home/abi/fetcher/tmp/pass_operator-0.4.0.tar.gz]
+[2024-05-19 16:58:00] INFO root fetch - main [MainThread]: End processing [pass-operator]: success
+[2024-05-19 16:58:00] INFO root fetch - processPackages [aiavatar]: Remove: archive file [/home/abi/fetcher/tmp/aiavatar-0.5.5-py3-none-any.whl.zip]
+[2024-05-19 16:58:00] INFO root fetch - processPackages [aiavatar]: Remove: archive file [/home/abi/fetcher/tmp/aiavatar-0.5.6-py3-none-any.whl.zip]
+[2024-05-19 16:58:00] INFO root fetch - main [MainThread]: End processing [aiavatar]: success
+[2024-05-19 16:58:00] INFO root fetch - processPackages [konfuzio-sdk]: Remove: archive file [/home/abi/fetcher/tmp/konfuzio_sdk-0.3.6.tar.gz]
+[2024-05-19 16:58:00] INFO root fetch - processPackages [konfuzio-sdk]: Remove: archive file [/home/abi/fetcher/tmp/konfuzio_sdk-0.3.6.dev20240515214331.tar.gz]
+[2024-05-19 16:58:00] INFO root fetch - main [MainThread]: End processing [konfuzio-sdk]: success
+[2024-05-19 16:58:00] INFO root fetch - processPackages [mns-common]: Remove: archive file [/home/abi/fetcher/tmp/mns_common-1.1.1.3.tar.gz]
+[2024-05-19 16:58:00] INFO root fetch - processPackages [mns-common]: Remove: archive file [/home/abi/fetcher/tmp/mns_common-1.1.1.4.tar.gz]
+[2024-05-19 16:58:00] INFO root fetch - main [MainThread]: End processing [mns-common]: success
+[2024-05-19 16:58:00] INFO root fetch - processPackages [digitalarztools]: Remove: archive file [/home/abi/fetcher/tmp/digitalarztools-0.1.8.tar.gz]
+[2024-05-19 16:58:00] INFO root fetch - processPackages [digitalarztools]: Remove: archive file [/home/abi/fetcher/tmp/digitalarztools-0.1.9.tar.gz]
+[2024-05-19 16:58:00] INFO root fetch - main [MainThread]: End processing [digitalarztools]: success
+[2024-05-19 16:58:00] INFO root fetch - main [MainThread]: Store serial: [23277483]
