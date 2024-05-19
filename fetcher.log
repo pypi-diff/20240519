@@ -5711,3 +5711,15 @@
 [2024-05-19 09:12:46] INFO root fetch - processPackages [azureml-acft-contrib-hf-nlp]: Remove: archive file [/home/abi/fetcher/tmp/azureml_acft_contrib_hf_nlp-47.0.0-py3-none-any.whl.zip]
 [2024-05-19 09:12:46] INFO root fetch - main [MainThread]: End processing [azureml-acft-contrib-hf-nlp]: success
 [2024-05-19 09:12:46] INFO root fetch - main [MainThread]: Store serial: [23274060]
+[2024-05-19 09:14:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274060]
+[2024-05-19 09:14:55] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 09:14:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tf-hub-nightly
+[2024-05-19 09:14:55] INFO root fetch - processPackages [tf-hub-nightly]: New version: [0.9.0.dev202008190006] Old Version: [0.9.0.dev202008180006]
+[2024-05-19 09:14:55] INFO root fetch - processPackages [tf-hub-nightly]: Downloading https://files.pythonhosted.org/packages/e8/6b/02811fcd79aec590e7355647130c822f1bd53092a205ce986e6df7364f52/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl
+[2024-05-19 09:14:56] INFO root fetch - processPackages [tf-hub-nightly]: Downloading https://files.pythonhosted.org/packages/d1/9a/6b02d0906847e11386093420119d147f7306d7a9cad79e8e575a9d29ae76/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl
+[2024-05-19 09:14:56] INFO root fetch - processPackages [tf-hub-nightly]: executing diffoscope
+[2024-05-19 09:14:56] INFO root fetch - processPackages [tf-hub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip --markdown 20240519/t/tf-hub-nightly/0.9.0.dev202008180006-0.9.0.dev202008190006/README.md --exclude *.pyd
+[2024-05-19 09:14:57] INFO root fetch - processPackages [tf-hub-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip]
+[2024-05-19 09:14:57] INFO root fetch - processPackages [tf-hub-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip]
+[2024-05-19 09:14:57] INFO root fetch - main [MainThread]: End processing [tf-hub-nightly]: success
+[2024-05-19 09:14:57] INFO root fetch - main [MainThread]: Store serial: [23274063]
