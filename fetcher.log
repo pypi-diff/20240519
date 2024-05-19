@@ -3769,3 +3769,36 @@
 [2024-05-19 06:09:31] INFO root fetch - processPackages [ha-mqtt-discoverable]: Remove: archive file [/home/abi/fetcher/tmp/ha_mqtt_discoverable-0.9.0.tar.gz]
 [2024-05-19 06:09:31] INFO root fetch - main [MainThread]: End processing [ha-mqtt-discoverable]: success
 [2024-05-19 06:09:31] INFO root fetch - main [MainThread]: Store serial: [23273198]
+[2024-05-19 06:11:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273198]
+[2024-05-19 06:11:41] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 06:11:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ctrip-app-ui
+[2024-05-19 06:11:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-geoacumen
+[2024-05-19 06:11:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: webframe-py
+[2024-05-19 06:11:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lit
+[2024-05-19 06:11:41] INFO root fetch - processPackages [ctrip-app-ui]: New version: [0.5.8] Old Version: [0.5.6]
+[2024-05-19 06:11:41] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/4b/c1/16ec8407faa5753427ef094b89a061492266e19bb4019e2cf2ea1eee4c6c/ctrip-app-ui-0.5.6.tar.gz
+[2024-05-19 06:11:41] WARNING root fetch - processPackages [webframe-py]: Skipping, unable to determine old version
+[2024-05-19 06:11:41] INFO root fetch - processPackages [lit]: New version: [18.1.6] Old Version: [18.1.4]
+[2024-05-19 06:11:41] INFO root fetch - main [MainThread]: End processing [webframe-py] error
+[2024-05-19 06:11:41] INFO root fetch - processPackages [python-geoacumen]: New version: [2024.5.5] Old Version: [2024.5.19]
+[2024-05-19 06:11:41] INFO root fetch - processPackages [python-geoacumen]: Downloading https://files.pythonhosted.org/packages/9b/9b/bd169fa918a205854b2f7e1abbcda75971dc76c2e6042fd0220c09034ef9/python-geoacumen-2024.5.19.tar.gz
+[2024-05-19 06:11:41] INFO root fetch - processPackages [lit]: Downloading https://files.pythonhosted.org/packages/d1/a8/f60ac84614cfdde136f8b9bb8e15ea6a815397b1e11e1c712e43bf694222/lit-18.1.4.tar.gz
+[2024-05-19 06:11:41] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/ad/07/739d535a6458fa744414ced052eca153eb49c00f940df4dc40b6d1b5442e/ctrip-app-ui-0.5.8.tar.gz
+[2024-05-19 06:11:41] INFO root fetch - processPackages [ctrip-app-ui]: executing diffoscope
+[2024-05-19 06:11:41] INFO root fetch - processPackages [ctrip-app-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctrip-app-ui-0.5.6.tar.gz tmp/ctrip-app-ui-0.5.8.tar.gz --markdown 20240519/c/ctrip-app-ui/0.5.6-0.5.8/README.md --exclude *.pyd
+[2024-05-19 06:11:41] INFO root fetch - processPackages [lit]: Downloading https://files.pythonhosted.org/packages/20/87/98366aa460de9a1413a41178acb9f83de106208f889fdccf47c5322163ed/lit-18.1.6.tar.gz
+[2024-05-19 06:11:42] INFO root fetch - processPackages [lit]: executing diffoscope
+[2024-05-19 06:11:42] INFO root fetch - processPackages [lit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lit-18.1.4.tar.gz tmp/lit-18.1.6.tar.gz --markdown 20240519/l/lit/18.1.4-18.1.6/README.md --exclude *.pyd
+[2024-05-19 06:11:42] INFO root fetch - processPackages [python-geoacumen]: Downloading https://files.pythonhosted.org/packages/90/c0/07d5db0508938cc316c7a276f6f70aa320c1da593c6ecb7a45cd1be82880/python-geoacumen-2024.5.5.tar.gz
+[2024-05-19 06:11:42] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.5.6.tar.gz]
+[2024-05-19 06:11:42] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.5.8.tar.gz]
+[2024-05-19 06:11:42] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
+[2024-05-19 06:11:43] INFO root fetch - processPackages [lit]: Remove: archive file [/home/abi/fetcher/tmp/lit-18.1.4.tar.gz]
+[2024-05-19 06:11:43] INFO root fetch - processPackages [lit]: Remove: archive file [/home/abi/fetcher/tmp/lit-18.1.6.tar.gz]
+[2024-05-19 06:11:43] INFO root fetch - main [MainThread]: End processing [lit]: success
+[2024-05-19 06:11:43] INFO root fetch - processPackages [python-geoacumen]: executing diffoscope
+[2024-05-19 06:11:43] INFO root fetch - processPackages [python-geoacumen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-geoacumen-2024.5.19.tar.gz tmp/python-geoacumen-2024.5.5.tar.gz --markdown 20240519/p/python-geoacumen/2024.5.19-2024.5.5/README.md --exclude *.pyd
+[2024-05-19 06:11:44] INFO root fetch - processPackages [python-geoacumen]: Remove: archive file [/home/abi/fetcher/tmp/python-geoacumen-2024.5.19.tar.gz]
+[2024-05-19 06:11:44] INFO root fetch - processPackages [python-geoacumen]: Remove: archive file [/home/abi/fetcher/tmp/python-geoacumen-2024.5.5.tar.gz]
+[2024-05-19 06:11:44] INFO root fetch - main [MainThread]: End processing [python-geoacumen]: success
+[2024-05-19 06:11:44] INFO root fetch - main [MainThread]: Store serial: [23273211]
