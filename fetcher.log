@@ -7948,3 +7948,48 @@
 [2024-05-19 11:56:34] INFO root fetch - processPackages [evidently]: Remove: archive file [/home/abi/fetcher/tmp/evidently-0.4.9.tar.gz]
 [2024-05-19 11:56:34] INFO root fetch - main [MainThread]: End processing [evidently]: success
 [2024-05-19 11:56:34] INFO root fetch - main [MainThread]: Store serial: [23275245]
+[2024-05-19 11:58:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275245]
+[2024-05-19 11:58:44] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-19 11:58:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dash-spread-grid
+[2024-05-19 11:58:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fantasiasz
+[2024-05-19 11:58:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fengwo
+[2024-05-19 11:58:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gadapt
+[2024-05-19 11:58:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sqooler
+[2024-05-19 11:58:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tf-keras-nightly
+[2024-05-19 11:58:44] INFO root fetch - processPackages [dash-spread-grid]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 11:58:44] INFO root fetch - processPackages [gadapt]: New version: [0.4.0] Old Version: [0.3.6]
+[2024-05-19 11:58:44] INFO root fetch - processPackages [tf-keras-nightly]: New version: [2.17.0.dev2024051809] Old Version: [2.17.0.dev2024051709]
+[2024-05-19 11:58:44] WARNING root fetch - processPackages [fantasiasz]: Skipping, unable to determine old version
+[2024-05-19 11:58:44] INFO root fetch - main [MainThread]: End processing [fantasiasz] error
+[2024-05-19 11:58:44] WARNING root fetch - processPackages [fengwo]: Skipping, unable to determine old version
+[2024-05-19 11:58:44] INFO root fetch - main [MainThread]: End processing [fengwo] error
+[2024-05-19 11:58:44] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/9f/39/3477f65f22676264317bcb1d617b220ddcc8d09f85a7eb7904d8c2676dae/dash_spread_grid-0.0.8.tar.gz
+[2024-05-19 11:58:44] INFO root fetch - processPackages [sqooler]: New version: [0.8.0] Old Version: [0.7.1]
+[2024-05-19 11:58:44] INFO root fetch - processPackages [gadapt]: Downloading https://files.pythonhosted.org/packages/d3/e7/17448ab318205de6bf7145038d80e264d53452281e9ac882c0820ebe12aa/gadapt-0.3.6.tar.gz
+[2024-05-19 11:58:44] INFO root fetch - processPackages [tf-keras-nightly]: Downloading https://files.pythonhosted.org/packages/ee/f0/52c6b6d7ab8a9ab075e736261e2e8728f044dfc9f33b2db386361e966c7d/tf_keras_nightly-2.17.0.dev2024051709.tar.gz
+[2024-05-19 11:58:44] INFO root fetch - processPackages [sqooler]: Downloading https://files.pythonhosted.org/packages/51/07/99fe16630a79f8ac354ca7dc01e9abee3ae9610d06770317a3b027a32ff8/sqooler-0.7.1.tar.gz
+[2024-05-19 11:58:44] INFO root fetch - processPackages [gadapt]: Downloading https://files.pythonhosted.org/packages/a7/12/3521d54f0af93a6d446fa47530a607aabf3836a5c56b9900ea2c591d16fa/gadapt-0.4.0.tar.gz
+[2024-05-19 11:58:44] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/37/f7/3991c1c5cd26d592773df3381df4e17ae14f51d47af4fd52b7419949494b/dash_spread_grid-0.0.9.tar.gz
+[2024-05-19 11:58:44] INFO root fetch - processPackages [gadapt]: executing diffoscope
+[2024-05-19 11:58:44] INFO root fetch - processPackages [gadapt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gadapt-0.3.6.tar.gz tmp/gadapt-0.4.0.tar.gz --markdown 20240519/g/gadapt/0.3.6-0.4.0/README.md --exclude *.pyd
+[2024-05-19 11:58:44] INFO root fetch - processPackages [dash-spread-grid]: executing diffoscope
+[2024-05-19 11:58:44] INFO root fetch - processPackages [dash-spread-grid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_spread_grid-0.0.8.tar.gz tmp/dash_spread_grid-0.0.9.tar.gz --markdown 20240519/d/dash-spread-grid/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 11:58:44] INFO root fetch - processPackages [tf-keras-nightly]: Downloading https://files.pythonhosted.org/packages/43/62/22dbea4b461e2b90ecfaaa81b45c6e5b9f98839c21958e77da4eb7d23530/tf_keras_nightly-2.17.0.dev2024051809.tar.gz
+[2024-05-19 11:58:45] INFO root fetch - processPackages [sqooler]: Downloading https://files.pythonhosted.org/packages/e5/a6/11d28b36685b9b14ed07213765d3bb062cdf0399c35c26242809c20261a4/sqooler-0.8.0.tar.gz
+[2024-05-19 11:58:45] INFO root fetch - processPackages [tf-keras-nightly]: executing diffoscope
+[2024-05-19 11:58:45] INFO root fetch - processPackages [tf-keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_keras_nightly-2.17.0.dev2024051709.tar.gz tmp/tf_keras_nightly-2.17.0.dev2024051809.tar.gz --markdown 20240519/t/tf-keras-nightly/2.17.0.dev2024051709-2.17.0.dev2024051809/README.md --exclude *.pyd
+[2024-05-19 11:58:45] INFO root fetch - processPackages [sqooler]: executing diffoscope
+[2024-05-19 11:58:45] INFO root fetch - processPackages [sqooler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqooler-0.7.1.tar.gz tmp/sqooler-0.8.0.tar.gz --markdown 20240519/s/sqooler/0.7.1-0.8.0/README.md --exclude *.pyd
+[2024-05-19 11:58:45] INFO root fetch - processPackages [gadapt]: Remove: archive file [/home/abi/fetcher/tmp/gadapt-0.3.6.tar.gz]
+[2024-05-19 11:58:45] INFO root fetch - processPackages [gadapt]: Remove: archive file [/home/abi/fetcher/tmp/gadapt-0.4.0.tar.gz]
+[2024-05-19 11:58:45] INFO root fetch - main [MainThread]: End processing [gadapt]: success
+[2024-05-19 11:58:45] INFO root fetch - processPackages [sqooler]: Remove: archive file [/home/abi/fetcher/tmp/sqooler-0.7.1.tar.gz]
+[2024-05-19 11:58:45] INFO root fetch - processPackages [sqooler]: Remove: archive file [/home/abi/fetcher/tmp/sqooler-0.8.0.tar.gz]
+[2024-05-19 11:58:45] INFO root fetch - main [MainThread]: End processing [sqooler]: success
+[2024-05-19 11:58:46] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.8.tar.gz]
+[2024-05-19 11:58:46] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.9.tar.gz]
+[2024-05-19 11:58:46] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
+[2024-05-19 11:58:47] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras_nightly-2.17.0.dev2024051709.tar.gz]
+[2024-05-19 11:58:47] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras_nightly-2.17.0.dev2024051809.tar.gz]
+[2024-05-19 11:58:47] INFO root fetch - main [MainThread]: End processing [tf-keras-nightly]: success
+[2024-05-19 11:58:47] INFO root fetch - main [MainThread]: Store serial: [23275261]
