@@ -14018,3 +14018,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 18:08:17] INFO root fetch - processPackages [surrealist]: Remove: archive file [/home/abi/fetcher/tmp/surrealist-0.5.1.tar.gz]
 [2024-05-19 18:08:17] INFO root fetch - main [MainThread]: End processing [surrealist]: success
 [2024-05-19 18:08:17] INFO root fetch - main [MainThread]: Store serial: [23278097]
+[2024-05-19 18:10:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23278097]
+[2024-05-19 18:10:25] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 18:10:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: metaffi-api
+[2024-05-19 18:10:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: elicznik
+[2024-05-19 18:10:25] INFO root fetch - processPackages [metaffi-api]: New version: [0.0.27] Old Version: [0.0.26]
+[2024-05-19 18:10:26] INFO root fetch - processPackages [metaffi-api]: Downloading https://files.pythonhosted.org/packages/ab/7c/f99f71ec70309ab49226a9a2c341b1ce2f0d538d4fce68bd291e9534baf3/metaffi_api-0.0.26.tar.gz
+[2024-05-19 18:10:26] INFO root fetch - processPackages [elicznik]: New version: [2.2.0] Old Version: [2.1.0]
+[2024-05-19 18:10:26] INFO root fetch - processPackages [elicznik]: Downloading https://files.pythonhosted.org/packages/da/f7/dd1789de9f901eaf6d87f5a27921dd5865170485a135cb52456238aa578e/elicznik-2.1.0.tar.gz
+[2024-05-19 18:10:26] INFO root fetch - processPackages [metaffi-api]: Downloading https://files.pythonhosted.org/packages/80/09/534672924999c17ddfe19479ffb6ee02dbd27d531b1bcaaa06ddda9cc9a0/metaffi_api-0.0.27-py3-none-any.whl
+[2024-05-19 18:10:26] INFO root fetch - processPackages [metaffi-api]: executing diffoscope
+[2024-05-19 18:10:26] INFO root fetch - processPackages [metaffi-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metaffi_api-0.0.26.tar.gz tmp/metaffi_api-0.0.27-py3-none-any.whl.zip --markdown 20240519/m/metaffi-api/0.0.26-0.0.27/README.md --exclude *.pyd
+[2024-05-19 18:10:26] INFO root fetch - processPackages [elicznik]: Downloading https://files.pythonhosted.org/packages/eb/9e/314a3e8d1bebb2650f9935bf7e965b0f105221942b60e2316adbe2658042/elicznik-2.2.0.tar.gz
+[2024-05-19 18:10:26] INFO root fetch - processPackages [elicznik]: executing diffoscope
+[2024-05-19 18:10:26] INFO root fetch - processPackages [elicznik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elicznik-2.1.0.tar.gz tmp/elicznik-2.2.0.tar.gz --markdown 20240519/e/elicznik/2.1.0-2.2.0/README.md --exclude *.pyd
+[2024-05-19 18:10:26] INFO root fetch - processPackages [metaffi-api]: Remove: archive file [/home/abi/fetcher/tmp/metaffi_api-0.0.26.tar.gz]
+[2024-05-19 18:10:26] INFO root fetch - processPackages [metaffi-api]: Remove: archive file [/home/abi/fetcher/tmp/metaffi_api-0.0.27-py3-none-any.whl.zip]
+[2024-05-19 18:10:26] INFO root fetch - main [MainThread]: End processing [metaffi-api]: success
+[2024-05-19 18:10:27] INFO root fetch - processPackages [elicznik]: Remove: archive file [/home/abi/fetcher/tmp/elicznik-2.1.0.tar.gz]
+[2024-05-19 18:10:27] INFO root fetch - processPackages [elicznik]: Remove: archive file [/home/abi/fetcher/tmp/elicznik-2.2.0.tar.gz]
+[2024-05-19 18:10:27] INFO root fetch - main [MainThread]: End processing [elicznik]: success
+[2024-05-19 18:10:27] INFO root fetch - main [MainThread]: Store serial: [23278107]
