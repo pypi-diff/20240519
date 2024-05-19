@@ -7619,3 +7619,15 @@
 [2024-05-19 11:23:09] INFO root fetch - processPackages [arclet-alconna-graia]: Remove: archive file [/home/abi/fetcher/tmp/arclet-alconna-graia-0.9.1.tar.gz]
 [2024-05-19 11:23:09] INFO root fetch - main [MainThread]: End processing [arclet-alconna-graia]: success
 [2024-05-19 11:23:09] INFO root fetch - main [MainThread]: Store serial: [23275042]
+[2024-05-19 11:25:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275042]
+[2024-05-19 11:25:17] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 11:25:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Project-ppchem-tools-kit
+[2024-05-19 11:25:17] INFO root fetch - processPackages [Project-ppchem-tools-kit]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-19 11:25:18] INFO root fetch - processPackages [Project-ppchem-tools-kit]: Downloading https://files.pythonhosted.org/packages/3b/e3/bfdff9f6e5e1b09acbb84fc2e9982080e8b9f718d31b0ef374551264c407/project_ppchem_tools_kit-0.1.0.tar.gz
+[2024-05-19 11:25:18] INFO root fetch - processPackages [Project-ppchem-tools-kit]: Downloading https://files.pythonhosted.org/packages/10/5e/498b00d1bd68cac0f02d004039412c8fe91715587db87179aac5179751f6/project_ppchem_tools_kit-0.1.1.tar.gz
+[2024-05-19 11:25:18] INFO root fetch - processPackages [Project-ppchem-tools-kit]: executing diffoscope
+[2024-05-19 11:25:18] INFO root fetch - processPackages [Project-ppchem-tools-kit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/project_ppchem_tools_kit-0.1.0.tar.gz tmp/project_ppchem_tools_kit-0.1.1.tar.gz --markdown 20240519/P/Project-ppchem-tools-kit/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-19 11:25:18] INFO root fetch - processPackages [Project-ppchem-tools-kit]: Remove: archive file [/home/abi/fetcher/tmp/project_ppchem_tools_kit-0.1.0.tar.gz]
+[2024-05-19 11:25:18] INFO root fetch - processPackages [Project-ppchem-tools-kit]: Remove: archive file [/home/abi/fetcher/tmp/project_ppchem_tools_kit-0.1.1.tar.gz]
+[2024-05-19 11:25:18] INFO root fetch - main [MainThread]: End processing [Project-ppchem-tools-kit]: success
+[2024-05-19 11:25:18] INFO root fetch - main [MainThread]: Store serial: [23275045]
