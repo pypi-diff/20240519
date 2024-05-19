@@ -6055,3 +6055,36 @@
 [2024-05-19 09:32:44] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-warehouse]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_stock_logistics_warehouse-16.0.20240518.0-py3-none-any.whl.zip]
 [2024-05-19 09:32:44] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-stock-logistics-warehouse]: success
 [2024-05-19 09:32:44] INFO root fetch - main [MainThread]: Store serial: [23274174]
+[2024-05-19 09:34:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274174]
+[2024-05-19 09:34:52] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 09:34:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addons-oca-stock-logistics-warehouse
+[2024-05-19 09:34:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: grumpilyz
+[2024-05-19 09:34:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tahrir
+[2024-05-19 09:34:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mybar
+[2024-05-19 09:34:53] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-warehouse]: New version: [16.0.20240518.0] Old Version: [16.0.20240421.0]
+[2024-05-19 09:34:53] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-warehouse]: Downloading https://files.pythonhosted.org/packages/f7/87/e6f7bd329c4968526bd557176153459ae884cc6a95dced20b2a012c6332f/odoo_addons_oca_stock_logistics_warehouse-16.0.20240421.0-py3-none-any.whl
+[2024-05-19 09:34:53] WARNING root fetch - processPackages [grumpilyz]: Skipping, unable to determine old version
+[2024-05-19 09:34:53] INFO root fetch - main [MainThread]: End processing [grumpilyz] error
+[2024-05-19 09:34:53] INFO root fetch - processPackages [tahrir]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-05-19 09:34:53] INFO root fetch - processPackages [tahrir]: Downloading https://files.pythonhosted.org/packages/b9/66/874905d7498b84ed8bf9e2624ff8d7f056753bf460cb4937eaa8debf01f5/tahrir-1.0.0.tar.gz
+[2024-05-19 09:34:53] INFO root fetch - processPackages [mybar]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-05-19 09:34:53] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-warehouse]: Downloading https://files.pythonhosted.org/packages/e7/10/3459c4df3370acdb5fca2625c155930ef20bc87173c39cc11c5237e06027/odoo_addons_oca_stock_logistics_warehouse-16.0.20240518.0-py3-none-any.whl
+[2024-05-19 09:34:53] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-warehouse]: executing diffoscope
+[2024-05-19 09:34:53] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-warehouse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_stock_logistics_warehouse-16.0.20240421.0-py3-none-any.whl.zip tmp/odoo_addons_oca_stock_logistics_warehouse-16.0.20240518.0-py3-none-any.whl.zip --markdown 20240519/o/odoo-addons-oca-stock-logistics-warehouse/16.0.20240421.0-16.0.20240518.0/README.md --exclude *.pyd
+[2024-05-19 09:34:53] INFO root fetch - processPackages [mybar]: Downloading https://files.pythonhosted.org/packages/0e/c0/fa158a979e12e4ff92d61ba85b851319b3fea74eacbf23c4b49346ccffe6/mybar-0.9.1.tar.gz
+[2024-05-19 09:34:53] INFO root fetch - processPackages [tahrir]: Downloading https://files.pythonhosted.org/packages/c3/80/5721b463c6a03d50a799438c73313e4870a961b62e3e9db98afa24bbbb53/tahrir-1.1.0.tar.gz
+[2024-05-19 09:34:53] INFO root fetch - processPackages [mybar]: Downloading https://files.pythonhosted.org/packages/56/f1/a358e017c72716356a95dc22a2a93cd5940ea76b94683acd08bd88fff497/mybar-0.9.2.tar.gz
+[2024-05-19 09:34:53] INFO root fetch - processPackages [mybar]: executing diffoscope
+[2024-05-19 09:34:53] INFO root fetch - processPackages [mybar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mybar-0.9.1.tar.gz tmp/mybar-0.9.2.tar.gz --markdown 20240519/m/mybar/0.9.1-0.9.2/README.md --exclude *.pyd
+[2024-05-19 09:34:53] INFO root fetch - processPackages [tahrir]: executing diffoscope
+[2024-05-19 09:34:53] INFO root fetch - processPackages [tahrir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tahrir-1.0.0.tar.gz tmp/tahrir-1.1.0.tar.gz --markdown 20240519/t/tahrir/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-05-19 09:34:53] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-warehouse]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_stock_logistics_warehouse-16.0.20240421.0-py3-none-any.whl.zip]
+[2024-05-19 09:34:53] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-warehouse]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_stock_logistics_warehouse-16.0.20240518.0-py3-none-any.whl.zip]
+[2024-05-19 09:34:54] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-stock-logistics-warehouse]: success
+[2024-05-19 09:34:54] INFO root fetch - processPackages [mybar]: Remove: archive file [/home/abi/fetcher/tmp/mybar-0.9.1.tar.gz]
+[2024-05-19 09:34:54] INFO root fetch - processPackages [mybar]: Remove: archive file [/home/abi/fetcher/tmp/mybar-0.9.2.tar.gz]
+[2024-05-19 09:34:54] INFO root fetch - main [MainThread]: End processing [mybar]: success
+[2024-05-19 09:34:54] INFO root fetch - processPackages [tahrir]: Remove: archive file [/home/abi/fetcher/tmp/tahrir-1.0.0.tar.gz]
+[2024-05-19 09:34:54] INFO root fetch - processPackages [tahrir]: Remove: archive file [/home/abi/fetcher/tmp/tahrir-1.1.0.tar.gz]
+[2024-05-19 09:34:54] INFO root fetch - main [MainThread]: End processing [tahrir]: success
+[2024-05-19 09:34:54] INFO root fetch - main [MainThread]: Store serial: [23274186]
