@@ -11339,3 +11339,9 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 15:31:48] INFO root fetch - processPackages [spaceone-inventory]: Remove: archive file [/home/abi/fetcher/tmp/spaceone-inventory-2.0.dev99.tar.gz]
 [2024-05-19 15:31:48] INFO root fetch - main [MainThread]: End processing [spaceone-inventory]: success
 [2024-05-19 15:31:48] INFO root fetch - main [MainThread]: Store serial: [23276795]
+[2024-05-19 15:33:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276795]
+[2024-05-19 15:33:57] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 15:33:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tacitz
+[2024-05-19 15:33:57] WARNING root fetch - processPackages [tacitz]: Skipping, unable to determine old version
+[2024-05-19 15:33:57] INFO root fetch - main [MainThread]: End processing [tacitz] error
+[2024-05-19 15:33:57] INFO root fetch - main [MainThread]: Store serial: [23276800]
