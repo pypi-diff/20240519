@@ -10194,3 +10194,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 14:19:25] INFO root fetch - processPackages [pybnesian]: Remove: archive file [/home/abi/fetcher/tmp/pybnesian-0.5.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-05-19 14:19:25] INFO root fetch - main [MainThread]: End processing [pybnesian]: success
 [2024-05-19 14:19:25] INFO root fetch - main [MainThread]: Store serial: [23276188]
+[2024-05-19 14:21:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276188]
+[2024-05-19 14:21:33] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 14:21:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pybnesian
+[2024-05-19 14:21:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scratchbackz
+[2024-05-19 14:21:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flatpack
+[2024-05-19 14:21:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: arbmaster
+[2024-05-19 14:21:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: smo_rejection
+[2024-05-19 14:21:33] INFO root fetch - processPackages [smo_rejection]: New version: [0.4.0] Old Version: [0.3.1]
+[2024-05-19 14:21:33] INFO root fetch - processPackages [pybnesian]: New version: [0.5.0] Old Version: [0.4.3]
+[2024-05-19 14:21:33] INFO root fetch - processPackages [flatpack]: New version: [3.4.9] Old Version: [3.4.8]
+[2024-05-19 14:21:33] WARNING root fetch - processPackages [scratchbackz]: Skipping, unable to determine old version
+[2024-05-19 14:21:33] INFO root fetch - main [MainThread]: End processing [scratchbackz] error
+[2024-05-19 14:21:33] INFO root fetch - processPackages [arbmaster]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-19 14:21:33] INFO root fetch - processPackages [smo_rejection]: Downloading https://files.pythonhosted.org/packages/0b/43/4ba8cb02454fe41595fe11003576bc3609cac42165efbe1a461b4aef00df/smo_rejection-0.3.1.tar.gz
+[2024-05-19 14:21:33] INFO root fetch - processPackages [pybnesian]: Downloading https://files.pythonhosted.org/packages/45/a8/6a0b68e57fb5266320fcdc1fa1a016232177cfbd02f712cd270a6ec077c6/pybnesian-0.4.3.tar.gz
+[2024-05-19 14:21:33] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/92/5a/46a0817bd1cfcbeb0f041626a2cc2b28a97a17caa6609495cfb355a5d90e/flatpack-3.4.8.tar.gz
+[2024-05-19 14:21:34] INFO root fetch - processPackages [smo_rejection]: Downloading https://files.pythonhosted.org/packages/08/63/e1724dbaead3a704e0c787defd18af6538dcdab778a49613edd8982fa418/smo_rejection-0.4.0.tar.gz
+[2024-05-19 14:21:34] INFO root fetch - processPackages [arbmaster]: Downloading https://files.pythonhosted.org/packages/87/b6/e9581ac9c53c3d1cc2f39e4a59dbebf1ec63801a80fbe7e605276edc3658/arbmaster-0.1.3.tar.gz
+[2024-05-19 14:21:34] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/29/b6/9545d80064161872f90e25faa6bb7dc31698e88762b3d442b5fb491967fd/flatpack-3.4.9.tar.gz
+[2024-05-19 14:21:34] INFO root fetch - processPackages [smo_rejection]: executing diffoscope
+[2024-05-19 14:21:34] INFO root fetch - processPackages [smo_rejection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smo_rejection-0.3.1.tar.gz tmp/smo_rejection-0.4.0.tar.gz --markdown 20240519/s/smo_rejection/0.3.1-0.4.0/README.md --exclude *.pyd
+[2024-05-19 14:21:34] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-05-19 14:21:34] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.4.8.tar.gz tmp/flatpack-3.4.9.tar.gz --markdown 20240519/f/flatpack/3.4.8-3.4.9/README.md --exclude *.pyd
+[2024-05-19 14:21:34] INFO root fetch - processPackages [pybnesian]: Downloading https://files.pythonhosted.org/packages/4e/68/738d307bc322e42cddecedd7c37ea1665edcbbbb4b971ce9641eb7a29c2b/pybnesian-0.5.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-19 14:21:34] INFO root fetch - processPackages [arbmaster]: Downloading https://files.pythonhosted.org/packages/ab/4c/2f668a252978c02358cdc5beda6dbdcea345a7ac36ef5c227c164c4bbc1a/arbmaster-0.1.4.tar.gz
+[2024-05-19 14:21:34] INFO root fetch - processPackages [arbmaster]: executing diffoscope
+[2024-05-19 14:21:34] INFO root fetch - processPackages [arbmaster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arbmaster-0.1.3.tar.gz tmp/arbmaster-0.1.4.tar.gz --markdown 20240519/a/arbmaster/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-19 14:21:34] INFO root fetch - processPackages [smo_rejection]: Remove: archive file [/home/abi/fetcher/tmp/smo_rejection-0.3.1.tar.gz]
+[2024-05-19 14:21:34] INFO root fetch - processPackages [smo_rejection]: Remove: archive file [/home/abi/fetcher/tmp/smo_rejection-0.4.0.tar.gz]
+[2024-05-19 14:21:34] INFO root fetch - main [MainThread]: End processing [smo_rejection]: success
+[2024-05-19 14:21:34] INFO root fetch - processPackages [pybnesian]: executing diffoscope
+[2024-05-19 14:21:34] INFO root fetch - processPackages [pybnesian]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybnesian-0.4.3.tar.gz tmp/pybnesian-0.5.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240519/p/pybnesian/0.4.3-0.5.0/README.md --exclude *.pyd
+[2024-05-19 14:21:34] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.8.tar.gz]
+[2024-05-19 14:21:34] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.9.tar.gz]
+[2024-05-19 14:21:34] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-05-19 14:21:35] INFO root fetch - processPackages [arbmaster]: Remove: archive file [/home/abi/fetcher/tmp/arbmaster-0.1.3.tar.gz]
+[2024-05-19 14:21:35] INFO root fetch - processPackages [arbmaster]: Remove: archive file [/home/abi/fetcher/tmp/arbmaster-0.1.4.tar.gz]
+[2024-05-19 14:21:35] INFO root fetch - main [MainThread]: End processing [arbmaster]: success
+[2024-05-19 14:21:36] INFO root fetch - processPackages [pybnesian]: Remove: archive file [/home/abi/fetcher/tmp/pybnesian-0.4.3.tar.gz]
+[2024-05-19 14:21:36] INFO root fetch - processPackages [pybnesian]: Remove: archive file [/home/abi/fetcher/tmp/pybnesian-0.5.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-19 14:21:36] INFO root fetch - main [MainThread]: End processing [pybnesian]: success
+[2024-05-19 14:21:36] INFO root fetch - main [MainThread]: Store serial: [23276223]
