@@ -13763,3 +13763,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 17:50:57] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
 [2024-05-19 17:50:57] INFO root fetch - main [MainThread]: End processing [yeref]: success
 [2024-05-19 17:50:57] INFO root fetch - main [MainThread]: Store serial: [23277988]
+[2024-05-19 17:53:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277988]
+[2024-05-19 17:53:05] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 17:53:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: acb
+[2024-05-19 17:53:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: BigEDA
+[2024-05-19 17:53:06] INFO root fetch - processPackages [BigEDA]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 17:53:06] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/2f/fe/5c10bf9dfaa50e4e1234e81e022638b3ef20c821e939dae4cdc3da332e46/bigeda-0.0.8.tar.gz
+[2024-05-19 17:53:06] INFO root fetch - processPackages [acb]: New version: [0.6.0] Old Version: [0.5.9]
+[2024-05-19 17:53:06] INFO root fetch - processPackages [acb]: Downloading https://files.pythonhosted.org/packages/b5/f5/39ede17ab765abc34045bfa50de2b3f0e5623063ab516cc694299140ef50/acb-0.5.9.tar.gz
+[2024-05-19 17:53:06] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/b1/5d/ec41b2b9af7223a14c0e82d4f64cbeb0d0339a0d8bca37dbb041af6ef14d/bigeda-0.0.9.tar.gz
+[2024-05-19 17:53:06] INFO root fetch - processPackages [BigEDA]: executing diffoscope
+[2024-05-19 17:53:06] INFO root fetch - processPackages [BigEDA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigeda-0.0.8.tar.gz tmp/bigeda-0.0.9.tar.gz --markdown 20240519/B/BigEDA/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 17:53:06] INFO root fetch - processPackages [acb]: Downloading https://files.pythonhosted.org/packages/13/e3/49c170ca7477015f48d61bd7a60ab5bb102673e9010f4ed52453b07f70f4/acb-0.6.0.tar.gz
+[2024-05-19 17:53:06] INFO root fetch - processPackages [acb]: executing diffoscope
+[2024-05-19 17:53:06] INFO root fetch - processPackages [acb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acb-0.5.9.tar.gz tmp/acb-0.6.0.tar.gz --markdown 20240519/a/acb/0.5.9-0.6.0/README.md --exclude *.pyd
+[2024-05-19 17:53:07] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.8.tar.gz]
+[2024-05-19 17:53:07] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.9.tar.gz]
+[2024-05-19 17:53:07] INFO root fetch - main [MainThread]: End processing [BigEDA]: success
+[2024-05-19 17:53:07] INFO root fetch - processPackages [acb]: Remove: archive file [/home/abi/fetcher/tmp/acb-0.5.9.tar.gz]
+[2024-05-19 17:53:07] INFO root fetch - processPackages [acb]: Remove: archive file [/home/abi/fetcher/tmp/acb-0.6.0.tar.gz]
+[2024-05-19 17:53:07] INFO root fetch - main [MainThread]: End processing [acb]: success
+[2024-05-19 17:53:07] INFO root fetch - main [MainThread]: Store serial: [23277995]
