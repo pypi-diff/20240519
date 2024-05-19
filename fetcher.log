@@ -1951,3 +1951,15 @@
 [2024-05-19 03:26:09] INFO root fetch - processPackages [rdatapp]: Remove: archive file [/home/abi/fetcher/tmp/rdatapp-0.2b0.tar.gz]
 [2024-05-19 03:26:09] INFO root fetch - main [MainThread]: End processing [rdatapp]: success
 [2024-05-19 03:26:09] INFO root fetch - main [MainThread]: Store serial: [23272373]
+[2024-05-19 03:28:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272373]
+[2024-05-19 03:28:19] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 03:28:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: csv2notion-neo
+[2024-05-19 03:28:19] INFO root fetch - processPackages [csv2notion-neo]: New version: [1.2.6] Old Version: [1.2.5]
+[2024-05-19 03:28:19] INFO root fetch - processPackages [csv2notion-neo]: Downloading https://files.pythonhosted.org/packages/29/a8/ee181fa4952923e042dcbf932f45acf737dc009910f8edd8cda9281e06b4/csv2notion_neo-1.2.5.tar.gz
+[2024-05-19 03:28:20] INFO root fetch - processPackages [csv2notion-neo]: Downloading https://files.pythonhosted.org/packages/91/3f/c419ccfdfc77f45fcd40699eeee76a0d7c780816b811f61da3a9c8cb5009/csv2notion_neo-1.2.6.tar.gz
+[2024-05-19 03:28:20] INFO root fetch - processPackages [csv2notion-neo]: executing diffoscope
+[2024-05-19 03:28:20] INFO root fetch - processPackages [csv2notion-neo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/csv2notion_neo-1.2.5.tar.gz tmp/csv2notion_neo-1.2.6.tar.gz --markdown 20240519/c/csv2notion-neo/1.2.5-1.2.6/README.md --exclude *.pyd
+[2024-05-19 03:28:21] INFO root fetch - processPackages [csv2notion-neo]: Remove: archive file [/home/abi/fetcher/tmp/csv2notion_neo-1.2.5.tar.gz]
+[2024-05-19 03:28:21] INFO root fetch - processPackages [csv2notion-neo]: Remove: archive file [/home/abi/fetcher/tmp/csv2notion_neo-1.2.6.tar.gz]
+[2024-05-19 03:28:21] INFO root fetch - main [MainThread]: End processing [csv2notion-neo]: success
+[2024-05-19 03:28:21] INFO root fetch - main [MainThread]: Store serial: [23272376]
