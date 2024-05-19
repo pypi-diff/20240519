@@ -10450,3 +10450,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 14:32:36] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
 [2024-05-19 14:32:36] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
 [2024-05-19 14:32:36] INFO root fetch - main [MainThread]: Store serial: [23276302]
+[2024-05-19 14:34:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276302]
+[2024-05-19 14:34:45] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 14:34:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bridgecrew
+[2024-05-19 14:34:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qualystbx
+[2024-05-19 14:34:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yeref
+[2024-05-19 14:34:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: phc-ingestion
+[2024-05-19 14:34:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: simpleai-base
+[2024-05-19 14:34:45] INFO root fetch - processPackages [qualystbx]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-05-19 14:34:45] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-19 14:34:45] INFO root fetch - processPackages [bridgecrew]: New version: [3.2.96] Old Version: [3.2.95]
+[2024-05-19 14:34:45] INFO root fetch - processPackages [qualystbx]: Downloading https://files.pythonhosted.org/packages/15/45/271775a59d39965b618cedf6958aeb8ddc92e44b2d7d2c9288747422291e/qualystbx-0.5.0.tar.gz
+[2024-05-19 14:34:45] INFO root fetch - processPackages [phc-ingestion]: New version: [0.8.9] Old Version: [0.8.8]
+[2024-05-19 14:34:45] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-19 14:34:45] INFO root fetch - processPackages [simpleai-base]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-05-19 14:34:45] INFO root fetch - processPackages [bridgecrew]: Downloading https://files.pythonhosted.org/packages/22/5f/ac0c3610940f5de9c60430470ee59e43204e15127b7bef5cf9d518e04022/bridgecrew-3.2.95.tar.gz
+[2024-05-19 14:34:45] INFO root fetch - processPackages [phc-ingestion]: Downloading https://files.pythonhosted.org/packages/02/04/8d438a1686e66b52dfdfa5de3b7057ceb58aa969e2234409675b6e62556e/phc-ingestion-0.8.8.tar.gz
+[2024-05-19 14:34:46] INFO root fetch - processPackages [simpleai-base]: Downloading https://files.pythonhosted.org/packages/1f/c8/8cf212a104fd7cc965ea5c685bea598d1799d6c9de9689427e7a05630e9a/simpleai_base-0.3.1-pp310-pypy310_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-19 14:34:46] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-19 14:34:46] INFO root fetch - processPackages [qualystbx]: Downloading https://files.pythonhosted.org/packages/bb/a8/55089bf7a2c20142aba17a495c2e1203528dc4dc5ceb5867c251c2ee9519/qualystbx-0.6.0.tar.gz
+[2024-05-19 14:34:46] INFO root fetch - processPackages [bridgecrew]: Downloading https://files.pythonhosted.org/packages/fc/82/c9951aacb6977009bd11e7a1faf43ed2bbc86381cc50badea5c8a9fd8432/bridgecrew-3.2.96.tar.gz
+[2024-05-19 14:34:46] INFO root fetch - processPackages [qualystbx]: executing diffoscope
+[2024-05-19 14:34:46] INFO root fetch - processPackages [qualystbx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qualystbx-0.5.0.tar.gz tmp/qualystbx-0.6.0.tar.gz --markdown 20240519/q/qualystbx/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-05-19 14:34:46] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2024-05-19 14:34:46] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-3.2.95.tar.gz tmp/bridgecrew-3.2.96.tar.gz --markdown 20240519/b/bridgecrew/3.2.95-3.2.96/README.md --exclude *.pyd
+[2024-05-19 14:34:46] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-19 14:34:46] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240519/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-19 14:34:46] INFO root fetch - processPackages [phc-ingestion]: Downloading https://files.pythonhosted.org/packages/f8/0f/62839607b06ab11e228299fc8542a8149718c194d0d7da12972bfc1133c5/phc-ingestion-0.8.9.tar.gz
+[2024-05-19 14:34:46] INFO root fetch - processPackages [simpleai-base]: Downloading https://files.pythonhosted.org/packages/c8/69/a93e2ddba777e1540a7199c01d2072107228463c172dad05f0d447201f5f/simpleai_base-0.3.2-pp310-pypy310_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-19 14:34:46] INFO root fetch - processPackages [bridgecrew]: Remove: archive file [/home/abi/fetcher/tmp/bridgecrew-3.2.95.tar.gz]
+[2024-05-19 14:34:46] INFO root fetch - processPackages [bridgecrew]: Remove: archive file [/home/abi/fetcher/tmp/bridgecrew-3.2.96.tar.gz]
+[2024-05-19 14:34:46] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
+[2024-05-19 14:34:46] INFO root fetch - processPackages [phc-ingestion]: executing diffoscope
+[2024-05-19 14:34:46] INFO root fetch - processPackages [phc-ingestion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phc-ingestion-0.8.8.tar.gz tmp/phc-ingestion-0.8.9.tar.gz --markdown 20240519/p/phc-ingestion/0.8.8-0.8.9/README.md --exclude *.pyd
+[2024-05-19 14:34:46] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-19 14:34:46] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-19 14:34:46] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-19 14:34:47] INFO root fetch - processPackages [qualystbx]: Remove: archive file [/home/abi/fetcher/tmp/qualystbx-0.5.0.tar.gz]
+[2024-05-19 14:34:47] INFO root fetch - processPackages [qualystbx]: Remove: archive file [/home/abi/fetcher/tmp/qualystbx-0.6.0.tar.gz]
+[2024-05-19 14:34:47] INFO root fetch - main [MainThread]: End processing [qualystbx]: success
+[2024-05-19 14:34:47] INFO root fetch - processPackages [phc-ingestion]: Remove: archive file [/home/abi/fetcher/tmp/phc-ingestion-0.8.8.tar.gz]
+[2024-05-19 14:34:47] INFO root fetch - processPackages [phc-ingestion]: Remove: archive file [/home/abi/fetcher/tmp/phc-ingestion-0.8.9.tar.gz]
+[2024-05-19 14:34:47] INFO root fetch - main [MainThread]: End processing [phc-ingestion]: success
+[2024-05-19 14:34:52] INFO root fetch - processPackages [simpleai-base]: executing diffoscope
+[2024-05-19 14:34:52] INFO root fetch - processPackages [simpleai-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simpleai_base-0.3.1-pp310-pypy310_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/simpleai_base-0.3.2-pp310-pypy310_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240519/s/simpleai-base/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-05-19 14:35:31] INFO root fetch - processPackages [simpleai-base]: Remove: archive file [/home/abi/fetcher/tmp/simpleai_base-0.3.1-pp310-pypy310_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-19 14:35:31] INFO root fetch - processPackages [simpleai-base]: Remove: archive file [/home/abi/fetcher/tmp/simpleai_base-0.3.2-pp310-pypy310_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-19 14:35:31] INFO root fetch - main [MainThread]: End processing [simpleai-base]: success
+[2024-05-19 14:35:31] INFO root fetch - main [MainThread]: Store serial: [23276318]
