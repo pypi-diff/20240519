@@ -6824,3 +6824,24 @@
 [2024-05-19 10:19:33] INFO root fetch - processPackages [ocrmypdf]: Remove: archive file [/home/abi/fetcher/tmp/ocrmypdf-9.8.2.tar.gz]
 [2024-05-19 10:19:33] INFO root fetch - main [MainThread]: End processing [ocrmypdf]: success
 [2024-05-19 10:19:33] INFO root fetch - main [MainThread]: Store serial: [23274553]
+[2024-05-19 10:21:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274553]
+[2024-05-19 10:21:43] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 10:21:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: translator-uabthehack
+[2024-05-19 10:21:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ObjectToString
+[2024-05-19 10:21:43] INFO root fetch - processPackages [translator-uabthehack]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-05-19 10:21:43] INFO root fetch - processPackages [ObjectToString]: New version: [0.2.71] Old Version: [0.2.70]
+[2024-05-19 10:21:44] INFO root fetch - processPackages [translator-uabthehack]: Downloading https://files.pythonhosted.org/packages/71/6d/186cf63afeb99c2170ce21987fe204f9876c26c7edff80a663c8e99ee906/translator_uabthehack-0.3.0.tar.gz
+[2024-05-19 10:21:44] INFO root fetch - processPackages [ObjectToString]: Downloading https://files.pythonhosted.org/packages/da/b5/b19c1688921be6085bf974644d2f7e6f139fb15a77bf521cd801ffe4842e/ObjectToString-0.2.70.tar.gz
+[2024-05-19 10:21:44] INFO root fetch - processPackages [translator-uabthehack]: Downloading https://files.pythonhosted.org/packages/17/9d/53e8bff1bb367313c3a6b30691da5ad1c3e022f43f049491fcc2347f524b/translator_uabthehack-0.4.0.tar.gz
+[2024-05-19 10:21:44] INFO root fetch - processPackages [translator-uabthehack]: executing diffoscope
+[2024-05-19 10:21:44] INFO root fetch - processPackages [translator-uabthehack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/translator_uabthehack-0.3.0.tar.gz tmp/translator_uabthehack-0.4.0.tar.gz --markdown 20240519/t/translator-uabthehack/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-05-19 10:21:44] INFO root fetch - processPackages [ObjectToString]: Downloading https://files.pythonhosted.org/packages/65/0a/94d089b9cb5b3e5f724d3354bf87658da53f34b8ac0151291ad02d83b176/ObjectToString-0.2.71.tar.gz
+[2024-05-19 10:21:44] INFO root fetch - processPackages [ObjectToString]: executing diffoscope
+[2024-05-19 10:21:44] INFO root fetch - processPackages [ObjectToString]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ObjectToString-0.2.70.tar.gz tmp/ObjectToString-0.2.71.tar.gz --markdown 20240519/O/ObjectToString/0.2.70-0.2.71/README.md --exclude *.pyd
+[2024-05-19 10:21:44] INFO root fetch - processPackages [translator-uabthehack]: Remove: archive file [/home/abi/fetcher/tmp/translator_uabthehack-0.3.0.tar.gz]
+[2024-05-19 10:21:44] INFO root fetch - processPackages [translator-uabthehack]: Remove: archive file [/home/abi/fetcher/tmp/translator_uabthehack-0.4.0.tar.gz]
+[2024-05-19 10:21:44] INFO root fetch - main [MainThread]: End processing [translator-uabthehack]: success
+[2024-05-19 10:21:45] INFO root fetch - processPackages [ObjectToString]: Remove: archive file [/home/abi/fetcher/tmp/ObjectToString-0.2.70.tar.gz]
+[2024-05-19 10:21:45] INFO root fetch - processPackages [ObjectToString]: Remove: archive file [/home/abi/fetcher/tmp/ObjectToString-0.2.71.tar.gz]
+[2024-05-19 10:21:45] INFO root fetch - main [MainThread]: End processing [ObjectToString]: success
+[2024-05-19 10:21:45] INFO root fetch - main [MainThread]: Store serial: [23274562]
