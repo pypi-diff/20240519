@@ -12287,3 +12287,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 16:29:47] INFO root fetch - processPackages [pyslth]: Remove: archive file [/home/abi/fetcher/tmp/pyslth-0.3.6.tar.gz]
 [2024-05-19 16:29:47] INFO root fetch - main [MainThread]: End processing [pyslth]: success
 [2024-05-19 16:29:47] INFO root fetch - main [MainThread]: Store serial: [23277269]
+[2024-05-19 16:31:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277269]
+[2024-05-19 16:31:55] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 16:31:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: patchworklib
+[2024-05-19 16:31:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: saasyflow
+[2024-05-19 16:31:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: indipyclient
+[2024-05-19 16:31:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: examkiller
+[2024-05-19 16:31:56] WARNING root fetch - processPackages [saasyflow]: Skipping, unable to determine old version
+[2024-05-19 16:31:56] INFO root fetch - main [MainThread]: End processing [saasyflow] error
+[2024-05-19 16:31:56] INFO root fetch - processPackages [patchworklib]: New version: [0.6.4] Old Version: [0.6.3]
+[2024-05-19 16:31:56] INFO root fetch - processPackages [indipyclient]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-19 16:31:56] WARNING root fetch - processPackages [examkiller]: Skipping, unable to determine old version
+[2024-05-19 16:31:56] INFO root fetch - main [MainThread]: End processing [examkiller] error
+[2024-05-19 16:31:56] INFO root fetch - processPackages [patchworklib]: Downloading https://files.pythonhosted.org/packages/6d/74/f094e4b8f2fdf9b6bcca905a876e2442f7bfd50e5c8ff5532089ccfe1def/patchworklib-0.6.3-py3-none-any.whl
+[2024-05-19 16:31:56] INFO root fetch - processPackages [indipyclient]: Downloading https://files.pythonhosted.org/packages/d4/5b/cc50bba2a9dab823f316cebbde323871031c204f191a92101c07bef201e7/indipyclient-0.1.4.tar.gz
+[2024-05-19 16:31:56] INFO root fetch - processPackages [patchworklib]: Downloading https://files.pythonhosted.org/packages/0d/1b/60c6f0d16fe98d9e2c4e3945dddfd2da6661e7b635887aeda3e8e756ec78/patchworklib-0.6.4-py3-none-any.whl
+[2024-05-19 16:31:56] INFO root fetch - processPackages [indipyclient]: Downloading https://files.pythonhosted.org/packages/f8/d2/10238f55dfcbd9b0a0d13ca552374acdeec8cfc16af03c43bb3762ba466f/indipyclient-0.1.5.tar.gz
+[2024-05-19 16:31:56] INFO root fetch - processPackages [patchworklib]: executing diffoscope
+[2024-05-19 16:31:56] INFO root fetch - processPackages [patchworklib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/patchworklib-0.6.3-py3-none-any.whl.zip tmp/patchworklib-0.6.4-py3-none-any.whl.zip --markdown 20240519/p/patchworklib/0.6.3-0.6.4/README.md --exclude *.pyd
+[2024-05-19 16:31:56] INFO root fetch - processPackages [indipyclient]: executing diffoscope
+[2024-05-19 16:31:56] INFO root fetch - processPackages [indipyclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/indipyclient-0.1.4.tar.gz tmp/indipyclient-0.1.5.tar.gz --markdown 20240519/i/indipyclient/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-19 16:31:57] INFO root fetch - processPackages [patchworklib]: Remove: archive file [/home/abi/fetcher/tmp/patchworklib-0.6.3-py3-none-any.whl.zip]
+[2024-05-19 16:31:57] INFO root fetch - processPackages [patchworklib]: Remove: archive file [/home/abi/fetcher/tmp/patchworklib-0.6.4-py3-none-any.whl.zip]
+[2024-05-19 16:31:57] INFO root fetch - main [MainThread]: End processing [patchworklib]: success
+[2024-05-19 16:31:57] INFO root fetch - processPackages [indipyclient]: Remove: archive file [/home/abi/fetcher/tmp/indipyclient-0.1.4.tar.gz]
+[2024-05-19 16:31:57] INFO root fetch - processPackages [indipyclient]: Remove: archive file [/home/abi/fetcher/tmp/indipyclient-0.1.5.tar.gz]
+[2024-05-19 16:31:57] INFO root fetch - main [MainThread]: End processing [indipyclient]: success
+[2024-05-19 16:31:57] INFO root fetch - main [MainThread]: Store serial: [23277280]
