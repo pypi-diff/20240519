@@ -6890,3 +6890,18 @@
 [2024-05-19 10:26:06] INFO root fetch - processPackages [Tooldelta]: Remove: archive file [/home/abi/fetcher/tmp/tooldelta-0.6.1.tar.gz]
 [2024-05-19 10:26:06] INFO root fetch - main [MainThread]: End processing [Tooldelta]: success
 [2024-05-19 10:26:06] INFO root fetch - main [MainThread]: Store serial: [23274623]
+[2024-05-19 10:28:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274623]
+[2024-05-19 10:28:16] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 10:28:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: netbox4-interface-sync
+[2024-05-19 10:28:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-sdk-remote
+[2024-05-19 10:28:16] INFO root fetch - processPackages [python-sdk-remote]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-19 10:28:16] WARNING root fetch - processPackages [netbox4-interface-sync]: Skipping, unable to determine old version
+[2024-05-19 10:28:16] INFO root fetch - main [MainThread]: End processing [netbox4-interface-sync] error
+[2024-05-19 10:28:16] INFO root fetch - processPackages [python-sdk-remote]: Downloading https://files.pythonhosted.org/packages/b2/73/ff727800d332ba3412e3135ded7fed3d1b78930e48ab4f978b5038b41b5f/python_sdk_remote-0.0.98.tar.gz
+[2024-05-19 10:28:16] INFO root fetch - processPackages [python-sdk-remote]: Downloading https://files.pythonhosted.org/packages/c6/6c/d232e7e91dcb30944e7eee0abdeb4922803eca620e93ce6940350682eaeb/python_sdk_remote-0.0.99.tar.gz
+[2024-05-19 10:28:16] INFO root fetch - processPackages [python-sdk-remote]: executing diffoscope
+[2024-05-19 10:28:16] INFO root fetch - processPackages [python-sdk-remote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_sdk_remote-0.0.98.tar.gz tmp/python_sdk_remote-0.0.99.tar.gz --markdown 20240519/p/python-sdk-remote/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-19 10:28:17] INFO root fetch - processPackages [python-sdk-remote]: Remove: archive file [/home/abi/fetcher/tmp/python_sdk_remote-0.0.98.tar.gz]
+[2024-05-19 10:28:17] INFO root fetch - processPackages [python-sdk-remote]: Remove: archive file [/home/abi/fetcher/tmp/python_sdk_remote-0.0.99.tar.gz]
+[2024-05-19 10:28:17] INFO root fetch - main [MainThread]: End processing [python-sdk-remote]: success
+[2024-05-19 10:28:17] INFO root fetch - main [MainThread]: Store serial: [23274634]
