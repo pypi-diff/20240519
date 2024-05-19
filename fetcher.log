@@ -4078,3 +4078,26 @@
 [2024-05-19 06:44:15] INFO root fetch - processPackages [psqlparse2]: Remove: archive file [/home/abi/fetcher/tmp/psqlparse2-0.0.8.tar.gz]
 [2024-05-19 06:44:15] INFO root fetch - main [MainThread]: End processing [psqlparse2]: success
 [2024-05-19 06:44:15] INFO root fetch - main [MainThread]: Store serial: [23273314]
+[2024-05-19 06:46:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273314]
+[2024-05-19 06:46:23] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-19 06:48:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273314]
+[2024-05-19 06:48:30] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 06:48:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flowmancer
+[2024-05-19 06:48:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pypomes-db
+[2024-05-19 06:48:30] INFO root fetch - processPackages [pypomes-db]: New version: [0.8.4] Old Version: [0.8.3]
+[2024-05-19 06:48:30] INFO root fetch - processPackages [pypomes-db]: Downloading https://files.pythonhosted.org/packages/c7/07/cf1e878dabc356f80afa149fbf7d6cf31259c0d42f51dc9d300d8c963d96/pypomes_db-0.8.3.tar.gz
+[2024-05-19 06:48:30] INFO root fetch - processPackages [flowmancer]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-05-19 06:48:30] INFO root fetch - processPackages [pypomes-db]: Downloading https://files.pythonhosted.org/packages/6e/eb/29a19bfbed2317276bd4d9c47b444a803ed0577ddf1a15f2e55470fce602/pypomes_db-0.8.4.tar.gz
+[2024-05-19 06:48:30] INFO root fetch - processPackages [flowmancer]: Downloading https://files.pythonhosted.org/packages/16/67/dc7e0f71395efdfa833d75db9c3cea1581c7472b0d0486c81d58b8a867af/flowmancer-0.9.4.tar.gz
+[2024-05-19 06:48:30] INFO root fetch - processPackages [pypomes-db]: executing diffoscope
+[2024-05-19 06:48:30] INFO root fetch - processPackages [pypomes-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypomes_db-0.8.3.tar.gz tmp/pypomes_db-0.8.4.tar.gz --markdown 20240519/p/pypomes-db/0.8.3-0.8.4/README.md --exclude *.pyd
+[2024-05-19 06:48:31] INFO root fetch - processPackages [flowmancer]: Downloading https://files.pythonhosted.org/packages/6c/70/08dbb431bf20c50c0cc8980f264315b9ee83779e5be507e72b668ea0d341/flowmancer-0.9.5.tar.gz
+[2024-05-19 06:48:31] INFO root fetch - processPackages [flowmancer]: executing diffoscope
+[2024-05-19 06:48:31] INFO root fetch - processPackages [flowmancer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowmancer-0.9.4.tar.gz tmp/flowmancer-0.9.5.tar.gz --markdown 20240519/f/flowmancer/0.9.4-0.9.5/README.md --exclude *.pyd
+[2024-05-19 06:48:31] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.8.3.tar.gz]
+[2024-05-19 06:48:31] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.8.4.tar.gz]
+[2024-05-19 06:48:31] INFO root fetch - main [MainThread]: End processing [pypomes-db]: success
+[2024-05-19 06:48:31] INFO root fetch - processPackages [flowmancer]: Remove: archive file [/home/abi/fetcher/tmp/flowmancer-0.9.4.tar.gz]
+[2024-05-19 06:48:31] INFO root fetch - processPackages [flowmancer]: Remove: archive file [/home/abi/fetcher/tmp/flowmancer-0.9.5.tar.gz]
+[2024-05-19 06:48:31] INFO root fetch - main [MainThread]: End processing [flowmancer]: success
+[2024-05-19 06:48:31] INFO root fetch - main [MainThread]: Store serial: [23273320]
