@@ -3175,3 +3175,9 @@
 [2024-05-19 05:10:37] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.5.5.tar.gz]
 [2024-05-19 05:10:37] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
 [2024-05-19 05:10:37] INFO root fetch - main [MainThread]: Store serial: [23272953]
+[2024-05-19 05:12:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272953]
+[2024-05-19 05:12:46] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 05:12:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: communistz
+[2024-05-19 05:12:46] WARNING root fetch - processPackages [communistz]: Skipping, unable to determine old version
+[2024-05-19 05:12:46] INFO root fetch - main [MainThread]: End processing [communistz] error
+[2024-05-19 05:12:46] INFO root fetch - main [MainThread]: Store serial: [23272957]
