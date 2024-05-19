@@ -13579,3 +13579,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 17:41:56] INFO root fetch - processPackages [diffrax]: Remove: archive file [/home/abi/fetcher/tmp/diffrax-0.5.1.tar.gz]
 [2024-05-19 17:41:56] INFO root fetch - main [MainThread]: End processing [diffrax]: success
 [2024-05-19 17:41:56] INFO root fetch - main [MainThread]: Store serial: [23277884]
+[2024-05-19 17:44:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277884]
+[2024-05-19 17:44:05] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 17:44:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: s5learn
+[2024-05-19 17:44:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: moval
+[2024-05-19 17:44:05] WARNING root fetch - processPackages [s5learn]: Skipping, unable to determine old version
+[2024-05-19 17:44:05] INFO root fetch - main [MainThread]: End processing [s5learn] error
+[2024-05-19 17:44:05] INFO root fetch - processPackages [moval]: New version: [0.3.8] Old Version: [0.3.7]
+[2024-05-19 17:44:05] INFO root fetch - processPackages [moval]: Downloading https://files.pythonhosted.org/packages/37/87/f3d551c581becbd75a7068cac3b47fc47e725d8deb6d6a6686527ac91ecc/moval-0.3.7.tar.gz
+[2024-05-19 17:44:06] INFO root fetch - processPackages [moval]: Downloading https://files.pythonhosted.org/packages/8a/aa/b16fe864612aedce9b33655b5aa4b6529ca2716bc8af23353d0c5850bae7/moval-0.3.8.tar.gz
+[2024-05-19 17:44:06] INFO root fetch - processPackages [moval]: executing diffoscope
+[2024-05-19 17:44:06] INFO root fetch - processPackages [moval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moval-0.3.7.tar.gz tmp/moval-0.3.8.tar.gz --markdown 20240519/m/moval/0.3.7-0.3.8/README.md --exclude *.pyd
+[2024-05-19 17:44:06] INFO root fetch - processPackages [moval]: Remove: archive file [/home/abi/fetcher/tmp/moval-0.3.7.tar.gz]
+[2024-05-19 17:44:06] INFO root fetch - processPackages [moval]: Remove: archive file [/home/abi/fetcher/tmp/moval-0.3.8.tar.gz]
+[2024-05-19 17:44:06] INFO root fetch - main [MainThread]: End processing [moval]: success
+[2024-05-19 17:44:06] INFO root fetch - main [MainThread]: Store serial: [23277890]
