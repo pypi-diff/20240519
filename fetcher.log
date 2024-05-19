@@ -13317,3 +13317,118 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 17:30:49] INFO root fetch - processPackages [Supysonic]: Remove: archive file [/home/abi/fetcher/tmp/supysonic-0.7.7.tar.gz]
 [2024-05-19 17:30:49] INFO root fetch - main [MainThread]: End processing [Supysonic]: success
 [2024-05-19 17:30:49] INFO root fetch - main [MainThread]: Store serial: [23277768]
+[2024-05-19 17:32:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277768]
+[2024-05-19 17:32:58] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2024-05-19 17:32:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ev3dev2simulator
+[2024-05-19 17:32:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oauth2-cli-auth
+[2024-05-19 17:32:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wfxfimjsdmwftfgs
+[2024-05-19 17:32:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vvkdjkgjoaodpcls
+[2024-05-19 17:32:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vvkdjkgjoaodpcls
+[2024-05-19 17:32:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gjlirnkubcgqfndk
+[2024-05-19 17:32:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: yeref
+[2024-05-19 17:32:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: vvkdjkgjoaodpcls
+[2024-05-19 17:32:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: gjlirnkubcgqfndk
+[2024-05-19 17:32:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: xdqswjkzpowaebsi
+[2024-05-19 17:32:58] INFO root fetch - processPackages [ev3dev2simulator]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-05-19 17:32:58] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-19 17:32:58] WARNING root fetch - processPackages [wfxfimjsdmwftfgs]: Skipping, unable to determine old version
+[2024-05-19 17:32:58] INFO root fetch - processPackages [wfxfimjsdmwftfgs]: Start processing: xdqswjkzpowaebsi
+[2024-05-19 17:32:58] INFO root fetch - main [MainThread]: End processing [wfxfimjsdmwftfgs] error
+[2024-05-19 17:32:58] INFO root fetch - processPackages [oauth2-cli-auth]: New version: [1.4.0] Old Version: [1.3.0]
+[2024-05-19 17:32:58] INFO root fetch - processPackages [vvkdjkgjoaodpcls]: New version: [1.10000.10002] Old Version: [1.10000.10001]
+[2024-05-19 17:32:58] INFO root fetch - processPackages [vvkdjkgjoaodpcls]: New version: [1.10000.10002] Old Version: [1.10000.10001]
+[2024-05-19 17:32:58] INFO root fetch - processPackages [vvkdjkgjoaodpcls]: New version: [1.10000.10002] Old Version: [1.10000.10001]
+[2024-05-19 17:32:58] INFO root fetch - processPackages [ev3dev2simulator]: Downloading https://files.pythonhosted.org/packages/c7/ee/98426385f87256309c2abd93469bf8290a536bb946c3fe5f73c40b8fa287/ev3dev2simulator-2.0.8.tar.gz
+[2024-05-19 17:32:58] INFO root fetch - processPackages [gjlirnkubcgqfndk]: New version: [1.10000.10002] Old Version: [1.10000.10001]
+[2024-05-19 17:32:58] INFO root fetch - processPackages [gjlirnkubcgqfndk]: New version: [1.10000.10002] Old Version: [1.10000.10001]
+[2024-05-19 17:32:58] INFO root fetch - processPackages [xdqswjkzpowaebsi]: New version: [1.10000.10006] Old Version: [1.10000.10005]
+[2024-05-19 17:32:58] INFO root fetch - processPackages [xdqswjkzpowaebsi]: New version: [1.10000.10006] Old Version: [1.10000.10005]
+[2024-05-19 17:32:58] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-19 17:32:58] INFO root fetch - processPackages [oauth2-cli-auth]: Downloading https://files.pythonhosted.org/packages/18/5a/f7aa238bfa7c115f3db1dbfab994be95835ce74f495affe614352edd6202/oauth2_cli_auth-1.3.0.tar.gz
+[2024-05-19 17:32:58] INFO root fetch - processPackages [gjlirnkubcgqfndk]: Downloading https://files.pythonhosted.org/packages/8a/52/4ba7f6ae409969b1b24d6ae894292b2822602f23e38425ec38ca78dcfd06/gjlirnkubcgqfndk-1.10000.10001.tar.gz
+[2024-05-19 17:32:58] INFO root fetch - processPackages [vvkdjkgjoaodpcls]: Downloading https://files.pythonhosted.org/packages/31/db/53f0cc296a13f05069dd05d17065052f46ef7577a026c8024be4ba15dd19/vvkdjkgjoaodpcls-1.10000.10001.tar.gz
+[2024-05-19 17:32:58] INFO root fetch - processPackages [vvkdjkgjoaodpcls]: Downloading https://files.pythonhosted.org/packages/31/db/53f0cc296a13f05069dd05d17065052f46ef7577a026c8024be4ba15dd19/vvkdjkgjoaodpcls-1.10000.10001.tar.gz
+[2024-05-19 17:32:58] INFO root fetch - processPackages [vvkdjkgjoaodpcls]: Downloading https://files.pythonhosted.org/packages/31/db/53f0cc296a13f05069dd05d17065052f46ef7577a026c8024be4ba15dd19/vvkdjkgjoaodpcls-1.10000.10001.tar.gz
+[2024-05-19 17:32:58] INFO root fetch - processPackages [gjlirnkubcgqfndk]: Downloading https://files.pythonhosted.org/packages/8a/52/4ba7f6ae409969b1b24d6ae894292b2822602f23e38425ec38ca78dcfd06/gjlirnkubcgqfndk-1.10000.10001.tar.gz
+[2024-05-19 17:32:58] INFO root fetch - processPackages [xdqswjkzpowaebsi]: Downloading https://files.pythonhosted.org/packages/e4/e3/a1e367ec428e6e74f6a60cbfbc8b7fb35f61d19faa04a0b567d1aae437e8/xdqswjkzpowaebsi-1.10000.10005.tar.gz
+[2024-05-19 17:32:58] INFO root fetch - processPackages [xdqswjkzpowaebsi]: Downloading https://files.pythonhosted.org/packages/e4/e3/a1e367ec428e6e74f6a60cbfbc8b7fb35f61d19faa04a0b567d1aae437e8/xdqswjkzpowaebsi-1.10000.10005.tar.gz
+[2024-05-19 17:32:58] WARNING root fetch - processPackages [vvkdjkgjoaodpcls]: Skipping package: exceeds size limit 15087799>=10485760
+[2024-05-19 17:32:58] INFO root fetch - processPackages [vvkdjkgjoaodpcls]: Start processing: ixasernrrtlmmlwd
+[2024-05-19 17:32:58] INFO root fetch - main [MainThread]: End processing [vvkdjkgjoaodpcls] error
+[2024-05-19 17:32:58] WARNING root fetch - processPackages [vvkdjkgjoaodpcls]: Skipping package: exceeds size limit 15087799>=10485760
+[2024-05-19 17:32:58] INFO root fetch - processPackages [vvkdjkgjoaodpcls]: Start processing: servicenow-api
+[2024-05-19 17:32:58] INFO root fetch - main [MainThread]: End processing [vvkdjkgjoaodpcls] error
+[2024-05-19 17:32:58] WARNING root fetch - processPackages [vvkdjkgjoaodpcls]: Skipping package: exceeds size limit 15087799>=10485760
+[2024-05-19 17:32:58] INFO root fetch - processPackages [vvkdjkgjoaodpcls]: Start processing: xdqswjkzpowaebsi
+[2024-05-19 17:32:58] INFO root fetch - main [MainThread]: End processing [vvkdjkgjoaodpcls] error
+[2024-05-19 17:32:59] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-19 17:32:59] INFO root fetch - processPackages [servicenow-api]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-19 17:32:59] INFO root fetch - processPackages [xdqswjkzpowaebsi]: New version: [1.10000.10006] Old Version: [1.10000.10005]
+[2024-05-19 17:32:59] INFO root fetch - processPackages [ev3dev2simulator]: Downloading https://files.pythonhosted.org/packages/80/cf/a0813c263a1dfe092f3069a01dd20cd34d053a5640c0fce283f053539bb7/ev3dev2simulator-2.0.9.tar.gz
+[2024-05-19 17:32:59] INFO root fetch - processPackages [ixasernrrtlmmlwd]: New version: [1.10000.10004] Old Version: [1.10000.10003]
+[2024-05-19 17:32:59] INFO root fetch - processPackages [oauth2-cli-auth]: Downloading https://files.pythonhosted.org/packages/f3/74/49caee494445281c5137cd824569d8fc33dcdedbf242cf5dfb4002f1568a/oauth2_cli_auth-1.4.0.tar.gz
+[2024-05-19 17:32:59] WARNING root fetch - processPackages [xdqswjkzpowaebsi]: Skipping package: exceeds size limit 95034081>=10485760
+[2024-05-19 17:32:59] INFO root fetch - processPackages [xdqswjkzpowaebsi]: Start processing: xdqswjkzpowaebsi
+[2024-05-19 17:32:59] INFO root fetch - main [MainThread]: End processing [xdqswjkzpowaebsi] error
+[2024-05-19 17:32:59] WARNING root fetch - processPackages [xdqswjkzpowaebsi]: Skipping package: exceeds size limit 95034081>=10485760
+[2024-05-19 17:32:59] INFO root fetch - processPackages [xdqswjkzpowaebsi]: Start processing: ixasernrrtlmmlwd
+[2024-05-19 17:32:59] INFO root fetch - main [MainThread]: End processing [xdqswjkzpowaebsi] error
+[2024-05-19 17:32:59] INFO root fetch - processPackages [servicenow-api]: Downloading https://files.pythonhosted.org/packages/2a/96/cc447e9247636a3ca7fe607e05a327a7076f254221c5c20c960f2d6689fd/servicenow_api-0.8.0-py2.py3-none-any.whl
+[2024-05-19 17:32:59] INFO root fetch - processPackages [xdqswjkzpowaebsi]: Downloading https://files.pythonhosted.org/packages/e4/e3/a1e367ec428e6e74f6a60cbfbc8b7fb35f61d19faa04a0b567d1aae437e8/xdqswjkzpowaebsi-1.10000.10005.tar.gz
+[2024-05-19 17:32:59] INFO root fetch - processPackages [ixasernrrtlmmlwd]: New version: [1.10000.10004] Old Version: [1.10000.10003]
+[2024-05-19 17:32:59] INFO root fetch - processPackages [xdqswjkzpowaebsi]: New version: [1.10000.10006] Old Version: [1.10000.10005]
+[2024-05-19 17:32:59] INFO root fetch - processPackages [gjlirnkubcgqfndk]: Downloading https://files.pythonhosted.org/packages/b4/2f/48ec32d58e1ac289af1f07dae3ac31e3559213f39a9e65deecd86ea8d284/gjlirnkubcgqfndk-1.10000.10002.tar.gz
+[2024-05-19 17:32:59] INFO root fetch - processPackages [gjlirnkubcgqfndk]: Downloading https://files.pythonhosted.org/packages/b4/2f/48ec32d58e1ac289af1f07dae3ac31e3559213f39a9e65deecd86ea8d284/gjlirnkubcgqfndk-1.10000.10002.tar.gz
+[2024-05-19 17:32:59] WARNING root fetch - processPackages [xdqswjkzpowaebsi]: Skipping package: exceeds size limit 95034081>=10485760
+[2024-05-19 17:32:59] INFO root fetch - processPackages [xdqswjkzpowaebsi]: Start processing: alzihiddlcxljozz
+[2024-05-19 17:32:59] INFO root fetch - main [MainThread]: End processing [xdqswjkzpowaebsi] error
+[2024-05-19 17:32:59] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-19 17:32:59] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240519/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-19 17:32:59] INFO root fetch - processPackages [ev3dev2simulator]: executing diffoscope
+[2024-05-19 17:32:59] INFO root fetch - processPackages [ev3dev2simulator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ev3dev2simulator-2.0.8.tar.gz tmp/ev3dev2simulator-2.0.9.tar.gz --markdown 20240519/e/ev3dev2simulator/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-05-19 17:32:59] INFO root fetch - processPackages [oauth2-cli-auth]: executing diffoscope
+[2024-05-19 17:32:59] INFO root fetch - processPackages [oauth2-cli-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oauth2_cli_auth-1.3.0.tar.gz tmp/oauth2_cli_auth-1.4.0.tar.gz --markdown 20240519/o/oauth2-cli-auth/1.3.0-1.4.0/README.md --exclude *.pyd
+[2024-05-19 17:32:59] INFO root fetch - processPackages [ixasernrrtlmmlwd]: Downloading https://files.pythonhosted.org/packages/c1/87/0bc48390ef8a2698699c491c15825c2bbc787c0e02aca6edb741632663e1/ixasernrrtlmmlwd-1.10000.10003.tar.gz
+[2024-05-19 17:32:59] INFO root fetch - processPackages [ixasernrrtlmmlwd]: Downloading https://files.pythonhosted.org/packages/c1/87/0bc48390ef8a2698699c491c15825c2bbc787c0e02aca6edb741632663e1/ixasernrrtlmmlwd-1.10000.10003.tar.gz
+[2024-05-19 17:32:59] INFO root fetch - processPackages [xdqswjkzpowaebsi]: Downloading https://files.pythonhosted.org/packages/e4/e3/a1e367ec428e6e74f6a60cbfbc8b7fb35f61d19faa04a0b567d1aae437e8/xdqswjkzpowaebsi-1.10000.10005.tar.gz
+[2024-05-19 17:32:59] INFO root fetch - processPackages [gjlirnkubcgqfndk]: executing diffoscope
+[2024-05-19 17:32:59] INFO root fetch - processPackages [gjlirnkubcgqfndk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gjlirnkubcgqfndk-1.10000.10001.tar.gz tmp/gjlirnkubcgqfndk-1.10000.10002.tar.gz --markdown 20240519/g/gjlirnkubcgqfndk/1.10000.10001-1.10000.10002/README.md --exclude *.pyd
+[2024-05-19 17:32:59] WARNING root fetch - processPackages [alzihiddlcxljozz]: Skipping, unable to determine old version
+[2024-05-19 17:32:59] INFO root fetch - processPackages [alzihiddlcxljozz]: Start processing: qvzhmzexbiekfdfe
+[2024-05-19 17:32:59] INFO root fetch - main [MainThread]: End processing [alzihiddlcxljozz] error
+[2024-05-19 17:32:59] INFO root fetch - processPackages [gjlirnkubcgqfndk]: executing diffoscope
+[2024-05-19 17:32:59] INFO root fetch - processPackages [gjlirnkubcgqfndk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gjlirnkubcgqfndk-1.10000.10001.tar.gz tmp/gjlirnkubcgqfndk-1.10000.10002.tar.gz --markdown 20240519/g/gjlirnkubcgqfndk/1.10000.10001-1.10000.10002/README.md --exclude *.pyd
+[2024-05-19 17:32:59] INFO root fetch - processPackages [servicenow-api]: Downloading https://files.pythonhosted.org/packages/76/cb/16788288b3e511d9ebf0b67d4e1cd59966bc918931d1953e5f137a9ff712/servicenow_api-0.9.0-py2.py3-none-any.whl
+[2024-05-19 17:32:59] WARNING root fetch - processPackages [xdqswjkzpowaebsi]: Skipping package: exceeds size limit 95034081>=10485760
+[2024-05-19 17:32:59] INFO root fetch - main [MainThread]: End processing [xdqswjkzpowaebsi] error
+[2024-05-19 17:32:59] INFO root fetch - processPackages [servicenow-api]: executing diffoscope
+[2024-05-19 17:32:59] INFO root fetch - processPackages [servicenow-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/servicenow_api-0.8.0-py2.py3-none-any.whl.zip tmp/servicenow_api-0.9.0-py2.py3-none-any.whl.zip --markdown 20240519/s/servicenow-api/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-19 17:32:59] WARNING root fetch - processPackages [qvzhmzexbiekfdfe]: Skipping, unable to determine old version
+[2024-05-19 17:32:59] INFO root fetch - main [MainThread]: End processing [qvzhmzexbiekfdfe] error
+[2024-05-19 17:32:59] INFO root fetch - processPackages [ixasernrrtlmmlwd]: Downloading https://files.pythonhosted.org/packages/b2/7e/fd871863346c423c3f51c698455d2c1d963c86f3dea5226b9e5948f097a5/ixasernrrtlmmlwd-1.10000.10004.tar.gz
+[2024-05-19 17:32:59] INFO root fetch - processPackages [ixasernrrtlmmlwd]: Downloading https://files.pythonhosted.org/packages/b2/7e/fd871863346c423c3f51c698455d2c1d963c86f3dea5226b9e5948f097a5/ixasernrrtlmmlwd-1.10000.10004.tar.gz
+[2024-05-19 17:32:59] INFO root fetch - processPackages [oauth2-cli-auth]: Remove: archive file [/home/abi/fetcher/tmp/oauth2_cli_auth-1.3.0.tar.gz]
+[2024-05-19 17:32:59] INFO root fetch - processPackages [oauth2-cli-auth]: Remove: archive file [/home/abi/fetcher/tmp/oauth2_cli_auth-1.4.0.tar.gz]
+[2024-05-19 17:32:59] INFO root fetch - main [MainThread]: End processing [oauth2-cli-auth]: success
+[2024-05-19 17:33:00] INFO root fetch - processPackages [ixasernrrtlmmlwd]: executing diffoscope
+[2024-05-19 17:33:00] INFO root fetch - processPackages [ixasernrrtlmmlwd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ixasernrrtlmmlwd-1.10000.10003.tar.gz tmp/ixasernrrtlmmlwd-1.10000.10004.tar.gz --markdown 20240519/i/ixasernrrtlmmlwd/1.10000.10003-1.10000.10004/README.md --exclude *.pyd
+[2024-05-19 17:33:00] INFO root fetch - processPackages [ixasernrrtlmmlwd]: executing diffoscope
+[2024-05-19 17:33:00] INFO root fetch - processPackages [ixasernrrtlmmlwd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ixasernrrtlmmlwd-1.10000.10003.tar.gz tmp/ixasernrrtlmmlwd-1.10000.10004.tar.gz --markdown 20240519/i/ixasernrrtlmmlwd/1.10000.10003-1.10000.10004/README.md --exclude *.pyd
+[2024-05-19 17:33:00] INFO root fetch - processPackages [servicenow-api]: Remove: archive file [/home/abi/fetcher/tmp/servicenow_api-0.8.0-py2.py3-none-any.whl.zip]
+[2024-05-19 17:33:00] INFO root fetch - processPackages [servicenow-api]: Remove: archive file [/home/abi/fetcher/tmp/servicenow_api-0.9.0-py2.py3-none-any.whl.zip]
+[2024-05-19 17:33:00] INFO root fetch - main [MainThread]: End processing [servicenow-api]: success
+[2024-05-19 17:33:00] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-19 17:33:00] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-19 17:33:00] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-19 17:33:00] INFO root fetch - processPackages [ev3dev2simulator]: Remove: archive file [/home/abi/fetcher/tmp/ev3dev2simulator-2.0.8.tar.gz]
+[2024-05-19 17:33:00] INFO root fetch - processPackages [ev3dev2simulator]: Remove: archive file [/home/abi/fetcher/tmp/ev3dev2simulator-2.0.9.tar.gz]
+[2024-05-19 17:33:00] INFO root fetch - main [MainThread]: End processing [ev3dev2simulator]: success
+[2024-05-19 17:33:12] INFO root fetch - processPackages [gjlirnkubcgqfndk]: Remove: archive file [/home/abi/fetcher/tmp/gjlirnkubcgqfndk-1.10000.10001.tar.gz]
+[2024-05-19 17:33:12] INFO root fetch - processPackages [gjlirnkubcgqfndk]: Remove: archive file [/home/abi/fetcher/tmp/gjlirnkubcgqfndk-1.10000.10002.tar.gz]
+[2024-05-19 17:33:12] INFO root fetch - main [MainThread]: End processing [gjlirnkubcgqfndk]: success
+[2024-05-19 17:33:12] INFO root fetch - main [MainThread]: End processing [gjlirnkubcgqfndk]: success
+[2024-05-19 17:33:12] INFO root fetch - processPackages [ixasernrrtlmmlwd]: Remove: archive file [/home/abi/fetcher/tmp/ixasernrrtlmmlwd-1.10000.10003.tar.gz]
+[2024-05-19 17:33:12] INFO root fetch - processPackages [ixasernrrtlmmlwd]: Remove: archive file [/home/abi/fetcher/tmp/ixasernrrtlmmlwd-1.10000.10004.tar.gz]
+[2024-05-19 17:33:12] INFO root fetch - main [MainThread]: End processing [ixasernrrtlmmlwd]: success
+[2024-05-19 17:33:12] INFO root fetch - main [MainThread]: End processing [ixasernrrtlmmlwd]: success
+[2024-05-19 17:33:12] INFO root fetch - main [MainThread]: Store serial: [23277822]
