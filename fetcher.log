@@ -4728,3 +4728,30 @@
 [2024-05-19 07:45:24] INFO root fetch - processPackages [crossword-puzzle]: Remove: archive file [/home/abi/fetcher/tmp/crossword_puzzle-1.2.73.tar.gz]
 [2024-05-19 07:45:24] INFO root fetch - main [MainThread]: End processing [crossword-puzzle]: success
 [2024-05-19 07:45:24] INFO root fetch - main [MainThread]: Store serial: [23273602]
+[2024-05-19 07:47:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273602]
+[2024-05-19 07:47:34] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 07:47:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: soppiestz
+[2024-05-19 07:47:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: asyncgauth
+[2024-05-19 07:47:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ecs_composex_msk_cluster
+[2024-05-19 07:47:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addons-oca-multi-company
+[2024-05-19 07:47:34] WARNING root fetch - processPackages [asyncgauth]: Skipping, unable to determine old version
+[2024-05-19 07:47:34] INFO root fetch - main [MainThread]: End processing [asyncgauth] error
+[2024-05-19 07:47:34] WARNING root fetch - processPackages [soppiestz]: Skipping, unable to determine old version
+[2024-05-19 07:47:34] INFO root fetch - main [MainThread]: End processing [soppiestz] error
+[2024-05-19 07:47:34] INFO root fetch - processPackages [odoo-addons-oca-multi-company]: New version: [16.0.20240516.0] Old Version: [16.0.20240409.0]
+[2024-05-19 07:47:34] INFO root fetch - processPackages [ecs_composex_msk_cluster]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-19 07:47:34] INFO root fetch - processPackages [odoo-addons-oca-multi-company]: Downloading https://files.pythonhosted.org/packages/b2/e6/92311a61a839ed19787e957863500c9df3154f9827fd6246399895f7cbec/odoo_addons_oca_multi_company-16.0.20240409.0-py3-none-any.whl
+[2024-05-19 07:47:34] INFO root fetch - processPackages [ecs_composex_msk_cluster]: Downloading https://files.pythonhosted.org/packages/d1/fa/06ad24ef73cada2432f7bf205404385d0998c11bc72ae7f7dd0263835d56/ecs_composex_msk_cluster-1.0.0.tar.gz
+[2024-05-19 07:47:35] INFO root fetch - processPackages [odoo-addons-oca-multi-company]: Downloading https://files.pythonhosted.org/packages/7f/4c/5db37341339d2b5fc7579f2bc9d16af58147c5df6a5c2de736043e19a90d/odoo_addons_oca_multi_company-16.0.20240516.0-py3-none-any.whl
+[2024-05-19 07:47:35] INFO root fetch - processPackages [ecs_composex_msk_cluster]: Downloading https://files.pythonhosted.org/packages/22/e9/9accb141831a5f67622da2f7106e6f6b5fbe326780a7f17268b603969820/ecs_composex_msk_cluster-1.0.1.tar.gz
+[2024-05-19 07:47:35] INFO root fetch - processPackages [odoo-addons-oca-multi-company]: executing diffoscope
+[2024-05-19 07:47:35] INFO root fetch - processPackages [odoo-addons-oca-multi-company]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_multi_company-16.0.20240409.0-py3-none-any.whl.zip tmp/odoo_addons_oca_multi_company-16.0.20240516.0-py3-none-any.whl.zip --markdown 20240519/o/odoo-addons-oca-multi-company/16.0.20240409.0-16.0.20240516.0/README.md --exclude *.pyd
+[2024-05-19 07:47:35] INFO root fetch - processPackages [ecs_composex_msk_cluster]: executing diffoscope
+[2024-05-19 07:47:35] INFO root fetch - processPackages [ecs_composex_msk_cluster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecs_composex_msk_cluster-1.0.0.tar.gz tmp/ecs_composex_msk_cluster-1.0.1.tar.gz --markdown 20240519/e/ecs_composex_msk_cluster/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-19 07:47:35] INFO root fetch - processPackages [odoo-addons-oca-multi-company]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_multi_company-16.0.20240409.0-py3-none-any.whl.zip]
+[2024-05-19 07:47:35] INFO root fetch - processPackages [odoo-addons-oca-multi-company]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_multi_company-16.0.20240516.0-py3-none-any.whl.zip]
+[2024-05-19 07:47:35] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-multi-company]: success
+[2024-05-19 07:47:35] INFO root fetch - processPackages [ecs_composex_msk_cluster]: Remove: archive file [/home/abi/fetcher/tmp/ecs_composex_msk_cluster-1.0.0.tar.gz]
+[2024-05-19 07:47:35] INFO root fetch - processPackages [ecs_composex_msk_cluster]: Remove: archive file [/home/abi/fetcher/tmp/ecs_composex_msk_cluster-1.0.1.tar.gz]
+[2024-05-19 07:47:35] INFO root fetch - main [MainThread]: End processing [ecs_composex_msk_cluster]: success
+[2024-05-19 07:47:35] INFO root fetch - main [MainThread]: Store serial: [23273615]
