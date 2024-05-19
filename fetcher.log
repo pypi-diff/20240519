@@ -7165,3 +7165,36 @@
 [2024-05-19 10:52:20] INFO root fetch - processPackages [fcecodec]: Remove: archive file [/home/abi/fetcher/tmp/fcecodec-1.6-cp310-cp310-musllinux_1_2_x86_64.whl.zip]
 [2024-05-19 10:52:20] INFO root fetch - main [MainThread]: End processing [fcecodec]: success
 [2024-05-19 10:52:20] INFO root fetch - main [MainThread]: Store serial: [23274787]
+[2024-05-19 10:54:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274787]
+[2024-05-19 10:54:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 10:54:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: actserpt
+[2024-05-19 10:54:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pywxdump
+[2024-05-19 10:54:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-json-patch-rules
+[2024-05-19 10:54:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mmo-tools
+[2024-05-19 10:54:29] INFO root fetch - processPackages [python-json-patch-rules]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-05-19 10:54:29] INFO root fetch - processPackages [mmo-tools]: New version: [0.2.0] Old Version: [0.1.7]
+[2024-05-19 10:54:29] WARNING root fetch - processPackages [actserpt]: Skipping, unable to determine old version
+[2024-05-19 10:54:29] INFO root fetch - main [MainThread]: End processing [actserpt] error
+[2024-05-19 10:54:29] INFO root fetch - processPackages [pywxdump]: New version: [3.0.8] Old Version: [3.0.5]
+[2024-05-19 10:54:29] INFO root fetch - processPackages [python-json-patch-rules]: Downloading https://files.pythonhosted.org/packages/77/22/cc5bc2486dff97689bed47913425663a4c4c63b1b009fcb2c22691a259bc/python_json_patch_rules-0.3.1.tar.gz
+[2024-05-19 10:54:29] INFO root fetch - processPackages [mmo-tools]: Downloading https://files.pythonhosted.org/packages/3a/10/e644dd3b762f04974635c05e627a8ad87ba68de129a4662f60902da8937b/mmo_tools-0.1.7.tar.gz
+[2024-05-19 10:54:29] INFO root fetch - processPackages [pywxdump]: Downloading https://files.pythonhosted.org/packages/5e/a0/04a3b6eff520a9bdce3d17e539b97bb28ab07d7cf194f8bf38506b454fea/pywxdump-3.0.5.tar.gz
+[2024-05-19 10:54:29] INFO root fetch - processPackages [python-json-patch-rules]: Downloading https://files.pythonhosted.org/packages/36/02/27c6a40957d2dbc77a49d279d6b3561d67cb3c128b01976dd08a82401bcd/python_json_patch_rules-0.3.2.tar.gz
+[2024-05-19 10:54:29] INFO root fetch - processPackages [mmo-tools]: Downloading https://files.pythonhosted.org/packages/2b/d5/3bc172d7a1da7475a310680e664325b7fec5e1b4a9cee8cee8cd0e4354a5/mmo_tools-0.2.0.tar.gz
+[2024-05-19 10:54:29] INFO root fetch - processPackages [python-json-patch-rules]: executing diffoscope
+[2024-05-19 10:54:29] INFO root fetch - processPackages [python-json-patch-rules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_json_patch_rules-0.3.1.tar.gz tmp/python_json_patch_rules-0.3.2.tar.gz --markdown 20240519/p/python-json-patch-rules/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-05-19 10:54:29] INFO root fetch - processPackages [mmo-tools]: executing diffoscope
+[2024-05-19 10:54:29] INFO root fetch - processPackages [mmo-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mmo_tools-0.1.7.tar.gz tmp/mmo_tools-0.2.0.tar.gz --markdown 20240519/m/mmo-tools/0.1.7-0.2.0/README.md --exclude *.pyd
+[2024-05-19 10:54:30] INFO root fetch - processPackages [pywxdump]: Downloading https://files.pythonhosted.org/packages/0c/2c/b244b3ba6c2cd4dc567d66ab4b6a9bca181dd34007f111e480eb1fb2f28b/pywxdump-3.0.8.tar.gz
+[2024-05-19 10:54:30] INFO root fetch - processPackages [mmo-tools]: Remove: archive file [/home/abi/fetcher/tmp/mmo_tools-0.1.7.tar.gz]
+[2024-05-19 10:54:30] INFO root fetch - processPackages [mmo-tools]: Remove: archive file [/home/abi/fetcher/tmp/mmo_tools-0.2.0.tar.gz]
+[2024-05-19 10:54:30] INFO root fetch - main [MainThread]: End processing [mmo-tools]: success
+[2024-05-19 10:54:30] INFO root fetch - processPackages [pywxdump]: executing diffoscope
+[2024-05-19 10:54:30] INFO root fetch - processPackages [pywxdump]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywxdump-3.0.5.tar.gz tmp/pywxdump-3.0.8.tar.gz --markdown 20240519/p/pywxdump/3.0.5-3.0.8/README.md --exclude *.pyd
+[2024-05-19 10:54:30] INFO root fetch - processPackages [python-json-patch-rules]: Remove: archive file [/home/abi/fetcher/tmp/python_json_patch_rules-0.3.1.tar.gz]
+[2024-05-19 10:54:30] INFO root fetch - processPackages [python-json-patch-rules]: Remove: archive file [/home/abi/fetcher/tmp/python_json_patch_rules-0.3.2.tar.gz]
+[2024-05-19 10:54:30] INFO root fetch - main [MainThread]: End processing [python-json-patch-rules]: success
+[2024-05-19 10:54:45] INFO root fetch - processPackages [pywxdump]: Remove: archive file [/home/abi/fetcher/tmp/pywxdump-3.0.5.tar.gz]
+[2024-05-19 10:54:45] INFO root fetch - processPackages [pywxdump]: Remove: archive file [/home/abi/fetcher/tmp/pywxdump-3.0.8.tar.gz]
+[2024-05-19 10:54:45] INFO root fetch - main [MainThread]: End processing [pywxdump]: success
+[2024-05-19 10:54:45] INFO root fetch - main [MainThread]: Store serial: [23274824]
