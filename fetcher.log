@@ -4475,3 +4475,22 @@
 [2024-05-19 07:25:36] INFO root fetch - processPackages [runnable]: Remove: archive file [/home/abi/fetcher/tmp/runnable-0.9.1.tar.gz]
 [2024-05-19 07:25:36] INFO root fetch - main [MainThread]: End processing [runnable]: success
 [2024-05-19 07:25:36] INFO root fetch - main [MainThread]: Store serial: [23273512]
+[2024-05-19 07:27:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273512]
+[2024-05-19 07:27:44] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-19 07:29:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273512]
+[2024-05-19 07:29:50] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 07:29:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: csolver
+[2024-05-19 07:29:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ha-mqtt-discoverable-cli
+[2024-05-19 07:29:50] INFO root fetch - processPackages [csolver]: New version: [0.7.0] Old Version: [0.6.0]
+[2024-05-19 07:29:50] INFO root fetch - processPackages [ha-mqtt-discoverable-cli]: New version: [0.5.0] Old Version: [0.4.1]
+[2024-05-19 07:29:50] INFO root fetch - processPackages [csolver]: Downloading https://files.pythonhosted.org/packages/ed/15/fb087234fd7b8ee9f7861b2345d54756c7213627545fbc9cbce7f2aef8c1/csolver-0.6.0.tar.gz
+[2024-05-19 07:29:50] INFO root fetch - processPackages [ha-mqtt-discoverable-cli]: Downloading https://files.pythonhosted.org/packages/b7/a6/34371b53deb26e49cf5780d6b374303d3729e458d2f334a76f8f2b7fe702/ha_mqtt_discoverable_cli-0.4.1.tar.gz
+[2024-05-19 07:29:50] WARNING root fetch - processPackages [csolver]: Skipping package: exceeds size limit 75812906>=10485760
+[2024-05-19 07:29:50] INFO root fetch - main [MainThread]: End processing [csolver] error
+[2024-05-19 07:29:50] INFO root fetch - processPackages [ha-mqtt-discoverable-cli]: Downloading https://files.pythonhosted.org/packages/43/1c/8bc9bf2f4f7e00f861bfe3536e3012e864916be675b301518b742c6e331f/ha_mqtt_discoverable_cli-0.5.0.tar.gz
+[2024-05-19 07:29:51] INFO root fetch - processPackages [ha-mqtt-discoverable-cli]: executing diffoscope
+[2024-05-19 07:29:51] INFO root fetch - processPackages [ha-mqtt-discoverable-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ha_mqtt_discoverable_cli-0.4.1.tar.gz tmp/ha_mqtt_discoverable_cli-0.5.0.tar.gz --markdown 20240519/h/ha-mqtt-discoverable-cli/0.4.1-0.5.0/README.md --exclude *.pyd
+[2024-05-19 07:29:51] INFO root fetch - processPackages [ha-mqtt-discoverable-cli]: Remove: archive file [/home/abi/fetcher/tmp/ha_mqtt_discoverable_cli-0.4.1.tar.gz]
+[2024-05-19 07:29:51] INFO root fetch - processPackages [ha-mqtt-discoverable-cli]: Remove: archive file [/home/abi/fetcher/tmp/ha_mqtt_discoverable_cli-0.5.0.tar.gz]
+[2024-05-19 07:29:51] INFO root fetch - main [MainThread]: End processing [ha-mqtt-discoverable-cli]: success
+[2024-05-19 07:29:51] INFO root fetch - main [MainThread]: Store serial: [23273519]
