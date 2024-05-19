@@ -16710,3 +16710,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 20:40:15] INFO root fetch - processPackages [odoo-addon-partner-contact-nationality]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_partner_contact_nationality-17.0.1.0.0.2-py3-none-any.whl.zip]
 [2024-05-19 20:40:15] INFO root fetch - main [MainThread]: End processing [odoo-addon-partner-contact-nationality]: success
 [2024-05-19 20:40:15] INFO root fetch - main [MainThread]: Store serial: [23279349]
+[2024-05-19 20:42:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279349]
+[2024-05-19 20:42:24] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 20:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gruel
+[2024-05-19 20:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wol-api
+[2024-05-19 20:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: api-management-local
+[2024-05-19 20:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: user-context-remote
+[2024-05-19 20:42:24] INFO root fetch - processPackages [wol-api]: New version: [1.0.0] Old Version: [0.1.6]
+[2024-05-19 20:42:24] INFO root fetch - processPackages [user-context-remote]: New version: [0.0.79] Old Version: [0.0.78]
+[2024-05-19 20:42:24] INFO root fetch - processPackages [gruel]: New version: [4.1.0] Old Version: [4.0.0]
+[2024-05-19 20:42:24] INFO root fetch - processPackages [wol-api]: Downloading https://files.pythonhosted.org/packages/c9/77/f98774f2184688b67e0558533ba61854236478c20cd2413ab6cb12bb47dd/wol_api-0.1.6.tar.gz
+[2024-05-19 20:42:24] INFO root fetch - processPackages [api-management-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 20:42:24] INFO root fetch - processPackages [user-context-remote]: Downloading https://files.pythonhosted.org/packages/a0/70/ff9ba4e11bd7fbe95d45d43d68b884cabeab61927e32d0d4c69c1c826605/user_context_remote-0.0.78.tar.gz
+[2024-05-19 20:42:24] INFO root fetch - processPackages [gruel]: Downloading https://files.pythonhosted.org/packages/85/98/d871689f0e53cdaf00dbdda3194c8401ad6c424f35d5547e36d4f117bf86/gruel-4.0.0.tar.gz
+[2024-05-19 20:42:24] INFO root fetch - processPackages [api-management-local]: Downloading https://files.pythonhosted.org/packages/32/8d/91ba0097e4ccea06453a14838b92b8ee48bc1880e8710d022d215299ae02/api-management-local-0.0.8.tar.gz
+[2024-05-19 20:42:24] INFO root fetch - processPackages [wol-api]: Downloading https://files.pythonhosted.org/packages/29/9b/07375780b12803f99c1844e6a1039d1fce26325241c32e28ca9c94e069de/wol_api-1.0.0.tar.gz
+[2024-05-19 20:42:24] INFO root fetch - processPackages [wol-api]: executing diffoscope
+[2024-05-19 20:42:24] INFO root fetch - processPackages [wol-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wol_api-0.1.6.tar.gz tmp/wol_api-1.0.0.tar.gz --markdown 20240519/w/wol-api/0.1.6-1.0.0/README.md --exclude *.pyd
+[2024-05-19 20:42:24] INFO root fetch - processPackages [user-context-remote]: Downloading https://files.pythonhosted.org/packages/7a/d7/075cc0d774743ecb9c65142f4652a40a1e16f06fc753bbf97d820cf08b56/user_context_remote-0.0.79.tar.gz
+[2024-05-19 20:42:24] INFO root fetch - processPackages [gruel]: Downloading https://files.pythonhosted.org/packages/27/6a/1d26c9e91131bdbe9c5584bc1f581d34532c4bcc8c81c652d017ff5ad37d/gruel-4.1.0.tar.gz
+[2024-05-19 20:42:24] INFO root fetch - processPackages [api-management-local]: Downloading https://files.pythonhosted.org/packages/cb/96/c6e4476ef16ac62a0dbb73d152f9e62d4bdc20962b3c26c38313ac1ba76b/api-management-local-0.0.9.tar.gz
+[2024-05-19 20:42:24] INFO root fetch - processPackages [user-context-remote]: executing diffoscope
+[2024-05-19 20:42:24] INFO root fetch - processPackages [user-context-remote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/user_context_remote-0.0.78.tar.gz tmp/user_context_remote-0.0.79.tar.gz --markdown 20240519/u/user-context-remote/0.0.78-0.0.79/README.md --exclude *.pyd
+[2024-05-19 20:42:25] INFO root fetch - processPackages [api-management-local]: executing diffoscope
+[2024-05-19 20:42:25] INFO root fetch - processPackages [api-management-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/api-management-local-0.0.8.tar.gz tmp/api-management-local-0.0.9.tar.gz --markdown 20240519/a/api-management-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 20:42:25] INFO root fetch - processPackages [gruel]: executing diffoscope
+[2024-05-19 20:42:25] INFO root fetch - processPackages [gruel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gruel-4.0.0.tar.gz tmp/gruel-4.1.0.tar.gz --markdown 20240519/g/gruel/4.0.0-4.1.0/README.md --exclude *.pyd
+[2024-05-19 20:42:25] INFO root fetch - processPackages [wol-api]: Remove: archive file [/home/abi/fetcher/tmp/wol_api-0.1.6.tar.gz]
+[2024-05-19 20:42:25] INFO root fetch - processPackages [wol-api]: Remove: archive file [/home/abi/fetcher/tmp/wol_api-1.0.0.tar.gz]
+[2024-05-19 20:42:25] INFO root fetch - main [MainThread]: End processing [wol-api]: success
+[2024-05-19 20:42:25] INFO root fetch - processPackages [user-context-remote]: Remove: archive file [/home/abi/fetcher/tmp/user_context_remote-0.0.78.tar.gz]
+[2024-05-19 20:42:25] INFO root fetch - processPackages [user-context-remote]: Remove: archive file [/home/abi/fetcher/tmp/user_context_remote-0.0.79.tar.gz]
+[2024-05-19 20:42:25] INFO root fetch - main [MainThread]: End processing [user-context-remote]: success
+[2024-05-19 20:42:25] INFO root fetch - processPackages [api-management-local]: Remove: archive file [/home/abi/fetcher/tmp/api-management-local-0.0.8.tar.gz]
+[2024-05-19 20:42:25] INFO root fetch - processPackages [api-management-local]: Remove: archive file [/home/abi/fetcher/tmp/api-management-local-0.0.9.tar.gz]
+[2024-05-19 20:42:25] INFO root fetch - main [MainThread]: End processing [api-management-local]: success
+[2024-05-19 20:42:25] INFO root fetch - processPackages [gruel]: Remove: archive file [/home/abi/fetcher/tmp/gruel-4.0.0.tar.gz]
+[2024-05-19 20:42:25] INFO root fetch - processPackages [gruel]: Remove: archive file [/home/abi/fetcher/tmp/gruel-4.1.0.tar.gz]
+[2024-05-19 20:42:25] INFO root fetch - main [MainThread]: End processing [gruel]: success
+[2024-05-19 20:42:25] INFO root fetch - main [MainThread]: Store serial: [23279362]
