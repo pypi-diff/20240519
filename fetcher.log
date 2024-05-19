@@ -2243,3 +2243,18 @@
 [2024-05-19 03:52:00] INFO root fetch - processPackages [phylokrr]: Remove: archive file [/home/abi/fetcher/tmp/phylokrr-0.4.9.tar.gz]
 [2024-05-19 03:52:00] INFO root fetch - main [MainThread]: End processing [phylokrr]: success
 [2024-05-19 03:52:00] INFO root fetch - main [MainThread]: Store serial: [23272531]
+[2024-05-19 03:54:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272531]
+[2024-05-19 03:54:10] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 03:54:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: socketwrench
+[2024-05-19 03:54:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oplc
+[2024-05-19 03:54:10] INFO root fetch - processPackages [socketwrench]: New version: [2.0.0] Old Version: [1.9.3]
+[2024-05-19 03:54:10] INFO root fetch - processPackages [socketwrench]: Downloading https://files.pythonhosted.org/packages/d0/a8/ddccd4461e069cd2af19ac76b05a796f5f4b10e744e9fced7a1e88e3e85f/socketwrench-1.9.3.tar.gz
+[2024-05-19 03:54:10] WARNING root fetch - processPackages [oplc]: Skipping, unable to determine old version
+[2024-05-19 03:54:10] INFO root fetch - main [MainThread]: End processing [oplc] error
+[2024-05-19 03:54:10] INFO root fetch - processPackages [socketwrench]: Downloading https://files.pythonhosted.org/packages/e4/22/c1346e1114b03d3eff1c531c4282a11bb2577c1bee4702f33b1f3ea9b7cf/socketwrench-2.0.0.tar.gz
+[2024-05-19 03:54:10] INFO root fetch - processPackages [socketwrench]: executing diffoscope
+[2024-05-19 03:54:10] INFO root fetch - processPackages [socketwrench]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/socketwrench-1.9.3.tar.gz tmp/socketwrench-2.0.0.tar.gz --markdown 20240519/s/socketwrench/1.9.3-2.0.0/README.md --exclude *.pyd
+[2024-05-19 03:54:11] INFO root fetch - processPackages [socketwrench]: Remove: archive file [/home/abi/fetcher/tmp/socketwrench-1.9.3.tar.gz]
+[2024-05-19 03:54:11] INFO root fetch - processPackages [socketwrench]: Remove: archive file [/home/abi/fetcher/tmp/socketwrench-2.0.0.tar.gz]
+[2024-05-19 03:54:11] INFO root fetch - main [MainThread]: End processing [socketwrench]: success
+[2024-05-19 03:54:11] INFO root fetch - main [MainThread]: Store serial: [23272542]
