@@ -12691,3 +12691,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 16:53:39] INFO root fetch - processPackages [libsrg]: Remove: archive file [/home/abi/fetcher/tmp/libsrg-5.2.2.tar.gz]
 [2024-05-19 16:53:39] INFO root fetch - main [MainThread]: End processing [libsrg]: success
 [2024-05-19 16:53:39] INFO root fetch - main [MainThread]: Store serial: [23277444]
+[2024-05-19 16:55:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277444]
+[2024-05-19 16:55:48] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 16:55:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: uneviratedz
+[2024-05-19 16:55:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: n0struct
+[2024-05-19 16:55:48] WARNING root fetch - processPackages [uneviratedz]: Skipping, unable to determine old version
+[2024-05-19 16:55:48] INFO root fetch - main [MainThread]: End processing [uneviratedz] error
+[2024-05-19 16:55:48] INFO root fetch - processPackages [n0struct]: New version: [0.2.99] Old Version: [0.2.98]
+[2024-05-19 16:55:48] INFO root fetch - processPackages [n0struct]: Downloading https://files.pythonhosted.org/packages/3a/1d/81eb18aeb0c82af0370b69b157b03aba0efdeefebf6715db99ff775641db/n0struct-0.2.98.tar.gz
+[2024-05-19 16:55:49] INFO root fetch - processPackages [n0struct]: Downloading https://files.pythonhosted.org/packages/93/08/d578b3c0abbb7bdf83eed0207432602a511a80eaded61c24f720c5bad99e/n0struct-0.2.99.tar.gz
+[2024-05-19 16:55:49] INFO root fetch - processPackages [n0struct]: executing diffoscope
+[2024-05-19 16:55:49] INFO root fetch - processPackages [n0struct]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/n0struct-0.2.98.tar.gz tmp/n0struct-0.2.99.tar.gz --markdown 20240519/n/n0struct/0.2.98-0.2.99/README.md --exclude *.pyd
+[2024-05-19 16:55:49] INFO root fetch - processPackages [n0struct]: Remove: archive file [/home/abi/fetcher/tmp/n0struct-0.2.98.tar.gz]
+[2024-05-19 16:55:49] INFO root fetch - processPackages [n0struct]: Remove: archive file [/home/abi/fetcher/tmp/n0struct-0.2.99.tar.gz]
+[2024-05-19 16:55:49] INFO root fetch - main [MainThread]: End processing [n0struct]: success
+[2024-05-19 16:55:49] INFO root fetch - main [MainThread]: Store serial: [23277454]
