@@ -14264,3 +14264,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 18:27:50] INFO root fetch - processPackages [func2stream]: Remove: archive file [/home/abi/fetcher/tmp/func2stream-0.0.1.dev2405191627.tar.gz]
 [2024-05-19 18:27:50] INFO root fetch - main [MainThread]: End processing [func2stream]: success
 [2024-05-19 18:27:50] INFO root fetch - main [MainThread]: Store serial: [23278213]
+[2024-05-19 18:29:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23278213]
+[2024-05-19 18:29:59] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 18:29:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yfinance
+[2024-05-19 18:29:59] INFO root fetch - processPackages [yfinance]: New version: [0.2.9] Old Version: [0.2.7]
+[2024-05-19 18:29:59] INFO root fetch - processPackages [yfinance]: Downloading https://files.pythonhosted.org/packages/a8/d8/009751b5ddba3498075f4e073f65a1e4e30dfc83bdb3003ef5044588b4b8/yfinance-0.2.7.tar.gz
+[2024-05-19 18:29:59] INFO root fetch - processPackages [yfinance]: Downloading https://files.pythonhosted.org/packages/44/7c/2f17e16867fb4ad198467cc2ee2db5ff845cfdb1159ecb69ef2e6fc0807b/yfinance-0.2.9.tar.gz
+[2024-05-19 18:29:59] INFO root fetch - processPackages [yfinance]: executing diffoscope
+[2024-05-19 18:29:59] INFO root fetch - processPackages [yfinance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yfinance-0.2.7.tar.gz tmp/yfinance-0.2.9.tar.gz --markdown 20240519/y/yfinance/0.2.7-0.2.9/README.md --exclude *.pyd
+[2024-05-19 18:30:00] INFO root fetch - processPackages [yfinance]: Remove: archive file [/home/abi/fetcher/tmp/yfinance-0.2.7.tar.gz]
+[2024-05-19 18:30:00] INFO root fetch - processPackages [yfinance]: Remove: archive file [/home/abi/fetcher/tmp/yfinance-0.2.9.tar.gz]
+[2024-05-19 18:30:00] INFO root fetch - main [MainThread]: End processing [yfinance]: success
+[2024-05-19 18:30:00] INFO root fetch - main [MainThread]: Store serial: [23278216]
