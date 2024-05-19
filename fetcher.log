@@ -15340,3 +15340,92 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 19:37:50] INFO root fetch - processPackages [pyphy2D]: Remove: archive file [/home/abi/fetcher/tmp/pyphy2D-2.0.tar.gz]
 [2024-05-19 19:37:50] INFO root fetch - main [MainThread]: End processing [pyphy2D]: success
 [2024-05-19 19:37:50] INFO root fetch - main [MainThread]: Store serial: [23278705]
+[2024-05-19 19:39:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23278705]
+[2024-05-19 19:39:59] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-05-19 19:39:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yeref
+[2024-05-19 19:39:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-nightly-tpu
+[2024-05-19 19:39:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flatpack
+[2024-05-19 19:39:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: databand
+[2024-05-19 19:39:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dbnd
+[2024-05-19 19:39:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dbnd-airflow
+[2024-05-19 19:39:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dbnd-airflow-auto-tracking
+[2024-05-19 19:39:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: am2r-yams
+[2024-05-19 19:39:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dbnd-airflow-export
+[2024-05-19 19:39:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: hgraph
+[2024-05-19 19:39:59] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-19 19:39:59] INFO root fetch - processPackages [flatpack]: New version: [3.4.9] Old Version: [3.4.8]
+[2024-05-19 19:39:59] INFO root fetch - processPackages [tf-nightly-tpu]: New version: [2.17.0.dev20240519] Old Version: [2.17.0.dev20240518]
+[2024-05-19 19:39:59] INFO root fetch - processPackages [databand]: New version: [1.0.9.1] Old Version: [1.0.8.1]
+[2024-05-19 19:39:59] INFO root fetch - processPackages [am2r-yams]: New version: [2.2.0] Old Version: [2.1.2]
+[2024-05-19 19:39:59] INFO root fetch - processPackages [dbnd]: New version: [1.0.9.1] Old Version: [1.0.8.1]
+[2024-05-19 19:39:59] INFO root fetch - processPackages [dbnd-airflow]: New version: [1.0.9.1] Old Version: [1.0.8.1]
+[2024-05-19 19:39:59] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-19 19:39:59] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/92/5a/46a0817bd1cfcbeb0f041626a2cc2b28a97a17caa6609495cfb355a5d90e/flatpack-3.4.8.tar.gz
+[2024-05-19 19:39:59] INFO root fetch - processPackages [hgraph]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-19 19:39:59] INFO root fetch - processPackages [dbnd-airflow-auto-tracking]: New version: [1.0.9.1] Old Version: [1.0.8.1]
+[2024-05-19 19:39:59] INFO root fetch - processPackages [dbnd-airflow-export]: New version: [1.0.9.1] Old Version: [1.0.8.1]
+[2024-05-19 19:39:59] INFO root fetch - processPackages [tf-nightly-tpu]: Downloading https://files.pythonhosted.org/packages/06/f5/3ddeb5ab8ef246a3ca3e09ac86cdd643cd8bb6f17d50cd7cec8c8e9af3e9/tf_nightly_tpu-2.17.0.dev20240518-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-19 19:39:59] INFO root fetch - processPackages [dbnd]: Downloading https://files.pythonhosted.org/packages/2c/ef/95cd97398aac34c902a41ca82091680da9410c6599677011cb5300860821/dbnd-1.0.8.1.tar.gz
+[2024-05-19 19:39:59] INFO root fetch - processPackages [databand]: Downloading https://files.pythonhosted.org/packages/4c/fe/ce324c42910f11dd4e6466ac6e9e6ac770c1f97d39145795393ffc8af416/databand-1.0.8.1.tar.gz
+[2024-05-19 19:39:59] INFO root fetch - processPackages [am2r-yams]: Downloading https://files.pythonhosted.org/packages/3a/e4/4233667afdfe031df883105047510a80b6ee3cd8fad29e78457b8eb51f97/am2r_yams-2.1.2.tar.gz
+[2024-05-19 19:39:59] INFO root fetch - processPackages [dbnd-airflow]: Downloading https://files.pythonhosted.org/packages/5a/b1/76589da55fe1d6a8c41d3e9be4670f095dc76be48d1f0b20cc95302189c4/dbnd-airflow-1.0.8.1.tar.gz
+[2024-05-19 19:39:59] INFO root fetch - processPackages [hgraph]: Downloading https://files.pythonhosted.org/packages/da/ad/e83b1d8661a0e583d3a8e4e301911d6797358607dad40d27057574e75081/hgraph-0.2.8.tar.gz
+[2024-05-19 19:39:59] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/29/b6/9545d80064161872f90e25faa6bb7dc31698e88762b3d442b5fb491967fd/flatpack-3.4.9.tar.gz
+[2024-05-19 19:39:59] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-19 19:39:59] INFO root fetch - processPackages [dbnd-airflow-auto-tracking]: Downloading https://files.pythonhosted.org/packages/94/e4/0fcafe1f1bf8668bed1ddacf11a0baaca7275a3c56c7e4101f403ad57c34/dbnd-airflow-auto-tracking-1.0.8.1.tar.gz
+[2024-05-19 19:39:59] INFO root fetch - processPackages [dbnd-airflow-export]: Downloading https://files.pythonhosted.org/packages/f3/3a/ae1afd9c5c7d361bc737fd3d1493912a5af8427f8edddcddf3733c4c7bc1/dbnd-airflow-export-1.0.8.1.tar.gz
+[2024-05-19 19:39:59] WARNING root fetch - processPackages [tf-nightly-tpu]: Skipping package: exceeds size limit 224521380>=10485760
+[2024-05-19 19:39:59] INFO root fetch - main [MainThread]: End processing [tf-nightly-tpu] error
+[2024-05-19 19:39:59] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-05-19 19:39:59] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.4.8.tar.gz tmp/flatpack-3.4.9.tar.gz --markdown 20240519/f/flatpack/3.4.8-3.4.9/README.md --exclude *.pyd
+[2024-05-19 19:40:00] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-19 19:40:00] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240519/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-19 19:40:00] INFO root fetch - processPackages [databand]: Downloading https://files.pythonhosted.org/packages/7f/48/6f85192240ce9018cd470d3c31d168f86c5c9f755c71c647e82dec5f7818/databand-1.0.9.1.tar.gz
+[2024-05-19 19:40:00] INFO root fetch - processPackages [dbnd-airflow]: Downloading https://files.pythonhosted.org/packages/6d/03/88ae48350766e995de1c1e91a985b294338079b5e833ecbdf555f46d6381/dbnd-airflow-1.0.9.1.tar.gz
+[2024-05-19 19:40:00] INFO root fetch - processPackages [dbnd]: Downloading https://files.pythonhosted.org/packages/da/82/9d30072a63f1fa245d936f041f421d38d68e13aa0fb09a1031937b21d446/dbnd-1.0.9.1.tar.gz
+[2024-05-19 19:40:00] INFO root fetch - processPackages [hgraph]: Downloading https://files.pythonhosted.org/packages/22/05/43ea3ada7d538f8592b51d36721d624366793ada729a497eaaff2db9b540/hgraph-0.2.9.tar.gz
+[2024-05-19 19:40:00] INFO root fetch - processPackages [databand]: executing diffoscope
+[2024-05-19 19:40:00] INFO root fetch - processPackages [databand]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databand-1.0.8.1.tar.gz tmp/databand-1.0.9.1.tar.gz --markdown 20240519/d/databand/1.0.8.1-1.0.9.1/README.md --exclude *.pyd
+[2024-05-19 19:40:00] INFO root fetch - processPackages [dbnd-airflow-auto-tracking]: Downloading https://files.pythonhosted.org/packages/dc/d3/0bd0b46ec6a73e608452e1cf9dd8a48dfec490785a36be18bf5477d22aa6/dbnd-airflow-auto-tracking-1.0.9.1.tar.gz
+[2024-05-19 19:40:00] INFO root fetch - processPackages [dbnd-airflow-export]: Downloading https://files.pythonhosted.org/packages/bb/f6/e666265123e68d43df71ebdd9cd0318f56e60fd04ce9a166857aaa7ea53b/dbnd-airflow-export-1.0.9.1.tar.gz
+[2024-05-19 19:40:00] INFO root fetch - processPackages [am2r-yams]: Downloading https://files.pythonhosted.org/packages/5f/c1/11dfe1f567a78d38a0c75ac88ec515d5931c30599d979dabe177bb50c071/am2r_yams-2.2.0.tar.gz
+[2024-05-19 19:40:00] INFO root fetch - processPackages [dbnd-airflow]: executing diffoscope
+[2024-05-19 19:40:00] INFO root fetch - processPackages [dbnd-airflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbnd-airflow-1.0.8.1.tar.gz tmp/dbnd-airflow-1.0.9.1.tar.gz --markdown 20240519/d/dbnd-airflow/1.0.8.1-1.0.9.1/README.md --exclude *.pyd
+[2024-05-19 19:40:00] INFO root fetch - processPackages [dbnd-airflow-auto-tracking]: executing diffoscope
+[2024-05-19 19:40:00] INFO root fetch - processPackages [dbnd-airflow-auto-tracking]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbnd-airflow-auto-tracking-1.0.8.1.tar.gz tmp/dbnd-airflow-auto-tracking-1.0.9.1.tar.gz --markdown 20240519/d/dbnd-airflow-auto-tracking/1.0.8.1-1.0.9.1/README.md --exclude *.pyd
+[2024-05-19 19:40:00] INFO root fetch - processPackages [dbnd-airflow-export]: executing diffoscope
+[2024-05-19 19:40:00] INFO root fetch - processPackages [dbnd-airflow-export]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbnd-airflow-export-1.0.8.1.tar.gz tmp/dbnd-airflow-export-1.0.9.1.tar.gz --markdown 20240519/d/dbnd-airflow-export/1.0.8.1-1.0.9.1/README.md --exclude *.pyd
+[2024-05-19 19:40:00] INFO root fetch - processPackages [hgraph]: executing diffoscope
+[2024-05-19 19:40:00] INFO root fetch - processPackages [hgraph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hgraph-0.2.8.tar.gz tmp/hgraph-0.2.9.tar.gz --markdown 20240519/h/hgraph/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-19 19:40:00] INFO root fetch - processPackages [dbnd]: executing diffoscope
+[2024-05-19 19:40:00] INFO root fetch - processPackages [dbnd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbnd-1.0.8.1.tar.gz tmp/dbnd-1.0.9.1.tar.gz --markdown 20240519/d/dbnd/1.0.8.1-1.0.9.1/README.md --exclude *.pyd
+[2024-05-19 19:40:00] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.8.tar.gz]
+[2024-05-19 19:40:00] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.9.tar.gz]
+[2024-05-19 19:40:00] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-05-19 19:40:00] INFO root fetch - processPackages [am2r-yams]: executing diffoscope
+[2024-05-19 19:40:00] INFO root fetch - processPackages [am2r-yams]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/am2r_yams-2.1.2.tar.gz tmp/am2r_yams-2.2.0.tar.gz --markdown 20240519/a/am2r-yams/2.1.2-2.2.0/README.md --exclude *.pyd
+[2024-05-19 19:40:00] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-19 19:40:00] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-19 19:40:00] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-19 19:40:01] INFO root fetch - processPackages [databand]: Remove: archive file [/home/abi/fetcher/tmp/databand-1.0.8.1.tar.gz]
+[2024-05-19 19:40:01] INFO root fetch - processPackages [databand]: Remove: archive file [/home/abi/fetcher/tmp/databand-1.0.9.1.tar.gz]
+[2024-05-19 19:40:01] INFO root fetch - main [MainThread]: End processing [databand]: success
+[2024-05-19 19:40:01] INFO root fetch - processPackages [dbnd-airflow-export]: Remove: archive file [/home/abi/fetcher/tmp/dbnd-airflow-export-1.0.8.1.tar.gz]
+[2024-05-19 19:40:01] INFO root fetch - processPackages [dbnd-airflow-export]: Remove: archive file [/home/abi/fetcher/tmp/dbnd-airflow-export-1.0.9.1.tar.gz]
+[2024-05-19 19:40:01] INFO root fetch - main [MainThread]: End processing [dbnd-airflow-export]: success
+[2024-05-19 19:40:01] INFO root fetch - processPackages [dbnd-airflow-auto-tracking]: Remove: archive file [/home/abi/fetcher/tmp/dbnd-airflow-auto-tracking-1.0.8.1.tar.gz]
+[2024-05-19 19:40:01] INFO root fetch - processPackages [dbnd-airflow-auto-tracking]: Remove: archive file [/home/abi/fetcher/tmp/dbnd-airflow-auto-tracking-1.0.9.1.tar.gz]
+[2024-05-19 19:40:01] INFO root fetch - main [MainThread]: End processing [dbnd-airflow-auto-tracking]: success
+[2024-05-19 19:40:01] INFO root fetch - processPackages [dbnd-airflow]: Remove: archive file [/home/abi/fetcher/tmp/dbnd-airflow-1.0.8.1.tar.gz]
+[2024-05-19 19:40:01] INFO root fetch - processPackages [dbnd-airflow]: Remove: archive file [/home/abi/fetcher/tmp/dbnd-airflow-1.0.9.1.tar.gz]
+[2024-05-19 19:40:01] INFO root fetch - main [MainThread]: End processing [dbnd-airflow]: success
+[2024-05-19 19:40:02] INFO root fetch - processPackages [hgraph]: Remove: archive file [/home/abi/fetcher/tmp/hgraph-0.2.8.tar.gz]
+[2024-05-19 19:40:02] INFO root fetch - processPackages [hgraph]: Remove: archive file [/home/abi/fetcher/tmp/hgraph-0.2.9.tar.gz]
+[2024-05-19 19:40:02] INFO root fetch - main [MainThread]: End processing [hgraph]: success
+[2024-05-19 19:40:03] INFO root fetch - processPackages [dbnd]: Remove: archive file [/home/abi/fetcher/tmp/dbnd-1.0.8.1.tar.gz]
+[2024-05-19 19:40:03] INFO root fetch - processPackages [dbnd]: Remove: archive file [/home/abi/fetcher/tmp/dbnd-1.0.9.1.tar.gz]
+[2024-05-19 19:40:03] INFO root fetch - main [MainThread]: End processing [dbnd]: success
+[2024-05-19 19:40:08] INFO root fetch - processPackages [am2r-yams]: Remove: archive file [/home/abi/fetcher/tmp/am2r_yams-2.1.2.tar.gz]
+[2024-05-19 19:40:08] INFO root fetch - processPackages [am2r-yams]: Remove: archive file [/home/abi/fetcher/tmp/am2r_yams-2.2.0.tar.gz]
+[2024-05-19 19:40:08] INFO root fetch - main [MainThread]: End processing [am2r-yams]: success
+[2024-05-19 19:40:08] INFO root fetch - main [MainThread]: Store serial: [23278734]
