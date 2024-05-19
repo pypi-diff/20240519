@@ -16657,3 +16657,56 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 20:35:58] INFO root fetch - processPackages [lute3]: Remove: archive file [/home/abi/fetcher/tmp/lute3-3.4.1.tar.gz]
 [2024-05-19 20:35:58] INFO root fetch - main [MainThread]: End processing [lute3]: success
 [2024-05-19 20:35:58] INFO root fetch - main [MainThread]: Store serial: [23279331]
+[2024-05-19 20:38:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279331]
+[2024-05-19 20:38:07] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-19 20:40:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279332]
+[2024-05-19 20:40:13] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-19 20:40:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-partner-contact-nationality
+[2024-05-19 20:40:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: user-context-remote
+[2024-05-19 20:40:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: myjd-api
+[2024-05-19 20:40:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: exonarthexz
+[2024-05-19 20:40:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo14-addon-partner-manual-rank
+[2024-05-19 20:40:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: flatpack
+[2024-05-19 20:40:13] INFO root fetch - processPackages [myjd-api]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-05-19 20:40:13] INFO root fetch - processPackages [user-context-remote]: New version: [0.0.78] Old Version: [0.0.77]
+[2024-05-19 20:40:13] INFO root fetch - processPackages [flatpack]: New version: [3.4.9] Old Version: [3.4.8]
+[2024-05-19 20:40:13] WARNING root fetch - processPackages [exonarthexz]: Skipping, unable to determine old version
+[2024-05-19 20:40:13] INFO root fetch - main [MainThread]: End processing [exonarthexz] error
+[2024-05-19 20:40:13] INFO root fetch - processPackages [odoo-addon-partner-contact-nationality]: New version: [17.0.1.0.0.2] Old Version: [16.0.1.0.1.5]
+[2024-05-19 20:40:13] INFO root fetch - processPackages [odoo14-addon-partner-manual-rank]: New version: [14.0.1.2.0] Old Version: [14.0.1.1.2.dev1]
+[2024-05-19 20:40:13] INFO root fetch - processPackages [myjd-api]: Downloading https://files.pythonhosted.org/packages/7c/14/3a16f0dc00ae4541dcc3adb2df8b43dda5220d168ccac601f85b12fbda30/myjd_api-1.2.0.tar.gz
+[2024-05-19 20:40:13] INFO root fetch - processPackages [user-context-remote]: Downloading https://files.pythonhosted.org/packages/5a/69/c6f3bb1bf746d0fda454983b17e9fe02ba3a720a7173ad4a28a30a2a0c76/user_context_remote-0.0.77.tar.gz
+[2024-05-19 20:40:13] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/92/5a/46a0817bd1cfcbeb0f041626a2cc2b28a97a17caa6609495cfb355a5d90e/flatpack-3.4.8.tar.gz
+[2024-05-19 20:40:13] INFO root fetch - processPackages [odoo14-addon-partner-manual-rank]: Downloading https://files.pythonhosted.org/packages/f6/68/68fad7fe034e7aa80eb044304e99343021659a2e36d5c20d38e99d83cdaf/odoo14_addon_partner_manual_rank-14.0.1.1.2.dev1-py3-none-any.whl
+[2024-05-19 20:40:13] INFO root fetch - processPackages [odoo-addon-partner-contact-nationality]: Downloading https://files.pythonhosted.org/packages/b1/a0/7993eec93f58e8b8cf3d0a24287cd5362bd960333182f9dea8add636e398/odoo_addon_partner_contact_nationality-16.0.1.0.1.5-py3-none-any.whl
+[2024-05-19 20:40:13] INFO root fetch - processPackages [user-context-remote]: Downloading https://files.pythonhosted.org/packages/a0/70/ff9ba4e11bd7fbe95d45d43d68b884cabeab61927e32d0d4c69c1c826605/user_context_remote-0.0.78.tar.gz
+[2024-05-19 20:40:13] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/29/b6/9545d80064161872f90e25faa6bb7dc31698e88762b3d442b5fb491967fd/flatpack-3.4.9.tar.gz
+[2024-05-19 20:40:13] INFO root fetch - processPackages [myjd-api]: Downloading https://files.pythonhosted.org/packages/d5/f7/29fbb5fbcec4057c86774cb3dee22513aec7ad0fa7d1e9aab0fdfa2de5af/myjd_api-1.2.1.tar.gz
+[2024-05-19 20:40:13] INFO root fetch - processPackages [user-context-remote]: executing diffoscope
+[2024-05-19 20:40:13] INFO root fetch - processPackages [user-context-remote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/user_context_remote-0.0.77.tar.gz tmp/user_context_remote-0.0.78.tar.gz --markdown 20240519/u/user-context-remote/0.0.77-0.0.78/README.md --exclude *.pyd
+[2024-05-19 20:40:13] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-05-19 20:40:13] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.4.8.tar.gz tmp/flatpack-3.4.9.tar.gz --markdown 20240519/f/flatpack/3.4.8-3.4.9/README.md --exclude *.pyd
+[2024-05-19 20:40:14] INFO root fetch - processPackages [myjd-api]: executing diffoscope
+[2024-05-19 20:40:14] INFO root fetch - processPackages [myjd-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myjd_api-1.2.0.tar.gz tmp/myjd_api-1.2.1.tar.gz --markdown 20240519/m/myjd-api/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-05-19 20:40:14] INFO root fetch - processPackages [odoo-addon-partner-contact-nationality]: Downloading https://files.pythonhosted.org/packages/da/ce/9238991490fed40a84bf0dba166c90e2c10af413cb2c16403eb7e595d01e/odoo_addon_partner_contact_nationality-17.0.1.0.0.2-py3-none-any.whl
+[2024-05-19 20:40:14] INFO root fetch - processPackages [odoo14-addon-partner-manual-rank]: Downloading https://files.pythonhosted.org/packages/29/3b/ecd2ae988441286a29408b180deb118012434dc2a5c4fab342d279961a18/odoo14_addon_partner_manual_rank-14.0.1.2.0-py3-none-any.whl
+[2024-05-19 20:40:14] INFO root fetch - processPackages [odoo-addon-partner-contact-nationality]: executing diffoscope
+[2024-05-19 20:40:14] INFO root fetch - processPackages [odoo-addon-partner-contact-nationality]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_partner_contact_nationality-16.0.1.0.1.5-py3-none-any.whl.zip tmp/odoo_addon_partner_contact_nationality-17.0.1.0.0.2-py3-none-any.whl.zip --markdown 20240519/o/odoo-addon-partner-contact-nationality/16.0.1.0.1.5-17.0.1.0.0.2/README.md --exclude *.pyd
+[2024-05-19 20:40:14] INFO root fetch - processPackages [odoo14-addon-partner-manual-rank]: executing diffoscope
+[2024-05-19 20:40:14] INFO root fetch - processPackages [odoo14-addon-partner-manual-rank]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_partner_manual_rank-14.0.1.1.2.dev1-py3-none-any.whl.zip tmp/odoo14_addon_partner_manual_rank-14.0.1.2.0-py3-none-any.whl.zip --markdown 20240519/o/odoo14-addon-partner-manual-rank/14.0.1.1.2.dev1-14.0.1.2.0/README.md --exclude *.pyd
+[2024-05-19 20:40:14] INFO root fetch - processPackages [user-context-remote]: Remove: archive file [/home/abi/fetcher/tmp/user_context_remote-0.0.77.tar.gz]
+[2024-05-19 20:40:14] INFO root fetch - processPackages [user-context-remote]: Remove: archive file [/home/abi/fetcher/tmp/user_context_remote-0.0.78.tar.gz]
+[2024-05-19 20:40:14] INFO root fetch - main [MainThread]: End processing [user-context-remote]: success
+[2024-05-19 20:40:14] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.8.tar.gz]
+[2024-05-19 20:40:14] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.9.tar.gz]
+[2024-05-19 20:40:14] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-05-19 20:40:14] INFO root fetch - processPackages [myjd-api]: Remove: archive file [/home/abi/fetcher/tmp/myjd_api-1.2.0.tar.gz]
+[2024-05-19 20:40:14] INFO root fetch - processPackages [myjd-api]: Remove: archive file [/home/abi/fetcher/tmp/myjd_api-1.2.1.tar.gz]
+[2024-05-19 20:40:14] INFO root fetch - main [MainThread]: End processing [myjd-api]: success
+[2024-05-19 20:40:14] INFO root fetch - processPackages [odoo14-addon-partner-manual-rank]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_partner_manual_rank-14.0.1.1.2.dev1-py3-none-any.whl.zip]
+[2024-05-19 20:40:14] INFO root fetch - processPackages [odoo14-addon-partner-manual-rank]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_partner_manual_rank-14.0.1.2.0-py3-none-any.whl.zip]
+[2024-05-19 20:40:14] INFO root fetch - main [MainThread]: End processing [odoo14-addon-partner-manual-rank]: success
+[2024-05-19 20:40:15] INFO root fetch - processPackages [odoo-addon-partner-contact-nationality]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_partner_contact_nationality-16.0.1.0.1.5-py3-none-any.whl.zip]
+[2024-05-19 20:40:15] INFO root fetch - processPackages [odoo-addon-partner-contact-nationality]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_partner_contact_nationality-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-05-19 20:40:15] INFO root fetch - main [MainThread]: End processing [odoo-addon-partner-contact-nationality]: success
+[2024-05-19 20:40:15] INFO root fetch - main [MainThread]: Store serial: [23279349]
