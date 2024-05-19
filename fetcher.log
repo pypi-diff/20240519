@@ -15809,3 +15809,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 19:48:57] INFO root fetch - processPackages [ipyslides]: Remove: archive file [/home/abi/fetcher/tmp/ipyslides-3.9.1.tar.gz]
 [2024-05-19 19:48:57] INFO root fetch - main [MainThread]: End processing [ipyslides]: success
 [2024-05-19 19:48:57] INFO root fetch - main [MainThread]: Store serial: [23278895]
+[2024-05-19 19:51:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23278895]
+[2024-05-19 19:51:05] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 19:51:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: BigEDA
+[2024-05-19 19:51:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: user-context-remote
+[2024-05-19 19:51:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: plagiarism-detect-for-nju
+[2024-05-19 19:51:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: finisterra
+[2024-05-19 19:51:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: themoviedb-lib
+[2024-05-19 19:51:05] INFO root fetch - processPackages [plagiarism-detect-for-nju]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-19 19:51:05] INFO root fetch - processPackages [finisterra]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-19 19:51:05] INFO root fetch - processPackages [BigEDA]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 19:51:05] INFO root fetch - processPackages [user-context-remote]: New version: [0.0.78] Old Version: [0.0.77]
+[2024-05-19 19:51:05] INFO root fetch - processPackages [finisterra]: Downloading https://files.pythonhosted.org/packages/b6/bf/195a1850e81169f476d3d3ca9ef8c21c89088d98c5739b2e6b3e241d7ac4/finisterra-1.0.8.tar.gz
+[2024-05-19 19:51:05] INFO root fetch - processPackages [plagiarism-detect-for-nju]: Downloading https://files.pythonhosted.org/packages/30/2d/cb9abfc930494d97e4623edb531eb438a53381fa3e668c395c1a8c4a66df/plagiarism_detect_for_nju-1.0.1.tar.gz
+[2024-05-19 19:51:05] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/2f/fe/5c10bf9dfaa50e4e1234e81e022638b3ef20c821e939dae4cdc3da332e46/bigeda-0.0.8.tar.gz
+[2024-05-19 19:51:05] INFO root fetch - processPackages [themoviedb-lib]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-19 19:51:06] INFO root fetch - processPackages [user-context-remote]: Downloading https://files.pythonhosted.org/packages/5a/69/c6f3bb1bf746d0fda454983b17e9fe02ba3a720a7173ad4a28a30a2a0c76/user_context_remote-0.0.77.tar.gz
+[2024-05-19 19:51:06] INFO root fetch - processPackages [themoviedb-lib]: Downloading https://files.pythonhosted.org/packages/b9/e8/bc2a303dfa43c04364f20bc7d9f240ca0a7167c4cee19719fc70069cc2e2/themoviedb_lib-0.0.3.tar.gz
+[2024-05-19 19:51:06] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/b1/5d/ec41b2b9af7223a14c0e82d4f64cbeb0d0339a0d8bca37dbb041af6ef14d/bigeda-0.0.9.tar.gz
+[2024-05-19 19:51:06] INFO root fetch - processPackages [finisterra]: Downloading https://files.pythonhosted.org/packages/68/8a/02f80cdb16a2f8155583c78bc947832a816e1d8d728091c4ac97d9225473/finisterra-1.0.9.tar.gz
+[2024-05-19 19:51:06] INFO root fetch - processPackages [plagiarism-detect-for-nju]: Downloading https://files.pythonhosted.org/packages/96/9b/f430bbcca4b50fdaaa26f3f5a0b8d0284d2dcb48395105f8f8f4d4eda5cf/plagiarism_detect_for_nju-1.0.2.tar.gz
+[2024-05-19 19:51:06] INFO root fetch - processPackages [BigEDA]: executing diffoscope
+[2024-05-19 19:51:06] INFO root fetch - processPackages [BigEDA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigeda-0.0.8.tar.gz tmp/bigeda-0.0.9.tar.gz --markdown 20240519/B/BigEDA/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 19:51:06] INFO root fetch - processPackages [finisterra]: executing diffoscope
+[2024-05-19 19:51:06] INFO root fetch - processPackages [finisterra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finisterra-1.0.8.tar.gz tmp/finisterra-1.0.9.tar.gz --markdown 20240519/f/finisterra/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-19 19:51:06] INFO root fetch - processPackages [plagiarism-detect-for-nju]: executing diffoscope
+[2024-05-19 19:51:06] INFO root fetch - processPackages [plagiarism-detect-for-nju]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plagiarism_detect_for_nju-1.0.1.tar.gz tmp/plagiarism_detect_for_nju-1.0.2.tar.gz --markdown 20240519/p/plagiarism-detect-for-nju/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-19 19:51:06] INFO root fetch - processPackages [user-context-remote]: Downloading https://files.pythonhosted.org/packages/a0/70/ff9ba4e11bd7fbe95d45d43d68b884cabeab61927e32d0d4c69c1c826605/user_context_remote-0.0.78.tar.gz
+[2024-05-19 19:51:06] INFO root fetch - processPackages [themoviedb-lib]: Downloading https://files.pythonhosted.org/packages/fe/66/b4e7a5dcefe6429444f78682aa69ffcde492d66cdac26c488448ccfc6fa9/themoviedb_lib-0.0.4.tar.gz
+[2024-05-19 19:51:06] INFO root fetch - processPackages [user-context-remote]: executing diffoscope
+[2024-05-19 19:51:06] INFO root fetch - processPackages [user-context-remote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/user_context_remote-0.0.77.tar.gz tmp/user_context_remote-0.0.78.tar.gz --markdown 20240519/u/user-context-remote/0.0.77-0.0.78/README.md --exclude *.pyd
+[2024-05-19 19:51:06] INFO root fetch - processPackages [themoviedb-lib]: executing diffoscope
+[2024-05-19 19:51:06] INFO root fetch - processPackages [themoviedb-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/themoviedb_lib-0.0.3.tar.gz tmp/themoviedb_lib-0.0.4.tar.gz --markdown 20240519/t/themoviedb-lib/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-19 19:51:07] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.8.tar.gz]
+[2024-05-19 19:51:07] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.9.tar.gz]
+[2024-05-19 19:51:07] INFO root fetch - main [MainThread]: End processing [BigEDA]: success
+[2024-05-19 19:51:07] INFO root fetch - processPackages [plagiarism-detect-for-nju]: Remove: archive file [/home/abi/fetcher/tmp/plagiarism_detect_for_nju-1.0.1.tar.gz]
+[2024-05-19 19:51:07] INFO root fetch - processPackages [plagiarism-detect-for-nju]: Remove: archive file [/home/abi/fetcher/tmp/plagiarism_detect_for_nju-1.0.2.tar.gz]
+[2024-05-19 19:51:07] INFO root fetch - main [MainThread]: End processing [plagiarism-detect-for-nju]: success
+[2024-05-19 19:51:07] INFO root fetch - processPackages [finisterra]: Remove: archive file [/home/abi/fetcher/tmp/finisterra-1.0.8.tar.gz]
+[2024-05-19 19:51:07] INFO root fetch - processPackages [finisterra]: Remove: archive file [/home/abi/fetcher/tmp/finisterra-1.0.9.tar.gz]
+[2024-05-19 19:51:07] INFO root fetch - main [MainThread]: End processing [finisterra]: success
+[2024-05-19 19:51:07] INFO root fetch - processPackages [user-context-remote]: Remove: archive file [/home/abi/fetcher/tmp/user_context_remote-0.0.77.tar.gz]
+[2024-05-19 19:51:07] INFO root fetch - processPackages [user-context-remote]: Remove: archive file [/home/abi/fetcher/tmp/user_context_remote-0.0.78.tar.gz]
+[2024-05-19 19:51:07] INFO root fetch - main [MainThread]: End processing [user-context-remote]: success
+[2024-05-19 19:51:07] INFO root fetch - processPackages [themoviedb-lib]: Remove: archive file [/home/abi/fetcher/tmp/themoviedb_lib-0.0.3.tar.gz]
+[2024-05-19 19:51:07] INFO root fetch - processPackages [themoviedb-lib]: Remove: archive file [/home/abi/fetcher/tmp/themoviedb_lib-0.0.4.tar.gz]
+[2024-05-19 19:51:07] INFO root fetch - main [MainThread]: End processing [themoviedb-lib]: success
+[2024-05-19 19:51:07] INFO root fetch - main [MainThread]: Store serial: [23278919]
