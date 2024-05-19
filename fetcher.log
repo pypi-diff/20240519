@@ -18081,3 +18081,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 22:14:58] INFO root fetch - processPackages [crownstone-sse]: Remove: archive file [/home/abi/fetcher/tmp/crownstone_sse-2.0.5.tar.gz]
 [2024-05-19 22:14:58] INFO root fetch - main [MainThread]: End processing [crownstone-sse]: success
 [2024-05-19 22:14:58] INFO root fetch - main [MainThread]: Store serial: [23280004]
+[2024-05-19 22:17:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23280004]
+[2024-05-19 22:17:06] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 22:17:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scoutbook_parser
+[2024-05-19 22:17:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: io_file_validator
+[2024-05-19 22:17:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: deep-unfolding
+[2024-05-19 22:17:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mptradelib
+[2024-05-19 22:17:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hwyz
+[2024-05-19 22:17:07] WARNING root fetch - processPackages [io_file_validator]: Skipping, unable to determine old version
+[2024-05-19 22:17:07] INFO root fetch - main [MainThread]: End processing [io_file_validator] error
+[2024-05-19 22:17:07] INFO root fetch - processPackages [scoutbook_parser]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-05-19 22:17:07] WARNING root fetch - processPackages [deep-unfolding]: Skipping, unable to determine old version
+[2024-05-19 22:17:07] INFO root fetch - main [MainThread]: End processing [deep-unfolding] error
+[2024-05-19 22:17:07] WARNING root fetch - processPackages [hwyz]: Skipping, unable to determine old version
+[2024-05-19 22:17:07] INFO root fetch - main [MainThread]: End processing [hwyz] error
+[2024-05-19 22:17:07] INFO root fetch - processPackages [mptradelib]: New version: [0.5.3] Old Version: [0.5.2]
+[2024-05-19 22:17:07] INFO root fetch - processPackages [scoutbook_parser]: Downloading https://files.pythonhosted.org/packages/cb/af/8cefee227997b6e3fe30da0ae2c31049cc60b92d76e910b4beca5fc29702/scoutbook_parser-0.9.0.tar.gz
+[2024-05-19 22:17:07] INFO root fetch - processPackages [mptradelib]: Downloading https://files.pythonhosted.org/packages/b9/fd/f9bbd17a36abe2e893acc5d159849c192dcff81a9bb77884809b8395a1bf/mptradelib-0.5.2.tar.gz
+[2024-05-19 22:17:07] INFO root fetch - processPackages [scoutbook_parser]: Downloading https://files.pythonhosted.org/packages/a8/b3/755d2ce577e69aa85bd7c4589be4f7a8f4e54f64a3f1c5e0dd3aef5db4d8/scoutbook_parser-0.9.1.tar.gz
+[2024-05-19 22:17:07] INFO root fetch - processPackages [mptradelib]: Downloading https://files.pythonhosted.org/packages/92/e6/25454dab892554be76ea1f02a27b6cb7771b36004914a0445fa01e3dff01/mptradelib-0.5.3.tar.gz
+[2024-05-19 22:17:07] INFO root fetch - processPackages [mptradelib]: executing diffoscope
+[2024-05-19 22:17:07] INFO root fetch - processPackages [mptradelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mptradelib-0.5.2.tar.gz tmp/mptradelib-0.5.3.tar.gz --markdown 20240519/m/mptradelib/0.5.2-0.5.3/README.md --exclude *.pyd
+[2024-05-19 22:17:07] INFO root fetch - processPackages [scoutbook_parser]: executing diffoscope
+[2024-05-19 22:17:07] INFO root fetch - processPackages [scoutbook_parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scoutbook_parser-0.9.0.tar.gz tmp/scoutbook_parser-0.9.1.tar.gz --markdown 20240519/s/scoutbook_parser/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-05-19 22:17:08] INFO root fetch - processPackages [mptradelib]: Remove: archive file [/home/abi/fetcher/tmp/mptradelib-0.5.2.tar.gz]
+[2024-05-19 22:17:08] INFO root fetch - processPackages [mptradelib]: Remove: archive file [/home/abi/fetcher/tmp/mptradelib-0.5.3.tar.gz]
+[2024-05-19 22:17:08] INFO root fetch - main [MainThread]: End processing [mptradelib]: success
+[2024-05-19 22:17:08] INFO root fetch - processPackages [scoutbook_parser]: Remove: archive file [/home/abi/fetcher/tmp/scoutbook_parser-0.9.0.tar.gz]
+[2024-05-19 22:17:08] INFO root fetch - processPackages [scoutbook_parser]: Remove: archive file [/home/abi/fetcher/tmp/scoutbook_parser-0.9.1.tar.gz]
+[2024-05-19 22:17:08] INFO root fetch - main [MainThread]: End processing [scoutbook_parser]: success
+[2024-05-19 22:17:08] INFO root fetch - main [MainThread]: Store serial: [23280030]
