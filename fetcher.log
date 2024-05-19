@@ -5312,3 +5312,27 @@
 [2024-05-19 08:33:33] INFO root fetch - processPackages [wdmtoolbox]: Remove: archive file [/home/abi/fetcher/tmp/wdmtoolbox-8.9.7.5.tar.gz]
 [2024-05-19 08:33:33] INFO root fetch - main [MainThread]: End processing [wdmtoolbox]: success
 [2024-05-19 08:33:33] INFO root fetch - main [MainThread]: Store serial: [23273862]
+[2024-05-19 08:35:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273862]
+[2024-05-19 08:35:43] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 08:35:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: YsFinance
+[2024-05-19 08:35:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: func2stream
+[2024-05-19 08:35:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vr180-convert
+[2024-05-19 08:35:43] INFO root fetch - processPackages [vr180-convert]: New version: [0.3.0] Old Version: [0.2.2]
+[2024-05-19 08:35:43] INFO root fetch - processPackages [vr180-convert]: Downloading https://files.pythonhosted.org/packages/1e/da/e6305d2f6ff7abf8d86c5cf244ba6e1e475e98d774236a53739f324caefc/vr180_convert-0.2.2.tar.gz
+[2024-05-19 08:35:43] WARNING root fetch - processPackages [YsFinance]: Skipping, unable to determine old version
+[2024-05-19 08:35:43] INFO root fetch - main [MainThread]: End processing [YsFinance] error
+[2024-05-19 08:35:43] INFO root fetch - processPackages [func2stream]: New version: [0.0.1.dev240519062633] Old Version: [0.0.1.dev240519062631]
+[2024-05-19 08:35:43] INFO root fetch - processPackages [vr180-convert]: Downloading https://files.pythonhosted.org/packages/b4/65/f72373df6962476c96b48af0f3c7271932d67aeb94dbcb700ca898738eab/vr180_convert-0.3.0.tar.gz
+[2024-05-19 08:35:43] INFO root fetch - processPackages [func2stream]: Downloading https://files.pythonhosted.org/packages/b5/af/2e5e01c2ea8df7b8882612e65de71f1dcda2f21349c7cf9ce70e92b05153/func2stream-0.0.1.dev240519062631.tar.gz
+[2024-05-19 08:35:43] INFO root fetch - processPackages [vr180-convert]: executing diffoscope
+[2024-05-19 08:35:43] INFO root fetch - processPackages [vr180-convert]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vr180_convert-0.2.2.tar.gz tmp/vr180_convert-0.3.0.tar.gz --markdown 20240519/v/vr180-convert/0.2.2-0.3.0/README.md --exclude *.pyd
+[2024-05-19 08:35:43] INFO root fetch - processPackages [func2stream]: Downloading https://files.pythonhosted.org/packages/6d/49/0cfb96b19027a5010796516e48615ec7ae7aa2ed97cd6f5ab177db2042b8/func2stream-0.0.1.dev240519062633-py3-none-any.whl
+[2024-05-19 08:35:43] INFO root fetch - processPackages [func2stream]: executing diffoscope
+[2024-05-19 08:35:43] INFO root fetch - processPackages [func2stream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/func2stream-0.0.1.dev240519062631.tar.gz tmp/func2stream-0.0.1.dev240519062633-py3-none-any.whl.zip --markdown 20240519/f/func2stream/0.0.1.dev240519062631-0.0.1.dev240519062633/README.md --exclude *.pyd
+[2024-05-19 08:35:44] INFO root fetch - processPackages [vr180-convert]: Remove: archive file [/home/abi/fetcher/tmp/vr180_convert-0.2.2.tar.gz]
+[2024-05-19 08:35:44] INFO root fetch - processPackages [vr180-convert]: Remove: archive file [/home/abi/fetcher/tmp/vr180_convert-0.3.0.tar.gz]
+[2024-05-19 08:35:44] INFO root fetch - main [MainThread]: End processing [vr180-convert]: success
+[2024-05-19 08:35:44] INFO root fetch - processPackages [func2stream]: Remove: archive file [/home/abi/fetcher/tmp/func2stream-0.0.1.dev240519062631.tar.gz]
+[2024-05-19 08:35:44] INFO root fetch - processPackages [func2stream]: Remove: archive file [/home/abi/fetcher/tmp/func2stream-0.0.1.dev240519062633-py3-none-any.whl.zip]
+[2024-05-19 08:35:44] INFO root fetch - main [MainThread]: End processing [func2stream]: success
+[2024-05-19 08:35:44] INFO root fetch - main [MainThread]: Store serial: [23273872]
