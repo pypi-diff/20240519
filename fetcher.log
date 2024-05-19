@@ -7255,3 +7255,24 @@
 [2024-05-19 10:59:09] INFO root fetch - processPackages [rio-ui]: Remove: archive file [/home/abi/fetcher/tmp/rio_ui-0.7.tar.gz]
 [2024-05-19 10:59:09] INFO root fetch - main [MainThread]: End processing [rio-ui]: success
 [2024-05-19 10:59:09] INFO root fetch - main [MainThread]: Store serial: [23274855]
+[2024-05-19 11:01:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274855]
+[2024-05-19 11:01:20] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 11:01:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: extended-mypy-django-plugin
+[2024-05-19 11:01:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: skyrez
+[2024-05-19 11:01:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zibuyu-llm
+[2024-05-19 11:01:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: arclet-alconna
+[2024-05-19 11:01:20] WARNING root fetch - processPackages [zibuyu-llm]: Skipping, unable to determine old version
+[2024-05-19 11:01:20] INFO root fetch - main [MainThread]: End processing [zibuyu-llm] error
+[2024-05-19 11:01:20] WARNING root fetch - processPackages [skyrez]: Skipping, unable to determine old version
+[2024-05-19 11:01:20] INFO root fetch - main [MainThread]: End processing [skyrez] error
+[2024-05-19 11:01:20] WARNING root fetch - processPackages [extended-mypy-django-plugin]: Skipping, unable to determine old version
+[2024-05-19 11:01:20] INFO root fetch - main [MainThread]: End processing [extended-mypy-django-plugin] error
+[2024-05-19 11:01:20] INFO root fetch - processPackages [arclet-alconna]: New version: [2.0.0a1] Old Version: [1.8.9]
+[2024-05-19 11:01:21] INFO root fetch - processPackages [arclet-alconna]: Downloading https://files.pythonhosted.org/packages/39/d4/dac9fe4b3d8464614fd090809b888d792a000aca204ec30d3cee3c8d5266/arclet_alconna-1.8.9.tar.gz
+[2024-05-19 11:01:21] INFO root fetch - processPackages [arclet-alconna]: Downloading https://files.pythonhosted.org/packages/9d/94/a67b387eb6a314713f326f7f2b4c55fe6146638814b2db843e0a477dd310/arclet_alconna-2.0.0a1.tar.gz
+[2024-05-19 11:01:21] INFO root fetch - processPackages [arclet-alconna]: executing diffoscope
+[2024-05-19 11:01:21] INFO root fetch - processPackages [arclet-alconna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arclet_alconna-1.8.9.tar.gz tmp/arclet_alconna-2.0.0a1.tar.gz --markdown 20240519/a/arclet-alconna/1.8.9-2.0.0a1/README.md --exclude *.pyd
+[2024-05-19 11:01:22] INFO root fetch - processPackages [arclet-alconna]: Remove: archive file [/home/abi/fetcher/tmp/arclet_alconna-1.8.9.tar.gz]
+[2024-05-19 11:01:22] INFO root fetch - processPackages [arclet-alconna]: Remove: archive file [/home/abi/fetcher/tmp/arclet_alconna-2.0.0a1.tar.gz]
+[2024-05-19 11:01:22] INFO root fetch - main [MainThread]: End processing [arclet-alconna]: success
+[2024-05-19 11:01:22] INFO root fetch - main [MainThread]: Store serial: [23274868]
