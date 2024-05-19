@@ -15214,3 +15214,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 19:31:10] INFO root fetch - processPackages [dimples]: Remove: archive file [/home/abi/fetcher/tmp/dimples-1.2.1.tar.gz]
 [2024-05-19 19:31:10] INFO root fetch - main [MainThread]: End processing [dimples]: success
 [2024-05-19 19:31:10] INFO root fetch - main [MainThread]: Store serial: [23278635]
+[2024-05-19 19:33:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23278635]
+[2024-05-19 19:33:19] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 19:33:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: staging-cacao-accounting
+[2024-05-19 19:33:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: orthotropismz
+[2024-05-19 19:33:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: plagiarism-detect-for-nju
+[2024-05-19 19:33:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: syncloud-lib
+[2024-05-19 19:33:19] INFO root fetch - processPackages [syncloud-lib]: New version: [99] Old Version: [98]
+[2024-05-19 19:33:19] WARNING root fetch - processPackages [orthotropismz]: Skipping, unable to determine old version
+[2024-05-19 19:33:19] INFO root fetch - main [MainThread]: End processing [orthotropismz] error
+[2024-05-19 19:33:19] WARNING root fetch - processPackages [plagiarism-detect-for-nju]: Skipping, unable to determine old version
+[2024-05-19 19:33:19] INFO root fetch - main [MainThread]: End processing [plagiarism-detect-for-nju] error
+[2024-05-19 19:33:19] INFO root fetch - processPackages [staging-cacao-accounting]: New version: [0.0.1b20240519] Old Version: [0.0.1b20240513]
+[2024-05-19 19:33:19] INFO root fetch - processPackages [syncloud-lib]: Downloading https://files.pythonhosted.org/packages/eb/47/46fcc907c66f84d54bb4511b19d9a23d7c91adea96f7e60ce0c74aa570ef/syncloud-lib-98.tar.gz
+[2024-05-19 19:33:19] INFO root fetch - processPackages [staging-cacao-accounting]: Downloading https://files.pythonhosted.org/packages/e3/39/55f344736f1726a6a060bd6cd536a4562c1f232240f899d4979b2036efff/staging_cacao_accounting-0.0.1b20240513.tar.gz
+[2024-05-19 19:33:19] INFO root fetch - processPackages [syncloud-lib]: Downloading https://files.pythonhosted.org/packages/44/7a/6896c6fbe515ce1d82cba0202681a2dab694b82a4fcab8fe2813ac3b6806/syncloud-lib-99.tar.gz
+[2024-05-19 19:33:19] INFO root fetch - processPackages [syncloud-lib]: executing diffoscope
+[2024-05-19 19:33:19] INFO root fetch - processPackages [syncloud-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syncloud-lib-98.tar.gz tmp/syncloud-lib-99.tar.gz --markdown 20240519/s/syncloud-lib/98-99/README.md --exclude *.pyd
+[2024-05-19 19:33:20] INFO root fetch - processPackages [syncloud-lib]: Remove: archive file [/home/abi/fetcher/tmp/syncloud-lib-98.tar.gz]
+[2024-05-19 19:33:20] INFO root fetch - processPackages [syncloud-lib]: Remove: archive file [/home/abi/fetcher/tmp/syncloud-lib-99.tar.gz]
+[2024-05-19 19:33:20] INFO root fetch - main [MainThread]: End processing [syncloud-lib]: success
+[2024-05-19 19:33:20] INFO root fetch - processPackages [staging-cacao-accounting]: Downloading https://files.pythonhosted.org/packages/1e/56/39b5127aeb6a724a665df4d968f972fbbab3835554de98950a9f6efffb77/staging_cacao_accounting-0.0.1b20240519.tar.gz
+[2024-05-19 19:33:21] INFO root fetch - processPackages [staging-cacao-accounting]: executing diffoscope
+[2024-05-19 19:33:21] INFO root fetch - processPackages [staging-cacao-accounting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/staging_cacao_accounting-0.0.1b20240513.tar.gz tmp/staging_cacao_accounting-0.0.1b20240519.tar.gz --markdown 20240519/s/staging-cacao-accounting/0.0.1b20240513-0.0.1b20240519/README.md --exclude *.pyd
+[2024-05-19 19:33:28] INFO root fetch - processPackages [staging-cacao-accounting]: Remove: archive file [/home/abi/fetcher/tmp/staging_cacao_accounting-0.0.1b20240513.tar.gz]
+[2024-05-19 19:33:28] INFO root fetch - processPackages [staging-cacao-accounting]: Remove: archive file [/home/abi/fetcher/tmp/staging_cacao_accounting-0.0.1b20240519.tar.gz]
+[2024-05-19 19:33:28] INFO root fetch - main [MainThread]: End processing [staging-cacao-accounting]: success
+[2024-05-19 19:33:28] INFO root fetch - main [MainThread]: Store serial: [23278649]
