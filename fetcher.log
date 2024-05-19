@@ -1675,3 +1675,51 @@
 [2024-05-19 02:49:11] WARNING root fetch - processPackages [abscondedz]: Skipping, unable to determine old version
 [2024-05-19 02:49:11] INFO root fetch - main [MainThread]: End processing [abscondedz] error
 [2024-05-19 02:49:11] INFO root fetch - main [MainThread]: Store serial: [23272203]
+[2024-05-19 02:51:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272203]
+[2024-05-19 02:51:20] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 02:51:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: homeharvest
+[2024-05-19 02:51:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-databrew-cicd
+[2024-05-19 02:51:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xplainable-client
+[2024-05-19 02:51:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xcpcio-board-spider
+[2024-05-19 02:51:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cabinet
+[2024-05-19 02:51:20] INFO root fetch - processPackages [xplainable-client]: New version: [1.2.4.post4] Old Version: [1.2.4.post3]
+[2024-05-19 02:51:20] INFO root fetch - processPackages [cdk-databrew-cicd]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-05-19 02:51:20] INFO root fetch - processPackages [xplainable-client]: Downloading https://files.pythonhosted.org/packages/08/61/481812ba202acdcc36950e8c5f2f1d652f989ef49d7b2528c836d5e01bd5/xplainable_client-1.2.4.post3.tar.gz
+[2024-05-19 02:51:20] INFO root fetch - processPackages [homeharvest]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-19 02:51:20] INFO root fetch - processPackages [xcpcio-board-spider]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 02:51:20] INFO root fetch - processPackages [cabinet]: New version: [2024.5.7.1] Old Version: [2024.5.18.1]
+[2024-05-19 02:51:20] INFO root fetch - processPackages [cdk-databrew-cicd]: Downloading https://files.pythonhosted.org/packages/9c/18/acad9d22fe20a13d93a1aee49739981e3ab739a2edcb478344aa0fc5b783/cdk_databrew_cicd-2.0.98.tar.gz
+[2024-05-19 02:51:21] INFO root fetch - processPackages [homeharvest]: Downloading https://files.pythonhosted.org/packages/ee/35/82f17de156d1492ba0d7f70a81ed3e1f7ab03e7c2ff18bdee5221afa91e5/homeharvest-0.3.8.tar.gz
+[2024-05-19 02:51:21] INFO root fetch - processPackages [cabinet]: Downloading https://files.pythonhosted.org/packages/e4/b2/ec317d534feaeb9dbc4ecab4442d4eb54a590c0982a3d40d929a212f0c01/cabinet-2024.5.18.1.tar.gz
+[2024-05-19 02:51:21] INFO root fetch - processPackages [xcpcio-board-spider]: Downloading https://files.pythonhosted.org/packages/d5/e8/93eb07becf872b6db723095bb3f0908214a3d2b21dc599973ab1af8f8e97/xcpcio_board_spider-0.0.8.tar.gz
+[2024-05-19 02:51:21] INFO root fetch - processPackages [xplainable-client]: Downloading https://files.pythonhosted.org/packages/8e/6d/3a96a7f45490bbf2f1db3b670fe0519dd4ee2fbd6612949e26f0d8f6dab1/xplainable-client-1.2.4.post4.tar.gz
+[2024-05-19 02:51:21] INFO root fetch - processPackages [cdk-databrew-cicd]: Downloading https://files.pythonhosted.org/packages/66/41/4c5089b171b28b627753bb3de1b4b696fdaeb4f78ef49dcb72a79fcb6e9d/cdk_databrew_cicd-2.0.99.tar.gz
+[2024-05-19 02:51:21] INFO root fetch - processPackages [xplainable-client]: executing diffoscope
+[2024-05-19 02:51:21] INFO root fetch - processPackages [xplainable-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xplainable_client-1.2.4.post3.tar.gz tmp/xplainable-client-1.2.4.post4.tar.gz --markdown 20240519/x/xplainable-client/1.2.4.post3-1.2.4.post4/README.md --exclude *.pyd
+[2024-05-19 02:51:21] INFO root fetch - processPackages [homeharvest]: Downloading https://files.pythonhosted.org/packages/14/3a/bcc101a19e2e5e446203d0d2bd533ee0645cf7ab9697bb8e9dc45c839790/homeharvest-0.3.9.tar.gz
+[2024-05-19 02:51:21] INFO root fetch - processPackages [homeharvest]: executing diffoscope
+[2024-05-19 02:51:21] INFO root fetch - processPackages [homeharvest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/homeharvest-0.3.8.tar.gz tmp/homeharvest-0.3.9.tar.gz --markdown 20240519/h/homeharvest/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-19 02:51:21] INFO root fetch - processPackages [cdk-databrew-cicd]: executing diffoscope
+[2024-05-19 02:51:21] INFO root fetch - processPackages [cdk-databrew-cicd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_databrew_cicd-2.0.98.tar.gz tmp/cdk_databrew_cicd-2.0.99.tar.gz --markdown 20240519/c/cdk-databrew-cicd/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-05-19 02:51:21] INFO root fetch - processPackages [cabinet]: Downloading https://files.pythonhosted.org/packages/8c/3a/40844357de4ff855e2a9483bd4cda34b0df4400f21b5084a02372dffbc0b/cabinet-2024.5.7.1.tar.gz
+[2024-05-19 02:51:21] INFO root fetch - processPackages [xcpcio-board-spider]: Downloading https://files.pythonhosted.org/packages/23/85/7e2bcc229940ed51da5d1c47693efc3f82ae21eecd44490b8897c460f772/xcpcio_board_spider-0.0.9.tar.gz
+[2024-05-19 02:51:21] INFO root fetch - processPackages [cabinet]: executing diffoscope
+[2024-05-19 02:51:21] INFO root fetch - processPackages [cabinet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cabinet-2024.5.18.1.tar.gz tmp/cabinet-2024.5.7.1.tar.gz --markdown 20240519/c/cabinet/2024.5.18.1-2024.5.7.1/README.md --exclude *.pyd
+[2024-05-19 02:51:21] INFO root fetch - processPackages [xcpcio-board-spider]: executing diffoscope
+[2024-05-19 02:51:21] INFO root fetch - processPackages [xcpcio-board-spider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xcpcio_board_spider-0.0.8.tar.gz tmp/xcpcio_board_spider-0.0.9.tar.gz --markdown 20240519/x/xcpcio-board-spider/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 02:51:22] INFO root fetch - processPackages [xplainable-client]: Remove: archive file [/home/abi/fetcher/tmp/xplainable_client-1.2.4.post3.tar.gz]
+[2024-05-19 02:51:22] INFO root fetch - processPackages [xplainable-client]: Remove: archive file [/home/abi/fetcher/tmp/xplainable-client-1.2.4.post4.tar.gz]
+[2024-05-19 02:51:22] INFO root fetch - main [MainThread]: End processing [xplainable-client]: success
+[2024-05-19 02:51:22] INFO root fetch - processPackages [homeharvest]: Remove: archive file [/home/abi/fetcher/tmp/homeharvest-0.3.8.tar.gz]
+[2024-05-19 02:51:22] INFO root fetch - processPackages [homeharvest]: Remove: archive file [/home/abi/fetcher/tmp/homeharvest-0.3.9.tar.gz]
+[2024-05-19 02:51:22] INFO root fetch - main [MainThread]: End processing [homeharvest]: success
+[2024-05-19 02:51:22] INFO root fetch - processPackages [cabinet]: Remove: archive file [/home/abi/fetcher/tmp/cabinet-2024.5.18.1.tar.gz]
+[2024-05-19 02:51:22] INFO root fetch - processPackages [cabinet]: Remove: archive file [/home/abi/fetcher/tmp/cabinet-2024.5.7.1.tar.gz]
+[2024-05-19 02:51:22] INFO root fetch - main [MainThread]: End processing [cabinet]: success
+[2024-05-19 02:51:22] INFO root fetch - processPackages [cdk-databrew-cicd]: Remove: archive file [/home/abi/fetcher/tmp/cdk_databrew_cicd-2.0.98.tar.gz]
+[2024-05-19 02:51:22] INFO root fetch - processPackages [cdk-databrew-cicd]: Remove: archive file [/home/abi/fetcher/tmp/cdk_databrew_cicd-2.0.99.tar.gz]
+[2024-05-19 02:51:22] INFO root fetch - main [MainThread]: End processing [cdk-databrew-cicd]: success
+[2024-05-19 02:51:22] INFO root fetch - processPackages [xcpcio-board-spider]: Remove: archive file [/home/abi/fetcher/tmp/xcpcio_board_spider-0.0.8.tar.gz]
+[2024-05-19 02:51:22] INFO root fetch - processPackages [xcpcio-board-spider]: Remove: archive file [/home/abi/fetcher/tmp/xcpcio_board_spider-0.0.9.tar.gz]
+[2024-05-19 02:51:22] INFO root fetch - main [MainThread]: End processing [xcpcio-board-spider]: success
+[2024-05-19 02:51:22] INFO root fetch - main [MainThread]: Store serial: [23272217]
