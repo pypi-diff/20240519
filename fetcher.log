@@ -14168,3 +14168,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 18:21:19] INFO root fetch - processPackages [webflask]: Remove: archive file [/home/abi/fetcher/tmp/webflask-0.6.tar.gz]
 [2024-05-19 18:21:19] INFO root fetch - main [MainThread]: End processing [webflask]: success
 [2024-05-19 18:21:19] INFO root fetch - main [MainThread]: Store serial: [23278175]
+[2024-05-19 18:23:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23278175]
+[2024-05-19 18:23:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 18:23:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: conf-mat
+[2024-05-19 18:23:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bootlace
+[2024-05-19 18:23:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yeref
+[2024-05-19 18:23:28] INFO root fetch - processPackages [conf-mat]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-05-19 18:23:28] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-19 18:23:28] INFO root fetch - processPackages [conf-mat]: Downloading https://files.pythonhosted.org/packages/ea/9f/154d1430fc09d3c77fa27fa7b3c92cedef5fa5dff434abc9f1308ca4789b/conf-mat-1.0.5.tar.gz
+[2024-05-19 18:23:28] INFO root fetch - processPackages [bootlace]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-19 18:23:28] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-19 18:23:28] INFO root fetch - processPackages [bootlace]: Downloading https://files.pythonhosted.org/packages/ed/c2/d439196ed98b80a51947b05746bba4601417a5b68b3068bcfee508d9459a/bootlace-0.2.1.tar.gz
+[2024-05-19 18:23:28] INFO root fetch - processPackages [conf-mat]: Downloading https://files.pythonhosted.org/packages/3b/4d/dc7936d0cdee17c2f051000bced069e825108d44d7552da945a959b9f649/conf_mat-1.0.6-py3-none-any.whl
+[2024-05-19 18:23:28] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-19 18:23:28] INFO root fetch - processPackages [conf-mat]: executing diffoscope
+[2024-05-19 18:23:28] INFO root fetch - processPackages [conf-mat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/conf-mat-1.0.5.tar.gz tmp/conf_mat-1.0.6-py3-none-any.whl.zip --markdown 20240519/c/conf-mat/1.0.5-1.0.6/README.md --exclude *.pyd
+[2024-05-19 18:23:28] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-19 18:23:28] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240519/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-19 18:23:29] INFO root fetch - processPackages [bootlace]: Downloading https://files.pythonhosted.org/packages/0b/99/af90394518aa82a331107c8e6955020c4139d77e8c61537203f1d5570663/bootlace-0.2.2.tar.gz
+[2024-05-19 18:23:29] INFO root fetch - processPackages [conf-mat]: Remove: archive file [/home/abi/fetcher/tmp/conf-mat-1.0.5.tar.gz]
+[2024-05-19 18:23:29] INFO root fetch - processPackages [conf-mat]: Remove: archive file [/home/abi/fetcher/tmp/conf_mat-1.0.6-py3-none-any.whl.zip]
+[2024-05-19 18:23:29] INFO root fetch - main [MainThread]: End processing [conf-mat]: success
+[2024-05-19 18:23:29] INFO root fetch - processPackages [bootlace]: executing diffoscope
+[2024-05-19 18:23:29] INFO root fetch - processPackages [bootlace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bootlace-0.2.1.tar.gz tmp/bootlace-0.2.2.tar.gz --markdown 20240519/b/bootlace/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-19 18:23:29] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-19 18:23:29] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-19 18:23:29] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-19 18:23:30] INFO root fetch - processPackages [bootlace]: Remove: archive file [/home/abi/fetcher/tmp/bootlace-0.2.1.tar.gz]
+[2024-05-19 18:23:30] INFO root fetch - processPackages [bootlace]: Remove: archive file [/home/abi/fetcher/tmp/bootlace-0.2.2.tar.gz]
+[2024-05-19 18:23:30] INFO root fetch - main [MainThread]: End processing [bootlace]: success
+[2024-05-19 18:23:30] INFO root fetch - main [MainThread]: Store serial: [23278186]
