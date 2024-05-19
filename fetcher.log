@@ -3181,3 +3181,26 @@
 [2024-05-19 05:12:46] WARNING root fetch - processPackages [communistz]: Skipping, unable to determine old version
 [2024-05-19 05:12:46] INFO root fetch - main [MainThread]: End processing [communistz] error
 [2024-05-19 05:12:46] INFO root fetch - main [MainThread]: Store serial: [23272957]
+[2024-05-19 05:14:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272957]
+[2024-05-19 05:14:56] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-19 05:16:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272957]
+[2024-05-19 05:17:02] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 05:17:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: baosight
+[2024-05-19 05:17:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: keras-cv-nightly
+[2024-05-19 05:17:02] INFO root fetch - processPackages [baosight]: New version: [0.0.7] Old Version: [0.0.5]
+[2024-05-19 05:17:02] INFO root fetch - processPackages [keras-cv-nightly]: New version: [0.9.0.dev2024043000] Old Version: [0.9.0.dev2024042919]
+[2024-05-19 05:17:02] INFO root fetch - processPackages [baosight]: Downloading https://files.pythonhosted.org/packages/a5/c8/688e9b01b27253c963e7a9b1e3259a78567d79ba022e84022eba2697f51f/baosight-0.0.5.tar.gz
+[2024-05-19 05:17:02] INFO root fetch - processPackages [keras-cv-nightly]: Downloading https://files.pythonhosted.org/packages/bd/17/3faa9e969f58abadca2ff3a4053bed558afb777bae344f994feeeaf1cfd3/keras_cv_nightly-0.9.0.dev2024042919.tar.gz
+[2024-05-19 05:17:02] INFO root fetch - processPackages [keras-cv-nightly]: Downloading https://files.pythonhosted.org/packages/81/e8/990891e08c4d6686000132786b783a9e72d0cf684f6f44245f2949fd0e57/keras_cv_nightly-0.9.0.dev2024043000.tar.gz
+[2024-05-19 05:17:02] INFO root fetch - processPackages [baosight]: Downloading https://files.pythonhosted.org/packages/0b/47/e8581ac36dcf089b58a807cc18a938d8db989be5758634f085fb87397340/baosight-0.0.7.tar.gz
+[2024-05-19 05:17:02] INFO root fetch - processPackages [keras-cv-nightly]: executing diffoscope
+[2024-05-19 05:17:02] INFO root fetch - processPackages [keras-cv-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_cv_nightly-0.9.0.dev2024042919.tar.gz tmp/keras_cv_nightly-0.9.0.dev2024043000.tar.gz --markdown 20240519/k/keras-cv-nightly/0.9.0.dev2024042919-0.9.0.dev2024043000/README.md --exclude *.pyd
+[2024-05-19 05:17:02] INFO root fetch - processPackages [baosight]: executing diffoscope
+[2024-05-19 05:17:02] INFO root fetch - processPackages [baosight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baosight-0.0.5.tar.gz tmp/baosight-0.0.7.tar.gz --markdown 20240519/b/baosight/0.0.5-0.0.7/README.md --exclude *.pyd
+[2024-05-19 05:17:03] INFO root fetch - processPackages [baosight]: Remove: archive file [/home/abi/fetcher/tmp/baosight-0.0.5.tar.gz]
+[2024-05-19 05:17:03] INFO root fetch - processPackages [baosight]: Remove: archive file [/home/abi/fetcher/tmp/baosight-0.0.7.tar.gz]
+[2024-05-19 05:17:03] INFO root fetch - main [MainThread]: End processing [baosight]: success
+[2024-05-19 05:17:04] INFO root fetch - processPackages [keras-cv-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_cv_nightly-0.9.0.dev2024042919.tar.gz]
+[2024-05-19 05:17:04] INFO root fetch - processPackages [keras-cv-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_cv_nightly-0.9.0.dev2024043000.tar.gz]
+[2024-05-19 05:17:04] INFO root fetch - main [MainThread]: End processing [keras-cv-nightly]: success
+[2024-05-19 05:17:04] INFO root fetch - main [MainThread]: Store serial: [23272963]
