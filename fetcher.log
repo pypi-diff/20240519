@@ -1404,3 +1404,9 @@
 [2024-05-19 02:23:00] INFO root fetch - processPackages [spade-anomaly-detection]: Remove: archive file [/home/abi/fetcher/tmp/spade_anomaly_detection-0.2.1.tar.gz]
 [2024-05-19 02:23:00] INFO root fetch - main [MainThread]: End processing [spade-anomaly-detection]: success
 [2024-05-19 02:23:00] INFO root fetch - main [MainThread]: Store serial: [23272093]
+[2024-05-19 02:25:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272093]
+[2024-05-19 02:25:09] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 02:25:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scholiumliaz
+[2024-05-19 02:25:09] WARNING root fetch - processPackages [scholiumliaz]: Skipping, unable to determine old version
+[2024-05-19 02:25:09] INFO root fetch - main [MainThread]: End processing [scholiumliaz] error
+[2024-05-19 02:25:09] INFO root fetch - main [MainThread]: Store serial: [23272098]
