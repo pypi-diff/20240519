@@ -10941,3 +10941,66 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 15:06:41] INFO root fetch - processPackages [itkwasm-mesh-to-poly-data-wasi]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_mesh_to_poly_data_wasi-1.1.0.tar.gz]
 [2024-05-19 15:06:41] INFO root fetch - main [MainThread]: End processing [itkwasm-mesh-to-poly-data-wasi]: success
 [2024-05-19 15:06:41] INFO root fetch - main [MainThread]: Store serial: [23276579]
+[2024-05-19 15:08:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276579]
+[2024-05-19 15:08:50] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-19 15:08:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: budgeteer
+[2024-05-19 15:08:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chattool
+[2024-05-19 15:08:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyrevolut
+[2024-05-19 15:08:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: functionize-notebook
+[2024-05-19 15:08:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: qualystbx
+[2024-05-19 15:08:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: libbot
+[2024-05-19 15:08:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyodide-mkdocs-theme-sqlite
+[2024-05-19 15:08:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: fleekapi
+[2024-05-19 15:08:50] INFO root fetch - processPackages [budgeteer]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-19 15:08:51] INFO root fetch - processPackages [fleekapi]: New version: [0.1.22] Old Version: [0.1.21]
+[2024-05-19 15:08:51] INFO root fetch - processPackages [qualystbx]: New version: [0.7.0] Old Version: [0.6.0]
+[2024-05-19 15:08:51] INFO root fetch - processPackages [budgeteer]: Downloading https://files.pythonhosted.org/packages/88/47/016de1f7061d1390f9ab098f35d7af1dfbe4ee0cc9a5a85cdecf47accdfe/budgeteer-0.1.2.tar.gz
+[2024-05-19 15:08:51] WARNING root fetch - processPackages [pyodide-mkdocs-theme-sqlite]: Skipping, unable to determine old version
+[2024-05-19 15:08:51] INFO root fetch - main [MainThread]: End processing [pyodide-mkdocs-theme-sqlite] error
+[2024-05-19 15:08:51] WARNING root fetch - processPackages [pyrevolut]: Skipping, unable to determine old version
+[2024-05-19 15:08:51] INFO root fetch - main [MainThread]: End processing [pyrevolut] error
+[2024-05-19 15:08:51] INFO root fetch - processPackages [functionize-notebook]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-19 15:08:51] INFO root fetch - processPackages [libbot]: New version: [3.1.0] Old Version: [3.0.1]
+[2024-05-19 15:08:51] INFO root fetch - processPackages [chattool]: New version: [3.1.7] Old Version: [3.1.6]
+[2024-05-19 15:08:51] INFO root fetch - processPackages [qualystbx]: Downloading https://files.pythonhosted.org/packages/bb/a8/55089bf7a2c20142aba17a495c2e1203528dc4dc5ceb5867c251c2ee9519/qualystbx-0.6.0.tar.gz
+[2024-05-19 15:08:51] INFO root fetch - processPackages [fleekapi]: Downloading https://files.pythonhosted.org/packages/69/4e/ae301dcabe77356e7853773eacc859b94073e176f18439b1e6a162cce167/fleekapi-0.1.21.tar.gz
+[2024-05-19 15:08:51] INFO root fetch - processPackages [functionize-notebook]: Downloading https://files.pythonhosted.org/packages/4f/12/8ca099aa74d7acc56ae1e82272287f2b59cb4f7126e6d8c8fcd8fa85b7be/functionize-notebook-0.0.1.tar.gz
+[2024-05-19 15:08:51] INFO root fetch - processPackages [chattool]: Downloading https://files.pythonhosted.org/packages/6b/b7/256cb8e2a95d7621504b694af93e72506a9b960c640c5f0a3c34f0bfb3a8/chattool-3.1.6.tar.gz
+[2024-05-19 15:08:51] INFO root fetch - processPackages [libbot]: Downloading https://files.pythonhosted.org/packages/62/6d/512f7c738c76994f89c2dbb3065043077bd7a446fff390f24a9e60b70d6e/libbot-3.0.1.tar.gz
+[2024-05-19 15:08:51] INFO root fetch - processPackages [budgeteer]: Downloading https://files.pythonhosted.org/packages/0e/1f/cf06ebf5fe5883a60257d675f69d2a899fc0ac48856d505e8b14b9c062e5/budgeteer-0.1.3.tar.gz
+[2024-05-19 15:08:51] INFO root fetch - processPackages [qualystbx]: Downloading https://files.pythonhosted.org/packages/3d/13/d82c3acb0e9ea3a9ff76fe6e73a521edc75e84ab686d483a4f360a6a88cb/qualystbx-0.7.0.tar.gz
+[2024-05-19 15:08:51] INFO root fetch - processPackages [qualystbx]: executing diffoscope
+[2024-05-19 15:08:51] INFO root fetch - processPackages [qualystbx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qualystbx-0.6.0.tar.gz tmp/qualystbx-0.7.0.tar.gz --markdown 20240519/q/qualystbx/0.6.0-0.7.0/README.md --exclude *.pyd
+[2024-05-19 15:08:51] INFO root fetch - processPackages [budgeteer]: executing diffoscope
+[2024-05-19 15:08:51] INFO root fetch - processPackages [budgeteer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/budgeteer-0.1.2.tar.gz tmp/budgeteer-0.1.3.tar.gz --markdown 20240519/b/budgeteer/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-19 15:08:51] INFO root fetch - processPackages [chattool]: Downloading https://files.pythonhosted.org/packages/ec/07/e2b99ab8d6546817cf74a570d7b039faaadeb48a1dcbac0741ba38c519ef/chattool-3.1.7.tar.gz
+[2024-05-19 15:08:51] INFO root fetch - processPackages [fleekapi]: Downloading https://files.pythonhosted.org/packages/f7/ca/3ac2ee95498caf572fbcdda408e49e4244f1d4de452a3f207b42085ae767/fleekapi-0.1.22.tar.gz
+[2024-05-19 15:08:51] INFO root fetch - processPackages [functionize-notebook]: Downloading https://files.pythonhosted.org/packages/b7/6a/8c224c5a741cfb10adb4874288d3743ef6912ba42cad23e2ee7b14273561/functionize-notebook-0.0.2.tar.gz
+[2024-05-19 15:08:51] INFO root fetch - processPackages [libbot]: Downloading https://files.pythonhosted.org/packages/ec/66/a381b281466eaccefa0c0129547d97fa5cc4891970e6c44b9782654a85f6/libbot-3.1.0.tar.gz
+[2024-05-19 15:08:51] INFO root fetch - processPackages [chattool]: executing diffoscope
+[2024-05-19 15:08:51] INFO root fetch - processPackages [chattool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chattool-3.1.6.tar.gz tmp/chattool-3.1.7.tar.gz --markdown 20240519/c/chattool/3.1.6-3.1.7/README.md --exclude *.pyd
+[2024-05-19 15:08:51] INFO root fetch - processPackages [fleekapi]: executing diffoscope
+[2024-05-19 15:08:51] INFO root fetch - processPackages [fleekapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fleekapi-0.1.21.tar.gz tmp/fleekapi-0.1.22.tar.gz --markdown 20240519/f/fleekapi/0.1.21-0.1.22/README.md --exclude *.pyd
+[2024-05-19 15:08:51] INFO root fetch - processPackages [functionize-notebook]: executing diffoscope
+[2024-05-19 15:08:51] INFO root fetch - processPackages [functionize-notebook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/functionize-notebook-0.0.1.tar.gz tmp/functionize-notebook-0.0.2.tar.gz --markdown 20240519/f/functionize-notebook/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-19 15:08:51] INFO root fetch - processPackages [libbot]: executing diffoscope
+[2024-05-19 15:08:51] INFO root fetch - processPackages [libbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libbot-3.0.1.tar.gz tmp/libbot-3.1.0.tar.gz --markdown 20240519/l/libbot/3.0.1-3.1.0/README.md --exclude *.pyd
+[2024-05-19 15:08:52] INFO root fetch - processPackages [qualystbx]: Remove: archive file [/home/abi/fetcher/tmp/qualystbx-0.6.0.tar.gz]
+[2024-05-19 15:08:52] INFO root fetch - processPackages [qualystbx]: Remove: archive file [/home/abi/fetcher/tmp/qualystbx-0.7.0.tar.gz]
+[2024-05-19 15:08:52] INFO root fetch - main [MainThread]: End processing [qualystbx]: success
+[2024-05-19 15:08:52] INFO root fetch - processPackages [chattool]: Remove: archive file [/home/abi/fetcher/tmp/chattool-3.1.6.tar.gz]
+[2024-05-19 15:08:52] INFO root fetch - processPackages [chattool]: Remove: archive file [/home/abi/fetcher/tmp/chattool-3.1.7.tar.gz]
+[2024-05-19 15:08:52] INFO root fetch - main [MainThread]: End processing [chattool]: success
+[2024-05-19 15:08:52] INFO root fetch - processPackages [functionize-notebook]: Remove: archive file [/home/abi/fetcher/tmp/functionize-notebook-0.0.1.tar.gz]
+[2024-05-19 15:08:52] INFO root fetch - processPackages [functionize-notebook]: Remove: archive file [/home/abi/fetcher/tmp/functionize-notebook-0.0.2.tar.gz]
+[2024-05-19 15:08:52] INFO root fetch - main [MainThread]: End processing [functionize-notebook]: success
+[2024-05-19 15:08:52] INFO root fetch - processPackages [libbot]: Remove: archive file [/home/abi/fetcher/tmp/libbot-3.0.1.tar.gz]
+[2024-05-19 15:08:52] INFO root fetch - processPackages [libbot]: Remove: archive file [/home/abi/fetcher/tmp/libbot-3.1.0.tar.gz]
+[2024-05-19 15:08:52] INFO root fetch - main [MainThread]: End processing [libbot]: success
+[2024-05-19 15:08:52] INFO root fetch - processPackages [budgeteer]: Remove: archive file [/home/abi/fetcher/tmp/budgeteer-0.1.2.tar.gz]
+[2024-05-19 15:08:52] INFO root fetch - processPackages [budgeteer]: Remove: archive file [/home/abi/fetcher/tmp/budgeteer-0.1.3.tar.gz]
+[2024-05-19 15:08:52] INFO root fetch - main [MainThread]: End processing [budgeteer]: success
+[2024-05-19 15:08:52] INFO root fetch - processPackages [fleekapi]: Remove: archive file [/home/abi/fetcher/tmp/fleekapi-0.1.21.tar.gz]
+[2024-05-19 15:08:52] INFO root fetch - processPackages [fleekapi]: Remove: archive file [/home/abi/fetcher/tmp/fleekapi-0.1.22.tar.gz]
+[2024-05-19 15:08:52] INFO root fetch - main [MainThread]: End processing [fleekapi]: success
+[2024-05-19 15:08:52] INFO root fetch - main [MainThread]: Store serial: [23276605]
