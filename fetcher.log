@@ -7459,3 +7459,21 @@
 [2024-05-19 11:10:08] INFO root fetch - processPackages [arclet-alconna-tools]: Remove: archive file [/home/abi/fetcher/tmp/arclet_alconna_tools-0.7.4.tar.gz]
 [2024-05-19 11:10:08] INFO root fetch - main [MainThread]: End processing [arclet-alconna-tools]: success
 [2024-05-19 11:10:08] INFO root fetch - main [MainThread]: Store serial: [23274947]
+[2024-05-19 11:12:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274947]
+[2024-05-19 11:12:16] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 11:12:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: easyclimate
+[2024-05-19 11:12:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: thymus-ast
+[2024-05-19 11:12:16] INFO root fetch - processPackages [thymus-ast]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-19 11:12:17] INFO root fetch - processPackages [thymus-ast]: Downloading https://files.pythonhosted.org/packages/f2/84/45b54e8b80eced45b898034821f524a7ddf8cc7edc462285f3401a2c5046/thymus_ast-0.1.7.tar.gz
+[2024-05-19 11:12:17] INFO root fetch - processPackages [easyclimate]: New version: [2024.5.1] Old Version: [2024.3.1]
+[2024-05-19 11:12:17] INFO root fetch - processPackages [easyclimate]: Downloading https://files.pythonhosted.org/packages/d4/02/ed59fa73cc1ef1c194dd112ab044f47ac92894188628cc8b581e0ab5350c/easyclimate-2024.3.1.tar.gz
+[2024-05-19 11:12:17] INFO root fetch - processPackages [thymus-ast]: Downloading https://files.pythonhosted.org/packages/60/9e/41bdd93aff22a94ef085bcf694374f85cc381d2e16fef0a589989f21b874/thymus_ast-0.1.8.tar.gz
+[2024-05-19 11:12:17] INFO root fetch - processPackages [thymus-ast]: executing diffoscope
+[2024-05-19 11:12:17] INFO root fetch - processPackages [thymus-ast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thymus_ast-0.1.7.tar.gz tmp/thymus_ast-0.1.8.tar.gz --markdown 20240519/t/thymus-ast/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-19 11:12:17] INFO root fetch - processPackages [thymus-ast]: Remove: archive file [/home/abi/fetcher/tmp/thymus_ast-0.1.7.tar.gz]
+[2024-05-19 11:12:17] INFO root fetch - processPackages [thymus-ast]: Remove: archive file [/home/abi/fetcher/tmp/thymus_ast-0.1.8.tar.gz]
+[2024-05-19 11:12:17] INFO root fetch - main [MainThread]: End processing [thymus-ast]: success
+[2024-05-19 11:12:17] INFO root fetch - processPackages [easyclimate]: Downloading https://files.pythonhosted.org/packages/81/fc/5e3af0722c4c6b4f84b17087e362a4f78afa04d9f39e60fa19575a6de7b5/easyclimate-2024.5.1.tar.gz
+[2024-05-19 11:12:17] WARNING root fetch - processPackages [easyclimate]: Skipping package: exceeds size limit 24769205>=10485760
+[2024-05-19 11:12:17] INFO root fetch - main [MainThread]: End processing [easyclimate] error
+[2024-05-19 11:12:17] INFO root fetch - main [MainThread]: Store serial: [23274953]
