@@ -1103,3 +1103,36 @@
 [2024-05-19 02:02:42] INFO root fetch - processPackages [ibis-framework]: Remove: archive file [/home/abi/fetcher/tmp/ibis-framework-v0.6.0.tar.gz]
 [2024-05-19 02:02:42] INFO root fetch - main [MainThread]: End processing [ibis-framework]: success
 [2024-05-19 02:02:42] INFO root fetch - main [MainThread]: Store serial: [23271983]
+[2024-05-19 02:04:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271983]
+[2024-05-19 02:04:51] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 02:04:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: onnxscript
+[2024-05-19 02:04:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pointsz
+[2024-05-19 02:04:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: criteria-local
+[2024-05-19 02:04:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mct-nightly
+[2024-05-19 02:04:52] INFO root fetch - processPackages [onnxscript]: New version: [0.1.0.dev20240518] Old Version: [0.1.0.dev20240517]
+[2024-05-19 02:04:52] INFO root fetch - processPackages [mct-nightly]: New version: [2.0.0.20240518.404] Old Version: [2.0.0.20240517.356]
+[2024-05-19 02:04:52] WARNING root fetch - processPackages [pointsz]: Skipping, unable to determine old version
+[2024-05-19 02:04:52] INFO root fetch - main [MainThread]: End processing [pointsz] error
+[2024-05-19 02:04:52] INFO root fetch - processPackages [criteria-local]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-19 02:04:52] INFO root fetch - processPackages [onnxscript]: Downloading https://files.pythonhosted.org/packages/3b/59/3ece87496d6b6bb64c31cc2d9eff79b9a3fd1538067fc10c36da2fa9b783/onnxscript-0.1.0.dev20240517.tar.gz
+[2024-05-19 02:04:52] INFO root fetch - processPackages [mct-nightly]: Downloading https://files.pythonhosted.org/packages/75/27/7a2e7a2303ddd3e2534936c27b60407632268771ec132ed6f28216ea4a84/mct-nightly-2.0.0.20240517.356.tar.gz
+[2024-05-19 02:04:52] INFO root fetch - processPackages [criteria-local]: Downloading https://files.pythonhosted.org/packages/6a/64/3cfdc8c1fab42a46a86e91f09bc94dac7098131bf28a574989d677a5c176/criteria-local-0.0.7.tar.gz
+[2024-05-19 02:04:52] INFO root fetch - processPackages [onnxscript]: Downloading https://files.pythonhosted.org/packages/0f/e2/04749727973991096350f64e6c253a3395fa33b93c588057ae6976094034/onnxscript-0.1.0.dev20240518.tar.gz
+[2024-05-19 02:04:52] INFO root fetch - processPackages [mct-nightly]: Downloading https://files.pythonhosted.org/packages/d6/e7/16dd3ab7819c757680e842bf3ed48318d17d9bec20678c3796a303842d87/mct-nightly-2.0.0.20240518.404.tar.gz
+[2024-05-19 02:04:52] INFO root fetch - processPackages [criteria-local]: Downloading https://files.pythonhosted.org/packages/64/00/8a1d3648f3a7e5706ec3bdd7415e0f7db56b10dc9df9b5fb8ade8dfdeda6/criteria-local-0.0.8.tar.gz
+[2024-05-19 02:04:52] INFO root fetch - processPackages [onnxscript]: executing diffoscope
+[2024-05-19 02:04:52] INFO root fetch - processPackages [onnxscript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnxscript-0.1.0.dev20240517.tar.gz tmp/onnxscript-0.1.0.dev20240518.tar.gz --markdown 20240519/o/onnxscript/0.1.0.dev20240517-0.1.0.dev20240518/README.md --exclude *.pyd
+[2024-05-19 02:04:52] INFO root fetch - processPackages [mct-nightly]: executing diffoscope
+[2024-05-19 02:04:52] INFO root fetch - processPackages [mct-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-nightly-2.0.0.20240517.356.tar.gz tmp/mct-nightly-2.0.0.20240518.404.tar.gz --markdown 20240519/m/mct-nightly/2.0.0.20240517.356-2.0.0.20240518.404/README.md --exclude *.pyd
+[2024-05-19 02:04:52] INFO root fetch - processPackages [criteria-local]: executing diffoscope
+[2024-05-19 02:04:52] INFO root fetch - processPackages [criteria-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/criteria-local-0.0.7.tar.gz tmp/criteria-local-0.0.8.tar.gz --markdown 20240519/c/criteria-local/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-19 02:04:53] INFO root fetch - processPackages [criteria-local]: Remove: archive file [/home/abi/fetcher/tmp/criteria-local-0.0.7.tar.gz]
+[2024-05-19 02:04:53] INFO root fetch - processPackages [criteria-local]: Remove: archive file [/home/abi/fetcher/tmp/criteria-local-0.0.8.tar.gz]
+[2024-05-19 02:04:53] INFO root fetch - main [MainThread]: End processing [criteria-local]: success
+[2024-05-19 02:04:53] INFO root fetch - processPackages [onnxscript]: Remove: archive file [/home/abi/fetcher/tmp/onnxscript-0.1.0.dev20240517.tar.gz]
+[2024-05-19 02:04:53] INFO root fetch - processPackages [onnxscript]: Remove: archive file [/home/abi/fetcher/tmp/onnxscript-0.1.0.dev20240518.tar.gz]
+[2024-05-19 02:04:53] INFO root fetch - main [MainThread]: End processing [onnxscript]: success
+[2024-05-19 02:04:54] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.0.0.20240517.356.tar.gz]
+[2024-05-19 02:04:54] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.0.0.20240518.404.tar.gz]
+[2024-05-19 02:04:54] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
+[2024-05-19 02:04:54] INFO root fetch - main [MainThread]: Store serial: [23271995]
