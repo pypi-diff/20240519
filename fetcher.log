@@ -11171,3 +11171,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 15:23:07] INFO root fetch - processPackages [pyddm]: Remove: archive file [/home/abi/fetcher/tmp/pyddm-0.8.0-cp310-cp310-win32.whl.zip]
 [2024-05-19 15:23:07] INFO root fetch - main [MainThread]: End processing [pyddm]: success
 [2024-05-19 15:23:07] INFO root fetch - main [MainThread]: Store serial: [23276702]
+[2024-05-19 15:25:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276702]
+[2024-05-19 15:25:15] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-19 15:27:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276702]
+[2024-05-19 15:27:21] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-19 15:27:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yeref
+[2024-05-19 15:27:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: metaffi-api
+[2024-05-19 15:27:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: libsrg
+[2024-05-19 15:27:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: apysc
+[2024-05-19 15:27:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: francophilz
+[2024-05-19 15:27:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: docugenr8-shared
+[2024-05-19 15:27:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: yeref
+[2024-05-19 15:27:21] INFO root fetch - processPackages [metaffi-api]: New version: [0.0.26] Old Version: [0.0.25]
+[2024-05-19 15:27:21] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-19 15:27:21] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-19 15:27:21] INFO root fetch - processPackages [libsrg]: New version: [5.2.1] Old Version: [5.2.0]
+[2024-05-19 15:27:21] INFO root fetch - processPackages [docugenr8-shared]: New version: [0.0.1] Old Version: [0.0.0]
+[2024-05-19 15:27:21] WARNING root fetch - processPackages [francophilz]: Skipping, unable to determine old version
+[2024-05-19 15:27:21] INFO root fetch - main [MainThread]: End processing [francophilz] error
+[2024-05-19 15:27:21] INFO root fetch - processPackages [metaffi-api]: Downloading https://files.pythonhosted.org/packages/e0/96/0e6ad2796cc75a49af53934c75220a08e91a677b7298b09ef17782fb9854/metaffi_api-0.0.25.tar.gz
+[2024-05-19 15:27:21] INFO root fetch - processPackages [apysc]: New version: [4.3.2] Old Version: [4.3.0]
+[2024-05-19 15:27:21] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-19 15:27:21] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-19 15:27:21] INFO root fetch - processPackages [libsrg]: Downloading https://files.pythonhosted.org/packages/21/49/eec77ac515ca87d30631d98722d93b1cb61d521e0c24642c6d08f2dba612/libsrg-5.2.0.tar.gz
+[2024-05-19 15:27:21] INFO root fetch - processPackages [docugenr8-shared]: Downloading https://files.pythonhosted.org/packages/9c/26/29febe13c41d211c61f34411e858995cd3d686aa8b062565712dbff6ef58/docugenr8_shared-0.0.0.tar.gz
+[2024-05-19 15:27:21] INFO root fetch - processPackages [apysc]: Downloading https://files.pythonhosted.org/packages/3b/b5/4e2950d3041b00f68c5b0810d36d19abe2d8470ef5aa3859f743eec60566/apysc-4.3.0.tar.gz
+[2024-05-19 15:27:21] INFO root fetch - processPackages [metaffi-api]: Downloading https://files.pythonhosted.org/packages/ab/7c/f99f71ec70309ab49226a9a2c341b1ce2f0d538d4fce68bd291e9534baf3/metaffi_api-0.0.26.tar.gz
+[2024-05-19 15:27:21] INFO root fetch - processPackages [metaffi-api]: executing diffoscope
+[2024-05-19 15:27:21] INFO root fetch - processPackages [metaffi-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metaffi_api-0.0.25.tar.gz tmp/metaffi_api-0.0.26.tar.gz --markdown 20240519/m/metaffi-api/0.0.25-0.0.26/README.md --exclude *.pyd
+[2024-05-19 15:27:21] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-19 15:27:21] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-19 15:27:22] INFO root fetch - processPackages [libsrg]: Downloading https://files.pythonhosted.org/packages/76/b7/d77e3ad3ddd1c805785e18334b9d5a7f9eb4f9c8ae29b79934a48968ebf5/libsrg-5.2.1-py3-none-any.whl
+[2024-05-19 15:27:22] INFO root fetch - processPackages [apysc]: Downloading https://files.pythonhosted.org/packages/e9/4f/daebb03cb27e418e490f2603187efae9fc79d25c3f537e0537be16256c9e/apysc-4.3.2.tar.gz
+[2024-05-19 15:27:22] INFO root fetch - processPackages [docugenr8-shared]: Downloading https://files.pythonhosted.org/packages/65/97/8c8acf87181d5d497defd0486958830efd51b991527f9daff099e0dd13b0/docugenr8_shared-0.0.1.tar.gz
+[2024-05-19 15:27:22] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-19 15:27:22] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240519/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-19 15:27:22] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-19 15:27:22] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240519/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-19 15:27:22] INFO root fetch - processPackages [libsrg]: executing diffoscope
+[2024-05-19 15:27:22] INFO root fetch - processPackages [libsrg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libsrg-5.2.0.tar.gz tmp/libsrg-5.2.1-py3-none-any.whl.zip --markdown 20240519/l/libsrg/5.2.0-5.2.1/README.md --exclude *.pyd
+[2024-05-19 15:27:22] INFO root fetch - processPackages [docugenr8-shared]: executing diffoscope
+[2024-05-19 15:27:22] INFO root fetch - processPackages [docugenr8-shared]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docugenr8_shared-0.0.0.tar.gz tmp/docugenr8_shared-0.0.1.tar.gz --markdown 20240519/d/docugenr8-shared/0.0.0-0.0.1/README.md --exclude *.pyd
+[2024-05-19 15:27:22] INFO root fetch - processPackages [apysc]: executing diffoscope
+[2024-05-19 15:27:22] INFO root fetch - processPackages [apysc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apysc-4.3.0.tar.gz tmp/apysc-4.3.2.tar.gz --markdown 20240519/a/apysc/4.3.0-4.3.2/README.md --exclude *.pyd
+[2024-05-19 15:27:22] INFO root fetch - processPackages [metaffi-api]: Remove: archive file [/home/abi/fetcher/tmp/metaffi_api-0.0.25.tar.gz]
+[2024-05-19 15:27:22] INFO root fetch - processPackages [metaffi-api]: Remove: archive file [/home/abi/fetcher/tmp/metaffi_api-0.0.26.tar.gz]
+[2024-05-19 15:27:22] INFO root fetch - main [MainThread]: End processing [metaffi-api]: success
+[2024-05-19 15:27:22] INFO root fetch - processPackages [docugenr8-shared]: Remove: archive file [/home/abi/fetcher/tmp/docugenr8_shared-0.0.0.tar.gz]
+[2024-05-19 15:27:22] INFO root fetch - processPackages [docugenr8-shared]: Remove: archive file [/home/abi/fetcher/tmp/docugenr8_shared-0.0.1.tar.gz]
+[2024-05-19 15:27:22] INFO root fetch - main [MainThread]: End processing [docugenr8-shared]: success
+[2024-05-19 15:27:23] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-19 15:27:23] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-19 15:27:23] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-19 15:27:23] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-19 15:27:23] INFO root fetch - processPackages [libsrg]: Remove: archive file [/home/abi/fetcher/tmp/libsrg-5.2.0.tar.gz]
+[2024-05-19 15:27:23] INFO root fetch - processPackages [libsrg]: Remove: archive file [/home/abi/fetcher/tmp/libsrg-5.2.1-py3-none-any.whl.zip]
+[2024-05-19 15:27:23] INFO root fetch - main [MainThread]: End processing [libsrg]: success
+[2024-05-19 15:27:26] INFO root fetch - processPackages [apysc]: Remove: archive file [/home/abi/fetcher/tmp/apysc-4.3.0.tar.gz]
+[2024-05-19 15:27:26] INFO root fetch - processPackages [apysc]: Remove: archive file [/home/abi/fetcher/tmp/apysc-4.3.2.tar.gz]
+[2024-05-19 15:27:26] INFO root fetch - main [MainThread]: End processing [apysc]: success
+[2024-05-19 15:27:26] INFO root fetch - main [MainThread]: Store serial: [23276741]
