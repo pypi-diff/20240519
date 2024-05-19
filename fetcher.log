@@ -1729,3 +1729,27 @@
 [2024-05-19 02:53:31] WARNING root fetch - processPackages [onfon-sms-sender]: Skipping, unable to determine old version
 [2024-05-19 02:53:31] INFO root fetch - main [MainThread]: End processing [onfon-sms-sender] error
 [2024-05-19 02:53:31] INFO root fetch - main [MainThread]: Store serial: [23272220]
+[2024-05-19 02:55:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272220]
+[2024-05-19 02:55:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 02:55:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: indrapez
+[2024-05-19 02:55:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pysubs2
+[2024-05-19 02:55:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bioversions
+[2024-05-19 02:55:39] INFO root fetch - processPackages [pysubs2]: New version: [1.6.1] Old Version: [1.6.0]
+[2024-05-19 02:55:39] INFO root fetch - processPackages [bioversions]: New version: [0.5.99] Old Version: [0.5.98]
+[2024-05-19 02:55:39] WARNING root fetch - processPackages [indrapez]: Skipping, unable to determine old version
+[2024-05-19 02:55:39] INFO root fetch - main [MainThread]: End processing [indrapez] error
+[2024-05-19 02:55:39] INFO root fetch - processPackages [bioversions]: Downloading https://files.pythonhosted.org/packages/e6/34/7c40209c13edc9fe7c611a00fd4b0d6e59d501613427ed6713ad6398b655/bioversions-0.5.98.tar.gz
+[2024-05-19 02:55:39] INFO root fetch - processPackages [pysubs2]: Downloading https://files.pythonhosted.org/packages/10/88/af17d4e9318b54aa2d7c566c2d94995f14f43b56be69c3813d75d0c7d7e1/pysubs2-1.6.0.tar.gz
+[2024-05-19 02:55:40] INFO root fetch - processPackages [bioversions]: Downloading https://files.pythonhosted.org/packages/0d/f5/5956eccd9643084cc5f7aba6325ec9de1ed3a2bb3568a8ee7ab88d0eac77/bioversions-0.5.99.tar.gz
+[2024-05-19 02:55:40] INFO root fetch - processPackages [bioversions]: executing diffoscope
+[2024-05-19 02:55:40] INFO root fetch - processPackages [bioversions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioversions-0.5.98.tar.gz tmp/bioversions-0.5.99.tar.gz --markdown 20240519/b/bioversions/0.5.98-0.5.99/README.md --exclude *.pyd
+[2024-05-19 02:55:40] INFO root fetch - processPackages [pysubs2]: Downloading https://files.pythonhosted.org/packages/22/3e/fb1b08a06144ba63f19cc4758dd72e2eb8c7fc95c6c8364faccfc570c7bf/pysubs2-1.6.1.tar.gz
+[2024-05-19 02:55:40] INFO root fetch - processPackages [pysubs2]: executing diffoscope
+[2024-05-19 02:55:40] INFO root fetch - processPackages [pysubs2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysubs2-1.6.0.tar.gz tmp/pysubs2-1.6.1.tar.gz --markdown 20240519/p/pysubs2/1.6.0-1.6.1/README.md --exclude *.pyd
+[2024-05-19 02:55:41] INFO root fetch - processPackages [pysubs2]: Remove: archive file [/home/abi/fetcher/tmp/pysubs2-1.6.0.tar.gz]
+[2024-05-19 02:55:41] INFO root fetch - processPackages [pysubs2]: Remove: archive file [/home/abi/fetcher/tmp/pysubs2-1.6.1.tar.gz]
+[2024-05-19 02:55:41] INFO root fetch - main [MainThread]: End processing [pysubs2]: success
+[2024-05-19 02:55:59] INFO root fetch - processPackages [bioversions]: Remove: archive file [/home/abi/fetcher/tmp/bioversions-0.5.98.tar.gz]
+[2024-05-19 02:55:59] INFO root fetch - processPackages [bioversions]: Remove: archive file [/home/abi/fetcher/tmp/bioversions-0.5.99.tar.gz]
+[2024-05-19 02:55:59] INFO root fetch - main [MainThread]: End processing [bioversions]: success
+[2024-05-19 02:55:59] INFO root fetch - main [MainThread]: Store serial: [23272230]
