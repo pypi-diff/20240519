@@ -14565,3 +14565,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 18:51:53] INFO root fetch - processPackages [desktop-env]: Remove: archive file [/home/abi/fetcher/tmp/desktop_env-0.1.9.tar.gz]
 [2024-05-19 18:51:53] INFO root fetch - main [MainThread]: End processing [desktop-env]: success
 [2024-05-19 18:51:53] INFO root fetch - main [MainThread]: Store serial: [23278332]
+[2024-05-19 18:53:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23278332]
+[2024-05-19 18:54:02] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 18:54:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moto
+[2024-05-19 18:54:02] INFO root fetch - processPackages [moto]: New version: [5.0.8.dev9] Old Version: [5.0.8.dev8]
+[2024-05-19 18:54:02] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/3b/ac/06a0859bde65d51176d1bc211894343ba012b690fa8ca460b05853a4cc62/moto-5.0.8.dev8.tar.gz
+[2024-05-19 18:54:03] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/cd/82/43857467531c1b56b16670bf50e2d4a85619a54c84ae9aaf1d5deccd41ca/moto-5.0.8.dev9.tar.gz
+[2024-05-19 18:54:03] INFO root fetch - processPackages [moto]: executing diffoscope
+[2024-05-19 18:54:03] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-5.0.8.dev8.tar.gz tmp/moto-5.0.8.dev9.tar.gz --markdown 20240519/m/moto/5.0.8.dev8-5.0.8.dev9/README.md --exclude *.pyd
+[2024-05-19 18:54:15] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.8.dev8.tar.gz]
+[2024-05-19 18:54:15] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.8.dev9.tar.gz]
+[2024-05-19 18:54:15] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2024-05-19 18:54:15] INFO root fetch - main [MainThread]: Store serial: [23278335]
