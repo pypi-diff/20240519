@@ -10704,3 +10704,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 14:53:09] INFO root fetch - processPackages [manifest-tool]: Remove: archive file [/home/abi/fetcher/tmp/manifest_tool-2.6.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-05-19 14:53:09] INFO root fetch - main [MainThread]: End processing [manifest-tool]: success
 [2024-05-19 14:53:09] INFO root fetch - main [MainThread]: Store serial: [23276460]
+[2024-05-19 14:55:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276460]
+[2024-05-19 14:55:18] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 14:55:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: svd-training
+[2024-05-19 14:55:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yeref
+[2024-05-19 14:55:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: QuickSymbol
+[2024-05-19 14:55:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scidatetime
+[2024-05-19 14:55:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: flatpack
+[2024-05-19 14:55:18] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-19 14:55:18] INFO root fetch - processPackages [flatpack]: New version: [3.4.9] Old Version: [3.4.8]
+[2024-05-19 14:55:18] WARNING root fetch - processPackages [svd-training]: Skipping, unable to determine old version
+[2024-05-19 14:55:18] INFO root fetch - main [MainThread]: End processing [svd-training] error
+[2024-05-19 14:55:18] INFO root fetch - processPackages [scidatetime]: New version: [1.20.2] Old Version: [1.20.1]
+[2024-05-19 14:55:18] INFO root fetch - processPackages [QuickSymbol]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-19 14:55:18] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-19 14:55:18] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/92/5a/46a0817bd1cfcbeb0f041626a2cc2b28a97a17caa6609495cfb355a5d90e/flatpack-3.4.8.tar.gz
+[2024-05-19 14:55:18] INFO root fetch - processPackages [scidatetime]: Downloading https://files.pythonhosted.org/packages/68/be/be330a44313539c6b89bb88278f270710c73298367ae4714db6a5c1bb253/scidatetime-1.20.1.tar.gz
+[2024-05-19 14:55:18] INFO root fetch - processPackages [QuickSymbol]: Downloading https://files.pythonhosted.org/packages/78/3f/f4011166af8eb70246214e6d7a7b5cc7abbf34c6429ab5d9d9a52fa29f74/QuickSymbol-0.0.1.tar.gz
+[2024-05-19 14:55:18] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-19 14:55:18] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/29/b6/9545d80064161872f90e25faa6bb7dc31698e88762b3d442b5fb491967fd/flatpack-3.4.9.tar.gz
+[2024-05-19 14:55:19] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-05-19 14:55:19] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.4.8.tar.gz tmp/flatpack-3.4.9.tar.gz --markdown 20240519/f/flatpack/3.4.8-3.4.9/README.md --exclude *.pyd
+[2024-05-19 14:55:19] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-19 14:55:19] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240519/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-19 14:55:19] INFO root fetch - processPackages [scidatetime]: Downloading https://files.pythonhosted.org/packages/00/00/a013982d593fed2e49dac6810636d093c20b7f65493a750baea4f1dcb8d8/scidatetime-1.20.2.tar.gz
+[2024-05-19 14:55:19] INFO root fetch - processPackages [QuickSymbol]: Downloading https://files.pythonhosted.org/packages/38/52/0b2a21b2aafa2921e92dd647085e5cf25511c1ed4d72f8c74b872d84ac74/QuickSymbol-0.0.2.tar.gz
+[2024-05-19 14:55:19] INFO root fetch - processPackages [scidatetime]: executing diffoscope
+[2024-05-19 14:55:19] INFO root fetch - processPackages [scidatetime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scidatetime-1.20.1.tar.gz tmp/scidatetime-1.20.2.tar.gz --markdown 20240519/s/scidatetime/1.20.1-1.20.2/README.md --exclude *.pyd
+[2024-05-19 14:55:19] INFO root fetch - processPackages [QuickSymbol]: executing diffoscope
+[2024-05-19 14:55:19] INFO root fetch - processPackages [QuickSymbol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QuickSymbol-0.0.1.tar.gz tmp/QuickSymbol-0.0.2.tar.gz --markdown 20240519/Q/QuickSymbol/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-19 14:55:19] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.8.tar.gz]
+[2024-05-19 14:55:19] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.9.tar.gz]
+[2024-05-19 14:55:19] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-05-19 14:55:19] INFO root fetch - processPackages [QuickSymbol]: Remove: archive file [/home/abi/fetcher/tmp/QuickSymbol-0.0.1.tar.gz]
+[2024-05-19 14:55:19] INFO root fetch - processPackages [QuickSymbol]: Remove: archive file [/home/abi/fetcher/tmp/QuickSymbol-0.0.2.tar.gz]
+[2024-05-19 14:55:19] INFO root fetch - main [MainThread]: End processing [QuickSymbol]: success
+[2024-05-19 14:55:19] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-19 14:55:19] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-19 14:55:19] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-19 14:55:19] INFO root fetch - processPackages [scidatetime]: Remove: archive file [/home/abi/fetcher/tmp/scidatetime-1.20.1.tar.gz]
+[2024-05-19 14:55:19] INFO root fetch - processPackages [scidatetime]: Remove: archive file [/home/abi/fetcher/tmp/scidatetime-1.20.2.tar.gz]
+[2024-05-19 14:55:19] INFO root fetch - main [MainThread]: End processing [scidatetime]: success
+[2024-05-19 14:55:19] INFO root fetch - main [MainThread]: Store serial: [23276498]
