@@ -13844,3 +13844,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 17:57:28] INFO root fetch - processPackages [CryptoLyzer]: Remove: archive file [/home/abi/fetcher/tmp/CryptoLyzer-0.9.1.tar.gz]
 [2024-05-19 17:57:28] INFO root fetch - main [MainThread]: End processing [CryptoLyzer]: success
 [2024-05-19 17:57:28] INFO root fetch - main [MainThread]: Store serial: [23278019]
+[2024-05-19 17:59:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23278019]
+[2024-05-19 17:59:36] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 17:59:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: group-local
+[2024-05-19 17:59:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: servicenow-api
+[2024-05-19 17:59:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: coti-sdk
+[2024-05-19 17:59:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: batch-framework
+[2024-05-19 17:59:37] INFO root fetch - processPackages [batch-framework]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-19 17:59:37] INFO root fetch - processPackages [group-local]: New version: [0.0.27] Old Version: [0.0.26]
+[2024-05-19 17:59:37] INFO root fetch - processPackages [batch-framework]: Downloading https://files.pythonhosted.org/packages/0e/44/5bdbb39d3c2b36b2c63dad5c29e58261b9e156f88d9101a46382387b5480/batch-framework-0.2.0.tar.gz
+[2024-05-19 17:59:37] WARNING root fetch - processPackages [coti-sdk]: Skipping, unable to determine old version
+[2024-05-19 17:59:37] INFO root fetch - main [MainThread]: End processing [coti-sdk] error
+[2024-05-19 17:59:37] INFO root fetch - processPackages [group-local]: Downloading https://files.pythonhosted.org/packages/5d/4b/63c9e0418ee24c491c04553bae4e0f47385bb46e65829c0852cb75477860/group_local-0.0.26.tar.gz
+[2024-05-19 17:59:37] INFO root fetch - processPackages [servicenow-api]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-19 17:59:37] INFO root fetch - processPackages [batch-framework]: Downloading https://files.pythonhosted.org/packages/ef/09/e8f40d6988d5da3456e1cc038c268cffb78137cd143bfe9054254692531d/batch-framework-0.2.1.tar.gz
+[2024-05-19 17:59:37] INFO root fetch - processPackages [servicenow-api]: Downloading https://files.pythonhosted.org/packages/2a/96/cc447e9247636a3ca7fe607e05a327a7076f254221c5c20c960f2d6689fd/servicenow_api-0.8.0-py2.py3-none-any.whl
+[2024-05-19 17:59:37] INFO root fetch - processPackages [batch-framework]: executing diffoscope
+[2024-05-19 17:59:37] INFO root fetch - processPackages [batch-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/batch-framework-0.2.0.tar.gz tmp/batch-framework-0.2.1.tar.gz --markdown 20240519/b/batch-framework/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-19 17:59:37] INFO root fetch - processPackages [group-local]: Downloading https://files.pythonhosted.org/packages/15/7c/fbc5829a68a0a78780b52fb034105299ed0d22425d82d6151d6928df6a22/group_local-0.0.27.tar.gz
+[2024-05-19 17:59:37] INFO root fetch - processPackages [servicenow-api]: Downloading https://files.pythonhosted.org/packages/76/cb/16788288b3e511d9ebf0b67d4e1cd59966bc918931d1953e5f137a9ff712/servicenow_api-0.9.0-py2.py3-none-any.whl
+[2024-05-19 17:59:37] INFO root fetch - processPackages [servicenow-api]: executing diffoscope
+[2024-05-19 17:59:37] INFO root fetch - processPackages [servicenow-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/servicenow_api-0.8.0-py2.py3-none-any.whl.zip tmp/servicenow_api-0.9.0-py2.py3-none-any.whl.zip --markdown 20240519/s/servicenow-api/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-19 17:59:37] INFO root fetch - processPackages [group-local]: executing diffoscope
+[2024-05-19 17:59:37] INFO root fetch - processPackages [group-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/group_local-0.0.26.tar.gz tmp/group_local-0.0.27.tar.gz --markdown 20240519/g/group-local/0.0.26-0.0.27/README.md --exclude *.pyd
+[2024-05-19 17:59:37] INFO root fetch - processPackages [batch-framework]: Remove: archive file [/home/abi/fetcher/tmp/batch-framework-0.2.0.tar.gz]
+[2024-05-19 17:59:37] INFO root fetch - processPackages [batch-framework]: Remove: archive file [/home/abi/fetcher/tmp/batch-framework-0.2.1.tar.gz]
+[2024-05-19 17:59:37] INFO root fetch - main [MainThread]: End processing [batch-framework]: success
+[2024-05-19 17:59:38] INFO root fetch - processPackages [servicenow-api]: Remove: archive file [/home/abi/fetcher/tmp/servicenow_api-0.8.0-py2.py3-none-any.whl.zip]
+[2024-05-19 17:59:38] INFO root fetch - processPackages [servicenow-api]: Remove: archive file [/home/abi/fetcher/tmp/servicenow_api-0.9.0-py2.py3-none-any.whl.zip]
+[2024-05-19 17:59:38] INFO root fetch - main [MainThread]: End processing [servicenow-api]: success
+[2024-05-19 17:59:38] INFO root fetch - processPackages [group-local]: Remove: archive file [/home/abi/fetcher/tmp/group_local-0.0.26.tar.gz]
+[2024-05-19 17:59:38] INFO root fetch - processPackages [group-local]: Remove: archive file [/home/abi/fetcher/tmp/group_local-0.0.27.tar.gz]
+[2024-05-19 17:59:38] INFO root fetch - main [MainThread]: End processing [group-local]: success
+[2024-05-19 17:59:38] INFO root fetch - main [MainThread]: Store serial: [23278028]
