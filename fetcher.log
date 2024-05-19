@@ -4152,3 +4152,66 @@
 [2024-05-19 06:55:02] INFO root fetch - processPackages [ralium]: Remove: archive file [/home/abi/fetcher/tmp/ralium-0.3.6.tar.gz]
 [2024-05-19 06:55:02] INFO root fetch - main [MainThread]: End processing [ralium]: success
 [2024-05-19 06:55:02] INFO root fetch - main [MainThread]: Store serial: [23273339]
+[2024-05-19 06:57:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273339]
+[2024-05-19 06:57:12] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-19 06:59:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273339]
+[2024-05-19 06:59:17] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-19 06:59:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: opendp
+[2024-05-19 06:59:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: airinfer
+[2024-05-19 06:59:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: specialist
+[2024-05-19 06:59:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: otwhlkrvzfstosfh
+[2024-05-19 06:59:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vmafdynlwobwewal
+[2024-05-19 06:59:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: vmafdynlwobwewal
+[2024-05-19 06:59:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: otwhlkrvzfstosfh
+[2024-05-19 06:59:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: vmafdynlwobwewal
+[2024-05-19 06:59:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ralium
+[2024-05-19 06:59:17] INFO root fetch - processPackages [ralium]: New version: [0.3.6] Old Version: [0.3.5]
+[2024-05-19 06:59:17] INFO root fetch - processPackages [opendp]: New version: [0.9.2b20240207001] Old Version: [0.9.2a20240517001]
+[2024-05-19 06:59:17] INFO root fetch - processPackages [vmafdynlwobwewal]: New version: [1.10000.10002] Old Version: [1.10000.10001]
+[2024-05-19 06:59:17] INFO root fetch - processPackages [vmafdynlwobwewal]: New version: [1.10000.10002] Old Version: [1.10000.10001]
+[2024-05-19 06:59:17] INFO root fetch - processPackages [vmafdynlwobwewal]: New version: [1.10000.10002] Old Version: [1.10000.10001]
+[2024-05-19 06:59:17] WARNING root fetch - processPackages [airinfer]: Skipping, unable to determine old version
+[2024-05-19 06:59:17] INFO root fetch - main [MainThread]: End processing [airinfer] error
+[2024-05-19 06:59:17] INFO root fetch - processPackages [otwhlkrvzfstosfh]: New version: [1.10000.10001] Old Version: [1.10000.10000]
+[2024-05-19 06:59:17] INFO root fetch - processPackages [otwhlkrvzfstosfh]: New version: [1.10000.10001] Old Version: [1.10000.10000]
+[2024-05-19 06:59:17] INFO root fetch - processPackages [specialist]: New version: [0.7.0] Old Version: [0.6.0]
+[2024-05-19 06:59:17] INFO root fetch - processPackages [ralium]: Downloading https://files.pythonhosted.org/packages/61/d3/e84abbda4ef92b2ec3d1baf8279530cbc543283d0283055a95eb7f73f702/ralium-0.3.5-py3-none-any.whl
+[2024-05-19 06:59:17] INFO root fetch - processPackages [vmafdynlwobwewal]: Downloading https://files.pythonhosted.org/packages/a7/8a/35ffa47a5df42e6e56bab6220e5e3aa172e62ff417318e672babed2aca0b/vmafdynlwobwewal-1.10000.10001.tar.gz
+[2024-05-19 06:59:17] INFO root fetch - processPackages [opendp]: Downloading https://files.pythonhosted.org/packages/0f/d6/01f87f5e794bf248dc852360ecc3eba2edf780fbe37842431a039b25e824/opendp-0.9.2a20240517001.tar.gz
+[2024-05-19 06:59:17] INFO root fetch - processPackages [vmafdynlwobwewal]: Downloading https://files.pythonhosted.org/packages/a7/8a/35ffa47a5df42e6e56bab6220e5e3aa172e62ff417318e672babed2aca0b/vmafdynlwobwewal-1.10000.10001.tar.gz
+[2024-05-19 06:59:17] INFO root fetch - processPackages [vmafdynlwobwewal]: Downloading https://files.pythonhosted.org/packages/a7/8a/35ffa47a5df42e6e56bab6220e5e3aa172e62ff417318e672babed2aca0b/vmafdynlwobwewal-1.10000.10001.tar.gz
+[2024-05-19 06:59:17] INFO root fetch - processPackages [otwhlkrvzfstosfh]: Downloading https://files.pythonhosted.org/packages/a1/21/beeec0b7960be09984dd1410aa395071563b2539899f214a40933bc0d08e/otwhlkrvzfstosfh-1.10000.10000.tar.gz
+[2024-05-19 06:59:17] INFO root fetch - processPackages [specialist]: Downloading https://files.pythonhosted.org/packages/72/a2/a7c777bf0866c34f5abb486c7e5c688a553da0e8a8b0cb75f0b85d5b8422/specialist-0.6.0.tar.gz
+[2024-05-19 06:59:17] INFO root fetch - processPackages [otwhlkrvzfstosfh]: Downloading https://files.pythonhosted.org/packages/a1/21/beeec0b7960be09984dd1410aa395071563b2539899f214a40933bc0d08e/otwhlkrvzfstosfh-1.10000.10000.tar.gz
+[2024-05-19 06:59:17] INFO root fetch - processPackages [ralium]: Downloading https://files.pythonhosted.org/packages/28/d7/1f211990f134cb07101c879b01c550e2a6b1454b3f258298403ec034df9f/ralium-0.3.6.tar.gz
+[2024-05-19 06:59:17] WARNING root fetch - processPackages [vmafdynlwobwewal]: Skipping package: exceeds size limit 15087794>=10485760
+[2024-05-19 06:59:17] INFO root fetch - main [MainThread]: End processing [vmafdynlwobwewal] error
+[2024-05-19 06:59:17] WARNING root fetch - processPackages [vmafdynlwobwewal]: Skipping package: exceeds size limit 15087794>=10485760
+[2024-05-19 06:59:17] WARNING root fetch - processPackages [vmafdynlwobwewal]: Skipping package: exceeds size limit 15087794>=10485760
+[2024-05-19 06:59:17] INFO root fetch - main [MainThread]: End processing [vmafdynlwobwewal] error
+[2024-05-19 06:59:17] INFO root fetch - main [MainThread]: End processing [vmafdynlwobwewal] error
+[2024-05-19 06:59:18] INFO root fetch - processPackages [ralium]: executing diffoscope
+[2024-05-19 06:59:18] INFO root fetch - processPackages [ralium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ralium-0.3.5-py3-none-any.whl.zip tmp/ralium-0.3.6.tar.gz --markdown 20240519/r/ralium/0.3.5-0.3.6/README.md --exclude *.pyd
+[2024-05-19 06:59:18] INFO root fetch - processPackages [opendp]: Downloading https://files.pythonhosted.org/packages/85/6c/b343f02569a02102fd61d7a89f66fb699dbdbf7903119928f4cc3ce8516d/opendp-0.9.2b20240207001-py3-none-any.whl
+[2024-05-19 06:59:18] WARNING root fetch - processPackages [opendp]: Skipping package: exceeds size limit 36048210>=10485760
+[2024-05-19 06:59:18] INFO root fetch - main [MainThread]: End processing [opendp] error
+[2024-05-19 06:59:18] INFO root fetch - processPackages [specialist]: Downloading https://files.pythonhosted.org/packages/bb/dc/b3f60b02f4356432790d52bb7db9e64d2e5ff799d246b757f3400cfcbd6e/specialist-0.7.0.tar.gz
+[2024-05-19 06:59:18] INFO root fetch - processPackages [otwhlkrvzfstosfh]: Downloading https://files.pythonhosted.org/packages/d8/06/f6f02168a8192c8754085d59619a211a5dfc45c60dee60ef0f8c2094ff8d/otwhlkrvzfstosfh-1.10000.10001.tar.gz
+[2024-05-19 06:59:18] INFO root fetch - processPackages [otwhlkrvzfstosfh]: Downloading https://files.pythonhosted.org/packages/d8/06/f6f02168a8192c8754085d59619a211a5dfc45c60dee60ef0f8c2094ff8d/otwhlkrvzfstosfh-1.10000.10001.tar.gz
+[2024-05-19 06:59:18] INFO root fetch - processPackages [specialist]: executing diffoscope
+[2024-05-19 06:59:18] INFO root fetch - processPackages [specialist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/specialist-0.6.0.tar.gz tmp/specialist-0.7.0.tar.gz --markdown 20240519/s/specialist/0.6.0-0.7.0/README.md --exclude *.pyd
+[2024-05-19 06:59:18] INFO root fetch - processPackages [otwhlkrvzfstosfh]: executing diffoscope
+[2024-05-19 06:59:18] INFO root fetch - processPackages [otwhlkrvzfstosfh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otwhlkrvzfstosfh-1.10000.10000.tar.gz tmp/otwhlkrvzfstosfh-1.10000.10001.tar.gz --markdown 20240519/o/otwhlkrvzfstosfh/1.10000.10000-1.10000.10001/README.md --exclude *.pyd
+[2024-05-19 06:59:18] INFO root fetch - processPackages [otwhlkrvzfstosfh]: executing diffoscope
+[2024-05-19 06:59:18] INFO root fetch - processPackages [otwhlkrvzfstosfh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otwhlkrvzfstosfh-1.10000.10000.tar.gz tmp/otwhlkrvzfstosfh-1.10000.10001.tar.gz --markdown 20240519/o/otwhlkrvzfstosfh/1.10000.10000-1.10000.10001/README.md --exclude *.pyd
+[2024-05-19 06:59:18] INFO root fetch - processPackages [ralium]: Remove: archive file [/home/abi/fetcher/tmp/ralium-0.3.5-py3-none-any.whl.zip]
+[2024-05-19 06:59:18] INFO root fetch - processPackages [ralium]: Remove: archive file [/home/abi/fetcher/tmp/ralium-0.3.6.tar.gz]
+[2024-05-19 06:59:18] INFO root fetch - main [MainThread]: End processing [ralium]: success
+[2024-05-19 06:59:18] INFO root fetch - processPackages [specialist]: Remove: archive file [/home/abi/fetcher/tmp/specialist-0.6.0.tar.gz]
+[2024-05-19 06:59:18] INFO root fetch - processPackages [specialist]: Remove: archive file [/home/abi/fetcher/tmp/specialist-0.7.0.tar.gz]
+[2024-05-19 06:59:18] INFO root fetch - main [MainThread]: End processing [specialist]: success
+[2024-05-19 06:59:29] INFO root fetch - processPackages [otwhlkrvzfstosfh]: Remove: archive file [/home/abi/fetcher/tmp/otwhlkrvzfstosfh-1.10000.10000.tar.gz]
+[2024-05-19 06:59:29] INFO root fetch - processPackages [otwhlkrvzfstosfh]: Remove: archive file [/home/abi/fetcher/tmp/otwhlkrvzfstosfh-1.10000.10001.tar.gz]
+[2024-05-19 06:59:29] INFO root fetch - main [MainThread]: End processing [otwhlkrvzfstosfh]: success
+[2024-05-19 06:59:29] INFO root fetch - main [MainThread]: End processing [otwhlkrvzfstosfh]: success
+[2024-05-19 06:59:29] INFO root fetch - main [MainThread]: Store serial: [23273375]
