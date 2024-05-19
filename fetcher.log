@@ -17003,3 +17003,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 21:00:32] INFO root fetch - processPackages [retriever-search]: Remove: archive file [/home/abi/fetcher/tmp/retriever_search-0.2.2.tar.gz]
 [2024-05-19 21:00:32] INFO root fetch - main [MainThread]: End processing [retriever-search]: success
 [2024-05-19 21:00:32] INFO root fetch - main [MainThread]: Store serial: [23279480]
+[2024-05-19 21:02:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279480]
+[2024-05-19 21:02:41] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 21:02:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tcrutils
+[2024-05-19 21:02:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: langstory
+[2024-05-19 21:02:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: RTSDB
+[2024-05-19 21:02:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: alamos
+[2024-05-19 21:02:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: synnax-freighter
+[2024-05-19 21:02:41] INFO root fetch - processPackages [alamos]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-19 21:02:41] INFO root fetch - processPackages [synnax-freighter]: New version: [0.6.9] Old Version: [0.6.8]
+[2024-05-19 21:02:41] INFO root fetch - processPackages [tcrutils]: New version: [12.0.163] Old Version: [12.0.162]
+[2024-05-19 21:02:41] WARNING root fetch - processPackages [langstory]: Skipping, unable to determine old version
+[2024-05-19 21:02:41] INFO root fetch - main [MainThread]: End processing [langstory] error
+[2024-05-19 21:02:41] INFO root fetch - processPackages [RTSDB]: New version: [1.6] Old Version: [1.5]
+[2024-05-19 21:02:41] INFO root fetch - processPackages [alamos]: Downloading https://files.pythonhosted.org/packages/c5/2b/b12c4308c7fb396e018ffbe6ec0f046170906ae98b188985b537619e0f55/alamos-0.3.8.tar.gz
+[2024-05-19 21:02:41] INFO root fetch - processPackages [synnax-freighter]: Downloading https://files.pythonhosted.org/packages/47/1d/b44d0a666ad7dfde7a8635a95d6241671db501c8ed9f7dd576bdf7fe184e/synnax_freighter-0.6.8.tar.gz
+[2024-05-19 21:02:41] INFO root fetch - processPackages [tcrutils]: Downloading https://files.pythonhosted.org/packages/a3/63/a097a9f8c209683bc609cdd8be32dc0104fadd66d558f313ceae810dab23/tcrutils-12.0.162.tar.gz
+[2024-05-19 21:02:41] INFO root fetch - processPackages [RTSDB]: Downloading https://files.pythonhosted.org/packages/d4/99/0b2e3b9de269c02972edca5c9f75eb8974e97a1bff06e02eff8ad4bb1a9b/RTSDB-1.5.tar.gz
+[2024-05-19 21:02:41] INFO root fetch - processPackages [alamos]: Downloading https://files.pythonhosted.org/packages/c1/08/cf40db715e810dc50be82dd822b41aefe7a4903f73ac57533c85bc63cf9d/alamos-0.3.9.tar.gz
+[2024-05-19 21:02:41] INFO root fetch - processPackages [synnax-freighter]: Downloading https://files.pythonhosted.org/packages/97/99/8375d1635ab3481a144b8507f5f4be9c85b138a7ecc2c616808ded325e74/synnax_freighter-0.6.9.tar.gz
+[2024-05-19 21:02:41] INFO root fetch - processPackages [tcrutils]: Downloading https://files.pythonhosted.org/packages/ef/a8/f4004bfb3bfd6fc832ccda39355c3e0cc33c018f6806f0d4eb3d1ba4232e/tcrutils-12.0.163.tar.gz
+[2024-05-19 21:02:41] INFO root fetch - processPackages [synnax-freighter]: executing diffoscope
+[2024-05-19 21:02:41] INFO root fetch - processPackages [alamos]: executing diffoscope
+[2024-05-19 21:02:41] INFO root fetch - processPackages [synnax-freighter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synnax_freighter-0.6.8.tar.gz tmp/synnax_freighter-0.6.9.tar.gz --markdown 20240519/s/synnax-freighter/0.6.8-0.6.9/README.md --exclude *.pyd
+[2024-05-19 21:02:41] INFO root fetch - processPackages [alamos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alamos-0.3.8.tar.gz tmp/alamos-0.3.9.tar.gz --markdown 20240519/a/alamos/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-19 21:02:42] INFO root fetch - processPackages [tcrutils]: executing diffoscope
+[2024-05-19 21:02:42] INFO root fetch - processPackages [tcrutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcrutils-12.0.162.tar.gz tmp/tcrutils-12.0.163.tar.gz --markdown 20240519/t/tcrutils/12.0.162-12.0.163/README.md --exclude *.pyd
+[2024-05-19 21:02:42] INFO root fetch - processPackages [RTSDB]: Downloading https://files.pythonhosted.org/packages/d0/4c/f4f513b1ac649e45da1b20cc02e4c5965f257f9485b8e89816cb4e0a27e9/RTSDB-1.6.tar.gz
+[2024-05-19 21:02:42] INFO root fetch - processPackages [RTSDB]: executing diffoscope
+[2024-05-19 21:02:42] INFO root fetch - processPackages [RTSDB]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RTSDB-1.5.tar.gz tmp/RTSDB-1.6.tar.gz --markdown 20240519/R/RTSDB/1.5-1.6/README.md --exclude *.pyd
+[2024-05-19 21:02:42] INFO root fetch - processPackages [synnax-freighter]: Remove: archive file [/home/abi/fetcher/tmp/synnax_freighter-0.6.8.tar.gz]
+[2024-05-19 21:02:42] INFO root fetch - processPackages [synnax-freighter]: Remove: archive file [/home/abi/fetcher/tmp/synnax_freighter-0.6.9.tar.gz]
+[2024-05-19 21:02:42] INFO root fetch - main [MainThread]: End processing [synnax-freighter]: success
+[2024-05-19 21:02:42] INFO root fetch - processPackages [tcrutils]: Remove: archive file [/home/abi/fetcher/tmp/tcrutils-12.0.162.tar.gz]
+[2024-05-19 21:02:42] INFO root fetch - processPackages [tcrutils]: Remove: archive file [/home/abi/fetcher/tmp/tcrutils-12.0.163.tar.gz]
+[2024-05-19 21:02:42] INFO root fetch - main [MainThread]: End processing [tcrutils]: success
+[2024-05-19 21:02:42] INFO root fetch - processPackages [RTSDB]: Remove: archive file [/home/abi/fetcher/tmp/RTSDB-1.5.tar.gz]
+[2024-05-19 21:02:42] INFO root fetch - processPackages [RTSDB]: Remove: archive file [/home/abi/fetcher/tmp/RTSDB-1.6.tar.gz]
+[2024-05-19 21:02:42] INFO root fetch - main [MainThread]: End processing [RTSDB]: success
+[2024-05-19 21:02:42] INFO root fetch - processPackages [alamos]: Remove: archive file [/home/abi/fetcher/tmp/alamos-0.3.8.tar.gz]
+[2024-05-19 21:02:42] INFO root fetch - processPackages [alamos]: Remove: archive file [/home/abi/fetcher/tmp/alamos-0.3.9.tar.gz]
+[2024-05-19 21:02:42] INFO root fetch - main [MainThread]: End processing [alamos]: success
+[2024-05-19 21:02:42] INFO root fetch - main [MainThread]: Store serial: [23279497]
