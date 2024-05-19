@@ -17983,3 +17983,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 22:09:08] INFO root fetch - processPackages [aim]: Remove: archive file [/home/abi/fetcher/tmp/aim-4.0.3.tar.gz]
 [2024-05-19 22:09:08] INFO root fetch - main [MainThread]: End processing [aim]: success
 [2024-05-19 22:09:08] INFO root fetch - main [MainThread]: Store serial: [23279954]
+[2024-05-19 22:11:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279954]
+[2024-05-19 22:11:17] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 22:11:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: eras
+[2024-05-19 22:11:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tccli
+[2024-05-19 22:11:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scrapegraphai
+[2024-05-19 22:11:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: simpleai-base
+[2024-05-19 22:11:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dipppiestz
+[2024-05-19 22:11:17] INFO root fetch - processPackages [eras]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-19 22:11:17] INFO root fetch - processPackages [scrapegraphai]: New version: [1.3.0b1] Old Version: [1.3.0]
+[2024-05-19 22:11:17] INFO root fetch - processPackages [eras]: Downloading https://files.pythonhosted.org/packages/22/bc/9961ba55708d5ec4e45bd0e1300fc74687f7d88648f261e064df9475684a/eras-0.1.4.tar.gz
+[2024-05-19 22:11:17] INFO root fetch - processPackages [simpleai-base]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-05-19 22:11:17] WARNING root fetch - processPackages [dipppiestz]: Skipping, unable to determine old version
+[2024-05-19 22:11:17] INFO root fetch - main [MainThread]: End processing [dipppiestz] error
+[2024-05-19 22:11:17] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/90/e0/8dab0b6ad6d81b56b54d96fa8c1540ef3005be63c4d4e826d184d0735b32/scrapegraphai-1.3.0.tar.gz
+[2024-05-19 22:11:17] INFO root fetch - processPackages [tccli]: New version: [3.0.999.1] Old Version: [3.0.998.1]
+[2024-05-19 22:11:17] INFO root fetch - processPackages [simpleai-base]: Downloading https://files.pythonhosted.org/packages/ea/77/56c953046f8de392cbdb13d71ff5ab99018520aea1ec9361b36b4a65737f/simpleai_base-0.3.3-pp310-pypy310_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-19 22:11:17] INFO root fetch - processPackages [tccli]: Downloading https://files.pythonhosted.org/packages/4b/45/a3b0e2cc7f86f87ffa99bd6f833796de67aee82386f88a6d4a85073532e9/tccli-3.0.998.1.tar.gz
+[2024-05-19 22:11:17] INFO root fetch - processPackages [eras]: Downloading https://files.pythonhosted.org/packages/07/d1/ea653a987ac6b36ebfed177c915a0b34b783c74539b272e918c461dd3ea8/eras-0.1.5.tar.gz
+[2024-05-19 22:11:17] INFO root fetch - processPackages [eras]: executing diffoscope
+[2024-05-19 22:11:17] INFO root fetch - processPackages [eras]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eras-0.1.4.tar.gz tmp/eras-0.1.5.tar.gz --markdown 20240519/e/eras/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-19 22:11:17] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/86/66/c9a4f2b4b4eadb546b128b65e929c0ba79c2d9212f68ff332bccab2cf3d6/scrapegraphai-1.3.0b1.tar.gz
+[2024-05-19 22:11:18] INFO root fetch - processPackages [scrapegraphai]: executing diffoscope
+[2024-05-19 22:11:18] INFO root fetch - processPackages [scrapegraphai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapegraphai-1.3.0.tar.gz tmp/scrapegraphai-1.3.0b1.tar.gz --markdown 20240519/s/scrapegraphai/1.3.0-1.3.0b1/README.md --exclude *.pyd
+[2024-05-19 22:11:18] INFO root fetch - processPackages [simpleai-base]: Downloading https://files.pythonhosted.org/packages/a8/e9/4aba2250e3b4dcedb1581c52ecf9f40996a8d870c8adae53494e14220171/simpleai_base-0.3.4-pp310-pypy310_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-19 22:11:18] INFO root fetch - processPackages [eras]: Remove: archive file [/home/abi/fetcher/tmp/eras-0.1.4.tar.gz]
+[2024-05-19 22:11:18] INFO root fetch - processPackages [eras]: Remove: archive file [/home/abi/fetcher/tmp/eras-0.1.5.tar.gz]
+[2024-05-19 22:11:18] INFO root fetch - main [MainThread]: End processing [eras]: success
+[2024-05-19 22:11:19] INFO root fetch - processPackages [simpleai-base]: executing diffoscope
+[2024-05-19 22:11:19] INFO root fetch - processPackages [simpleai-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simpleai_base-0.3.3-pp310-pypy310_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/simpleai_base-0.3.4-pp310-pypy310_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240519/s/simpleai-base/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-05-19 22:11:19] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-1.3.0.tar.gz]
+[2024-05-19 22:11:19] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-1.3.0b1.tar.gz]
+[2024-05-19 22:11:19] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
+[2024-05-19 22:11:20] INFO root fetch - processPackages [tccli]: Downloading https://files.pythonhosted.org/packages/06/41/78d3ee9b2ead17ab0876618d203995653100fb27e524f51810d16df1bc97/tccli-3.0.999.1.tar.gz
+[2024-05-19 22:11:22] INFO root fetch - processPackages [tccli]: executing diffoscope
+[2024-05-19 22:11:22] INFO root fetch - processPackages [tccli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tccli-3.0.998.1.tar.gz tmp/tccli-3.0.999.1.tar.gz --markdown 20240519/t/tccli/3.0.998.1-3.0.999.1/README.md --exclude *.pyd
+[2024-05-19 22:11:55] INFO root fetch - processPackages [simpleai-base]: Remove: archive file [/home/abi/fetcher/tmp/simpleai_base-0.3.3-pp310-pypy310_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-19 22:11:55] INFO root fetch - processPackages [simpleai-base]: Remove: archive file [/home/abi/fetcher/tmp/simpleai_base-0.3.4-pp310-pypy310_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-19 22:11:55] INFO root fetch - main [MainThread]: End processing [simpleai-base]: success
+[2024-05-19 22:12:40] INFO root fetch - processPackages [tccli]: Remove: archive file [/home/abi/fetcher/tmp/tccli-3.0.998.1.tar.gz]
+[2024-05-19 22:12:40] INFO root fetch - processPackages [tccli]: Remove: archive file [/home/abi/fetcher/tmp/tccli-3.0.999.1.tar.gz]
+[2024-05-19 22:12:40] INFO root fetch - main [MainThread]: End processing [tccli]: success
+[2024-05-19 22:12:40] INFO root fetch - main [MainThread]: Store serial: [23279983]
