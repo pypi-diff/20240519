@@ -6088,3 +6088,77 @@
 [2024-05-19 09:34:54] INFO root fetch - processPackages [tahrir]: Remove: archive file [/home/abi/fetcher/tmp/tahrir-1.1.0.tar.gz]
 [2024-05-19 09:34:54] INFO root fetch - main [MainThread]: End processing [tahrir]: success
 [2024-05-19 09:34:54] INFO root fetch - main [MainThread]: Store serial: [23274186]
+[2024-05-19 09:36:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274186]
+[2024-05-19 09:37:03] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-19 09:37:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pg-sync-roles
+[2024-05-19 09:37:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qwak-core
+[2024-05-19 09:37:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: stockprophet-api
+[2024-05-19 09:37:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: outpostkit
+[2024-05-19 09:37:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tarina
+[2024-05-19 09:37:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pymobiledevice3
+[2024-05-19 09:37:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: modelmerge
+[2024-05-19 09:37:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: odoo-addons-oca-stock-logistics-workflow
+[2024-05-19 09:37:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dfindexeddb
+[2024-05-19 09:37:03] INFO root fetch - processPackages [pg-sync-roles]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 09:37:03] INFO root fetch - processPackages [modelmerge]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-19 09:37:03] INFO root fetch - processPackages [outpostkit]: New version: [0.0.9] Old Version: [0.0.7]
+[2024-05-19 09:37:03] INFO root fetch - processPackages [pg-sync-roles]: Downloading https://files.pythonhosted.org/packages/e5/00/689dce1c71a269fc31a6f29e65d7d555fd7ddbc8cc79da2dff482ce5e687/pg_sync_roles-0.0.8.tar.gz
+[2024-05-19 09:37:03] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-workflow]: New version: [16.0.20240513.0] Old Version: [16.0.20240507.1]
+[2024-05-19 09:37:03] INFO root fetch - processPackages [pymobiledevice3]: New version: [4.7.0] Old Version: [4.6.0]
+[2024-05-19 09:37:03] WARNING root fetch - processPackages [stockprophet-api]: Skipping, unable to determine old version
+[2024-05-19 09:37:03] INFO root fetch - main [MainThread]: End processing [stockprophet-api] error
+[2024-05-19 09:37:03] INFO root fetch - processPackages [dfindexeddb]: New version: [20240519] Old Version: [20240501]
+[2024-05-19 09:37:03] INFO root fetch - processPackages [modelmerge]: Downloading https://files.pythonhosted.org/packages/60/9c/6d76457c36ac188f0e08917fafb2ff3dc893318e73901e92eff2cc72569a/modelmerge-0.4.8.tar.gz
+[2024-05-19 09:37:03] INFO root fetch - processPackages [tarina]: New version: [0.5.0] Old Version: [0.4.4]
+[2024-05-19 09:37:03] INFO root fetch - processPackages [outpostkit]: Downloading https://files.pythonhosted.org/packages/e8/20/6f4f3b0edb61dd5f691668605b0901894c58c85e728662fff6913423203c/outpostkit-0.0.7.tar.gz
+[2024-05-19 09:37:03] INFO root fetch - processPackages [qwak-core]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-19 09:37:03] INFO root fetch - processPackages [pg-sync-roles]: Downloading https://files.pythonhosted.org/packages/57/16/3555015cd988ece14b511219460af3c22de1b955c715d90322aa11026bd9/pg_sync_roles-0.0.9.tar.gz
+[2024-05-19 09:37:03] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-workflow]: Downloading https://files.pythonhosted.org/packages/ee/67/26e47949ec92239bb92fe1a736d6e31e5f940bbfe132f26904d12a40a65b/odoo_addons_oca_stock_logistics_workflow-16.0.20240507.1-py3-none-any.whl
+[2024-05-19 09:37:03] INFO root fetch - processPackages [pymobiledevice3]: Downloading https://files.pythonhosted.org/packages/82/d3/e4eb122b6ccf88b694c7304bbac7423529520df6231debc1874cebad5383/pymobiledevice3-4.6.0.tar.gz
+[2024-05-19 09:37:03] INFO root fetch - processPackages [modelmerge]: Downloading https://files.pythonhosted.org/packages/46/43/60af7eb9cd19b018b9509958f07001de6e87b9d78dab4bd30639c40396fc/modelmerge-0.4.9.tar.gz
+[2024-05-19 09:37:03] INFO root fetch - processPackages [dfindexeddb]: Downloading https://files.pythonhosted.org/packages/70/9e/a6d9c64560aa5e946f1a5c44177b28c6e18fbd7aa134ab55bd14668c1aa1/dfindexeddb-20240501.tar.gz
+[2024-05-19 09:37:03] INFO root fetch - processPackages [tarina]: Downloading https://files.pythonhosted.org/packages/bd/3a/98eb05cf80b2414df49a319f5e0e3a389f9e73ab57cb37d405cfcbff5b7d/tarina-0.4.4.tar.gz
+[2024-05-19 09:37:03] INFO root fetch - processPackages [outpostkit]: Downloading https://files.pythonhosted.org/packages/b3/af/8945c62fc6dc5596e5618810b3971a4c11d217517a24d0cd40a10b5b9553/outpostkit-0.0.9.tar.gz
+[2024-05-19 09:37:03] INFO root fetch - processPackages [qwak-core]: Downloading https://files.pythonhosted.org/packages/40/dc/9bf7a0a11e5d16704620fd9a2d038eee79e38d502983f2c9975412d1053c/qwak_core-0.4.8.tar.gz
+[2024-05-19 09:37:04] WARNING root fetch - processPackages [pymobiledevice3]: Skipping package: exceeds size limit 31546943>=10485760
+[2024-05-19 09:37:04] INFO root fetch - main [MainThread]: End processing [pymobiledevice3] error
+[2024-05-19 09:37:04] INFO root fetch - processPackages [pg-sync-roles]: executing diffoscope
+[2024-05-19 09:37:04] INFO root fetch - processPackages [pg-sync-roles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pg_sync_roles-0.0.8.tar.gz tmp/pg_sync_roles-0.0.9.tar.gz --markdown 20240519/p/pg-sync-roles/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 09:37:04] INFO root fetch - processPackages [modelmerge]: executing diffoscope
+[2024-05-19 09:37:04] INFO root fetch - processPackages [modelmerge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modelmerge-0.4.8.tar.gz tmp/modelmerge-0.4.9.tar.gz --markdown 20240519/m/modelmerge/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-19 09:37:04] INFO root fetch - processPackages [outpostkit]: executing diffoscope
+[2024-05-19 09:37:04] INFO root fetch - processPackages [outpostkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outpostkit-0.0.7.tar.gz tmp/outpostkit-0.0.9.tar.gz --markdown 20240519/o/outpostkit/0.0.7-0.0.9/README.md --exclude *.pyd
+[2024-05-19 09:37:04] INFO root fetch - processPackages [dfindexeddb]: Downloading https://files.pythonhosted.org/packages/43/54/ffc4a786a50b326b44ff8e5e7423520e4013633f304d19434dafa0a6f12e/dfindexeddb-20240519.tar.gz
+[2024-05-19 09:37:04] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-workflow]: Downloading https://files.pythonhosted.org/packages/0f/27/fd4a9aea3e7e2d96f6f86d1f9496a66bf2b2f2ccc06ea34a0e407744a2af/odoo_addons_oca_stock_logistics_workflow-16.0.20240513.0-py3-none-any.whl
+[2024-05-19 09:37:04] INFO root fetch - processPackages [tarina]: Downloading https://files.pythonhosted.org/packages/99/cc/83b0c929731032381fdd974b3cf0a39fa4f0b3ab0fad83e9eb929c5d0b8b/tarina-0.5.0.tar.gz
+[2024-05-19 09:37:04] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-workflow]: executing diffoscope
+[2024-05-19 09:37:04] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-workflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_stock_logistics_workflow-16.0.20240507.1-py3-none-any.whl.zip tmp/odoo_addons_oca_stock_logistics_workflow-16.0.20240513.0-py3-none-any.whl.zip --markdown 20240519/o/odoo-addons-oca-stock-logistics-workflow/16.0.20240507.1-16.0.20240513.0/README.md --exclude *.pyd
+[2024-05-19 09:37:04] INFO root fetch - processPackages [qwak-core]: Downloading https://files.pythonhosted.org/packages/fe/09/8867573c92d18e200499a583b45f6adb1552d9e721e39370c8aa578b7080/qwak_core-0.4.9.tar.gz
+[2024-05-19 09:37:04] INFO root fetch - processPackages [dfindexeddb]: executing diffoscope
+[2024-05-19 09:37:04] INFO root fetch - processPackages [dfindexeddb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dfindexeddb-20240501.tar.gz tmp/dfindexeddb-20240519.tar.gz --markdown 20240519/d/dfindexeddb/20240501-20240519/README.md --exclude *.pyd
+[2024-05-19 09:37:04] INFO root fetch - processPackages [tarina]: executing diffoscope
+[2024-05-19 09:37:04] INFO root fetch - processPackages [tarina]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tarina-0.4.4.tar.gz tmp/tarina-0.5.0.tar.gz --markdown 20240519/t/tarina/0.4.4-0.5.0/README.md --exclude *.pyd
+[2024-05-19 09:37:04] INFO root fetch - processPackages [qwak-core]: executing diffoscope
+[2024-05-19 09:37:04] INFO root fetch - processPackages [qwak-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qwak_core-0.4.8.tar.gz tmp/qwak_core-0.4.9.tar.gz --markdown 20240519/q/qwak-core/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-19 09:37:04] INFO root fetch - processPackages [pg-sync-roles]: Remove: archive file [/home/abi/fetcher/tmp/pg_sync_roles-0.0.8.tar.gz]
+[2024-05-19 09:37:04] INFO root fetch - processPackages [pg-sync-roles]: Remove: archive file [/home/abi/fetcher/tmp/pg_sync_roles-0.0.9.tar.gz]
+[2024-05-19 09:37:04] INFO root fetch - main [MainThread]: End processing [pg-sync-roles]: success
+[2024-05-19 09:37:04] INFO root fetch - processPackages [outpostkit]: Remove: archive file [/home/abi/fetcher/tmp/outpostkit-0.0.7.tar.gz]
+[2024-05-19 09:37:04] INFO root fetch - processPackages [outpostkit]: Remove: archive file [/home/abi/fetcher/tmp/outpostkit-0.0.9.tar.gz]
+[2024-05-19 09:37:04] INFO root fetch - main [MainThread]: End processing [outpostkit]: success
+[2024-05-19 09:37:04] INFO root fetch - processPackages [modelmerge]: Remove: archive file [/home/abi/fetcher/tmp/modelmerge-0.4.8.tar.gz]
+[2024-05-19 09:37:04] INFO root fetch - processPackages [modelmerge]: Remove: archive file [/home/abi/fetcher/tmp/modelmerge-0.4.9.tar.gz]
+[2024-05-19 09:37:04] INFO root fetch - main [MainThread]: End processing [modelmerge]: success
+[2024-05-19 09:37:05] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-workflow]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_stock_logistics_workflow-16.0.20240507.1-py3-none-any.whl.zip]
+[2024-05-19 09:37:05] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-workflow]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_stock_logistics_workflow-16.0.20240513.0-py3-none-any.whl.zip]
+[2024-05-19 09:37:05] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-stock-logistics-workflow]: success
+[2024-05-19 09:37:05] INFO root fetch - processPackages [tarina]: Remove: archive file [/home/abi/fetcher/tmp/tarina-0.4.4.tar.gz]
+[2024-05-19 09:37:05] INFO root fetch - processPackages [tarina]: Remove: archive file [/home/abi/fetcher/tmp/tarina-0.5.0.tar.gz]
+[2024-05-19 09:37:05] INFO root fetch - main [MainThread]: End processing [tarina]: success
+[2024-05-19 09:37:05] INFO root fetch - processPackages [dfindexeddb]: Remove: archive file [/home/abi/fetcher/tmp/dfindexeddb-20240501.tar.gz]
+[2024-05-19 09:37:05] INFO root fetch - processPackages [dfindexeddb]: Remove: archive file [/home/abi/fetcher/tmp/dfindexeddb-20240519.tar.gz]
+[2024-05-19 09:37:05] INFO root fetch - main [MainThread]: End processing [dfindexeddb]: success
+[2024-05-19 09:37:07] INFO root fetch - processPackages [qwak-core]: Remove: archive file [/home/abi/fetcher/tmp/qwak_core-0.4.8.tar.gz]
+[2024-05-19 09:37:07] INFO root fetch - processPackages [qwak-core]: Remove: archive file [/home/abi/fetcher/tmp/qwak_core-0.4.9.tar.gz]
+[2024-05-19 09:37:07] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
+[2024-05-19 09:37:07] INFO root fetch - main [MainThread]: Store serial: [23274259]
