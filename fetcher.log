@@ -2094,3 +2094,54 @@
 [2024-05-19 03:38:50] INFO root fetch - processPackages [flask-openapi3-scalar]: Remove: archive file [/home/abi/fetcher/tmp/flask_openapi3_scalar-1.22.43.tar.gz]
 [2024-05-19 03:38:50] INFO root fetch - main [MainThread]: End processing [flask-openapi3-scalar]: success
 [2024-05-19 03:38:50] INFO root fetch - main [MainThread]: Store serial: [23272443]
+[2024-05-19 03:40:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272443]
+[2024-05-19 03:40:58] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-19 03:40:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: RNASQLite
+[2024-05-19 03:40:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ftm-columnstore
+[2024-05-19 03:40:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rdatapp
+[2024-05-19 03:40:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: schizticz
+[2024-05-19 03:40:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tdrpa.tdcore
+[2024-05-19 03:40:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: watchtower-pipeline
+[2024-05-19 03:40:59] INFO root fetch - processPackages [rdatapp]: New version: [0.4] Old Version: [0.3a0]
+[2024-05-19 03:40:59] INFO root fetch - processPackages [RNASQLite]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-19 03:40:59] INFO root fetch - processPackages [ftm-columnstore]: New version: [0.3.0] Old Version: [0.2.1]
+[2024-05-19 03:40:59] INFO root fetch - processPackages [rdatapp]: Downloading https://files.pythonhosted.org/packages/29/1b/815a4b9008afd17bad32d7375884a9dc1865c463dd96312415fc64c89a2e/rdatapp-0.3a0.tar.gz
+[2024-05-19 03:40:59] INFO root fetch - processPackages [RNASQLite]: Downloading https://files.pythonhosted.org/packages/6c/34/f80a8ef47e6424ad8fb1ef3c2b53dd2bdd0914f987aa33ec241491ee8e33/rnasqlite-0.1.5.tar.gz
+[2024-05-19 03:40:59] WARNING root fetch - processPackages [schizticz]: Skipping, unable to determine old version
+[2024-05-19 03:40:59] INFO root fetch - main [MainThread]: End processing [schizticz] error
+[2024-05-19 03:40:59] INFO root fetch - processPackages [watchtower-pipeline]: New version: [1.0.0b1] Old Version: [1.0.0b0]
+[2024-05-19 03:40:59] INFO root fetch - processPackages [tdrpa.tdcore]: New version: [1.1.33] Old Version: [1.1.32]
+[2024-05-19 03:40:59] INFO root fetch - processPackages [ftm-columnstore]: Downloading https://files.pythonhosted.org/packages/4b/0e/3154e19363e1a60a54d8bc3f857eb8dc8fedd5ecc9cddff990f76122fa4a/ftm_columnstore-0.2.1.tar.gz
+[2024-05-19 03:40:59] INFO root fetch - processPackages [watchtower-pipeline]: Downloading https://files.pythonhosted.org/packages/83/f5/55f3e65f73cdd71dbd52300a6abadc893ecf908c93daa22ff2ce4a170ed9/watchtower-pipeline-1.0.0b0.tar.gz
+[2024-05-19 03:40:59] INFO root fetch - processPackages [tdrpa.tdcore]: Downloading https://files.pythonhosted.org/packages/7c/0e/087cb9b5047e801e55bec4cda8a3ef692de61682b5afddd4a76429eec8d1/tdrpa.tdcore-1.1.32-py39-none-win_amd64.whl
+[2024-05-19 03:40:59] INFO root fetch - processPackages [rdatapp]: Downloading https://files.pythonhosted.org/packages/f5/ad/162e73c00c31b3434d2373e192734876b7f3fad8c864757300595de53ab5/rdatapp-0.4.tar.gz
+[2024-05-19 03:40:59] INFO root fetch - processPackages [rdatapp]: executing diffoscope
+[2024-05-19 03:40:59] INFO root fetch - processPackages [rdatapp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rdatapp-0.3a0.tar.gz tmp/rdatapp-0.4.tar.gz --markdown 20240519/r/rdatapp/0.3a0-0.4/README.md --exclude *.pyd
+[2024-05-19 03:40:59] INFO root fetch - processPackages [RNASQLite]: Downloading https://files.pythonhosted.org/packages/c4/03/e88d4098884650eac19943bce91e75557d70d5e660c09c174a51738181c5/rnasqlite-0.1.6.tar.gz
+[2024-05-19 03:40:59] INFO root fetch - processPackages [ftm-columnstore]: Downloading https://files.pythonhosted.org/packages/8b/ce/a3c50e296cd3ec1128af9d7a107ef165d18787d9e4cc362e6ba82e93b4e2/ftm_columnstore-0.3.0.tar.gz
+[2024-05-19 03:40:59] INFO root fetch - processPackages [ftm-columnstore]: executing diffoscope
+[2024-05-19 03:40:59] INFO root fetch - processPackages [ftm-columnstore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ftm_columnstore-0.2.1.tar.gz tmp/ftm_columnstore-0.3.0.tar.gz --markdown 20240519/f/ftm-columnstore/0.2.1-0.3.0/README.md --exclude *.pyd
+[2024-05-19 03:40:59] INFO root fetch - processPackages [RNASQLite]: executing diffoscope
+[2024-05-19 03:40:59] INFO root fetch - processPackages [RNASQLite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rnasqlite-0.1.5.tar.gz tmp/rnasqlite-0.1.6.tar.gz --markdown 20240519/R/RNASQLite/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-19 03:41:00] INFO root fetch - processPackages [tdrpa.tdcore]: Downloading https://files.pythonhosted.org/packages/fd/41/8f4a2eb8e1338fdfa47486802990270ca83110f819197e6e82a12173a4e9/tdrpa.tdcore-1.1.33-py39-none-win_amd64.whl
+[2024-05-19 03:41:00] INFO root fetch - processPackages [watchtower-pipeline]: Downloading https://files.pythonhosted.org/packages/41/34/03d2f4de080349bba0bc01afc4b071109521b4cf17665f0e18803126ca95/watchtower_pipeline-1.0.0b1.tar.gz
+[2024-05-19 03:41:00] INFO root fetch - processPackages [rdatapp]: Remove: archive file [/home/abi/fetcher/tmp/rdatapp-0.3a0.tar.gz]
+[2024-05-19 03:41:00] INFO root fetch - processPackages [rdatapp]: Remove: archive file [/home/abi/fetcher/tmp/rdatapp-0.4.tar.gz]
+[2024-05-19 03:41:00] INFO root fetch - main [MainThread]: End processing [rdatapp]: success
+[2024-05-19 03:41:00] INFO root fetch - processPackages [tdrpa.tdcore]: executing diffoscope
+[2024-05-19 03:41:00] INFO root fetch - processPackages [tdrpa.tdcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tdrpa.tdcore-1.1.32-py39-none-win_amd64.whl.zip tmp/tdrpa.tdcore-1.1.33-py39-none-win_amd64.whl.zip --markdown 20240519/t/tdrpa.tdcore/1.1.32-1.1.33/README.md --exclude *.pyd
+[2024-05-19 03:41:00] INFO root fetch - processPackages [watchtower-pipeline]: executing diffoscope
+[2024-05-19 03:41:00] INFO root fetch - processPackages [watchtower-pipeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/watchtower-pipeline-1.0.0b0.tar.gz tmp/watchtower_pipeline-1.0.0b1.tar.gz --markdown 20240519/w/watchtower-pipeline/1.0.0b0-1.0.0b1/README.md --exclude *.pyd
+[2024-05-19 03:41:00] INFO root fetch - processPackages [ftm-columnstore]: Remove: archive file [/home/abi/fetcher/tmp/ftm_columnstore-0.2.1.tar.gz]
+[2024-05-19 03:41:00] INFO root fetch - processPackages [ftm-columnstore]: Remove: archive file [/home/abi/fetcher/tmp/ftm_columnstore-0.3.0.tar.gz]
+[2024-05-19 03:41:00] INFO root fetch - main [MainThread]: End processing [ftm-columnstore]: success
+[2024-05-19 03:41:00] INFO root fetch - processPackages [RNASQLite]: Remove: archive file [/home/abi/fetcher/tmp/rnasqlite-0.1.5.tar.gz]
+[2024-05-19 03:41:00] INFO root fetch - processPackages [RNASQLite]: Remove: archive file [/home/abi/fetcher/tmp/rnasqlite-0.1.6.tar.gz]
+[2024-05-19 03:41:00] INFO root fetch - main [MainThread]: End processing [RNASQLite]: success
+[2024-05-19 03:41:02] INFO root fetch - processPackages [tdrpa.tdcore]: Remove: archive file [/home/abi/fetcher/tmp/tdrpa.tdcore-1.1.32-py39-none-win_amd64.whl.zip]
+[2024-05-19 03:41:02] INFO root fetch - processPackages [tdrpa.tdcore]: Remove: archive file [/home/abi/fetcher/tmp/tdrpa.tdcore-1.1.33-py39-none-win_amd64.whl.zip]
+[2024-05-19 03:41:02] INFO root fetch - main [MainThread]: End processing [tdrpa.tdcore]: success
+[2024-05-19 03:41:07] INFO root fetch - processPackages [watchtower-pipeline]: Remove: archive file [/home/abi/fetcher/tmp/watchtower-pipeline-1.0.0b0.tar.gz]
+[2024-05-19 03:41:07] INFO root fetch - processPackages [watchtower-pipeline]: Remove: archive file [/home/abi/fetcher/tmp/watchtower_pipeline-1.0.0b1.tar.gz]
+[2024-05-19 03:41:07] INFO root fetch - main [MainThread]: End processing [watchtower-pipeline]: success
+[2024-05-19 03:41:07] INFO root fetch - main [MainThread]: Store serial: [23272476]
