@@ -16207,3 +16207,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 20:06:54] INFO root fetch - processPackages [recce-nightly]: Remove: archive file [/home/abi/fetcher/tmp/recce-nightly-0.9.0.20240313.tar.gz]
 [2024-05-19 20:06:54] INFO root fetch - main [MainThread]: End processing [recce-nightly]: success
 [2024-05-19 20:06:54] INFO root fetch - main [MainThread]: Store serial: [23279104]
+[2024-05-19 20:08:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279104]
+[2024-05-19 20:09:03] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-19 20:09:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qualystbx
+[2024-05-19 20:09:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tasos-apiauth
+[2024-05-19 20:09:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pymenu-cli
+[2024-05-19 20:09:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: radprompter
+[2024-05-19 20:09:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: functional-algorithms
+[2024-05-19 20:09:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyphy2D
+[2024-05-19 20:09:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: geleez
+[2024-05-19 20:09:03] INFO root fetch - processPackages [qualystbx]: New version: [0.8.0] Old Version: [0.7.0]
+[2024-05-19 20:09:03] INFO root fetch - processPackages [radprompter]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-19 20:09:03] INFO root fetch - processPackages [pymenu-cli]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-19 20:09:03] INFO root fetch - processPackages [pyphy2D]: New version: [2] Old Version: [1.0]
+[2024-05-19 20:09:03] INFO root fetch - processPackages [tasos-apiauth]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-19 20:09:03] WARNING root fetch - processPackages [functional-algorithms]: Skipping, unable to determine old version
+[2024-05-19 20:09:03] INFO root fetch - main [MainThread]: End processing [functional-algorithms] error
+[2024-05-19 20:09:03] WARNING root fetch - processPackages [geleez]: Skipping, unable to determine old version
+[2024-05-19 20:09:03] INFO root fetch - main [MainThread]: End processing [geleez] error
+[2024-05-19 20:09:03] INFO root fetch - processPackages [qualystbx]: Downloading https://files.pythonhosted.org/packages/3d/13/d82c3acb0e9ea3a9ff76fe6e73a521edc75e84ab686d483a4f360a6a88cb/qualystbx-0.7.0.tar.gz
+[2024-05-19 20:09:03] INFO root fetch - processPackages [radprompter]: Downloading https://files.pythonhosted.org/packages/45/07/7d6b1e61f82cee3e79a140a825c134a813b18bbab8d16528b531392bc6db/radprompter-1.0.4.tar.gz
+[2024-05-19 20:09:04] INFO root fetch - processPackages [pyphy2D]: Downloading https://files.pythonhosted.org/packages/e4/72/d392be48a611d8005b09e3b8f6eb8eb412fabb67488fbaaccbcb3458199b/pyphy2D-1.0.tar.gz
+[2024-05-19 20:09:04] INFO root fetch - processPackages [pymenu-cli]: Downloading https://files.pythonhosted.org/packages/5e/ca/d756b785d389554466bbe0587fbc64c9cede46d229f27f87fe5af34e761f/pymenu_cli-1.0.3.tar.gz
+[2024-05-19 20:09:04] INFO root fetch - processPackages [tasos-apiauth]: Downloading https://files.pythonhosted.org/packages/4c/80/ebb7ecf0210e96de2732a4357bbd2edec7404320af72be3393c75fa8d287/tasos_apiauth-0.1.1.tar.gz
+[2024-05-19 20:09:04] INFO root fetch - processPackages [qualystbx]: Downloading https://files.pythonhosted.org/packages/88/de/04f9bde377b2e4f3959a99661bf58cb5824a3b55cd37d179c781c0db6773/qualystbx-0.8.0.tar.gz
+[2024-05-19 20:09:04] INFO root fetch - processPackages [radprompter]: Downloading https://files.pythonhosted.org/packages/7b/72/28081e84676bbc199b692b423d68f790823727f4670ae8a1b0b81a1ef9b7/radprompter-1.0.5.tar.gz
+[2024-05-19 20:09:04] INFO root fetch - processPackages [qualystbx]: executing diffoscope
+[2024-05-19 20:09:04] INFO root fetch - processPackages [qualystbx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qualystbx-0.7.0.tar.gz tmp/qualystbx-0.8.0.tar.gz --markdown 20240519/q/qualystbx/0.7.0-0.8.0/README.md --exclude *.pyd
+[2024-05-19 20:09:04] INFO root fetch - processPackages [radprompter]: executing diffoscope
+[2024-05-19 20:09:04] INFO root fetch - processPackages [radprompter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/radprompter-1.0.4.tar.gz tmp/radprompter-1.0.5.tar.gz --markdown 20240519/r/radprompter/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-19 20:09:04] INFO root fetch - processPackages [pyphy2D]: Downloading https://files.pythonhosted.org/packages/4b/5c/fad16cf378b6eaa9ccfbac3866d8016d13fb14bba5654e2fefacbeceeef9/pyphy2D-2.tar.gz
+[2024-05-19 20:09:04] INFO root fetch - processPackages [pymenu-cli]: Downloading https://files.pythonhosted.org/packages/5f/c0/8af153f7ca65d4cc3833492b9b11c9902a81edaca5daf6c3629c325a0164/pymenu_cli-1.0.4.tar.gz
+[2024-05-19 20:09:04] INFO root fetch - processPackages [tasos-apiauth]: Downloading https://files.pythonhosted.org/packages/8d/79/19a070fec8fa5f81ea4123aa63a1f08d2fc099e491aac214ace5c2a53ee3/tasos_apiauth-0.1.2.tar.gz
+[2024-05-19 20:09:04] INFO root fetch - processPackages [pyphy2D]: executing diffoscope
+[2024-05-19 20:09:04] INFO root fetch - processPackages [pyphy2D]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyphy2D-1.0.tar.gz tmp/pyphy2D-2.tar.gz --markdown 20240519/p/pyphy2D/1.0-2/README.md --exclude *.pyd
+[2024-05-19 20:09:04] INFO root fetch - processPackages [tasos-apiauth]: executing diffoscope
+[2024-05-19 20:09:04] INFO root fetch - processPackages [tasos-apiauth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tasos_apiauth-0.1.1.tar.gz tmp/tasos_apiauth-0.1.2.tar.gz --markdown 20240519/t/tasos-apiauth/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-19 20:09:04] INFO root fetch - processPackages [pymenu-cli]: executing diffoscope
+[2024-05-19 20:09:04] INFO root fetch - processPackages [pymenu-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymenu_cli-1.0.3.tar.gz tmp/pymenu_cli-1.0.4.tar.gz --markdown 20240519/p/pymenu-cli/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-19 20:09:04] INFO root fetch - processPackages [qualystbx]: Remove: archive file [/home/abi/fetcher/tmp/qualystbx-0.7.0.tar.gz]
+[2024-05-19 20:09:04] INFO root fetch - processPackages [qualystbx]: Remove: archive file [/home/abi/fetcher/tmp/qualystbx-0.8.0.tar.gz]
+[2024-05-19 20:09:04] INFO root fetch - main [MainThread]: End processing [qualystbx]: success
+[2024-05-19 20:09:04] INFO root fetch - processPackages [radprompter]: Remove: archive file [/home/abi/fetcher/tmp/radprompter-1.0.4.tar.gz]
+[2024-05-19 20:09:04] INFO root fetch - processPackages [radprompter]: Remove: archive file [/home/abi/fetcher/tmp/radprompter-1.0.5.tar.gz]
+[2024-05-19 20:09:04] INFO root fetch - main [MainThread]: End processing [radprompter]: success
+[2024-05-19 20:09:05] INFO root fetch - processPackages [pymenu-cli]: Remove: archive file [/home/abi/fetcher/tmp/pymenu_cli-1.0.3.tar.gz]
+[2024-05-19 20:09:05] INFO root fetch - processPackages [pymenu-cli]: Remove: archive file [/home/abi/fetcher/tmp/pymenu_cli-1.0.4.tar.gz]
+[2024-05-19 20:09:05] INFO root fetch - main [MainThread]: End processing [pymenu-cli]: success
+[2024-05-19 20:09:05] INFO root fetch - processPackages [tasos-apiauth]: Remove: archive file [/home/abi/fetcher/tmp/tasos_apiauth-0.1.1.tar.gz]
+[2024-05-19 20:09:05] INFO root fetch - processPackages [tasos-apiauth]: Remove: archive file [/home/abi/fetcher/tmp/tasos_apiauth-0.1.2.tar.gz]
+[2024-05-19 20:09:05] INFO root fetch - main [MainThread]: End processing [tasos-apiauth]: success
+[2024-05-19 20:09:05] INFO root fetch - processPackages [pyphy2D]: Remove: archive file [/home/abi/fetcher/tmp/pyphy2D-1.0.tar.gz]
+[2024-05-19 20:09:05] INFO root fetch - processPackages [pyphy2D]: Remove: archive file [/home/abi/fetcher/tmp/pyphy2D-2.tar.gz]
+[2024-05-19 20:09:05] INFO root fetch - main [MainThread]: End processing [pyphy2D]: success
+[2024-05-19 20:09:05] INFO root fetch - main [MainThread]: Store serial: [23279128]
