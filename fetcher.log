@@ -17584,3 +17584,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 21:39:45] INFO root fetch - processPackages [nadeo-api]: Remove: archive file [/home/abi/fetcher/tmp/nadeo_api-0.3.3.tar.gz]
 [2024-05-19 21:39:45] INFO root fetch - main [MainThread]: End processing [nadeo-api]: success
 [2024-05-19 21:39:45] INFO root fetch - main [MainThread]: Store serial: [23279774]
+[2024-05-19 21:41:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279774]
+[2024-05-19 21:41:53] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 21:41:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: objectbox
+[2024-05-19 21:41:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: eras
+[2024-05-19 21:41:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: croquignolez
+[2024-05-19 21:41:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyodide-mkdocs-theme-sqlite
+[2024-05-19 21:41:54] INFO root fetch - processPackages [eras]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-19 21:41:54] WARNING root fetch - processPackages [pyodide-mkdocs-theme-sqlite]: Skipping, unable to determine old version
+[2024-05-19 21:41:54] INFO root fetch - main [MainThread]: End processing [pyodide-mkdocs-theme-sqlite] error
+[2024-05-19 21:41:54] INFO root fetch - processPackages [objectbox]: New version: [4.0.0a1] Old Version: [4.0.0a0]
+[2024-05-19 21:41:54] WARNING root fetch - processPackages [croquignolez]: Skipping, unable to determine old version
+[2024-05-19 21:41:54] INFO root fetch - main [MainThread]: End processing [croquignolez] error
+[2024-05-19 21:41:54] INFO root fetch - processPackages [eras]: Downloading https://files.pythonhosted.org/packages/94/ad/a20dc7b682dc1f1c7101974f7944220cb6b65e503bfd96609470f0faf86b/eras-0.1.0.tar.gz
+[2024-05-19 21:41:54] INFO root fetch - processPackages [objectbox]: Downloading https://files.pythonhosted.org/packages/75/b5/3ea6b3659028fd10423252b6b4758c23d500b223c8e4f33815ce258bb329/objectbox-4.0.0a0-py3-none-any.whl
+[2024-05-19 21:41:54] INFO root fetch - processPackages [eras]: Downloading https://files.pythonhosted.org/packages/81/d6/eb51dfab1e905b605d7c5a64c5798f16eb1acd223da60876cea0bc07fa14/eras-0.1.1.tar.gz
+[2024-05-19 21:41:54] INFO root fetch - processPackages [eras]: executing diffoscope
+[2024-05-19 21:41:54] INFO root fetch - processPackages [eras]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eras-0.1.0.tar.gz tmp/eras-0.1.1.tar.gz --markdown 20240519/e/eras/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-19 21:41:54] INFO root fetch - processPackages [objectbox]: Downloading https://files.pythonhosted.org/packages/db/e7/ebaa5afdce8e094cecbdba3ef36092b53e081bb6a1853841c94646c0e7cd/objectbox-4.0.0a1-py3-none-any.whl
+[2024-05-19 21:41:55] INFO root fetch - processPackages [eras]: Remove: archive file [/home/abi/fetcher/tmp/eras-0.1.0.tar.gz]
+[2024-05-19 21:41:55] INFO root fetch - processPackages [eras]: Remove: archive file [/home/abi/fetcher/tmp/eras-0.1.1.tar.gz]
+[2024-05-19 21:41:55] INFO root fetch - main [MainThread]: End processing [eras]: success
+[2024-05-19 21:41:55] INFO root fetch - processPackages [objectbox]: executing diffoscope
+[2024-05-19 21:41:55] INFO root fetch - processPackages [objectbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/objectbox-4.0.0a0-py3-none-any.whl.zip tmp/objectbox-4.0.0a1-py3-none-any.whl.zip --markdown 20240519/o/objectbox/4.0.0a0-4.0.0a1/README.md --exclude *.pyd
+[2024-05-19 21:42:38] INFO root fetch - processPackages [objectbox]: Remove: archive file [/home/abi/fetcher/tmp/objectbox-4.0.0a0-py3-none-any.whl.zip]
+[2024-05-19 21:42:38] INFO root fetch - processPackages [objectbox]: Remove: archive file [/home/abi/fetcher/tmp/objectbox-4.0.0a1-py3-none-any.whl.zip]
+[2024-05-19 21:42:38] INFO root fetch - main [MainThread]: End processing [objectbox]: success
+[2024-05-19 21:42:38] INFO root fetch - main [MainThread]: Store serial: [23279786]
