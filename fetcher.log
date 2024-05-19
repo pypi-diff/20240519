@@ -12946,3 +12946,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 17:09:02] INFO root fetch - processPackages [p-template-generator]: Remove: archive file [/home/abi/fetcher/tmp/p-template-generator-0.1.99.tar.gz]
 [2024-05-19 17:09:02] INFO root fetch - main [MainThread]: End processing [p-template-generator]: success
 [2024-05-19 17:09:02] INFO root fetch - main [MainThread]: Store serial: [23277540]
+[2024-05-19 17:11:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277540]
+[2024-05-19 17:11:11] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 17:11:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: savelhaz
+[2024-05-19 17:11:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cortexannotate
+[2024-05-19 17:11:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: agenta
+[2024-05-19 17:11:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sourmash-plugin-betterplot
+[2024-05-19 17:11:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fleekapi
+[2024-05-19 17:11:11] INFO root fetch - processPackages [cortexannotate]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-19 17:11:11] INFO root fetch - processPackages [sourmash-plugin-betterplot]: New version: [0.2.1] Old Version: [0.2]
+[2024-05-19 17:11:11] INFO root fetch - processPackages [fleekapi]: New version: [0.1.24] Old Version: [0.1.23]
+[2024-05-19 17:11:11] INFO root fetch - processPackages [cortexannotate]: Downloading https://files.pythonhosted.org/packages/d3/e2/3652e0308d9522ae3cc9c32f6dee9f44f816501df99a7f76b6cfd52c1e6c/cortexannotate-0.1.2.tar.gz
+[2024-05-19 17:11:11] INFO root fetch - processPackages [fleekapi]: Downloading https://files.pythonhosted.org/packages/43/b6/543ae0a398b2f1be25e71fa68bfbb51500debc8c8482f623cbbcbc861da7/fleekapi-0.1.23.tar.gz
+[2024-05-19 17:11:11] WARNING root fetch - processPackages [savelhaz]: Skipping, unable to determine old version
+[2024-05-19 17:11:11] INFO root fetch - main [MainThread]: End processing [savelhaz] error
+[2024-05-19 17:11:11] INFO root fetch - processPackages [sourmash-plugin-betterplot]: Downloading https://files.pythonhosted.org/packages/27/24/85d90af8247ccf9c835d2bd9a17263b8c6201eb80a056a52803ef34c4c66/sourmash_plugin_betterplot-0.2.tar.gz
+[2024-05-19 17:11:11] INFO root fetch - processPackages [agenta]: New version: [0.9.0] Old Version: [0.8.4]
+[2024-05-19 17:11:11] INFO root fetch - processPackages [agenta]: Downloading https://files.pythonhosted.org/packages/e1/b3/694bb4fe67f0b63ef67836f5924bdc436dfb590d7e7da0824cbbc4b71853/agenta-0.8.4.tar.gz
+[2024-05-19 17:11:11] INFO root fetch - processPackages [sourmash-plugin-betterplot]: Downloading https://files.pythonhosted.org/packages/ae/26/8ba336cb5b64bed1d05278a60157cdfccd176715958b01f7be7709371d19/sourmash_plugin_betterplot-0.2.1.tar.gz
+[2024-05-19 17:11:11] INFO root fetch - processPackages [cortexannotate]: Downloading https://files.pythonhosted.org/packages/77/ab/40af82506f765b618c4488761efb68786014c64e23504d8e1c85d1e74f9f/cortexannotate-0.1.3.tar.gz
+[2024-05-19 17:11:11] INFO root fetch - processPackages [fleekapi]: Downloading https://files.pythonhosted.org/packages/2b/73/5ee50f9d94505122bf5942ee7fa020c15dda2ab8cf9dca9d7b2e782f5a5a/fleekapi-0.1.24.tar.gz
+[2024-05-19 17:11:12] INFO root fetch - processPackages [sourmash-plugin-betterplot]: executing diffoscope
+[2024-05-19 17:11:12] INFO root fetch - processPackages [sourmash-plugin-betterplot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sourmash_plugin_betterplot-0.2.tar.gz tmp/sourmash_plugin_betterplot-0.2.1.tar.gz --markdown 20240519/s/sourmash-plugin-betterplot/0.2-0.2.1/README.md --exclude *.pyd
+[2024-05-19 17:11:12] INFO root fetch - processPackages [cortexannotate]: executing diffoscope
+[2024-05-19 17:11:12] INFO root fetch - processPackages [cortexannotate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cortexannotate-0.1.2.tar.gz tmp/cortexannotate-0.1.3.tar.gz --markdown 20240519/c/cortexannotate/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-19 17:11:12] INFO root fetch - processPackages [fleekapi]: executing diffoscope
+[2024-05-19 17:11:12] INFO root fetch - processPackages [fleekapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fleekapi-0.1.23.tar.gz tmp/fleekapi-0.1.24.tar.gz --markdown 20240519/f/fleekapi/0.1.23-0.1.24/README.md --exclude *.pyd
+[2024-05-19 17:11:12] INFO root fetch - processPackages [agenta]: Downloading https://files.pythonhosted.org/packages/f7/a1/73689fd1faf7fbbd3985f8ed9673e4784bae27b1789d6fe5f7e4f001ed89/agenta-0.9.0.tar.gz
+[2024-05-19 17:11:12] INFO root fetch - processPackages [agenta]: executing diffoscope
+[2024-05-19 17:11:12] INFO root fetch - processPackages [agenta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agenta-0.8.4.tar.gz tmp/agenta-0.9.0.tar.gz --markdown 20240519/a/agenta/0.8.4-0.9.0/README.md --exclude *.pyd
+[2024-05-19 17:11:12] INFO root fetch - processPackages [sourmash-plugin-betterplot]: Remove: archive file [/home/abi/fetcher/tmp/sourmash_plugin_betterplot-0.2.tar.gz]
+[2024-05-19 17:11:12] INFO root fetch - processPackages [sourmash-plugin-betterplot]: Remove: archive file [/home/abi/fetcher/tmp/sourmash_plugin_betterplot-0.2.1.tar.gz]
+[2024-05-19 17:11:12] INFO root fetch - main [MainThread]: End processing [sourmash-plugin-betterplot]: success
+[2024-05-19 17:11:12] INFO root fetch - processPackages [cortexannotate]: Remove: archive file [/home/abi/fetcher/tmp/cortexannotate-0.1.2.tar.gz]
+[2024-05-19 17:11:12] INFO root fetch - processPackages [cortexannotate]: Remove: archive file [/home/abi/fetcher/tmp/cortexannotate-0.1.3.tar.gz]
+[2024-05-19 17:11:12] INFO root fetch - main [MainThread]: End processing [cortexannotate]: success
+[2024-05-19 17:11:12] INFO root fetch - processPackages [fleekapi]: Remove: archive file [/home/abi/fetcher/tmp/fleekapi-0.1.23.tar.gz]
+[2024-05-19 17:11:12] INFO root fetch - processPackages [fleekapi]: Remove: archive file [/home/abi/fetcher/tmp/fleekapi-0.1.24.tar.gz]
+[2024-05-19 17:11:12] INFO root fetch - main [MainThread]: End processing [fleekapi]: success
+[2024-05-19 17:11:12] INFO root fetch - processPackages [agenta]: Remove: archive file [/home/abi/fetcher/tmp/agenta-0.8.4.tar.gz]
+[2024-05-19 17:11:12] INFO root fetch - processPackages [agenta]: Remove: archive file [/home/abi/fetcher/tmp/agenta-0.9.0.tar.gz]
+[2024-05-19 17:11:12] INFO root fetch - main [MainThread]: End processing [agenta]: success
+[2024-05-19 17:11:12] INFO root fetch - main [MainThread]: Store serial: [23277556]
