@@ -18751,3 +18751,81 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 22:34:52] INFO root fetch - processPackages [windmill-api]: Remove: archive file [/home/abi/fetcher/tmp/windmill_api-1.99.0.tar.gz]
 [2024-05-19 22:34:52] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
 [2024-05-19 22:34:52] INFO root fetch - main [MainThread]: Store serial: [23280292]
+[2024-05-19 22:36:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23280292]
+[2024-05-19 22:37:01] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-19 22:37:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wmill-pg
+[2024-05-19 22:37:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-content-settings
+[2024-05-19 22:37:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: radprompter
+[2024-05-19 22:37:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: eras
+[2024-05-19 22:37:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: max-random-baseline
+[2024-05-19 22:37:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tencentcloud-sdk-python-cdn
+[2024-05-19 22:37:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ebdomadez
+[2024-05-19 22:37:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: blackboxai
+[2024-05-19 22:37:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: Simba-UW-tf-dev
+[2024-05-19 22:37:01] INFO root fetch - processPackages [eras]: New version: [0.1.8] Old Version: [0.1.6]
+[2024-05-19 22:37:01] INFO root fetch - processPackages [django-content-settings]: New version: [0.9] Old Version: [0.8.1]
+[2024-05-19 22:37:01] INFO root fetch - processPackages [eras]: Downloading https://files.pythonhosted.org/packages/b4/e6/0ba3bab892704e057ae96d597b795b292207ecd05c32ff7d80d5b2a8eaa1/eras-0.1.6.tar.gz
+[2024-05-19 22:37:01] INFO root fetch - processPackages [blackboxai]: New version: [2.8] Old Version: [2.7]
+[2024-05-19 22:37:01] INFO root fetch - processPackages [radprompter]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-19 22:37:01] INFO root fetch - processPackages [max-random-baseline]: New version: [0.1.1] Old Version: [0.0.1]
+[2024-05-19 22:37:01] WARNING root fetch - processPackages [ebdomadez]: Skipping, unable to determine old version
+[2024-05-19 22:37:01] INFO root fetch - main [MainThread]: End processing [ebdomadez] error
+[2024-05-19 22:37:01] INFO root fetch - processPackages [wmill-pg]: New version: [1.99.0] Old Version: [1.98.0]
+[2024-05-19 22:37:01] INFO root fetch - processPackages [Simba-UW-tf-dev]: New version: [1.93.3] Old Version: [1.93.2]
+[2024-05-19 22:37:01] INFO root fetch - processPackages [tencentcloud-sdk-python-cdn]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-19 22:37:01] INFO root fetch - processPackages [django-content-settings]: Downloading https://files.pythonhosted.org/packages/3e/24/9dc22934c44498b45866212cb739cbfd694698fcafb26b7e23a78b953b0d/django_content_settings-0.8.1.tar.gz
+[2024-05-19 22:37:02] INFO root fetch - processPackages [radprompter]: Downloading https://files.pythonhosted.org/packages/ee/02/bc2a47060cc960df5d5b76a5dd723e989e5afcf9670b0b8d87c22bba504c/radprompter-1.0.8.tar.gz
+[2024-05-19 22:37:02] INFO root fetch - processPackages [blackboxai]: Downloading https://files.pythonhosted.org/packages/ef/d2/829da1c64a8e3d554f466ab93536a177925d53761b3f4aab684091daafc9/blackboxai-2.7.tar.gz
+[2024-05-19 22:37:02] INFO root fetch - processPackages [max-random-baseline]: Downloading https://files.pythonhosted.org/packages/73/92/f474940be99bf10491b7658fbedbbb386ea6f0418b8f11d146cd7222bd9d/max_random_baseline-0.0.1-py3-none-any.whl
+[2024-05-19 22:37:02] INFO root fetch - processPackages [Simba-UW-tf-dev]: Downloading https://files.pythonhosted.org/packages/b0/8d/42794dd1d1c8cb49a6617f90f55ed9f168759b01ae6e7f060afa7fbe6afa/Simba-UW-tf-dev-1.93.2.tar.gz
+[2024-05-19 22:37:02] INFO root fetch - processPackages [wmill-pg]: Downloading https://files.pythonhosted.org/packages/a1/22/f7655b5ea090afc59651b874c61bf7bea4694e3fa9720a46058fa34c71ef/wmill_pg-1.98.0.tar.gz
+[2024-05-19 22:37:02] INFO root fetch - processPackages [eras]: Downloading https://files.pythonhosted.org/packages/83/0b/72b8084f3ff693e1ad40e9f6ecf743d11dc891f79fdc2e39637b2d5877d0/eras-0.1.8.tar.gz
+[2024-05-19 22:37:02] INFO root fetch - processPackages [tencentcloud-sdk-python-cdn]: Downloading https://files.pythonhosted.org/packages/05/bb/c085b387a7bf05d00a4c04d43ae92386963a53d0a032a12326ea4b1c83f0/tencentcloud-sdk-python-cdn-3.0.998.tar.gz
+[2024-05-19 22:37:02] INFO root fetch - processPackages [eras]: executing diffoscope
+[2024-05-19 22:37:02] INFO root fetch - processPackages [eras]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eras-0.1.6.tar.gz tmp/eras-0.1.8.tar.gz --markdown 20240519/e/eras/0.1.6-0.1.8/README.md --exclude *.pyd
+[2024-05-19 22:37:02] INFO root fetch - processPackages [django-content-settings]: Downloading https://files.pythonhosted.org/packages/86/99/5f98be20c1f0470e356d9b7b80a6ac01edc4c671f17dfae9fe9b3334af65/django_content_settings-0.9.tar.gz
+[2024-05-19 22:37:02] INFO root fetch - processPackages [radprompter]: Downloading https://files.pythonhosted.org/packages/7c/19/bc3bff7114214df272ba92520e92eec907aecdc48324f2719b736ae9f0f0/radprompter-1.0.9.tar.gz
+[2024-05-19 22:37:02] INFO root fetch - processPackages [blackboxai]: Downloading https://files.pythonhosted.org/packages/2b/da/79ef037610bd47204a5b90904196793d6490bd46ffa5edbb80d349b9a2ae/blackboxai-2.8.tar.gz
+[2024-05-19 22:37:02] INFO root fetch - processPackages [max-random-baseline]: Downloading https://files.pythonhosted.org/packages/bb/d0/62d8d610a1d7092e47d0c66208cd58c65fac1c336312351610d3a03997d4/max_random_baseline-0.1.1.tar.gz
+[2024-05-19 22:37:02] INFO root fetch - processPackages [tencentcloud-sdk-python-cdn]: Downloading https://files.pythonhosted.org/packages/0d/33/3f63a398f2005d7c327bd2476b5d3aa0c302553060769659d4ad70d50ea6/tencentcloud-sdk-python-cdn-3.0.999.tar.gz
+[2024-05-19 22:37:02] INFO root fetch - processPackages [django-content-settings]: executing diffoscope
+[2024-05-19 22:37:02] INFO root fetch - processPackages [django-content-settings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_content_settings-0.8.1.tar.gz tmp/django_content_settings-0.9.tar.gz --markdown 20240519/d/django-content-settings/0.8.1-0.9/README.md --exclude *.pyd
+[2024-05-19 22:37:02] INFO root fetch - processPackages [max-random-baseline]: executing diffoscope
+[2024-05-19 22:37:02] INFO root fetch - processPackages [max-random-baseline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/max_random_baseline-0.0.1-py3-none-any.whl.zip tmp/max_random_baseline-0.1.1.tar.gz --markdown 20240519/m/max-random-baseline/0.0.1-0.1.1/README.md --exclude *.pyd
+[2024-05-19 22:37:02] INFO root fetch - processPackages [radprompter]: executing diffoscope
+[2024-05-19 22:37:02] INFO root fetch - processPackages [radprompter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/radprompter-1.0.8.tar.gz tmp/radprompter-1.0.9.tar.gz --markdown 20240519/r/radprompter/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-19 22:37:02] INFO root fetch - processPackages [wmill-pg]: Downloading https://files.pythonhosted.org/packages/26/ac/296bc5f7193d111c826ef99b60bf75fe1605158a73d728a5fad8aa771331/wmill_pg-1.99.0.tar.gz
+[2024-05-19 22:37:02] INFO root fetch - processPackages [blackboxai]: executing diffoscope
+[2024-05-19 22:37:02] INFO root fetch - processPackages [blackboxai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blackboxai-2.7.tar.gz tmp/blackboxai-2.8.tar.gz --markdown 20240519/b/blackboxai/2.7-2.8/README.md --exclude *.pyd
+[2024-05-19 22:37:02] INFO root fetch - processPackages [tencentcloud-sdk-python-cdn]: executing diffoscope
+[2024-05-19 22:37:02] INFO root fetch - processPackages [tencentcloud-sdk-python-cdn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-cdn-3.0.998.tar.gz tmp/tencentcloud-sdk-python-cdn-3.0.999.tar.gz --markdown 20240519/t/tencentcloud-sdk-python-cdn/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-19 22:37:02] INFO root fetch - processPackages [Simba-UW-tf-dev]: Downloading https://files.pythonhosted.org/packages/34/96/07f18bb5182d42ce4df022cc23c7a2f3deacfb04b63a7e1337e180d493f6/Simba-UW-tf-dev-1.93.3.tar.gz
+[2024-05-19 22:37:02] INFO root fetch - processPackages [wmill-pg]: executing diffoscope
+[2024-05-19 22:37:02] INFO root fetch - processPackages [wmill-pg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wmill_pg-1.98.0.tar.gz tmp/wmill_pg-1.99.0.tar.gz --markdown 20240519/w/wmill-pg/1.98.0-1.99.0/README.md --exclude *.pyd
+[2024-05-19 22:37:02] INFO root fetch - processPackages [eras]: Remove: archive file [/home/abi/fetcher/tmp/eras-0.1.6.tar.gz]
+[2024-05-19 22:37:02] INFO root fetch - processPackages [eras]: Remove: archive file [/home/abi/fetcher/tmp/eras-0.1.8.tar.gz]
+[2024-05-19 22:37:02] INFO root fetch - main [MainThread]: End processing [eras]: success
+[2024-05-19 22:37:03] INFO root fetch - processPackages [max-random-baseline]: Remove: archive file [/home/abi/fetcher/tmp/max_random_baseline-0.0.1-py3-none-any.whl.zip]
+[2024-05-19 22:37:03] INFO root fetch - processPackages [max-random-baseline]: Remove: archive file [/home/abi/fetcher/tmp/max_random_baseline-0.1.1.tar.gz]
+[2024-05-19 22:37:03] INFO root fetch - main [MainThread]: End processing [max-random-baseline]: success
+[2024-05-19 22:37:03] INFO root fetch - processPackages [django-content-settings]: Remove: archive file [/home/abi/fetcher/tmp/django_content_settings-0.8.1.tar.gz]
+[2024-05-19 22:37:03] INFO root fetch - processPackages [django-content-settings]: Remove: archive file [/home/abi/fetcher/tmp/django_content_settings-0.9.tar.gz]
+[2024-05-19 22:37:03] INFO root fetch - main [MainThread]: End processing [django-content-settings]: success
+[2024-05-19 22:37:03] INFO root fetch - processPackages [wmill-pg]: Remove: archive file [/home/abi/fetcher/tmp/wmill_pg-1.98.0.tar.gz]
+[2024-05-19 22:37:03] INFO root fetch - processPackages [wmill-pg]: Remove: archive file [/home/abi/fetcher/tmp/wmill_pg-1.99.0.tar.gz]
+[2024-05-19 22:37:03] INFO root fetch - main [MainThread]: End processing [wmill-pg]: success
+[2024-05-19 22:37:03] INFO root fetch - processPackages [tencentcloud-sdk-python-cdn]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-cdn-3.0.998.tar.gz]
+[2024-05-19 22:37:03] INFO root fetch - processPackages [tencentcloud-sdk-python-cdn]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-cdn-3.0.999.tar.gz]
+[2024-05-19 22:37:03] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-cdn]: success
+[2024-05-19 22:37:03] INFO root fetch - processPackages [radprompter]: Remove: archive file [/home/abi/fetcher/tmp/radprompter-1.0.8.tar.gz]
+[2024-05-19 22:37:03] INFO root fetch - processPackages [radprompter]: Remove: archive file [/home/abi/fetcher/tmp/radprompter-1.0.9.tar.gz]
+[2024-05-19 22:37:03] INFO root fetch - main [MainThread]: End processing [radprompter]: success
+[2024-05-19 22:37:03] INFO root fetch - processPackages [Simba-UW-tf-dev]: executing diffoscope
+[2024-05-19 22:37:03] INFO root fetch - processPackages [Simba-UW-tf-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Simba-UW-tf-dev-1.93.2.tar.gz tmp/Simba-UW-tf-dev-1.93.3.tar.gz --markdown 20240519/S/Simba-UW-tf-dev/1.93.2-1.93.3/README.md --exclude *.pyd
+[2024-05-19 22:37:03] INFO root fetch - processPackages [blackboxai]: Remove: archive file [/home/abi/fetcher/tmp/blackboxai-2.7.tar.gz]
+[2024-05-19 22:37:03] INFO root fetch - processPackages [blackboxai]: Remove: archive file [/home/abi/fetcher/tmp/blackboxai-2.8.tar.gz]
+[2024-05-19 22:37:03] INFO root fetch - main [MainThread]: End processing [blackboxai]: success
+[2024-05-19 22:37:06] INFO root fetch - processPackages [Simba-UW-tf-dev]: Remove: archive file [/home/abi/fetcher/tmp/Simba-UW-tf-dev-1.93.2.tar.gz]
+[2024-05-19 22:37:06] INFO root fetch - processPackages [Simba-UW-tf-dev]: Remove: archive file [/home/abi/fetcher/tmp/Simba-UW-tf-dev-1.93.3.tar.gz]
+[2024-05-19 22:37:06] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
+[2024-05-19 22:37:06] INFO root fetch - main [MainThread]: Store serial: [23280320]
