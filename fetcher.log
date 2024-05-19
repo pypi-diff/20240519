@@ -3682,3 +3682,33 @@
 [2024-05-19 06:00:43] INFO root fetch - processPackages [cstructs]: Remove: archive file [/home/abi/fetcher/tmp/cstructs-0.2.5.tar.gz]
 [2024-05-19 06:00:43] INFO root fetch - main [MainThread]: End processing [cstructs]: success
 [2024-05-19 06:00:43] INFO root fetch - main [MainThread]: Store serial: [23273156]
+[2024-05-19 06:02:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273156]
+[2024-05-19 06:02:52] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 06:02:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tree-sitter-php
+[2024-05-19 06:02:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: HyperCoast
+[2024-05-19 06:02:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: g4f
+[2024-05-19 06:02:52] INFO root fetch - processPackages [g4f]: New version: [0.3.1.5] Old Version: [0.3.1.4]
+[2024-05-19 06:02:52] INFO root fetch - processPackages [tree-sitter-php]: New version: [0.22.5] Old Version: [0.22.4]
+[2024-05-19 06:02:52] INFO root fetch - processPackages [HyperCoast]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-05-19 06:02:52] INFO root fetch - processPackages [g4f]: Downloading https://files.pythonhosted.org/packages/4a/7a/7d9c4ba4c9635ec96e9bb8e470ebf1c9561356e5cc9c409e239b076cecdc/g4f-0.3.1.4.tar.gz
+[2024-05-19 06:02:53] INFO root fetch - processPackages [HyperCoast]: Downloading https://files.pythonhosted.org/packages/f9/a0/ddc6e5e0170136c6c457fb647c6a107c81cafdd7626509d3e434751e3706/hypercoast-0.3.2.tar.gz
+[2024-05-19 06:02:53] INFO root fetch - processPackages [tree-sitter-php]: Downloading https://files.pythonhosted.org/packages/0b/41/a72ef879068f1b1f4129702fc469ebf4d10008b3b604d99f3d40f46954fe/tree-sitter-php-0.22.4.tar.gz
+[2024-05-19 06:02:53] INFO root fetch - processPackages [g4f]: Downloading https://files.pythonhosted.org/packages/be/81/229d9cf5e2e6ffcba925d8d07a972d06bf6bb72455da1da24ce2d3c9a18b/g4f-0.3.1.5.tar.gz
+[2024-05-19 06:02:53] INFO root fetch - processPackages [HyperCoast]: Downloading https://files.pythonhosted.org/packages/78/e2/de8d9108d92909b82ac609d42f25c8b765ac8fe96e40790ea33fa0d368f1/hypercoast-0.3.3.tar.gz
+[2024-05-19 06:02:53] INFO root fetch - processPackages [tree-sitter-php]: Downloading https://files.pythonhosted.org/packages/8d/fa/3581c40c82bb090b3a453e9caa7745901ea77706b4a229bd72e593846c65/tree-sitter-php-0.22.5.tar.gz
+[2024-05-19 06:02:53] INFO root fetch - processPackages [g4f]: executing diffoscope
+[2024-05-19 06:02:53] INFO root fetch - processPackages [g4f]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g4f-0.3.1.4.tar.gz tmp/g4f-0.3.1.5.tar.gz --markdown 20240519/g/g4f/0.3.1.4-0.3.1.5/README.md --exclude *.pyd
+[2024-05-19 06:02:53] INFO root fetch - processPackages [HyperCoast]: executing diffoscope
+[2024-05-19 06:02:53] INFO root fetch - processPackages [HyperCoast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hypercoast-0.3.2.tar.gz tmp/hypercoast-0.3.3.tar.gz --markdown 20240519/H/HyperCoast/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-05-19 06:02:53] INFO root fetch - processPackages [tree-sitter-php]: executing diffoscope
+[2024-05-19 06:02:53] INFO root fetch - processPackages [tree-sitter-php]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tree-sitter-php-0.22.4.tar.gz tmp/tree-sitter-php-0.22.5.tar.gz --markdown 20240519/t/tree-sitter-php/0.22.4-0.22.5/README.md --exclude *.pyd
+[2024-05-19 06:02:54] INFO root fetch - processPackages [HyperCoast]: Remove: archive file [/home/abi/fetcher/tmp/hypercoast-0.3.2.tar.gz]
+[2024-05-19 06:02:54] INFO root fetch - processPackages [HyperCoast]: Remove: archive file [/home/abi/fetcher/tmp/hypercoast-0.3.3.tar.gz]
+[2024-05-19 06:02:54] INFO root fetch - main [MainThread]: End processing [HyperCoast]: success
+[2024-05-19 06:02:55] INFO root fetch - processPackages [g4f]: Remove: archive file [/home/abi/fetcher/tmp/g4f-0.3.1.4.tar.gz]
+[2024-05-19 06:02:55] INFO root fetch - processPackages [g4f]: Remove: archive file [/home/abi/fetcher/tmp/g4f-0.3.1.5.tar.gz]
+[2024-05-19 06:02:55] INFO root fetch - main [MainThread]: End processing [g4f]: success
+[2024-05-19 06:02:58] INFO root fetch - processPackages [tree-sitter-php]: Remove: archive file [/home/abi/fetcher/tmp/tree-sitter-php-0.22.4.tar.gz]
+[2024-05-19 06:02:58] INFO root fetch - processPackages [tree-sitter-php]: Remove: archive file [/home/abi/fetcher/tmp/tree-sitter-php-0.22.5.tar.gz]
+[2024-05-19 06:02:58] INFO root fetch - main [MainThread]: End processing [tree-sitter-php]: success
+[2024-05-19 06:02:58] INFO root fetch - main [MainThread]: Store serial: [23273171]
