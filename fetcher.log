@@ -5189,3 +5189,34 @@
 [2024-05-19 08:24:49] INFO root fetch - processPackages [bosesoundtouchapi]: Remove: archive file [/home/abi/fetcher/tmp/bosesoundtouchapi-1.0.9-py3-none-any.whl.zip]
 [2024-05-19 08:24:49] INFO root fetch - main [MainThread]: End processing [bosesoundtouchapi]: success
 [2024-05-19 08:24:49] INFO root fetch - main [MainThread]: Store serial: [23273803]
+[2024-05-19 08:26:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273803]
+[2024-05-19 08:26:57] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 08:26:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: infinity-emb
+[2024-05-19 08:26:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: disencharmz
+[2024-05-19 08:26:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: func2stream
+[2024-05-19 08:26:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: func2stream
+[2024-05-19 08:26:58] INFO root fetch - processPackages [func2stream]: New version: [0.0.1.dev240519060655] Old Version: [0.0.1]
+[2024-05-19 08:26:58] INFO root fetch - processPackages [func2stream]: New version: [0.0.1.dev240519060655] Old Version: [0.0.1]
+[2024-05-19 08:26:58] INFO root fetch - processPackages [func2stream]: Downloading https://files.pythonhosted.org/packages/02/91/901cfe4a61c191e6a2cf0ffc1d36deb4b253c8e8beec8f2023bc46328a66/func2stream-0.0.1.tar.gz
+[2024-05-19 08:26:58] INFO root fetch - processPackages [func2stream]: Downloading https://files.pythonhosted.org/packages/02/91/901cfe4a61c191e6a2cf0ffc1d36deb4b253c8e8beec8f2023bc46328a66/func2stream-0.0.1.tar.gz
+[2024-05-19 08:26:58] INFO root fetch - processPackages [infinity-emb]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 08:26:58] WARNING root fetch - processPackages [disencharmz]: Skipping, unable to determine old version
+[2024-05-19 08:26:58] INFO root fetch - main [MainThread]: End processing [disencharmz] error
+[2024-05-19 08:26:58] INFO root fetch - processPackages [func2stream]: Downloading https://files.pythonhosted.org/packages/91/85/aed22fcd31d04bbd38159338638cddf9e7252e0df77bcf2430963f1d2af9/func2stream-0.0.1.dev240519060655-py3-none-any.whl
+[2024-05-19 08:26:58] INFO root fetch - processPackages [func2stream]: Downloading https://files.pythonhosted.org/packages/91/85/aed22fcd31d04bbd38159338638cddf9e7252e0df77bcf2430963f1d2af9/func2stream-0.0.1.dev240519060655-py3-none-any.whl
+[2024-05-19 08:26:58] INFO root fetch - processPackages [infinity-emb]: Downloading https://files.pythonhosted.org/packages/e1/02/a5c42113e6ded77952b74edc5311849e0d39a29bdbbba080baf5b702a314/infinity_emb-0.0.8.tar.gz
+[2024-05-19 08:26:58] INFO root fetch - processPackages [func2stream]: executing diffoscope
+[2024-05-19 08:26:58] INFO root fetch - processPackages [func2stream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/func2stream-0.0.1.tar.gz tmp/func2stream-0.0.1.dev240519060655-py3-none-any.whl.zip --markdown 20240519/f/func2stream/0.0.1-0.0.1.dev240519060655/README.md --exclude *.pyd
+[2024-05-19 08:26:58] INFO root fetch - processPackages [func2stream]: executing diffoscope
+[2024-05-19 08:26:58] INFO root fetch - processPackages [func2stream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/func2stream-0.0.1.tar.gz tmp/func2stream-0.0.1.dev240519060655-py3-none-any.whl.zip --markdown 20240519/f/func2stream/0.0.1-0.0.1.dev240519060655/README.md --exclude *.pyd
+[2024-05-19 08:26:58] INFO root fetch - processPackages [infinity-emb]: Downloading https://files.pythonhosted.org/packages/fc/88/92d6920e7e15b0996da9f4ab00528c428f10df26f8a0a4d5d3a5abe1180a/infinity_emb-0.0.9.tar.gz
+[2024-05-19 08:26:58] INFO root fetch - processPackages [infinity-emb]: executing diffoscope
+[2024-05-19 08:26:58] INFO root fetch - processPackages [infinity-emb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/infinity_emb-0.0.8.tar.gz tmp/infinity_emb-0.0.9.tar.gz --markdown 20240519/i/infinity-emb/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 08:26:58] INFO root fetch - processPackages [func2stream]: Remove: archive file [/home/abi/fetcher/tmp/func2stream-0.0.1.tar.gz]
+[2024-05-19 08:26:58] INFO root fetch - processPackages [func2stream]: Remove: archive file [/home/abi/fetcher/tmp/func2stream-0.0.1.dev240519060655-py3-none-any.whl.zip]
+[2024-05-19 08:26:58] INFO root fetch - main [MainThread]: End processing [func2stream]: success
+[2024-05-19 08:26:58] INFO root fetch - main [MainThread]: End processing [func2stream]: success
+[2024-05-19 08:26:59] INFO root fetch - processPackages [infinity-emb]: Remove: archive file [/home/abi/fetcher/tmp/infinity_emb-0.0.8.tar.gz]
+[2024-05-19 08:26:59] INFO root fetch - processPackages [infinity-emb]: Remove: archive file [/home/abi/fetcher/tmp/infinity_emb-0.0.9.tar.gz]
+[2024-05-19 08:26:59] INFO root fetch - main [MainThread]: End processing [infinity-emb]: success
+[2024-05-19 08:26:59] INFO root fetch - main [MainThread]: Store serial: [23273814]
