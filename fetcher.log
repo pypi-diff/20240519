@@ -16261,3 +16261,75 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 20:09:05] INFO root fetch - processPackages [pyphy2D]: Remove: archive file [/home/abi/fetcher/tmp/pyphy2D-2.tar.gz]
 [2024-05-19 20:09:05] INFO root fetch - main [MainThread]: End processing [pyphy2D]: success
 [2024-05-19 20:09:05] INFO root fetch - main [MainThread]: Store serial: [23279128]
+[2024-05-19 20:11:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279128]
+[2024-05-19 20:11:14] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-19 20:11:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: communex
+[2024-05-19 20:11:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: job-local
+[2024-05-19 20:11:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: local-broadcast
+[2024-05-19 20:11:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sarcharts
+[2024-05-19 20:11:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: radprompter
+[2024-05-19 20:11:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: MobileInventoryCLI
+[2024-05-19 20:11:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: python-gpapi2
+[2024-05-19 20:11:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: assetbot
+[2024-05-19 20:11:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pydiscovergy
+[2024-05-19 20:11:14] INFO root fetch - processPackages [radprompter]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-05-19 20:11:14] INFO root fetch - processPackages [sarcharts]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-05-19 20:11:14] INFO root fetch - processPackages [communex]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-19 20:11:14] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.99] Old Version: [0.4.98]
+[2024-05-19 20:11:14] WARNING root fetch - processPackages [assetbot]: Skipping, unable to determine old version
+[2024-05-19 20:11:14] INFO root fetch - main [MainThread]: End processing [assetbot] error
+[2024-05-19 20:11:14] INFO root fetch - processPackages [local-broadcast]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-19 20:11:14] INFO root fetch - processPackages [python-gpapi2]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-19 20:11:14] WARNING root fetch - processPackages [job-local]: Skipping, unable to determine old version
+[2024-05-19 20:11:14] INFO root fetch - main [MainThread]: End processing [job-local] error
+[2024-05-19 20:11:14] INFO root fetch - processPackages [pydiscovergy]: New version: [3.0.1] Old Version: [3.0.0]
+[2024-05-19 20:11:14] INFO root fetch - processPackages [radprompter]: Downloading https://files.pythonhosted.org/packages/7b/72/28081e84676bbc199b692b423d68f790823727f4670ae8a1b0b81a1ef9b7/radprompter-1.0.5.tar.gz
+[2024-05-19 20:11:14] INFO root fetch - processPackages [communex]: Downloading https://files.pythonhosted.org/packages/77/67/00051570e40b098c12038ef6aed5be120d14bfafef5d08885df5a9714f91/communex-0.1.8.tar.gz
+[2024-05-19 20:11:14] INFO root fetch - processPackages [sarcharts]: Downloading https://files.pythonhosted.org/packages/42/b2/f3fdedf4222dcfb9d613a5d83ef90eac398efad23edc74653dcc02be6eeb/sarcharts-0.2.4.tar.gz
+[2024-05-19 20:11:14] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/34/2d/1e50d7f512e3d39590afb4a6c37340af98e5c4eadc77d9de653aab0cb49f/MobileInventoryCLI-0.4.98.tar.gz
+[2024-05-19 20:11:14] INFO root fetch - processPackages [local-broadcast]: Downloading https://files.pythonhosted.org/packages/2e/ce/dd2cd928227f1535ed0278a7f44c6445c40c4a9f3e21bad0e606c99060fb/local_broadcast-0.0.1.tar.gz
+[2024-05-19 20:11:14] INFO root fetch - processPackages [python-gpapi2]: Downloading https://files.pythonhosted.org/packages/6b/03/0e65d83323a84595b402a5640abd9e66011b48e6f6a2dee00ef6e1c6fbbd/python_gpapi2-0.1.1.tar.gz
+[2024-05-19 20:11:14] INFO root fetch - processPackages [pydiscovergy]: Downloading https://files.pythonhosted.org/packages/21/8b/5dac0afab9bbf2efb021ec36fc157a03bab69cc8d6ba576c54204d3cf2de/pydiscovergy-3.0.0.tar.gz
+[2024-05-19 20:11:14] INFO root fetch - processPackages [communex]: Downloading https://files.pythonhosted.org/packages/51/79/c7d8079cf08c4dcf6ea1f984e64a67fe00acfd76303d2f7f6159f574d5da/communex-0.1.9.tar.gz
+[2024-05-19 20:11:14] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/44/8c/14cdf7fc3f0b69cae35ba7ee2852fb70e3cab687142869ee3deb104ffc71/MobileInventoryCLI-0.4.99.tar.gz
+[2024-05-19 20:11:14] INFO root fetch - processPackages [communex]: executing diffoscope
+[2024-05-19 20:11:14] INFO root fetch - processPackages [communex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/communex-0.1.8.tar.gz tmp/communex-0.1.9.tar.gz --markdown 20240519/c/communex/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-19 20:11:14] INFO root fetch - processPackages [sarcharts]: Downloading https://files.pythonhosted.org/packages/46/5b/3e739286961444ef29e5844d9ac782d4a3bb2c9e4d5bcadecdf4c92327b3/sarcharts-0.2.5.tar.gz
+[2024-05-19 20:11:14] INFO root fetch - processPackages [radprompter]: Downloading https://files.pythonhosted.org/packages/95/ff/1d1fa6c373130a62b9cfd421c2deda095307602f3d5cd3b8b6943525c54d/radprompter-1.0.6.tar.gz
+[2024-05-19 20:11:14] INFO root fetch - processPackages [local-broadcast]: Downloading https://files.pythonhosted.org/packages/bc/0f/d269dfc6de24c31c33ff42cdb03b5aaa4dd78bb12d3de5cc03284535aa85/local_broadcast-0.0.2.tar.gz
+[2024-05-19 20:11:14] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-05-19 20:11:14] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.98.tar.gz tmp/MobileInventoryCLI-0.4.99.tar.gz --markdown 20240519/M/MobileInventoryCLI/0.4.98-0.4.99/README.md --exclude *.pyd
+[2024-05-19 20:11:15] INFO root fetch - processPackages [python-gpapi2]: Downloading https://files.pythonhosted.org/packages/eb/7c/d4c0ec3201b9063f25b9ccc060ec1fbfef31e0f120bbf128e73205c23b1a/python_gpapi2-0.1.2.tar.gz
+[2024-05-19 20:11:15] INFO root fetch - processPackages [radprompter]: executing diffoscope
+[2024-05-19 20:11:15] INFO root fetch - processPackages [radprompter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/radprompter-1.0.5.tar.gz tmp/radprompter-1.0.6.tar.gz --markdown 20240519/r/radprompter/1.0.5-1.0.6/README.md --exclude *.pyd
+[2024-05-19 20:11:15] INFO root fetch - processPackages [sarcharts]: executing diffoscope
+[2024-05-19 20:11:15] INFO root fetch - processPackages [sarcharts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sarcharts-0.2.4.tar.gz tmp/sarcharts-0.2.5.tar.gz --markdown 20240519/s/sarcharts/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-05-19 20:11:15] INFO root fetch - processPackages [local-broadcast]: executing diffoscope
+[2024-05-19 20:11:15] INFO root fetch - processPackages [local-broadcast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/local_broadcast-0.0.1.tar.gz tmp/local_broadcast-0.0.2.tar.gz --markdown 20240519/l/local-broadcast/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-19 20:11:15] INFO root fetch - processPackages [pydiscovergy]: Downloading https://files.pythonhosted.org/packages/5f/b4/b6d43992b91d8fb5c997926105827df6811cab0f87360da364b4ae01bb8c/pydiscovergy-3.0.1.tar.gz
+[2024-05-19 20:11:15] INFO root fetch - processPackages [python-gpapi2]: executing diffoscope
+[2024-05-19 20:11:15] INFO root fetch - processPackages [python-gpapi2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_gpapi2-0.1.1.tar.gz tmp/python_gpapi2-0.1.2.tar.gz --markdown 20240519/p/python-gpapi2/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-19 20:11:15] INFO root fetch - processPackages [pydiscovergy]: executing diffoscope
+[2024-05-19 20:11:15] INFO root fetch - processPackages [pydiscovergy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydiscovergy-3.0.0.tar.gz tmp/pydiscovergy-3.0.1.tar.gz --markdown 20240519/p/pydiscovergy/3.0.0-3.0.1/README.md --exclude *.pyd
+[2024-05-19 20:11:15] INFO root fetch - processPackages [communex]: Remove: archive file [/home/abi/fetcher/tmp/communex-0.1.8.tar.gz]
+[2024-05-19 20:11:15] INFO root fetch - processPackages [communex]: Remove: archive file [/home/abi/fetcher/tmp/communex-0.1.9.tar.gz]
+[2024-05-19 20:11:15] INFO root fetch - main [MainThread]: End processing [communex]: success
+[2024-05-19 20:11:15] INFO root fetch - processPackages [radprompter]: Remove: archive file [/home/abi/fetcher/tmp/radprompter-1.0.5.tar.gz]
+[2024-05-19 20:11:15] INFO root fetch - processPackages [local-broadcast]: Remove: archive file [/home/abi/fetcher/tmp/local_broadcast-0.0.1.tar.gz]
+[2024-05-19 20:11:15] INFO root fetch - processPackages [local-broadcast]: Remove: archive file [/home/abi/fetcher/tmp/local_broadcast-0.0.2.tar.gz]
+[2024-05-19 20:11:15] INFO root fetch - processPackages [radprompter]: Remove: archive file [/home/abi/fetcher/tmp/radprompter-1.0.6.tar.gz]
+[2024-05-19 20:11:15] INFO root fetch - main [MainThread]: End processing [local-broadcast]: success
+[2024-05-19 20:11:15] INFO root fetch - main [MainThread]: End processing [radprompter]: success
+[2024-05-19 20:11:15] INFO root fetch - processPackages [sarcharts]: Remove: archive file [/home/abi/fetcher/tmp/sarcharts-0.2.4.tar.gz]
+[2024-05-19 20:11:15] INFO root fetch - processPackages [sarcharts]: Remove: archive file [/home/abi/fetcher/tmp/sarcharts-0.2.5.tar.gz]
+[2024-05-19 20:11:15] INFO root fetch - main [MainThread]: End processing [sarcharts]: success
+[2024-05-19 20:11:15] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.98.tar.gz]
+[2024-05-19 20:11:15] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.99.tar.gz]
+[2024-05-19 20:11:15] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-05-19 20:11:16] INFO root fetch - processPackages [python-gpapi2]: Remove: archive file [/home/abi/fetcher/tmp/python_gpapi2-0.1.1.tar.gz]
+[2024-05-19 20:11:16] INFO root fetch - processPackages [python-gpapi2]: Remove: archive file [/home/abi/fetcher/tmp/python_gpapi2-0.1.2.tar.gz]
+[2024-05-19 20:11:16] INFO root fetch - main [MainThread]: End processing [python-gpapi2]: success
+[2024-05-19 20:11:16] INFO root fetch - processPackages [pydiscovergy]: Remove: archive file [/home/abi/fetcher/tmp/pydiscovergy-3.0.0.tar.gz]
+[2024-05-19 20:11:16] INFO root fetch - processPackages [pydiscovergy]: Remove: archive file [/home/abi/fetcher/tmp/pydiscovergy-3.0.1.tar.gz]
+[2024-05-19 20:11:16] INFO root fetch - main [MainThread]: End processing [pydiscovergy]: success
+[2024-05-19 20:11:16] INFO root fetch - main [MainThread]: Store serial: [23279166]
