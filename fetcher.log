@@ -8434,3 +8434,42 @@
 [2024-05-19 12:28:42] INFO root fetch - processPackages [crossword-puzzle]: Remove: archive file [/home/abi/fetcher/tmp/crossword_puzzle-1.2.74.tar.gz]
 [2024-05-19 12:28:42] INFO root fetch - main [MainThread]: End processing [crossword-puzzle]: success
 [2024-05-19 12:28:42] INFO root fetch - main [MainThread]: Store serial: [23275466]
+[2024-05-19 12:30:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275466]
+[2024-05-19 12:30:50] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 12:30:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: microchain-python
+[2024-05-19 12:30:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: octomy-common
+[2024-05-19 12:30:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ctrip-app-ui
+[2024-05-19 12:30:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: HiggsML
+[2024-05-19 12:30:50] INFO root fetch - processPackages [HiggsML]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-19 12:30:50] INFO root fetch - processPackages [ctrip-app-ui]: New version: [0.6.2] Old Version: [0.6.1]
+[2024-05-19 12:30:51] INFO root fetch - processPackages [microchain-python]: New version: [0.3.7] Old Version: [0.3.6]
+[2024-05-19 12:30:51] INFO root fetch - processPackages [HiggsML]: Downloading https://files.pythonhosted.org/packages/69/e6/477c65a2986b3e5d9130d0f64074a67efe586b64bb89da56a4c735eb0f93/higgsml-0.0.2.tar.gz
+[2024-05-19 12:30:51] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/b7/dd/fcba3f1c346269d10c3a110a2b8e6d0f236fbfc3507b66e1814ddf87a852/ctrip-app-ui-0.6.1.tar.gz
+[2024-05-19 12:30:51] INFO root fetch - processPackages [octomy-common]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-05-19 12:30:51] INFO root fetch - processPackages [microchain-python]: Downloading https://files.pythonhosted.org/packages/2c/9f/e3f929ff2047fae005ea063243f7eb8c8fe8dd0b604dbae5011ce29092b3/microchain_python-0.3.6.tar.gz
+[2024-05-19 12:30:51] INFO root fetch - processPackages [octomy-common]: Downloading https://files.pythonhosted.org/packages/43/6b/e9c10d9675795bd9369c855c1cd27f7a5d572d053a65dd630aa1cae37743/octomy-common-2.0.8.tar.gz
+[2024-05-19 12:30:51] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/fc/b1/4fbf6213a08271e2f6500ec8619d8832fa14af508a8563e28e6cc831e337/ctrip-app-ui-0.6.2.tar.gz
+[2024-05-19 12:30:51] INFO root fetch - processPackages [HiggsML]: Downloading https://files.pythonhosted.org/packages/85/c8/c226dcd51cf455dd046e12fcb7f03c64b733a8cb73c4bcd519458574eb6a/higgsml-0.0.3.tar.gz
+[2024-05-19 12:30:51] INFO root fetch - processPackages [ctrip-app-ui]: executing diffoscope
+[2024-05-19 12:30:51] INFO root fetch - processPackages [ctrip-app-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctrip-app-ui-0.6.1.tar.gz tmp/ctrip-app-ui-0.6.2.tar.gz --markdown 20240519/c/ctrip-app-ui/0.6.1-0.6.2/README.md --exclude *.pyd
+[2024-05-19 12:30:51] INFO root fetch - processPackages [HiggsML]: executing diffoscope
+[2024-05-19 12:30:51] INFO root fetch - processPackages [HiggsML]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/higgsml-0.0.2.tar.gz tmp/higgsml-0.0.3.tar.gz --markdown 20240519/H/HiggsML/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-19 12:30:51] INFO root fetch - processPackages [octomy-common]: Downloading https://files.pythonhosted.org/packages/b1/f2/5a18ffa91b4f8c3fcbc3475b77eaa03236eb75d56934a24393864781ee7d/octomy-common-2.0.9.tar.gz
+[2024-05-19 12:30:51] INFO root fetch - processPackages [microchain-python]: Downloading https://files.pythonhosted.org/packages/38/40/880fcbfe52f97c2ae85deec572de073a1ed40934e5027b7275e6839c89d9/microchain_python-0.3.7.tar.gz
+[2024-05-19 12:30:51] INFO root fetch - processPackages [octomy-common]: executing diffoscope
+[2024-05-19 12:30:51] INFO root fetch - processPackages [octomy-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/octomy-common-2.0.8.tar.gz tmp/octomy-common-2.0.9.tar.gz --markdown 20240519/o/octomy-common/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-05-19 12:30:51] INFO root fetch - processPackages [microchain-python]: executing diffoscope
+[2024-05-19 12:30:51] INFO root fetch - processPackages [microchain-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/microchain_python-0.3.6.tar.gz tmp/microchain_python-0.3.7.tar.gz --markdown 20240519/m/microchain-python/0.3.6-0.3.7/README.md --exclude *.pyd
+[2024-05-19 12:30:52] INFO root fetch - processPackages [HiggsML]: Remove: archive file [/home/abi/fetcher/tmp/higgsml-0.0.2.tar.gz]
+[2024-05-19 12:30:52] INFO root fetch - processPackages [HiggsML]: Remove: archive file [/home/abi/fetcher/tmp/higgsml-0.0.3.tar.gz]
+[2024-05-19 12:30:52] INFO root fetch - main [MainThread]: End processing [HiggsML]: success
+[2024-05-19 12:30:52] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.6.1.tar.gz]
+[2024-05-19 12:30:52] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.6.2.tar.gz]
+[2024-05-19 12:30:52] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
+[2024-05-19 12:30:52] INFO root fetch - processPackages [microchain-python]: Remove: archive file [/home/abi/fetcher/tmp/microchain_python-0.3.6.tar.gz]
+[2024-05-19 12:30:52] INFO root fetch - processPackages [microchain-python]: Remove: archive file [/home/abi/fetcher/tmp/microchain_python-0.3.7.tar.gz]
+[2024-05-19 12:30:52] INFO root fetch - main [MainThread]: End processing [microchain-python]: success
+[2024-05-19 12:30:52] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-2.0.8.tar.gz]
+[2024-05-19 12:30:52] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-2.0.9.tar.gz]
+[2024-05-19 12:30:52] INFO root fetch - main [MainThread]: End processing [octomy-common]: success
+[2024-05-19 12:30:52] INFO root fetch - main [MainThread]: Store serial: [23275476]
