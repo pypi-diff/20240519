@@ -10143,3 +10143,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 14:17:08] INFO root fetch - processPackages [qualystbx]: Remove: archive file [/home/abi/fetcher/tmp/qualystbx-0.4.0.tar.gz]
 [2024-05-19 14:17:08] INFO root fetch - main [MainThread]: End processing [qualystbx]: success
 [2024-05-19 14:17:08] INFO root fetch - main [MainThread]: Store serial: [23276174]
+[2024-05-19 14:19:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276174]
+[2024-05-19 14:19:17] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-19 14:19:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mentabotix
+[2024-05-19 14:19:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: free-proxy-list-client
+[2024-05-19 14:19:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-calc24
+[2024-05-19 14:19:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lsx
+[2024-05-19 14:19:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lishixian
+[2024-05-19 14:19:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pybnesian
+[2024-05-19 14:19:17] INFO root fetch - processPackages [mentabotix]: New version: [0.1.4.8] Old Version: [0.1.4.7]
+[2024-05-19 14:19:17] INFO root fetch - processPackages [nonebot-plugin-calc24]: New version: [1.3.3] Old Version: [0.2.3]
+[2024-05-19 14:19:17] WARNING root fetch - processPackages [free-proxy-list-client]: Skipping, unable to determine old version
+[2024-05-19 14:19:17] INFO root fetch - main [MainThread]: End processing [free-proxy-list-client] error
+[2024-05-19 14:19:17] INFO root fetch - processPackages [lishixian]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-05-19 14:19:17] INFO root fetch - processPackages [mentabotix]: Downloading https://files.pythonhosted.org/packages/2a/b4/d056e996382000e8ea5e4d0c8b6be49447ccc364281398cb9f9c886962ce/mentabotix-0.1.4.7.tar.gz
+[2024-05-19 14:19:17] INFO root fetch - processPackages [pybnesian]: New version: [0.5.0] Old Version: [0.4.3]
+[2024-05-19 14:19:17] INFO root fetch - processPackages [nonebot-plugin-calc24]: Downloading https://files.pythonhosted.org/packages/f1/1a/542ae341c870089a624bf14da41b132da5d271a1c8b395570033278b5d40/nonebot_plugin_calc24-0.2.3.tar.gz
+[2024-05-19 14:19:17] INFO root fetch - processPackages [lsx]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-05-19 14:19:17] INFO root fetch - processPackages [mentabotix]: Downloading https://files.pythonhosted.org/packages/6a/24/652f96945a74a866a43e5aa5ceee192a738aeba9b9529058a3052e64c2ac/mentabotix-0.1.4.8.tar.gz
+[2024-05-19 14:19:17] INFO root fetch - processPackages [lishixian]: Downloading https://files.pythonhosted.org/packages/d2/20/869288edc716cc5df9f5542f26ee684bd7cb9e13c727edb0849b3767c81c/lishixian-0.3.4.tar.gz
+[2024-05-19 14:19:17] INFO root fetch - processPackages [pybnesian]: Downloading https://files.pythonhosted.org/packages/45/a8/6a0b68e57fb5266320fcdc1fa1a016232177cfbd02f712cd270a6ec077c6/pybnesian-0.4.3.tar.gz
+[2024-05-19 14:19:17] INFO root fetch - processPackages [mentabotix]: executing diffoscope
+[2024-05-19 14:19:17] INFO root fetch - processPackages [mentabotix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mentabotix-0.1.4.7.tar.gz tmp/mentabotix-0.1.4.8.tar.gz --markdown 20240519/m/mentabotix/0.1.4.7-0.1.4.8/README.md --exclude *.pyd
+[2024-05-19 14:19:17] INFO root fetch - processPackages [lsx]: Downloading https://files.pythonhosted.org/packages/28/62/0e965f34cd5e883c1425db2863c5a2cc589c760a6c5ec05a0997735abfde/lsx-0.3.4.tar.gz
+[2024-05-19 14:19:18] INFO root fetch - processPackages [nonebot-plugin-calc24]: Downloading https://files.pythonhosted.org/packages/e9/fa/79cc69ff8cd2dfc85419b75e22a76118ccca1226b146388c7f3c019447f0/nonebot_plugin_calc24-1.3.3.tar.gz
+[2024-05-19 14:19:18] INFO root fetch - processPackages [lishixian]: Downloading https://files.pythonhosted.org/packages/48/66/a3cf2737430b1d461d62b83c257e5accc36e0953652094daf77b7c77fdb3/lishixian-0.3.5.tar.gz
+[2024-05-19 14:19:18] INFO root fetch - processPackages [nonebot-plugin-calc24]: executing diffoscope
+[2024-05-19 14:19:18] INFO root fetch - processPackages [nonebot-plugin-calc24]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_calc24-0.2.3.tar.gz tmp/nonebot_plugin_calc24-1.3.3.tar.gz --markdown 20240519/n/nonebot-plugin-calc24/0.2.3-1.3.3/README.md --exclude *.pyd
+[2024-05-19 14:19:18] INFO root fetch - processPackages [lsx]: Downloading https://files.pythonhosted.org/packages/c3/26/8b565ee8a63eccf68924f970ba2843612ad25545a5b3b18b8bdf54b4c105/lsx-0.3.5.tar.gz
+[2024-05-19 14:19:18] INFO root fetch - processPackages [lishixian]: executing diffoscope
+[2024-05-19 14:19:18] INFO root fetch - processPackages [lishixian]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lishixian-0.3.4.tar.gz tmp/lishixian-0.3.5.tar.gz --markdown 20240519/l/lishixian/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-05-19 14:19:18] INFO root fetch - processPackages [lsx]: executing diffoscope
+[2024-05-19 14:19:18] INFO root fetch - processPackages [lsx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lsx-0.3.4.tar.gz tmp/lsx-0.3.5.tar.gz --markdown 20240519/l/lsx/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-05-19 14:19:18] INFO root fetch - processPackages [mentabotix]: Remove: archive file [/home/abi/fetcher/tmp/mentabotix-0.1.4.7.tar.gz]
+[2024-05-19 14:19:18] INFO root fetch - processPackages [mentabotix]: Remove: archive file [/home/abi/fetcher/tmp/mentabotix-0.1.4.8.tar.gz]
+[2024-05-19 14:19:18] INFO root fetch - main [MainThread]: End processing [mentabotix]: success
+[2024-05-19 14:19:18] INFO root fetch - processPackages [nonebot-plugin-calc24]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_calc24-0.2.3.tar.gz]
+[2024-05-19 14:19:18] INFO root fetch - processPackages [nonebot-plugin-calc24]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_calc24-1.3.3.tar.gz]
+[2024-05-19 14:19:18] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-calc24]: success
+[2024-05-19 14:19:18] INFO root fetch - processPackages [lishixian]: Remove: archive file [/home/abi/fetcher/tmp/lishixian-0.3.4.tar.gz]
+[2024-05-19 14:19:18] INFO root fetch - processPackages [lishixian]: Remove: archive file [/home/abi/fetcher/tmp/lishixian-0.3.5.tar.gz]
+[2024-05-19 14:19:18] INFO root fetch - main [MainThread]: End processing [lishixian]: success
+[2024-05-19 14:19:19] INFO root fetch - processPackages [lsx]: Remove: archive file [/home/abi/fetcher/tmp/lsx-0.3.4.tar.gz]
+[2024-05-19 14:19:19] INFO root fetch - processPackages [lsx]: Remove: archive file [/home/abi/fetcher/tmp/lsx-0.3.5.tar.gz]
+[2024-05-19 14:19:19] INFO root fetch - main [MainThread]: End processing [lsx]: success
+[2024-05-19 14:19:19] INFO root fetch - processPackages [pybnesian]: Downloading https://files.pythonhosted.org/packages/4e/68/738d307bc322e42cddecedd7c37ea1665edcbbbb4b971ce9641eb7a29c2b/pybnesian-0.5.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-19 14:19:23] INFO root fetch - processPackages [pybnesian]: executing diffoscope
+[2024-05-19 14:19:23] INFO root fetch - processPackages [pybnesian]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybnesian-0.4.3.tar.gz tmp/pybnesian-0.5.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240519/p/pybnesian/0.4.3-0.5.0/README.md --exclude *.pyd
+[2024-05-19 14:19:25] INFO root fetch - processPackages [pybnesian]: Remove: archive file [/home/abi/fetcher/tmp/pybnesian-0.4.3.tar.gz]
+[2024-05-19 14:19:25] INFO root fetch - processPackages [pybnesian]: Remove: archive file [/home/abi/fetcher/tmp/pybnesian-0.5.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-19 14:19:25] INFO root fetch - main [MainThread]: End processing [pybnesian]: success
+[2024-05-19 14:19:25] INFO root fetch - main [MainThread]: Store serial: [23276188]
