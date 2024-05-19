@@ -4689,3 +4689,42 @@
 [2024-05-19 07:42:54] INFO root fetch - processPackages [quantplay]: Remove: archive file [/home/abi/fetcher/tmp/quantplay-1.5.9.tar.gz]
 [2024-05-19 07:42:54] INFO root fetch - main [MainThread]: End processing [quantplay]: success
 [2024-05-19 07:42:54] INFO root fetch - main [MainThread]: Store serial: [23273592]
+[2024-05-19 07:44:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273592]
+[2024-05-19 07:45:02] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 07:45:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sop-deutils
+[2024-05-19 07:45:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: crossword-puzzle
+[2024-05-19 07:45:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: quickstart-vdk
+[2024-05-19 07:45:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ragdaemon
+[2024-05-19 07:45:03] INFO root fetch - processPackages [ragdaemon]: New version: [0.5.2] Old Version: [0.5.1]
+[2024-05-19 07:45:03] INFO root fetch - processPackages [crossword-puzzle]: New version: [1.2.73] Old Version: [1.2.72]
+[2024-05-19 07:45:03] INFO root fetch - processPackages [sop-deutils]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-19 07:45:03] INFO root fetch - processPackages [quickstart-vdk]: New version: [0.2.999091100.dev13356] Old Version: [0.2.998635022.dev13355]
+[2024-05-19 07:45:03] INFO root fetch - processPackages [ragdaemon]: Downloading https://files.pythonhosted.org/packages/92/24/c570c2e9ff9049a512ff608725c3efe4d6aed405b1a4f9c17388e5a1106b/ragdaemon-0.5.1.tar.gz
+[2024-05-19 07:45:03] INFO root fetch - processPackages [crossword-puzzle]: Downloading https://files.pythonhosted.org/packages/a6/ee/b1a0da50f43d542315c4904e38025fee8387962e97fc26df69ecb3ca11c0/crossword_puzzle-1.2.72.tar.gz
+[2024-05-19 07:45:03] INFO root fetch - processPackages [sop-deutils]: Downloading https://files.pythonhosted.org/packages/90/25/061e7abb0dc44de63510dded7da9654bc6f0a284ca9a978c052e8bdcd739/sop_deutils-0.9.8.tar.gz
+[2024-05-19 07:45:03] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/e3/a6/b7424a3be777980068df32f41ef9085422b79289fef725cba5cabf2b502e/quickstart-vdk-0.2.998635022.dev13355.tar.gz
+[2024-05-19 07:45:03] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/fa/72/2a48eb94b876fa0c01eda0450a3e80c80101dd5fdfe10124d5474b64f5fd/quickstart-vdk-0.2.999091100.dev13356.tar.gz
+[2024-05-19 07:45:03] INFO root fetch - processPackages [sop-deutils]: Downloading https://files.pythonhosted.org/packages/72/95/95da46c4d54440e29e58711f950067fb490f12e5d5cd23f645102a47e372/sop_deutils-0.9.9.tar.gz
+[2024-05-19 07:45:03] INFO root fetch - processPackages [quickstart-vdk]: executing diffoscope
+[2024-05-19 07:45:03] INFO root fetch - processPackages [quickstart-vdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz --markdown 20240519/q/quickstart-vdk/0.2.998635022.dev13355-0.2.999091100.dev13356/README.md --exclude *.pyd
+[2024-05-19 07:45:03] INFO root fetch - processPackages [sop-deutils]: executing diffoscope
+[2024-05-19 07:45:03] INFO root fetch - processPackages [sop-deutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sop_deutils-0.9.8.tar.gz tmp/sop_deutils-0.9.9.tar.gz --markdown 20240519/s/sop-deutils/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-19 07:45:03] INFO root fetch - processPackages [ragdaemon]: Downloading https://files.pythonhosted.org/packages/08/c2/417feb6779eabc2b141d5df3e7336556b59cf257ea59a3ff7698dc110c63/ragdaemon-0.5.2.tar.gz
+[2024-05-19 07:45:03] INFO root fetch - processPackages [crossword-puzzle]: Downloading https://files.pythonhosted.org/packages/96/31/eaf3a079f212116e486d2fe54f8d296d8b28ba77df2adb97438265b07846/crossword_puzzle-1.2.73.tar.gz
+[2024-05-19 07:45:03] INFO root fetch - processPackages [ragdaemon]: executing diffoscope
+[2024-05-19 07:45:03] INFO root fetch - processPackages [ragdaemon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ragdaemon-0.5.1.tar.gz tmp/ragdaemon-0.5.2.tar.gz --markdown 20240519/r/ragdaemon/0.5.1-0.5.2/README.md --exclude *.pyd
+[2024-05-19 07:45:03] INFO root fetch - processPackages [crossword-puzzle]: executing diffoscope
+[2024-05-19 07:45:03] INFO root fetch - processPackages [crossword-puzzle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crossword_puzzle-1.2.72.tar.gz tmp/crossword_puzzle-1.2.73.tar.gz --markdown 20240519/c/crossword-puzzle/1.2.72-1.2.73/README.md --exclude *.pyd
+[2024-05-19 07:45:04] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz]
+[2024-05-19 07:45:04] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz]
+[2024-05-19 07:45:04] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
+[2024-05-19 07:45:04] INFO root fetch - processPackages [sop-deutils]: Remove: archive file [/home/abi/fetcher/tmp/sop_deutils-0.9.8.tar.gz]
+[2024-05-19 07:45:04] INFO root fetch - processPackages [sop-deutils]: Remove: archive file [/home/abi/fetcher/tmp/sop_deutils-0.9.9.tar.gz]
+[2024-05-19 07:45:04] INFO root fetch - main [MainThread]: End processing [sop-deutils]: success
+[2024-05-19 07:45:04] INFO root fetch - processPackages [ragdaemon]: Remove: archive file [/home/abi/fetcher/tmp/ragdaemon-0.5.1.tar.gz]
+[2024-05-19 07:45:04] INFO root fetch - processPackages [ragdaemon]: Remove: archive file [/home/abi/fetcher/tmp/ragdaemon-0.5.2.tar.gz]
+[2024-05-19 07:45:04] INFO root fetch - main [MainThread]: End processing [ragdaemon]: success
+[2024-05-19 07:45:24] INFO root fetch - processPackages [crossword-puzzle]: Remove: archive file [/home/abi/fetcher/tmp/crossword_puzzle-1.2.72.tar.gz]
+[2024-05-19 07:45:24] INFO root fetch - processPackages [crossword-puzzle]: Remove: archive file [/home/abi/fetcher/tmp/crossword_puzzle-1.2.73.tar.gz]
+[2024-05-19 07:45:24] INFO root fetch - main [MainThread]: End processing [crossword-puzzle]: success
+[2024-05-19 07:45:24] INFO root fetch - main [MainThread]: Store serial: [23273602]
