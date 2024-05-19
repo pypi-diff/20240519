@@ -1351,3 +1351,56 @@
 [2024-05-19 02:20:46] INFO root fetch - processPackages [wfl]: Remove: archive file [/home/abi/fetcher/tmp/wfl-0.2.6.tar.gz]
 [2024-05-19 02:20:46] INFO root fetch - main [MainThread]: End processing [wfl]: success
 [2024-05-19 02:20:46] INFO root fetch - main [MainThread]: Store serial: [23272076]
+[2024-05-19 02:22:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272076]
+[2024-05-19 02:22:55] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-19 02:22:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lightning-thunder
+[2024-05-19 02:22:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-cr-constructs
+[2024-05-19 02:22:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lightning
+[2024-05-19 02:22:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spade-anomaly-detection
+[2024-05-19 02:22:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-aurora-globaldatabase
+[2024-05-19 02:22:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fnschool
+[2024-05-19 02:22:55] INFO root fetch - processPackages [cdk-cr-constructs]: New version: [2.1.459] Old Version: [2.1.458]
+[2024-05-19 02:22:55] INFO root fetch - processPackages [fnschool]: New version: [20240518.81739.834] Old Version: [20240518.115.13]
+[2024-05-19 02:22:55] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: New version: [2.3.99] Old Version: [2.3.98]
+[2024-05-19 02:22:55] INFO root fetch - processPackages [lightning-thunder]: New version: [0.2.0.dev20240519] Old Version: [0.2.0.dev20240513]
+[2024-05-19 02:22:55] INFO root fetch - processPackages [spade-anomaly-detection]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-19 02:22:56] INFO root fetch - processPackages [lightning]: New version: [2.3.0.dev20240519] Old Version: [2.3.0.dev20240505]
+[2024-05-19 02:22:56] INFO root fetch - processPackages [fnschool]: Downloading https://files.pythonhosted.org/packages/ad/46/22383a43ca802bef1c7b97a7590abad225c5e66435809ba84d00bee1551e/fnschool-20240518.115.13.tar.gz
+[2024-05-19 02:22:56] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Downloading https://files.pythonhosted.org/packages/e4/39/e997b5acac972df8d777c4a4ad6dfd9f51e03e75fc8e23c973a7772267d5/cdk-aurora-globaldatabase-2.3.98.tar.gz
+[2024-05-19 02:22:56] INFO root fetch - processPackages [cdk-cr-constructs]: Downloading https://files.pythonhosted.org/packages/10/18/3b26299dfc0f687666bf6bad3312cfa997457467c2d0dc6a1b86d100b9d8/cdk-cr-constructs-2.1.458.tar.gz
+[2024-05-19 02:22:56] WARNING root fetch - processPackages [cdk-cr-constructs]: Skipping package: exceeds size limit 15104112>=10485760
+[2024-05-19 02:22:56] INFO root fetch - main [MainThread]: End processing [cdk-cr-constructs] error
+[2024-05-19 02:22:56] INFO root fetch - processPackages [lightning-thunder]: Downloading https://files.pythonhosted.org/packages/e4/97/72b7aae65a5c15b08b906fcb10a5aba2ae763019cc98db1b502d9d934922/lightning_thunder-0.2.0.dev20240513.tar.gz
+[2024-05-19 02:22:56] INFO root fetch - processPackages [spade-anomaly-detection]: Downloading https://files.pythonhosted.org/packages/18/d3/c996be74a759e3f2d5eae26d3c94b13e70cbde939cc1d45e870b99e55d53/spade_anomaly_detection-0.2.0.tar.gz
+[2024-05-19 02:22:56] INFO root fetch - processPackages [lightning]: Downloading https://files.pythonhosted.org/packages/99/3f/f9347b94af6e84c6446c74ef0b34a65416e47137ff95d64b395e5abe1457/lightning-2.3.0.dev20240505.tar.gz
+[2024-05-19 02:22:56] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Downloading https://files.pythonhosted.org/packages/51/53/0158facaec2becec86707148eb931de78a7ad1c2b63f80b9911a53e4c17b/cdk-aurora-globaldatabase-2.3.99.tar.gz
+[2024-05-19 02:22:56] INFO root fetch - processPackages [fnschool]: Downloading https://files.pythonhosted.org/packages/c1/35/f9c6fd0778df3a14105f0c71faa8e413d6c8012afce79d09b65a6ea523df/fnschool-20240518.81739.834.tar.gz
+[2024-05-19 02:22:56] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: executing diffoscope
+[2024-05-19 02:22:56] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz --markdown 20240519/c/cdk-aurora-globaldatabase/2.3.98-2.3.99/README.md --exclude *.pyd
+[2024-05-19 02:22:56] INFO root fetch - processPackages [fnschool]: executing diffoscope
+[2024-05-19 02:22:56] INFO root fetch - processPackages [fnschool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fnschool-20240518.115.13.tar.gz tmp/fnschool-20240518.81739.834.tar.gz --markdown 20240519/f/fnschool/20240518.115.13-20240518.81739.834/README.md --exclude *.pyd
+[2024-05-19 02:22:56] INFO root fetch - processPackages [lightning-thunder]: Downloading https://files.pythonhosted.org/packages/45/d1/379bd91f80e639ea056f92f86de81a7359ae7b75b355c031f2fafccf4129/lightning_thunder-0.2.0.dev20240519.tar.gz
+[2024-05-19 02:22:56] INFO root fetch - processPackages [lightning]: Downloading https://files.pythonhosted.org/packages/40/31/4c750dd40f7e923538f270afac190050310360f8baf8a3501e3a2fc598a8/lightning-2.3.0.dev20240519.tar.gz
+[2024-05-19 02:22:56] INFO root fetch - processPackages [lightning-thunder]: executing diffoscope
+[2024-05-19 02:22:56] INFO root fetch - processPackages [lightning-thunder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightning_thunder-0.2.0.dev20240513.tar.gz tmp/lightning_thunder-0.2.0.dev20240519.tar.gz --markdown 20240519/l/lightning-thunder/0.2.0.dev20240513-0.2.0.dev20240519/README.md --exclude *.pyd
+[2024-05-19 02:22:56] INFO root fetch - processPackages [lightning]: executing diffoscope
+[2024-05-19 02:22:56] INFO root fetch - processPackages [lightning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightning-2.3.0.dev20240505.tar.gz tmp/lightning-2.3.0.dev20240519.tar.gz --markdown 20240519/l/lightning/2.3.0.dev20240505-2.3.0.dev20240519/README.md --exclude *.pyd
+[2024-05-19 02:22:57] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz]
+[2024-05-19 02:22:57] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz]
+[2024-05-19 02:22:57] INFO root fetch - main [MainThread]: End processing [cdk-aurora-globaldatabase]: success
+[2024-05-19 02:22:57] INFO root fetch - processPackages [fnschool]: Remove: archive file [/home/abi/fetcher/tmp/fnschool-20240518.115.13.tar.gz]
+[2024-05-19 02:22:57] INFO root fetch - processPackages [fnschool]: Remove: archive file [/home/abi/fetcher/tmp/fnschool-20240518.81739.834.tar.gz]
+[2024-05-19 02:22:57] INFO root fetch - main [MainThread]: End processing [fnschool]: success
+[2024-05-19 02:22:57] INFO root fetch - processPackages [spade-anomaly-detection]: Downloading https://files.pythonhosted.org/packages/fd/9b/50b977633ee398e18f2ee5101a98bc4724fa174d63626cebcfcd688a88e0/spade_anomaly_detection-0.2.1.tar.gz
+[2024-05-19 02:22:57] INFO root fetch - processPackages [spade-anomaly-detection]: executing diffoscope
+[2024-05-19 02:22:57] INFO root fetch - processPackages [spade-anomaly-detection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spade_anomaly_detection-0.2.0.tar.gz tmp/spade_anomaly_detection-0.2.1.tar.gz --markdown 20240519/s/spade-anomaly-detection/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-19 02:22:58] INFO root fetch - processPackages [lightning-thunder]: Remove: archive file [/home/abi/fetcher/tmp/lightning_thunder-0.2.0.dev20240513.tar.gz]
+[2024-05-19 02:22:58] INFO root fetch - processPackages [lightning-thunder]: Remove: archive file [/home/abi/fetcher/tmp/lightning_thunder-0.2.0.dev20240519.tar.gz]
+[2024-05-19 02:22:58] INFO root fetch - main [MainThread]: End processing [lightning-thunder]: success
+[2024-05-19 02:22:59] INFO root fetch - processPackages [lightning]: Remove: archive file [/home/abi/fetcher/tmp/lightning-2.3.0.dev20240505.tar.gz]
+[2024-05-19 02:22:59] INFO root fetch - processPackages [lightning]: Remove: archive file [/home/abi/fetcher/tmp/lightning-2.3.0.dev20240519.tar.gz]
+[2024-05-19 02:22:59] INFO root fetch - main [MainThread]: End processing [lightning]: success
+[2024-05-19 02:23:00] INFO root fetch - processPackages [spade-anomaly-detection]: Remove: archive file [/home/abi/fetcher/tmp/spade_anomaly_detection-0.2.0.tar.gz]
+[2024-05-19 02:23:00] INFO root fetch - processPackages [spade-anomaly-detection]: Remove: archive file [/home/abi/fetcher/tmp/spade_anomaly_detection-0.2.1.tar.gz]
+[2024-05-19 02:23:00] INFO root fetch - main [MainThread]: End processing [spade-anomaly-detection]: success
+[2024-05-19 02:23:00] INFO root fetch - main [MainThread]: Store serial: [23272093]
