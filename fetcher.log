@@ -9654,3 +9654,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 13:46:46] INFO root fetch - processPackages [SPLayout]: Remove: archive file [/home/abi/fetcher/tmp/splayout-0.5.3.tar.gz]
 [2024-05-19 13:46:46] INFO root fetch - main [MainThread]: End processing [SPLayout]: success
 [2024-05-19 13:46:46] INFO root fetch - main [MainThread]: Store serial: [23275991]
+[2024-05-19 13:48:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275991]
+[2024-05-19 13:48:55] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 13:48:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flet-easy-static
+[2024-05-19 13:48:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: photobooth
+[2024-05-19 13:48:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fast-multi-regex
+[2024-05-19 13:48:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: feedcrawler
+[2024-05-19 13:48:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lethallyz
+[2024-05-19 13:48:55] INFO root fetch - processPackages [flet-easy-static]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-05-19 13:48:55] INFO root fetch - processPackages [fast-multi-regex]: New version: [0.4] Old Version: [0.3]
+[2024-05-19 13:48:55] INFO root fetch - processPackages [flet-easy-static]: Downloading https://files.pythonhosted.org/packages/af/89/5b439a537bafd98609ebb08d1a5aa946fea057bd29d2007b0b2d924d8884/flet_easy_static-0.2.4.tar.gz
+[2024-05-19 13:48:55] INFO root fetch - processPackages [photobooth]: New version: [0.0.1b3] Old Version: [0.0.1b2]
+[2024-05-19 13:48:55] INFO root fetch - processPackages [fast-multi-regex]: Downloading https://files.pythonhosted.org/packages/fc/4f/7d31d3abd725f462e276a62e6d265a7110a08b1843265a5e9a729fc4eea4/fast_multi_regex-0.3.tar.gz
+[2024-05-19 13:48:55] INFO root fetch - processPackages [feedcrawler]: New version: [19.2.0] Old Version: [19.1.0]
+[2024-05-19 13:48:55] WARNING root fetch - processPackages [lethallyz]: Skipping, unable to determine old version
+[2024-05-19 13:48:55] INFO root fetch - main [MainThread]: End processing [lethallyz] error
+[2024-05-19 13:48:55] INFO root fetch - processPackages [photobooth]: Downloading https://files.pythonhosted.org/packages/60/82/4ae6b942c5f661f8012ffdd80681e5a7f7a1b012fc8132874e0ea2082e95/photobooth-0.0.1b2.tar.gz
+[2024-05-19 13:48:55] INFO root fetch - processPackages [feedcrawler]: Downloading https://files.pythonhosted.org/packages/2f/3b/dbcda455f09c8bcc022bb1f267638fb6afda5ff41a3aa5616b79788b3840/feedcrawler-19.1.0.tar.gz
+[2024-05-19 13:48:55] INFO root fetch - processPackages [flet-easy-static]: Downloading https://files.pythonhosted.org/packages/7e/cd/5cd503ea88519c6d630b9598eeae8079503c91ec452e05ac74f59c682511/flet_easy_static-0.2.5.tar.gz
+[2024-05-19 13:48:56] INFO root fetch - processPackages [fast-multi-regex]: Downloading https://files.pythonhosted.org/packages/05/b8/f01be5534a491ada97049073896a2968334a04ddbd36dc97975971142d6c/fast_multi_regex-0.4.tar.gz
+[2024-05-19 13:48:56] INFO root fetch - processPackages [flet-easy-static]: executing diffoscope
+[2024-05-19 13:48:56] INFO root fetch - processPackages [flet-easy-static]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_easy_static-0.2.4.tar.gz tmp/flet_easy_static-0.2.5.tar.gz --markdown 20240519/f/flet-easy-static/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-05-19 13:48:56] INFO root fetch - processPackages [fast-multi-regex]: executing diffoscope
+[2024-05-19 13:48:56] INFO root fetch - processPackages [fast-multi-regex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fast_multi_regex-0.3.tar.gz tmp/fast_multi_regex-0.4.tar.gz --markdown 20240519/f/fast-multi-regex/0.3-0.4/README.md --exclude *.pyd
+[2024-05-19 13:48:56] INFO root fetch - processPackages [feedcrawler]: Downloading https://files.pythonhosted.org/packages/d6/54/0f693d26a9b3e179689289e4d47783c0b18758fbf1aaabc7195099832ec8/feedcrawler-19.2.0.tar.gz
+[2024-05-19 13:48:56] INFO root fetch - processPackages [feedcrawler]: executing diffoscope
+[2024-05-19 13:48:56] INFO root fetch - processPackages [feedcrawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feedcrawler-19.1.0.tar.gz tmp/feedcrawler-19.2.0.tar.gz --markdown 20240519/f/feedcrawler/19.1.0-19.2.0/README.md --exclude *.pyd
+[2024-05-19 13:48:56] INFO root fetch - processPackages [photobooth]: Downloading https://files.pythonhosted.org/packages/78/5f/e34428ddb0ccb991078f0d4586fb48b03bc9c364d9b20adadd18e355b849/photobooth-0.0.1b3.tar.gz
+[2024-05-19 13:48:56] INFO root fetch - processPackages [photobooth]: executing diffoscope
+[2024-05-19 13:48:56] INFO root fetch - processPackages [photobooth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/photobooth-0.0.1b2.tar.gz tmp/photobooth-0.0.1b3.tar.gz --markdown 20240519/p/photobooth/0.0.1b2-0.0.1b3/README.md --exclude *.pyd
+[2024-05-19 13:48:56] INFO root fetch - processPackages [flet-easy-static]: Remove: archive file [/home/abi/fetcher/tmp/flet_easy_static-0.2.4.tar.gz]
+[2024-05-19 13:48:56] INFO root fetch - processPackages [flet-easy-static]: Remove: archive file [/home/abi/fetcher/tmp/flet_easy_static-0.2.5.tar.gz]
+[2024-05-19 13:48:56] INFO root fetch - main [MainThread]: End processing [flet-easy-static]: success
+[2024-05-19 13:48:56] INFO root fetch - processPackages [fast-multi-regex]: Remove: archive file [/home/abi/fetcher/tmp/fast_multi_regex-0.3.tar.gz]
+[2024-05-19 13:48:56] INFO root fetch - processPackages [fast-multi-regex]: Remove: archive file [/home/abi/fetcher/tmp/fast_multi_regex-0.4.tar.gz]
+[2024-05-19 13:48:56] INFO root fetch - main [MainThread]: End processing [fast-multi-regex]: success
+[2024-05-19 13:48:57] INFO root fetch - processPackages [feedcrawler]: Remove: archive file [/home/abi/fetcher/tmp/feedcrawler-19.1.0.tar.gz]
+[2024-05-19 13:48:57] INFO root fetch - processPackages [feedcrawler]: Remove: archive file [/home/abi/fetcher/tmp/feedcrawler-19.2.0.tar.gz]
+[2024-05-19 13:48:57] INFO root fetch - main [MainThread]: End processing [feedcrawler]: success
+[2024-05-19 13:48:57] INFO root fetch - processPackages [photobooth]: Remove: archive file [/home/abi/fetcher/tmp/photobooth-0.0.1b2.tar.gz]
+[2024-05-19 13:48:57] INFO root fetch - processPackages [photobooth]: Remove: archive file [/home/abi/fetcher/tmp/photobooth-0.0.1b3.tar.gz]
+[2024-05-19 13:48:57] INFO root fetch - main [MainThread]: End processing [photobooth]: success
+[2024-05-19 13:48:57] INFO root fetch - main [MainThread]: Store serial: [23276002]
