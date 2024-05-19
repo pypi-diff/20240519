@@ -3826,3 +3826,15 @@
 [2024-05-19 06:13:54] INFO root fetch - processPackages [salgorithm]: Remove: archive file [/home/abi/fetcher/tmp/salgorithm-0.2.2.tar.gz]
 [2024-05-19 06:13:54] INFO root fetch - main [MainThread]: End processing [salgorithm]: success
 [2024-05-19 06:13:54] INFO root fetch - main [MainThread]: Store serial: [23273220]
+[2024-05-19 06:15:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273220]
+[2024-05-19 06:16:03] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 06:16:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ctrip-app-ui
+[2024-05-19 06:16:03] INFO root fetch - processPackages [ctrip-app-ui]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-05-19 06:16:03] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/ad/07/739d535a6458fa744414ced052eca153eb49c00f940df4dc40b6d1b5442e/ctrip-app-ui-0.5.8.tar.gz
+[2024-05-19 06:16:04] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/3f/f9/aac7a50eb6986de9513e1af6b5d43a4f2c7944b1f2d42ddb680217a85e7a/ctrip-app-ui-0.5.9.tar.gz
+[2024-05-19 06:16:04] INFO root fetch - processPackages [ctrip-app-ui]: executing diffoscope
+[2024-05-19 06:16:04] INFO root fetch - processPackages [ctrip-app-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctrip-app-ui-0.5.8.tar.gz tmp/ctrip-app-ui-0.5.9.tar.gz --markdown 20240519/c/ctrip-app-ui/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-05-19 06:16:04] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.5.8.tar.gz]
+[2024-05-19 06:16:04] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.5.9.tar.gz]
+[2024-05-19 06:16:04] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
+[2024-05-19 06:16:04] INFO root fetch - main [MainThread]: Store serial: [23273220]
