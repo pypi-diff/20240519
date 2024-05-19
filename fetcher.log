@@ -5785,3 +5785,45 @@
 [2024-05-19 09:17:08] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.9.tar.gz]
 [2024-05-19 09:17:08] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
 [2024-05-19 09:17:08] INFO root fetch - main [MainThread]: Store serial: [23274082]
+[2024-05-19 09:19:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274082]
+[2024-05-19 09:19:17] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 09:19:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: overlaudatoryz
+[2024-05-19 09:19:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: modelmerge
+[2024-05-19 09:19:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xarizmi
+[2024-05-19 09:19:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-mail-quoted-reply
+[2024-05-19 09:19:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: seqlogic
+[2024-05-19 09:19:17] INFO root fetch - processPackages [odoo-addon-mail-quoted-reply]: New version: [16.0.1.0.2] Old Version: [16.0.1.0.1]
+[2024-05-19 09:19:17] INFO root fetch - processPackages [xarizmi]: New version: [0.1.0] Old Version: [0.0.1]
+[2024-05-19 09:19:17] INFO root fetch - processPackages [modelmerge]: New version: [0.4.7] Old Version: [0.4.6]
+[2024-05-19 09:19:17] INFO root fetch - processPackages [odoo-addon-mail-quoted-reply]: Downloading https://files.pythonhosted.org/packages/1d/90/b11311ef6ef7f0c49182ef64a299fda912dd346d5b3478af10b5a5132bda/odoo_addon_mail_quoted_reply-16.0.1.0.1-py3-none-any.whl
+[2024-05-19 09:19:17] INFO root fetch - processPackages [xarizmi]: Downloading https://files.pythonhosted.org/packages/5c/41/6d06a3dbe8252f6ce201fbde85ea515d888a8206bfff9b39bc01e69eedc1/xarizmi-0.0.1.tar.gz
+[2024-05-19 09:19:17] INFO root fetch - processPackages [seqlogic]: New version: [0.1.0] Old Version: [0.0.9]
+[2024-05-19 09:19:17] INFO root fetch - processPackages [modelmerge]: Downloading https://files.pythonhosted.org/packages/0c/13/9f794c12fe24b2d345728a6c3a4c3e84a850cbefa9b228d828aaa1a8dee6/modelmerge-0.4.6.tar.gz
+[2024-05-19 09:19:17] WARNING root fetch - processPackages [overlaudatoryz]: Skipping, unable to determine old version
+[2024-05-19 09:19:17] INFO root fetch - main [MainThread]: End processing [overlaudatoryz] error
+[2024-05-19 09:19:17] INFO root fetch - processPackages [seqlogic]: Downloading https://files.pythonhosted.org/packages/2b/d6/912132c46cf4e20125228fd882ae6ae1db692b95b3152aa94a5830d41c27/seqlogic-0.0.9.tar.gz
+[2024-05-19 09:19:17] INFO root fetch - processPackages [odoo-addon-mail-quoted-reply]: Downloading https://files.pythonhosted.org/packages/ff/55/8fdb4575dc353af7f5b787858b8b73e645a21e4515b1e4e0abbe7e3c3261/odoo_addon_mail_quoted_reply-16.0.1.0.2-py3-none-any.whl
+[2024-05-19 09:19:17] INFO root fetch - processPackages [xarizmi]: Downloading https://files.pythonhosted.org/packages/72/4f/980c3e77315c34e470b3395c2241dbebfabf273b4e19280f52419aba2212/xarizmi-0.1.0.tar.gz
+[2024-05-19 09:19:17] INFO root fetch - processPackages [modelmerge]: Downloading https://files.pythonhosted.org/packages/10/85/65d24936b34ab45495b412bbed28eb47317e98c32bb6f57af17413b12300/modelmerge-0.4.7.tar.gz
+[2024-05-19 09:19:17] INFO root fetch - processPackages [odoo-addon-mail-quoted-reply]: executing diffoscope
+[2024-05-19 09:19:17] INFO root fetch - processPackages [odoo-addon-mail-quoted-reply]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_mail_quoted_reply-16.0.1.0.1-py3-none-any.whl.zip tmp/odoo_addon_mail_quoted_reply-16.0.1.0.2-py3-none-any.whl.zip --markdown 20240519/o/odoo-addon-mail-quoted-reply/16.0.1.0.1-16.0.1.0.2/README.md --exclude *.pyd
+[2024-05-19 09:19:17] INFO root fetch - processPackages [xarizmi]: executing diffoscope
+[2024-05-19 09:19:17] INFO root fetch - processPackages [xarizmi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xarizmi-0.0.1.tar.gz tmp/xarizmi-0.1.0.tar.gz --markdown 20240519/x/xarizmi/0.0.1-0.1.0/README.md --exclude *.pyd
+[2024-05-19 09:19:17] INFO root fetch - processPackages [modelmerge]: executing diffoscope
+[2024-05-19 09:19:17] INFO root fetch - processPackages [modelmerge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modelmerge-0.4.6.tar.gz tmp/modelmerge-0.4.7.tar.gz --markdown 20240519/m/modelmerge/0.4.6-0.4.7/README.md --exclude *.pyd
+[2024-05-19 09:19:17] INFO root fetch - processPackages [seqlogic]: Downloading https://files.pythonhosted.org/packages/f9/0a/ea7cbad1d9a079fa531487d759b250c797d2a1f4b5ab6d8241cb03a2f143/seqlogic-0.1.0.tar.gz
+[2024-05-19 09:19:18] INFO root fetch - processPackages [seqlogic]: executing diffoscope
+[2024-05-19 09:19:18] INFO root fetch - processPackages [seqlogic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seqlogic-0.0.9.tar.gz tmp/seqlogic-0.1.0.tar.gz --markdown 20240519/s/seqlogic/0.0.9-0.1.0/README.md --exclude *.pyd
+[2024-05-19 09:19:18] INFO root fetch - processPackages [xarizmi]: Remove: archive file [/home/abi/fetcher/tmp/xarizmi-0.0.1.tar.gz]
+[2024-05-19 09:19:18] INFO root fetch - processPackages [xarizmi]: Remove: archive file [/home/abi/fetcher/tmp/xarizmi-0.1.0.tar.gz]
+[2024-05-19 09:19:18] INFO root fetch - main [MainThread]: End processing [xarizmi]: success
+[2024-05-19 09:19:18] INFO root fetch - processPackages [odoo-addon-mail-quoted-reply]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_mail_quoted_reply-16.0.1.0.1-py3-none-any.whl.zip]
+[2024-05-19 09:19:18] INFO root fetch - processPackages [odoo-addon-mail-quoted-reply]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_mail_quoted_reply-16.0.1.0.2-py3-none-any.whl.zip]
+[2024-05-19 09:19:18] INFO root fetch - main [MainThread]: End processing [odoo-addon-mail-quoted-reply]: success
+[2024-05-19 09:19:18] INFO root fetch - processPackages [modelmerge]: Remove: archive file [/home/abi/fetcher/tmp/modelmerge-0.4.6.tar.gz]
+[2024-05-19 09:19:18] INFO root fetch - processPackages [modelmerge]: Remove: archive file [/home/abi/fetcher/tmp/modelmerge-0.4.7.tar.gz]
+[2024-05-19 09:19:18] INFO root fetch - main [MainThread]: End processing [modelmerge]: success
+[2024-05-19 09:19:18] INFO root fetch - processPackages [seqlogic]: Remove: archive file [/home/abi/fetcher/tmp/seqlogic-0.0.9.tar.gz]
+[2024-05-19 09:19:18] INFO root fetch - processPackages [seqlogic]: Remove: archive file [/home/abi/fetcher/tmp/seqlogic-0.1.0.tar.gz]
+[2024-05-19 09:19:18] INFO root fetch - main [MainThread]: End processing [seqlogic]: success
+[2024-05-19 09:19:18] INFO root fetch - main [MainThread]: Store serial: [23274099]
