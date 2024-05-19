@@ -2899,3 +2899,33 @@
 [2024-05-19 04:42:27] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz]
 [2024-05-19 04:42:27] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
 [2024-05-19 04:42:27] INFO root fetch - main [MainThread]: Store serial: [23272851]
+[2024-05-19 04:44:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272851]
+[2024-05-19 04:44:36] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 04:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stefutils
+[2024-05-19 04:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ctrip-app-ui
+[2024-05-19 04:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: airbyte-source-iterable
+[2024-05-19 04:44:36] INFO root fetch - processPackages [ctrip-app-ui]: New version: [0.5.3] Old Version: [0.5.2]
+[2024-05-19 04:44:36] INFO root fetch - processPackages [airbyte-source-iterable]: New version: [0.5.1.dev202405182050] Old Version: [0.5.1.dev202405181927]
+[2024-05-19 04:44:36] INFO root fetch - processPackages [airbyte-source-iterable]: Downloading https://files.pythonhosted.org/packages/53/0b/d653744e9d96cccd98e772676f0635a741755cf02a1e16a48f9aa366860a/airbyte_source_iterable-0.5.1.dev202405181927.tar.gz
+[2024-05-19 04:44:36] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/4e/28/bc4843049a2369b07ceff1738e5cc8d14e425b9ed360e3cc34239cbaca81/ctrip-app-ui-0.5.2.tar.gz
+[2024-05-19 04:44:36] INFO root fetch - processPackages [stefutils]: New version: [0.9.0] Old Version: [0.8.2]
+[2024-05-19 04:44:36] INFO root fetch - processPackages [stefutils]: Downloading https://files.pythonhosted.org/packages/35/8a/1e1d14788f07a9e2f1f826ff7ed0782d942b144ca6bdd3e7aba10d88d63c/stefutils-0.8.2.tar.gz
+[2024-05-19 04:44:36] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/62/69/80fde5c6f5a701744347626fe9bf977b71c673e36404793a59243a340ca2/ctrip-app-ui-0.5.3.tar.gz
+[2024-05-19 04:44:36] INFO root fetch - processPackages [ctrip-app-ui]: executing diffoscope
+[2024-05-19 04:44:36] INFO root fetch - processPackages [ctrip-app-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctrip-app-ui-0.5.2.tar.gz tmp/ctrip-app-ui-0.5.3.tar.gz --markdown 20240519/c/ctrip-app-ui/0.5.2-0.5.3/README.md --exclude *.pyd
+[2024-05-19 04:44:37] INFO root fetch - processPackages [airbyte-source-iterable]: Downloading https://files.pythonhosted.org/packages/d8/ea/472dfdfb8aab7078bccd63efcc655bf07d6d9dbd7ee6891f41a1514dcfaa/airbyte_source_iterable-0.5.1.dev202405182050.tar.gz
+[2024-05-19 04:44:37] INFO root fetch - processPackages [stefutils]: Downloading https://files.pythonhosted.org/packages/97/83/18c4d714dca8e70776fec14f20e075956fd6a82321ac6df03f78534d47eb/stefutils-0.9.0.tar.gz
+[2024-05-19 04:44:37] INFO root fetch - processPackages [airbyte-source-iterable]: executing diffoscope
+[2024-05-19 04:44:37] INFO root fetch - processPackages [airbyte-source-iterable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airbyte_source_iterable-0.5.1.dev202405181927.tar.gz tmp/airbyte_source_iterable-0.5.1.dev202405182050.tar.gz --markdown 20240519/a/airbyte-source-iterable/0.5.1.dev202405181927-0.5.1.dev202405182050/README.md --exclude *.pyd
+[2024-05-19 04:44:37] INFO root fetch - processPackages [stefutils]: executing diffoscope
+[2024-05-19 04:44:37] INFO root fetch - processPackages [stefutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stefutils-0.8.2.tar.gz tmp/stefutils-0.9.0.tar.gz --markdown 20240519/s/stefutils/0.8.2-0.9.0/README.md --exclude *.pyd
+[2024-05-19 04:44:37] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.5.2.tar.gz]
+[2024-05-19 04:44:37] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.5.3.tar.gz]
+[2024-05-19 04:44:37] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
+[2024-05-19 04:44:37] INFO root fetch - processPackages [airbyte-source-iterable]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_iterable-0.5.1.dev202405181927.tar.gz]
+[2024-05-19 04:44:37] INFO root fetch - processPackages [airbyte-source-iterable]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_iterable-0.5.1.dev202405182050.tar.gz]
+[2024-05-19 04:44:37] INFO root fetch - main [MainThread]: End processing [airbyte-source-iterable]: success
+[2024-05-19 04:44:37] INFO root fetch - processPackages [stefutils]: Remove: archive file [/home/abi/fetcher/tmp/stefutils-0.8.2.tar.gz]
+[2024-05-19 04:44:37] INFO root fetch - processPackages [stefutils]: Remove: archive file [/home/abi/fetcher/tmp/stefutils-0.9.0.tar.gz]
+[2024-05-19 04:44:37] INFO root fetch - main [MainThread]: End processing [stefutils]: success
+[2024-05-19 04:44:37] INFO root fetch - main [MainThread]: Store serial: [23272856]
