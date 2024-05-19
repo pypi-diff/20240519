@@ -12536,3 +12536,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 16:42:50] INFO root fetch - processPackages [spaceone-inventory]: Remove: archive file [/home/abi/fetcher/tmp/spaceone-inventory-2.0.dev99.tar.gz]
 [2024-05-19 16:42:50] INFO root fetch - main [MainThread]: End processing [spaceone-inventory]: success
 [2024-05-19 16:42:50] INFO root fetch - main [MainThread]: Store serial: [23277371]
+[2024-05-19 16:44:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277371]
+[2024-05-19 16:44:59] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-19 16:44:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yeref
+[2024-05-19 16:44:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: exambuster
+[2024-05-19 16:44:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torspy
+[2024-05-19 16:44:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: freelyz
+[2024-05-19 16:44:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-custom-jsonfield
+[2024-05-19 16:44:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: outpostcli
+[2024-05-19 16:44:59] INFO root fetch - processPackages [outpostcli]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 16:44:59] INFO root fetch - processPackages [torspy]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-05-19 16:44:59] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-19 16:44:59] WARNING root fetch - processPackages [exambuster]: Skipping, unable to determine old version
+[2024-05-19 16:44:59] INFO root fetch - main [MainThread]: End processing [exambuster] error
+[2024-05-19 16:44:59] WARNING root fetch - processPackages [freelyz]: Skipping, unable to determine old version
+[2024-05-19 16:44:59] INFO root fetch - main [MainThread]: End processing [freelyz] error
+[2024-05-19 16:44:59] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/7e/e2/114a39eac567286d0418645c0ea24089c48fcbe4cccec6c79191a5cefccf/outpostcli-0.0.8.tar.gz
+[2024-05-19 16:44:59] INFO root fetch - processPackages [torspy]: Downloading https://files.pythonhosted.org/packages/9e/da/496ab322112f6686daa7ab00a05f1715b30b1a6230ca83576d7e3ac37664/torspy-2.0.0.tar.gz
+[2024-05-19 16:44:59] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-19 16:45:00] ERROR root fetch - processPackages [django-custom-jsonfield]: Unable to get metadata: No such project 'django-custom-jsonfield'
+[2024-05-19 16:45:00] INFO root fetch - main [MainThread]: End processing [django-custom-jsonfield] error
+[2024-05-19 16:45:00] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/df/ab/82b6853cec170d33c2aff19e3a298b0bf56f7ba1b885f6f7d42a10ae43dc/outpostcli-0.0.9.tar.gz
+[2024-05-19 16:45:00] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-19 16:45:00] INFO root fetch - processPackages [torspy]: Downloading https://files.pythonhosted.org/packages/de/7e/6ebd24763e90dab8591894bf9ae5dc138b4ad3543f5998f8f5db0855a3a0/torspy-2.0.1.tar.gz
+[2024-05-19 16:45:00] INFO root fetch - processPackages [outpostcli]: executing diffoscope
+[2024-05-19 16:45:00] INFO root fetch - processPackages [outpostcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outpostcli-0.0.8.tar.gz tmp/outpostcli-0.0.9.tar.gz --markdown 20240519/o/outpostcli/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 16:45:00] INFO root fetch - processPackages [torspy]: executing diffoscope
+[2024-05-19 16:45:00] INFO root fetch - processPackages [torspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torspy-2.0.0.tar.gz tmp/torspy-2.0.1.tar.gz --markdown 20240519/t/torspy/2.0.0-2.0.1/README.md --exclude *.pyd
+[2024-05-19 16:45:00] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-19 16:45:00] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240519/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-19 16:45:00] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.8.tar.gz]
+[2024-05-19 16:45:00] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.9.tar.gz]
+[2024-05-19 16:45:00] INFO root fetch - main [MainThread]: End processing [outpostcli]: success
+[2024-05-19 16:45:00] INFO root fetch - processPackages [torspy]: Remove: archive file [/home/abi/fetcher/tmp/torspy-2.0.0.tar.gz]
+[2024-05-19 16:45:00] INFO root fetch - processPackages [torspy]: Remove: archive file [/home/abi/fetcher/tmp/torspy-2.0.1.tar.gz]
+[2024-05-19 16:45:00] INFO root fetch - main [MainThread]: End processing [torspy]: success
+[2024-05-19 16:45:01] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-19 16:45:01] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-19 16:45:01] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-19 16:45:01] INFO root fetch - main [MainThread]: Store serial: [23277398]
