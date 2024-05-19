@@ -16615,3 +16615,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 20:33:47] INFO root fetch - processPackages [pypaq]: Remove: archive file [/home/abi/fetcher/tmp/pypaq-1.7.7.tar.gz]
 [2024-05-19 20:33:47] INFO root fetch - main [MainThread]: End processing [pypaq]: success
 [2024-05-19 20:33:47] INFO root fetch - main [MainThread]: Store serial: [23279315]
+[2024-05-19 20:35:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279315]
+[2024-05-19 20:35:55] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 20:35:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kenscoffz
+[2024-05-19 20:35:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openclimatedata
+[2024-05-19 20:35:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lute3
+[2024-05-19 20:35:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: coti-sdk
+[2024-05-19 20:35:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: clargs
+[2024-05-19 20:35:55] INFO root fetch - processPackages [coti-sdk]: New version: [0.1.6] Old Version: [0.1.4]
+[2024-05-19 20:35:55] WARNING root fetch - processPackages [kenscoffz]: Skipping, unable to determine old version
+[2024-05-19 20:35:55] INFO root fetch - main [MainThread]: End processing [kenscoffz] error
+[2024-05-19 20:35:55] INFO root fetch - processPackages [coti-sdk]: Downloading https://files.pythonhosted.org/packages/ca/28/98fcfbde3ee7355ab214d1bef25c4bc5799a2bce236239936ccfd9976733/coti_sdk-0.1.4.tar.gz
+[2024-05-19 20:35:55] INFO root fetch - processPackages [lute3]: New version: [3.4.1] Old Version: [3.4.0]
+[2024-05-19 20:35:55] INFO root fetch - processPackages [openclimatedata]: New version: [0.9] Old Version: [0.8]
+[2024-05-19 20:35:55] INFO root fetch - processPackages [clargs]: New version: [0.7.0] Old Version: [0.6.1]
+[2024-05-19 20:35:56] INFO root fetch - processPackages [lute3]: Downloading https://files.pythonhosted.org/packages/3c/bc/b60fd86842782000e78c0cbce9d946127b79cf20b0dc8e13b058eac23a2a/lute3-3.4.0.tar.gz
+[2024-05-19 20:35:56] INFO root fetch - processPackages [openclimatedata]: Downloading https://files.pythonhosted.org/packages/a8/32/ed04455a721bb9faf7a86120fbaaa7223bbaa9a228126bdba076f49d16b1/openclimatedata-0.8.tar.gz
+[2024-05-19 20:35:56] INFO root fetch - processPackages [clargs]: Downloading https://files.pythonhosted.org/packages/10/9a/a6a4bbcbef59da38ce0043a14394b9bca406d5cfbfd8b22b8961bfd6909b/clargs-0.6.1.tar.gz
+[2024-05-19 20:35:56] INFO root fetch - processPackages [coti-sdk]: Downloading https://files.pythonhosted.org/packages/c1/2c/de78ec4671e703b466d0ddaf1e9855f6ed075bc746bad73315a5189ae9cb/coti_sdk-0.1.6.tar.gz
+[2024-05-19 20:35:56] INFO root fetch - processPackages [coti-sdk]: executing diffoscope
+[2024-05-19 20:35:56] INFO root fetch - processPackages [coti-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coti_sdk-0.1.4.tar.gz tmp/coti_sdk-0.1.6.tar.gz --markdown 20240519/c/coti-sdk/0.1.4-0.1.6/README.md --exclude *.pyd
+[2024-05-19 20:35:56] INFO root fetch - processPackages [clargs]: Downloading https://files.pythonhosted.org/packages/2b/15/ec6a749711c590589050835a305969b3021b523312ae5dd2309c6481c9f6/clargs-0.7.0.tar.gz
+[2024-05-19 20:35:56] INFO root fetch - processPackages [openclimatedata]: Downloading https://files.pythonhosted.org/packages/6e/2e/754d2351fe6051693cf51d38540aeac95e485a40509057b06dd00d361dc8/openclimatedata-0.9.tar.gz
+[2024-05-19 20:35:56] INFO root fetch - processPackages [lute3]: Downloading https://files.pythonhosted.org/packages/89/71/0f9782b10fb0c3b9f1fed77038033468df81678d16db284580a8a8c5830d/lute3-3.4.1.tar.gz
+[2024-05-19 20:35:56] INFO root fetch - processPackages [clargs]: executing diffoscope
+[2024-05-19 20:35:56] INFO root fetch - processPackages [clargs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clargs-0.6.1.tar.gz tmp/clargs-0.7.0.tar.gz --markdown 20240519/c/clargs/0.6.1-0.7.0/README.md --exclude *.pyd
+[2024-05-19 20:35:56] INFO root fetch - processPackages [openclimatedata]: executing diffoscope
+[2024-05-19 20:35:56] INFO root fetch - processPackages [openclimatedata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openclimatedata-0.8.tar.gz tmp/openclimatedata-0.9.tar.gz --markdown 20240519/o/openclimatedata/0.8-0.9/README.md --exclude *.pyd
+[2024-05-19 20:35:56] INFO root fetch - processPackages [lute3]: executing diffoscope
+[2024-05-19 20:35:56] INFO root fetch - processPackages [lute3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lute3-3.4.0.tar.gz tmp/lute3-3.4.1.tar.gz --markdown 20240519/l/lute3/3.4.0-3.4.1/README.md --exclude *.pyd
+[2024-05-19 20:35:56] INFO root fetch - processPackages [coti-sdk]: Remove: archive file [/home/abi/fetcher/tmp/coti_sdk-0.1.4.tar.gz]
+[2024-05-19 20:35:56] INFO root fetch - processPackages [coti-sdk]: Remove: archive file [/home/abi/fetcher/tmp/coti_sdk-0.1.6.tar.gz]
+[2024-05-19 20:35:56] INFO root fetch - main [MainThread]: End processing [coti-sdk]: success
+[2024-05-19 20:35:57] INFO root fetch - processPackages [openclimatedata]: Remove: archive file [/home/abi/fetcher/tmp/openclimatedata-0.8.tar.gz]
+[2024-05-19 20:35:57] INFO root fetch - processPackages [openclimatedata]: Remove: archive file [/home/abi/fetcher/tmp/openclimatedata-0.9.tar.gz]
+[2024-05-19 20:35:57] INFO root fetch - main [MainThread]: End processing [openclimatedata]: success
+[2024-05-19 20:35:57] INFO root fetch - processPackages [clargs]: Remove: archive file [/home/abi/fetcher/tmp/clargs-0.6.1.tar.gz]
+[2024-05-19 20:35:57] INFO root fetch - processPackages [clargs]: Remove: archive file [/home/abi/fetcher/tmp/clargs-0.7.0.tar.gz]
+[2024-05-19 20:35:57] INFO root fetch - main [MainThread]: End processing [clargs]: success
+[2024-05-19 20:35:58] INFO root fetch - processPackages [lute3]: Remove: archive file [/home/abi/fetcher/tmp/lute3-3.4.0.tar.gz]
+[2024-05-19 20:35:58] INFO root fetch - processPackages [lute3]: Remove: archive file [/home/abi/fetcher/tmp/lute3-3.4.1.tar.gz]
+[2024-05-19 20:35:58] INFO root fetch - main [MainThread]: End processing [lute3]: success
+[2024-05-19 20:35:58] INFO root fetch - main [MainThread]: Store serial: [23279331]
