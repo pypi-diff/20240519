@@ -16405,3 +16405,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 20:19:55] INFO root fetch - processPackages [pyqn]: Remove: archive file [/home/abi/fetcher/tmp/pyqn-1.4.tar.gz]
 [2024-05-19 20:19:55] INFO root fetch - main [MainThread]: End processing [pyqn]: success
 [2024-05-19 20:19:55] INFO root fetch - main [MainThread]: Store serial: [23279199]
+[2024-05-19 20:21:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279199]
+[2024-05-19 20:22:03] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 20:22:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: opvious
+[2024-05-19 20:22:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pnu-libgh
+[2024-05-19 20:22:03] INFO root fetch - processPackages [opvious]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-05-19 20:22:03] INFO root fetch - processPackages [opvious]: Downloading https://files.pythonhosted.org/packages/d1/8f/b7e05d9b24e4dd1af2b9eab96fa7d1f97af088ed0836d9d8cfdb60c51360/opvious-0.9.5.tar.gz
+[2024-05-19 20:22:03] INFO root fetch - processPackages [pnu-libgh]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-05-19 20:22:03] INFO root fetch - processPackages [pnu-libgh]: Downloading https://files.pythonhosted.org/packages/19/dd/4785286aa6f13db9c21ea0b948d401ae8c3bdda7117a1baee9c607c5ee73/pnu_libgh-0.9.1.tar.gz
+[2024-05-19 20:22:04] INFO root fetch - processPackages [opvious]: Downloading https://files.pythonhosted.org/packages/c2/c3/e2b95ca71e91eb624497389cb2391d3310907b4f9f25dee1a75b99798c14/opvious-0.9.6.tar.gz
+[2024-05-19 20:22:04] INFO root fetch - processPackages [opvious]: executing diffoscope
+[2024-05-19 20:22:04] INFO root fetch - processPackages [opvious]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opvious-0.9.5.tar.gz tmp/opvious-0.9.6.tar.gz --markdown 20240519/o/opvious/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-05-19 20:22:04] INFO root fetch - processPackages [pnu-libgh]: Downloading https://files.pythonhosted.org/packages/95/0a/306e2da099f19284266b0b5911e204eb399d4d64ee3a3decd0ac7cc8c913/pnu_libgh-0.9.2.tar.gz
+[2024-05-19 20:22:04] INFO root fetch - processPackages [pnu-libgh]: executing diffoscope
+[2024-05-19 20:22:04] INFO root fetch - processPackages [pnu-libgh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pnu_libgh-0.9.1.tar.gz tmp/pnu_libgh-0.9.2.tar.gz --markdown 20240519/p/pnu-libgh/0.9.1-0.9.2/README.md --exclude *.pyd
+[2024-05-19 20:22:04] INFO root fetch - processPackages [opvious]: Remove: archive file [/home/abi/fetcher/tmp/opvious-0.9.5.tar.gz]
+[2024-05-19 20:22:04] INFO root fetch - processPackages [opvious]: Remove: archive file [/home/abi/fetcher/tmp/opvious-0.9.6.tar.gz]
+[2024-05-19 20:22:04] INFO root fetch - main [MainThread]: End processing [opvious]: success
+[2024-05-19 20:22:04] INFO root fetch - processPackages [pnu-libgh]: Remove: archive file [/home/abi/fetcher/tmp/pnu_libgh-0.9.1.tar.gz]
+[2024-05-19 20:22:04] INFO root fetch - processPackages [pnu-libgh]: Remove: archive file [/home/abi/fetcher/tmp/pnu_libgh-0.9.2.tar.gz]
+[2024-05-19 20:22:04] INFO root fetch - main [MainThread]: End processing [pnu-libgh]: success
+[2024-05-19 20:22:04] INFO root fetch - main [MainThread]: Store serial: [23279208]
