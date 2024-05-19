@@ -16116,3 +16116,37 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 20:02:17] INFO root fetch - main [MainThread]: End processing [sphinxcontrib-cldomain]: success
 [2024-05-19 20:02:17] INFO root fetch - main [MainThread]: End processing [youtubedlez]: success
 [2024-05-19 20:02:17] INFO root fetch - main [MainThread]: Store serial: [23279069]
+[2024-05-19 20:04:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279069]
+[2024-05-19 20:04:26] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 20:04:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: admissablez
+[2024-05-19 20:04:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hwnxurxciymiyulb
+[2024-05-19 20:04:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: htlloerhktonewth
+[2024-05-19 20:04:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hwnxurxciymiyulb
+[2024-05-19 20:04:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sdkfabric-twitter
+[2024-05-19 20:04:26] INFO root fetch - processPackages [sdkfabric-twitter]: New version: [3.0.6] Old Version: [0.1.0]
+[2024-05-19 20:04:26] INFO root fetch - processPackages [hwnxurxciymiyulb]: New version: [1.10000.10001] Old Version: [1.10000.10000]
+[2024-05-19 20:04:26] INFO root fetch - processPackages [hwnxurxciymiyulb]: New version: [1.10000.10001] Old Version: [1.10000.10000]
+[2024-05-19 20:04:26] WARNING root fetch - processPackages [htlloerhktonewth]: Skipping, unable to determine old version
+[2024-05-19 20:04:26] WARNING root fetch - processPackages [admissablez]: Skipping, unable to determine old version
+[2024-05-19 20:04:26] INFO root fetch - main [MainThread]: End processing [htlloerhktonewth] error
+[2024-05-19 20:04:26] INFO root fetch - main [MainThread]: End processing [admissablez] error
+[2024-05-19 20:04:27] INFO root fetch - processPackages [sdkfabric-twitter]: Downloading https://files.pythonhosted.org/packages/16/2c/8712972f90e9dbcd3def94cca968cabaeb16d5a50b1a36421c9aa26c01c0/sdkfabric_twitter-0.1.0.tar.gz
+[2024-05-19 20:04:27] INFO root fetch - processPackages [hwnxurxciymiyulb]: Downloading https://files.pythonhosted.org/packages/3e/53/ada17f0bc136f4b40dff7c2e7a26f91ee8e55f5a5e592fc54269a688f9be/hwnxurxciymiyulb-1.10000.10000.tar.gz
+[2024-05-19 20:04:27] INFO root fetch - processPackages [hwnxurxciymiyulb]: Downloading https://files.pythonhosted.org/packages/3e/53/ada17f0bc136f4b40dff7c2e7a26f91ee8e55f5a5e592fc54269a688f9be/hwnxurxciymiyulb-1.10000.10000.tar.gz
+[2024-05-19 20:04:27] INFO root fetch - processPackages [sdkfabric-twitter]: Downloading https://files.pythonhosted.org/packages/4a/9a/a9605d7be85b5fd1cdfc6db0da29cc6ee04dfb813adbb1097b9f6b704977/sdkfabric_twitter-3.0.6.tar.gz
+[2024-05-19 20:04:27] INFO root fetch - processPackages [hwnxurxciymiyulb]: Downloading https://files.pythonhosted.org/packages/86/5c/884dfc97229afbacf748e5229dc779e9306ab81fc0bbf070fb62bd8b0b17/hwnxurxciymiyulb-1.10000.10001.tar.gz
+[2024-05-19 20:04:27] INFO root fetch - processPackages [hwnxurxciymiyulb]: Downloading https://files.pythonhosted.org/packages/86/5c/884dfc97229afbacf748e5229dc779e9306ab81fc0bbf070fb62bd8b0b17/hwnxurxciymiyulb-1.10000.10001.tar.gz
+[2024-05-19 20:04:27] INFO root fetch - processPackages [sdkfabric-twitter]: executing diffoscope
+[2024-05-19 20:04:27] INFO root fetch - processPackages [sdkfabric-twitter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdkfabric_twitter-0.1.0.tar.gz tmp/sdkfabric_twitter-3.0.6.tar.gz --markdown 20240519/s/sdkfabric-twitter/0.1.0-3.0.6/README.md --exclude *.pyd
+[2024-05-19 20:04:27] INFO root fetch - processPackages [hwnxurxciymiyulb]: executing diffoscope
+[2024-05-19 20:04:27] INFO root fetch - processPackages [hwnxurxciymiyulb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hwnxurxciymiyulb-1.10000.10000.tar.gz tmp/hwnxurxciymiyulb-1.10000.10001.tar.gz --markdown 20240519/h/hwnxurxciymiyulb/1.10000.10000-1.10000.10001/README.md --exclude *.pyd
+[2024-05-19 20:04:27] INFO root fetch - processPackages [hwnxurxciymiyulb]: executing diffoscope
+[2024-05-19 20:04:27] INFO root fetch - processPackages [hwnxurxciymiyulb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hwnxurxciymiyulb-1.10000.10000.tar.gz tmp/hwnxurxciymiyulb-1.10000.10001.tar.gz --markdown 20240519/h/hwnxurxciymiyulb/1.10000.10000-1.10000.10001/README.md --exclude *.pyd
+[2024-05-19 20:04:28] INFO root fetch - processPackages [sdkfabric-twitter]: Remove: archive file [/home/abi/fetcher/tmp/sdkfabric_twitter-0.1.0.tar.gz]
+[2024-05-19 20:04:28] INFO root fetch - processPackages [sdkfabric-twitter]: Remove: archive file [/home/abi/fetcher/tmp/sdkfabric_twitter-3.0.6.tar.gz]
+[2024-05-19 20:04:28] INFO root fetch - main [MainThread]: End processing [sdkfabric-twitter]: success
+[2024-05-19 20:04:38] INFO root fetch - processPackages [hwnxurxciymiyulb]: Remove: archive file [/home/abi/fetcher/tmp/hwnxurxciymiyulb-1.10000.10000.tar.gz]
+[2024-05-19 20:04:38] INFO root fetch - processPackages [hwnxurxciymiyulb]: Remove: archive file [/home/abi/fetcher/tmp/hwnxurxciymiyulb-1.10000.10001.tar.gz]
+[2024-05-19 20:04:38] INFO root fetch - main [MainThread]: End processing [hwnxurxciymiyulb]: success
+[2024-05-19 20:04:38] INFO root fetch - main [MainThread]: End processing [hwnxurxciymiyulb]: success
+[2024-05-19 20:04:38] INFO root fetch - main [MainThread]: Store serial: [23279086]
