@@ -15052,3 +15052,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 19:22:29] INFO root fetch - processPackages [continuous-eval]: Remove: archive file [/home/abi/fetcher/tmp/continuous_eval-0.3.8.tar.gz]
 [2024-05-19 19:22:29] INFO root fetch - main [MainThread]: End processing [continuous-eval]: success
 [2024-05-19 19:22:29] INFO root fetch - main [MainThread]: Store serial: [23278574]
+[2024-05-19 19:24:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23278574]
+[2024-05-19 19:24:38] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-19 19:24:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qualystbx
+[2024-05-19 19:24:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mojo-credentials
+[2024-05-19 19:24:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wwpdb.io
+[2024-05-19 19:24:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: docketanalyzer
+[2024-05-19 19:24:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: flatpack
+[2024-05-19 19:24:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: CTK-Desert
+[2024-05-19 19:24:38] INFO root fetch - processPackages [qualystbx]: New version: [0.8.0] Old Version: [0.7.0]
+[2024-05-19 19:24:38] INFO root fetch - processPackages [CTK-Desert]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 19:24:38] INFO root fetch - processPackages [flatpack]: New version: [3.4.9] Old Version: [3.4.8]
+[2024-05-19 19:24:38] INFO root fetch - processPackages [qualystbx]: Downloading https://files.pythonhosted.org/packages/3d/13/d82c3acb0e9ea3a9ff76fe6e73a521edc75e84ab686d483a4f360a6a88cb/qualystbx-0.7.0.tar.gz
+[2024-05-19 19:24:38] INFO root fetch - processPackages [wwpdb.io]: New version: [0.33.4] Old Version: [0.33.3]
+[2024-05-19 19:24:38] INFO root fetch - processPackages [docketanalyzer]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-19 19:24:38] INFO root fetch - processPackages [mojo-credentials]: New version: [1.3.9] Old Version: [1.3.8]
+[2024-05-19 19:24:38] INFO root fetch - processPackages [CTK-Desert]: Downloading https://files.pythonhosted.org/packages/9a/73/c7239044a3b6edf571c3f5feded6aab241cff792f7acd98dd42652e44c95/CTK_Desert-0.0.8.tar.gz
+[2024-05-19 19:24:38] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/92/5a/46a0817bd1cfcbeb0f041626a2cc2b28a97a17caa6609495cfb355a5d90e/flatpack-3.4.8.tar.gz
+[2024-05-19 19:24:38] INFO root fetch - processPackages [docketanalyzer]: Downloading https://files.pythonhosted.org/packages/a4/0d/42cf55385c6373a9cc63da0129fb383171e2a627fa177d6e81e4be7a72e7/docketanalyzer-0.1.1-py3-none-any.whl
+[2024-05-19 19:24:38] INFO root fetch - processPackages [mojo-credentials]: Downloading https://files.pythonhosted.org/packages/50/69/7f893c36c930aeea1bb68de3684bb0e7c7428b219c28d1f9f09f1d5105dd/mojo_credentials-1.3.8.tar.gz
+[2024-05-19 19:24:38] INFO root fetch - processPackages [wwpdb.io]: Downloading https://files.pythonhosted.org/packages/a2/e6/672a7a26ef5e17dd71415d688e13d7dacf05f1d165cdcd975e4215c00dc6/wwpdb.io-0.33.3.tar.gz
+[2024-05-19 19:24:38] INFO root fetch - processPackages [qualystbx]: Downloading https://files.pythonhosted.org/packages/88/de/04f9bde377b2e4f3959a99661bf58cb5824a3b55cd37d179c781c0db6773/qualystbx-0.8.0.tar.gz
+[2024-05-19 19:24:38] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/29/b6/9545d80064161872f90e25faa6bb7dc31698e88762b3d442b5fb491967fd/flatpack-3.4.9.tar.gz
+[2024-05-19 19:24:38] INFO root fetch - processPackages [CTK-Desert]: Downloading https://files.pythonhosted.org/packages/6d/b4/d3af97e7bf9ae492dceb1aad8191e260b603096af0a9755ffd707156f69f/CTK_Desert-0.0.9.tar.gz
+[2024-05-19 19:24:38] INFO root fetch - processPackages [qualystbx]: executing diffoscope
+[2024-05-19 19:24:38] INFO root fetch - processPackages [qualystbx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qualystbx-0.7.0.tar.gz tmp/qualystbx-0.8.0.tar.gz --markdown 20240519/q/qualystbx/0.7.0-0.8.0/README.md --exclude *.pyd
+[2024-05-19 19:24:38] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-05-19 19:24:38] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.4.8.tar.gz tmp/flatpack-3.4.9.tar.gz --markdown 20240519/f/flatpack/3.4.8-3.4.9/README.md --exclude *.pyd
+[2024-05-19 19:24:39] INFO root fetch - processPackages [CTK-Desert]: executing diffoscope
+[2024-05-19 19:24:39] INFO root fetch - processPackages [CTK-Desert]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CTK_Desert-0.0.8.tar.gz tmp/CTK_Desert-0.0.9.tar.gz --markdown 20240519/C/CTK-Desert/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 19:24:39] INFO root fetch - processPackages [mojo-credentials]: Downloading https://files.pythonhosted.org/packages/2a/22/ceb9d6bb07cfaecb6fc7a0f84c857f7005f2dbfa87123e6bd668e934bfd3/mojo_credentials-1.3.9.tar.gz
+[2024-05-19 19:24:39] INFO root fetch - processPackages [docketanalyzer]: Downloading https://files.pythonhosted.org/packages/28/b2/ae66cf81eea4788c929e4753682f9e9e77d6e72ea470a17cc0df54c8e9cb/docketanalyzer-0.1.2-py3-none-any.whl
+[2024-05-19 19:24:39] INFO root fetch - processPackages [wwpdb.io]: Downloading https://files.pythonhosted.org/packages/61/9a/0654e07610609beec7874934480f852869b114b77d7518c53b5d8a08cf4d/wwpdb_io-0.33.4.tar.gz
+[2024-05-19 19:24:39] INFO root fetch - processPackages [mojo-credentials]: executing diffoscope
+[2024-05-19 19:24:39] INFO root fetch - processPackages [mojo-credentials]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mojo_credentials-1.3.8.tar.gz tmp/mojo_credentials-1.3.9.tar.gz --markdown 20240519/m/mojo-credentials/1.3.8-1.3.9/README.md --exclude *.pyd
+[2024-05-19 19:24:39] INFO root fetch - processPackages [docketanalyzer]: executing diffoscope
+[2024-05-19 19:24:39] INFO root fetch - processPackages [docketanalyzer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docketanalyzer-0.1.1-py3-none-any.whl.zip tmp/docketanalyzer-0.1.2-py3-none-any.whl.zip --markdown 20240519/d/docketanalyzer/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-19 19:24:39] INFO root fetch - processPackages [wwpdb.io]: executing diffoscope
+[2024-05-19 19:24:39] INFO root fetch - processPackages [wwpdb.io]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wwpdb.io-0.33.3.tar.gz tmp/wwpdb_io-0.33.4.tar.gz --markdown 20240519/w/wwpdb.io/0.33.3-0.33.4/README.md --exclude *.pyd
+[2024-05-19 19:24:39] INFO root fetch - processPackages [qualystbx]: Remove: archive file [/home/abi/fetcher/tmp/qualystbx-0.7.0.tar.gz]
+[2024-05-19 19:24:39] INFO root fetch - processPackages [qualystbx]: Remove: archive file [/home/abi/fetcher/tmp/qualystbx-0.8.0.tar.gz]
+[2024-05-19 19:24:39] INFO root fetch - main [MainThread]: End processing [qualystbx]: success
+[2024-05-19 19:24:39] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.8.tar.gz]
+[2024-05-19 19:24:39] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.9.tar.gz]
+[2024-05-19 19:24:39] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-05-19 19:24:39] INFO root fetch - processPackages [CTK-Desert]: Remove: archive file [/home/abi/fetcher/tmp/CTK_Desert-0.0.8.tar.gz]
+[2024-05-19 19:24:39] INFO root fetch - processPackages [CTK-Desert]: Remove: archive file [/home/abi/fetcher/tmp/CTK_Desert-0.0.9.tar.gz]
+[2024-05-19 19:24:39] INFO root fetch - main [MainThread]: End processing [CTK-Desert]: success
+[2024-05-19 19:24:40] INFO root fetch - processPackages [wwpdb.io]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb.io-0.33.3.tar.gz]
+[2024-05-19 19:24:40] INFO root fetch - processPackages [wwpdb.io]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb_io-0.33.4.tar.gz]
+[2024-05-19 19:24:40] INFO root fetch - main [MainThread]: End processing [wwpdb.io]: success
+[2024-05-19 19:24:40] INFO root fetch - processPackages [mojo-credentials]: Remove: archive file [/home/abi/fetcher/tmp/mojo_credentials-1.3.8.tar.gz]
+[2024-05-19 19:24:40] INFO root fetch - processPackages [mojo-credentials]: Remove: archive file [/home/abi/fetcher/tmp/mojo_credentials-1.3.9.tar.gz]
+[2024-05-19 19:24:40] INFO root fetch - main [MainThread]: End processing [mojo-credentials]: success
+[2024-05-19 19:24:40] INFO root fetch - processPackages [docketanalyzer]: Remove: archive file [/home/abi/fetcher/tmp/docketanalyzer-0.1.1-py3-none-any.whl.zip]
+[2024-05-19 19:24:40] INFO root fetch - processPackages [docketanalyzer]: Remove: archive file [/home/abi/fetcher/tmp/docketanalyzer-0.1.2-py3-none-any.whl.zip]
+[2024-05-19 19:24:40] INFO root fetch - main [MainThread]: End processing [docketanalyzer]: success
+[2024-05-19 19:24:40] INFO root fetch - main [MainThread]: Store serial: [23278587]
