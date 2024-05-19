@@ -2360,3 +2360,14 @@
 [2024-05-19 04:05:09] INFO root fetch - processPackages [RNASQLite]: Remove: archive file [/home/abi/fetcher/tmp/rnasqlite-0.1.8.tar.gz]
 [2024-05-19 04:05:09] INFO root fetch - main [MainThread]: End processing [RNASQLite]: success
 [2024-05-19 04:05:09] INFO root fetch - main [MainThread]: Store serial: [23272574]
+[2024-05-19 04:07:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272574]
+[2024-05-19 04:07:17] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 04:07:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: phytotronz
+[2024-05-19 04:07:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyVHL
+[2024-05-19 04:07:18] INFO root fetch - processPackages [pyVHL]: New version: [0.1.5.3] Old Version: [0.1.5.2]
+[2024-05-19 04:07:18] WARNING root fetch - processPackages [phytotronz]: Skipping, unable to determine old version
+[2024-05-19 04:07:18] INFO root fetch - main [MainThread]: End processing [phytotronz] error
+[2024-05-19 04:07:18] INFO root fetch - processPackages [pyVHL]: Downloading https://files.pythonhosted.org/packages/1f/40/2afabfb1ae7f1e538713cbfb85c8c953675122459b69526661ff4397f601/pyvhl-0.1.5.2.tar.gz
+[2024-05-19 04:07:18] WARNING root fetch - processPackages [pyVHL]: Skipping package: exceeds size limit 11318990>=10485760
+[2024-05-19 04:07:18] INFO root fetch - main [MainThread]: End processing [pyVHL] error
+[2024-05-19 04:07:18] INFO root fetch - main [MainThread]: Store serial: [23272581]
