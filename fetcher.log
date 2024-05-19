@@ -7658,3 +7658,30 @@
 [2024-05-19 11:29:37] INFO root fetch - processPackages [sqlman]: Remove: archive file [/home/abi/fetcher/tmp/sqlman-0.3.4.tar.gz]
 [2024-05-19 11:29:37] INFO root fetch - main [MainThread]: End processing [sqlman]: success
 [2024-05-19 11:29:37] INFO root fetch - main [MainThread]: Store serial: [23275055]
+[2024-05-19 11:31:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275055]
+[2024-05-19 11:31:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 11:31:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: html_summary
+[2024-05-19 11:31:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unfallaciouslyz
+[2024-05-19 11:31:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: py-missing-releases-librmo
+[2024-05-19 11:31:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-sdk-remote
+[2024-05-19 11:31:45] INFO root fetch - processPackages [python-sdk-remote]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-19 11:31:46] INFO root fetch - processPackages [python-sdk-remote]: Downloading https://files.pythonhosted.org/packages/b2/73/ff727800d332ba3412e3135ded7fed3d1b78930e48ab4f978b5038b41b5f/python_sdk_remote-0.0.98.tar.gz
+[2024-05-19 11:31:46] WARNING root fetch - processPackages [unfallaciouslyz]: Skipping, unable to determine old version
+[2024-05-19 11:31:46] INFO root fetch - main [MainThread]: End processing [unfallaciouslyz] error
+[2024-05-19 11:31:46] WARNING root fetch - processPackages [py-missing-releases-librmo]: Skipping, unable to determine old version
+[2024-05-19 11:31:46] INFO root fetch - main [MainThread]: End processing [py-missing-releases-librmo] error
+[2024-05-19 11:31:46] INFO root fetch - processPackages [html_summary]: New version: [0.2.1] Old Version: [0.1.0]
+[2024-05-19 11:31:46] INFO root fetch - processPackages [html_summary]: Downloading https://files.pythonhosted.org/packages/d1/a2/91d359cbbbbf3960fee0523b80207d1a7b81fbc80c8ec6f3b25ea1788ddd/html_summary-0.1.0-py3-none-any.whl
+[2024-05-19 11:31:46] INFO root fetch - processPackages [python-sdk-remote]: Downloading https://files.pythonhosted.org/packages/c6/6c/d232e7e91dcb30944e7eee0abdeb4922803eca620e93ce6940350682eaeb/python_sdk_remote-0.0.99.tar.gz
+[2024-05-19 11:31:46] INFO root fetch - processPackages [python-sdk-remote]: executing diffoscope
+[2024-05-19 11:31:46] INFO root fetch - processPackages [python-sdk-remote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_sdk_remote-0.0.98.tar.gz tmp/python_sdk_remote-0.0.99.tar.gz --markdown 20240519/p/python-sdk-remote/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-19 11:31:46] INFO root fetch - processPackages [html_summary]: Downloading https://files.pythonhosted.org/packages/e2/1e/0b32f76f6143b0b9534a4547222a8302ebd52be55b2e7ba74c44f5c8c906/html_summary-0.2.1-py3-none-any.whl
+[2024-05-19 11:31:46] INFO root fetch - processPackages [html_summary]: executing diffoscope
+[2024-05-19 11:31:46] INFO root fetch - processPackages [html_summary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/html_summary-0.1.0-py3-none-any.whl.zip tmp/html_summary-0.2.1-py3-none-any.whl.zip --markdown 20240519/h/html_summary/0.1.0-0.2.1/README.md --exclude *.pyd
+[2024-05-19 11:31:46] INFO root fetch - processPackages [python-sdk-remote]: Remove: archive file [/home/abi/fetcher/tmp/python_sdk_remote-0.0.98.tar.gz]
+[2024-05-19 11:31:46] INFO root fetch - processPackages [python-sdk-remote]: Remove: archive file [/home/abi/fetcher/tmp/python_sdk_remote-0.0.99.tar.gz]
+[2024-05-19 11:31:46] INFO root fetch - main [MainThread]: End processing [python-sdk-remote]: success
+[2024-05-19 11:31:47] INFO root fetch - processPackages [html_summary]: Remove: archive file [/home/abi/fetcher/tmp/html_summary-0.1.0-py3-none-any.whl.zip]
+[2024-05-19 11:31:47] INFO root fetch - processPackages [html_summary]: Remove: archive file [/home/abi/fetcher/tmp/html_summary-0.2.1-py3-none-any.whl.zip]
+[2024-05-19 11:31:47] INFO root fetch - main [MainThread]: End processing [html_summary]: success
+[2024-05-19 11:31:47] INFO root fetch - main [MainThread]: Store serial: [23275069]
