@@ -13528,3 +13528,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 17:39:46] INFO root fetch - processPackages [solarium]: Remove: archive file [/home/abi/fetcher/tmp/solarium-0.4.0.tar.gz]
 [2024-05-19 17:39:46] INFO root fetch - main [MainThread]: End processing [solarium]: success
 [2024-05-19 17:39:46] INFO root fetch - main [MainThread]: Store serial: [23277865]
+[2024-05-19 17:41:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277865]
+[2024-05-19 17:41:55] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-19 17:41:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: trichocarpousz
+[2024-05-19 17:41:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yeref
+[2024-05-19 17:41:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: moval
+[2024-05-19 17:41:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: diffrax
+[2024-05-19 17:41:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lm-dw-deezer
+[2024-05-19 17:41:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: py_midicsv
+[2024-05-19 17:41:55] INFO root fetch - processPackages [moval]: New version: [0.3.7] Old Version: [0.3.6]
+[2024-05-19 17:41:55] INFO root fetch - processPackages [lm-dw-deezer]: New version: [0.0.2b6] Old Version: [0.0.2b5]
+[2024-05-19 17:41:55] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-19 17:41:55] INFO root fetch - processPackages [lm-dw-deezer]: Downloading https://files.pythonhosted.org/packages/7c/df/2c8360ac7d9d388c75e8825d755643e706a6be1020b6fa3902e346fb40bb/lm_dw_deezer-0.0.2b5.tar.gz
+[2024-05-19 17:41:55] INFO root fetch - processPackages [moval]: Downloading https://files.pythonhosted.org/packages/6a/ff/9d9e614ab1eb1e433b0a65faf560a5df459e3b844a92e57ac5e581c3d6bb/moval-0.3.6.tar.gz
+[2024-05-19 17:41:55] WARNING root fetch - processPackages [trichocarpousz]: Skipping, unable to determine old version
+[2024-05-19 17:41:55] INFO root fetch - main [MainThread]: End processing [trichocarpousz] error
+[2024-05-19 17:41:55] INFO root fetch - processPackages [diffrax]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-05-19 17:41:55] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-19 17:41:55] INFO root fetch - processPackages [py_midicsv]: New version: [4.1.0] Old Version: [4.0.0]
+[2024-05-19 17:41:55] INFO root fetch - processPackages [diffrax]: Downloading https://files.pythonhosted.org/packages/ac/50/29928c72f2e82b7580249e65a619b41e1f7495f7503254d4ce6b4897effb/diffrax-0.5.0.tar.gz
+[2024-05-19 17:41:55] INFO root fetch - processPackages [lm-dw-deezer]: Downloading https://files.pythonhosted.org/packages/fa/52/e132d31f8a0180f2b24d99c7e3ec8ffd6c1a14e52a3412cb9bb13d2541aa/lm_dw_deezer-0.0.2b6.tar.gz
+[2024-05-19 17:41:55] INFO root fetch - processPackages [moval]: Downloading https://files.pythonhosted.org/packages/37/87/f3d551c581becbd75a7068cac3b47fc47e725d8deb6d6a6686527ac91ecc/moval-0.3.7.tar.gz
+[2024-05-19 17:41:55] INFO root fetch - processPackages [py_midicsv]: Downloading https://files.pythonhosted.org/packages/32/50/6569ce1e69ee6326cf08865c17ab4dacce53ef89119dce67480d36ec724f/py_midicsv-4.0.0.tar.gz
+[2024-05-19 17:41:55] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-19 17:41:55] INFO root fetch - processPackages [lm-dw-deezer]: executing diffoscope
+[2024-05-19 17:41:55] INFO root fetch - processPackages [lm-dw-deezer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lm_dw_deezer-0.0.2b5.tar.gz tmp/lm_dw_deezer-0.0.2b6.tar.gz --markdown 20240519/l/lm-dw-deezer/0.0.2b5-0.0.2b6/README.md --exclude *.pyd
+[2024-05-19 17:41:55] INFO root fetch - processPackages [moval]: executing diffoscope
+[2024-05-19 17:41:55] INFO root fetch - processPackages [moval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moval-0.3.6.tar.gz tmp/moval-0.3.7.tar.gz --markdown 20240519/m/moval/0.3.6-0.3.7/README.md --exclude *.pyd
+[2024-05-19 17:41:55] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-19 17:41:55] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240519/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-19 17:41:55] INFO root fetch - processPackages [diffrax]: Downloading https://files.pythonhosted.org/packages/37/38/8d3a949ad9d13ee48c0c5a6c53da46e7ffebe7e7aa75bea5ba6c416dba5a/diffrax-0.5.1.tar.gz
+[2024-05-19 17:41:56] INFO root fetch - processPackages [py_midicsv]: Downloading https://files.pythonhosted.org/packages/ed/dd/d5be89191e44df551325fb34f4995cd3d234f65ce931e9292d1a9eb4f4f2/py_midicsv-4.1.0.tar.gz
+[2024-05-19 17:41:56] INFO root fetch - processPackages [diffrax]: executing diffoscope
+[2024-05-19 17:41:56] INFO root fetch - processPackages [diffrax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diffrax-0.5.0.tar.gz tmp/diffrax-0.5.1.tar.gz --markdown 20240519/d/diffrax/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-05-19 17:41:56] INFO root fetch - processPackages [py_midicsv]: executing diffoscope
+[2024-05-19 17:41:56] INFO root fetch - processPackages [py_midicsv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_midicsv-4.0.0.tar.gz tmp/py_midicsv-4.1.0.tar.gz --markdown 20240519/p/py_midicsv/4.0.0-4.1.0/README.md --exclude *.pyd
+[2024-05-19 17:41:56] INFO root fetch - processPackages [lm-dw-deezer]: Remove: archive file [/home/abi/fetcher/tmp/lm_dw_deezer-0.0.2b5.tar.gz]
+[2024-05-19 17:41:56] INFO root fetch - processPackages [lm-dw-deezer]: Remove: archive file [/home/abi/fetcher/tmp/lm_dw_deezer-0.0.2b6.tar.gz]
+[2024-05-19 17:41:56] INFO root fetch - main [MainThread]: End processing [lm-dw-deezer]: success
+[2024-05-19 17:41:56] INFO root fetch - processPackages [moval]: Remove: archive file [/home/abi/fetcher/tmp/moval-0.3.6.tar.gz]
+[2024-05-19 17:41:56] INFO root fetch - processPackages [moval]: Remove: archive file [/home/abi/fetcher/tmp/moval-0.3.7.tar.gz]
+[2024-05-19 17:41:56] INFO root fetch - main [MainThread]: End processing [moval]: success
+[2024-05-19 17:41:56] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-19 17:41:56] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-19 17:41:56] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-19 17:41:56] INFO root fetch - processPackages [py_midicsv]: Remove: archive file [/home/abi/fetcher/tmp/py_midicsv-4.0.0.tar.gz]
+[2024-05-19 17:41:56] INFO root fetch - processPackages [py_midicsv]: Remove: archive file [/home/abi/fetcher/tmp/py_midicsv-4.1.0.tar.gz]
+[2024-05-19 17:41:56] INFO root fetch - main [MainThread]: End processing [py_midicsv]: success
+[2024-05-19 17:41:56] INFO root fetch - processPackages [diffrax]: Remove: archive file [/home/abi/fetcher/tmp/diffrax-0.5.0.tar.gz]
+[2024-05-19 17:41:56] INFO root fetch - processPackages [diffrax]: Remove: archive file [/home/abi/fetcher/tmp/diffrax-0.5.1.tar.gz]
+[2024-05-19 17:41:56] INFO root fetch - main [MainThread]: End processing [diffrax]: success
+[2024-05-19 17:41:56] INFO root fetch - main [MainThread]: Store serial: [23277884]
