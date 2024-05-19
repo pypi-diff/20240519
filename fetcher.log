@@ -10606,3 +10606,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 14:46:30] INFO root fetch - processPackages [robotframework-seleniumlibrary]: Remove: archive file [/home/abi/fetcher/tmp/robotframework_seleniumlibrary-6.4.0rc1.tar.gz]
 [2024-05-19 14:46:30] INFO root fetch - main [MainThread]: End processing [robotframework-seleniumlibrary]: success
 [2024-05-19 14:46:30] INFO root fetch - main [MainThread]: Store serial: [23276380]
+[2024-05-19 14:48:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276380]
+[2024-05-19 14:48:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 14:48:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiogram-broadcaster
+[2024-05-19 14:48:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: upicvision
+[2024-05-19 14:48:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Maslib
+[2024-05-19 14:48:39] INFO root fetch - processPackages [Maslib]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-19 14:48:39] INFO root fetch - processPackages [Maslib]: Downloading https://files.pythonhosted.org/packages/13/60/f214eff7478b9603f94813be6226c1361711802efe9ea51ff815fa0ef7cc/Maslib-0.0.7.tar.gz
+[2024-05-19 14:48:39] WARNING root fetch - processPackages [aiogram-broadcaster]: Skipping, unable to determine old version
+[2024-05-19 14:48:39] INFO root fetch - main [MainThread]: End processing [aiogram-broadcaster] error
+[2024-05-19 14:48:39] WARNING root fetch - processPackages [upicvision]: Skipping, unable to determine old version
+[2024-05-19 14:48:39] INFO root fetch - main [MainThread]: End processing [upicvision] error
+[2024-05-19 14:48:39] INFO root fetch - processPackages [Maslib]: Downloading https://files.pythonhosted.org/packages/f8/da/5103986b4d039d87b75de6d012ab6698ffe92f50bae988f373fea05d5131/Maslib-0.0.8.tar.gz
+[2024-05-19 14:48:40] INFO root fetch - processPackages [Maslib]: executing diffoscope
+[2024-05-19 14:48:40] INFO root fetch - processPackages [Maslib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Maslib-0.0.7.tar.gz tmp/Maslib-0.0.8.tar.gz --markdown 20240519/M/Maslib/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-19 14:48:40] INFO root fetch - processPackages [Maslib]: Remove: archive file [/home/abi/fetcher/tmp/Maslib-0.0.7.tar.gz]
+[2024-05-19 14:48:40] INFO root fetch - processPackages [Maslib]: Remove: archive file [/home/abi/fetcher/tmp/Maslib-0.0.8.tar.gz]
+[2024-05-19 14:48:40] INFO root fetch - main [MainThread]: End processing [Maslib]: success
+[2024-05-19 14:48:40] INFO root fetch - main [MainThread]: Store serial: [23276412]
