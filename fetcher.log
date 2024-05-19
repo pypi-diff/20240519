@@ -19048,3 +19048,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 22:45:51] INFO root fetch - processPackages [tencentcloud-sdk-python-cloudstudio]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-cloudstudio-3.0.999.tar.gz]
 [2024-05-19 22:45:51] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-cloudstudio]: success
 [2024-05-19 22:45:51] INFO root fetch - main [MainThread]: Store serial: [23280398]
+[2024-05-19 22:47:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23280398]
+[2024-05-19 22:47:59] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-19 22:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: otodyniaz
+[2024-05-19 22:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tencentcloud-sdk-python-cme
+[2024-05-19 22:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mteb
+[2024-05-19 22:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: oresat-configs
+[2024-05-19 22:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: proadv
+[2024-05-19 22:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tap-airtable
+[2024-05-19 22:48:00] INFO root fetch - processPackages [tap-airtable]: New version: [0.1.0.dev5] Old Version: [0.1.0.dev4]
+[2024-05-19 22:48:00] INFO root fetch - processPackages [mteb]: New version: [1.9.3] Old Version: [1.9.2]
+[2024-05-19 22:48:00] WARNING root fetch - processPackages [otodyniaz]: Skipping, unable to determine old version
+[2024-05-19 22:48:00] INFO root fetch - main [MainThread]: End processing [otodyniaz] error
+[2024-05-19 22:48:00] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/aa/99/be58df74a89833b5d44fbd8f00e5c99b4ca82aa67a9c1487fd782328d3b5/mteb-1.9.2.tar.gz
+[2024-05-19 22:48:00] INFO root fetch - processPackages [oresat-configs]: New version: [0.7.1] Old Version: [0.7.0]
+[2024-05-19 22:48:00] INFO root fetch - processPackages [proadv]: New version: [2.1.2] Old Version: [2.1.1]
+[2024-05-19 22:48:00] INFO root fetch - processPackages [tencentcloud-sdk-python-cme]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-19 22:48:00] INFO root fetch - processPackages [tap-airtable]: Downloading https://files.pythonhosted.org/packages/01/c4/a7703da45f23d11ab8469f96081c6a56d04dec8697f649e02353d715f69f/tap_airtable-0.1.0.dev4.tar.gz
+[2024-05-19 22:48:00] INFO root fetch - processPackages [proadv]: Downloading https://files.pythonhosted.org/packages/aa/ba/189788c85e4f2aca82ad5ae2ef9444ad03ab302d59866ff8bf590caf05c1/proadv-2.1.1.tar.gz
+[2024-05-19 22:48:00] INFO root fetch - processPackages [oresat-configs]: Downloading https://files.pythonhosted.org/packages/6d/20/4bbfa85292335e82173fffd5a6e148402e7675c0d53bc72944ac5bfc6d3e/oresat_configs-0.7.0.tar.gz
+[2024-05-19 22:48:00] INFO root fetch - processPackages [tencentcloud-sdk-python-cme]: Downloading https://files.pythonhosted.org/packages/01/65/a087bb9834ad9041f9a0eaf70acc636e3625de2e3464d9f59440222627ff/tencentcloud-sdk-python-cme-3.0.998.tar.gz
+[2024-05-19 22:48:00] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/1a/05/483a4778dcfb42b672c3c28ac435e64d386b1df507d3c0059e5da9194653/mteb-1.9.3.tar.gz
+[2024-05-19 22:48:00] INFO root fetch - processPackages [tap-airtable]: Downloading https://files.pythonhosted.org/packages/32/2e/a7098e37f35ff72fd5327584dd894763f142654622089bb1a8abce07da61/tap_airtable-0.1.0.dev5.tar.gz
+[2024-05-19 22:48:00] INFO root fetch - processPackages [mteb]: executing diffoscope
+[2024-05-19 22:48:00] INFO root fetch - processPackages [mteb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mteb-1.9.2.tar.gz tmp/mteb-1.9.3.tar.gz --markdown 20240519/m/mteb/1.9.2-1.9.3/README.md --exclude *.pyd
+[2024-05-19 22:48:00] INFO root fetch - processPackages [proadv]: Downloading https://files.pythonhosted.org/packages/65/48/40ee313e4ca6e34461d79da1632f611807afa528286fdd7c0416103da8f9/proadv-2.1.2.tar.gz
+[2024-05-19 22:48:00] INFO root fetch - processPackages [tap-airtable]: executing diffoscope
+[2024-05-19 22:48:00] INFO root fetch - processPackages [tap-airtable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tap_airtable-0.1.0.dev4.tar.gz tmp/tap_airtable-0.1.0.dev5.tar.gz --markdown 20240519/t/tap-airtable/0.1.0.dev4-0.1.0.dev5/README.md --exclude *.pyd
+[2024-05-19 22:48:00] INFO root fetch - processPackages [tencentcloud-sdk-python-cme]: Downloading https://files.pythonhosted.org/packages/cb/f2/6b10fd6ddabb0b789d608eaf3637784c798a4290db17de5248ab85461a13/tencentcloud-sdk-python-cme-3.0.999.tar.gz
+[2024-05-19 22:48:00] INFO root fetch - processPackages [oresat-configs]: Downloading https://files.pythonhosted.org/packages/8e/c3/ebb22215979c9c0d838122419cb6ac63ed135f0039a9c02aafb2f84d730d/oresat_configs-0.7.1.tar.gz
+[2024-05-19 22:48:00] INFO root fetch - processPackages [tencentcloud-sdk-python-cme]: executing diffoscope
+[2024-05-19 22:48:00] INFO root fetch - processPackages [tencentcloud-sdk-python-cme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-cme-3.0.998.tar.gz tmp/tencentcloud-sdk-python-cme-3.0.999.tar.gz --markdown 20240519/t/tencentcloud-sdk-python-cme/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-19 22:48:00] INFO root fetch - processPackages [proadv]: executing diffoscope
+[2024-05-19 22:48:00] INFO root fetch - processPackages [proadv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proadv-2.1.1.tar.gz tmp/proadv-2.1.2.tar.gz --markdown 20240519/p/proadv/2.1.1-2.1.2/README.md --exclude *.pyd
+[2024-05-19 22:48:01] INFO root fetch - processPackages [oresat-configs]: executing diffoscope
+[2024-05-19 22:48:01] INFO root fetch - processPackages [oresat-configs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oresat_configs-0.7.0.tar.gz tmp/oresat_configs-0.7.1.tar.gz --markdown 20240519/o/oresat-configs/0.7.0-0.7.1/README.md --exclude *.pyd
+[2024-05-19 22:48:01] INFO root fetch - processPackages [tap-airtable]: Remove: archive file [/home/abi/fetcher/tmp/tap_airtable-0.1.0.dev4.tar.gz]
+[2024-05-19 22:48:01] INFO root fetch - processPackages [tap-airtable]: Remove: archive file [/home/abi/fetcher/tmp/tap_airtable-0.1.0.dev5.tar.gz]
+[2024-05-19 22:48:01] INFO root fetch - main [MainThread]: End processing [tap-airtable]: success
+[2024-05-19 22:48:01] INFO root fetch - processPackages [tencentcloud-sdk-python-cme]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-cme-3.0.998.tar.gz]
+[2024-05-19 22:48:01] INFO root fetch - processPackages [tencentcloud-sdk-python-cme]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-cme-3.0.999.tar.gz]
+[2024-05-19 22:48:01] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-cme]: success
+[2024-05-19 22:48:01] INFO root fetch - processPackages [proadv]: Remove: archive file [/home/abi/fetcher/tmp/proadv-2.1.1.tar.gz]
+[2024-05-19 22:48:01] INFO root fetch - processPackages [proadv]: Remove: archive file [/home/abi/fetcher/tmp/proadv-2.1.2.tar.gz]
+[2024-05-19 22:48:01] INFO root fetch - main [MainThread]: End processing [proadv]: success
+[2024-05-19 22:48:01] INFO root fetch - processPackages [oresat-configs]: Remove: archive file [/home/abi/fetcher/tmp/oresat_configs-0.7.0.tar.gz]
+[2024-05-19 22:48:01] INFO root fetch - processPackages [oresat-configs]: Remove: archive file [/home/abi/fetcher/tmp/oresat_configs-0.7.1.tar.gz]
+[2024-05-19 22:48:01] INFO root fetch - main [MainThread]: End processing [oresat-configs]: success
+[2024-05-19 22:48:03] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.9.2.tar.gz]
+[2024-05-19 22:48:03] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.9.3.tar.gz]
+[2024-05-19 22:48:03] INFO root fetch - main [MainThread]: End processing [mteb]: success
+[2024-05-19 22:48:03] INFO root fetch - main [MainThread]: Store serial: [23280418]
