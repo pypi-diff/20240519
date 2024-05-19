@@ -17893,3 +17893,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 22:04:41] INFO root fetch - processPackages [woningwaardering]: Remove: archive file [/home/abi/fetcher/tmp/woningwaardering-0.2.14a0.tar.gz]
 [2024-05-19 22:04:41] INFO root fetch - main [MainThread]: End processing [woningwaardering]: success
 [2024-05-19 22:04:41] INFO root fetch - main [MainThread]: Store serial: [23279918]
+[2024-05-19 22:06:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279918]
+[2024-05-19 22:06:50] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 22:06:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: StatAssist
+[2024-05-19 22:06:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastblocks
+[2024-05-19 22:06:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dddesign
+[2024-05-19 22:06:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: strongholdsz
+[2024-05-19 22:06:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: scrapegraphai
+[2024-05-19 22:06:50] INFO root fetch - processPackages [fastblocks]: New version: [0.4.0] Old Version: [0.3.9]
+[2024-05-19 22:06:50] WARNING root fetch - processPackages [dddesign]: Skipping, unable to determine old version
+[2024-05-19 22:06:50] INFO root fetch - main [MainThread]: End processing [dddesign] error
+[2024-05-19 22:06:50] INFO root fetch - processPackages [fastblocks]: Downloading https://files.pythonhosted.org/packages/c3/3f/12e28742315fe38c04bbb820d6d382f5d37354232b2d79d5927aa52fb407/fastblocks-0.3.9.tar.gz
+[2024-05-19 22:06:50] WARNING root fetch - processPackages [strongholdsz]: Skipping, unable to determine old version
+[2024-05-19 22:06:50] INFO root fetch - main [MainThread]: End processing [strongholdsz] error
+[2024-05-19 22:06:50] INFO root fetch - processPackages [StatAssist]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-19 22:06:50] INFO root fetch - processPackages [scrapegraphai]: New version: [1.3.0b1] Old Version: [1.3.0]
+[2024-05-19 22:06:50] INFO root fetch - processPackages [StatAssist]: Downloading https://files.pythonhosted.org/packages/c7/0d/95048a4e2fdebe7370792d2647fd5c877fdaed92628e9f888b50e8ffe0a8/StatAssist-1.0.1.tar.gz
+[2024-05-19 22:06:50] INFO root fetch - processPackages [fastblocks]: Downloading https://files.pythonhosted.org/packages/e1/6c/e6e9400ab6ce6851417eeb694cc53161e828738f390f720ec01e9ba5d843/fastblocks-0.4.0.tar.gz
+[2024-05-19 22:06:50] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/90/e0/8dab0b6ad6d81b56b54d96fa8c1540ef3005be63c4d4e826d184d0735b32/scrapegraphai-1.3.0.tar.gz
+[2024-05-19 22:06:51] INFO root fetch - processPackages [fastblocks]: executing diffoscope
+[2024-05-19 22:06:51] INFO root fetch - processPackages [fastblocks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastblocks-0.3.9.tar.gz tmp/fastblocks-0.4.0.tar.gz --markdown 20240519/f/fastblocks/0.3.9-0.4.0/README.md --exclude *.pyd
+[2024-05-19 22:06:51] INFO root fetch - processPackages [StatAssist]: Downloading https://files.pythonhosted.org/packages/ab/98/03196334c76e506918df8cd7e3290f608feed6cca2e1f3a19ae438649b13/StatAssist-1.0.2.tar.gz
+[2024-05-19 22:06:51] INFO root fetch - processPackages [StatAssist]: executing diffoscope
+[2024-05-19 22:06:51] INFO root fetch - processPackages [StatAssist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/StatAssist-1.0.1.tar.gz tmp/StatAssist-1.0.2.tar.gz --markdown 20240519/S/StatAssist/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-19 22:06:51] INFO root fetch - processPackages [fastblocks]: Remove: archive file [/home/abi/fetcher/tmp/fastblocks-0.3.9.tar.gz]
+[2024-05-19 22:06:51] INFO root fetch - processPackages [fastblocks]: Remove: archive file [/home/abi/fetcher/tmp/fastblocks-0.4.0.tar.gz]
+[2024-05-19 22:06:51] INFO root fetch - main [MainThread]: End processing [fastblocks]: success
+[2024-05-19 22:06:51] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/86/66/c9a4f2b4b4eadb546b128b65e929c0ba79c2d9212f68ff332bccab2cf3d6/scrapegraphai-1.3.0b1.tar.gz
+[2024-05-19 22:06:51] INFO root fetch - processPackages [StatAssist]: Remove: archive file [/home/abi/fetcher/tmp/StatAssist-1.0.1.tar.gz]
+[2024-05-19 22:06:51] INFO root fetch - processPackages [StatAssist]: Remove: archive file [/home/abi/fetcher/tmp/StatAssist-1.0.2.tar.gz]
+[2024-05-19 22:06:51] INFO root fetch - main [MainThread]: End processing [StatAssist]: success
+[2024-05-19 22:06:51] INFO root fetch - processPackages [scrapegraphai]: executing diffoscope
+[2024-05-19 22:06:51] INFO root fetch - processPackages [scrapegraphai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapegraphai-1.3.0.tar.gz tmp/scrapegraphai-1.3.0b1.tar.gz --markdown 20240519/s/scrapegraphai/1.3.0-1.3.0b1/README.md --exclude *.pyd
+[2024-05-19 22:06:53] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-1.3.0.tar.gz]
+[2024-05-19 22:06:53] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-1.3.0b1.tar.gz]
+[2024-05-19 22:06:53] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
+[2024-05-19 22:06:53] INFO root fetch - main [MainThread]: Store serial: [23279934]
