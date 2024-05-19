@@ -17659,3 +17659,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 21:44:59] INFO root fetch - processPackages [Simba-UW-tf-dev]: Remove: archive file [/home/abi/fetcher/tmp/Simba-UW-tf-dev-1.93.1.tar.gz]
 [2024-05-19 21:44:59] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
 [2024-05-19 21:44:59] INFO root fetch - main [MainThread]: Store serial: [23279800]
+[2024-05-19 21:47:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279800]
+[2024-05-19 21:47:08] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 21:47:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: potholerz
+[2024-05-19 21:47:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: langstory
+[2024-05-19 21:47:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nextguild
+[2024-05-19 21:47:08] WARNING root fetch - processPackages [potholerz]: Skipping, unable to determine old version
+[2024-05-19 21:47:08] INFO root fetch - main [MainThread]: End processing [potholerz] error
+[2024-05-19 21:47:08] INFO root fetch - processPackages [langstory]: New version: [0.0.1] Old Version: [0.0.0]
+[2024-05-19 21:47:08] INFO root fetch - processPackages [nextguild]: New version: [1.2.9] Old Version: [1.2.8]
+[2024-05-19 21:47:08] INFO root fetch - processPackages [langstory]: Downloading https://files.pythonhosted.org/packages/3c/74/bd697e3866d7e5923dc3f2f4df5eb8c5041e15c1e5f2a25d1512b532d3ca/langstory-0.0.0.tar.gz
+[2024-05-19 21:47:08] INFO root fetch - processPackages [nextguild]: Downloading https://files.pythonhosted.org/packages/9b/93/a555e1df0184dbfa673fc9de025d70503217cbc142b058c988a4861def82/nextguild-1.2.8.tar.gz
+[2024-05-19 21:47:09] INFO root fetch - processPackages [langstory]: Downloading https://files.pythonhosted.org/packages/8b/bb/910c542e9872c75450d5f3a4fe79e767d8b71983c57a3f47464e7fa17f19/langstory-0.0.1.tar.gz
+[2024-05-19 21:47:09] INFO root fetch - processPackages [nextguild]: Downloading https://files.pythonhosted.org/packages/c2/7e/fd61e4b7224a4afb8cbeb0f4f0a32425fa8d661f11e8ebd2a101d11305a3/nextguild-1.2.9.tar.gz
+[2024-05-19 21:47:09] INFO root fetch - processPackages [langstory]: executing diffoscope
+[2024-05-19 21:47:09] INFO root fetch - processPackages [langstory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langstory-0.0.0.tar.gz tmp/langstory-0.0.1.tar.gz --markdown 20240519/l/langstory/0.0.0-0.0.1/README.md --exclude *.pyd
+[2024-05-19 21:47:09] INFO root fetch - processPackages [nextguild]: executing diffoscope
+[2024-05-19 21:47:09] INFO root fetch - processPackages [nextguild]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nextguild-1.2.8.tar.gz tmp/nextguild-1.2.9.tar.gz --markdown 20240519/n/nextguild/1.2.8-1.2.9/README.md --exclude *.pyd
+[2024-05-19 21:47:09] INFO root fetch - processPackages [langstory]: Remove: archive file [/home/abi/fetcher/tmp/langstory-0.0.0.tar.gz]
+[2024-05-19 21:47:09] INFO root fetch - processPackages [langstory]: Remove: archive file [/home/abi/fetcher/tmp/langstory-0.0.1.tar.gz]
+[2024-05-19 21:47:09] INFO root fetch - main [MainThread]: End processing [langstory]: success
+[2024-05-19 21:47:09] INFO root fetch - processPackages [nextguild]: Remove: archive file [/home/abi/fetcher/tmp/nextguild-1.2.8.tar.gz]
+[2024-05-19 21:47:09] INFO root fetch - processPackages [nextguild]: Remove: archive file [/home/abi/fetcher/tmp/nextguild-1.2.9.tar.gz]
+[2024-05-19 21:47:09] INFO root fetch - main [MainThread]: End processing [nextguild]: success
+[2024-05-19 21:47:09] INFO root fetch - main [MainThread]: Store serial: [23279811]
