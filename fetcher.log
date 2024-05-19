@@ -17483,3 +17483,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 21:32:23] INFO root fetch - processPackages [haupt]: Remove: archive file [/home/abi/fetcher/tmp/haupt-2.2.0rc0.tar.gz]
 [2024-05-19 21:32:23] INFO root fetch - main [MainThread]: End processing [haupt]: success
 [2024-05-19 21:32:23] INFO root fetch - main [MainThread]: Store serial: [23279738]
+[2024-05-19 21:34:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279738]
+[2024-05-19 21:34:32] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-19 21:34:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gadapt
+[2024-05-19 21:34:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dann5
+[2024-05-19 21:34:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: netbox-interface-synchronization
+[2024-05-19 21:34:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: approval-utilities
+[2024-05-19 21:34:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: approvaltests
+[2024-05-19 21:34:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: approvaltests-minimal
+[2024-05-19 21:34:32] WARNING root fetch - processPackages [netbox-interface-synchronization]: Skipping, unable to determine old version
+[2024-05-19 21:34:32] INFO root fetch - main [MainThread]: End processing [netbox-interface-synchronization] error
+[2024-05-19 21:34:32] INFO root fetch - processPackages [gadapt]: New version: [0.4.6] Old Version: [0.4.4]
+[2024-05-19 21:34:32] INFO root fetch - processPackages [approvaltests]: New version: [9.0.0] Old Version: [8.4.1]
+[2024-05-19 21:34:32] INFO root fetch - processPackages [gadapt]: Downloading https://files.pythonhosted.org/packages/a7/ce/9ef6ffe40c121390396b9af0fe4f7ebbf61636896ae009a16cc84e18444d/gadapt-0.4.4.tar.gz
+[2024-05-19 21:34:32] INFO root fetch - processPackages [approval-utilities]: New version: [9.0.0] Old Version: [8.4.1]
+[2024-05-19 21:34:32] INFO root fetch - processPackages [dann5]: New version: [3.0.1] Old Version: [2.2.2]
+[2024-05-19 21:34:33] INFO root fetch - processPackages [approvaltests-minimal]: New version: [9.0.0] Old Version: [8.4.1]
+[2024-05-19 21:34:33] INFO root fetch - processPackages [dann5]: Downloading https://files.pythonhosted.org/packages/d2/c5/10f5f62108a2568531fe450d2e771707453870945bab24e76015978c4dd8/dann5-2.2.2.tar.gz
+[2024-05-19 21:34:33] INFO root fetch - processPackages [approvaltests]: Downloading https://files.pythonhosted.org/packages/b4/0c/8dc91af1bae9332c5dd142313c1e0c5df47b4f67826bb073f3bf96c9a990/approvaltests-8.4.1.tar.gz
+[2024-05-19 21:34:33] INFO root fetch - processPackages [approval-utilities]: Downloading https://files.pythonhosted.org/packages/9d/64/ac2260b42192a603adf52fa6dbd711b3a6aac72986bdd1834562490efefa/approval_utilities-8.4.1.tar.gz
+[2024-05-19 21:34:33] INFO root fetch - processPackages [approvaltests-minimal]: Downloading https://files.pythonhosted.org/packages/14/70/241044f5b14ebcaf44233af272bf6e42c1933a1b85978553f73f6badb118/approvaltests-minimal-8.4.1.tar.gz
+[2024-05-19 21:34:33] INFO root fetch - processPackages [gadapt]: Downloading https://files.pythonhosted.org/packages/78/94/b218f48c436f4c006a2da21fecc62394348dda8cde261142e3d01a93a8d5/gadapt-0.4.6.tar.gz
+[2024-05-19 21:34:33] INFO root fetch - processPackages [gadapt]: executing diffoscope
+[2024-05-19 21:34:33] INFO root fetch - processPackages [gadapt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gadapt-0.4.4.tar.gz tmp/gadapt-0.4.6.tar.gz --markdown 20240519/g/gadapt/0.4.4-0.4.6/README.md --exclude *.pyd
+[2024-05-19 21:34:33] INFO root fetch - processPackages [approval-utilities]: Downloading https://files.pythonhosted.org/packages/9b/ec/10fbdcf0d41f41f025484f8d57319070bf446d08c83ac29c8c8503a42140/approval_utilities-9.0.0.tar.gz
+[2024-05-19 21:34:33] INFO root fetch - processPackages [approvaltests-minimal]: Downloading https://files.pythonhosted.org/packages/55/8b/f5284264bfb75597eb902a0c755438576993e9073b1ca847e897b135308e/approvaltests-minimal-9.0.0.tar.gz
+[2024-05-19 21:34:33] INFO root fetch - processPackages [approval-utilities]: executing diffoscope
+[2024-05-19 21:34:33] INFO root fetch - processPackages [approval-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/approval_utilities-8.4.1.tar.gz tmp/approval_utilities-9.0.0.tar.gz --markdown 20240519/a/approval-utilities/8.4.1-9.0.0/README.md --exclude *.pyd
+[2024-05-19 21:34:33] INFO root fetch - processPackages [dann5]: Downloading https://files.pythonhosted.org/packages/d0/76/97e8d33c4233f6c53aa75ecf2180b4da7d6049033549ee06c1c2419bfe43/dann5-3.0.1.tar.gz
+[2024-05-19 21:34:33] INFO root fetch - processPackages [approvaltests-minimal]: executing diffoscope
+[2024-05-19 21:34:33] INFO root fetch - processPackages [approvaltests-minimal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/approvaltests-minimal-8.4.1.tar.gz tmp/approvaltests-minimal-9.0.0.tar.gz --markdown 20240519/a/approvaltests-minimal/8.4.1-9.0.0/README.md --exclude *.pyd
+[2024-05-19 21:34:34] INFO root fetch - processPackages [dann5]: executing diffoscope
+[2024-05-19 21:34:34] INFO root fetch - processPackages [dann5]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dann5-2.2.2.tar.gz tmp/dann5-3.0.1.tar.gz --markdown 20240519/d/dann5/2.2.2-3.0.1/README.md --exclude *.pyd
+[2024-05-19 21:34:34] INFO root fetch - processPackages [gadapt]: Remove: archive file [/home/abi/fetcher/tmp/gadapt-0.4.4.tar.gz]
+[2024-05-19 21:34:34] INFO root fetch - processPackages [gadapt]: Remove: archive file [/home/abi/fetcher/tmp/gadapt-0.4.6.tar.gz]
+[2024-05-19 21:34:34] INFO root fetch - main [MainThread]: End processing [gadapt]: success
+[2024-05-19 21:34:34] INFO root fetch - processPackages [approval-utilities]: Remove: archive file [/home/abi/fetcher/tmp/approval_utilities-8.4.1.tar.gz]
+[2024-05-19 21:34:34] INFO root fetch - processPackages [approval-utilities]: Remove: archive file [/home/abi/fetcher/tmp/approval_utilities-9.0.0.tar.gz]
+[2024-05-19 21:34:34] INFO root fetch - main [MainThread]: End processing [approval-utilities]: success
+[2024-05-19 21:34:34] INFO root fetch - processPackages [approvaltests-minimal]: Remove: archive file [/home/abi/fetcher/tmp/approvaltests-minimal-8.4.1.tar.gz]
+[2024-05-19 21:34:34] INFO root fetch - processPackages [approvaltests-minimal]: Remove: archive file [/home/abi/fetcher/tmp/approvaltests-minimal-9.0.0.tar.gz]
+[2024-05-19 21:34:34] INFO root fetch - main [MainThread]: End processing [approvaltests-minimal]: success
+[2024-05-19 21:34:35] INFO root fetch - processPackages [approvaltests]: Downloading https://files.pythonhosted.org/packages/f9/d6/6d5ad8040cc136cc00b96ffb59c749f85024eb4c70fa73d31381ddaf5cd1/approvaltests-9.0.0.tar.gz
+[2024-05-19 21:34:35] INFO root fetch - processPackages [approvaltests]: executing diffoscope
+[2024-05-19 21:34:35] INFO root fetch - processPackages [approvaltests]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/approvaltests-8.4.1.tar.gz tmp/approvaltests-9.0.0.tar.gz --markdown 20240519/a/approvaltests/8.4.1-9.0.0/README.md --exclude *.pyd
+[2024-05-19 21:34:36] INFO root fetch - processPackages [approvaltests]: Remove: archive file [/home/abi/fetcher/tmp/approvaltests-8.4.1.tar.gz]
+[2024-05-19 21:34:36] INFO root fetch - processPackages [approvaltests]: Remove: archive file [/home/abi/fetcher/tmp/approvaltests-9.0.0.tar.gz]
+[2024-05-19 21:34:36] INFO root fetch - main [MainThread]: End processing [approvaltests]: success
+[2024-05-19 21:35:14] INFO root fetch - processPackages [dann5]: Remove: archive file [/home/abi/fetcher/tmp/dann5-2.2.2.tar.gz]
+[2024-05-19 21:35:14] INFO root fetch - processPackages [dann5]: Remove: archive file [/home/abi/fetcher/tmp/dann5-3.0.1.tar.gz]
+[2024-05-19 21:35:14] INFO root fetch - main [MainThread]: End processing [dann5]: success
+[2024-05-19 21:35:14] INFO root fetch - main [MainThread]: Store serial: [23279756]
