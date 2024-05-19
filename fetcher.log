@@ -12132,3 +12132,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 16:20:42] INFO root fetch - processPackages [autofollow]: Remove: archive file [/home/abi/fetcher/tmp/autofollow-0.1.1.tar.gz]
 [2024-05-19 16:20:42] INFO root fetch - main [MainThread]: End processing [autofollow]: success
 [2024-05-19 16:20:42] INFO root fetch - main [MainThread]: Store serial: [23277211]
+[2024-05-19 16:22:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277211]
+[2024-05-19 16:22:51] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 16:22:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spaceone-inventory
+[2024-05-19 16:22:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: utilmy
+[2024-05-19 16:22:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flops-utils
+[2024-05-19 16:22:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: warp-python
+[2024-05-19 16:22:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: camera-ui-python-types
+[2024-05-19 16:22:51] INFO root fetch - processPackages [warp-python]: New version: [1.2.9] Old Version: [1.2.8]
+[2024-05-19 16:22:51] INFO root fetch - processPackages [camera-ui-python-types]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-19 16:22:51] INFO root fetch - processPackages [spaceone-inventory]: New version: [2.0.dev99] Old Version: [2.0.dev98]
+[2024-05-19 16:22:51] INFO root fetch - processPackages [camera-ui-python-types]: Downloading https://files.pythonhosted.org/packages/4d/91/8f66920b92ee71f302a89040cd5bda06874eb3068a8e2783d2727e21e145/camera-ui-python-types-0.1.8.tar.gz
+[2024-05-19 16:22:51] INFO root fetch - processPackages [warp-python]: Downloading https://files.pythonhosted.org/packages/ab/29/f87526b611d22fe1fd2bf578b3da6297a2b7bbeee24ce1d4441558da5f38/warp_python-1.2.8.tar.gz
+[2024-05-19 16:22:51] INFO root fetch - processPackages [flops-utils]: New version: [0.4.5] Old Version: [0.4.4]
+[2024-05-19 16:22:51] INFO root fetch - processPackages [spaceone-inventory]: Downloading https://files.pythonhosted.org/packages/2b/23/73e091142fbd007706604f94cc95718e79d9259d998aa9dd424fc7cc6f7f/spaceone-inventory-2.0.dev98.tar.gz
+[2024-05-19 16:22:51] INFO root fetch - processPackages [utilmy]: New version: [0.1.17161284] Old Version: [0.1.17159323]
+[2024-05-19 16:22:51] INFO root fetch - processPackages [warp-python]: Downloading https://files.pythonhosted.org/packages/79/d6/9261521110c41c899ba586c14f59cda7d7020f83001a463cf90aa12040b9/warp_python-1.2.9.tar.gz
+[2024-05-19 16:22:51] INFO root fetch - processPackages [camera-ui-python-types]: Downloading https://files.pythonhosted.org/packages/aa/10/16d19e4d819a9d548f5b24a065fd209324b510898722599b0caf5da342e7/camera-ui-python-types-0.1.9.tar.gz
+[2024-05-19 16:22:52] INFO root fetch - processPackages [flops-utils]: Downloading https://files.pythonhosted.org/packages/d7/48/745c9a9a6cf19548b3b2d7d9e7800c489078c2f72f66fc0dfae353be0abb/flops_utils-0.4.4.tar.gz
+[2024-05-19 16:22:52] INFO root fetch - processPackages [utilmy]: Downloading https://files.pythonhosted.org/packages/4d/86/2d328cfd4e3e7e87091dbce99b37f45a5c11b4f946193c630000b9d1de85/utilmy-0.1.17159323.tar.gz
+[2024-05-19 16:22:52] INFO root fetch - processPackages [spaceone-inventory]: Downloading https://files.pythonhosted.org/packages/e7/30/f1229bb9f69283d6576804b473d6fe73ff3118fb5543c89d48b18f899ca2/spaceone-inventory-2.0.dev99.tar.gz
+[2024-05-19 16:22:52] INFO root fetch - processPackages [warp-python]: executing diffoscope
+[2024-05-19 16:22:52] INFO root fetch - processPackages [warp-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/warp_python-1.2.8.tar.gz tmp/warp_python-1.2.9.tar.gz --markdown 20240519/w/warp-python/1.2.8-1.2.9/README.md --exclude *.pyd
+[2024-05-19 16:22:52] INFO root fetch - processPackages [camera-ui-python-types]: executing diffoscope
+[2024-05-19 16:22:52] INFO root fetch - processPackages [camera-ui-python-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/camera-ui-python-types-0.1.8.tar.gz tmp/camera-ui-python-types-0.1.9.tar.gz --markdown 20240519/c/camera-ui-python-types/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-19 16:22:52] INFO root fetch - processPackages [spaceone-inventory]: executing diffoscope
+[2024-05-19 16:22:52] INFO root fetch - processPackages [spaceone-inventory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spaceone-inventory-2.0.dev98.tar.gz tmp/spaceone-inventory-2.0.dev99.tar.gz --markdown 20240519/s/spaceone-inventory/2.0.dev98-2.0.dev99/README.md --exclude *.pyd
+[2024-05-19 16:22:52] INFO root fetch - processPackages [flops-utils]: Downloading https://files.pythonhosted.org/packages/15/27/5f65772eb36e420198bc08163abd1e9aac916a00d2a4268bde09c92f0363/flops_utils-0.4.5.tar.gz
+[2024-05-19 16:22:52] INFO root fetch - processPackages [flops-utils]: executing diffoscope
+[2024-05-19 16:22:52] INFO root fetch - processPackages [flops-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flops_utils-0.4.4.tar.gz tmp/flops_utils-0.4.5.tar.gz --markdown 20240519/f/flops-utils/0.4.4-0.4.5/README.md --exclude *.pyd
+[2024-05-19 16:22:52] INFO root fetch - processPackages [utilmy]: Downloading https://files.pythonhosted.org/packages/b8/08/f8c81382e22e715bd6eb099abafe0a6d5d1961787f2c89d2175255635d1a/utilmy-0.1.17161284.tar.gz
+[2024-05-19 16:22:52] INFO root fetch - processPackages [warp-python]: Remove: archive file [/home/abi/fetcher/tmp/warp_python-1.2.8.tar.gz]
+[2024-05-19 16:22:52] INFO root fetch - processPackages [warp-python]: Remove: archive file [/home/abi/fetcher/tmp/warp_python-1.2.9.tar.gz]
+[2024-05-19 16:22:52] INFO root fetch - main [MainThread]: End processing [warp-python]: success
+[2024-05-19 16:22:52] INFO root fetch - processPackages [camera-ui-python-types]: Remove: archive file [/home/abi/fetcher/tmp/camera-ui-python-types-0.1.8.tar.gz]
+[2024-05-19 16:22:52] INFO root fetch - processPackages [camera-ui-python-types]: Remove: archive file [/home/abi/fetcher/tmp/camera-ui-python-types-0.1.9.tar.gz]
+[2024-05-19 16:22:52] INFO root fetch - main [MainThread]: End processing [camera-ui-python-types]: success
+[2024-05-19 16:22:52] INFO root fetch - processPackages [flops-utils]: Remove: archive file [/home/abi/fetcher/tmp/flops_utils-0.4.4.tar.gz]
+[2024-05-19 16:22:52] INFO root fetch - processPackages [flops-utils]: Remove: archive file [/home/abi/fetcher/tmp/flops_utils-0.4.5.tar.gz]
+[2024-05-19 16:22:52] INFO root fetch - main [MainThread]: End processing [flops-utils]: success
+[2024-05-19 16:22:53] INFO root fetch - processPackages [spaceone-inventory]: Remove: archive file [/home/abi/fetcher/tmp/spaceone-inventory-2.0.dev98.tar.gz]
+[2024-05-19 16:22:53] INFO root fetch - processPackages [spaceone-inventory]: Remove: archive file [/home/abi/fetcher/tmp/spaceone-inventory-2.0.dev99.tar.gz]
+[2024-05-19 16:22:53] INFO root fetch - main [MainThread]: End processing [spaceone-inventory]: success
+[2024-05-19 16:22:53] INFO root fetch - processPackages [utilmy]: executing diffoscope
+[2024-05-19 16:22:53] INFO root fetch - processPackages [utilmy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utilmy-0.1.17159323.tar.gz tmp/utilmy-0.1.17161284.tar.gz --markdown 20240519/u/utilmy/0.1.17159323-0.1.17161284/README.md --exclude *.pyd
+[2024-05-19 16:23:05] INFO root fetch - processPackages [utilmy]: Remove: archive file [/home/abi/fetcher/tmp/utilmy-0.1.17159323.tar.gz]
+[2024-05-19 16:23:05] INFO root fetch - processPackages [utilmy]: Remove: archive file [/home/abi/fetcher/tmp/utilmy-0.1.17161284.tar.gz]
+[2024-05-19 16:23:05] INFO root fetch - main [MainThread]: End processing [utilmy]: success
+[2024-05-19 16:23:05] INFO root fetch - main [MainThread]: Store serial: [23277223]
