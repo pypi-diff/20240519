@@ -3085,3 +3085,14 @@
 [2024-05-19 04:57:40] INFO root fetch - processPackages [promptml]: Remove: archive file [/home/abi/fetcher/tmp/promptml-0.6.0.tar.gz]
 [2024-05-19 04:57:40] INFO root fetch - main [MainThread]: End processing [promptml]: success
 [2024-05-19 04:57:40] INFO root fetch - main [MainThread]: Store serial: [23272922]
+[2024-05-19 04:59:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272922]
+[2024-05-19 04:59:48] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-19 05:01:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272925]
+[2024-05-19 05:01:54] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 05:01:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: psqlparse2
+[2024-05-19 05:01:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: frustulaz
+[2024-05-19 05:01:54] WARNING root fetch - processPackages [psqlparse2]: Skipping, unable to determine old version
+[2024-05-19 05:01:54] INFO root fetch - main [MainThread]: End processing [psqlparse2] error
+[2024-05-19 05:01:54] WARNING root fetch - processPackages [frustulaz]: Skipping, unable to determine old version
+[2024-05-19 05:01:54] INFO root fetch - main [MainThread]: End processing [frustulaz] error
+[2024-05-19 05:01:54] INFO root fetch - main [MainThread]: Store serial: [23272933]
