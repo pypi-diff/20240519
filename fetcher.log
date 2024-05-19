@@ -1816,3 +1816,18 @@
 [2024-05-19 03:02:30] INFO root fetch - processPackages [salgorithm]: Remove: archive file [/home/abi/fetcher/tmp/salgorithm-0.2.0.tar.gz]
 [2024-05-19 03:02:30] INFO root fetch - main [MainThread]: End processing [salgorithm]: success
 [2024-05-19 03:02:30] INFO root fetch - main [MainThread]: Store serial: [23272254]
+[2024-05-19 03:04:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272254]
+[2024-05-19 03:04:39] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 03:04:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: syntalitiesz
+[2024-05-19 03:04:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: altmindpy
+[2024-05-19 03:04:39] INFO root fetch - processPackages [altmindpy]: New version: [0.0.2] Old Version: [0.0.1a0]
+[2024-05-19 03:04:39] WARNING root fetch - processPackages [syntalitiesz]: Skipping, unable to determine old version
+[2024-05-19 03:04:39] INFO root fetch - main [MainThread]: End processing [syntalitiesz] error
+[2024-05-19 03:04:39] INFO root fetch - processPackages [altmindpy]: Downloading https://files.pythonhosted.org/packages/3f/c8/7e12a7102ab258f38baa75f44aac4051b9161c4ea9c10321f7409b1aa81f/altmindpy-0.0.1a0.tar.gz
+[2024-05-19 03:04:39] INFO root fetch - processPackages [altmindpy]: Downloading https://files.pythonhosted.org/packages/48/6f/a1b45068ebb64e0c5361e705b6da0fb9a8301e42da6582632d02dcefe561/altmindpy-0.0.2.tar.gz
+[2024-05-19 03:04:39] INFO root fetch - processPackages [altmindpy]: executing diffoscope
+[2024-05-19 03:04:39] INFO root fetch - processPackages [altmindpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altmindpy-0.0.1a0.tar.gz tmp/altmindpy-0.0.2.tar.gz --markdown 20240519/a/altmindpy/0.0.1a0-0.0.2/README.md --exclude *.pyd
+[2024-05-19 03:04:40] INFO root fetch - processPackages [altmindpy]: Remove: archive file [/home/abi/fetcher/tmp/altmindpy-0.0.1a0.tar.gz]
+[2024-05-19 03:04:40] INFO root fetch - processPackages [altmindpy]: Remove: archive file [/home/abi/fetcher/tmp/altmindpy-0.0.2.tar.gz]
+[2024-05-19 03:04:40] INFO root fetch - main [MainThread]: End processing [altmindpy]: success
+[2024-05-19 03:04:40] INFO root fetch - main [MainThread]: Store serial: [23272263]
