@@ -8245,3 +8245,36 @@
 [2024-05-19 12:15:13] INFO root fetch - processPackages [iac-init]: Remove: archive file [/home/abi/fetcher/tmp/iac_init-0.7.6.tar.gz]
 [2024-05-19 12:15:13] INFO root fetch - main [MainThread]: End processing [iac-init]: success
 [2024-05-19 12:15:13] INFO root fetch - main [MainThread]: Store serial: [23275372]
+[2024-05-19 12:17:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275372]
+[2024-05-19 12:17:24] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 12:17:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gadapt
+[2024-05-19 12:17:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torspy
+[2024-05-19 12:17:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: randomishz
+[2024-05-19 12:17:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: biliup
+[2024-05-19 12:17:24] INFO root fetch - processPackages [gadapt]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-05-19 12:17:24] INFO root fetch - processPackages [torspy]: New version: [2.0.0] Old Version: [1.0.3]
+[2024-05-19 12:17:24] INFO root fetch - processPackages [biliup]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-19 12:17:25] WARNING root fetch - processPackages [randomishz]: Skipping, unable to determine old version
+[2024-05-19 12:17:25] INFO root fetch - main [MainThread]: End processing [randomishz] error
+[2024-05-19 12:17:25] INFO root fetch - processPackages [gadapt]: Downloading https://files.pythonhosted.org/packages/a7/12/3521d54f0af93a6d446fa47530a607aabf3836a5c56b9900ea2c591d16fa/gadapt-0.4.0.tar.gz
+[2024-05-19 12:17:25] INFO root fetch - processPackages [biliup]: Downloading https://files.pythonhosted.org/packages/33/26/87446b9e80024414938248abd6d5d23524d52b9a0e07980909695db33a0a/biliup-0.4.8.tar.gz
+[2024-05-19 12:17:25] INFO root fetch - processPackages [torspy]: Downloading https://files.pythonhosted.org/packages/06/1e/ade39af409e5db9c4953c7b00c19d35fb2af6fed965f9b8e73c313fdb4d1/torspy-1.0.3.tar.gz
+[2024-05-19 12:17:25] INFO root fetch - processPackages [torspy]: Downloading https://files.pythonhosted.org/packages/9e/da/496ab322112f6686daa7ab00a05f1715b30b1a6230ca83576d7e3ac37664/torspy-2.0.0.tar.gz
+[2024-05-19 12:17:25] INFO root fetch - processPackages [biliup]: Downloading https://files.pythonhosted.org/packages/ca/50/28c81627954370eeba7075b44c9ef20597ed8f140a1390c814dd976e6c70/biliup-0.4.9.tar.gz
+[2024-05-19 12:17:25] INFO root fetch - processPackages [gadapt]: Downloading https://files.pythonhosted.org/packages/9f/8f/e573e653fa160b2db6020a806c4a03d561ea1d124e30cd55080141a23155/gadapt-0.4.1.tar.gz
+[2024-05-19 12:17:25] INFO root fetch - processPackages [torspy]: executing diffoscope
+[2024-05-19 12:17:25] INFO root fetch - processPackages [torspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torspy-1.0.3.tar.gz tmp/torspy-2.0.0.tar.gz --markdown 20240519/t/torspy/1.0.3-2.0.0/README.md --exclude *.pyd
+[2024-05-19 12:17:25] INFO root fetch - processPackages [biliup]: executing diffoscope
+[2024-05-19 12:17:25] INFO root fetch - processPackages [biliup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biliup-0.4.8.tar.gz tmp/biliup-0.4.9.tar.gz --markdown 20240519/b/biliup/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-19 12:17:25] INFO root fetch - processPackages [gadapt]: executing diffoscope
+[2024-05-19 12:17:25] INFO root fetch - processPackages [gadapt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gadapt-0.4.0.tar.gz tmp/gadapt-0.4.1.tar.gz --markdown 20240519/g/gadapt/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-05-19 12:17:25] INFO root fetch - processPackages [torspy]: Remove: archive file [/home/abi/fetcher/tmp/torspy-1.0.3.tar.gz]
+[2024-05-19 12:17:25] INFO root fetch - processPackages [torspy]: Remove: archive file [/home/abi/fetcher/tmp/torspy-2.0.0.tar.gz]
+[2024-05-19 12:17:25] INFO root fetch - main [MainThread]: End processing [torspy]: success
+[2024-05-19 12:17:26] INFO root fetch - processPackages [gadapt]: Remove: archive file [/home/abi/fetcher/tmp/gadapt-0.4.0.tar.gz]
+[2024-05-19 12:17:26] INFO root fetch - processPackages [gadapt]: Remove: archive file [/home/abi/fetcher/tmp/gadapt-0.4.1.tar.gz]
+[2024-05-19 12:17:26] INFO root fetch - main [MainThread]: End processing [gadapt]: success
+[2024-05-19 12:17:26] INFO root fetch - processPackages [biliup]: Remove: archive file [/home/abi/fetcher/tmp/biliup-0.4.8.tar.gz]
+[2024-05-19 12:17:26] INFO root fetch - processPackages [biliup]: Remove: archive file [/home/abi/fetcher/tmp/biliup-0.4.9.tar.gz]
+[2024-05-19 12:17:26] INFO root fetch - main [MainThread]: End processing [biliup]: success
+[2024-05-19 12:17:26] INFO root fetch - main [MainThread]: Store serial: [23275384]
