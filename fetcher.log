@@ -2615,3 +2615,36 @@
 [2024-05-19 04:20:26] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar_connect-0.1.247.tar.gz]
 [2024-05-19 04:20:26] INFO root fetch - main [MainThread]: End processing [ansar-connect]: success
 [2024-05-19 04:20:26] INFO root fetch - main [MainThread]: Store serial: [23272747]
+[2024-05-19 04:22:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272747]
+[2024-05-19 04:22:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 04:22:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cs.resources
+[2024-05-19 04:22:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sweetrpg-web-core
+[2024-05-19 04:22:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tumblersz
+[2024-05-19 04:22:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: GSG
+[2024-05-19 04:22:35] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-19 04:22:35] WARNING root fetch - processPackages [tumblersz]: Skipping, unable to determine old version
+[2024-05-19 04:22:35] INFO root fetch - processPackages [GSG]: New version: [0.5.8] Old Version: [0.5.7]
+[2024-05-19 04:22:35] INFO root fetch - main [MainThread]: End processing [tumblersz] error
+[2024-05-19 04:22:35] INFO root fetch - processPackages [cs.resources]: New version: [20240519] Old Version: [20240423]
+[2024-05-19 04:22:35] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/10/78/7e4ec24c92190fa564c9ba8a1797ccda0c7472064d109da37e0d283f94d2/sweetrpg-web-core-0.0.98.tar.gz
+[2024-05-19 04:22:36] INFO root fetch - processPackages [GSG]: Downloading https://files.pythonhosted.org/packages/77/68/622f9be59529b4d77a6d981d31ab127dfce0e5d9810b02d37755b34d9c87/GSG-0.5.7.tar.gz
+[2024-05-19 04:22:36] INFO root fetch - processPackages [cs.resources]: Downloading https://files.pythonhosted.org/packages/07/3e/f6f0826e305c95caa8e8ae5e33b0de10a814bfeb73a39ac2351b88b3c5a8/cs.resources-20240423.tar.gz
+[2024-05-19 04:22:36] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/bd/15/72a761101e501277066578a42896229ae4a254ecf7602e2e15f38b35310d/sweetrpg-web-core-0.0.99.tar.gz
+[2024-05-19 04:22:36] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2024-05-19 04:22:36] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20240519/s/sweetrpg-web-core/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-19 04:22:36] INFO root fetch - processPackages [GSG]: Downloading https://files.pythonhosted.org/packages/67/59/15a8cb25c6d8729ace2419e661d99b797d43c2b453ded5d924526dbe1f54/GSG-0.5.8.tar.gz
+[2024-05-19 04:22:36] INFO root fetch - processPackages [cs.resources]: Downloading https://files.pythonhosted.org/packages/69/1d/d341f3b42245b00a4b7c3ca3d402f041bed47d78474a687c7f6c258a684c/cs.resources-20240519.tar.gz
+[2024-05-19 04:22:36] INFO root fetch - processPackages [cs.resources]: executing diffoscope
+[2024-05-19 04:22:36] INFO root fetch - processPackages [cs.resources]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs.resources-20240423.tar.gz tmp/cs.resources-20240519.tar.gz --markdown 20240519/c/cs.resources/20240423-20240519/README.md --exclude *.pyd
+[2024-05-19 04:22:36] INFO root fetch - processPackages [GSG]: executing diffoscope
+[2024-05-19 04:22:36] INFO root fetch - processPackages [GSG]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GSG-0.5.7.tar.gz tmp/GSG-0.5.8.tar.gz --markdown 20240519/G/GSG/0.5.7-0.5.8/README.md --exclude *.pyd
+[2024-05-19 04:22:36] INFO root fetch - processPackages [sweetrpg-web-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-web-core-0.0.98.tar.gz]
+[2024-05-19 04:22:36] INFO root fetch - processPackages [sweetrpg-web-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-web-core-0.0.99.tar.gz]
+[2024-05-19 04:22:36] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2024-05-19 04:22:37] INFO root fetch - processPackages [cs.resources]: Remove: archive file [/home/abi/fetcher/tmp/cs.resources-20240423.tar.gz]
+[2024-05-19 04:22:37] INFO root fetch - processPackages [cs.resources]: Remove: archive file [/home/abi/fetcher/tmp/cs.resources-20240519.tar.gz]
+[2024-05-19 04:22:37] INFO root fetch - main [MainThread]: End processing [cs.resources]: success
+[2024-05-19 04:22:37] INFO root fetch - processPackages [GSG]: Remove: archive file [/home/abi/fetcher/tmp/GSG-0.5.7.tar.gz]
+[2024-05-19 04:22:37] INFO root fetch - processPackages [GSG]: Remove: archive file [/home/abi/fetcher/tmp/GSG-0.5.8.tar.gz]
+[2024-05-19 04:22:37] INFO root fetch - main [MainThread]: End processing [GSG]: success
+[2024-05-19 04:22:37] INFO root fetch - main [MainThread]: Store serial: [23272761]
