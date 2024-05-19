@@ -20308,3 +20308,99 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 23:21:19] INFO root fetch - processPackages [rapidfuzz]: Remove: archive file [/home/abi/fetcher/tmp/rapidfuzz-3.9.0.tar.gz]
 [2024-05-19 23:21:19] INFO root fetch - main [MainThread]: End processing [rapidfuzz]: success
 [2024-05-19 23:21:19] INFO root fetch - main [MainThread]: Store serial: [23280900]
+[2024-05-19 23:23:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23280900]
+[2024-05-19 23:23:28] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2024-05-19 23:23:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tencentcloud-sdk-python-nlp
+[2024-05-19 23:23:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tencentcloud-sdk-python-npp
+[2024-05-19 23:23:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pycookiecheat
+[2024-05-19 23:23:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tencentcloud-sdk-python-oceanus
+[2024-05-19 23:23:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tencentcloud-sdk-python-ocr
+[2024-05-19 23:23:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tencentcloud-sdk-python-omics
+[2024-05-19 23:23:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tencentcloud-sdk-python-organization
+[2024-05-19 23:23:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mucoraceaez
+[2024-05-19 23:23:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tencentcloud-sdk-python-partners
+[2024-05-19 23:23:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: tencentcloud-sdk-python-pds
+[2024-05-19 23:23:28] INFO root fetch - processPackages [pycookiecheat]: New version: [0.7.0] Old Version: [0.6.0]
+[2024-05-19 23:23:28] WARNING root fetch - processPackages [mucoraceaez]: Skipping, unable to determine old version
+[2024-05-19 23:23:28] INFO root fetch - processPackages [mucoraceaez]: Start processing: tencentcloud-sdk-python-postgres
+[2024-05-19 23:23:28] INFO root fetch - main [MainThread]: End processing [mucoraceaez] error
+[2024-05-19 23:23:28] INFO root fetch - processPackages [tencentcloud-sdk-python-nlp]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-19 23:23:28] INFO root fetch - processPackages [tencentcloud-sdk-python-omics]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-19 23:23:28] INFO root fetch - processPackages [tencentcloud-sdk-python-pds]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-19 23:23:28] INFO root fetch - processPackages [tencentcloud-sdk-python-oceanus]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-19 23:23:28] INFO root fetch - processPackages [tencentcloud-sdk-python-partners]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-19 23:23:28] INFO root fetch - processPackages [tencentcloud-sdk-python-organization]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-19 23:23:28] INFO root fetch - processPackages [tencentcloud-sdk-python-ocr]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-19 23:23:28] INFO root fetch - processPackages [tencentcloud-sdk-python-postgres]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-19 23:23:28] INFO root fetch - processPackages [pycookiecheat]: Downloading https://files.pythonhosted.org/packages/b7/f7/333ba3db009d757f78959436c9d5b9d72ef3781f64ac1e650022ea7c57d6/pycookiecheat-0.6.0.tar.gz
+[2024-05-19 23:23:28] INFO root fetch - processPackages [tencentcloud-sdk-python-nlp]: Downloading https://files.pythonhosted.org/packages/13/73/955b082c96439789648018c8f3a7feb31a31b64081a7f03929a045e38fdb/tencentcloud-sdk-python-nlp-3.0.998.tar.gz
+[2024-05-19 23:23:28] INFO root fetch - processPackages [tencentcloud-sdk-python-omics]: Downloading https://files.pythonhosted.org/packages/cf/61/3e09e1ddfd06fbba98831cddba141afe9dcbd0ceae8f905bd61be6735319/tencentcloud-sdk-python-omics-3.0.998.tar.gz
+[2024-05-19 23:23:28] INFO root fetch - processPackages [tencentcloud-sdk-python-pds]: Downloading https://files.pythonhosted.org/packages/f1/19/238a16b32a11798ed9d85a9f03bc287102d038c3a2799ae301bf20f6bb98/tencentcloud-sdk-python-pds-3.0.998.tar.gz
+[2024-05-19 23:23:28] INFO root fetch - processPackages [tencentcloud-sdk-python-npp]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-19 23:23:28] INFO root fetch - processPackages [tencentcloud-sdk-python-oceanus]: Downloading https://files.pythonhosted.org/packages/06/89/e81ea8c1b030a87b88b4b1ea62d562060a99c318781f50739beea7813fcf/tencentcloud-sdk-python-oceanus-3.0.998.tar.gz
+[2024-05-19 23:23:28] INFO root fetch - processPackages [tencentcloud-sdk-python-partners]: Downloading https://files.pythonhosted.org/packages/0b/6e/ec71dc9f1d629dd7d0d7f902d9a4f570e8ebc35c2ad1ac2e24d7c7962d74/tencentcloud-sdk-python-partners-3.0.998.tar.gz
+[2024-05-19 23:23:28] INFO root fetch - processPackages [tencentcloud-sdk-python-organization]: Downloading https://files.pythonhosted.org/packages/9a/26/01e16a1e8599036db67d5e64d0d8ed8f86b9abf42514922b6e445db8d443/tencentcloud-sdk-python-organization-3.0.998.tar.gz
+[2024-05-19 23:23:28] INFO root fetch - processPackages [tencentcloud-sdk-python-ocr]: Downloading https://files.pythonhosted.org/packages/fe/92/55106a6cd643fd1b47cfc771997da7fcc7b1d03ffedbb9372c8a91922fc1/tencentcloud-sdk-python-ocr-3.0.998.tar.gz
+[2024-05-19 23:23:28] INFO root fetch - processPackages [tencentcloud-sdk-python-postgres]: Downloading https://files.pythonhosted.org/packages/03/11/e5ecf2af68dd1751aa5732cd4eda297bb2d3b245200d78e293f0bacce9f0/tencentcloud-sdk-python-postgres-3.0.998.tar.gz
+[2024-05-19 23:23:29] INFO root fetch - processPackages [tencentcloud-sdk-python-npp]: Downloading https://files.pythonhosted.org/packages/35/2f/7be07bdedcbc4f997d328b54b723bc0a6f9d2f1289c977708e6d31c8b552/tencentcloud-sdk-python-npp-3.0.998.tar.gz
+[2024-05-19 23:23:29] INFO root fetch - processPackages [pycookiecheat]: Downloading https://files.pythonhosted.org/packages/36/e3/23053a1f0dcdd8289c511cae3a8357733efa6dcd75b681a41cb8041c68a6/pycookiecheat-0.7.0.tar.gz
+[2024-05-19 23:23:29] INFO root fetch - processPackages [tencentcloud-sdk-python-nlp]: Downloading https://files.pythonhosted.org/packages/e3/3e/ccf98b9b557bd05fb013714b3672879029ce3496b939428a14d509bc0f39/tencentcloud-sdk-python-nlp-3.0.999.tar.gz
+[2024-05-19 23:23:29] INFO root fetch - processPackages [tencentcloud-sdk-python-omics]: Downloading https://files.pythonhosted.org/packages/ea/98/3603ed87c559b4cc9328c0855ee116323c9df3d48c49103bef11292ae05d/tencentcloud-sdk-python-omics-3.0.999.tar.gz
+[2024-05-19 23:23:29] INFO root fetch - processPackages [tencentcloud-sdk-python-pds]: Downloading https://files.pythonhosted.org/packages/52/56/3e74dbce3f84f52671509219a4ae4b7b60740ff3c60655661ad6b3aaf4d7/tencentcloud-sdk-python-pds-3.0.999.tar.gz
+[2024-05-19 23:23:29] INFO root fetch - processPackages [tencentcloud-sdk-python-oceanus]: Downloading https://files.pythonhosted.org/packages/2c/0d/a97d27e823345bd269a67b08a511ad7ef6607826c04e8faf694ee9ff1900/tencentcloud-sdk-python-oceanus-3.0.999.tar.gz
+[2024-05-19 23:23:29] INFO root fetch - processPackages [tencentcloud-sdk-python-partners]: Downloading https://files.pythonhosted.org/packages/97/9c/9da2ec0a5da00940d61b2a368517470346efcfd50d5c684a2f5a2f9b774c/tencentcloud-sdk-python-partners-3.0.999.tar.gz
+[2024-05-19 23:23:29] INFO root fetch - processPackages [tencentcloud-sdk-python-organization]: Downloading https://files.pythonhosted.org/packages/3c/e5/fc292b7edfeb719ff2fa3550e0f2807419601a47add74789684666722dd9/tencentcloud-sdk-python-organization-3.0.999.tar.gz
+[2024-05-19 23:23:29] INFO root fetch - processPackages [tencentcloud-sdk-python-postgres]: Downloading https://files.pythonhosted.org/packages/be/63/496592dd09fd2b7357d69284e4467c88f15fa449a6698d86b5c62efd6c59/tencentcloud-sdk-python-postgres-3.0.999.tar.gz
+[2024-05-19 23:23:29] INFO root fetch - processPackages [tencentcloud-sdk-python-ocr]: Downloading https://files.pythonhosted.org/packages/c8/84/08d9276bde51ec7fdd5ade4fb24b5efe562ca548fa15f565790539a807f5/tencentcloud-sdk-python-ocr-3.0.999.tar.gz
+[2024-05-19 23:23:29] INFO root fetch - processPackages [tencentcloud-sdk-python-nlp]: executing diffoscope
+[2024-05-19 23:23:29] INFO root fetch - processPackages [tencentcloud-sdk-python-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-nlp-3.0.998.tar.gz tmp/tencentcloud-sdk-python-nlp-3.0.999.tar.gz --markdown 20240519/t/tencentcloud-sdk-python-nlp/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-19 23:23:29] INFO root fetch - processPackages [tencentcloud-sdk-python-pds]: executing diffoscope
+[2024-05-19 23:23:29] INFO root fetch - processPackages [tencentcloud-sdk-python-pds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-pds-3.0.998.tar.gz tmp/tencentcloud-sdk-python-pds-3.0.999.tar.gz --markdown 20240519/t/tencentcloud-sdk-python-pds/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-19 23:23:29] INFO root fetch - processPackages [tencentcloud-sdk-python-omics]: executing diffoscope
+[2024-05-19 23:23:29] INFO root fetch - processPackages [tencentcloud-sdk-python-omics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-omics-3.0.998.tar.gz tmp/tencentcloud-sdk-python-omics-3.0.999.tar.gz --markdown 20240519/t/tencentcloud-sdk-python-omics/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-19 23:23:29] INFO root fetch - processPackages [pycookiecheat]: executing diffoscope
+[2024-05-19 23:23:29] INFO root fetch - processPackages [pycookiecheat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycookiecheat-0.6.0.tar.gz tmp/pycookiecheat-0.7.0.tar.gz --markdown 20240519/p/pycookiecheat/0.6.0-0.7.0/README.md --exclude *.pyd
+[2024-05-19 23:23:29] INFO root fetch - processPackages [tencentcloud-sdk-python-oceanus]: executing diffoscope
+[2024-05-19 23:23:29] INFO root fetch - processPackages [tencentcloud-sdk-python-oceanus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-oceanus-3.0.998.tar.gz tmp/tencentcloud-sdk-python-oceanus-3.0.999.tar.gz --markdown 20240519/t/tencentcloud-sdk-python-oceanus/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-19 23:23:29] INFO root fetch - processPackages [tencentcloud-sdk-python-partners]: executing diffoscope
+[2024-05-19 23:23:29] INFO root fetch - processPackages [tencentcloud-sdk-python-partners]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-partners-3.0.998.tar.gz tmp/tencentcloud-sdk-python-partners-3.0.999.tar.gz --markdown 20240519/t/tencentcloud-sdk-python-partners/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-19 23:23:29] INFO root fetch - processPackages [tencentcloud-sdk-python-organization]: executing diffoscope
+[2024-05-19 23:23:29] INFO root fetch - processPackages [tencentcloud-sdk-python-organization]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-organization-3.0.998.tar.gz tmp/tencentcloud-sdk-python-organization-3.0.999.tar.gz --markdown 20240519/t/tencentcloud-sdk-python-organization/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-19 23:23:29] INFO root fetch - processPackages [tencentcloud-sdk-python-postgres]: executing diffoscope
+[2024-05-19 23:23:29] INFO root fetch - processPackages [tencentcloud-sdk-python-postgres]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-postgres-3.0.998.tar.gz tmp/tencentcloud-sdk-python-postgres-3.0.999.tar.gz --markdown 20240519/t/tencentcloud-sdk-python-postgres/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-19 23:23:29] INFO root fetch - processPackages [tencentcloud-sdk-python-ocr]: executing diffoscope
+[2024-05-19 23:23:29] INFO root fetch - processPackages [tencentcloud-sdk-python-ocr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-ocr-3.0.998.tar.gz tmp/tencentcloud-sdk-python-ocr-3.0.999.tar.gz --markdown 20240519/t/tencentcloud-sdk-python-ocr/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-19 23:23:29] INFO root fetch - processPackages [tencentcloud-sdk-python-npp]: Downloading https://files.pythonhosted.org/packages/94/b9/7eecc3778b75dd2522b621c795d78a5625277df65226ba45c67361956990/tencentcloud-sdk-python-npp-3.0.999.tar.gz
+[2024-05-19 23:23:29] INFO root fetch - processPackages [tencentcloud-sdk-python-npp]: executing diffoscope
+[2024-05-19 23:23:29] INFO root fetch - processPackages [tencentcloud-sdk-python-npp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-npp-3.0.998.tar.gz tmp/tencentcloud-sdk-python-npp-3.0.999.tar.gz --markdown 20240519/t/tencentcloud-sdk-python-npp/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-19 23:23:30] INFO root fetch - processPackages [tencentcloud-sdk-python-nlp]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-nlp-3.0.998.tar.gz]
+[2024-05-19 23:23:30] INFO root fetch - processPackages [tencentcloud-sdk-python-nlp]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-nlp-3.0.999.tar.gz]
+[2024-05-19 23:23:30] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-nlp]: success
+[2024-05-19 23:23:30] INFO root fetch - processPackages [tencentcloud-sdk-python-ocr]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-ocr-3.0.998.tar.gz]
+[2024-05-19 23:23:30] INFO root fetch - processPackages [tencentcloud-sdk-python-ocr]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-ocr-3.0.999.tar.gz]
+[2024-05-19 23:23:30] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-ocr]: success
+[2024-05-19 23:23:30] INFO root fetch - processPackages [tencentcloud-sdk-python-npp]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-npp-3.0.998.tar.gz]
+[2024-05-19 23:23:30] INFO root fetch - processPackages [tencentcloud-sdk-python-npp]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-npp-3.0.999.tar.gz]
+[2024-05-19 23:23:30] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-npp]: success
+[2024-05-19 23:23:30] INFO root fetch - processPackages [tencentcloud-sdk-python-omics]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-omics-3.0.998.tar.gz]
+[2024-05-19 23:23:30] INFO root fetch - processPackages [tencentcloud-sdk-python-omics]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-omics-3.0.999.tar.gz]
+[2024-05-19 23:23:30] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-omics]: success
+[2024-05-19 23:23:30] INFO root fetch - processPackages [pycookiecheat]: Remove: archive file [/home/abi/fetcher/tmp/pycookiecheat-0.6.0.tar.gz]
+[2024-05-19 23:23:30] INFO root fetch - processPackages [pycookiecheat]: Remove: archive file [/home/abi/fetcher/tmp/pycookiecheat-0.7.0.tar.gz]
+[2024-05-19 23:23:30] INFO root fetch - main [MainThread]: End processing [pycookiecheat]: success
+[2024-05-19 23:23:30] INFO root fetch - processPackages [tencentcloud-sdk-python-oceanus]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-oceanus-3.0.998.tar.gz]
+[2024-05-19 23:23:30] INFO root fetch - processPackages [tencentcloud-sdk-python-oceanus]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-oceanus-3.0.999.tar.gz]
+[2024-05-19 23:23:30] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-oceanus]: success
+[2024-05-19 23:23:30] INFO root fetch - processPackages [tencentcloud-sdk-python-organization]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-organization-3.0.998.tar.gz]
+[2024-05-19 23:23:30] INFO root fetch - processPackages [tencentcloud-sdk-python-organization]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-organization-3.0.999.tar.gz]
+[2024-05-19 23:23:30] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-organization]: success
+[2024-05-19 23:23:30] INFO root fetch - processPackages [tencentcloud-sdk-python-postgres]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-postgres-3.0.998.tar.gz]
+[2024-05-19 23:23:30] INFO root fetch - processPackages [tencentcloud-sdk-python-postgres]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-postgres-3.0.999.tar.gz]
+[2024-05-19 23:23:30] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-postgres]: success
+[2024-05-19 23:23:30] INFO root fetch - processPackages [tencentcloud-sdk-python-partners]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-partners-3.0.998.tar.gz]
+[2024-05-19 23:23:30] INFO root fetch - processPackages [tencentcloud-sdk-python-partners]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-partners-3.0.999.tar.gz]
+[2024-05-19 23:23:30] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-partners]: success
+[2024-05-19 23:23:30] INFO root fetch - processPackages [tencentcloud-sdk-python-pds]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-pds-3.0.998.tar.gz]
+[2024-05-19 23:23:30] INFO root fetch - processPackages [tencentcloud-sdk-python-pds]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-pds-3.0.999.tar.gz]
+[2024-05-19 23:23:30] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-pds]: success
+[2024-05-19 23:23:30] INFO root fetch - main [MainThread]: Store serial: [23280990]
