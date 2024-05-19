@@ -5562,3 +5562,27 @@
 [2024-05-19 08:57:24] INFO root fetch - processPackages [odoo14-addons-oca-sale-workflow]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addons_oca_sale_workflow-14.0.20240518.0-py3-none-any.whl.zip]
 [2024-05-19 08:57:24] INFO root fetch - main [MainThread]: End processing [odoo14-addons-oca-sale-workflow]: success
 [2024-05-19 08:57:24] INFO root fetch - main [MainThread]: Store serial: [23273982]
+[2024-05-19 08:59:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273982]
+[2024-05-19 08:59:33] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 08:59:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-sale-invoice-policy
+[2024-05-19 08:59:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-sale-restricted-qty
+[2024-05-19 08:59:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-sale-force-invoiced
+[2024-05-19 08:59:33] INFO root fetch - processPackages [odoo-addon-sale-invoice-policy]: New version: [17.0.1.0.0.2] Old Version: [16.0.2.0.0.1]
+[2024-05-19 08:59:33] INFO root fetch - processPackages [odoo-addon-sale-force-invoiced]: New version: [17.0.1.1.0.4] Old Version: [17.0.1.1.0.3]
+[2024-05-19 08:59:33] WARNING root fetch - processPackages [odoo-addon-sale-restricted-qty]: Skipping, unable to determine old version
+[2024-05-19 08:59:33] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-restricted-qty] error
+[2024-05-19 08:59:33] INFO root fetch - processPackages [odoo-addon-sale-invoice-policy]: Downloading https://files.pythonhosted.org/packages/5c/cb/a07220624da1b32449b47a05f7cb87b8afa7fc08c7c064f37b94f9940a46/odoo_addon_sale_invoice_policy-16.0.2.0.0.1-py3-none-any.whl
+[2024-05-19 08:59:33] INFO root fetch - processPackages [odoo-addon-sale-force-invoiced]: Downloading https://files.pythonhosted.org/packages/31/55/e9dc6ac194ed65f0eefe8485f3ea057dc9359500aac32f137c57ca83bbc0/odoo_addon_sale_force_invoiced-17.0.1.1.0.3-py3-none-any.whl
+[2024-05-19 08:59:33] INFO root fetch - processPackages [odoo-addon-sale-force-invoiced]: Downloading https://files.pythonhosted.org/packages/31/4c/d8c9cdfc8008f70734e45fbf0fbc56b0a5fd43d68502ceb09cc93a379aae/odoo_addon_sale_force_invoiced-17.0.1.1.0.4-py3-none-any.whl
+[2024-05-19 08:59:33] INFO root fetch - processPackages [odoo-addon-sale-invoice-policy]: Downloading https://files.pythonhosted.org/packages/da/ba/eb788322b1e0484f7cd9f78655b8712f227af3801e913473f6656258530c/odoo_addon_sale_invoice_policy-17.0.1.0.0.2-py3-none-any.whl
+[2024-05-19 08:59:33] INFO root fetch - processPackages [odoo-addon-sale-force-invoiced]: executing diffoscope
+[2024-05-19 08:59:33] INFO root fetch - processPackages [odoo-addon-sale-force-invoiced]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_sale_force_invoiced-17.0.1.1.0.3-py3-none-any.whl.zip tmp/odoo_addon_sale_force_invoiced-17.0.1.1.0.4-py3-none-any.whl.zip --markdown 20240519/o/odoo-addon-sale-force-invoiced/17.0.1.1.0.3-17.0.1.1.0.4/README.md --exclude *.pyd
+[2024-05-19 08:59:33] INFO root fetch - processPackages [odoo-addon-sale-invoice-policy]: executing diffoscope
+[2024-05-19 08:59:33] INFO root fetch - processPackages [odoo-addon-sale-invoice-policy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_sale_invoice_policy-16.0.2.0.0.1-py3-none-any.whl.zip tmp/odoo_addon_sale_invoice_policy-17.0.1.0.0.2-py3-none-any.whl.zip --markdown 20240519/o/odoo-addon-sale-invoice-policy/16.0.2.0.0.1-17.0.1.0.0.2/README.md --exclude *.pyd
+[2024-05-19 08:59:34] INFO root fetch - processPackages [odoo-addon-sale-invoice-policy]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_invoice_policy-16.0.2.0.0.1-py3-none-any.whl.zip]
+[2024-05-19 08:59:34] INFO root fetch - processPackages [odoo-addon-sale-invoice-policy]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_invoice_policy-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-05-19 08:59:34] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-invoice-policy]: success
+[2024-05-19 08:59:34] INFO root fetch - processPackages [odoo-addon-sale-force-invoiced]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_force_invoiced-17.0.1.1.0.3-py3-none-any.whl.zip]
+[2024-05-19 08:59:34] INFO root fetch - processPackages [odoo-addon-sale-force-invoiced]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_force_invoiced-17.0.1.1.0.4-py3-none-any.whl.zip]
+[2024-05-19 08:59:34] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-force-invoiced]: success
+[2024-05-19 08:59:34] INFO root fetch - main [MainThread]: Store serial: [23273988]
