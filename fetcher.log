@@ -11375,3 +11375,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 15:36:07] INFO root fetch - processPackages [MailMagician]: Remove: archive file [/home/abi/fetcher/tmp/MailMagician-0.5.0.tar.gz]
 [2024-05-19 15:36:07] INFO root fetch - main [MainThread]: End processing [MailMagician]: success
 [2024-05-19 15:36:07] INFO root fetch - main [MainThread]: Store serial: [23276810]
+[2024-05-19 15:38:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276810]
+[2024-05-19 15:38:16] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 15:38:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rio-ui
+[2024-05-19 15:38:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mpl-ascii
+[2024-05-19 15:38:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: MailMagician
+[2024-05-19 15:38:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tarina
+[2024-05-19 15:38:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dipneumonesz
+[2024-05-19 15:38:16] INFO root fetch - processPackages [MailMagician]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-05-19 15:38:16] INFO root fetch - processPackages [rio-ui]: New version: [0.7.1] Old Version: [0.7]
+[2024-05-19 15:38:16] INFO root fetch - processPackages [MailMagician]: Downloading https://files.pythonhosted.org/packages/19/d4/55b258cc63386cc9cea5340d47c9a898d6ae5c27e773dd36d1d59b6f40b6/MailMagician-0.4.0.tar.gz
+[2024-05-19 15:38:16] INFO root fetch - processPackages [mpl-ascii]: New version: [0.6.2] Old Version: [0.6.1]
+[2024-05-19 15:38:16] INFO root fetch - processPackages [rio-ui]: Downloading https://files.pythonhosted.org/packages/74/b4/8215b89f841066b9cd95844a9df26dfb8d34fc83612b447d63d96ca9fe7e/rio_ui-0.7.tar.gz
+[2024-05-19 15:38:16] WARNING root fetch - processPackages [dipneumonesz]: Skipping, unable to determine old version
+[2024-05-19 15:38:16] INFO root fetch - main [MainThread]: End processing [dipneumonesz] error
+[2024-05-19 15:38:16] INFO root fetch - processPackages [tarina]: New version: [0.5.2] Old Version: [0.5.1]
+[2024-05-19 15:38:16] INFO root fetch - processPackages [MailMagician]: Downloading https://files.pythonhosted.org/packages/9c/78/580fdeb90bf34919517d64e69a7ae87cb39a367027f6c33879317d9d5ae6/MailMagician-0.5.0.tar.gz
+[2024-05-19 15:38:16] INFO root fetch - processPackages [mpl-ascii]: Downloading https://files.pythonhosted.org/packages/94/48/1899a6878705e1c8142aa596b564ba3b907c7aa62e0cbbf1c24e77059779/mpl_ascii-0.6.1.tar.gz
+[2024-05-19 15:38:16] INFO root fetch - processPackages [tarina]: Downloading https://files.pythonhosted.org/packages/e1/0d/bec96085bd667d0778647b5d714446f5b17a2c98166d62629521982c7252/tarina-0.5.1.tar.gz
+[2024-05-19 15:38:16] INFO root fetch - processPackages [MailMagician]: executing diffoscope
+[2024-05-19 15:38:16] INFO root fetch - processPackages [MailMagician]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MailMagician-0.4.0.tar.gz tmp/MailMagician-0.5.0.tar.gz --markdown 20240519/M/MailMagician/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-05-19 15:38:16] INFO root fetch - processPackages [rio-ui]: Downloading https://files.pythonhosted.org/packages/4c/48/40ba40629fb7ebee1fdae86a963eb5a5fd9c427d54e96e5dbd277f421a1c/rio_ui-0.7.1.tar.gz
+[2024-05-19 15:38:16] INFO root fetch - processPackages [mpl-ascii]: Downloading https://files.pythonhosted.org/packages/c3/67/10dffe79de660615d0fc9a10bbeb48d4d453756895ea59d8393394aaa552/mpl_ascii-0.6.2.tar.gz
+[2024-05-19 15:38:17] INFO root fetch - processPackages [mpl-ascii]: executing diffoscope
+[2024-05-19 15:38:17] INFO root fetch - processPackages [mpl-ascii]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpl_ascii-0.6.1.tar.gz tmp/mpl_ascii-0.6.2.tar.gz --markdown 20240519/m/mpl-ascii/0.6.1-0.6.2/README.md --exclude *.pyd
+[2024-05-19 15:38:17] INFO root fetch - processPackages [tarina]: Downloading https://files.pythonhosted.org/packages/51/ed/517d59f2c360b241715be61c75c5dbf236e0ae139e0222652c6be90213a7/tarina-0.5.2.tar.gz
+[2024-05-19 15:38:17] INFO root fetch - processPackages [rio-ui]: executing diffoscope
+[2024-05-19 15:38:17] INFO root fetch - processPackages [rio-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rio_ui-0.7.tar.gz tmp/rio_ui-0.7.1.tar.gz --markdown 20240519/r/rio-ui/0.7-0.7.1/README.md --exclude *.pyd
+[2024-05-19 15:38:17] INFO root fetch - processPackages [MailMagician]: Remove: archive file [/home/abi/fetcher/tmp/MailMagician-0.4.0.tar.gz]
+[2024-05-19 15:38:17] INFO root fetch - processPackages [MailMagician]: Remove: archive file [/home/abi/fetcher/tmp/MailMagician-0.5.0.tar.gz]
+[2024-05-19 15:38:17] INFO root fetch - main [MainThread]: End processing [MailMagician]: success
+[2024-05-19 15:38:17] INFO root fetch - processPackages [tarina]: executing diffoscope
+[2024-05-19 15:38:17] INFO root fetch - processPackages [tarina]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tarina-0.5.1.tar.gz tmp/tarina-0.5.2.tar.gz --markdown 20240519/t/tarina/0.5.1-0.5.2/README.md --exclude *.pyd
+[2024-05-19 15:38:18] INFO root fetch - processPackages [mpl-ascii]: Remove: archive file [/home/abi/fetcher/tmp/mpl_ascii-0.6.1.tar.gz]
+[2024-05-19 15:38:18] INFO root fetch - processPackages [mpl-ascii]: Remove: archive file [/home/abi/fetcher/tmp/mpl_ascii-0.6.2.tar.gz]
+[2024-05-19 15:38:18] INFO root fetch - main [MainThread]: End processing [mpl-ascii]: success
+[2024-05-19 15:38:18] INFO root fetch - processPackages [tarina]: Remove: archive file [/home/abi/fetcher/tmp/tarina-0.5.1.tar.gz]
+[2024-05-19 15:38:18] INFO root fetch - processPackages [tarina]: Remove: archive file [/home/abi/fetcher/tmp/tarina-0.5.2.tar.gz]
+[2024-05-19 15:38:18] INFO root fetch - main [MainThread]: End processing [tarina]: success
+[2024-05-19 15:38:18] INFO root fetch - processPackages [rio-ui]: Remove: archive file [/home/abi/fetcher/tmp/rio_ui-0.7.tar.gz]
+[2024-05-19 15:38:18] INFO root fetch - processPackages [rio-ui]: Remove: archive file [/home/abi/fetcher/tmp/rio_ui-0.7.1.tar.gz]
+[2024-05-19 15:38:18] INFO root fetch - main [MainThread]: End processing [rio-ui]: success
+[2024-05-19 15:38:18] INFO root fetch - main [MainThread]: Store serial: [23276873]
