@@ -16486,3 +16486,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 20:24:15] INFO root fetch - processPackages [gradio-textlabeler]: Remove: archive file [/home/abi/fetcher/tmp/gradio_textlabeler-1.0.1.tar.gz]
 [2024-05-19 20:24:15] INFO root fetch - main [MainThread]: End processing [gradio-textlabeler]: success
 [2024-05-19 20:24:15] INFO root fetch - main [MainThread]: Store serial: [23279230]
+[2024-05-19 20:26:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279230]
+[2024-05-19 20:26:24] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 20:26:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gammarers.aws-secure-log-bucket
+[2024-05-19 20:26:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MobileInventoryCLI
+[2024-05-19 20:26:24] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.99] Old Version: [0.4.98]
+[2024-05-19 20:26:24] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: New version: [1.6.5] Old Version: [1.6.4]
+[2024-05-19 20:26:24] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/34/2d/1e50d7f512e3d39590afb4a6c37340af98e5c4eadc77d9de653aab0cb49f/MobileInventoryCLI-0.4.98.tar.gz
+[2024-05-19 20:26:24] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: Downloading https://files.pythonhosted.org/packages/c9/c2/9c7532be8a2771ed8d90b6e25a8350c824dad83a9b2c87500f09da0344f9/gammarers.aws-secure-log-bucket-1.6.4.tar.gz
+[2024-05-19 20:26:24] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/44/8c/14cdf7fc3f0b69cae35ba7ee2852fb70e3cab687142869ee3deb104ffc71/MobileInventoryCLI-0.4.99.tar.gz
+[2024-05-19 20:26:24] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-05-19 20:26:24] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.98.tar.gz tmp/MobileInventoryCLI-0.4.99.tar.gz --markdown 20240519/M/MobileInventoryCLI/0.4.98-0.4.99/README.md --exclude *.pyd
+[2024-05-19 20:26:24] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: Downloading https://files.pythonhosted.org/packages/9a/66/3f23277aa480f394f5730f7a509e4f7287b1eddfc799e477b38674f0de5c/gammarers.aws-secure-log-bucket-1.6.5.tar.gz
+[2024-05-19 20:26:25] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: executing diffoscope
+[2024-05-19 20:26:25] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gammarers.aws-secure-log-bucket-1.6.4.tar.gz tmp/gammarers.aws-secure-log-bucket-1.6.5.tar.gz --markdown 20240519/g/gammarers.aws-secure-log-bucket/1.6.4-1.6.5/README.md --exclude *.pyd
+[2024-05-19 20:26:25] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.98.tar.gz]
+[2024-05-19 20:26:25] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.99.tar.gz]
+[2024-05-19 20:26:25] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-05-19 20:26:25] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-log-bucket-1.6.4.tar.gz]
+[2024-05-19 20:26:25] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-log-bucket-1.6.5.tar.gz]
+[2024-05-19 20:26:25] INFO root fetch - main [MainThread]: End processing [gammarers.aws-secure-log-bucket]: success
+[2024-05-19 20:26:25] INFO root fetch - main [MainThread]: Store serial: [23279236]
