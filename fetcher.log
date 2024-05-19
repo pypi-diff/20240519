@@ -1318,3 +1318,36 @@
 [2024-05-19 02:18:35] INFO root fetch - processPackages [ragdaemon]: Remove: archive file [/home/abi/fetcher/tmp/ragdaemon-0.5.1.tar.gz]
 [2024-05-19 02:18:35] INFO root fetch - main [MainThread]: End processing [ragdaemon]: success
 [2024-05-19 02:18:35] INFO root fetch - main [MainThread]: Store serial: [23272063]
+[2024-05-19 02:20:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272063]
+[2024-05-19 02:20:44] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 02:20:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fluidiserz
+[2024-05-19 02:20:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: patchpy
+[2024-05-19 02:20:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-gitlab-runner
+[2024-05-19 02:20:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wfl
+[2024-05-19 02:20:44] INFO root fetch - processPackages [cdk-gitlab-runner]: New version: [2.2.99] Old Version: [2.2.98]
+[2024-05-19 02:20:44] WARNING root fetch - processPackages [fluidiserz]: Skipping, unable to determine old version
+[2024-05-19 02:20:44] INFO root fetch - main [MainThread]: End processing [fluidiserz] error
+[2024-05-19 02:20:44] INFO root fetch - processPackages [patchpy]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-05-19 02:20:44] INFO root fetch - processPackages [wfl]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-05-19 02:20:44] INFO root fetch - processPackages [cdk-gitlab-runner]: Downloading https://files.pythonhosted.org/packages/07/29/9f2cc8590770873b6073743e94ff15a2a7913eb0de3e6a4d2fc133008f62/cdk-gitlab-runner-2.2.98.tar.gz
+[2024-05-19 02:20:44] INFO root fetch - processPackages [patchpy]: Downloading https://files.pythonhosted.org/packages/2c/b6/e5144c3dcadd9da3b306e1fa762022a8981e756d29b44d92700bb659299c/patchpy-2.0.0.tar.gz
+[2024-05-19 02:20:44] INFO root fetch - processPackages [wfl]: Downloading https://files.pythonhosted.org/packages/49/74/342aa55fa57d346a3ff030d2f98cc4c35977c9828e830ca0648eaefe846a/wfl-0.2.5.tar.gz
+[2024-05-19 02:20:44] INFO root fetch - processPackages [cdk-gitlab-runner]: Downloading https://files.pythonhosted.org/packages/16/61/e9f00b4e877a6352bd641de360f7577c27548fbcedc3aab19b1cf3852b9a/cdk-gitlab-runner-2.2.99.tar.gz
+[2024-05-19 02:20:45] INFO root fetch - processPackages [cdk-gitlab-runner]: executing diffoscope
+[2024-05-19 02:20:45] INFO root fetch - processPackages [cdk-gitlab-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-gitlab-runner-2.2.98.tar.gz tmp/cdk-gitlab-runner-2.2.99.tar.gz --markdown 20240519/c/cdk-gitlab-runner/2.2.98-2.2.99/README.md --exclude *.pyd
+[2024-05-19 02:20:45] INFO root fetch - processPackages [patchpy]: Downloading https://files.pythonhosted.org/packages/b4/64/2cd8259ecd9e7249510407e7a390c9df99405f4e9b90aa46fecfca28e60b/patchpy-2.0.1.tar.gz
+[2024-05-19 02:20:45] INFO root fetch - processPackages [wfl]: Downloading https://files.pythonhosted.org/packages/2a/d3/04adf8d71d30a47909f7e26127fa3fc1c3d3e2524052d360453d46c00d3e/wfl-0.2.6.tar.gz
+[2024-05-19 02:20:45] INFO root fetch - processPackages [patchpy]: executing diffoscope
+[2024-05-19 02:20:45] INFO root fetch - processPackages [patchpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/patchpy-2.0.0.tar.gz tmp/patchpy-2.0.1.tar.gz --markdown 20240519/p/patchpy/2.0.0-2.0.1/README.md --exclude *.pyd
+[2024-05-19 02:20:45] INFO root fetch - processPackages [wfl]: executing diffoscope
+[2024-05-19 02:20:45] INFO root fetch - processPackages [wfl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wfl-0.2.5.tar.gz tmp/wfl-0.2.6.tar.gz --markdown 20240519/w/wfl/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-05-19 02:20:45] INFO root fetch - processPackages [cdk-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdk-gitlab-runner-2.2.98.tar.gz]
+[2024-05-19 02:20:45] INFO root fetch - processPackages [cdk-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdk-gitlab-runner-2.2.99.tar.gz]
+[2024-05-19 02:20:45] INFO root fetch - main [MainThread]: End processing [cdk-gitlab-runner]: success
+[2024-05-19 02:20:45] INFO root fetch - processPackages [patchpy]: Remove: archive file [/home/abi/fetcher/tmp/patchpy-2.0.0.tar.gz]
+[2024-05-19 02:20:45] INFO root fetch - processPackages [patchpy]: Remove: archive file [/home/abi/fetcher/tmp/patchpy-2.0.1.tar.gz]
+[2024-05-19 02:20:45] INFO root fetch - main [MainThread]: End processing [patchpy]: success
+[2024-05-19 02:20:46] INFO root fetch - processPackages [wfl]: Remove: archive file [/home/abi/fetcher/tmp/wfl-0.2.5.tar.gz]
+[2024-05-19 02:20:46] INFO root fetch - processPackages [wfl]: Remove: archive file [/home/abi/fetcher/tmp/wfl-0.2.6.tar.gz]
+[2024-05-19 02:20:46] INFO root fetch - main [MainThread]: End processing [wfl]: success
+[2024-05-19 02:20:46] INFO root fetch - main [MainThread]: Store serial: [23272076]
