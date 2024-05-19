@@ -4396,3 +4396,20 @@
 [2024-05-19 07:10:37] WARNING root fetch - processPackages [ffmpeg-asyncio]: Skipping, unable to determine old version
 [2024-05-19 07:10:37] INFO root fetch - main [MainThread]: End processing [ffmpeg-asyncio] error
 [2024-05-19 07:10:37] INFO root fetch - main [MainThread]: Store serial: [23273472]
+[2024-05-19 07:12:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273472]
+[2024-05-19 07:12:45] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-19 07:14:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273472]
+[2024-05-19 07:14:51] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 07:14:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zhlyr
+[2024-05-19 07:14:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: loitersz
+[2024-05-19 07:14:51] WARNING root fetch - processPackages [loitersz]: Skipping, unable to determine old version
+[2024-05-19 07:14:51] INFO root fetch - processPackages [zhlyr]: New version: [4.9] Old Version: [4.8]
+[2024-05-19 07:14:51] INFO root fetch - main [MainThread]: End processing [loitersz] error
+[2024-05-19 07:14:51] INFO root fetch - processPackages [zhlyr]: Downloading https://files.pythonhosted.org/packages/be/39/58f8ad9b11385a20761cf9a99fd1904d5e150a6e3c050e8b5eb80b4db7ca/zhlyr-4.8-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-19 07:14:51] INFO root fetch - processPackages [zhlyr]: Downloading https://files.pythonhosted.org/packages/89/7b/8ad6a3c3484a995cb67a227250bd22b8cb5c437d18c736710543e0fc0448/zhlyr-4.9-cp312-cp312-win_amd64.whl
+[2024-05-19 07:14:52] INFO root fetch - processPackages [zhlyr]: executing diffoscope
+[2024-05-19 07:14:52] INFO root fetch - processPackages [zhlyr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zhlyr-4.8-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/zhlyr-4.9-cp312-cp312-win_amd64.whl.zip --markdown 20240519/z/zhlyr/4.8-4.9/README.md --exclude *.pyd
+[2024-05-19 07:14:52] INFO root fetch - processPackages [zhlyr]: Remove: archive file [/home/abi/fetcher/tmp/zhlyr-4.8-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-19 07:14:52] INFO root fetch - processPackages [zhlyr]: Remove: archive file [/home/abi/fetcher/tmp/zhlyr-4.9-cp312-cp312-win_amd64.whl.zip]
+[2024-05-19 07:14:52] INFO root fetch - main [MainThread]: End processing [zhlyr]: success
+[2024-05-19 07:14:52] INFO root fetch - main [MainThread]: Store serial: [23273482]
