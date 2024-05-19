@@ -12272,3 +12272,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 16:27:29] INFO root fetch - processPackages [scikit-surprise]: Remove: archive file [/home/abi/fetcher/tmp/scikit-surprise-1.1rc0.tar.gz]
 [2024-05-19 16:27:29] INFO root fetch - main [MainThread]: End processing [scikit-surprise]: success
 [2024-05-19 16:27:29] INFO root fetch - main [MainThread]: Store serial: [23277263]
+[2024-05-19 16:29:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277263]
+[2024-05-19 16:29:37] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 16:29:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: besugoz
+[2024-05-19 16:29:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyslth
+[2024-05-19 16:29:38] WARNING root fetch - processPackages [besugoz]: Skipping, unable to determine old version
+[2024-05-19 16:29:38] INFO root fetch - main [MainThread]: End processing [besugoz] error
+[2024-05-19 16:29:38] INFO root fetch - processPackages [pyslth]: New version: [0.3.6] Old Version: [0.3.4]
+[2024-05-19 16:29:38] INFO root fetch - processPackages [pyslth]: Downloading https://files.pythonhosted.org/packages/8c/04/707fae2fc22bd420a200818613ce1efed8edba33df430301cfe06dc8feb2/pyslth-0.3.4.tar.gz
+[2024-05-19 16:29:38] INFO root fetch - processPackages [pyslth]: Downloading https://files.pythonhosted.org/packages/d7/9b/162de79c91cf34fc9077998488b1de884f1bdcb54da8ba32898a84ba8a03/pyslth-0.3.6.tar.gz
+[2024-05-19 16:29:38] INFO root fetch - processPackages [pyslth]: executing diffoscope
+[2024-05-19 16:29:38] INFO root fetch - processPackages [pyslth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyslth-0.3.4.tar.gz tmp/pyslth-0.3.6.tar.gz --markdown 20240519/p/pyslth/0.3.4-0.3.6/README.md --exclude *.pyd
+[2024-05-19 16:29:47] INFO root fetch - processPackages [pyslth]: Remove: archive file [/home/abi/fetcher/tmp/pyslth-0.3.4.tar.gz]
+[2024-05-19 16:29:47] INFO root fetch - processPackages [pyslth]: Remove: archive file [/home/abi/fetcher/tmp/pyslth-0.3.6.tar.gz]
+[2024-05-19 16:29:47] INFO root fetch - main [MainThread]: End processing [pyslth]: success
+[2024-05-19 16:29:47] INFO root fetch - main [MainThread]: Store serial: [23277269]
