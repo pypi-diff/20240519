@@ -2782,3 +2782,27 @@
 [2024-05-19 04:29:20] INFO root fetch - processPackages [cs.cmdutils]: Remove: archive file [/home/abi/fetcher/tmp/cs.cmdutils-20240519.tar.gz]
 [2024-05-19 04:29:20] INFO root fetch - main [MainThread]: End processing [cs.cmdutils]: success
 [2024-05-19 04:29:20] INFO root fetch - main [MainThread]: Store serial: [23272807]
+[2024-05-19 04:31:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272807]
+[2024-05-19 04:31:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 04:31:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cs.dockerutils
+[2024-05-19 04:31:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: branglingz
+[2024-05-19 04:31:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ewstools
+[2024-05-19 04:31:29] INFO root fetch - processPackages [cs.dockerutils]: New version: [20240519] Old Version: [20240305]
+[2024-05-19 04:31:29] WARNING root fetch - processPackages [branglingz]: Skipping, unable to determine old version
+[2024-05-19 04:31:29] INFO root fetch - main [MainThread]: End processing [branglingz] error
+[2024-05-19 04:31:29] INFO root fetch - processPackages [ewstools]: New version: [2.1.2] Old Version: [2.1.0]
+[2024-05-19 04:31:29] INFO root fetch - processPackages [cs.dockerutils]: Downloading https://files.pythonhosted.org/packages/ee/51/d34d4fc697851bfa2ae3b1ec68de8e28e5c0c4b0a426e68a189890e94a76/cs.dockerutils-20240305.tar.gz
+[2024-05-19 04:31:29] INFO root fetch - processPackages [ewstools]: Downloading https://files.pythonhosted.org/packages/87/34/2227a8d82db2da34c315138bbeb9ddbe089283a7bb159a7e9a49a824e5e1/ewstools-2.1.0.tar.gz
+[2024-05-19 04:31:29] INFO root fetch - processPackages [cs.dockerutils]: Downloading https://files.pythonhosted.org/packages/c1/ae/72d913212eaf4a85f95c017ad1b659a6d66e1a1fde9bd139e2a7bed36c56/cs.dockerutils-20240519.tar.gz
+[2024-05-19 04:31:29] INFO root fetch - processPackages [cs.dockerutils]: executing diffoscope
+[2024-05-19 04:31:29] INFO root fetch - processPackages [cs.dockerutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs.dockerutils-20240305.tar.gz tmp/cs.dockerutils-20240519.tar.gz --markdown 20240519/c/cs.dockerutils/20240305-20240519/README.md --exclude *.pyd
+[2024-05-19 04:31:30] INFO root fetch - processPackages [ewstools]: Downloading https://files.pythonhosted.org/packages/3f/32/ddc393212d8035d6fe56d7f58e48c008d73004b9a1f59e7d89f5640de56a/ewstools-2.1.2.tar.gz
+[2024-05-19 04:31:30] INFO root fetch - processPackages [cs.dockerutils]: Remove: archive file [/home/abi/fetcher/tmp/cs.dockerutils-20240305.tar.gz]
+[2024-05-19 04:31:30] INFO root fetch - processPackages [cs.dockerutils]: Remove: archive file [/home/abi/fetcher/tmp/cs.dockerutils-20240519.tar.gz]
+[2024-05-19 04:31:30] INFO root fetch - main [MainThread]: End processing [cs.dockerutils]: success
+[2024-05-19 04:31:30] INFO root fetch - processPackages [ewstools]: executing diffoscope
+[2024-05-19 04:31:30] INFO root fetch - processPackages [ewstools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ewstools-2.1.0.tar.gz tmp/ewstools-2.1.2.tar.gz --markdown 20240519/e/ewstools/2.1.0-2.1.2/README.md --exclude *.pyd
+[2024-05-19 04:31:30] INFO root fetch - processPackages [ewstools]: Remove: archive file [/home/abi/fetcher/tmp/ewstools-2.1.0.tar.gz]
+[2024-05-19 04:31:30] INFO root fetch - processPackages [ewstools]: Remove: archive file [/home/abi/fetcher/tmp/ewstools-2.1.2.tar.gz]
+[2024-05-19 04:31:30] INFO root fetch - main [MainThread]: End processing [ewstools]: success
+[2024-05-19 04:31:30] INFO root fetch - main [MainThread]: Store serial: [23272817]
