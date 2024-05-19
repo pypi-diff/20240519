@@ -7993,3 +7993,45 @@
 [2024-05-19 11:58:47] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras_nightly-2.17.0.dev2024051809.tar.gz]
 [2024-05-19 11:58:47] INFO root fetch - main [MainThread]: End processing [tf-keras-nightly]: success
 [2024-05-19 11:58:47] INFO root fetch - main [MainThread]: Store serial: [23275261]
+[2024-05-19 12:00:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275261]
+[2024-05-19 12:00:56] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 12:00:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tf-keras-nightly
+[2024-05-19 12:00:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: akshare
+[2024-05-19 12:00:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aiotx
+[2024-05-19 12:00:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: exocall
+[2024-05-19 12:00:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dash-spread-grid
+[2024-05-19 12:00:56] INFO root fetch - processPackages [dash-spread-grid]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 12:00:56] INFO root fetch - processPackages [tf-keras-nightly]: New version: [2.17.0.dev2024051909] Old Version: [2.17.0.dev2024051809]
+[2024-05-19 12:00:56] ERROR root fetch - processPackages [exocall]: Unable to get metadata: No such project 'exocall'
+[2024-05-19 12:00:56] INFO root fetch - processPackages [aiotx]: New version: [1.0.0] Old Version: [0.6.0]
+[2024-05-19 12:00:56] INFO root fetch - main [MainThread]: End processing [exocall] error
+[2024-05-19 12:00:56] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/9f/39/3477f65f22676264317bcb1d617b220ddcc8d09f85a7eb7904d8c2676dae/dash_spread_grid-0.0.8.tar.gz
+[2024-05-19 12:00:56] INFO root fetch - processPackages [akshare]: New version: [1.9.99] Old Version: [1.9.98]
+[2024-05-19 12:00:56] INFO root fetch - processPackages [tf-keras-nightly]: Downloading https://files.pythonhosted.org/packages/43/62/22dbea4b461e2b90ecfaaa81b45c6e5b9f98839c21958e77da4eb7d23530/tf_keras_nightly-2.17.0.dev2024051809.tar.gz
+[2024-05-19 12:00:56] INFO root fetch - processPackages [aiotx]: Downloading https://files.pythonhosted.org/packages/95/5a/703bd7478b9ea9b9cca0417ae2fcb8fa6a7f798d75485fe57f56e1703d83/aiotx-0.6.0.tar.gz
+[2024-05-19 12:00:56] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/37/f7/3991c1c5cd26d592773df3381df4e17ae14f51d47af4fd52b7419949494b/dash_spread_grid-0.0.9.tar.gz
+[2024-05-19 12:00:56] INFO root fetch - processPackages [akshare]: Downloading https://files.pythonhosted.org/packages/ec/a4/f1c21d8fbb349e15f0bf76d32a496003bcff9b66215f81b940337a510e36/akshare-1.9.98.tar.gz
+[2024-05-19 12:00:56] INFO root fetch - processPackages [dash-spread-grid]: executing diffoscope
+[2024-05-19 12:00:56] INFO root fetch - processPackages [dash-spread-grid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_spread_grid-0.0.8.tar.gz tmp/dash_spread_grid-0.0.9.tar.gz --markdown 20240519/d/dash-spread-grid/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 12:00:56] INFO root fetch - processPackages [tf-keras-nightly]: Downloading https://files.pythonhosted.org/packages/bf/40/576567c415fbe1ce20c32ab2b15041c6f17a6f72e05f27ab979478b68fac/tf_keras_nightly-2.17.0.dev2024051909.tar.gz
+[2024-05-19 12:00:56] INFO root fetch - processPackages [aiotx]: Downloading https://files.pythonhosted.org/packages/a5/bf/f587bf9624bcec99f862c8cd804b83161af2bf92a04e7cb95d6b9376acb5/aiotx-1.0.0.tar.gz
+[2024-05-19 12:00:56] INFO root fetch - processPackages [tf-keras-nightly]: executing diffoscope
+[2024-05-19 12:00:56] INFO root fetch - processPackages [tf-keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_keras_nightly-2.17.0.dev2024051809.tar.gz tmp/tf_keras_nightly-2.17.0.dev2024051909.tar.gz --markdown 20240519/t/tf-keras-nightly/2.17.0.dev2024051809-2.17.0.dev2024051909/README.md --exclude *.pyd
+[2024-05-19 12:00:57] INFO root fetch - processPackages [akshare]: Downloading https://files.pythonhosted.org/packages/53/e8/f58e96016752567ca09f3f67abdc7e935d0afa919aded528d50590ed9170/akshare-1.9.99.tar.gz
+[2024-05-19 12:00:57] INFO root fetch - processPackages [aiotx]: executing diffoscope
+[2024-05-19 12:00:57] INFO root fetch - processPackages [aiotx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiotx-0.6.0.tar.gz tmp/aiotx-1.0.0.tar.gz --markdown 20240519/a/aiotx/0.6.0-1.0.0/README.md --exclude *.pyd
+[2024-05-19 12:00:57] INFO root fetch - processPackages [akshare]: executing diffoscope
+[2024-05-19 12:00:57] INFO root fetch - processPackages [akshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akshare-1.9.98.tar.gz tmp/akshare-1.9.99.tar.gz --markdown 20240519/a/akshare/1.9.98-1.9.99/README.md --exclude *.pyd
+[2024-05-19 12:00:58] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.8.tar.gz]
+[2024-05-19 12:00:58] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.9.tar.gz]
+[2024-05-19 12:00:58] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
+[2024-05-19 12:00:58] INFO root fetch - processPackages [aiotx]: Remove: archive file [/home/abi/fetcher/tmp/aiotx-0.6.0.tar.gz]
+[2024-05-19 12:00:58] INFO root fetch - processPackages [aiotx]: Remove: archive file [/home/abi/fetcher/tmp/aiotx-1.0.0.tar.gz]
+[2024-05-19 12:00:58] INFO root fetch - main [MainThread]: End processing [aiotx]: success
+[2024-05-19 12:00:59] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras_nightly-2.17.0.dev2024051809.tar.gz]
+[2024-05-19 12:00:59] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras_nightly-2.17.0.dev2024051909.tar.gz]
+[2024-05-19 12:00:59] INFO root fetch - main [MainThread]: End processing [tf-keras-nightly]: success
+[2024-05-19 12:00:59] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.98.tar.gz]
+[2024-05-19 12:00:59] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.99.tar.gz]
+[2024-05-19 12:00:59] INFO root fetch - main [MainThread]: End processing [akshare]: success
+[2024-05-19 12:00:59] INFO root fetch - main [MainThread]: Store serial: [23275278]
