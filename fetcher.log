@@ -1831,3 +1831,29 @@
 [2024-05-19 03:04:40] INFO root fetch - processPackages [altmindpy]: Remove: archive file [/home/abi/fetcher/tmp/altmindpy-0.0.2.tar.gz]
 [2024-05-19 03:04:40] INFO root fetch - main [MainThread]: End processing [altmindpy]: success
 [2024-05-19 03:04:40] INFO root fetch - main [MainThread]: Store serial: [23272263]
+[2024-05-19 03:06:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272263]
+[2024-05-19 03:06:49] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-19 03:08:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272268]
+[2024-05-19 03:08:54] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 03:08:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: srt-trans
+[2024-05-19 03:08:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lektor-minify-html
+[2024-05-19 03:08:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vaultdb
+[2024-05-19 03:08:55] INFO root fetch - processPackages [srt-trans]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-19 03:08:55] ERROR root fetch - processPackages [vaultdb]: Unable to get metadata: No such project 'vaultdb'
+[2024-05-19 03:08:55] INFO root fetch - main [MainThread]: End processing [vaultdb] error
+[2024-05-19 03:08:55] INFO root fetch - processPackages [lektor-minify-html]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-19 03:08:55] INFO root fetch - processPackages [srt-trans]: Downloading https://files.pythonhosted.org/packages/c8/4b/2cfb39d5fe618f2283a8b6afbe665ed2ac9f13e1258491c0b8b863e861b5/srt_trans-1.0.8.tar.gz
+[2024-05-19 03:08:55] INFO root fetch - processPackages [lektor-minify-html]: Downloading https://files.pythonhosted.org/packages/83/01/dfe11994403ef654d1131614caecda8016d83421543954c1d84619038038/lektor-minify-html-0.1.0.tar.gz
+[2024-05-19 03:08:55] INFO root fetch - processPackages [lektor-minify-html]: Downloading https://files.pythonhosted.org/packages/a9/61/8ab10c433a95fb5d12311f0c48f1f3aac2be9ef497ea9ce92d4f110fa535/lektor_minify_html-0.1.1.tar.gz
+[2024-05-19 03:08:55] INFO root fetch - processPackages [srt-trans]: Downloading https://files.pythonhosted.org/packages/a4/cb/4d437373f78620f88f53844f183210f7d83ba02e68da076b5d1f0815b46c/srt_trans-1.0.9.tar.gz
+[2024-05-19 03:08:55] INFO root fetch - processPackages [lektor-minify-html]: executing diffoscope
+[2024-05-19 03:08:55] INFO root fetch - processPackages [lektor-minify-html]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lektor-minify-html-0.1.0.tar.gz tmp/lektor_minify_html-0.1.1.tar.gz --markdown 20240519/l/lektor-minify-html/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-19 03:08:55] INFO root fetch - processPackages [srt-trans]: executing diffoscope
+[2024-05-19 03:08:55] INFO root fetch - processPackages [srt-trans]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/srt_trans-1.0.8.tar.gz tmp/srt_trans-1.0.9.tar.gz --markdown 20240519/s/srt-trans/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-19 03:08:56] INFO root fetch - processPackages [lektor-minify-html]: Remove: archive file [/home/abi/fetcher/tmp/lektor-minify-html-0.1.0.tar.gz]
+[2024-05-19 03:08:56] INFO root fetch - processPackages [lektor-minify-html]: Remove: archive file [/home/abi/fetcher/tmp/lektor_minify_html-0.1.1.tar.gz]
+[2024-05-19 03:08:56] INFO root fetch - main [MainThread]: End processing [lektor-minify-html]: success
+[2024-05-19 03:08:56] INFO root fetch - processPackages [srt-trans]: Remove: archive file [/home/abi/fetcher/tmp/srt_trans-1.0.8.tar.gz]
+[2024-05-19 03:08:56] INFO root fetch - processPackages [srt-trans]: Remove: archive file [/home/abi/fetcher/tmp/srt_trans-1.0.9.tar.gz]
+[2024-05-19 03:08:56] INFO root fetch - main [MainThread]: End processing [srt-trans]: success
+[2024-05-19 03:08:56] INFO root fetch - main [MainThread]: Store serial: [23272284]
