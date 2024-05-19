@@ -3363,3 +3363,29 @@
 [2024-05-19 05:32:37] INFO root fetch - processPackages [keras-nlp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-nightly-0.9.0.dev2024041003.tar.gz]
 [2024-05-19 05:32:37] INFO root fetch - main [MainThread]: End processing [keras-nlp-nightly]: success
 [2024-05-19 05:32:37] INFO root fetch - main [MainThread]: Store serial: [23273034]
+[2024-05-19 05:34:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273034]
+[2024-05-19 05:34:45] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-19 05:36:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273034]
+[2024-05-19 05:36:51] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 05:36:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: baosight
+[2024-05-19 05:36:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rikibot
+[2024-05-19 05:36:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-asterisk-click2dial
+[2024-05-19 05:36:51] INFO root fetch - processPackages [odoo-addon-asterisk-click2dial]: New version: [17.0.1.0.0.2] Old Version: [16.0.1.0.0.1]
+[2024-05-19 05:36:51] INFO root fetch - processPackages [baosight]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-19 05:36:51] INFO root fetch - processPackages [odoo-addon-asterisk-click2dial]: Downloading https://files.pythonhosted.org/packages/a1/7f/cb67012318bfc3731e7644afddc584edb8ba9ffc03e045e09b8abec8eca3/odoo_addon_asterisk_click2dial-16.0.1.0.0.1-py3-none-any.whl
+[2024-05-19 05:36:51] INFO root fetch - processPackages [baosight]: Downloading https://files.pythonhosted.org/packages/0b/47/e8581ac36dcf089b58a807cc18a938d8db989be5758634f085fb87397340/baosight-0.0.7.tar.gz
+[2024-05-19 05:36:51] WARNING root fetch - processPackages [rikibot]: Skipping, unable to determine old version
+[2024-05-19 05:36:51] INFO root fetch - main [MainThread]: End processing [rikibot] error
+[2024-05-19 05:36:51] INFO root fetch - processPackages [odoo-addon-asterisk-click2dial]: Downloading https://files.pythonhosted.org/packages/07/bf/8a19ecf3b8637597775b95e7f3c82cff54eaf0f8cf496f2bf79f7171724e/odoo_addon_asterisk_click2dial-17.0.1.0.0.2-py3-none-any.whl
+[2024-05-19 05:36:51] INFO root fetch - processPackages [baosight]: Downloading https://files.pythonhosted.org/packages/72/e0/5c051218be62e92d7cc33bcf889a9f069781fab83c116c9e05a6f86721fe/baosight-0.0.8.tar.gz
+[2024-05-19 05:36:51] INFO root fetch - processPackages [odoo-addon-asterisk-click2dial]: executing diffoscope
+[2024-05-19 05:36:51] INFO root fetch - processPackages [odoo-addon-asterisk-click2dial]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_asterisk_click2dial-16.0.1.0.0.1-py3-none-any.whl.zip tmp/odoo_addon_asterisk_click2dial-17.0.1.0.0.2-py3-none-any.whl.zip --markdown 20240519/o/odoo-addon-asterisk-click2dial/16.0.1.0.0.1-17.0.1.0.0.2/README.md --exclude *.pyd
+[2024-05-19 05:36:51] INFO root fetch - processPackages [baosight]: executing diffoscope
+[2024-05-19 05:36:51] INFO root fetch - processPackages [baosight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baosight-0.0.7.tar.gz tmp/baosight-0.0.8.tar.gz --markdown 20240519/b/baosight/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-19 05:36:52] INFO root fetch - processPackages [baosight]: Remove: archive file [/home/abi/fetcher/tmp/baosight-0.0.7.tar.gz]
+[2024-05-19 05:36:52] INFO root fetch - processPackages [baosight]: Remove: archive file [/home/abi/fetcher/tmp/baosight-0.0.8.tar.gz]
+[2024-05-19 05:36:52] INFO root fetch - main [MainThread]: End processing [baosight]: success
+[2024-05-19 05:36:52] INFO root fetch - processPackages [odoo-addon-asterisk-click2dial]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_asterisk_click2dial-16.0.1.0.0.1-py3-none-any.whl.zip]
+[2024-05-19 05:36:52] INFO root fetch - processPackages [odoo-addon-asterisk-click2dial]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_asterisk_click2dial-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-05-19 05:36:52] INFO root fetch - main [MainThread]: End processing [odoo-addon-asterisk-click2dial]: success
+[2024-05-19 05:36:52] INFO root fetch - main [MainThread]: Store serial: [23273044]
