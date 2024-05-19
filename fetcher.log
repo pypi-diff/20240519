@@ -6575,3 +6575,36 @@
 [2024-05-19 10:02:03] INFO root fetch - processPackages [django-components]: Remove: archive file [/home/abi/fetcher/tmp/django_components-0.9.2.tar.gz]
 [2024-05-19 10:02:03] INFO root fetch - main [MainThread]: End processing [django-components]: success
 [2024-05-19 10:02:03] INFO root fetch - main [MainThread]: Store serial: [23274436]
+[2024-05-19 10:04:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274436]
+[2024-05-19 10:04:11] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 10:04:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: skeltonicsz
+[2024-05-19 10:04:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: langfun
+[2024-05-19 10:04:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gaiah-toolkit
+[2024-05-19 10:04:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: outpostcli
+[2024-05-19 10:04:11] INFO root fetch - processPackages [outpostcli]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 10:04:11] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/7e/e2/114a39eac567286d0418645c0ea24089c48fcbe4cccec6c79191a5cefccf/outpostcli-0.0.8.tar.gz
+[2024-05-19 10:04:11] WARNING root fetch - processPackages [skeltonicsz]: Skipping, unable to determine old version
+[2024-05-19 10:04:11] INFO root fetch - main [MainThread]: End processing [skeltonicsz] error
+[2024-05-19 10:04:11] INFO root fetch - processPackages [gaiah-toolkit]: New version: [0.4.0] Old Version: [0.3.13]
+[2024-05-19 10:04:11] INFO root fetch - processPackages [langfun]: New version: [0.0.2.dev20240519] Old Version: [0.0.2.dev20240518]
+[2024-05-19 10:04:11] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/df/ab/82b6853cec170d33c2aff19e3a298b0bf56f7ba1b885f6f7d42a10ae43dc/outpostcli-0.0.9.tar.gz
+[2024-05-19 10:04:11] INFO root fetch - processPackages [gaiah-toolkit]: Downloading https://files.pythonhosted.org/packages/cd/61/1ee4fef58d0939f2352d3dd96b558c24cc89962db348226333953901f4e7/gaiah_toolkit-0.3.13.tar.gz
+[2024-05-19 10:04:11] INFO root fetch - processPackages [langfun]: Downloading https://files.pythonhosted.org/packages/97/6f/8f0e4210912024ab31e8368c0fe8390e94028d7acfe5009e644c1f557b89/langfun-0.0.2.dev20240518.tar.gz
+[2024-05-19 10:04:12] INFO root fetch - processPackages [outpostcli]: executing diffoscope
+[2024-05-19 10:04:12] INFO root fetch - processPackages [outpostcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outpostcli-0.0.8.tar.gz tmp/outpostcli-0.0.9.tar.gz --markdown 20240519/o/outpostcli/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 10:04:12] INFO root fetch - processPackages [langfun]: Downloading https://files.pythonhosted.org/packages/cb/0a/a2e7b5351e078b75d74772d679e0fe1721e79fe695036f6f73f65a6ecd06/langfun-0.0.2.dev20240519.tar.gz
+[2024-05-19 10:04:12] INFO root fetch - processPackages [gaiah-toolkit]: Downloading https://files.pythonhosted.org/packages/60/18/e4a917268d207acd431d0d60b8aa2e915dd0ac42d5cda17a151e6a67fb55/gaiah_toolkit-0.4.0.tar.gz
+[2024-05-19 10:04:12] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.8.tar.gz]
+[2024-05-19 10:04:12] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.9.tar.gz]
+[2024-05-19 10:04:12] INFO root fetch - main [MainThread]: End processing [outpostcli]: success
+[2024-05-19 10:04:12] INFO root fetch - processPackages [langfun]: executing diffoscope
+[2024-05-19 10:04:12] INFO root fetch - processPackages [langfun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langfun-0.0.2.dev20240518.tar.gz tmp/langfun-0.0.2.dev20240519.tar.gz --markdown 20240519/l/langfun/0.0.2.dev20240518-0.0.2.dev20240519/README.md --exclude *.pyd
+[2024-05-19 10:04:12] INFO root fetch - processPackages [gaiah-toolkit]: executing diffoscope
+[2024-05-19 10:04:12] INFO root fetch - processPackages [gaiah-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gaiah_toolkit-0.3.13.tar.gz tmp/gaiah_toolkit-0.4.0.tar.gz --markdown 20240519/g/gaiah-toolkit/0.3.13-0.4.0/README.md --exclude *.pyd
+[2024-05-19 10:04:13] INFO root fetch - processPackages [gaiah-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/gaiah_toolkit-0.3.13.tar.gz]
+[2024-05-19 10:04:13] INFO root fetch - processPackages [gaiah-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/gaiah_toolkit-0.4.0.tar.gz]
+[2024-05-19 10:04:13] INFO root fetch - main [MainThread]: End processing [gaiah-toolkit]: success
+[2024-05-19 10:04:13] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240518.tar.gz]
+[2024-05-19 10:04:13] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240519.tar.gz]
+[2024-05-19 10:04:13] INFO root fetch - main [MainThread]: End processing [langfun]: success
+[2024-05-19 10:04:13] INFO root fetch - main [MainThread]: Store serial: [23274448]
