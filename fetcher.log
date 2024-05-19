@@ -13918,3 +13918,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 18:01:48] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
 [2024-05-19 18:01:48] INFO root fetch - main [MainThread]: End processing [yeref]: success
 [2024-05-19 18:01:48] INFO root fetch - main [MainThread]: Store serial: [23278056]
+[2024-05-19 18:03:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23278056]
+[2024-05-19 18:03:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 18:03:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: trengine
+[2024-05-19 18:03:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alter-ego-llm
+[2024-05-19 18:03:56] INFO root fetch - processPackages [trengine]: New version: [1.4] Old Version: [1.3]
+[2024-05-19 18:03:57] INFO root fetch - processPackages [trengine]: Downloading https://files.pythonhosted.org/packages/5b/f0/c2b943617d5cc055c279de642a5b186ea1df27e0a82e60d1106674fcf64f/trengine-1.3.tar.gz
+[2024-05-19 18:03:57] INFO root fetch - processPackages [alter-ego-llm]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-05-19 18:03:57] INFO root fetch - processPackages [alter-ego-llm]: Downloading https://files.pythonhosted.org/packages/e1/35/cb87a9eec40f551f73344d7740e6a2ae9b0b0fe393e392dbb713cc50337f/alter_ego_llm-1.0.0.tar.gz
+[2024-05-19 18:03:57] INFO root fetch - processPackages [trengine]: Downloading https://files.pythonhosted.org/packages/a2/30/b065a2f0f894092497299d31d4f607a882fb4d6e961f397d1e126dd1f578/trengine-1.4.tar.gz
+[2024-05-19 18:03:57] INFO root fetch - processPackages [trengine]: executing diffoscope
+[2024-05-19 18:03:57] INFO root fetch - processPackages [trengine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trengine-1.3.tar.gz tmp/trengine-1.4.tar.gz --markdown 20240519/t/trengine/1.3-1.4/README.md --exclude *.pyd
+[2024-05-19 18:03:57] INFO root fetch - processPackages [alter-ego-llm]: Downloading https://files.pythonhosted.org/packages/3f/b4/926346586a9a2249573bda1f725cbb34c68148de8550e6384fbd14dae157/alter_ego_llm-1.1.0.tar.gz
+[2024-05-19 18:03:57] INFO root fetch - processPackages [alter-ego-llm]: executing diffoscope
+[2024-05-19 18:03:57] INFO root fetch - processPackages [alter-ego-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alter_ego_llm-1.0.0.tar.gz tmp/alter_ego_llm-1.1.0.tar.gz --markdown 20240519/a/alter-ego-llm/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-05-19 18:03:57] INFO root fetch - processPackages [trengine]: Remove: archive file [/home/abi/fetcher/tmp/trengine-1.3.tar.gz]
+[2024-05-19 18:03:57] INFO root fetch - processPackages [trengine]: Remove: archive file [/home/abi/fetcher/tmp/trengine-1.4.tar.gz]
+[2024-05-19 18:03:57] INFO root fetch - main [MainThread]: End processing [trengine]: success
+[2024-05-19 18:03:58] INFO root fetch - processPackages [alter-ego-llm]: Remove: archive file [/home/abi/fetcher/tmp/alter_ego_llm-1.0.0.tar.gz]
+[2024-05-19 18:03:58] INFO root fetch - processPackages [alter-ego-llm]: Remove: archive file [/home/abi/fetcher/tmp/alter_ego_llm-1.1.0.tar.gz]
+[2024-05-19 18:03:58] INFO root fetch - main [MainThread]: End processing [alter-ego-llm]: success
+[2024-05-19 18:03:58] INFO root fetch - main [MainThread]: Store serial: [23278062]
