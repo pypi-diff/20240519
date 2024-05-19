@@ -15037,3 +15037,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 19:20:19] WARNING root fetch - processPackages [vllm-flash-attn]: Skipping package: exceeds size limit 101404204>=10485760
 [2024-05-19 19:20:19] INFO root fetch - main [MainThread]: End processing [vllm-flash-attn] error
 [2024-05-19 19:20:19] INFO root fetch - main [MainThread]: Store serial: [23278567]
+[2024-05-19 19:22:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23278567]
+[2024-05-19 19:22:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 19:22:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: continuous-eval
+[2024-05-19 19:22:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: medisancez
+[2024-05-19 19:22:28] INFO root fetch - processPackages [continuous-eval]: New version: [0.3.8] Old Version: [0.3.7]
+[2024-05-19 19:22:28] WARNING root fetch - processPackages [medisancez]: Skipping, unable to determine old version
+[2024-05-19 19:22:28] INFO root fetch - main [MainThread]: End processing [medisancez] error
+[2024-05-19 19:22:28] INFO root fetch - processPackages [continuous-eval]: Downloading https://files.pythonhosted.org/packages/67/7a/230da700bb0b5637d16065c9b64dd3ab0b31ca7f377aef6f3374b01d2eb0/continuous_eval-0.3.7.tar.gz
+[2024-05-19 19:22:28] INFO root fetch - processPackages [continuous-eval]: Downloading https://files.pythonhosted.org/packages/35/9b/f05a5d379b4369ebc153fb8446937d31671dbd3056a210dd70bdd27b9f15/continuous_eval-0.3.8.tar.gz
+[2024-05-19 19:22:28] INFO root fetch - processPackages [continuous-eval]: executing diffoscope
+[2024-05-19 19:22:28] INFO root fetch - processPackages [continuous-eval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/continuous_eval-0.3.7.tar.gz tmp/continuous_eval-0.3.8.tar.gz --markdown 20240519/c/continuous-eval/0.3.7-0.3.8/README.md --exclude *.pyd
+[2024-05-19 19:22:29] INFO root fetch - processPackages [continuous-eval]: Remove: archive file [/home/abi/fetcher/tmp/continuous_eval-0.3.7.tar.gz]
+[2024-05-19 19:22:29] INFO root fetch - processPackages [continuous-eval]: Remove: archive file [/home/abi/fetcher/tmp/continuous_eval-0.3.8.tar.gz]
+[2024-05-19 19:22:29] INFO root fetch - main [MainThread]: End processing [continuous-eval]: success
+[2024-05-19 19:22:29] INFO root fetch - main [MainThread]: Store serial: [23278574]
