@@ -16345,3 +16345,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 20:13:25] WARNING root fetch - processPackages [osculatoryz]: Skipping, unable to determine old version
 [2024-05-19 20:13:25] INFO root fetch - main [MainThread]: End processing [osculatoryz] error
 [2024-05-19 20:13:25] INFO root fetch - main [MainThread]: Store serial: [23279173]
+[2024-05-19 20:15:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279173]
+[2024-05-19 20:15:33] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 20:15:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: osculatoryz
+[2024-05-19 20:15:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pymenu-cli
+[2024-05-19 20:15:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: radprompter
+[2024-05-19 20:15:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: BigEDA
+[2024-05-19 20:15:34] INFO root fetch - processPackages [radprompter]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-05-19 20:15:34] WARNING root fetch - processPackages [osculatoryz]: Skipping, unable to determine old version
+[2024-05-19 20:15:34] INFO root fetch - main [MainThread]: End processing [osculatoryz] error
+[2024-05-19 20:15:34] INFO root fetch - processPackages [BigEDA]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 20:15:34] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/2f/fe/5c10bf9dfaa50e4e1234e81e022638b3ef20c821e939dae4cdc3da332e46/bigeda-0.0.8.tar.gz
+[2024-05-19 20:15:34] INFO root fetch - processPackages [pymenu-cli]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-19 20:15:34] INFO root fetch - processPackages [radprompter]: Downloading https://files.pythonhosted.org/packages/95/ff/1d1fa6c373130a62b9cfd421c2deda095307602f3d5cd3b8b6943525c54d/radprompter-1.0.6.tar.gz
+[2024-05-19 20:15:34] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/b1/5d/ec41b2b9af7223a14c0e82d4f64cbeb0d0339a0d8bca37dbb041af6ef14d/bigeda-0.0.9.tar.gz
+[2024-05-19 20:15:34] INFO root fetch - processPackages [pymenu-cli]: Downloading https://files.pythonhosted.org/packages/5f/c0/8af153f7ca65d4cc3833492b9b11c9902a81edaca5daf6c3629c325a0164/pymenu_cli-1.0.4.tar.gz
+[2024-05-19 20:15:34] INFO root fetch - processPackages [BigEDA]: executing diffoscope
+[2024-05-19 20:15:34] INFO root fetch - processPackages [BigEDA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigeda-0.0.8.tar.gz tmp/bigeda-0.0.9.tar.gz --markdown 20240519/B/BigEDA/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 20:15:34] INFO root fetch - processPackages [radprompter]: Downloading https://files.pythonhosted.org/packages/77/66/58228edb16647486af23c9e50ee7a7456449eec3d7462334540007e22d29/radprompter-1.0.7.tar.gz
+[2024-05-19 20:15:34] INFO root fetch - processPackages [radprompter]: executing diffoscope
+[2024-05-19 20:15:34] INFO root fetch - processPackages [radprompter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/radprompter-1.0.6.tar.gz tmp/radprompter-1.0.7.tar.gz --markdown 20240519/r/radprompter/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-05-19 20:15:34] INFO root fetch - processPackages [pymenu-cli]: Downloading https://files.pythonhosted.org/packages/4e/e6/e7c8b84cfa6845ab6e093689c04d8151e0b00a449c7543c945e61685df55/pymenu_cli-1.0.5.tar.gz
+[2024-05-19 20:15:34] INFO root fetch - processPackages [pymenu-cli]: executing diffoscope
+[2024-05-19 20:15:34] INFO root fetch - processPackages [pymenu-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymenu_cli-1.0.4.tar.gz tmp/pymenu_cli-1.0.5.tar.gz --markdown 20240519/p/pymenu-cli/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-19 20:15:35] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.8.tar.gz]
+[2024-05-19 20:15:35] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.9.tar.gz]
+[2024-05-19 20:15:35] INFO root fetch - main [MainThread]: End processing [BigEDA]: success
+[2024-05-19 20:15:35] INFO root fetch - processPackages [pymenu-cli]: Remove: archive file [/home/abi/fetcher/tmp/pymenu_cli-1.0.4.tar.gz]
+[2024-05-19 20:15:35] INFO root fetch - processPackages [pymenu-cli]: Remove: archive file [/home/abi/fetcher/tmp/pymenu_cli-1.0.5.tar.gz]
+[2024-05-19 20:15:35] INFO root fetch - main [MainThread]: End processing [pymenu-cli]: success
+[2024-05-19 20:15:35] INFO root fetch - processPackages [radprompter]: Remove: archive file [/home/abi/fetcher/tmp/radprompter-1.0.6.tar.gz]
+[2024-05-19 20:15:35] INFO root fetch - processPackages [radprompter]: Remove: archive file [/home/abi/fetcher/tmp/radprompter-1.0.7.tar.gz]
+[2024-05-19 20:15:35] INFO root fetch - main [MainThread]: End processing [radprompter]: success
+[2024-05-19 20:15:35] INFO root fetch - main [MainThread]: Store serial: [23279186]
