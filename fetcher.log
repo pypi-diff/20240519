@@ -4018,3 +4018,9 @@
 [2024-05-19 06:37:41] INFO root fetch - processPackages [xarizmi]: Remove: archive file [/home/abi/fetcher/tmp/xarizmi-0.0.1.tar.gz]
 [2024-05-19 06:37:41] INFO root fetch - main [MainThread]: End processing [xarizmi]: success
 [2024-05-19 06:37:41] INFO root fetch - main [MainThread]: Store serial: [23273293]
+[2024-05-19 06:39:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273293]
+[2024-05-19 06:39:50] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 06:39:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: implicationalz
+[2024-05-19 06:39:50] WARNING root fetch - processPackages [implicationalz]: Skipping, unable to determine old version
+[2024-05-19 06:39:50] INFO root fetch - main [MainThread]: End processing [implicationalz] error
+[2024-05-19 06:39:50] INFO root fetch - main [MainThread]: Store serial: [23273297]
