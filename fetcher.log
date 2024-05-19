@@ -4805,3 +4805,54 @@
 [2024-05-19 07:54:02] INFO root fetch - processPackages [compose_x_common]: Remove: archive file [/home/abi/fetcher/tmp/compose_x_common-1.4.8.tar.gz]
 [2024-05-19 07:54:02] INFO root fetch - main [MainThread]: End processing [compose_x_common]: success
 [2024-05-19 07:54:02] INFO root fetch - main [MainThread]: Store serial: [23273637]
+[2024-05-19 07:56:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273637]
+[2024-05-19 07:56:12] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-19 07:56:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TreeSAK
+[2024-05-19 07:56:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ecs_files_composer
+[2024-05-19 07:56:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aioqzone
+[2024-05-19 07:56:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: beanqueue
+[2024-05-19 07:56:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: moutlersz
+[2024-05-19 07:56:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pypomes-db
+[2024-05-19 07:56:12] INFO root fetch - processPackages [pypomes-db]: New version: [0.8.5] Old Version: [0.8.4]
+[2024-05-19 07:56:12] INFO root fetch - processPackages [beanqueue]: New version: [0.2.0] Old Version: [0.1.3]
+[2024-05-19 07:56:12] INFO root fetch - processPackages [ecs_files_composer]: New version: [2.1.4] Old Version: [2.1.3]
+[2024-05-19 07:56:12] INFO root fetch - processPackages [pypomes-db]: Downloading https://files.pythonhosted.org/packages/6e/eb/29a19bfbed2317276bd4d9c47b444a803ed0577ddf1a15f2e55470fce602/pypomes_db-0.8.4.tar.gz
+[2024-05-19 07:56:12] INFO root fetch - processPackages [beanqueue]: Downloading https://files.pythonhosted.org/packages/b0/74/01e6abcbc9bfd0791b2f0f6702ff53e620a0e8c3380b50951126f53aed1c/beanqueue-0.1.3.tar.gz
+[2024-05-19 07:56:12] INFO root fetch - processPackages [aioqzone]: New version: [1.8.2.dev3] Old Version: [1.8.2.dev1]
+[2024-05-19 07:56:12] WARNING root fetch - processPackages [moutlersz]: Skipping, unable to determine old version
+[2024-05-19 07:56:12] INFO root fetch - main [MainThread]: End processing [moutlersz] error
+[2024-05-19 07:56:12] INFO root fetch - processPackages [TreeSAK]: New version: [1.9.2] Old Version: [1.9.1]
+[2024-05-19 07:56:12] INFO root fetch - processPackages [ecs_files_composer]: Downloading https://files.pythonhosted.org/packages/e7/73/f639c6c009f7f2db2008e2dcb0c0a287c52c789707926901f34c7de39572/ecs_files_composer-2.1.3.tar.gz
+[2024-05-19 07:56:12] INFO root fetch - processPackages [aioqzone]: Downloading https://files.pythonhosted.org/packages/87/7a/e8efd0e02530facc0f82e2e46c76f224a3ffbdf0d26aee2b2e57ea56ca4b/aioqzone-1.8.2.dev1.tar.gz
+[2024-05-19 07:56:12] INFO root fetch - processPackages [TreeSAK]: Downloading https://files.pythonhosted.org/packages/33/3d/03ab6748b3aed0610812e461492b58278718c5c15236ce439a758aa3fc27/TreeSAK-1.9.1.tar.gz
+[2024-05-19 07:56:12] INFO root fetch - processPackages [beanqueue]: Downloading https://files.pythonhosted.org/packages/28/a5/9950fac8ecfe196ec3b4bd708772b87053c5b4140dbd3c2de3b6850bd781/beanqueue-0.2.0.tar.gz
+[2024-05-19 07:56:12] INFO root fetch - processPackages [beanqueue]: executing diffoscope
+[2024-05-19 07:56:12] INFO root fetch - processPackages [beanqueue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beanqueue-0.1.3.tar.gz tmp/beanqueue-0.2.0.tar.gz --markdown 20240519/b/beanqueue/0.1.3-0.2.0/README.md --exclude *.pyd
+[2024-05-19 07:56:12] INFO root fetch - processPackages [pypomes-db]: Downloading https://files.pythonhosted.org/packages/3d/e0/9958eb96cde5a044d77aa11289b6e0936d27fbfb7855483a8404da3d886c/pypomes_db-0.8.5.tar.gz
+[2024-05-19 07:56:13] INFO root fetch - processPackages [ecs_files_composer]: Downloading https://files.pythonhosted.org/packages/f6/a5/edcf70badf6bec8363fcf14b8ad06f5f873c6859534b025f2c56bdc0f939/ecs_files_composer-2.1.4.tar.gz
+[2024-05-19 07:56:13] INFO root fetch - processPackages [pypomes-db]: executing diffoscope
+[2024-05-19 07:56:13] INFO root fetch - processPackages [pypomes-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypomes_db-0.8.4.tar.gz tmp/pypomes_db-0.8.5.tar.gz --markdown 20240519/p/pypomes-db/0.8.4-0.8.5/README.md --exclude *.pyd
+[2024-05-19 07:56:13] INFO root fetch - processPackages [TreeSAK]: Downloading https://files.pythonhosted.org/packages/3d/18/0b0f8a2c565de5415024065f522c859677184cac283a7e4af0060f267891/TreeSAK-1.9.2.tar.gz
+[2024-05-19 07:56:13] INFO root fetch - processPackages [aioqzone]: Downloading https://files.pythonhosted.org/packages/dd/02/edee9b744ad4e1e9faa4f62c161e3fe161b194521bf4cefa84c9d33f070d/aioqzone-1.8.2.dev3.tar.gz
+[2024-05-19 07:56:13] INFO root fetch - processPackages [ecs_files_composer]: executing diffoscope
+[2024-05-19 07:56:13] INFO root fetch - processPackages [ecs_files_composer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecs_files_composer-2.1.3.tar.gz tmp/ecs_files_composer-2.1.4.tar.gz --markdown 20240519/e/ecs_files_composer/2.1.3-2.1.4/README.md --exclude *.pyd
+[2024-05-19 07:56:13] INFO root fetch - processPackages [TreeSAK]: executing diffoscope
+[2024-05-19 07:56:13] INFO root fetch - processPackages [TreeSAK]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TreeSAK-1.9.1.tar.gz tmp/TreeSAK-1.9.2.tar.gz --markdown 20240519/T/TreeSAK/1.9.1-1.9.2/README.md --exclude *.pyd
+[2024-05-19 07:56:13] INFO root fetch - processPackages [aioqzone]: executing diffoscope
+[2024-05-19 07:56:13] INFO root fetch - processPackages [aioqzone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioqzone-1.8.2.dev1.tar.gz tmp/aioqzone-1.8.2.dev3.tar.gz --markdown 20240519/a/aioqzone/1.8.2.dev1-1.8.2.dev3/README.md --exclude *.pyd
+[2024-05-19 07:56:13] INFO root fetch - processPackages [beanqueue]: Remove: archive file [/home/abi/fetcher/tmp/beanqueue-0.1.3.tar.gz]
+[2024-05-19 07:56:13] INFO root fetch - processPackages [beanqueue]: Remove: archive file [/home/abi/fetcher/tmp/beanqueue-0.2.0.tar.gz]
+[2024-05-19 07:56:13] INFO root fetch - main [MainThread]: End processing [beanqueue]: success
+[2024-05-19 07:56:13] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.8.4.tar.gz]
+[2024-05-19 07:56:13] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.8.5.tar.gz]
+[2024-05-19 07:56:13] INFO root fetch - main [MainThread]: End processing [pypomes-db]: success
+[2024-05-19 07:56:13] INFO root fetch - processPackages [ecs_files_composer]: Remove: archive file [/home/abi/fetcher/tmp/ecs_files_composer-2.1.3.tar.gz]
+[2024-05-19 07:56:13] INFO root fetch - processPackages [ecs_files_composer]: Remove: archive file [/home/abi/fetcher/tmp/ecs_files_composer-2.1.4.tar.gz]
+[2024-05-19 07:56:13] INFO root fetch - main [MainThread]: End processing [ecs_files_composer]: success
+[2024-05-19 07:56:13] INFO root fetch - processPackages [TreeSAK]: Remove: archive file [/home/abi/fetcher/tmp/TreeSAK-1.9.1.tar.gz]
+[2024-05-19 07:56:13] INFO root fetch - processPackages [TreeSAK]: Remove: archive file [/home/abi/fetcher/tmp/TreeSAK-1.9.2.tar.gz]
+[2024-05-19 07:56:13] INFO root fetch - main [MainThread]: End processing [TreeSAK]: success
+[2024-05-19 07:56:14] INFO root fetch - processPackages [aioqzone]: Remove: archive file [/home/abi/fetcher/tmp/aioqzone-1.8.2.dev1.tar.gz]
+[2024-05-19 07:56:14] INFO root fetch - processPackages [aioqzone]: Remove: archive file [/home/abi/fetcher/tmp/aioqzone-1.8.2.dev3.tar.gz]
+[2024-05-19 07:56:14] INFO root fetch - main [MainThread]: End processing [aioqzone]: success
+[2024-05-19 07:56:14] INFO root fetch - main [MainThread]: Store serial: [23273656]
