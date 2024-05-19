@@ -20404,3 +20404,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 23:23:30] INFO root fetch - processPackages [tencentcloud-sdk-python-pds]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-pds-3.0.999.tar.gz]
 [2024-05-19 23:23:30] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-pds]: success
 [2024-05-19 23:23:30] INFO root fetch - main [MainThread]: Store serial: [23280990]
+[2024-05-19 23:25:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23280990]
+[2024-05-19 23:25:39] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-19 23:25:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyKozo
+[2024-05-19 23:25:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: trsolucoes
+[2024-05-19 23:25:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: deep-unfolding
+[2024-05-19 23:25:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: betterschema
+[2024-05-19 23:25:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tencentcloud-sdk-python-privatedns
+[2024-05-19 23:25:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: aprendo
+[2024-05-19 23:25:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tencentcloud-sdk-python-pts
+[2024-05-19 23:25:39] WARNING root fetch - processPackages [deep-unfolding]: Skipping, unable to determine old version
+[2024-05-19 23:25:39] INFO root fetch - main [MainThread]: End processing [deep-unfolding] error
+[2024-05-19 23:25:39] INFO root fetch - processPackages [PyKozo]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-19 23:25:39] INFO root fetch - processPackages [betterschema]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-19 23:25:39] WARNING root fetch - processPackages [aprendo]: Skipping, unable to determine old version
+[2024-05-19 23:25:39] INFO root fetch - main [MainThread]: End processing [aprendo] error
+[2024-05-19 23:25:39] INFO root fetch - processPackages [betterschema]: Downloading https://files.pythonhosted.org/packages/c5/d7/c8c0e9c13c22424365d41f5b565e800bf166a8a0e45806ef887875131e5c/betterschema-0.1.7.tar.gz
+[2024-05-19 23:25:39] INFO root fetch - processPackages [trsolucoes]: New version: [7.0.0] Old Version: [6.1.1]
+[2024-05-19 23:25:39] INFO root fetch - processPackages [tencentcloud-sdk-python-privatedns]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-19 23:25:39] INFO root fetch - processPackages [tencentcloud-sdk-python-pts]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-19 23:25:40] INFO root fetch - processPackages [PyKozo]: Downloading https://files.pythonhosted.org/packages/41/7c/f6dee4a6a5775bb3281001dbdf555dd44010c2f66143a2ab299007537165/pykozo-0.0.1.tar.gz
+[2024-05-19 23:25:40] INFO root fetch - processPackages [trsolucoes]: Downloading https://files.pythonhosted.org/packages/54/51/7851b9aa657068fa35f352ae7eea5d7cda2fe337881d352d09adadbb74db/trsolucoes-6.1.1.tar.gz
+[2024-05-19 23:25:40] INFO root fetch - processPackages [tencentcloud-sdk-python-privatedns]: Downloading https://files.pythonhosted.org/packages/54/a1/af0b4d1af3816254d753159bab1effc943734a7bc905672a3a5a32433e08/tencentcloud-sdk-python-privatedns-3.0.998.tar.gz
+[2024-05-19 23:25:40] INFO root fetch - processPackages [tencentcloud-sdk-python-pts]: Downloading https://files.pythonhosted.org/packages/bd/db/8d153489186f762c55ba436a4470768ced065c5b910d08b7e4f89d8269fe/tencentcloud-sdk-python-pts-3.0.998.tar.gz
+[2024-05-19 23:25:40] INFO root fetch - processPackages [betterschema]: Downloading https://files.pythonhosted.org/packages/1e/38/c4454b42d2fdf99df61a25551a6a06ccb4ca66e340946fe223ee1ab9c001/betterschema-0.1.8.tar.gz
+[2024-05-19 23:25:40] INFO root fetch - processPackages [PyKozo]: Downloading https://files.pythonhosted.org/packages/67/67/9d21cf8a6ee6ffcdf12705a209392aa69f5a1e352513e30d6418afd8fd75/pykozo-0.0.2.tar.gz
+[2024-05-19 23:25:40] INFO root fetch - processPackages [betterschema]: executing diffoscope
+[2024-05-19 23:25:40] INFO root fetch - processPackages [betterschema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/betterschema-0.1.7.tar.gz tmp/betterschema-0.1.8.tar.gz --markdown 20240519/b/betterschema/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-19 23:25:40] INFO root fetch - processPackages [PyKozo]: executing diffoscope
+[2024-05-19 23:25:40] INFO root fetch - processPackages [PyKozo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pykozo-0.0.1.tar.gz tmp/pykozo-0.0.2.tar.gz --markdown 20240519/P/PyKozo/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-19 23:25:40] INFO root fetch - processPackages [trsolucoes]: Downloading https://files.pythonhosted.org/packages/91/ee/67e61822470961b4c06a8d17e0346cf70c775c29f4a308e19aa3538d48c9/trsolucoes-7.0.0.tar.gz
+[2024-05-19 23:25:40] INFO root fetch - processPackages [tencentcloud-sdk-python-privatedns]: Downloading https://files.pythonhosted.org/packages/8f/c2/60c8a495d7d0afeb1830bb2b85d912b578aa58b8bb2d3c26279e4755ca54/tencentcloud-sdk-python-privatedns-3.0.999.tar.gz
+[2024-05-19 23:25:40] INFO root fetch - processPackages [tencentcloud-sdk-python-pts]: Downloading https://files.pythonhosted.org/packages/3d/b7/24a6e4cae64fade7aed6724ff8e5965fc96d570caa8e0d802b098a9b0a58/tencentcloud-sdk-python-pts-3.0.999.tar.gz
+[2024-05-19 23:25:40] INFO root fetch - processPackages [trsolucoes]: executing diffoscope
+[2024-05-19 23:25:40] INFO root fetch - processPackages [trsolucoes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trsolucoes-6.1.1.tar.gz tmp/trsolucoes-7.0.0.tar.gz --markdown 20240519/t/trsolucoes/6.1.1-7.0.0/README.md --exclude *.pyd
+[2024-05-19 23:25:40] INFO root fetch - processPackages [tencentcloud-sdk-python-pts]: executing diffoscope
+[2024-05-19 23:25:40] INFO root fetch - processPackages [tencentcloud-sdk-python-pts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-pts-3.0.998.tar.gz tmp/tencentcloud-sdk-python-pts-3.0.999.tar.gz --markdown 20240519/t/tencentcloud-sdk-python-pts/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-19 23:25:40] INFO root fetch - processPackages [tencentcloud-sdk-python-privatedns]: executing diffoscope
+[2024-05-19 23:25:40] INFO root fetch - processPackages [tencentcloud-sdk-python-privatedns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-privatedns-3.0.998.tar.gz tmp/tencentcloud-sdk-python-privatedns-3.0.999.tar.gz --markdown 20240519/t/tencentcloud-sdk-python-privatedns/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-19 23:25:40] INFO root fetch - processPackages [PyKozo]: Remove: archive file [/home/abi/fetcher/tmp/pykozo-0.0.1.tar.gz]
+[2024-05-19 23:25:40] INFO root fetch - processPackages [PyKozo]: Remove: archive file [/home/abi/fetcher/tmp/pykozo-0.0.2.tar.gz]
+[2024-05-19 23:25:40] INFO root fetch - main [MainThread]: End processing [PyKozo]: success
+[2024-05-19 23:25:41] INFO root fetch - processPackages [betterschema]: Remove: archive file [/home/abi/fetcher/tmp/betterschema-0.1.7.tar.gz]
+[2024-05-19 23:25:41] INFO root fetch - processPackages [betterschema]: Remove: archive file [/home/abi/fetcher/tmp/betterschema-0.1.8.tar.gz]
+[2024-05-19 23:25:41] INFO root fetch - main [MainThread]: End processing [betterschema]: success
+[2024-05-19 23:25:41] INFO root fetch - processPackages [trsolucoes]: Remove: archive file [/home/abi/fetcher/tmp/trsolucoes-6.1.1.tar.gz]
+[2024-05-19 23:25:41] INFO root fetch - processPackages [trsolucoes]: Remove: archive file [/home/abi/fetcher/tmp/trsolucoes-7.0.0.tar.gz]
+[2024-05-19 23:25:41] INFO root fetch - main [MainThread]: End processing [trsolucoes]: success
+[2024-05-19 23:25:41] INFO root fetch - processPackages [tencentcloud-sdk-python-pts]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-pts-3.0.998.tar.gz]
+[2024-05-19 23:25:41] INFO root fetch - processPackages [tencentcloud-sdk-python-pts]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-pts-3.0.999.tar.gz]
+[2024-05-19 23:25:41] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-pts]: success
+[2024-05-19 23:25:41] INFO root fetch - processPackages [tencentcloud-sdk-python-privatedns]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-privatedns-3.0.998.tar.gz]
+[2024-05-19 23:25:41] INFO root fetch - processPackages [tencentcloud-sdk-python-privatedns]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-privatedns-3.0.999.tar.gz]
+[2024-05-19 23:25:41] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-privatedns]: success
+[2024-05-19 23:25:41] INFO root fetch - main [MainThread]: Store serial: [23281043]
