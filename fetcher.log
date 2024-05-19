@@ -15908,3 +15908,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 19:53:18] INFO root fetch - processPackages [mojo-testplus]: Remove: archive file [/home/abi/fetcher/tmp/mojo_testplus-1.3.9.tar.gz]
 [2024-05-19 19:53:18] INFO root fetch - main [MainThread]: End processing [mojo-testplus]: success
 [2024-05-19 19:53:18] INFO root fetch - main [MainThread]: Store serial: [23278940]
+[2024-05-19 19:55:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23278940]
+[2024-05-19 19:55:27] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 19:55:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mojo-testplus
+[2024-05-19 19:55:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alphafold3-pytorch
+[2024-05-19 19:55:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mabokahflib
+[2024-05-19 19:55:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: anycrc
+[2024-05-19 19:55:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: podgenai
+[2024-05-19 19:55:27] INFO root fetch - processPackages [podgenai]: New version: [0.2.0] Old Version: [0.1.5]
+[2024-05-19 19:55:27] INFO root fetch - processPackages [mojo-testplus]: New version: [1.3.9] Old Version: [1.3.8]
+[2024-05-19 19:55:27] INFO root fetch - processPackages [anycrc]: New version: [0.7.2] Old Version: [0.7.1]
+[2024-05-19 19:55:27] WARNING root fetch - processPackages [alphafold3-pytorch]: Skipping, unable to determine old version
+[2024-05-19 19:55:27] INFO root fetch - main [MainThread]: End processing [alphafold3-pytorch] error
+[2024-05-19 19:55:27] WARNING root fetch - processPackages [mabokahflib]: Skipping, unable to determine old version
+[2024-05-19 19:55:27] INFO root fetch - main [MainThread]: End processing [mabokahflib] error
+[2024-05-19 19:55:27] INFO root fetch - processPackages [podgenai]: Downloading https://files.pythonhosted.org/packages/bd/88/3c4ff11dadf04ce3922874c9854cdef3eaa9ba37fdf2c77ebba2be322f0d/podgenai-0.1.5.tar.gz
+[2024-05-19 19:55:28] INFO root fetch - processPackages [mojo-testplus]: Downloading https://files.pythonhosted.org/packages/a5/fe/6ef403e4cd8937907cb1b6d2bfaee70af2ccb33355ae49346889ebd9d153/mojo_testplus-1.3.8.tar.gz
+[2024-05-19 19:55:28] INFO root fetch - processPackages [anycrc]: Downloading https://files.pythonhosted.org/packages/24/04/95adf7469a2a6b92e5837997581b107a1f558b4b89fa160c9d8dc1adb329/anycrc-0.7.1.tar.gz
+[2024-05-19 19:55:28] INFO root fetch - processPackages [podgenai]: Downloading https://files.pythonhosted.org/packages/f5/91/0fe1af609c8a8344782b7c2895a471f9faea06c2a06972b6b71bfe2f9e43/podgenai-0.2.0.tar.gz
+[2024-05-19 19:55:28] INFO root fetch - processPackages [podgenai]: executing diffoscope
+[2024-05-19 19:55:28] INFO root fetch - processPackages [podgenai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/podgenai-0.1.5.tar.gz tmp/podgenai-0.2.0.tar.gz --markdown 20240519/p/podgenai/0.1.5-0.2.0/README.md --exclude *.pyd
+[2024-05-19 19:55:28] INFO root fetch - processPackages [anycrc]: Downloading https://files.pythonhosted.org/packages/a7/f0/698671f7ac1db12780a73978b2c0a9e4f9510029d65320ff4b20b41203be/anycrc-0.7.2.tar.gz
+[2024-05-19 19:55:28] INFO root fetch - processPackages [mojo-testplus]: Downloading https://files.pythonhosted.org/packages/a4/cd/894241650e47414136a3bf37ddbbef7907d3dc69c678f40c9716e3afbfd2/mojo_testplus-1.3.9.tar.gz
+[2024-05-19 19:55:28] INFO root fetch - processPackages [anycrc]: executing diffoscope
+[2024-05-19 19:55:28] INFO root fetch - processPackages [anycrc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anycrc-0.7.1.tar.gz tmp/anycrc-0.7.2.tar.gz --markdown 20240519/a/anycrc/0.7.1-0.7.2/README.md --exclude *.pyd
+[2024-05-19 19:55:28] INFO root fetch - processPackages [mojo-testplus]: executing diffoscope
+[2024-05-19 19:55:28] INFO root fetch - processPackages [mojo-testplus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mojo_testplus-1.3.8.tar.gz tmp/mojo_testplus-1.3.9.tar.gz --markdown 20240519/m/mojo-testplus/1.3.8-1.3.9/README.md --exclude *.pyd
+[2024-05-19 19:55:28] INFO root fetch - processPackages [podgenai]: Remove: archive file [/home/abi/fetcher/tmp/podgenai-0.1.5.tar.gz]
+[2024-05-19 19:55:28] INFO root fetch - processPackages [podgenai]: Remove: archive file [/home/abi/fetcher/tmp/podgenai-0.2.0.tar.gz]
+[2024-05-19 19:55:28] INFO root fetch - main [MainThread]: End processing [podgenai]: success
+[2024-05-19 19:55:29] INFO root fetch - processPackages [anycrc]: Remove: archive file [/home/abi/fetcher/tmp/anycrc-0.7.1.tar.gz]
+[2024-05-19 19:55:29] INFO root fetch - processPackages [anycrc]: Remove: archive file [/home/abi/fetcher/tmp/anycrc-0.7.2.tar.gz]
+[2024-05-19 19:55:29] INFO root fetch - main [MainThread]: End processing [anycrc]: success
+[2024-05-19 19:55:29] INFO root fetch - processPackages [mojo-testplus]: Remove: archive file [/home/abi/fetcher/tmp/mojo_testplus-1.3.8.tar.gz]
+[2024-05-19 19:55:29] INFO root fetch - processPackages [mojo-testplus]: Remove: archive file [/home/abi/fetcher/tmp/mojo_testplus-1.3.9.tar.gz]
+[2024-05-19 19:55:29] INFO root fetch - main [MainThread]: End processing [mojo-testplus]: success
+[2024-05-19 19:55:29] INFO root fetch - main [MainThread]: Store serial: [23278970]
