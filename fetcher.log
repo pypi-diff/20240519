@@ -11888,3 +11888,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 16:04:28] INFO root fetch - processPackages [ev3dev2simulator]: Remove: archive file [/home/abi/fetcher/tmp/ev3dev2simulator-2.0.7.tar.gz]
 [2024-05-19 16:04:28] INFO root fetch - main [MainThread]: End processing [ev3dev2simulator]: success
 [2024-05-19 16:04:28] INFO root fetch - main [MainThread]: Store serial: [23277105]
+[2024-05-19 16:06:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277105]
+[2024-05-19 16:06:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 16:06:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pkscreener
+[2024-05-19 16:06:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: geoformat
+[2024-05-19 16:06:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flet-route-static
+[2024-05-19 16:06:38] INFO root fetch - processPackages [pkscreener]: New version: [0.45.20240519.385] Old Version: [0.45.20240518.383]
+[2024-05-19 16:06:38] INFO root fetch - processPackages [flet-route-static]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-19 16:06:38] INFO root fetch - processPackages [geoformat]: New version: [20240519] Old Version: [20240407]
+[2024-05-19 16:06:38] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/88/4b/baf90f1d460611191eead663c2e0dcdb001801f5599cb311c2d196f7ef0d/pkscreener-0.45.20240518.383.tar.gz
+[2024-05-19 16:06:38] INFO root fetch - processPackages [flet-route-static]: Downloading https://files.pythonhosted.org/packages/84/1f/182b25ae4b20f7f51dca286f3505ba6ceae4fea4f48ea369d43e4162d7f0/flet_route_static-0.0.1.tar.gz
+[2024-05-19 16:06:38] INFO root fetch - processPackages [geoformat]: Downloading https://files.pythonhosted.org/packages/9e/34/6c9591c01d82f9d37ccc5a38172c52d1826cba8657ca8177fe6dc7dc3900/geoformat-20240407.tar.gz
+[2024-05-19 16:06:38] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/b2/64/4f2422f765225c5fde08d771f28ceba5c191107eaa2032ff51706cf7f6f3/pkscreener-0.45.20240519.385.tar.gz
+[2024-05-19 16:06:39] INFO root fetch - processPackages [flet-route-static]: Downloading https://files.pythonhosted.org/packages/c5/ce/0f8cb393e5a328433bd4debe43960b59bdc6dc8122d81e71b824c3130767/flet_route_static-0.0.2.tar.gz
+[2024-05-19 16:06:39] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-05-19 16:06:39] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.45.20240518.383.tar.gz tmp/pkscreener-0.45.20240519.385.tar.gz --markdown 20240519/p/pkscreener/0.45.20240518.383-0.45.20240519.385/README.md --exclude *.pyd
+[2024-05-19 16:06:39] INFO root fetch - processPackages [flet-route-static]: executing diffoscope
+[2024-05-19 16:06:39] INFO root fetch - processPackages [flet-route-static]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_route_static-0.0.1.tar.gz tmp/flet_route_static-0.0.2.tar.gz --markdown 20240519/f/flet-route-static/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-19 16:06:39] INFO root fetch - processPackages [geoformat]: Downloading https://files.pythonhosted.org/packages/40/ce/e0e73defcc6145658084077c98b0f05a7c64c5dcba795818eef74b59b4df/geoformat-20240519.tar.gz
+[2024-05-19 16:06:39] INFO root fetch - processPackages [flet-route-static]: Remove: archive file [/home/abi/fetcher/tmp/flet_route_static-0.0.1.tar.gz]
+[2024-05-19 16:06:39] INFO root fetch - processPackages [flet-route-static]: Remove: archive file [/home/abi/fetcher/tmp/flet_route_static-0.0.2.tar.gz]
+[2024-05-19 16:06:39] INFO root fetch - main [MainThread]: End processing [flet-route-static]: success
+[2024-05-19 16:06:39] INFO root fetch - processPackages [geoformat]: executing diffoscope
+[2024-05-19 16:06:39] INFO root fetch - processPackages [geoformat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geoformat-20240407.tar.gz tmp/geoformat-20240519.tar.gz --markdown 20240519/g/geoformat/20240407-20240519/README.md --exclude *.pyd
+[2024-05-19 16:06:39] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240518.383.tar.gz]
+[2024-05-19 16:06:39] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240519.385.tar.gz]
+[2024-05-19 16:06:39] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-05-19 16:06:42] INFO root fetch - processPackages [geoformat]: Remove: archive file [/home/abi/fetcher/tmp/geoformat-20240407.tar.gz]
+[2024-05-19 16:06:42] INFO root fetch - processPackages [geoformat]: Remove: archive file [/home/abi/fetcher/tmp/geoformat-20240519.tar.gz]
+[2024-05-19 16:06:42] INFO root fetch - main [MainThread]: End processing [geoformat]: success
+[2024-05-19 16:06:42] INFO root fetch - main [MainThread]: Store serial: [23277114]
