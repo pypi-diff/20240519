@@ -6988,3 +6988,42 @@
 [2024-05-19 10:37:04] INFO root fetch - processPackages [nepattern]: Remove: archive file [/home/abi/fetcher/tmp/nepattern-0.7.3.tar.gz]
 [2024-05-19 10:37:04] INFO root fetch - main [MainThread]: End processing [nepattern]: success
 [2024-05-19 10:37:04] INFO root fetch - main [MainThread]: Store serial: [23274698]
+[2024-05-19 10:39:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274698]
+[2024-05-19 10:39:13] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 10:39:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lapa-database-structure
+[2024-05-19 10:39:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wah
+[2024-05-19 10:39:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zaku
+[2024-05-19 10:39:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: generate-sequences
+[2024-05-19 10:39:13] INFO root fetch - processPackages [wah]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-19 10:39:14] INFO root fetch - processPackages [wah]: Downloading https://files.pythonhosted.org/packages/1e/98/86b56f53d2270da5a315b2f0d5733e61fd0dabbbde1d17bcff2dd938939e/wah-0.1.8.tar.gz
+[2024-05-19 10:39:14] INFO root fetch - processPackages [lapa-database-structure]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 10:39:14] INFO root fetch - processPackages [zaku]: New version: [0.0.9] Old Version: [0.0.8rc1]
+[2024-05-19 10:39:14] INFO root fetch - processPackages [generate-sequences]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-19 10:39:14] INFO root fetch - processPackages [lapa-database-structure]: Downloading https://files.pythonhosted.org/packages/b7/e1/a5c07c4eed48e0dda2e9143180963d07a936bbf658c769b388422e506720/lapa_database_structure-0.0.8.tar.gz
+[2024-05-19 10:39:14] INFO root fetch - processPackages [zaku]: Downloading https://files.pythonhosted.org/packages/36/63/843de81065e8c450c9dd14f7dd36425a40393dc131450c91bebeb4c5dd43/zaku-0.0.8rc1-py3-none-any.whl
+[2024-05-19 10:39:14] INFO root fetch - processPackages [wah]: Downloading https://files.pythonhosted.org/packages/6c/57/7be641139065b67640542a312a3988d0a93024cdc145ea667b7e8d432eb8/wah-0.1.9.tar.gz
+[2024-05-19 10:39:14] INFO root fetch - processPackages [generate-sequences]: Downloading https://files.pythonhosted.org/packages/d6/e7/a8fda6bce15f18ba5a4ad595004d0cf4ecb56e69c10a74fcd1780f01f586/generate_sequences-0.0.7.tar.gz
+[2024-05-19 10:39:14] INFO root fetch - processPackages [wah]: executing diffoscope
+[2024-05-19 10:39:14] INFO root fetch - processPackages [wah]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wah-0.1.8.tar.gz tmp/wah-0.1.9.tar.gz --markdown 20240519/w/wah/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-19 10:39:14] INFO root fetch - processPackages [lapa-database-structure]: Downloading https://files.pythonhosted.org/packages/1a/3e/42e4e371470e2caa35ed9fd1f763e4f463b6d29b554e208f1589743ce80c/lapa_database_structure-0.0.9.tar.gz
+[2024-05-19 10:39:14] INFO root fetch - processPackages [zaku]: Downloading https://files.pythonhosted.org/packages/cf/0e/96a80c4cc62c4a2fa75fb4a3fbfabb21a029116202d8e513617930bcdd4a/zaku-0.0.9-py3-none-any.whl
+[2024-05-19 10:39:14] INFO root fetch - processPackages [zaku]: executing diffoscope
+[2024-05-19 10:39:14] INFO root fetch - processPackages [zaku]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zaku-0.0.8rc1-py3-none-any.whl.zip tmp/zaku-0.0.9-py3-none-any.whl.zip --markdown 20240519/z/zaku/0.0.8rc1-0.0.9/README.md --exclude *.pyd
+[2024-05-19 10:39:14] INFO root fetch - processPackages [lapa-database-structure]: executing diffoscope
+[2024-05-19 10:39:14] INFO root fetch - processPackages [lapa-database-structure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lapa_database_structure-0.0.8.tar.gz tmp/lapa_database_structure-0.0.9.tar.gz --markdown 20240519/l/lapa-database-structure/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 10:39:14] INFO root fetch - processPackages [generate-sequences]: Downloading https://files.pythonhosted.org/packages/55/d4/6371d7df8ae6fdad2dd70a10b8259d6deb765301f624a7a7d34343b1d9ef/generate_sequences-0.0.8.tar.gz
+[2024-05-19 10:39:14] INFO root fetch - processPackages [generate-sequences]: executing diffoscope
+[2024-05-19 10:39:14] INFO root fetch - processPackages [generate-sequences]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/generate_sequences-0.0.7.tar.gz tmp/generate_sequences-0.0.8.tar.gz --markdown 20240519/g/generate-sequences/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-19 10:39:14] INFO root fetch - processPackages [wah]: Remove: archive file [/home/abi/fetcher/tmp/wah-0.1.8.tar.gz]
+[2024-05-19 10:39:14] INFO root fetch - processPackages [wah]: Remove: archive file [/home/abi/fetcher/tmp/wah-0.1.9.tar.gz]
+[2024-05-19 10:39:14] INFO root fetch - main [MainThread]: End processing [wah]: success
+[2024-05-19 10:39:15] INFO root fetch - processPackages [lapa-database-structure]: Remove: archive file [/home/abi/fetcher/tmp/lapa_database_structure-0.0.8.tar.gz]
+[2024-05-19 10:39:15] INFO root fetch - processPackages [lapa-database-structure]: Remove: archive file [/home/abi/fetcher/tmp/lapa_database_structure-0.0.9.tar.gz]
+[2024-05-19 10:39:15] INFO root fetch - main [MainThread]: End processing [lapa-database-structure]: success
+[2024-05-19 10:39:15] INFO root fetch - processPackages [zaku]: Remove: archive file [/home/abi/fetcher/tmp/zaku-0.0.8rc1-py3-none-any.whl.zip]
+[2024-05-19 10:39:15] INFO root fetch - processPackages [zaku]: Remove: archive file [/home/abi/fetcher/tmp/zaku-0.0.9-py3-none-any.whl.zip]
+[2024-05-19 10:39:15] INFO root fetch - main [MainThread]: End processing [zaku]: success
+[2024-05-19 10:39:15] INFO root fetch - processPackages [generate-sequences]: Remove: archive file [/home/abi/fetcher/tmp/generate_sequences-0.0.7.tar.gz]
+[2024-05-19 10:39:15] INFO root fetch - processPackages [generate-sequences]: Remove: archive file [/home/abi/fetcher/tmp/generate_sequences-0.0.8.tar.gz]
+[2024-05-19 10:39:15] INFO root fetch - main [MainThread]: End processing [generate-sequences]: success
+[2024-05-19 10:39:15] INFO root fetch - main [MainThread]: Store serial: [23274713]
