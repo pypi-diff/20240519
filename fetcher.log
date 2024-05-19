@@ -8473,3 +8473,39 @@
 [2024-05-19 12:30:52] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-2.0.9.tar.gz]
 [2024-05-19 12:30:52] INFO root fetch - main [MainThread]: End processing [octomy-common]: success
 [2024-05-19 12:30:52] INFO root fetch - main [MainThread]: Store serial: [23275476]
+[2024-05-19 12:32:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275476]
+[2024-05-19 12:33:00] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 12:33:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: frontengine-dev
+[2024-05-19 12:33:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rococo-test
+[2024-05-19 12:33:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: evernote2
+[2024-05-19 12:33:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: verysimpletree
+[2024-05-19 12:33:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: obligationsz
+[2024-05-19 12:33:00] INFO root fetch - processPackages [evernote2]: New version: [1.9.1] Old Version: [1.0.2]
+[2024-05-19 12:33:00] INFO root fetch - processPackages [verysimpletree]: New version: [0.1.1b0] Old Version: [0.1.0b0]
+[2024-05-19 12:33:00] WARNING root fetch - processPackages [rococo-test]: Skipping, unable to determine old version
+[2024-05-19 12:33:00] INFO root fetch - main [MainThread]: End processing [rococo-test] error
+[2024-05-19 12:33:00] WARNING root fetch - processPackages [obligationsz]: Skipping, unable to determine old version
+[2024-05-19 12:33:00] INFO root fetch - main [MainThread]: End processing [obligationsz] error
+[2024-05-19 12:33:00] INFO root fetch - processPackages [frontengine-dev]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 12:33:01] INFO root fetch - processPackages [evernote2]: Downloading https://files.pythonhosted.org/packages/e2/c9/2c5c532e54905b6041e84d9ca68bef35930b0c90e77a928040e62afee247/evernote2-1.0.2.tar.gz
+[2024-05-19 12:33:01] INFO root fetch - processPackages [verysimpletree]: Downloading https://files.pythonhosted.org/packages/43/bd/1f1254fa4243e919a9e89baf73f1b83ae01bc615a1f4f43295bd7eaa3f31/verysimpletree-0.1.0b0.tar.gz
+[2024-05-19 12:33:01] INFO root fetch - processPackages [frontengine-dev]: Downloading https://files.pythonhosted.org/packages/23/e2/01e0fe02ca6b73e163f3f0d080231bc0c783a63e766e5524eb246350518d/frontengine_dev-0.0.8.tar.gz
+[2024-05-19 12:33:01] INFO root fetch - processPackages [evernote2]: Downloading https://files.pythonhosted.org/packages/23/d6/52019b6334807321a404653f09b02d841f59a44fce250d3212f3cbfbbde5/evernote2-1.9.1.tar.gz
+[2024-05-19 12:33:01] INFO root fetch - processPackages [verysimpletree]: Downloading https://files.pythonhosted.org/packages/69/cc/a87d8748eb8f8346d077f54cf58420fbb0747aa0eb62d2299815953a7dc3/verysimpletree-0.1.1b0.tar.gz
+[2024-05-19 12:33:01] INFO root fetch - processPackages [frontengine-dev]: Downloading https://files.pythonhosted.org/packages/bd/40/ac58f5e1633b3b2ea3574839a03ddc6a124459f3e721986a4208fbe06488/frontengine_dev-0.0.9.tar.gz
+[2024-05-19 12:33:01] INFO root fetch - processPackages [evernote2]: executing diffoscope
+[2024-05-19 12:33:01] INFO root fetch - processPackages [evernote2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evernote2-1.0.2.tar.gz tmp/evernote2-1.9.1.tar.gz --markdown 20240519/e/evernote2/1.0.2-1.9.1/README.md --exclude *.pyd
+[2024-05-19 12:33:01] INFO root fetch - processPackages [verysimpletree]: executing diffoscope
+[2024-05-19 12:33:01] INFO root fetch - processPackages [verysimpletree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/verysimpletree-0.1.0b0.tar.gz tmp/verysimpletree-0.1.1b0.tar.gz --markdown 20240519/v/verysimpletree/0.1.0b0-0.1.1b0/README.md --exclude *.pyd
+[2024-05-19 12:33:01] INFO root fetch - processPackages [frontengine-dev]: executing diffoscope
+[2024-05-19 12:33:01] INFO root fetch - processPackages [frontengine-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frontengine_dev-0.0.8.tar.gz tmp/frontengine_dev-0.0.9.tar.gz --markdown 20240519/f/frontengine-dev/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 12:33:02] INFO root fetch - processPackages [evernote2]: Remove: archive file [/home/abi/fetcher/tmp/evernote2-1.0.2.tar.gz]
+[2024-05-19 12:33:02] INFO root fetch - processPackages [evernote2]: Remove: archive file [/home/abi/fetcher/tmp/evernote2-1.9.1.tar.gz]
+[2024-05-19 12:33:02] INFO root fetch - main [MainThread]: End processing [evernote2]: success
+[2024-05-19 12:33:02] INFO root fetch - processPackages [frontengine-dev]: Remove: archive file [/home/abi/fetcher/tmp/frontengine_dev-0.0.8.tar.gz]
+[2024-05-19 12:33:02] INFO root fetch - processPackages [frontengine-dev]: Remove: archive file [/home/abi/fetcher/tmp/frontengine_dev-0.0.9.tar.gz]
+[2024-05-19 12:33:02] INFO root fetch - main [MainThread]: End processing [frontengine-dev]: success
+[2024-05-19 12:33:02] INFO root fetch - processPackages [verysimpletree]: Remove: archive file [/home/abi/fetcher/tmp/verysimpletree-0.1.0b0.tar.gz]
+[2024-05-19 12:33:02] INFO root fetch - processPackages [verysimpletree]: Remove: archive file [/home/abi/fetcher/tmp/verysimpletree-0.1.1b0.tar.gz]
+[2024-05-19 12:33:02] INFO root fetch - main [MainThread]: End processing [verysimpletree]: success
+[2024-05-19 12:33:02] INFO root fetch - main [MainThread]: Store serial: [23275493]
