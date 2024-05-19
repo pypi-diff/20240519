@@ -14315,3 +14315,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 18:34:20] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
 [2024-05-19 18:34:20] INFO root fetch - main [MainThread]: End processing [yeref]: success
 [2024-05-19 18:34:20] INFO root fetch - main [MainThread]: Store serial: [23278230]
+[2024-05-19 18:36:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23278230]
+[2024-05-19 18:36:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 18:36:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: plsp
+[2024-05-19 18:36:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: massacrez
+[2024-05-19 18:36:29] WARNING root fetch - processPackages [massacrez]: Skipping, unable to determine old version
+[2024-05-19 18:36:29] INFO root fetch - main [MainThread]: End processing [massacrez] error
+[2024-05-19 18:36:29] INFO root fetch - processPackages [plsp]: New version: [0.26] Old Version: [0.25]
+[2024-05-19 18:36:29] INFO root fetch - processPackages [plsp]: Downloading https://files.pythonhosted.org/packages/f7/d6/4df71ef6eebe1b58eaf0350c41a5a512f21c8275fd617df32836698e6f60/plsp-0.25.tar.gz
+[2024-05-19 18:36:29] INFO root fetch - processPackages [plsp]: Downloading https://files.pythonhosted.org/packages/21/56/64abe6e8ff9f05e6bdf59631b83eaebefba85a6bfa74909f3edc0003c539/plsp-0.26.tar.gz
+[2024-05-19 18:36:29] INFO root fetch - processPackages [plsp]: executing diffoscope
+[2024-05-19 18:36:29] INFO root fetch - processPackages [plsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plsp-0.25.tar.gz tmp/plsp-0.26.tar.gz --markdown 20240519/p/plsp/0.25-0.26/README.md --exclude *.pyd
+[2024-05-19 18:36:30] INFO root fetch - processPackages [plsp]: Remove: archive file [/home/abi/fetcher/tmp/plsp-0.25.tar.gz]
+[2024-05-19 18:36:30] INFO root fetch - processPackages [plsp]: Remove: archive file [/home/abi/fetcher/tmp/plsp-0.26.tar.gz]
+[2024-05-19 18:36:30] INFO root fetch - main [MainThread]: End processing [plsp]: success
+[2024-05-19 18:36:30] INFO root fetch - main [MainThread]: Store serial: [23278237]
