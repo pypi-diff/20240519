@@ -13218,3 +13218,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 17:24:17] INFO root fetch - processPackages [tinyagent]: Remove: archive file [/home/abi/fetcher/tmp/tinyagent-0.1.5.tar.gz]
 [2024-05-19 17:24:17] INFO root fetch - main [MainThread]: End processing [tinyagent]: success
 [2024-05-19 17:24:17] INFO root fetch - main [MainThread]: Store serial: [23277723]
+[2024-05-19 17:26:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277723]
+[2024-05-19 17:26:25] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-19 17:26:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moval
+[2024-05-19 17:26:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lib-version-urlphishing
+[2024-05-19 17:26:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: epigonicz
+[2024-05-19 17:26:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: syncloud-lib
+[2024-05-19 17:26:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: coti-sdk
+[2024-05-19 17:26:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: argrelay
+[2024-05-19 17:26:26] INFO root fetch - processPackages [lib-version-urlphishing]: New version: [2.1.1] Old Version: [2.1.0]
+[2024-05-19 17:26:26] WARNING root fetch - processPackages [coti-sdk]: Skipping, unable to determine old version
+[2024-05-19 17:26:26] INFO root fetch - main [MainThread]: End processing [coti-sdk] error
+[2024-05-19 17:26:26] INFO root fetch - processPackages [syncloud-lib]: New version: [99] Old Version: [98]
+[2024-05-19 17:26:26] INFO root fetch - processPackages [lib-version-urlphishing]: Downloading https://files.pythonhosted.org/packages/b8/15/11f155185448afd34ee6aaafe2505cfdfaaf062745905ff54491d8a2da24/lib_version_urlphishing-2.1.0.tar.gz
+[2024-05-19 17:26:26] WARNING root fetch - processPackages [epigonicz]: Skipping, unable to determine old version
+[2024-05-19 17:26:26] INFO root fetch - main [MainThread]: End processing [epigonicz] error
+[2024-05-19 17:26:26] INFO root fetch - processPackages [moval]: New version: [0.3.7] Old Version: [0.3.6]
+[2024-05-19 17:26:26] INFO root fetch - processPackages [syncloud-lib]: Downloading https://files.pythonhosted.org/packages/eb/47/46fcc907c66f84d54bb4511b19d9a23d7c91adea96f7e60ce0c74aa570ef/syncloud-lib-98.tar.gz
+[2024-05-19 17:26:26] INFO root fetch - processPackages [argrelay]: New version: [0.7.1.dev3] Old Version: [0.7.1.dev2]
+[2024-05-19 17:26:26] INFO root fetch - processPackages [moval]: Downloading https://files.pythonhosted.org/packages/6a/ff/9d9e614ab1eb1e433b0a65faf560a5df459e3b844a92e57ac5e581c3d6bb/moval-0.3.6.tar.gz
+[2024-05-19 17:26:26] INFO root fetch - processPackages [syncloud-lib]: Downloading https://files.pythonhosted.org/packages/44/7a/6896c6fbe515ce1d82cba0202681a2dab694b82a4fcab8fe2813ac3b6806/syncloud-lib-99.tar.gz
+[2024-05-19 17:26:26] INFO root fetch - processPackages [argrelay]: Downloading https://files.pythonhosted.org/packages/06/4a/fc665faeae4053b353ab5db8b2a324d9d22d4dc446da9fcb8910d3498659/argrelay-0.7.1.dev2.tar.gz
+[2024-05-19 17:26:26] INFO root fetch - processPackages [lib-version-urlphishing]: Downloading https://files.pythonhosted.org/packages/8f/e0/e3ae54c715cb11df32a157cf18d0317e04649c6de3c1a195e136bf40ccbe/lib_version_urlphishing-2.1.1.tar.gz
+[2024-05-19 17:26:26] INFO root fetch - processPackages [syncloud-lib]: executing diffoscope
+[2024-05-19 17:26:26] INFO root fetch - processPackages [syncloud-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syncloud-lib-98.tar.gz tmp/syncloud-lib-99.tar.gz --markdown 20240519/s/syncloud-lib/98-99/README.md --exclude *.pyd
+[2024-05-19 17:26:26] INFO root fetch - processPackages [lib-version-urlphishing]: executing diffoscope
+[2024-05-19 17:26:26] INFO root fetch - processPackages [lib-version-urlphishing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib_version_urlphishing-2.1.0.tar.gz tmp/lib_version_urlphishing-2.1.1.tar.gz --markdown 20240519/l/lib-version-urlphishing/2.1.0-2.1.1/README.md --exclude *.pyd
+[2024-05-19 17:26:26] INFO root fetch - processPackages [moval]: Downloading https://files.pythonhosted.org/packages/37/87/f3d551c581becbd75a7068cac3b47fc47e725d8deb6d6a6686527ac91ecc/moval-0.3.7.tar.gz
+[2024-05-19 17:26:26] INFO root fetch - processPackages [argrelay]: Downloading https://files.pythonhosted.org/packages/1d/3f/05933b8ebb42844c40f982b2a4b04e91aad5b383e41b6516302bc8c02a34/argrelay-0.7.1.dev3.tar.gz
+[2024-05-19 17:26:26] INFO root fetch - processPackages [moval]: executing diffoscope
+[2024-05-19 17:26:26] INFO root fetch - processPackages [moval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moval-0.3.6.tar.gz tmp/moval-0.3.7.tar.gz --markdown 20240519/m/moval/0.3.6-0.3.7/README.md --exclude *.pyd
+[2024-05-19 17:26:26] INFO root fetch - processPackages [argrelay]: executing diffoscope
+[2024-05-19 17:26:26] INFO root fetch - processPackages [argrelay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/argrelay-0.7.1.dev2.tar.gz tmp/argrelay-0.7.1.dev3.tar.gz --markdown 20240519/a/argrelay/0.7.1.dev2-0.7.1.dev3/README.md --exclude *.pyd
+[2024-05-19 17:26:27] INFO root fetch - processPackages [lib-version-urlphishing]: Remove: archive file [/home/abi/fetcher/tmp/lib_version_urlphishing-2.1.0.tar.gz]
+[2024-05-19 17:26:27] INFO root fetch - processPackages [lib-version-urlphishing]: Remove: archive file [/home/abi/fetcher/tmp/lib_version_urlphishing-2.1.1.tar.gz]
+[2024-05-19 17:26:27] INFO root fetch - main [MainThread]: End processing [lib-version-urlphishing]: success
+[2024-05-19 17:26:27] INFO root fetch - processPackages [syncloud-lib]: Remove: archive file [/home/abi/fetcher/tmp/syncloud-lib-98.tar.gz]
+[2024-05-19 17:26:27] INFO root fetch - processPackages [syncloud-lib]: Remove: archive file [/home/abi/fetcher/tmp/syncloud-lib-99.tar.gz]
+[2024-05-19 17:26:27] INFO root fetch - main [MainThread]: End processing [syncloud-lib]: success
+[2024-05-19 17:26:27] INFO root fetch - processPackages [moval]: Remove: archive file [/home/abi/fetcher/tmp/moval-0.3.6.tar.gz]
+[2024-05-19 17:26:27] INFO root fetch - processPackages [moval]: Remove: archive file [/home/abi/fetcher/tmp/moval-0.3.7.tar.gz]
+[2024-05-19 17:26:27] INFO root fetch - main [MainThread]: End processing [moval]: success
+[2024-05-19 17:26:28] INFO root fetch - processPackages [argrelay]: Remove: archive file [/home/abi/fetcher/tmp/argrelay-0.7.1.dev2.tar.gz]
+[2024-05-19 17:26:28] INFO root fetch - processPackages [argrelay]: Remove: archive file [/home/abi/fetcher/tmp/argrelay-0.7.1.dev3.tar.gz]
+[2024-05-19 17:26:28] INFO root fetch - main [MainThread]: End processing [argrelay]: success
+[2024-05-19 17:26:28] INFO root fetch - main [MainThread]: Store serial: [23277739]
