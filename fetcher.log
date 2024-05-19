@@ -9382,3 +9382,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 13:29:23] INFO root fetch - processPackages [thymus-ast]: Remove: archive file [/home/abi/fetcher/tmp/thymus_ast-0.1.8.1.tar.gz]
 [2024-05-19 13:29:23] INFO root fetch - main [MainThread]: End processing [thymus-ast]: success
 [2024-05-19 13:29:23] INFO root fetch - main [MainThread]: Store serial: [23275883]
+[2024-05-19 13:31:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275883]
+[2024-05-19 13:31:31] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 13:31:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: alphainspect
+[2024-05-19 13:31:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cc521-evolution
+[2024-05-19 13:31:31] INFO root fetch - processPackages [alphainspect]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-05-19 13:31:31] INFO root fetch - processPackages [cc521-evolution]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-19 13:31:32] INFO root fetch - processPackages [alphainspect]: Downloading https://files.pythonhosted.org/packages/90/12/1dc3146f593b7d6c1d306f3f3bcfa21c743d71771140fc4b0a2f19fa1354/alphainspect-0.4.1.tar.gz
+[2024-05-19 13:31:32] INFO root fetch - processPackages [cc521-evolution]: Downloading https://files.pythonhosted.org/packages/e1/36/e00ef8717121a0965a510fc5914580423cc08eba2525842b02fb794c8b27/cc521_evolution-1.0.3.tar.gz
+[2024-05-19 13:31:32] INFO root fetch - processPackages [alphainspect]: Downloading https://files.pythonhosted.org/packages/a5/bd/f119af6d12b8e9fc842fd5053723ae8797df3f0bc041ff0e767f5175b1e1/alphainspect-0.4.2.tar.gz
+[2024-05-19 13:31:32] INFO root fetch - processPackages [cc521-evolution]: Downloading https://files.pythonhosted.org/packages/be/2d/0722e9e330c03ddbda30712f9f03c30d9a5c3f411a48cdea10dac2cf1d73/cc521_evolution-1.0.4.tar.gz
+[2024-05-19 13:31:32] INFO root fetch - processPackages [alphainspect]: executing diffoscope
+[2024-05-19 13:31:32] INFO root fetch - processPackages [alphainspect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alphainspect-0.4.1.tar.gz tmp/alphainspect-0.4.2.tar.gz --markdown 20240519/a/alphainspect/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-05-19 13:31:32] INFO root fetch - processPackages [cc521-evolution]: executing diffoscope
+[2024-05-19 13:31:32] INFO root fetch - processPackages [cc521-evolution]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cc521_evolution-1.0.3.tar.gz tmp/cc521_evolution-1.0.4.tar.gz --markdown 20240519/c/cc521-evolution/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-19 13:31:33] INFO root fetch - processPackages [cc521-evolution]: Remove: archive file [/home/abi/fetcher/tmp/cc521_evolution-1.0.3.tar.gz]
+[2024-05-19 13:31:33] INFO root fetch - processPackages [cc521-evolution]: Remove: archive file [/home/abi/fetcher/tmp/cc521_evolution-1.0.4.tar.gz]
+[2024-05-19 13:31:33] INFO root fetch - main [MainThread]: End processing [cc521-evolution]: success
+[2024-05-19 13:31:33] INFO root fetch - processPackages [alphainspect]: Remove: archive file [/home/abi/fetcher/tmp/alphainspect-0.4.1.tar.gz]
+[2024-05-19 13:31:33] INFO root fetch - processPackages [alphainspect]: Remove: archive file [/home/abi/fetcher/tmp/alphainspect-0.4.2.tar.gz]
+[2024-05-19 13:31:33] INFO root fetch - main [MainThread]: End processing [alphainspect]: success
+[2024-05-19 13:31:33] INFO root fetch - main [MainThread]: Store serial: [23275894]
