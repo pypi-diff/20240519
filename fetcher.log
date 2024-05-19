@@ -16976,3 +16976,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 20:58:22] INFO root fetch - processPackages [tcrutils]: Remove: archive file [/home/abi/fetcher/tmp/tcrutils-12.0.163.tar.gz]
 [2024-05-19 20:58:22] INFO root fetch - main [MainThread]: End processing [tcrutils]: success
 [2024-05-19 20:58:22] INFO root fetch - main [MainThread]: Store serial: [23279465]
+[2024-05-19 21:00:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279465]
+[2024-05-19 21:00:30] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 21:00:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mypreprocessinglib
+[2024-05-19 21:00:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: outratingz
+[2024-05-19 21:00:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cnl2feedcrawler
+[2024-05-19 21:00:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: retriever-search
+[2024-05-19 21:00:30] INFO root fetch - processPackages [retriever-search]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-19 21:00:30] INFO root fetch - processPackages [cnl2feedcrawler]: New version: [2.1.0] Old Version: [2.0.3]
+[2024-05-19 21:00:31] INFO root fetch - processPackages [retriever-search]: Downloading https://files.pythonhosted.org/packages/c6/42/40ac323a10da47deffc95f4d96d297e65cd83ecc241b81caa58570578aa5/retriever_search-0.2.1.tar.gz
+[2024-05-19 21:00:31] WARNING root fetch - processPackages [outratingz]: Skipping, unable to determine old version
+[2024-05-19 21:00:31] INFO root fetch - main [MainThread]: End processing [outratingz] error
+[2024-05-19 21:00:31] INFO root fetch - processPackages [cnl2feedcrawler]: Downloading https://files.pythonhosted.org/packages/38/07/03cefec23f68baadb051a4b0d17e9cf7268791fa765221bfeba853e180a6/cnl2feedcrawler-2.0.3.tar.gz
+[2024-05-19 21:00:31] WARNING root fetch - processPackages [mypreprocessinglib]: Skipping, unable to determine old version
+[2024-05-19 21:00:31] INFO root fetch - main [MainThread]: End processing [mypreprocessinglib] error
+[2024-05-19 21:00:31] INFO root fetch - processPackages [cnl2feedcrawler]: Downloading https://files.pythonhosted.org/packages/be/53/17c0f9974589714c69e2b2f824373cc844e5fc3f754f04a9288c6d557334/cnl2feedcrawler-2.1.0.tar.gz
+[2024-05-19 21:00:31] INFO root fetch - processPackages [cnl2feedcrawler]: executing diffoscope
+[2024-05-19 21:00:31] INFO root fetch - processPackages [cnl2feedcrawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cnl2feedcrawler-2.0.3.tar.gz tmp/cnl2feedcrawler-2.1.0.tar.gz --markdown 20240519/c/cnl2feedcrawler/2.0.3-2.1.0/README.md --exclude *.pyd
+[2024-05-19 21:00:31] INFO root fetch - processPackages [retriever-search]: Downloading https://files.pythonhosted.org/packages/02/b9/65c722a5539f14517d956f972ec9c2604aa95fa721c97a9ee11cf4fa863a/retriever_search-0.2.2.tar.gz
+[2024-05-19 21:00:31] INFO root fetch - processPackages [retriever-search]: executing diffoscope
+[2024-05-19 21:00:31] INFO root fetch - processPackages [retriever-search]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/retriever_search-0.2.1.tar.gz tmp/retriever_search-0.2.2.tar.gz --markdown 20240519/r/retriever-search/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-19 21:00:31] INFO root fetch - processPackages [cnl2feedcrawler]: Remove: archive file [/home/abi/fetcher/tmp/cnl2feedcrawler-2.0.3.tar.gz]
+[2024-05-19 21:00:31] INFO root fetch - processPackages [cnl2feedcrawler]: Remove: archive file [/home/abi/fetcher/tmp/cnl2feedcrawler-2.1.0.tar.gz]
+[2024-05-19 21:00:31] INFO root fetch - main [MainThread]: End processing [cnl2feedcrawler]: success
+[2024-05-19 21:00:32] INFO root fetch - processPackages [retriever-search]: Remove: archive file [/home/abi/fetcher/tmp/retriever_search-0.2.1.tar.gz]
+[2024-05-19 21:00:32] INFO root fetch - processPackages [retriever-search]: Remove: archive file [/home/abi/fetcher/tmp/retriever_search-0.2.2.tar.gz]
+[2024-05-19 21:00:32] INFO root fetch - main [MainThread]: End processing [retriever-search]: success
+[2024-05-19 21:00:32] INFO root fetch - main [MainThread]: Store serial: [23279480]
