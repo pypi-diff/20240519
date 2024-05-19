@@ -7711,3 +7711,27 @@
 [2024-05-19 11:33:57] INFO root fetch - processPackages [paibox]: Remove: archive file [/home/abi/fetcher/tmp/paibox-1.1.0a1.tar.gz]
 [2024-05-19 11:33:57] INFO root fetch - main [MainThread]: End processing [paibox]: success
 [2024-05-19 11:33:57] INFO root fetch - main [MainThread]: Store serial: [23275078]
+[2024-05-19 11:36:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275078]
+[2024-05-19 11:36:06] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 11:36:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyrodigal
+[2024-05-19 11:36:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: psgr
+[2024-05-19 11:36:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spumonisz
+[2024-05-19 11:36:06] INFO root fetch - processPackages [psgr]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-19 11:36:06] INFO root fetch - processPackages [psgr]: Downloading https://files.pythonhosted.org/packages/b6/79/5d6f123cf7df155bc2fe9c44d85d32dea8970e333b86ab89669c7172fdda/psgr-0.2.0.tar.gz
+[2024-05-19 11:36:06] WARNING root fetch - processPackages [spumonisz]: Skipping, unable to determine old version
+[2024-05-19 11:36:06] INFO root fetch - main [MainThread]: End processing [spumonisz] error
+[2024-05-19 11:36:06] INFO root fetch - processPackages [psgr]: Downloading https://files.pythonhosted.org/packages/d7/b6/dfd300025957cc97d1e6dcd1b58205f08fc6fd4b95e6164378c52a60bb9a/psgr-0.2.1.tar.gz
+[2024-05-19 11:36:06] INFO root fetch - processPackages [psgr]: executing diffoscope
+[2024-05-19 11:36:06] INFO root fetch - processPackages [psgr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psgr-0.2.0.tar.gz tmp/psgr-0.2.1.tar.gz --markdown 20240519/p/psgr/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-19 11:36:06] INFO root fetch - processPackages [pyrodigal]: New version: [3.4.0] Old Version: [3.3.0]
+[2024-05-19 11:36:07] INFO root fetch - processPackages [pyrodigal]: Downloading https://files.pythonhosted.org/packages/c8/e3/241f41015c72d5477030d65bdbe467f1219c595eef33297f196422e5b83a/pyrodigal-3.3.0.tar.gz
+[2024-05-19 11:36:07] INFO root fetch - processPackages [psgr]: Remove: archive file [/home/abi/fetcher/tmp/psgr-0.2.0.tar.gz]
+[2024-05-19 11:36:07] INFO root fetch - processPackages [psgr]: Remove: archive file [/home/abi/fetcher/tmp/psgr-0.2.1.tar.gz]
+[2024-05-19 11:36:07] INFO root fetch - main [MainThread]: End processing [psgr]: success
+[2024-05-19 11:36:07] INFO root fetch - processPackages [pyrodigal]: Downloading https://files.pythonhosted.org/packages/6e/0b/d22e599a3835690cae5b643118c3f93b2fef3fe7e34c24f1457aff9407cc/pyrodigal-3.4.0-pp37-pypy37_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-19 11:36:10] INFO root fetch - processPackages [pyrodigal]: executing diffoscope
+[2024-05-19 11:36:10] INFO root fetch - processPackages [pyrodigal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrodigal-3.3.0.tar.gz tmp/pyrodigal-3.4.0-pp37-pypy37_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240519/p/pyrodigal/3.3.0-3.4.0/README.md --exclude *.pyd
+[2024-05-19 11:36:11] INFO root fetch - processPackages [pyrodigal]: Remove: archive file [/home/abi/fetcher/tmp/pyrodigal-3.3.0.tar.gz]
+[2024-05-19 11:36:11] INFO root fetch - processPackages [pyrodigal]: Remove: archive file [/home/abi/fetcher/tmp/pyrodigal-3.4.0-pp37-pypy37_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-19 11:36:11] INFO root fetch - main [MainThread]: End processing [pyrodigal]: success
+[2024-05-19 11:36:11] INFO root fetch - main [MainThread]: Store serial: [23275124]
