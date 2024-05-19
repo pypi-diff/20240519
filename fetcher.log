@@ -5848,3 +5848,45 @@
 [2024-05-19 09:21:30] INFO root fetch - processPackages [ChordReviewsVis]: Remove: archive file [/home/abi/fetcher/tmp/chordreviewsvis-0.2.5.tar.gz]
 [2024-05-19 09:21:30] INFO root fetch - main [MainThread]: End processing [ChordReviewsVis]: success
 [2024-05-19 09:21:30] INFO root fetch - main [MainThread]: Store serial: [23274105]
+[2024-05-19 09:23:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274105]
+[2024-05-19 09:23:38] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 09:23:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: equanimousnessz
+[2024-05-19 09:23:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cmeel-casadi-kin-dyn
+[2024-05-19 09:23:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: modelmerge
+[2024-05-19 09:23:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yutto
+[2024-05-19 09:23:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: redhat-qe-cloud-tools
+[2024-05-19 09:23:38] INFO root fetch - processPackages [modelmerge]: New version: [0.4.8] Old Version: [0.4.7]
+[2024-05-19 09:23:38] WARNING root fetch - processPackages [equanimousnessz]: Skipping, unable to determine old version
+[2024-05-19 09:23:38] INFO root fetch - main [MainThread]: End processing [equanimousnessz] error
+[2024-05-19 09:23:38] INFO root fetch - processPackages [modelmerge]: Downloading https://files.pythonhosted.org/packages/10/85/65d24936b34ab45495b412bbed28eb47317e98c32bb6f57af17413b12300/modelmerge-0.4.7.tar.gz
+[2024-05-19 09:23:38] INFO root fetch - processPackages [cmeel-casadi-kin-dyn]: New version: [1.6.9] Old Version: [1.6.8]
+[2024-05-19 09:23:38] INFO root fetch - processPackages [yutto]: New version: [2.0.0b9] Old Version: [2.0.0b8]
+[2024-05-19 09:23:38] INFO root fetch - processPackages [redhat-qe-cloud-tools]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-19 09:23:39] INFO root fetch - processPackages [cmeel-casadi-kin-dyn]: Downloading https://files.pythonhosted.org/packages/16/d0/0b93f92983a452d1f51c127992b9ba82912aba8fc2f93c6b9aa4f91b438b/cmeel_casadi_kin_dyn-1.6.8-0-cp39-cp39-manylinux_2_28_x86_64.whl
+[2024-05-19 09:23:39] INFO root fetch - processPackages [yutto]: Downloading https://files.pythonhosted.org/packages/d4/82/afc8ceecddf536999aae2b829c18ee41e41e7f2ca51c51e1f0435f005ea2/yutto-2.0.0b8.tar.gz
+[2024-05-19 09:23:39] INFO root fetch - processPackages [redhat-qe-cloud-tools]: Downloading https://files.pythonhosted.org/packages/bb/ba/b006d094180ea2c9d36260eb23821d2bdf0bc3e11192b77282a510ac39ee/redhat_qe_cloud_tools-1.0.8.tar.gz
+[2024-05-19 09:23:39] INFO root fetch - processPackages [modelmerge]: Downloading https://files.pythonhosted.org/packages/60/9c/6d76457c36ac188f0e08917fafb2ff3dc893318e73901e92eff2cc72569a/modelmerge-0.4.8.tar.gz
+[2024-05-19 09:23:39] INFO root fetch - processPackages [modelmerge]: executing diffoscope
+[2024-05-19 09:23:39] INFO root fetch - processPackages [modelmerge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modelmerge-0.4.7.tar.gz tmp/modelmerge-0.4.8.tar.gz --markdown 20240519/m/modelmerge/0.4.7-0.4.8/README.md --exclude *.pyd
+[2024-05-19 09:23:39] INFO root fetch - processPackages [redhat-qe-cloud-tools]: Downloading https://files.pythonhosted.org/packages/73/ee/78f15b2144832b2da8cfd67c1d7f49253a5bbeabe351e94adf1af190017c/redhat_qe_cloud_tools-1.0.9.tar.gz
+[2024-05-19 09:23:39] INFO root fetch - processPackages [yutto]: Downloading https://files.pythonhosted.org/packages/cf/2d/5f85c6e137c3e526cd1fd5e829320295112a8a5dde8e96c21333e0666f73/yutto-2.0.0b9.tar.gz
+[2024-05-19 09:23:39] INFO root fetch - processPackages [redhat-qe-cloud-tools]: executing diffoscope
+[2024-05-19 09:23:39] INFO root fetch - processPackages [redhat-qe-cloud-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redhat_qe_cloud_tools-1.0.8.tar.gz tmp/redhat_qe_cloud_tools-1.0.9.tar.gz --markdown 20240519/r/redhat-qe-cloud-tools/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-19 09:23:39] INFO root fetch - processPackages [cmeel-casadi-kin-dyn]: Downloading https://files.pythonhosted.org/packages/28/57/4d3f7604a35bee534ed7c4a4a4a9780844739743da3d2c7d51e465f6b6e7/cmeel_casadi_kin_dyn-1.6.9-0-cp39-cp39-manylinux_2_28_x86_64.whl
+[2024-05-19 09:23:39] INFO root fetch - processPackages [yutto]: executing diffoscope
+[2024-05-19 09:23:39] INFO root fetch - processPackages [yutto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yutto-2.0.0b8.tar.gz tmp/yutto-2.0.0b9.tar.gz --markdown 20240519/y/yutto/2.0.0b8-2.0.0b9/README.md --exclude *.pyd
+[2024-05-19 09:23:39] INFO root fetch - processPackages [cmeel-casadi-kin-dyn]: executing diffoscope
+[2024-05-19 09:23:39] INFO root fetch - processPackages [cmeel-casadi-kin-dyn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cmeel_casadi_kin_dyn-1.6.8-0-cp39-cp39-manylinux_2_28_x86_64.whl.zip tmp/cmeel_casadi_kin_dyn-1.6.9-0-cp39-cp39-manylinux_2_28_x86_64.whl.zip --markdown 20240519/c/cmeel-casadi-kin-dyn/1.6.8-1.6.9/README.md --exclude *.pyd
+[2024-05-19 09:23:39] INFO root fetch - processPackages [modelmerge]: Remove: archive file [/home/abi/fetcher/tmp/modelmerge-0.4.7.tar.gz]
+[2024-05-19 09:23:39] INFO root fetch - processPackages [modelmerge]: Remove: archive file [/home/abi/fetcher/tmp/modelmerge-0.4.8.tar.gz]
+[2024-05-19 09:23:39] INFO root fetch - main [MainThread]: End processing [modelmerge]: success
+[2024-05-19 09:23:40] INFO root fetch - processPackages [redhat-qe-cloud-tools]: Remove: archive file [/home/abi/fetcher/tmp/redhat_qe_cloud_tools-1.0.8.tar.gz]
+[2024-05-19 09:23:40] INFO root fetch - processPackages [redhat-qe-cloud-tools]: Remove: archive file [/home/abi/fetcher/tmp/redhat_qe_cloud_tools-1.0.9.tar.gz]
+[2024-05-19 09:23:40] INFO root fetch - main [MainThread]: End processing [redhat-qe-cloud-tools]: success
+[2024-05-19 09:23:40] INFO root fetch - processPackages [yutto]: Remove: archive file [/home/abi/fetcher/tmp/yutto-2.0.0b8.tar.gz]
+[2024-05-19 09:23:40] INFO root fetch - processPackages [yutto]: Remove: archive file [/home/abi/fetcher/tmp/yutto-2.0.0b9.tar.gz]
+[2024-05-19 09:23:40] INFO root fetch - main [MainThread]: End processing [yutto]: success
+[2024-05-19 09:23:57] INFO root fetch - processPackages [cmeel-casadi-kin-dyn]: Remove: archive file [/home/abi/fetcher/tmp/cmeel_casadi_kin_dyn-1.6.8-0-cp39-cp39-manylinux_2_28_x86_64.whl.zip]
+[2024-05-19 09:23:57] INFO root fetch - processPackages [cmeel-casadi-kin-dyn]: Remove: archive file [/home/abi/fetcher/tmp/cmeel_casadi_kin_dyn-1.6.9-0-cp39-cp39-manylinux_2_28_x86_64.whl.zip]
+[2024-05-19 09:23:57] INFO root fetch - main [MainThread]: End processing [cmeel-casadi-kin-dyn]: success
+[2024-05-19 09:23:57] INFO root fetch - main [MainThread]: Store serial: [23274119]
