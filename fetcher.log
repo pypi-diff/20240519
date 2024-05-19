@@ -2442,3 +2442,72 @@
 [2024-05-19 04:13:49] INFO root fetch - processPackages [nacos-sdk-rust-binding-py]: Remove: archive file [/home/abi/fetcher/tmp/nacos_sdk_rust_binding_py-0.4.0-cp37-none-win_amd64.whl.zip]
 [2024-05-19 04:13:49] INFO root fetch - main [MainThread]: End processing [nacos-sdk-rust-binding-py]: success
 [2024-05-19 04:13:49] INFO root fetch - main [MainThread]: Store serial: [23272639]
+[2024-05-19 04:15:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272639]
+[2024-05-19 04:15:58] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-19 04:15:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: itkwasm-compare-images-wasi
+[2024-05-19 04:15:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gpt-all-star
+[2024-05-19 04:15:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: itkwasm-compare-images-emscripten
+[2024-05-19 04:15:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: itkwasm-compare-images
+[2024-05-19 04:15:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cs.lex
+[2024-05-19 04:15:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: BioSAK
+[2024-05-19 04:15:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: Mopidy-WebM3U
+[2024-05-19 04:15:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: manywaysz
+[2024-05-19 04:15:58] INFO root fetch - processPackages [itkwasm-compare-images-wasi]: New version: [5.1.1] Old Version: [5.0.2]
+[2024-05-19 04:15:58] INFO root fetch - processPackages [itkwasm-compare-images-emscripten]: New version: [5.1.1] Old Version: [5.0.2]
+[2024-05-19 04:15:58] INFO root fetch - processPackages [itkwasm-compare-images]: New version: [5.1.1] Old Version: [5.0.2]
+[2024-05-19 04:15:58] WARNING root fetch - processPackages [manywaysz]: Skipping, unable to determine old version
+[2024-05-19 04:15:58] INFO root fetch - main [MainThread]: End processing [manywaysz] error
+[2024-05-19 04:15:58] INFO root fetch - processPackages [cs.lex]: New version: [20240519] Old Version: [20240316]
+[2024-05-19 04:15:58] INFO root fetch - processPackages [Mopidy-WebM3U]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-19 04:15:58] INFO root fetch - processPackages [gpt-all-star]: New version: [0.0.9] Old Version: [0.0.7]
+[2024-05-19 04:15:58] INFO root fetch - processPackages [BioSAK]: New version: [1.88.9] Old Version: [1.88.8]
+[2024-05-19 04:15:58] INFO root fetch - processPackages [itkwasm-compare-images-wasi]: Downloading https://files.pythonhosted.org/packages/bb/a7/8c0a876a0427645185a354ca3374bbd57b95b7c279b9ec28f272112e05ec/itkwasm_compare_images_wasi-5.0.2.tar.gz
+[2024-05-19 04:15:58] INFO root fetch - processPackages [itkwasm-compare-images-emscripten]: Downloading https://files.pythonhosted.org/packages/fc/2a/e25710e0bc54c33aece92bd455e6cc65b1f27eb51ef0415d2b8aea75ac6d/itkwasm_compare_images_emscripten-5.0.2.tar.gz
+[2024-05-19 04:15:58] INFO root fetch - processPackages [itkwasm-compare-images]: Downloading https://files.pythonhosted.org/packages/08/61/26c5d2c6f599656ffe83b1539cfb50a5dfc2d295575763af68ffefae8377/itkwasm_compare_images-5.0.2.tar.gz
+[2024-05-19 04:15:58] INFO root fetch - processPackages [cs.lex]: Downloading https://files.pythonhosted.org/packages/82/a9/27445ea2dcd7cfa1d2b3f4d07f342e3e7d035048a5a24402e66e5db20c16/cs.lex-20240316.tar.gz
+[2024-05-19 04:15:58] INFO root fetch - processPackages [gpt-all-star]: Downloading https://files.pythonhosted.org/packages/95/00/47f2780dce549d1ce8aad7cb17a7c758209c4539c6f75dcdbe0e9322ce0e/gpt_all_star-0.0.7.tar.gz
+[2024-05-19 04:15:58] INFO root fetch - processPackages [Mopidy-WebM3U]: Downloading https://files.pythonhosted.org/packages/86/bb/374fbabb40e058a11c5b65edb86c7122abfcb6c03e00053d3d1d82f27528/Mopidy_WebM3U-0.1.2-py3-none-any.whl
+[2024-05-19 04:15:58] INFO root fetch - processPackages [BioSAK]: Downloading https://files.pythonhosted.org/packages/76/0f/b42a5b517c7a861e4c633c5b8b2e8275a69eec86da698120e6a5a1ebf74f/BioSAK-1.88.8.tar.gz
+[2024-05-19 04:15:59] INFO root fetch - processPackages [itkwasm-compare-images]: Downloading https://files.pythonhosted.org/packages/c2/e5/258bcf5641ad53783fccb419d21d07553b51bbdc7956b6e15be559c57e14/itkwasm_compare_images-5.1.1.tar.gz
+[2024-05-19 04:15:59] INFO root fetch - processPackages [cs.lex]: Downloading https://files.pythonhosted.org/packages/1d/92/ce3d5f9e40962d3fc82c40b40ca94939d1bb15de01cea1da6144ba935d9f/cs.lex-20240519.tar.gz
+[2024-05-19 04:15:59] INFO root fetch - processPackages [itkwasm-compare-images-emscripten]: Downloading https://files.pythonhosted.org/packages/34/52/ca212709f2f4d201ce01a89054525f354e97a483b0528fccc38fcba1ed12/itkwasm_compare_images_emscripten-5.1.1.tar.gz
+[2024-05-19 04:15:59] INFO root fetch - processPackages [gpt-all-star]: Downloading https://files.pythonhosted.org/packages/96/40/c6f6b9dc146ffbf8c97d68b1ad200a51bb0f5a239c5e4d11725f1fff5f45/gpt_all_star-0.0.9.tar.gz
+[2024-05-19 04:15:59] INFO root fetch - processPackages [Mopidy-WebM3U]: Downloading https://files.pythonhosted.org/packages/78/2f/f7bbe704dcd64b96ab8c589a0d7bb9b2fc44dfeacac833ec14a3257242fd/Mopidy_WebM3U-0.1.3-py3-none-any.whl
+[2024-05-19 04:15:59] INFO root fetch - processPackages [itkwasm-compare-images-wasi]: Downloading https://files.pythonhosted.org/packages/22/66/076dc4b7a4de107e3f09a00aba0e9f44215c4edff45a67bce80b99747e86/itkwasm_compare_images_wasi-5.1.1.tar.gz
+[2024-05-19 04:15:59] INFO root fetch - processPackages [itkwasm-compare-images]: executing diffoscope
+[2024-05-19 04:15:59] INFO root fetch - processPackages [itkwasm-compare-images]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/itkwasm_compare_images-5.0.2.tar.gz tmp/itkwasm_compare_images-5.1.1.tar.gz --markdown 20240519/i/itkwasm-compare-images/5.0.2-5.1.1/README.md --exclude *.pyd
+[2024-05-19 04:15:59] INFO root fetch - processPackages [cs.lex]: executing diffoscope
+[2024-05-19 04:15:59] INFO root fetch - processPackages [cs.lex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs.lex-20240316.tar.gz tmp/cs.lex-20240519.tar.gz --markdown 20240519/c/cs.lex/20240316-20240519/README.md --exclude *.pyd
+[2024-05-19 04:15:59] INFO root fetch - processPackages [itkwasm-compare-images-emscripten]: executing diffoscope
+[2024-05-19 04:15:59] INFO root fetch - processPackages [itkwasm-compare-images-emscripten]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/itkwasm_compare_images_emscripten-5.0.2.tar.gz tmp/itkwasm_compare_images_emscripten-5.1.1.tar.gz --markdown 20240519/i/itkwasm-compare-images-emscripten/5.0.2-5.1.1/README.md --exclude *.pyd
+[2024-05-19 04:15:59] INFO root fetch - processPackages [gpt-all-star]: executing diffoscope
+[2024-05-19 04:15:59] INFO root fetch - processPackages [gpt-all-star]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt_all_star-0.0.7.tar.gz tmp/gpt_all_star-0.0.9.tar.gz --markdown 20240519/g/gpt-all-star/0.0.7-0.0.9/README.md --exclude *.pyd
+[2024-05-19 04:15:59] INFO root fetch - processPackages [Mopidy-WebM3U]: executing diffoscope
+[2024-05-19 04:15:59] INFO root fetch - processPackages [Mopidy-WebM3U]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Mopidy_WebM3U-0.1.2-py3-none-any.whl.zip tmp/Mopidy_WebM3U-0.1.3-py3-none-any.whl.zip --markdown 20240519/M/Mopidy-WebM3U/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-19 04:15:59] INFO root fetch - processPackages [BioSAK]: Downloading https://files.pythonhosted.org/packages/62/97/bf719db985f3e78168efac2d24682565516b6a12a3997626926808793ccb/BioSAK-1.88.9.tar.gz
+[2024-05-19 04:15:59] INFO root fetch - processPackages [itkwasm-compare-images-wasi]: executing diffoscope
+[2024-05-19 04:15:59] INFO root fetch - processPackages [itkwasm-compare-images-wasi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/itkwasm_compare_images_wasi-5.0.2.tar.gz tmp/itkwasm_compare_images_wasi-5.1.1.tar.gz --markdown 20240519/i/itkwasm-compare-images-wasi/5.0.2-5.1.1/README.md --exclude *.pyd
+[2024-05-19 04:15:59] INFO root fetch - processPackages [BioSAK]: executing diffoscope
+[2024-05-19 04:15:59] INFO root fetch - processPackages [BioSAK]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BioSAK-1.88.8.tar.gz tmp/BioSAK-1.88.9.tar.gz --markdown 20240519/B/BioSAK/1.88.8-1.88.9/README.md --exclude *.pyd
+[2024-05-19 04:16:00] INFO root fetch - processPackages [itkwasm-compare-images-emscripten]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_compare_images_emscripten-5.0.2.tar.gz]
+[2024-05-19 04:16:00] INFO root fetch - processPackages [itkwasm-compare-images-emscripten]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_compare_images_emscripten-5.1.1.tar.gz]
+[2024-05-19 04:16:00] INFO root fetch - main [MainThread]: End processing [itkwasm-compare-images-emscripten]: success
+[2024-05-19 04:16:00] INFO root fetch - processPackages [cs.lex]: Remove: archive file [/home/abi/fetcher/tmp/cs.lex-20240316.tar.gz]
+[2024-05-19 04:16:00] INFO root fetch - processPackages [cs.lex]: Remove: archive file [/home/abi/fetcher/tmp/cs.lex-20240519.tar.gz]
+[2024-05-19 04:16:00] INFO root fetch - main [MainThread]: End processing [cs.lex]: success
+[2024-05-19 04:16:00] INFO root fetch - processPackages [itkwasm-compare-images]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_compare_images-5.0.2.tar.gz]
+[2024-05-19 04:16:00] INFO root fetch - processPackages [itkwasm-compare-images]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_compare_images-5.1.1.tar.gz]
+[2024-05-19 04:16:00] INFO root fetch - main [MainThread]: End processing [itkwasm-compare-images]: success
+[2024-05-19 04:16:00] INFO root fetch - processPackages [Mopidy-WebM3U]: Remove: archive file [/home/abi/fetcher/tmp/Mopidy_WebM3U-0.1.2-py3-none-any.whl.zip]
+[2024-05-19 04:16:00] INFO root fetch - processPackages [Mopidy-WebM3U]: Remove: archive file [/home/abi/fetcher/tmp/Mopidy_WebM3U-0.1.3-py3-none-any.whl.zip]
+[2024-05-19 04:16:00] INFO root fetch - main [MainThread]: End processing [Mopidy-WebM3U]: success
+[2024-05-19 04:16:00] INFO root fetch - processPackages [gpt-all-star]: Remove: archive file [/home/abi/fetcher/tmp/gpt_all_star-0.0.7.tar.gz]
+[2024-05-19 04:16:00] INFO root fetch - processPackages [gpt-all-star]: Remove: archive file [/home/abi/fetcher/tmp/gpt_all_star-0.0.9.tar.gz]
+[2024-05-19 04:16:00] INFO root fetch - main [MainThread]: End processing [gpt-all-star]: success
+[2024-05-19 04:16:00] INFO root fetch - processPackages [itkwasm-compare-images-wasi]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_compare_images_wasi-5.0.2.tar.gz]
+[2024-05-19 04:16:00] INFO root fetch - processPackages [itkwasm-compare-images-wasi]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_compare_images_wasi-5.1.1.tar.gz]
+[2024-05-19 04:16:00] INFO root fetch - main [MainThread]: End processing [itkwasm-compare-images-wasi]: success
+[2024-05-19 04:16:01] INFO root fetch - processPackages [BioSAK]: Remove: archive file [/home/abi/fetcher/tmp/BioSAK-1.88.8.tar.gz]
+[2024-05-19 04:16:01] INFO root fetch - processPackages [BioSAK]: Remove: archive file [/home/abi/fetcher/tmp/BioSAK-1.88.9.tar.gz]
+[2024-05-19 04:16:01] INFO root fetch - main [MainThread]: End processing [BioSAK]: success
+[2024-05-19 04:16:01] INFO root fetch - main [MainThread]: Store serial: [23272706]
