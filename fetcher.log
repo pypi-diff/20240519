@@ -1630,3 +1630,27 @@
 [2024-05-19 02:42:33] INFO root fetch - processPackages [footium-api]: Remove: archive file [/home/abi/fetcher/tmp/footium_api-0.1.1.tar.gz]
 [2024-05-19 02:42:33] INFO root fetch - main [MainThread]: End processing [footium-api]: success
 [2024-05-19 02:42:33] INFO root fetch - main [MainThread]: Store serial: [23272184]
+[2024-05-19 02:44:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272184]
+[2024-05-19 02:44:43] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 02:44:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: salgorithm
+[2024-05-19 02:44:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nosticz
+[2024-05-19 02:44:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tfds-nightly
+[2024-05-19 02:44:43] INFO root fetch - processPackages [tfds-nightly]: New version: [4.9.4.dev202405180044] Old Version: [4.9.4.dev202405170044]
+[2024-05-19 02:44:43] INFO root fetch - processPackages [salgorithm]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-05-19 02:44:43] WARNING root fetch - processPackages [nosticz]: Skipping, unable to determine old version
+[2024-05-19 02:44:43] INFO root fetch - main [MainThread]: End processing [nosticz] error
+[2024-05-19 02:44:43] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/03/14/f6f839737a28cd1ee7fd5a5a9594dc53b604d852c49f00f5550701e4ab6f/tfds-nightly-4.9.4.dev202405170044.tar.gz
+[2024-05-19 02:44:43] INFO root fetch - processPackages [salgorithm]: Downloading https://files.pythonhosted.org/packages/23/26/9a1ba5c0ca7d8136c8ab26620dcd77e6a2616a0122a423a91b58bec56af2/salgorithm-0.1.1.tar.gz
+[2024-05-19 02:44:44] INFO root fetch - processPackages [salgorithm]: Downloading https://files.pythonhosted.org/packages/44/ed/fe93c0e663521510577db21ba3d76abfdc2fd46f450cf985b164fb793a23/salgorithm-0.2.0.tar.gz
+[2024-05-19 02:44:44] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/e8/dd/f0df55646765d6f4a6349556c4f0524e8cc41265eb0947c70bc5b99a81f8/tfds-nightly-4.9.4.dev202405180044.tar.gz
+[2024-05-19 02:44:44] INFO root fetch - processPackages [salgorithm]: executing diffoscope
+[2024-05-19 02:44:44] INFO root fetch - processPackages [salgorithm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/salgorithm-0.1.1.tar.gz tmp/salgorithm-0.2.0.tar.gz --markdown 20240519/s/salgorithm/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-05-19 02:44:44] INFO root fetch - processPackages [tfds-nightly]: executing diffoscope
+[2024-05-19 02:44:44] INFO root fetch - processPackages [tfds-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfds-nightly-4.9.4.dev202405170044.tar.gz tmp/tfds-nightly-4.9.4.dev202405180044.tar.gz --markdown 20240519/t/tfds-nightly/4.9.4.dev202405170044-4.9.4.dev202405180044/README.md --exclude *.pyd
+[2024-05-19 02:44:44] INFO root fetch - processPackages [salgorithm]: Remove: archive file [/home/abi/fetcher/tmp/salgorithm-0.1.1.tar.gz]
+[2024-05-19 02:44:44] INFO root fetch - processPackages [salgorithm]: Remove: archive file [/home/abi/fetcher/tmp/salgorithm-0.2.0.tar.gz]
+[2024-05-19 02:44:44] INFO root fetch - main [MainThread]: End processing [salgorithm]: success
+[2024-05-19 02:44:53] INFO root fetch - processPackages [tfds-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfds-nightly-4.9.4.dev202405170044.tar.gz]
+[2024-05-19 02:44:53] INFO root fetch - processPackages [tfds-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfds-nightly-4.9.4.dev202405180044.tar.gz]
+[2024-05-19 02:44:53] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
+[2024-05-19 02:44:53] INFO root fetch - main [MainThread]: Store serial: [23272192]
