@@ -11456,3 +11456,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 15:40:29] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
 [2024-05-19 15:40:29] INFO root fetch - main [MainThread]: End processing [yeref]: success
 [2024-05-19 15:40:29] INFO root fetch - main [MainThread]: Store serial: [23276886]
+[2024-05-19 15:42:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276886]
+[2024-05-19 15:42:38] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 15:42:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: monstr
+[2024-05-19 15:42:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: topmenz
+[2024-05-19 15:42:38] INFO root fetch - processPackages [monstr]: New version: [0.1.4] Old Version: [0.1.2]
+[2024-05-19 15:42:38] INFO root fetch - processPackages [monstr]: Downloading https://files.pythonhosted.org/packages/c3/cf/af1b4c246fcfc243d10c2c637e299dc408eb89840801505039ff4ae9a4d1/monstr-0.1.2.tar.gz
+[2024-05-19 15:42:38] WARNING root fetch - processPackages [topmenz]: Skipping, unable to determine old version
+[2024-05-19 15:42:38] INFO root fetch - main [MainThread]: End processing [topmenz] error
+[2024-05-19 15:42:38] INFO root fetch - processPackages [monstr]: Downloading https://files.pythonhosted.org/packages/b6/9a/60358f667bc4ec9b5494957efeae1dc781737b862d094ecc522e743b402b/monstr-0.1.4.tar.gz
+[2024-05-19 15:42:38] INFO root fetch - processPackages [monstr]: executing diffoscope
+[2024-05-19 15:42:38] INFO root fetch - processPackages [monstr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monstr-0.1.2.tar.gz tmp/monstr-0.1.4.tar.gz --markdown 20240519/m/monstr/0.1.2-0.1.4/README.md --exclude *.pyd
+[2024-05-19 15:42:39] INFO root fetch - processPackages [monstr]: Remove: archive file [/home/abi/fetcher/tmp/monstr-0.1.2.tar.gz]
+[2024-05-19 15:42:39] INFO root fetch - processPackages [monstr]: Remove: archive file [/home/abi/fetcher/tmp/monstr-0.1.4.tar.gz]
+[2024-05-19 15:42:39] INFO root fetch - main [MainThread]: End processing [monstr]: success
+[2024-05-19 15:42:39] INFO root fetch - main [MainThread]: Store serial: [23276893]
