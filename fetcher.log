@@ -17189,3 +17189,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 21:11:29] INFO root fetch - processPackages [netbox-validity]: Remove: archive file [/home/abi/fetcher/tmp/netbox_validity-2.2.1.tar.gz]
 [2024-05-19 21:11:29] INFO root fetch - main [MainThread]: End processing [netbox-validity]: success
 [2024-05-19 21:11:29] INFO root fetch - main [MainThread]: Store serial: [23279613]
+[2024-05-19 21:13:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279613]
+[2024-05-19 21:13:38] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 21:13:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Simba-UW-tf-dev
+[2024-05-19 21:13:38] INFO root fetch - processPackages [Simba-UW-tf-dev]: New version: [1.92.6] Old Version: [1.92.5]
+[2024-05-19 21:13:38] INFO root fetch - processPackages [Simba-UW-tf-dev]: Downloading https://files.pythonhosted.org/packages/ca/7b/b83910df34983ac6b6c02db2d6108ad4528f412b90bb002a545eb0cc0e3a/Simba-UW-tf-dev-1.92.5.tar.gz
+[2024-05-19 21:13:39] INFO root fetch - processPackages [Simba-UW-tf-dev]: Downloading https://files.pythonhosted.org/packages/66/7e/3f595b19b9959e93d99c5f180ca568dc200ee9ec826838f67d8b2d3f8a39/Simba-UW-tf-dev-1.92.6.tar.gz
+[2024-05-19 21:13:39] INFO root fetch - processPackages [Simba-UW-tf-dev]: executing diffoscope
+[2024-05-19 21:13:39] INFO root fetch - processPackages [Simba-UW-tf-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Simba-UW-tf-dev-1.92.5.tar.gz tmp/Simba-UW-tf-dev-1.92.6.tar.gz --markdown 20240519/S/Simba-UW-tf-dev/1.92.5-1.92.6/README.md --exclude *.pyd
+[2024-05-19 21:13:43] INFO root fetch - processPackages [Simba-UW-tf-dev]: Remove: archive file [/home/abi/fetcher/tmp/Simba-UW-tf-dev-1.92.5.tar.gz]
+[2024-05-19 21:13:43] INFO root fetch - processPackages [Simba-UW-tf-dev]: Remove: archive file [/home/abi/fetcher/tmp/Simba-UW-tf-dev-1.92.6.tar.gz]
+[2024-05-19 21:13:43] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
+[2024-05-19 21:13:43] INFO root fetch - main [MainThread]: Store serial: [23279616]
