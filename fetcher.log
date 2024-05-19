@@ -10336,3 +10336,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 14:26:04] INFO root fetch - processPackages [cnl2feedcrawler]: Remove: archive file [/home/abi/fetcher/tmp/cnl2feedcrawler-2.1.0.tar.gz]
 [2024-05-19 14:26:04] INFO root fetch - main [MainThread]: End processing [cnl2feedcrawler]: success
 [2024-05-19 14:26:04] INFO root fetch - main [MainThread]: Store serial: [23276259]
+[2024-05-19 14:28:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276259]
+[2024-05-19 14:28:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 14:28:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mergemate
+[2024-05-19 14:28:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pylib-sakata
+[2024-05-19 14:28:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: almgroad
+[2024-05-19 14:28:13] INFO root fetch - processPackages [mergemate]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-19 14:28:13] INFO root fetch - processPackages [mergemate]: Downloading https://files.pythonhosted.org/packages/7e/f6/1fb8be0dc6ee25b2779befcff1e82adf0fcf49e2418eccbe0b0a670760a6/mergemate-0.1.3.tar.gz
+[2024-05-19 14:28:13] INFO root fetch - processPackages [almgroad]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-19 14:28:13] INFO root fetch - processPackages [pylib-sakata]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-19 14:28:13] INFO root fetch - processPackages [almgroad]: Downloading https://files.pythonhosted.org/packages/9c/ad/8e979f806dd9ddc7a41bbd261c1ddbcd72d11ec8f10bcaf56a2e7e84de2e/almgroad-0.1.4-py3-none-any.whl
+[2024-05-19 14:28:13] INFO root fetch - processPackages [pylib-sakata]: Downloading https://files.pythonhosted.org/packages/f6/32/17907ec472ed06a545b9a209bb75fa78a1a18e3f8b42f9548eba42a71031/pylib-sakata-0.1.8.tar.gz
+[2024-05-19 14:28:13] INFO root fetch - processPackages [mergemate]: Downloading https://files.pythonhosted.org/packages/e1/15/c7e469b1285da0d967924bbbdb82d5cc7a6bdeba3261d3a3308070fbf6fc/mergemate-0.1.4.tar.gz
+[2024-05-19 14:28:13] INFO root fetch - processPackages [mergemate]: executing diffoscope
+[2024-05-19 14:28:13] INFO root fetch - processPackages [mergemate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mergemate-0.1.3.tar.gz tmp/mergemate-0.1.4.tar.gz --markdown 20240519/m/mergemate/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-19 14:28:13] INFO root fetch - processPackages [almgroad]: Downloading https://files.pythonhosted.org/packages/bb/2f/0aca2a56b5016c8d9b84155badb928770a0e717e34b00aae5f4ee322a801/almgroad-0.1.5-py3-none-any.whl
+[2024-05-19 14:28:14] INFO root fetch - processPackages [mergemate]: Remove: archive file [/home/abi/fetcher/tmp/mergemate-0.1.3.tar.gz]
+[2024-05-19 14:28:14] INFO root fetch - processPackages [mergemate]: Remove: archive file [/home/abi/fetcher/tmp/mergemate-0.1.4.tar.gz]
+[2024-05-19 14:28:14] INFO root fetch - main [MainThread]: End processing [mergemate]: success
+[2024-05-19 14:28:14] INFO root fetch - processPackages [almgroad]: executing diffoscope
+[2024-05-19 14:28:14] INFO root fetch - processPackages [almgroad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/almgroad-0.1.4-py3-none-any.whl.zip tmp/almgroad-0.1.5-py3-none-any.whl.zip --markdown 20240519/a/almgroad/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-19 14:28:14] INFO root fetch - processPackages [pylib-sakata]: Downloading https://files.pythonhosted.org/packages/45/c3/1bf084aaef51e19144420708ee520da832ad91ebae93ff40ad70f7a807bb/pylib-sakata-0.1.9.tar.gz
+[2024-05-19 14:28:15] INFO root fetch - processPackages [almgroad]: Remove: archive file [/home/abi/fetcher/tmp/almgroad-0.1.4-py3-none-any.whl.zip]
+[2024-05-19 14:28:15] INFO root fetch - processPackages [almgroad]: Remove: archive file [/home/abi/fetcher/tmp/almgroad-0.1.5-py3-none-any.whl.zip]
+[2024-05-19 14:28:15] INFO root fetch - main [MainThread]: End processing [almgroad]: success
+[2024-05-19 14:28:15] INFO root fetch - processPackages [pylib-sakata]: executing diffoscope
+[2024-05-19 14:28:15] INFO root fetch - processPackages [pylib-sakata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylib-sakata-0.1.8.tar.gz tmp/pylib-sakata-0.1.9.tar.gz --markdown 20240519/p/pylib-sakata/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-19 14:28:15] INFO root fetch - processPackages [pylib-sakata]: Remove: archive file [/home/abi/fetcher/tmp/pylib-sakata-0.1.8.tar.gz]
+[2024-05-19 14:28:15] INFO root fetch - processPackages [pylib-sakata]: Remove: archive file [/home/abi/fetcher/tmp/pylib-sakata-0.1.9.tar.gz]
+[2024-05-19 14:28:15] INFO root fetch - main [MainThread]: End processing [pylib-sakata]: success
+[2024-05-19 14:28:15] INFO root fetch - main [MainThread]: Store serial: [23276268]
