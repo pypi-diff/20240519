@@ -11804,3 +11804,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 15:57:56] INFO root fetch - processPackages [crawler-user-agents]: Remove: archive file [/home/abi/fetcher/tmp/crawler_user_agents-0.7.0-py3-none-any.whl.zip]
 [2024-05-19 15:57:56] INFO root fetch - main [MainThread]: End processing [crawler-user-agents]: success
 [2024-05-19 15:57:56] INFO root fetch - main [MainThread]: Store serial: [23277068]
+[2024-05-19 16:00:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277068]
+[2024-05-19 16:00:05] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 16:00:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yeref
+[2024-05-19 16:00:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jsorlie.pymsl
+[2024-05-19 16:00:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: audiconnectpy
+[2024-05-19 16:00:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: functionize-notebook
+[2024-05-19 16:00:05] INFO root fetch - processPackages [audiconnectpy]: New version: [2.1.7] Old Version: [2.1.6]
+[2024-05-19 16:00:05] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-19 16:00:06] INFO root fetch - processPackages [audiconnectpy]: Downloading https://files.pythonhosted.org/packages/bf/74/3699d86e1d660cf65147b81aeeb14253a9fa27e070ef9af28e6d023a8f43/audiconnectpy-2.1.6.tar.gz
+[2024-05-19 16:00:06] WARNING root fetch - processPackages [jsorlie.pymsl]: Skipping, unable to determine old version
+[2024-05-19 16:00:06] INFO root fetch - main [MainThread]: End processing [jsorlie.pymsl] error
+[2024-05-19 16:00:06] INFO root fetch - processPackages [functionize-notebook]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-19 16:00:06] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-19 16:00:06] INFO root fetch - processPackages [functionize-notebook]: Downloading https://files.pythonhosted.org/packages/b7/6a/8c224c5a741cfb10adb4874288d3743ef6912ba42cad23e2ee7b14273561/functionize-notebook-0.0.2.tar.gz
+[2024-05-19 16:00:06] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-19 16:00:06] INFO root fetch - processPackages [audiconnectpy]: Downloading https://files.pythonhosted.org/packages/00/4d/83544755c328258448288ec7ec649dacaeec7db82846eecbd59d8f38822d/audiconnectpy-2.1.7.tar.gz
+[2024-05-19 16:00:06] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-19 16:00:06] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240519/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-19 16:00:06] INFO root fetch - processPackages [audiconnectpy]: executing diffoscope
+[2024-05-19 16:00:06] INFO root fetch - processPackages [audiconnectpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audiconnectpy-2.1.6.tar.gz tmp/audiconnectpy-2.1.7.tar.gz --markdown 20240519/a/audiconnectpy/2.1.6-2.1.7/README.md --exclude *.pyd
+[2024-05-19 16:00:06] INFO root fetch - processPackages [functionize-notebook]: Downloading https://files.pythonhosted.org/packages/e9/bc/21af08a3c660886948bfa6c025a80218efdc145422217f3ab0971de45529/functionize_notebook-0.0.3.tar.gz
+[2024-05-19 16:00:06] INFO root fetch - processPackages [functionize-notebook]: executing diffoscope
+[2024-05-19 16:00:06] INFO root fetch - processPackages [functionize-notebook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/functionize-notebook-0.0.2.tar.gz tmp/functionize_notebook-0.0.3.tar.gz --markdown 20240519/f/functionize-notebook/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-19 16:00:07] INFO root fetch - processPackages [audiconnectpy]: Remove: archive file [/home/abi/fetcher/tmp/audiconnectpy-2.1.6.tar.gz]
+[2024-05-19 16:00:07] INFO root fetch - processPackages [audiconnectpy]: Remove: archive file [/home/abi/fetcher/tmp/audiconnectpy-2.1.7.tar.gz]
+[2024-05-19 16:00:07] INFO root fetch - main [MainThread]: End processing [audiconnectpy]: success
+[2024-05-19 16:00:07] INFO root fetch - processPackages [functionize-notebook]: Remove: archive file [/home/abi/fetcher/tmp/functionize-notebook-0.0.2.tar.gz]
+[2024-05-19 16:00:07] INFO root fetch - processPackages [functionize-notebook]: Remove: archive file [/home/abi/fetcher/tmp/functionize_notebook-0.0.3.tar.gz]
+[2024-05-19 16:00:07] INFO root fetch - main [MainThread]: End processing [functionize-notebook]: success
+[2024-05-19 16:00:07] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-19 16:00:07] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-19 16:00:07] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-19 16:00:07] INFO root fetch - main [MainThread]: Store serial: [23277082]
