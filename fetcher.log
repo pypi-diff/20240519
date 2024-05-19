@@ -9976,3 +9976,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 14:06:16] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
 [2024-05-19 14:06:16] INFO root fetch - main [MainThread]: End processing [yeref]: success
 [2024-05-19 14:06:16] INFO root fetch - main [MainThread]: Store serial: [23276106]
+[2024-05-19 14:08:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276106]
+[2024-05-19 14:08:24] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 14:08:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bank-scrapers
+[2024-05-19 14:08:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gym-simplegrid
+[2024-05-19 14:08:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torcheval-nightly
+[2024-05-19 14:08:24] INFO root fetch - processPackages [bank-scrapers]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-19 14:08:24] INFO root fetch - processPackages [torcheval-nightly]: New version: [2024.5.9] Old Version: [2024.5.8]
+[2024-05-19 14:08:24] INFO root fetch - processPackages [bank-scrapers]: Downloading https://files.pythonhosted.org/packages/13/b0/1f956c44e81b935506ae8660d8aaaa4a975dba8db964492a98a3131961cc/bank_scrapers-1.0.8.tar.gz
+[2024-05-19 14:08:24] INFO root fetch - processPackages [gym-simplegrid]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-05-19 14:08:24] INFO root fetch - processPackages [torcheval-nightly]: Downloading https://files.pythonhosted.org/packages/98/c1/96a1c122528ea0121ecc29466d1a6b26c68b8a6036aae6bdb121ddcfdbff/torcheval_nightly-2024.5.8.tar.gz
+[2024-05-19 14:08:25] INFO root fetch - processPackages [gym-simplegrid]: Downloading https://files.pythonhosted.org/packages/16/04/808718449d028b9c0938969ebd9ff1b48efbbf2a1d33c7ba1873d57c6c59/gym_simplegrid-1.0.5.tar.gz
+[2024-05-19 14:08:25] INFO root fetch - processPackages [bank-scrapers]: Downloading https://files.pythonhosted.org/packages/db/25/d10a43b636dad83822f69f512ddd3d27631c7cd08175c2ab11593e1bdd8c/bank_scrapers-1.0.9.tar.gz
+[2024-05-19 14:08:25] INFO root fetch - processPackages [torcheval-nightly]: Downloading https://files.pythonhosted.org/packages/60/c3/da56bee236b598ba0c7ed2929a00a2cf4f41f79676194a22cd34a85b00eb/torcheval_nightly-2024.5.9.tar.gz
+[2024-05-19 14:08:25] INFO root fetch - processPackages [bank-scrapers]: executing diffoscope
+[2024-05-19 14:08:25] INFO root fetch - processPackages [bank-scrapers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bank_scrapers-1.0.8.tar.gz tmp/bank_scrapers-1.0.9.tar.gz --markdown 20240519/b/bank-scrapers/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-19 14:08:25] INFO root fetch - processPackages [torcheval-nightly]: executing diffoscope
+[2024-05-19 14:08:25] INFO root fetch - processPackages [torcheval-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torcheval_nightly-2024.5.8.tar.gz tmp/torcheval_nightly-2024.5.9.tar.gz --markdown 20240519/t/torcheval-nightly/2024.5.8-2024.5.9/README.md --exclude *.pyd
+[2024-05-19 14:08:25] INFO root fetch - processPackages [gym-simplegrid]: Downloading https://files.pythonhosted.org/packages/81/a4/1622fbf4a3f17f3a4d806da35fe4915ff3f0f96ed0beb040f4bdd28ad913/gym_simplegrid-1.0.6.tar.gz
+[2024-05-19 14:08:25] INFO root fetch - processPackages [gym-simplegrid]: executing diffoscope
+[2024-05-19 14:08:25] INFO root fetch - processPackages [gym-simplegrid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gym_simplegrid-1.0.5.tar.gz tmp/gym_simplegrid-1.0.6.tar.gz --markdown 20240519/g/gym-simplegrid/1.0.5-1.0.6/README.md --exclude *.pyd
+[2024-05-19 14:08:25] INFO root fetch - processPackages [bank-scrapers]: Remove: archive file [/home/abi/fetcher/tmp/bank_scrapers-1.0.8.tar.gz]
+[2024-05-19 14:08:25] INFO root fetch - processPackages [bank-scrapers]: Remove: archive file [/home/abi/fetcher/tmp/bank_scrapers-1.0.9.tar.gz]
+[2024-05-19 14:08:25] INFO root fetch - main [MainThread]: End processing [bank-scrapers]: success
+[2024-05-19 14:08:26] INFO root fetch - processPackages [gym-simplegrid]: Remove: archive file [/home/abi/fetcher/tmp/gym_simplegrid-1.0.5.tar.gz]
+[2024-05-19 14:08:26] INFO root fetch - processPackages [gym-simplegrid]: Remove: archive file [/home/abi/fetcher/tmp/gym_simplegrid-1.0.6.tar.gz]
+[2024-05-19 14:08:26] INFO root fetch - main [MainThread]: End processing [gym-simplegrid]: success
+[2024-05-19 14:08:26] INFO root fetch - processPackages [torcheval-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torcheval_nightly-2024.5.8.tar.gz]
+[2024-05-19 14:08:26] INFO root fetch - processPackages [torcheval-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torcheval_nightly-2024.5.9.tar.gz]
+[2024-05-19 14:08:26] INFO root fetch - main [MainThread]: End processing [torcheval-nightly]: success
+[2024-05-19 14:08:26] INFO root fetch - main [MainThread]: Store serial: [23276115]
