@@ -4455,3 +4455,23 @@
 [2024-05-19 07:21:21] WARNING root fetch - processPackages [infectz]: Skipping, unable to determine old version
 [2024-05-19 07:21:21] INFO root fetch - main [MainThread]: End processing [infectz] error
 [2024-05-19 07:21:21] INFO root fetch - main [MainThread]: Store serial: [23273499]
+[2024-05-19 07:23:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273499]
+[2024-05-19 07:23:29] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-19 07:25:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273499]
+[2024-05-19 07:25:34] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 07:25:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yolo-world-onnx
+[2024-05-19 07:25:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: runnable
+[2024-05-19 07:25:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: infradiaphragmaticz
+[2024-05-19 07:25:35] WARNING root fetch - processPackages [yolo-world-onnx]: Skipping, unable to determine old version
+[2024-05-19 07:25:35] INFO root fetch - main [MainThread]: End processing [yolo-world-onnx] error
+[2024-05-19 07:25:35] WARNING root fetch - processPackages [infradiaphragmaticz]: Skipping, unable to determine old version
+[2024-05-19 07:25:35] INFO root fetch - main [MainThread]: End processing [infradiaphragmaticz] error
+[2024-05-19 07:25:35] INFO root fetch - processPackages [runnable]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-05-19 07:25:35] INFO root fetch - processPackages [runnable]: Downloading https://files.pythonhosted.org/packages/fd/12/a6987242384f8de219d06560beb703effa7808fb974256653220f5031c0c/runnable-0.9.0.tar.gz
+[2024-05-19 07:25:35] INFO root fetch - processPackages [runnable]: Downloading https://files.pythonhosted.org/packages/6d/f2/c89c9ce1844a24b3e073f0f60183f8dbebf2b6e21e472caeb603666786ba/runnable-0.9.1.tar.gz
+[2024-05-19 07:25:35] INFO root fetch - processPackages [runnable]: executing diffoscope
+[2024-05-19 07:25:35] INFO root fetch - processPackages [runnable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/runnable-0.9.0.tar.gz tmp/runnable-0.9.1.tar.gz --markdown 20240519/r/runnable/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-05-19 07:25:36] INFO root fetch - processPackages [runnable]: Remove: archive file [/home/abi/fetcher/tmp/runnable-0.9.0.tar.gz]
+[2024-05-19 07:25:36] INFO root fetch - processPackages [runnable]: Remove: archive file [/home/abi/fetcher/tmp/runnable-0.9.1.tar.gz]
+[2024-05-19 07:25:36] INFO root fetch - main [MainThread]: End processing [runnable]: success
+[2024-05-19 07:25:36] INFO root fetch - main [MainThread]: Store serial: [23273512]
