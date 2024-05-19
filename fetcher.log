@@ -10680,3 +10680,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 14:50:58] INFO root fetch - processPackages [Py-Lav]: Remove: archive file [/home/abi/fetcher/tmp/py_lav-1.9.1.tar.gz]
 [2024-05-19 14:50:58] INFO root fetch - main [MainThread]: End processing [Py-Lav]: success
 [2024-05-19 14:50:58] INFO root fetch - main [MainThread]: Store serial: [23276445]
+[2024-05-19 14:53:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276445]
+[2024-05-19 14:53:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 14:53:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ten-drops
+[2024-05-19 14:53:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PixPayloadGen
+[2024-05-19 14:53:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: manifest-tool
+[2024-05-19 14:53:07] INFO root fetch - processPackages [ten-drops]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-19 14:53:07] WARNING root fetch - processPackages [PixPayloadGen]: Skipping, unable to determine old version
+[2024-05-19 14:53:07] INFO root fetch - main [MainThread]: End processing [PixPayloadGen] error
+[2024-05-19 14:53:07] INFO root fetch - processPackages [manifest-tool]: New version: [2.6.1] Old Version: [2.6.0rc5]
+[2024-05-19 14:53:07] INFO root fetch - processPackages [ten-drops]: Downloading https://files.pythonhosted.org/packages/b1/04/7442b5efde736655b90b07c97044f4ad39504c3ab034c1f5eb9f90e7f280/ten_drops-1.0.1.tar.gz
+[2024-05-19 14:53:08] INFO root fetch - processPackages [manifest-tool]: Downloading https://files.pythonhosted.org/packages/54/d9/07d2d7214d1011adc0880b7a9af572a394e527df76dd66e707d53bf30ee2/manifest-tool-2.6.0rc5.tar.gz
+[2024-05-19 14:53:08] INFO root fetch - processPackages [ten-drops]: Downloading https://files.pythonhosted.org/packages/02/21/e4cd20a8aceba2dd1506f78429f215e25a9387b6646371002ff094f679fe/ten_drops-1.0.2.tar.gz
+[2024-05-19 14:53:08] INFO root fetch - processPackages [manifest-tool]: Downloading https://files.pythonhosted.org/packages/47/86/815c52e35f09daf95bcf9c1133e05d0756c0a03d8785650e197dc324b226/manifest_tool-2.6.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-19 14:53:08] INFO root fetch - processPackages [ten-drops]: executing diffoscope
+[2024-05-19 14:53:08] INFO root fetch - processPackages [ten-drops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ten_drops-1.0.1.tar.gz tmp/ten_drops-1.0.2.tar.gz --markdown 20240519/t/ten-drops/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-19 14:53:09] INFO root fetch - processPackages [manifest-tool]: executing diffoscope
+[2024-05-19 14:53:09] INFO root fetch - processPackages [manifest-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manifest-tool-2.6.0rc5.tar.gz tmp/manifest_tool-2.6.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240519/m/manifest-tool/2.6.0rc5-2.6.1/README.md --exclude *.pyd
+[2024-05-19 14:53:09] INFO root fetch - processPackages [ten-drops]: Remove: archive file [/home/abi/fetcher/tmp/ten_drops-1.0.1.tar.gz]
+[2024-05-19 14:53:09] INFO root fetch - processPackages [ten-drops]: Remove: archive file [/home/abi/fetcher/tmp/ten_drops-1.0.2.tar.gz]
+[2024-05-19 14:53:09] INFO root fetch - main [MainThread]: End processing [ten-drops]: success
+[2024-05-19 14:53:09] INFO root fetch - processPackages [manifest-tool]: Remove: archive file [/home/abi/fetcher/tmp/manifest-tool-2.6.0rc5.tar.gz]
+[2024-05-19 14:53:09] INFO root fetch - processPackages [manifest-tool]: Remove: archive file [/home/abi/fetcher/tmp/manifest_tool-2.6.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-19 14:53:09] INFO root fetch - main [MainThread]: End processing [manifest-tool]: success
+[2024-05-19 14:53:09] INFO root fetch - main [MainThread]: Store serial: [23276460]
