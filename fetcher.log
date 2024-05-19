@@ -20032,3 +20032,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 23:12:32] INFO root fetch - processPackages [tencentcloud-sdk-python-keewidb]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-keewidb-3.0.999.tar.gz]
 [2024-05-19 23:12:32] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-keewidb]: success
 [2024-05-19 23:12:32] INFO root fetch - main [MainThread]: Store serial: [23280772]
+[2024-05-19 23:14:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23280772]
+[2024-05-19 23:14:41] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-19 23:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tencentcloud-sdk-python-kms
+[2024-05-19 23:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sphinx-gitref
+[2024-05-19 23:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: better-proxy
+[2024-05-19 23:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: colalamo
+[2024-05-19 23:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kbitools
+[2024-05-19 23:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: PyKozo
+[2024-05-19 23:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: benchify
+[2024-05-19 23:14:41] INFO root fetch - processPackages [sphinx-gitref]: New version: [0.3.0] Old Version: [0.2.1]
+[2024-05-19 23:14:41] INFO root fetch - processPackages [colalamo]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-19 23:14:41] WARNING root fetch - processPackages [PyKozo]: Skipping, unable to determine old version
+[2024-05-19 23:14:41] INFO root fetch - main [MainThread]: End processing [PyKozo] error
+[2024-05-19 23:14:41] INFO root fetch - processPackages [benchify]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 23:14:41] INFO root fetch - processPackages [better-proxy]: New version: [1.2.0b1] Old Version: [1.2.0]
+[2024-05-19 23:14:41] INFO root fetch - processPackages [sphinx-gitref]: Downloading https://files.pythonhosted.org/packages/84/81/aec1c231e20c6a967d79eac7af5cb18eeb8063548e5604268cb4ea1021cd/sphinx-gitref-0.2.1.tar.gz
+[2024-05-19 23:14:41] WARNING root fetch - processPackages [kbitools]: Skipping, unable to determine old version
+[2024-05-19 23:14:41] INFO root fetch - main [MainThread]: End processing [kbitools] error
+[2024-05-19 23:14:41] INFO root fetch - processPackages [tencentcloud-sdk-python-kms]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-19 23:14:41] INFO root fetch - processPackages [colalamo]: Downloading https://files.pythonhosted.org/packages/01/d5/9c999ebc58f3c35fb2b41a0a86a7d29fef680bd2ad37219ce8ec489b17a7/colalamo-0.1.0.tar.gz
+[2024-05-19 23:14:41] INFO root fetch - processPackages [better-proxy]: Downloading https://files.pythonhosted.org/packages/7a/25/4191e75fbba5d5576da36572613cbe138c16352c10d13776a329c1b867f5/better_proxy-1.2.0.tar.gz
+[2024-05-19 23:14:41] INFO root fetch - processPackages [sphinx-gitref]: Downloading https://files.pythonhosted.org/packages/c2/11/9e79d71298910f4d379c267ca8bb029b45f49ef451c515d790489fbc55ca/sphinx_gitref-0.3.0.tar.gz
+[2024-05-19 23:14:41] INFO root fetch - processPackages [benchify]: Downloading https://files.pythonhosted.org/packages/5a/0b/7b7396c47e597d572c094b8ccc9486e40a7fe4547621a5b1cf8d3221a35d/benchify-0.0.8.tar.gz
+[2024-05-19 23:14:41] INFO root fetch - processPackages [tencentcloud-sdk-python-kms]: Downloading https://files.pythonhosted.org/packages/af/fa/cabb010e9d06d53d1d37f7ad5193aa91ed4920fffce417507d4fea9d7d26/tencentcloud-sdk-python-kms-3.0.998.tar.gz
+[2024-05-19 23:14:41] INFO root fetch - processPackages [sphinx-gitref]: executing diffoscope
+[2024-05-19 23:14:41] INFO root fetch - processPackages [sphinx-gitref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinx-gitref-0.2.1.tar.gz tmp/sphinx_gitref-0.3.0.tar.gz --markdown 20240519/s/sphinx-gitref/0.2.1-0.3.0/README.md --exclude *.pyd
+[2024-05-19 23:14:41] INFO root fetch - processPackages [colalamo]: Downloading https://files.pythonhosted.org/packages/a4/6d/4453d640b7cc3113a45b9e8ed67548ebafe82f3de09dd3a7b30eafd8fcdc/colalamo-0.1.1.tar.gz
+[2024-05-19 23:14:41] INFO root fetch - processPackages [colalamo]: executing diffoscope
+[2024-05-19 23:14:41] INFO root fetch - processPackages [colalamo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/colalamo-0.1.0.tar.gz tmp/colalamo-0.1.1.tar.gz --markdown 20240519/c/colalamo/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-19 23:14:41] INFO root fetch - processPackages [better-proxy]: Downloading https://files.pythonhosted.org/packages/77/c8/da9b1d182477f1e15d2ac24a2cc78c74a220861cb3df5fff15510feae7f0/better_proxy-1.2.0b1.tar.gz
+[2024-05-19 23:14:41] INFO root fetch - processPackages [tencentcloud-sdk-python-kms]: Downloading https://files.pythonhosted.org/packages/ad/f6/05ee21b174414be6ad3b3cce41bd5555e326809fbbb04aacd37cee40f157/tencentcloud-sdk-python-kms-3.0.999.tar.gz
+[2024-05-19 23:14:41] INFO root fetch - processPackages [benchify]: Downloading https://files.pythonhosted.org/packages/19/ed/b541b5e624a1cef56b003967dd27d6d363717167450153c1891c87d50d66/benchify-0.0.9.tar.gz
+[2024-05-19 23:14:42] INFO root fetch - processPackages [tencentcloud-sdk-python-kms]: executing diffoscope
+[2024-05-19 23:14:42] INFO root fetch - processPackages [tencentcloud-sdk-python-kms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-kms-3.0.998.tar.gz tmp/tencentcloud-sdk-python-kms-3.0.999.tar.gz --markdown 20240519/t/tencentcloud-sdk-python-kms/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-19 23:14:42] INFO root fetch - processPackages [better-proxy]: executing diffoscope
+[2024-05-19 23:14:42] INFO root fetch - processPackages [better-proxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/better_proxy-1.2.0.tar.gz tmp/better_proxy-1.2.0b1.tar.gz --markdown 20240519/b/better-proxy/1.2.0-1.2.0b1/README.md --exclude *.pyd
+[2024-05-19 23:14:42] INFO root fetch - processPackages [benchify]: executing diffoscope
+[2024-05-19 23:14:42] INFO root fetch - processPackages [benchify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/benchify-0.0.8.tar.gz tmp/benchify-0.0.9.tar.gz --markdown 20240519/b/benchify/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 23:14:42] INFO root fetch - processPackages [sphinx-gitref]: Remove: archive file [/home/abi/fetcher/tmp/sphinx-gitref-0.2.1.tar.gz]
+[2024-05-19 23:14:42] INFO root fetch - processPackages [sphinx-gitref]: Remove: archive file [/home/abi/fetcher/tmp/sphinx_gitref-0.3.0.tar.gz]
+[2024-05-19 23:14:42] INFO root fetch - main [MainThread]: End processing [sphinx-gitref]: success
+[2024-05-19 23:14:42] INFO root fetch - processPackages [colalamo]: Remove: archive file [/home/abi/fetcher/tmp/colalamo-0.1.0.tar.gz]
+[2024-05-19 23:14:42] INFO root fetch - processPackages [colalamo]: Remove: archive file [/home/abi/fetcher/tmp/colalamo-0.1.1.tar.gz]
+[2024-05-19 23:14:42] INFO root fetch - main [MainThread]: End processing [colalamo]: success
+[2024-05-19 23:14:42] INFO root fetch - processPackages [tencentcloud-sdk-python-kms]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-kms-3.0.998.tar.gz]
+[2024-05-19 23:14:42] INFO root fetch - processPackages [tencentcloud-sdk-python-kms]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-kms-3.0.999.tar.gz]
+[2024-05-19 23:14:42] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-kms]: success
+[2024-05-19 23:14:42] INFO root fetch - processPackages [benchify]: Remove: archive file [/home/abi/fetcher/tmp/benchify-0.0.8.tar.gz]
+[2024-05-19 23:14:42] INFO root fetch - processPackages [benchify]: Remove: archive file [/home/abi/fetcher/tmp/benchify-0.0.9.tar.gz]
+[2024-05-19 23:14:42] INFO root fetch - main [MainThread]: End processing [benchify]: success
+[2024-05-19 23:14:42] INFO root fetch - processPackages [better-proxy]: Remove: archive file [/home/abi/fetcher/tmp/better_proxy-1.2.0.tar.gz]
+[2024-05-19 23:14:42] INFO root fetch - processPackages [better-proxy]: Remove: archive file [/home/abi/fetcher/tmp/better_proxy-1.2.0b1.tar.gz]
+[2024-05-19 23:14:42] INFO root fetch - main [MainThread]: End processing [better-proxy]: success
+[2024-05-19 23:14:42] INFO root fetch - main [MainThread]: Store serial: [23280795]
