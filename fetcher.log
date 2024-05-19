@@ -7870,3 +7870,24 @@
 [2024-05-19 11:47:01] INFO root fetch - processPackages [heatmap_cli]: Remove: archive file [/home/abi/fetcher/tmp/heatmap_cli-0.9.3.tar.gz]
 [2024-05-19 11:47:01] INFO root fetch - main [MainThread]: End processing [heatmap_cli]: success
 [2024-05-19 11:47:01] INFO root fetch - main [MainThread]: Store serial: [23275200]
+[2024-05-19 11:49:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275200]
+[2024-05-19 11:49:10] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 11:49:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bppy
+[2024-05-19 11:49:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: altstore-proxy
+[2024-05-19 11:49:10] INFO root fetch - processPackages [altstore-proxy]: New version: [1.2.0] Old Version: [1.1.2]
+[2024-05-19 11:49:10] INFO root fetch - processPackages [altstore-proxy]: Downloading https://files.pythonhosted.org/packages/5c/ae/f812e331a2d1137d9fda3832737cc36e2d8322fd26fb1f04c3602aa62e18/altstore_proxy-1.1.2.tar.gz
+[2024-05-19 11:49:10] INFO root fetch - processPackages [bppy]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-19 11:49:11] INFO root fetch - processPackages [bppy]: Downloading https://files.pythonhosted.org/packages/2e/bc/b4ead58e8a508e6a72247864baa2a85c1cdb5637a8246977f56dc6f6dcdd/bppy-1.0.1.tar.gz
+[2024-05-19 11:49:11] INFO root fetch - processPackages [altstore-proxy]: Downloading https://files.pythonhosted.org/packages/07/7f/d8f24e4fdcdde03a9896ab7917639d95f4b4d438b2f042def24d427b0cb1/altstore_proxy-1.2.0.tar.gz
+[2024-05-19 11:49:11] INFO root fetch - processPackages [altstore-proxy]: executing diffoscope
+[2024-05-19 11:49:11] INFO root fetch - processPackages [altstore-proxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altstore_proxy-1.1.2.tar.gz tmp/altstore_proxy-1.2.0.tar.gz --markdown 20240519/a/altstore-proxy/1.1.2-1.2.0/README.md --exclude *.pyd
+[2024-05-19 11:49:11] INFO root fetch - processPackages [bppy]: Downloading https://files.pythonhosted.org/packages/00/d6/be5e0770566a1fb9a3d63cc2d5da49f8009d4272b9b546e8c67d05403937/bppy-1.0.2.tar.gz
+[2024-05-19 11:49:11] INFO root fetch - processPackages [bppy]: executing diffoscope
+[2024-05-19 11:49:11] INFO root fetch - processPackages [bppy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bppy-1.0.1.tar.gz tmp/bppy-1.0.2.tar.gz --markdown 20240519/b/bppy/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-19 11:49:11] INFO root fetch - processPackages [altstore-proxy]: Remove: archive file [/home/abi/fetcher/tmp/altstore_proxy-1.1.2.tar.gz]
+[2024-05-19 11:49:11] INFO root fetch - processPackages [altstore-proxy]: Remove: archive file [/home/abi/fetcher/tmp/altstore_proxy-1.2.0.tar.gz]
+[2024-05-19 11:49:11] INFO root fetch - main [MainThread]: End processing [altstore-proxy]: success
+[2024-05-19 11:49:12] INFO root fetch - processPackages [bppy]: Remove: archive file [/home/abi/fetcher/tmp/bppy-1.0.1.tar.gz]
+[2024-05-19 11:49:12] INFO root fetch - processPackages [bppy]: Remove: archive file [/home/abi/fetcher/tmp/bppy-1.0.2.tar.gz]
+[2024-05-19 11:49:12] INFO root fetch - main [MainThread]: End processing [bppy]: success
+[2024-05-19 11:49:12] INFO root fetch - main [MainThread]: Store serial: [23275214]
