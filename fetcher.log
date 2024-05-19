@@ -3548,3 +3548,38 @@
 [2024-05-19 05:49:51] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.5.6.tar.gz]
 [2024-05-19 05:49:51] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
 [2024-05-19 05:49:51] INFO root fetch - main [MainThread]: Store serial: [23273108]
+[2024-05-19 05:51:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273108]
+[2024-05-19 05:51:59] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 05:51:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: func2stream
+[2024-05-19 05:51:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: baosight
+[2024-05-19 05:51:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sjwt
+[2024-05-19 05:51:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: awsync
+[2024-05-19 05:51:59] INFO root fetch - processPackages [func2stream]: New version: [0.0.1.dev20240519] Old Version: [0.0.0.dev20240519]
+[2024-05-19 05:51:59] INFO root fetch - processPackages [awsync]: New version: [0.4.3] Old Version: [0.3.1]
+[2024-05-19 05:51:59] INFO root fetch - processPackages [sjwt]: New version: [0.3.1] Old Version: [0.2.4]
+[2024-05-19 05:51:59] INFO root fetch - processPackages [baosight]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 05:51:59] INFO root fetch - processPackages [func2stream]: Downloading https://files.pythonhosted.org/packages/df/10/6e60c0fb9c50a8d4238480b1bb0145249cde202d6ce095be55163c3d1018/func2stream-0.0.0.dev20240519.tar.gz
+[2024-05-19 05:51:59] INFO root fetch - processPackages [sjwt]: Downloading https://files.pythonhosted.org/packages/ff/13/109e5c2a03ee1052e40ab39aa605ccbb4f0a480d59b1d93351f7111e6cd0/sjwt-0.2.4.tar.gz
+[2024-05-19 05:51:59] INFO root fetch - processPackages [awsync]: Downloading https://files.pythonhosted.org/packages/f3/86/4fde191795757b767ba38b30e8e25ff70829f19c3f5ffc279dd46bbce358/awsync-0.3.1.tar.gz
+[2024-05-19 05:51:59] INFO root fetch - processPackages [baosight]: Downloading https://files.pythonhosted.org/packages/72/e0/5c051218be62e92d7cc33bcf889a9f069781fab83c116c9e05a6f86721fe/baosight-0.0.8.tar.gz
+[2024-05-19 05:52:00] INFO root fetch - processPackages [awsync]: Downloading https://files.pythonhosted.org/packages/ca/40/ac95adba0ceb6f3c8b5d9c9e6c6089589b8f964dd761e119578cf4b99c4c/awsync-0.4.3.tar.gz
+[2024-05-19 05:52:00] INFO root fetch - processPackages [baosight]: Downloading https://files.pythonhosted.org/packages/58/9d/77d14df517a7f6c898a66f8dfe33d03cdf374f66524ab680d57de93c1320/baosight-0.0.9.tar.gz
+[2024-05-19 05:52:00] INFO root fetch - processPackages [func2stream]: Downloading https://files.pythonhosted.org/packages/6c/5e/e3bbd0e09b7eb15919cfcdffb6483fe919fc27af449576605e66938834ab/func2stream-0.0.1.dev20240519.tar.gz
+[2024-05-19 05:52:00] ERROR root fetch - processPackages [sjwt]: Unable to fetch info: No such project/version 'sjwt' 0.3.1
+[2024-05-19 05:52:00] INFO root fetch - main [MainThread]: End processing [sjwt] error
+[2024-05-19 05:52:00] INFO root fetch - processPackages [baosight]: executing diffoscope
+[2024-05-19 05:52:00] INFO root fetch - processPackages [baosight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baosight-0.0.8.tar.gz tmp/baosight-0.0.9.tar.gz --markdown 20240519/b/baosight/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 05:52:00] INFO root fetch - processPackages [awsync]: executing diffoscope
+[2024-05-19 05:52:00] INFO root fetch - processPackages [awsync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/awsync-0.3.1.tar.gz tmp/awsync-0.4.3.tar.gz --markdown 20240519/a/awsync/0.3.1-0.4.3/README.md --exclude *.pyd
+[2024-05-19 05:52:00] INFO root fetch - processPackages [func2stream]: executing diffoscope
+[2024-05-19 05:52:00] INFO root fetch - processPackages [func2stream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/func2stream-0.0.0.dev20240519.tar.gz tmp/func2stream-0.0.1.dev20240519.tar.gz --markdown 20240519/f/func2stream/0.0.0.dev20240519-0.0.1.dev20240519/README.md --exclude *.pyd
+[2024-05-19 05:52:00] INFO root fetch - processPackages [awsync]: Remove: archive file [/home/abi/fetcher/tmp/awsync-0.3.1.tar.gz]
+[2024-05-19 05:52:00] INFO root fetch - processPackages [awsync]: Remove: archive file [/home/abi/fetcher/tmp/awsync-0.4.3.tar.gz]
+[2024-05-19 05:52:00] INFO root fetch - main [MainThread]: End processing [awsync]: success
+[2024-05-19 05:52:00] INFO root fetch - processPackages [baosight]: Remove: archive file [/home/abi/fetcher/tmp/baosight-0.0.8.tar.gz]
+[2024-05-19 05:52:00] INFO root fetch - processPackages [baosight]: Remove: archive file [/home/abi/fetcher/tmp/baosight-0.0.9.tar.gz]
+[2024-05-19 05:52:00] INFO root fetch - main [MainThread]: End processing [baosight]: success
+[2024-05-19 05:52:00] INFO root fetch - processPackages [func2stream]: Remove: archive file [/home/abi/fetcher/tmp/func2stream-0.0.0.dev20240519.tar.gz]
+[2024-05-19 05:52:00] INFO root fetch - processPackages [func2stream]: Remove: archive file [/home/abi/fetcher/tmp/func2stream-0.0.1.dev20240519.tar.gz]
+[2024-05-19 05:52:00] INFO root fetch - main [MainThread]: End processing [func2stream]: success
+[2024-05-19 05:52:00] INFO root fetch - main [MainThread]: Store serial: [23273122]
