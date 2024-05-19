@@ -10624,3 +10624,59 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 14:48:40] INFO root fetch - processPackages [Maslib]: Remove: archive file [/home/abi/fetcher/tmp/Maslib-0.0.8.tar.gz]
 [2024-05-19 14:48:40] INFO root fetch - main [MainThread]: End processing [Maslib]: success
 [2024-05-19 14:48:40] INFO root fetch - main [MainThread]: Store serial: [23276412]
+[2024-05-19 14:50:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276412]
+[2024-05-19 14:50:48] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-19 14:50:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: GraphRetrieval
+[2024-05-19 14:50:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aiogram-tonconnect
+[2024-05-19 14:50:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yeref
+[2024-05-19 14:50:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Py-Lav
+[2024-05-19 14:50:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: remla24-team8-lib-ml
+[2024-05-19 14:50:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: juxtapose
+[2024-05-19 14:50:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: scabiousz
+[2024-05-19 14:50:48] INFO root fetch - processPackages [GraphRetrieval]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-19 14:50:48] INFO root fetch - processPackages [remla24-team8-lib-ml]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-19 14:50:49] INFO root fetch - processPackages [juxtapose]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 14:50:49] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-19 14:50:49] INFO root fetch - processPackages [remla24-team8-lib-ml]: Downloading https://files.pythonhosted.org/packages/1a/d2/ed457de9f8038710f94149e944570e81281a824419bfdf1dbf233bba10b0/remla24_team8_lib_ml-0.1.3.tar.gz
+[2024-05-19 14:50:49] INFO root fetch - processPackages [aiogram-tonconnect]: New version: [0.13.6] Old Version: [0.13.5]
+[2024-05-19 14:50:49] WARNING root fetch - processPackages [scabiousz]: Skipping, unable to determine old version
+[2024-05-19 14:50:49] INFO root fetch - main [MainThread]: End processing [scabiousz] error
+[2024-05-19 14:50:49] INFO root fetch - processPackages [juxtapose]: Downloading https://files.pythonhosted.org/packages/61/ef/b8b96f6ca1edc65e2f9e7470c51e5294b5cbbabb55ca13a82f4456e37edc/juxtapose-0.0.8.tar.gz
+[2024-05-19 14:50:49] INFO root fetch - processPackages [Py-Lav]: New version: [1.9.1] Old Version: [1.9.0]
+[2024-05-19 14:50:49] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-19 14:50:49] INFO root fetch - processPackages [GraphRetrieval]: Downloading https://files.pythonhosted.org/packages/ad/38/fdda5cf532b488e8dbe2b8cbe32439784529fa2f2797ecf4ab0c37713058/graphretrieval-0.1.1.tar.gz
+[2024-05-19 14:50:49] WARNING root fetch - processPackages [juxtapose]: Skipping package: exceeds size limit 19361597>=10485760
+[2024-05-19 14:50:49] INFO root fetch - main [MainThread]: End processing [juxtapose] error
+[2024-05-19 14:50:49] INFO root fetch - processPackages [remla24-team8-lib-ml]: Downloading https://files.pythonhosted.org/packages/cf/7c/1a05e5aea89c12b582533861fa9c61aff41b521f7102d82ac7d77e9d17e7/remla24_team8_lib_ml-0.1.4.tar.gz
+[2024-05-19 14:50:49] INFO root fetch - processPackages [Py-Lav]: Downloading https://files.pythonhosted.org/packages/e9/64/08d96df3ebb41b75149551173aa15872b9c758f4b12d5c36eba8f2dbf30d/py_lav-1.9.0.tar.gz
+[2024-05-19 14:50:49] INFO root fetch - processPackages [aiogram-tonconnect]: Downloading https://files.pythonhosted.org/packages/2e/c5/64a4102ce970cbdb2d9502e45c762a2a1a32b8487e4d92f0c7a9a646da19/aiogram-tonconnect-0.13.5.tar.gz
+[2024-05-19 14:50:49] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-19 14:50:49] INFO root fetch - processPackages [remla24-team8-lib-ml]: executing diffoscope
+[2024-05-19 14:50:49] INFO root fetch - processPackages [remla24-team8-lib-ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/remla24_team8_lib_ml-0.1.3.tar.gz tmp/remla24_team8_lib_ml-0.1.4.tar.gz --markdown 20240519/r/remla24-team8-lib-ml/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-19 14:50:49] INFO root fetch - processPackages [GraphRetrieval]: Downloading https://files.pythonhosted.org/packages/d1/0b/0f1d776409ad8377671ae60564e16afa70e87644ce8c059146180bf8996b/graphretrieval-0.1.2.tar.gz
+[2024-05-19 14:50:49] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-19 14:50:49] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240519/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-19 14:50:49] INFO root fetch - processPackages [GraphRetrieval]: executing diffoscope
+[2024-05-19 14:50:49] INFO root fetch - processPackages [GraphRetrieval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphretrieval-0.1.1.tar.gz tmp/graphretrieval-0.1.2.tar.gz --markdown 20240519/G/GraphRetrieval/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-19 14:50:49] INFO root fetch - processPackages [Py-Lav]: Downloading https://files.pythonhosted.org/packages/65/96/7b1f7affb973d7ebaa76b7dc9887f38e2967631eb75a6676334cb300c3c5/py_lav-1.9.1.tar.gz
+[2024-05-19 14:50:49] INFO root fetch - processPackages [aiogram-tonconnect]: Downloading https://files.pythonhosted.org/packages/30/62/a20bda2d4155fa6c41af7547839d8e38933637648747c7ed48f5a78a7eb3/aiogram-tonconnect-0.13.6.tar.gz
+[2024-05-19 14:50:49] INFO root fetch - processPackages [aiogram-tonconnect]: executing diffoscope
+[2024-05-19 14:50:49] INFO root fetch - processPackages [aiogram-tonconnect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogram-tonconnect-0.13.5.tar.gz tmp/aiogram-tonconnect-0.13.6.tar.gz --markdown 20240519/a/aiogram-tonconnect/0.13.5-0.13.6/README.md --exclude *.pyd
+[2024-05-19 14:50:49] INFO root fetch - processPackages [Py-Lav]: executing diffoscope
+[2024-05-19 14:50:49] INFO root fetch - processPackages [Py-Lav]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_lav-1.9.0.tar.gz tmp/py_lav-1.9.1.tar.gz --markdown 20240519/P/Py-Lav/1.9.0-1.9.1/README.md --exclude *.pyd
+[2024-05-19 14:50:50] INFO root fetch - processPackages [remla24-team8-lib-ml]: Remove: archive file [/home/abi/fetcher/tmp/remla24_team8_lib_ml-0.1.3.tar.gz]
+[2024-05-19 14:50:50] INFO root fetch - processPackages [remla24-team8-lib-ml]: Remove: archive file [/home/abi/fetcher/tmp/remla24_team8_lib_ml-0.1.4.tar.gz]
+[2024-05-19 14:50:50] INFO root fetch - main [MainThread]: End processing [remla24-team8-lib-ml]: success
+[2024-05-19 14:50:50] INFO root fetch - processPackages [GraphRetrieval]: Remove: archive file [/home/abi/fetcher/tmp/graphretrieval-0.1.1.tar.gz]
+[2024-05-19 14:50:50] INFO root fetch - processPackages [GraphRetrieval]: Remove: archive file [/home/abi/fetcher/tmp/graphretrieval-0.1.2.tar.gz]
+[2024-05-19 14:50:50] INFO root fetch - main [MainThread]: End processing [GraphRetrieval]: success
+[2024-05-19 14:50:50] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-19 14:50:50] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-19 14:50:50] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-19 14:50:50] INFO root fetch - processPackages [aiogram-tonconnect]: Remove: archive file [/home/abi/fetcher/tmp/aiogram-tonconnect-0.13.5.tar.gz]
+[2024-05-19 14:50:50] INFO root fetch - processPackages [aiogram-tonconnect]: Remove: archive file [/home/abi/fetcher/tmp/aiogram-tonconnect-0.13.6.tar.gz]
+[2024-05-19 14:50:50] INFO root fetch - main [MainThread]: End processing [aiogram-tonconnect]: success
+[2024-05-19 14:50:58] INFO root fetch - processPackages [Py-Lav]: Remove: archive file [/home/abi/fetcher/tmp/py_lav-1.9.0.tar.gz]
+[2024-05-19 14:50:58] INFO root fetch - processPackages [Py-Lav]: Remove: archive file [/home/abi/fetcher/tmp/py_lav-1.9.1.tar.gz]
+[2024-05-19 14:50:58] INFO root fetch - main [MainThread]: End processing [Py-Lav]: success
+[2024-05-19 14:50:58] INFO root fetch - main [MainThread]: Store serial: [23276445]
