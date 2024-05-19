@@ -4620,3 +4620,24 @@
 [2024-05-19 07:36:21] INFO root fetch - processPackages [findmyorder]: Remove: archive file [/home/abi/fetcher/tmp/findmyorder-1.9.9.tar.gz]
 [2024-05-19 07:36:21] INFO root fetch - main [MainThread]: End processing [findmyorder]: success
 [2024-05-19 07:36:21] INFO root fetch - main [MainThread]: Store serial: [23273568]
+[2024-05-19 07:38:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273568]
+[2024-05-19 07:38:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 07:38:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sportswrangler
+[2024-05-19 07:38:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wah
+[2024-05-19 07:38:29] INFO root fetch - processPackages [sportswrangler]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-19 07:38:30] INFO root fetch - processPackages [wah]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-19 07:38:30] INFO root fetch - processPackages [sportswrangler]: Downloading https://files.pythonhosted.org/packages/5c/7c/31593829a4dccc86d269eadb889f413943646894e99ce6d17b059d68dd71/sportswrangler-0.1.4.tar.gz
+[2024-05-19 07:38:30] INFO root fetch - processPackages [wah]: Downloading https://files.pythonhosted.org/packages/1e/98/86b56f53d2270da5a315b2f0d5733e61fd0dabbbde1d17bcff2dd938939e/wah-0.1.8.tar.gz
+[2024-05-19 07:38:30] INFO root fetch - processPackages [sportswrangler]: Downloading https://files.pythonhosted.org/packages/c5/f7/18a5f091eb03e3b97386024f883237775f5874d25a1678ed538b8c1090ba/sportswrangler-0.1.5.tar.gz
+[2024-05-19 07:38:30] INFO root fetch - processPackages [sportswrangler]: executing diffoscope
+[2024-05-19 07:38:30] INFO root fetch - processPackages [sportswrangler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sportswrangler-0.1.4.tar.gz tmp/sportswrangler-0.1.5.tar.gz --markdown 20240519/s/sportswrangler/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-19 07:38:30] INFO root fetch - processPackages [wah]: Downloading https://files.pythonhosted.org/packages/6c/57/7be641139065b67640542a312a3988d0a93024cdc145ea667b7e8d432eb8/wah-0.1.9.tar.gz
+[2024-05-19 07:38:30] INFO root fetch - processPackages [wah]: executing diffoscope
+[2024-05-19 07:38:30] INFO root fetch - processPackages [wah]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wah-0.1.8.tar.gz tmp/wah-0.1.9.tar.gz --markdown 20240519/w/wah/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-19 07:38:31] INFO root fetch - processPackages [sportswrangler]: Remove: archive file [/home/abi/fetcher/tmp/sportswrangler-0.1.4.tar.gz]
+[2024-05-19 07:38:31] INFO root fetch - processPackages [sportswrangler]: Remove: archive file [/home/abi/fetcher/tmp/sportswrangler-0.1.5.tar.gz]
+[2024-05-19 07:38:31] INFO root fetch - main [MainThread]: End processing [sportswrangler]: success
+[2024-05-19 07:38:31] INFO root fetch - processPackages [wah]: Remove: archive file [/home/abi/fetcher/tmp/wah-0.1.8.tar.gz]
+[2024-05-19 07:38:31] INFO root fetch - processPackages [wah]: Remove: archive file [/home/abi/fetcher/tmp/wah-0.1.9.tar.gz]
+[2024-05-19 07:38:31] INFO root fetch - main [MainThread]: End processing [wah]: success
+[2024-05-19 07:38:31] INFO root fetch - main [MainThread]: Store serial: [23273573]
