@@ -5643,3 +5643,11 @@
 [2024-05-19 09:03:58] INFO root fetch - processPackages [seqio-nightly]: Remove: archive file [/home/abi/fetcher/tmp/seqio-nightly-0.0.8.dev20220907.tar.gz]
 [2024-05-19 09:03:58] INFO root fetch - main [MainThread]: End processing [seqio-nightly]: success
 [2024-05-19 09:03:58] INFO root fetch - main [MainThread]: Store serial: [23274010]
+[2024-05-19 09:06:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274010]
+[2024-05-19 09:06:07] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-19 09:08:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274010]
+[2024-05-19 09:08:13] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 09:08:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: affydavyz
+[2024-05-19 09:08:13] WARNING root fetch - processPackages [affydavyz]: Skipping, unable to determine old version
+[2024-05-19 09:08:13] INFO root fetch - main [MainThread]: End processing [affydavyz] error
+[2024-05-19 09:08:13] INFO root fetch - main [MainThread]: Store serial: [23274014]
