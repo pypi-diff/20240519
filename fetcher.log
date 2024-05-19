@@ -12449,3 +12449,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 16:38:30] INFO root fetch - processPackages [clusterfun]: Remove: archive file [/home/abi/fetcher/tmp/clusterfun-0.4.0a7.tar.gz]
 [2024-05-19 16:38:30] INFO root fetch - main [MainThread]: End processing [clusterfun]: success
 [2024-05-19 16:38:30] INFO root fetch - main [MainThread]: Store serial: [23277332]
+[2024-05-19 16:40:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277332]
+[2024-05-19 16:40:39] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-19 16:40:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: unheartilyz
+[2024-05-19 16:40:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: requestrepo
+[2024-05-19 16:40:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: squice
+[2024-05-19 16:40:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dongraphio
+[2024-05-19 16:40:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: syncloud-lib
+[2024-05-19 16:40:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: autofollow
+[2024-05-19 16:40:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: yeref
+[2024-05-19 16:40:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: DFPlayer
+[2024-05-19 16:40:39] INFO root fetch - processPackages [requestrepo]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-19 16:40:39] INFO root fetch - processPackages [dongraphio]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-05-19 16:40:39] WARNING root fetch - processPackages [DFPlayer]: Skipping, unable to determine old version
+[2024-05-19 16:40:39] INFO root fetch - main [MainThread]: End processing [DFPlayer] error
+[2024-05-19 16:40:39] WARNING root fetch - processPackages [squice]: Skipping, unable to determine old version
+[2024-05-19 16:40:39] INFO root fetch - main [MainThread]: End processing [squice] error
+[2024-05-19 16:40:39] INFO root fetch - processPackages [autofollow]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-19 16:40:39] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-19 16:40:39] INFO root fetch - processPackages [requestrepo]: Downloading https://files.pythonhosted.org/packages/97/ee/332c68594b36b7f591e8592ab31b1c9d3ee93846bde9b6650765bacbf135/requestrepo-0.0.5.tar.gz
+[2024-05-19 16:40:39] WARNING root fetch - processPackages [unheartilyz]: Skipping, unable to determine old version
+[2024-05-19 16:40:39] INFO root fetch - main [MainThread]: End processing [unheartilyz] error
+[2024-05-19 16:40:39] INFO root fetch - processPackages [dongraphio]: Downloading https://files.pythonhosted.org/packages/76/9a/c3c32d7f88b05087ce707fe48ca51276f0cf292a97049c3e7a8cdfaa0c5f/dongraphio-0.3.3.tar.gz
+[2024-05-19 16:40:39] INFO root fetch - processPackages [syncloud-lib]: New version: [99] Old Version: [98]
+[2024-05-19 16:40:39] INFO root fetch - processPackages [autofollow]: Downloading https://files.pythonhosted.org/packages/36/f0/677efae155e76e8157efa688250999e4dde69df5b70f6a44220e0362f0c8/autofollow-0.1.0.tar.gz
+[2024-05-19 16:40:39] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-19 16:40:39] INFO root fetch - processPackages [requestrepo]: Downloading https://files.pythonhosted.org/packages/00/4c/d7c54355964d8e18fda6868ca0e8e87033b7556cc46df2b6393bf982773a/requestrepo-0.0.6.tar.gz
+[2024-05-19 16:40:39] INFO root fetch - processPackages [syncloud-lib]: Downloading https://files.pythonhosted.org/packages/eb/47/46fcc907c66f84d54bb4511b19d9a23d7c91adea96f7e60ce0c74aa570ef/syncloud-lib-98.tar.gz
+[2024-05-19 16:40:39] INFO root fetch - processPackages [autofollow]: Downloading https://files.pythonhosted.org/packages/d2/f1/127f13e1001a9e57bb0be7532d3114b7f07eedacb759fa93b87a1b990539/autofollow-0.1.1.tar.gz
+[2024-05-19 16:40:39] INFO root fetch - processPackages [dongraphio]: Downloading https://files.pythonhosted.org/packages/cf/d0/7cffe2caee973ab15ca9b5e3941688c54e5bef13f04d5e0a3d9935bde52f/dongraphio-0.3.4.tar.gz
+[2024-05-19 16:40:39] INFO root fetch - processPackages [requestrepo]: executing diffoscope
+[2024-05-19 16:40:39] INFO root fetch - processPackages [requestrepo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/requestrepo-0.0.5.tar.gz tmp/requestrepo-0.0.6.tar.gz --markdown 20240519/r/requestrepo/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-19 16:40:39] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-19 16:40:39] INFO root fetch - processPackages [dongraphio]: executing diffoscope
+[2024-05-19 16:40:39] INFO root fetch - processPackages [dongraphio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dongraphio-0.3.3.tar.gz tmp/dongraphio-0.3.4.tar.gz --markdown 20240519/d/dongraphio/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-05-19 16:40:39] INFO root fetch - processPackages [autofollow]: executing diffoscope
+[2024-05-19 16:40:39] INFO root fetch - processPackages [autofollow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autofollow-0.1.0.tar.gz tmp/autofollow-0.1.1.tar.gz --markdown 20240519/a/autofollow/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-19 16:40:39] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-19 16:40:39] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240519/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-19 16:40:39] INFO root fetch - processPackages [syncloud-lib]: Downloading https://files.pythonhosted.org/packages/44/7a/6896c6fbe515ce1d82cba0202681a2dab694b82a4fcab8fe2813ac3b6806/syncloud-lib-99.tar.gz
+[2024-05-19 16:40:40] INFO root fetch - processPackages [syncloud-lib]: executing diffoscope
+[2024-05-19 16:40:40] INFO root fetch - processPackages [syncloud-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syncloud-lib-98.tar.gz tmp/syncloud-lib-99.tar.gz --markdown 20240519/s/syncloud-lib/98-99/README.md --exclude *.pyd
+[2024-05-19 16:40:40] INFO root fetch - processPackages [autofollow]: Remove: archive file [/home/abi/fetcher/tmp/autofollow-0.1.0.tar.gz]
+[2024-05-19 16:40:40] INFO root fetch - processPackages [autofollow]: Remove: archive file [/home/abi/fetcher/tmp/autofollow-0.1.1.tar.gz]
+[2024-05-19 16:40:40] INFO root fetch - main [MainThread]: End processing [autofollow]: success
+[2024-05-19 16:40:40] INFO root fetch - processPackages [requestrepo]: Remove: archive file [/home/abi/fetcher/tmp/requestrepo-0.0.5.tar.gz]
+[2024-05-19 16:40:40] INFO root fetch - processPackages [requestrepo]: Remove: archive file [/home/abi/fetcher/tmp/requestrepo-0.0.6.tar.gz]
+[2024-05-19 16:40:40] INFO root fetch - main [MainThread]: End processing [requestrepo]: success
+[2024-05-19 16:40:40] INFO root fetch - processPackages [dongraphio]: Remove: archive file [/home/abi/fetcher/tmp/dongraphio-0.3.3.tar.gz]
+[2024-05-19 16:40:40] INFO root fetch - processPackages [dongraphio]: Remove: archive file [/home/abi/fetcher/tmp/dongraphio-0.3.4.tar.gz]
+[2024-05-19 16:40:40] INFO root fetch - main [MainThread]: End processing [dongraphio]: success
+[2024-05-19 16:40:40] INFO root fetch - processPackages [syncloud-lib]: Remove: archive file [/home/abi/fetcher/tmp/syncloud-lib-98.tar.gz]
+[2024-05-19 16:40:40] INFO root fetch - processPackages [syncloud-lib]: Remove: archive file [/home/abi/fetcher/tmp/syncloud-lib-99.tar.gz]
+[2024-05-19 16:40:40] INFO root fetch - main [MainThread]: End processing [syncloud-lib]: success
+[2024-05-19 16:40:40] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-19 16:40:40] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-19 16:40:40] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-19 16:40:40] INFO root fetch - main [MainThread]: Store serial: [23277359]
