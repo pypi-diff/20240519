@@ -3973,3 +3973,27 @@
 [2024-05-19 06:33:19] INFO root fetch - main [MainThread]: End processing [med-imagetools]: success
 [2024-05-19 06:33:19] INFO root fetch - main [MainThread]: End processing [gink]: success
 [2024-05-19 06:33:19] INFO root fetch - main [MainThread]: Store serial: [23273277]
+[2024-05-19 06:35:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273277]
+[2024-05-19 06:35:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 06:35:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: opposelessz
+[2024-05-19 06:35:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: psqlparse2
+[2024-05-19 06:35:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: reqs-cli
+[2024-05-19 06:35:28] INFO root fetch - processPackages [reqs-cli]: New version: [0.20240517.2.post1] Old Version: [0.20240517.2]
+[2024-05-19 06:35:28] INFO root fetch - processPackages [psqlparse2]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-19 06:35:28] INFO root fetch - processPackages [reqs-cli]: Downloading https://files.pythonhosted.org/packages/5d/a4/fcefb4f2bbe87e8f4060983225ff662b02e05f0c9afdd9d443c2d45c22b5/reqs_cli-0.20240517.2.tar.gz
+[2024-05-19 06:35:29] WARNING root fetch - processPackages [opposelessz]: Skipping, unable to determine old version
+[2024-05-19 06:35:29] INFO root fetch - main [MainThread]: End processing [opposelessz] error
+[2024-05-19 06:35:29] INFO root fetch - processPackages [psqlparse2]: Downloading https://files.pythonhosted.org/packages/1d/0b/5ed0f1e42a9a0586b2ca979110adf8dfdb49826f5d22dec77e8c3c30bc14/psqlparse2-0.0.5.tar.gz
+[2024-05-19 06:35:29] INFO root fetch - processPackages [reqs-cli]: Downloading https://files.pythonhosted.org/packages/e4/37/c817d0b4f92c89aefc3fb026bb16b13d271e1b2cd03d896f4c6f4ef6ae15/reqs_cli-0.20240517.2.post1.tar.gz
+[2024-05-19 06:35:29] INFO root fetch - processPackages [reqs-cli]: executing diffoscope
+[2024-05-19 06:35:29] INFO root fetch - processPackages [reqs-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reqs_cli-0.20240517.2.tar.gz tmp/reqs_cli-0.20240517.2.post1.tar.gz --markdown 20240519/r/reqs-cli/0.20240517.2-0.20240517.2.post1/README.md --exclude *.pyd
+[2024-05-19 06:35:29] INFO root fetch - processPackages [psqlparse2]: Downloading https://files.pythonhosted.org/packages/4b/26/e7ff50549e5f248d536737d7c85590c6e302ab8a68276793bcec20614db9/psqlparse2-0.0.6.tar.gz
+[2024-05-19 06:35:29] INFO root fetch - processPackages [psqlparse2]: executing diffoscope
+[2024-05-19 06:35:29] INFO root fetch - processPackages [psqlparse2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psqlparse2-0.0.5.tar.gz tmp/psqlparse2-0.0.6.tar.gz --markdown 20240519/p/psqlparse2/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-19 06:35:29] INFO root fetch - processPackages [reqs-cli]: Remove: archive file [/home/abi/fetcher/tmp/reqs_cli-0.20240517.2.tar.gz]
+[2024-05-19 06:35:29] INFO root fetch - processPackages [reqs-cli]: Remove: archive file [/home/abi/fetcher/tmp/reqs_cli-0.20240517.2.post1.tar.gz]
+[2024-05-19 06:35:29] INFO root fetch - main [MainThread]: End processing [reqs-cli]: success
+[2024-05-19 06:35:31] INFO root fetch - processPackages [psqlparse2]: Remove: archive file [/home/abi/fetcher/tmp/psqlparse2-0.0.5.tar.gz]
+[2024-05-19 06:35:31] INFO root fetch - processPackages [psqlparse2]: Remove: archive file [/home/abi/fetcher/tmp/psqlparse2-0.0.6.tar.gz]
+[2024-05-19 06:35:31] INFO root fetch - main [MainThread]: End processing [psqlparse2]: success
+[2024-05-19 06:35:31] INFO root fetch - main [MainThread]: Store serial: [23273286]
