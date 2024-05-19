@@ -6651,3 +6651,15 @@
 [2024-05-19 10:06:23] INFO root fetch - processPackages [adetailer]: Remove: archive file [/home/abi/fetcher/tmp/adetailer-24.4.2.tar.gz]
 [2024-05-19 10:06:23] INFO root fetch - main [MainThread]: End processing [adetailer]: success
 [2024-05-19 10:06:23] INFO root fetch - main [MainThread]: Store serial: [23274465]
+[2024-05-19 10:08:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274465]
+[2024-05-19 10:08:33] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 10:08:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyglove
+[2024-05-19 10:08:33] INFO root fetch - processPackages [pyglove]: New version: [0.4.5.dev20240518] Old Version: [0.4.5.dev20240517]
+[2024-05-19 10:08:33] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/4c/fd/cd47881922aeb4e8a800d51af670a62b8f8fa9a6946ea444986a38c19e37/pyglove-0.4.5.dev20240517.tar.gz
+[2024-05-19 10:08:34] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/6a/b6/8512d1b8627d3531644315c445d9513156e86093d257641101d41ae20607/pyglove-0.4.5.dev20240518.tar.gz
+[2024-05-19 10:08:34] INFO root fetch - processPackages [pyglove]: executing diffoscope
+[2024-05-19 10:08:34] INFO root fetch - processPackages [pyglove]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglove-0.4.5.dev20240517.tar.gz tmp/pyglove-0.4.5.dev20240518.tar.gz --markdown 20240519/p/pyglove/0.4.5.dev20240517-0.4.5.dev20240518/README.md --exclude *.pyd
+[2024-05-19 10:08:35] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240517.tar.gz]
+[2024-05-19 10:08:35] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240518.tar.gz]
+[2024-05-19 10:08:35] INFO root fetch - main [MainThread]: End processing [pyglove]: success
+[2024-05-19 10:08:35] INFO root fetch - main [MainThread]: Store serial: [23274468]
