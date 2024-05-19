@@ -7027,3 +7027,12 @@
 [2024-05-19 10:39:15] INFO root fetch - processPackages [generate-sequences]: Remove: archive file [/home/abi/fetcher/tmp/generate_sequences-0.0.8.tar.gz]
 [2024-05-19 10:39:15] INFO root fetch - main [MainThread]: End processing [generate-sequences]: success
 [2024-05-19 10:39:15] INFO root fetch - main [MainThread]: Store serial: [23274713]
+[2024-05-19 10:41:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274713]
+[2024-05-19 10:41:24] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 10:41:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: digestibilityz
+[2024-05-19 10:41:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pydaab
+[2024-05-19 10:41:24] WARNING root fetch - processPackages [digestibilityz]: Skipping, unable to determine old version
+[2024-05-19 10:41:24] INFO root fetch - main [MainThread]: End processing [digestibilityz] error
+[2024-05-19 10:41:24] WARNING root fetch - processPackages [pydaab]: Skipping, unable to determine old version
+[2024-05-19 10:41:24] INFO root fetch - main [MainThread]: End processing [pydaab] error
+[2024-05-19 10:41:24] INFO root fetch - main [MainThread]: Store serial: [23274721]
