@@ -4916,3 +4916,26 @@
 [2024-05-19 08:02:42] WARNING root fetch - processPackages [cauchoz]: Skipping, unable to determine old version
 [2024-05-19 08:02:42] INFO root fetch - main [MainThread]: End processing [cauchoz] error
 [2024-05-19 08:02:42] INFO root fetch - main [MainThread]: Store serial: [23273680]
+[2024-05-19 08:04:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273680]
+[2024-05-19 08:04:50] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-19 08:06:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273680]
+[2024-05-19 08:06:56] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 08:06:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: plexutils
+[2024-05-19 08:06:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: profilesz
+[2024-05-19 08:06:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torspy
+[2024-05-19 08:06:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: llm-parametrizer
+[2024-05-19 08:06:56] WARNING root fetch - processPackages [llm-parametrizer]: Skipping, unable to determine old version
+[2024-05-19 08:06:56] INFO root fetch - main [MainThread]: End processing [llm-parametrizer] error
+[2024-05-19 08:06:56] WARNING root fetch - processPackages [plexutils]: Skipping, unable to determine old version
+[2024-05-19 08:06:56] INFO root fetch - main [MainThread]: End processing [plexutils] error
+[2024-05-19 08:06:56] WARNING root fetch - processPackages [profilesz]: Skipping, unable to determine old version
+[2024-05-19 08:06:56] INFO root fetch - main [MainThread]: End processing [profilesz] error
+[2024-05-19 08:06:56] INFO root fetch - processPackages [torspy]: New version: [2.0.0] Old Version: [1.0.3]
+[2024-05-19 08:06:56] INFO root fetch - processPackages [torspy]: Downloading https://files.pythonhosted.org/packages/06/1e/ade39af409e5db9c4953c7b00c19d35fb2af6fed965f9b8e73c313fdb4d1/torspy-1.0.3.tar.gz
+[2024-05-19 08:06:57] INFO root fetch - processPackages [torspy]: Downloading https://files.pythonhosted.org/packages/9e/da/496ab322112f6686daa7ab00a05f1715b30b1a6230ca83576d7e3ac37664/torspy-2.0.0.tar.gz
+[2024-05-19 08:06:57] INFO root fetch - processPackages [torspy]: executing diffoscope
+[2024-05-19 08:06:57] INFO root fetch - processPackages [torspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torspy-1.0.3.tar.gz tmp/torspy-2.0.0.tar.gz --markdown 20240519/t/torspy/1.0.3-2.0.0/README.md --exclude *.pyd
+[2024-05-19 08:06:57] INFO root fetch - processPackages [torspy]: Remove: archive file [/home/abi/fetcher/tmp/torspy-1.0.3.tar.gz]
+[2024-05-19 08:06:57] INFO root fetch - processPackages [torspy]: Remove: archive file [/home/abi/fetcher/tmp/torspy-2.0.0.tar.gz]
+[2024-05-19 08:06:57] INFO root fetch - main [MainThread]: End processing [torspy]: success
+[2024-05-19 08:06:57] INFO root fetch - main [MainThread]: Store serial: [23273692]
