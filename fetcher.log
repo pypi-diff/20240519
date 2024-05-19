@@ -1666,3 +1666,12 @@
 [2024-05-19 02:47:03] INFO root fetch - processPackages [RNASQLite]: Remove: archive file [/home/abi/fetcher/tmp/rnasqlite-0.1.5.tar.gz]
 [2024-05-19 02:47:03] INFO root fetch - main [MainThread]: End processing [RNASQLite]: success
 [2024-05-19 02:47:03] INFO root fetch - main [MainThread]: Store serial: [23272196]
+[2024-05-19 02:49:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272196]
+[2024-05-19 02:49:11] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 02:49:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rdatapp
+[2024-05-19 02:49:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: abscondedz
+[2024-05-19 02:49:11] WARNING root fetch - processPackages [rdatapp]: Skipping, unable to determine old version
+[2024-05-19 02:49:11] INFO root fetch - main [MainThread]: End processing [rdatapp] error
+[2024-05-19 02:49:11] WARNING root fetch - processPackages [abscondedz]: Skipping, unable to determine old version
+[2024-05-19 02:49:11] INFO root fetch - main [MainThread]: End processing [abscondedz] error
+[2024-05-19 02:49:11] INFO root fetch - main [MainThread]: Store serial: [23272203]
