@@ -11471,3 +11471,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 15:42:39] INFO root fetch - processPackages [monstr]: Remove: archive file [/home/abi/fetcher/tmp/monstr-0.1.4.tar.gz]
 [2024-05-19 15:42:39] INFO root fetch - main [MainThread]: End processing [monstr]: success
 [2024-05-19 15:42:39] INFO root fetch - main [MainThread]: Store serial: [23276893]
+[2024-05-19 15:44:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276893]
+[2024-05-19 15:44:48] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 15:44:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: IconMatch
+[2024-05-19 15:44:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: squice
+[2024-05-19 15:44:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PixPayloadGen
+[2024-05-19 15:44:48] WARNING root fetch - processPackages [PixPayloadGen]: Skipping, unable to determine old version
+[2024-05-19 15:44:48] INFO root fetch - main [MainThread]: End processing [PixPayloadGen] error
+[2024-05-19 15:44:48] WARNING root fetch - processPackages [IconMatch]: Skipping, unable to determine old version
+[2024-05-19 15:44:48] INFO root fetch - main [MainThread]: End processing [IconMatch] error
+[2024-05-19 15:44:48] WARNING root fetch - processPackages [squice]: Skipping, unable to determine old version
+[2024-05-19 15:44:48] INFO root fetch - main [MainThread]: End processing [squice] error
+[2024-05-19 15:44:48] INFO root fetch - main [MainThread]: Store serial: [23276905]
