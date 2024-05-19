@@ -3509,3 +3509,42 @@
 [2024-05-19 05:47:40] INFO root fetch - processPackages [xflow-net]: Remove: archive file [/home/abi/fetcher/tmp/xflow-net-0.1.3.tar.gz]
 [2024-05-19 05:47:40] INFO root fetch - main [MainThread]: End processing [xflow-net]: success
 [2024-05-19 05:47:40] INFO root fetch - main [MainThread]: Store serial: [23273086]
+[2024-05-19 05:49:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273086]
+[2024-05-19 05:49:49] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-19 05:49:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: poutz
+[2024-05-19 05:49:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: streamlit-pandera
+[2024-05-19 05:49:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ctrip-app-ui
+[2024-05-19 05:49:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: factorial-aivn-nam
+[2024-05-19 05:49:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: func2stream
+[2024-05-19 05:49:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: baosight
+[2024-05-19 05:49:49] INFO root fetch - processPackages [ctrip-app-ui]: New version: [0.5.6] Old Version: [0.5.5]
+[2024-05-19 05:49:49] INFO root fetch - processPackages [baosight]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 05:49:49] INFO root fetch - processPackages [func2stream]: New version: [0.0.0.dev20240519] Old Version: [0.0.0]
+[2024-05-19 05:49:49] WARNING root fetch - processPackages [poutz]: Skipping, unable to determine old version
+[2024-05-19 05:49:49] INFO root fetch - main [MainThread]: End processing [poutz] error
+[2024-05-19 05:49:49] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/c0/fc/b200b182bf7a98e7ea2be94e2de59b8ad9f057ddc08180e66ebecbbd144b/ctrip-app-ui-0.5.5.tar.gz
+[2024-05-19 05:49:49] WARNING root fetch - processPackages [streamlit-pandera]: Skipping, unable to determine old version
+[2024-05-19 05:49:49] INFO root fetch - main [MainThread]: End processing [streamlit-pandera] error
+[2024-05-19 05:49:49] INFO root fetch - processPackages [baosight]: Downloading https://files.pythonhosted.org/packages/72/e0/5c051218be62e92d7cc33bcf889a9f069781fab83c116c9e05a6f86721fe/baosight-0.0.8.tar.gz
+[2024-05-19 05:49:49] WARNING root fetch - processPackages [factorial-aivn-nam]: Skipping, unable to determine old version
+[2024-05-19 05:49:49] INFO root fetch - main [MainThread]: End processing [factorial-aivn-nam] error
+[2024-05-19 05:49:49] INFO root fetch - processPackages [func2stream]: Downloading https://files.pythonhosted.org/packages/82/b7/0d78c77a1125fd1c0ec604dbe20591dbb20271c27b29310d905b81261156/func2stream-0.0.0.tar.gz
+[2024-05-19 05:49:50] INFO root fetch - processPackages [baosight]: Downloading https://files.pythonhosted.org/packages/58/9d/77d14df517a7f6c898a66f8dfe33d03cdf374f66524ab680d57de93c1320/baosight-0.0.9.tar.gz
+[2024-05-19 05:49:50] INFO root fetch - processPackages [func2stream]: Downloading https://files.pythonhosted.org/packages/df/10/6e60c0fb9c50a8d4238480b1bb0145249cde202d6ce095be55163c3d1018/func2stream-0.0.0.dev20240519.tar.gz
+[2024-05-19 05:49:50] INFO root fetch - processPackages [baosight]: executing diffoscope
+[2024-05-19 05:49:50] INFO root fetch - processPackages [baosight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baosight-0.0.8.tar.gz tmp/baosight-0.0.9.tar.gz --markdown 20240519/b/baosight/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 05:49:50] INFO root fetch - processPackages [func2stream]: executing diffoscope
+[2024-05-19 05:49:50] INFO root fetch - processPackages [func2stream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/func2stream-0.0.0.tar.gz tmp/func2stream-0.0.0.dev20240519.tar.gz --markdown 20240519/f/func2stream/0.0.0-0.0.0.dev20240519/README.md --exclude *.pyd
+[2024-05-19 05:49:50] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/4b/c1/16ec8407faa5753427ef094b89a061492266e19bb4019e2cf2ea1eee4c6c/ctrip-app-ui-0.5.6.tar.gz
+[2024-05-19 05:49:50] INFO root fetch - processPackages [ctrip-app-ui]: executing diffoscope
+[2024-05-19 05:49:50] INFO root fetch - processPackages [ctrip-app-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctrip-app-ui-0.5.5.tar.gz tmp/ctrip-app-ui-0.5.6.tar.gz --markdown 20240519/c/ctrip-app-ui/0.5.5-0.5.6/README.md --exclude *.pyd
+[2024-05-19 05:49:50] INFO root fetch - processPackages [baosight]: Remove: archive file [/home/abi/fetcher/tmp/baosight-0.0.8.tar.gz]
+[2024-05-19 05:49:50] INFO root fetch - processPackages [baosight]: Remove: archive file [/home/abi/fetcher/tmp/baosight-0.0.9.tar.gz]
+[2024-05-19 05:49:50] INFO root fetch - main [MainThread]: End processing [baosight]: success
+[2024-05-19 05:49:50] INFO root fetch - processPackages [func2stream]: Remove: archive file [/home/abi/fetcher/tmp/func2stream-0.0.0.tar.gz]
+[2024-05-19 05:49:50] INFO root fetch - processPackages [func2stream]: Remove: archive file [/home/abi/fetcher/tmp/func2stream-0.0.0.dev20240519.tar.gz]
+[2024-05-19 05:49:50] INFO root fetch - main [MainThread]: End processing [func2stream]: success
+[2024-05-19 05:49:51] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.5.5.tar.gz]
+[2024-05-19 05:49:51] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.5.6.tar.gz]
+[2024-05-19 05:49:51] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
+[2024-05-19 05:49:51] INFO root fetch - main [MainThread]: Store serial: [23273108]
