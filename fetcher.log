@@ -14072,3 +14072,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 18:12:37] INFO root fetch - processPackages [pytest-xprocess]: Remove: archive file [/home/abi/fetcher/tmp/pytest-xprocess-1.0.2.tar.gz]
 [2024-05-19 18:12:37] INFO root fetch - main [MainThread]: End processing [pytest-xprocess]: success
 [2024-05-19 18:12:37] INFO root fetch - main [MainThread]: Store serial: [23278135]
+[2024-05-19 18:14:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23278135]
+[2024-05-19 18:14:46] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 18:14:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: binary_wheel_builder
+[2024-05-19 18:14:46] INFO root fetch - processPackages [binary_wheel_builder]: New version: [3.3.0] Old Version: [3.2.0]
+[2024-05-19 18:14:46] INFO root fetch - processPackages [binary_wheel_builder]: Downloading https://files.pythonhosted.org/packages/95/ac/38abfd25a8cf842efbe27a108a656cad93051ba6d477fc523942346ccd0e/binary_wheel_builder-3.2.0.tar.gz
+[2024-05-19 18:14:46] INFO root fetch - processPackages [binary_wheel_builder]: Downloading https://files.pythonhosted.org/packages/4b/fb/2e39e814e7a11e941822cce00055a3f2d6552333df641eb6fcc05efbb409/binary_wheel_builder-3.3.0.tar.gz
+[2024-05-19 18:14:46] INFO root fetch - processPackages [binary_wheel_builder]: executing diffoscope
+[2024-05-19 18:14:46] INFO root fetch - processPackages [binary_wheel_builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/binary_wheel_builder-3.2.0.tar.gz tmp/binary_wheel_builder-3.3.0.tar.gz --markdown 20240519/b/binary_wheel_builder/3.2.0-3.3.0/README.md --exclude *.pyd
+[2024-05-19 18:14:47] INFO root fetch - processPackages [binary_wheel_builder]: Remove: archive file [/home/abi/fetcher/tmp/binary_wheel_builder-3.2.0.tar.gz]
+[2024-05-19 18:14:47] INFO root fetch - processPackages [binary_wheel_builder]: Remove: archive file [/home/abi/fetcher/tmp/binary_wheel_builder-3.3.0.tar.gz]
+[2024-05-19 18:14:47] INFO root fetch - main [MainThread]: End processing [binary_wheel_builder]: success
+[2024-05-19 18:14:47] INFO root fetch - main [MainThread]: Store serial: [23278141]
