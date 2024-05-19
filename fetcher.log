@@ -3583,3 +3583,32 @@
 [2024-05-19 05:52:00] INFO root fetch - processPackages [func2stream]: Remove: archive file [/home/abi/fetcher/tmp/func2stream-0.0.1.dev20240519.tar.gz]
 [2024-05-19 05:52:00] INFO root fetch - main [MainThread]: End processing [func2stream]: success
 [2024-05-19 05:52:00] INFO root fetch - main [MainThread]: Store serial: [23273122]
+[2024-05-19 05:54:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273122]
+[2024-05-19 05:54:09] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 05:54:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyMyGekko
+[2024-05-19 05:54:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: electrosurgicalz
+[2024-05-19 05:54:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: stefutils
+[2024-05-19 05:54:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sqlframe
+[2024-05-19 05:54:09] INFO root fetch - processPackages [sqlframe]: New version: [0.1.dev3] Old Version: [0.0.2]
+[2024-05-19 05:54:09] INFO root fetch - processPackages [stefutils]: New version: [0.9.0] Old Version: [0.8.2]
+[2024-05-19 05:54:09] INFO root fetch - processPackages [sqlframe]: Downloading https://files.pythonhosted.org/packages/68/75/257cf6459bf474a3b542207f87ab6ed2f27e4db0e5da7f54ba1dcfb59915/sqlframe-0.0.2.tar.gz
+[2024-05-19 05:54:09] INFO root fetch - processPackages [stefutils]: Downloading https://files.pythonhosted.org/packages/35/8a/1e1d14788f07a9e2f1f826ff7ed0782d942b144ca6bdd3e7aba10d88d63c/stefutils-0.8.2.tar.gz
+[2024-05-19 05:54:09] INFO root fetch - processPackages [PyMyGekko]: New version: [1.2.0rc1] Old Version: [1.2.0]
+[2024-05-19 05:54:09] WARNING root fetch - processPackages [electrosurgicalz]: Skipping, unable to determine old version
+[2024-05-19 05:54:09] INFO root fetch - main [MainThread]: End processing [electrosurgicalz] error
+[2024-05-19 05:54:09] WARNING root fetch - processPackages [sqlframe]: Skipping package: exceeds size limit 17076909>=10485760
+[2024-05-19 05:54:09] INFO root fetch - main [MainThread]: End processing [sqlframe] error
+[2024-05-19 05:54:09] INFO root fetch - processPackages [PyMyGekko]: Downloading https://files.pythonhosted.org/packages/8a/fd/b62003f4d1727303abd5f56c560c48cf073553503d614495be47dc68b6cb/pymygekko-1.2.0.tar.gz
+[2024-05-19 05:54:09] INFO root fetch - processPackages [stefutils]: Downloading https://files.pythonhosted.org/packages/97/83/18c4d714dca8e70776fec14f20e075956fd6a82321ac6df03f78534d47eb/stefutils-0.9.0.tar.gz
+[2024-05-19 05:54:10] INFO root fetch - processPackages [stefutils]: executing diffoscope
+[2024-05-19 05:54:10] INFO root fetch - processPackages [stefutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stefutils-0.8.2.tar.gz tmp/stefutils-0.9.0.tar.gz --markdown 20240519/s/stefutils/0.8.2-0.9.0/README.md --exclude *.pyd
+[2024-05-19 05:54:10] INFO root fetch - processPackages [PyMyGekko]: Downloading https://files.pythonhosted.org/packages/25/57/824d912bda58e6c1d15d10438aa4db1ffdf7484340865d5c2b46032ea27c/pymygekko-1.2.0rc1.tar.gz
+[2024-05-19 05:54:10] INFO root fetch - processPackages [PyMyGekko]: executing diffoscope
+[2024-05-19 05:54:10] INFO root fetch - processPackages [PyMyGekko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymygekko-1.2.0.tar.gz tmp/pymygekko-1.2.0rc1.tar.gz --markdown 20240519/P/PyMyGekko/1.2.0-1.2.0rc1/README.md --exclude *.pyd
+[2024-05-19 05:54:10] INFO root fetch - processPackages [stefutils]: Remove: archive file [/home/abi/fetcher/tmp/stefutils-0.8.2.tar.gz]
+[2024-05-19 05:54:10] INFO root fetch - processPackages [stefutils]: Remove: archive file [/home/abi/fetcher/tmp/stefutils-0.9.0.tar.gz]
+[2024-05-19 05:54:10] INFO root fetch - main [MainThread]: End processing [stefutils]: success
+[2024-05-19 05:54:10] INFO root fetch - processPackages [PyMyGekko]: Remove: archive file [/home/abi/fetcher/tmp/pymygekko-1.2.0.tar.gz]
+[2024-05-19 05:54:10] INFO root fetch - processPackages [PyMyGekko]: Remove: archive file [/home/abi/fetcher/tmp/pymygekko-1.2.0rc1.tar.gz]
+[2024-05-19 05:54:10] INFO root fetch - main [MainThread]: End processing [PyMyGekko]: success
+[2024-05-19 05:54:10] INFO root fetch - main [MainThread]: Store serial: [23273134]
