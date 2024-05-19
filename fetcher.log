@@ -14634,3 +14634,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 18:58:35] INFO root fetch - processPackages [lnschema_core]: Remove: archive file [/home/abi/fetcher/tmp/lnschema_core-0.9.0.tar.gz]
 [2024-05-19 18:58:35] INFO root fetch - main [MainThread]: End processing [lnschema_core]: success
 [2024-05-19 18:58:35] INFO root fetch - main [MainThread]: Store serial: [23278366]
+[2024-05-19 19:00:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23278366]
+[2024-05-19 19:00:44] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 19:00:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lnschema_bionty
+[2024-05-19 19:00:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: floatingparser
+[2024-05-19 19:00:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bionty
+[2024-05-19 19:00:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aranet4
+[2024-05-19 19:00:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: MobileInventoryCLI
+[2024-05-19 19:00:44] INFO root fetch - processPackages [floatingparser]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-19 19:00:44] INFO root fetch - processPackages [floatingparser]: Downloading https://files.pythonhosted.org/packages/da/6b/6c0ccf68b97bffd90c74c2f97c96b79f76c269f57a098c2065bfb2fee7b0/floatingparser-1.0.1.tar.gz
+[2024-05-19 19:00:44] INFO root fetch - processPackages [aranet4]: New version: [2.3.4b1] Old Version: [2.3.4]
+[2024-05-19 19:00:44] INFO root fetch - processPackages [lnschema_bionty]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-05-19 19:00:44] INFO root fetch - processPackages [bionty]: New version: [0.9.0rc1] Old Version: [0.9.0]
+[2024-05-19 19:00:44] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.99] Old Version: [0.4.98]
+[2024-05-19 19:00:45] INFO root fetch - processPackages [aranet4]: Downloading https://files.pythonhosted.org/packages/da/1b/30702caf5653f41ad242f6606395be2932ead67326eb6e90abb9f6739d10/aranet4-2.3.4.tar.gz
+[2024-05-19 19:00:45] INFO root fetch - processPackages [lnschema_bionty]: Downloading https://files.pythonhosted.org/packages/12/bb/32a1cbaa73ee4f038a3540bbbf0b3d7e27f22edcdbd7d7c80667fef68afd/lnschema_bionty-0.8.1.tar.gz
+[2024-05-19 19:00:45] INFO root fetch - processPackages [bionty]: Downloading https://files.pythonhosted.org/packages/99/96/56b5f6e7d406917b173d9b761f4b2ff41b68d375105fe40b9b23131b295d/bionty-0.9.0.tar.gz
+[2024-05-19 19:00:45] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/34/2d/1e50d7f512e3d39590afb4a6c37340af98e5c4eadc77d9de653aab0cb49f/MobileInventoryCLI-0.4.98.tar.gz
+[2024-05-19 19:00:45] INFO root fetch - processPackages [floatingparser]: Downloading https://files.pythonhosted.org/packages/e3/7a/48b090d3b8db61f7001c8711458ef3db1090e069668c3e9da5623a549cca/floatingparser-1.0.2.tar.gz
+[2024-05-19 19:00:45] INFO root fetch - processPackages [floatingparser]: executing diffoscope
+[2024-05-19 19:00:45] INFO root fetch - processPackages [floatingparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/floatingparser-1.0.1.tar.gz tmp/floatingparser-1.0.2.tar.gz --markdown 20240519/f/floatingparser/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-19 19:00:45] INFO root fetch - processPackages [aranet4]: Downloading https://files.pythonhosted.org/packages/5b/b3/71266983042e0f0710021a6bd3d8e63302a23be3a1de8475e1ce12bbfa0c/aranet4-2.3.4b1.tar.gz
+[2024-05-19 19:00:45] INFO root fetch - processPackages [lnschema_bionty]: Downloading https://files.pythonhosted.org/packages/ed/64/d2babdba858b56f5825e7ac3e2d375cf42dcf278f3c6ad9daf179e40b556/lnschema_bionty-0.9.0.tar.gz
+[2024-05-19 19:00:45] INFO root fetch - processPackages [bionty]: Downloading https://files.pythonhosted.org/packages/f4/01/3a99104d9a37cf7fbdae5c733cec97f252f8eb35f5553cd253a05edf8420/bionty-0.9.0rc1.tar.gz
+[2024-05-19 19:00:45] INFO root fetch - processPackages [aranet4]: executing diffoscope
+[2024-05-19 19:00:45] INFO root fetch - processPackages [aranet4]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aranet4-2.3.4.tar.gz tmp/aranet4-2.3.4b1.tar.gz --markdown 20240519/a/aranet4/2.3.4-2.3.4b1/README.md --exclude *.pyd
+[2024-05-19 19:00:45] INFO root fetch - processPackages [lnschema_bionty]: executing diffoscope
+[2024-05-19 19:00:45] INFO root fetch - processPackages [lnschema_bionty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lnschema_bionty-0.8.1.tar.gz tmp/lnschema_bionty-0.9.0.tar.gz --markdown 20240519/l/lnschema_bionty/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-05-19 19:00:45] INFO root fetch - processPackages [bionty]: executing diffoscope
+[2024-05-19 19:00:45] INFO root fetch - processPackages [bionty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bionty-0.9.0.tar.gz tmp/bionty-0.9.0rc1.tar.gz --markdown 20240519/b/bionty/0.9.0-0.9.0rc1/README.md --exclude *.pyd
+[2024-05-19 19:00:45] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/44/8c/14cdf7fc3f0b69cae35ba7ee2852fb70e3cab687142869ee3deb104ffc71/MobileInventoryCLI-0.4.99.tar.gz
+[2024-05-19 19:00:45] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-05-19 19:00:45] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.98.tar.gz tmp/MobileInventoryCLI-0.4.99.tar.gz --markdown 20240519/M/MobileInventoryCLI/0.4.98-0.4.99/README.md --exclude *.pyd
+[2024-05-19 19:00:45] INFO root fetch - processPackages [floatingparser]: Remove: archive file [/home/abi/fetcher/tmp/floatingparser-1.0.1.tar.gz]
+[2024-05-19 19:00:45] INFO root fetch - processPackages [floatingparser]: Remove: archive file [/home/abi/fetcher/tmp/floatingparser-1.0.2.tar.gz]
+[2024-05-19 19:00:45] INFO root fetch - main [MainThread]: End processing [floatingparser]: success
+[2024-05-19 19:00:46] INFO root fetch - processPackages [aranet4]: Remove: archive file [/home/abi/fetcher/tmp/aranet4-2.3.4.tar.gz]
+[2024-05-19 19:00:46] INFO root fetch - processPackages [aranet4]: Remove: archive file [/home/abi/fetcher/tmp/aranet4-2.3.4b1.tar.gz]
+[2024-05-19 19:00:46] INFO root fetch - main [MainThread]: End processing [aranet4]: success
+[2024-05-19 19:00:46] INFO root fetch - processPackages [lnschema_bionty]: Remove: archive file [/home/abi/fetcher/tmp/lnschema_bionty-0.8.1.tar.gz]
+[2024-05-19 19:00:46] INFO root fetch - processPackages [lnschema_bionty]: Remove: archive file [/home/abi/fetcher/tmp/lnschema_bionty-0.9.0.tar.gz]
+[2024-05-19 19:00:46] INFO root fetch - main [MainThread]: End processing [lnschema_bionty]: success
+[2024-05-19 19:00:46] INFO root fetch - processPackages [bionty]: Remove: archive file [/home/abi/fetcher/tmp/bionty-0.9.0.tar.gz]
+[2024-05-19 19:00:46] INFO root fetch - processPackages [bionty]: Remove: archive file [/home/abi/fetcher/tmp/bionty-0.9.0rc1.tar.gz]
+[2024-05-19 19:00:46] INFO root fetch - main [MainThread]: End processing [bionty]: success
+[2024-05-19 19:00:46] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.98.tar.gz]
+[2024-05-19 19:00:46] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.99.tar.gz]
+[2024-05-19 19:00:46] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-05-19 19:00:46] INFO root fetch - main [MainThread]: Store serial: [23278378]
