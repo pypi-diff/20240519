@@ -15665,3 +15665,72 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 19:42:23] INFO root fetch - processPackages [dbnd-test-scenarios]: Remove: archive file [/home/abi/fetcher/tmp/dbnd-test-scenarios-1.0.9.1.tar.gz]
 [2024-05-19 19:42:23] INFO root fetch - main [MainThread]: End processing [dbnd-test-scenarios]: success
 [2024-05-19 19:42:23] INFO root fetch - main [MainThread]: Store serial: [23278818]
+[2024-05-19 19:44:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23278818]
+[2024-05-19 19:44:32] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-19 19:44:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: BigEDA
+[2024-05-19 19:44:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyasic
+[2024-05-19 19:44:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hematologistz
+[2024-05-19 19:44:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: stefutils
+[2024-05-19 19:44:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: flatpack
+[2024-05-19 19:44:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: plagiarism-detect-for-nju
+[2024-05-19 19:44:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: retriever-search
+[2024-05-19 19:44:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: duplicity
+[2024-05-19 19:44:32] INFO root fetch - processPackages [BigEDA]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 19:44:32] INFO root fetch - processPackages [retriever-search]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-19 19:44:32] INFO root fetch - processPackages [plagiarism-detect-for-nju]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-19 19:44:32] INFO root fetch - processPackages [stefutils]: New version: [0.9.0] Old Version: [0.8.2]
+[2024-05-19 19:44:32] INFO root fetch - processPackages [flatpack]: New version: [3.4.9] Old Version: [3.4.8]
+[2024-05-19 19:44:32] INFO root fetch - processPackages [plagiarism-detect-for-nju]: Downloading https://files.pythonhosted.org/packages/3c/46/c8a92a07631531072ec4e69507af15b6e5088ef689d72c9a960cf0345b6c/plagiarism_detect_for_nju-1.0.0.tar.gz
+[2024-05-19 19:44:32] WARNING root fetch - processPackages [hematologistz]: Skipping, unable to determine old version
+[2024-05-19 19:44:32] INFO root fetch - main [MainThread]: End processing [hematologistz] error
+[2024-05-19 19:44:32] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/2f/fe/5c10bf9dfaa50e4e1234e81e022638b3ef20c821e939dae4cdc3da332e46/bigeda-0.0.8.tar.gz
+[2024-05-19 19:44:32] INFO root fetch - processPackages [pyasic]: New version: [0.9.4] Old Version: [0.9.3]
+[2024-05-19 19:44:32] INFO root fetch - processPackages [retriever-search]: Downloading https://files.pythonhosted.org/packages/ea/0b/393c7b9c91d99e5160536b98bb1397819b76ee8ed7726aaa89277229508c/retriever_search-0.2.0.tar.gz
+[2024-05-19 19:44:32] INFO root fetch - processPackages [duplicity]: New version: [2.2.4rc3] Old Version: [2.2.4rc2]
+[2024-05-19 19:44:32] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/92/5a/46a0817bd1cfcbeb0f041626a2cc2b28a97a17caa6609495cfb355a5d90e/flatpack-3.4.8.tar.gz
+[2024-05-19 19:44:32] INFO root fetch - processPackages [stefutils]: Downloading https://files.pythonhosted.org/packages/35/8a/1e1d14788f07a9e2f1f826ff7ed0782d942b144ca6bdd3e7aba10d88d63c/stefutils-0.8.2.tar.gz
+[2024-05-19 19:44:32] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/b1/5d/ec41b2b9af7223a14c0e82d4f64cbeb0d0339a0d8bca37dbb041af6ef14d/bigeda-0.0.9.tar.gz
+[2024-05-19 19:44:32] INFO root fetch - processPackages [plagiarism-detect-for-nju]: Downloading https://files.pythonhosted.org/packages/30/2d/cb9abfc930494d97e4623edb531eb438a53381fa3e668c395c1a8c4a66df/plagiarism_detect_for_nju-1.0.1.tar.gz
+[2024-05-19 19:44:32] INFO root fetch - processPackages [pyasic]: Downloading https://files.pythonhosted.org/packages/8b/cb/6d4cd3f342cc1eda735f322c923e89b06fb809652bccc8f7ba41b10189f2/pyasic-0.9.3.tar.gz
+[2024-05-19 19:44:32] INFO root fetch - processPackages [retriever-search]: Downloading https://files.pythonhosted.org/packages/c6/42/40ac323a10da47deffc95f4d96d297e65cd83ecc241b81caa58570578aa5/retriever_search-0.2.1.tar.gz
+[2024-05-19 19:44:32] INFO root fetch - processPackages [duplicity]: Downloading https://files.pythonhosted.org/packages/81/6d/3e46c4d04f3bdc0b3a974cc3f7a57a4c9b2c11ae2652b9f48d585783929a/duplicity-2.2.4rc2.tar.gz
+[2024-05-19 19:44:33] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/29/b6/9545d80064161872f90e25faa6bb7dc31698e88762b3d442b5fb491967fd/flatpack-3.4.9.tar.gz
+[2024-05-19 19:44:33] INFO root fetch - processPackages [stefutils]: Downloading https://files.pythonhosted.org/packages/97/83/18c4d714dca8e70776fec14f20e075956fd6a82321ac6df03f78534d47eb/stefutils-0.9.0.tar.gz
+[2024-05-19 19:44:33] INFO root fetch - processPackages [BigEDA]: executing diffoscope
+[2024-05-19 19:44:33] INFO root fetch - processPackages [BigEDA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigeda-0.0.8.tar.gz tmp/bigeda-0.0.9.tar.gz --markdown 20240519/B/BigEDA/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 19:44:33] INFO root fetch - processPackages [plagiarism-detect-for-nju]: executing diffoscope
+[2024-05-19 19:44:33] INFO root fetch - processPackages [plagiarism-detect-for-nju]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plagiarism_detect_for_nju-1.0.0.tar.gz tmp/plagiarism_detect_for_nju-1.0.1.tar.gz --markdown 20240519/p/plagiarism-detect-for-nju/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-19 19:44:33] INFO root fetch - processPackages [retriever-search]: executing diffoscope
+[2024-05-19 19:44:33] INFO root fetch - processPackages [retriever-search]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/retriever_search-0.2.0.tar.gz tmp/retriever_search-0.2.1.tar.gz --markdown 20240519/r/retriever-search/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-19 19:44:33] INFO root fetch - processPackages [stefutils]: executing diffoscope
+[2024-05-19 19:44:33] INFO root fetch - processPackages [stefutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stefutils-0.8.2.tar.gz tmp/stefutils-0.9.0.tar.gz --markdown 20240519/s/stefutils/0.8.2-0.9.0/README.md --exclude *.pyd
+[2024-05-19 19:44:33] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-05-19 19:44:33] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.4.8.tar.gz tmp/flatpack-3.4.9.tar.gz --markdown 20240519/f/flatpack/3.4.8-3.4.9/README.md --exclude *.pyd
+[2024-05-19 19:44:33] INFO root fetch - processPackages [pyasic]: Downloading https://files.pythonhosted.org/packages/70/30/6c8b77c23f901b5c8b406344a29a98220a0b5212116530bd177635c4430d/pyasic-0.9.4.tar.gz
+[2024-05-19 19:44:33] INFO root fetch - processPackages [pyasic]: executing diffoscope
+[2024-05-19 19:44:33] INFO root fetch - processPackages [pyasic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyasic-0.9.3.tar.gz tmp/pyasic-0.9.4.tar.gz --markdown 20240519/p/pyasic/0.9.3-0.9.4/README.md --exclude *.pyd
+[2024-05-19 19:44:33] INFO root fetch - processPackages [duplicity]: Downloading https://files.pythonhosted.org/packages/c6/b4/a8b531ee5a12681ed4164e265b78a7e0513b81e5ae37c27860829cb497c0/duplicity-2.2.4rc3.tar.gz
+[2024-05-19 19:44:33] INFO root fetch - processPackages [plagiarism-detect-for-nju]: Remove: archive file [/home/abi/fetcher/tmp/plagiarism_detect_for_nju-1.0.0.tar.gz]
+[2024-05-19 19:44:33] INFO root fetch - processPackages [plagiarism-detect-for-nju]: Remove: archive file [/home/abi/fetcher/tmp/plagiarism_detect_for_nju-1.0.1.tar.gz]
+[2024-05-19 19:44:33] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.8.tar.gz]
+[2024-05-19 19:44:33] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.9.tar.gz]
+[2024-05-19 19:44:33] INFO root fetch - main [MainThread]: End processing [plagiarism-detect-for-nju]: success
+[2024-05-19 19:44:33] INFO root fetch - main [MainThread]: End processing [BigEDA]: success
+[2024-05-19 19:44:33] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.8.tar.gz]
+[2024-05-19 19:44:33] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.9.tar.gz]
+[2024-05-19 19:44:33] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-05-19 19:44:33] INFO root fetch - processPackages [retriever-search]: Remove: archive file [/home/abi/fetcher/tmp/retriever_search-0.2.0.tar.gz]
+[2024-05-19 19:44:33] INFO root fetch - processPackages [retriever-search]: Remove: archive file [/home/abi/fetcher/tmp/retriever_search-0.2.1.tar.gz]
+[2024-05-19 19:44:33] INFO root fetch - main [MainThread]: End processing [retriever-search]: success
+[2024-05-19 19:44:33] INFO root fetch - processPackages [duplicity]: executing diffoscope
+[2024-05-19 19:44:33] INFO root fetch - processPackages [duplicity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/duplicity-2.2.4rc2.tar.gz tmp/duplicity-2.2.4rc3.tar.gz --markdown 20240519/d/duplicity/2.2.4rc2-2.2.4rc3/README.md --exclude *.pyd
+[2024-05-19 19:44:33] INFO root fetch - processPackages [stefutils]: Remove: archive file [/home/abi/fetcher/tmp/stefutils-0.8.2.tar.gz]
+[2024-05-19 19:44:33] INFO root fetch - processPackages [stefutils]: Remove: archive file [/home/abi/fetcher/tmp/stefutils-0.9.0.tar.gz]
+[2024-05-19 19:44:33] INFO root fetch - main [MainThread]: End processing [stefutils]: success
+[2024-05-19 19:44:34] INFO root fetch - processPackages [pyasic]: Remove: archive file [/home/abi/fetcher/tmp/pyasic-0.9.3.tar.gz]
+[2024-05-19 19:44:34] INFO root fetch - processPackages [pyasic]: Remove: archive file [/home/abi/fetcher/tmp/pyasic-0.9.4.tar.gz]
+[2024-05-19 19:44:34] INFO root fetch - main [MainThread]: End processing [pyasic]: success
+[2024-05-19 19:44:35] INFO root fetch - processPackages [duplicity]: Remove: archive file [/home/abi/fetcher/tmp/duplicity-2.2.4rc2.tar.gz]
+[2024-05-19 19:44:35] INFO root fetch - processPackages [duplicity]: Remove: archive file [/home/abi/fetcher/tmp/duplicity-2.2.4rc3.tar.gz]
+[2024-05-19 19:44:35] INFO root fetch - main [MainThread]: End processing [duplicity]: success
+[2024-05-19 19:44:35] INFO root fetch - main [MainThread]: Store serial: [23278847]
