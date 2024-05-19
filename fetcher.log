@@ -6497,3 +6497,60 @@
 [2024-05-19 09:57:35] INFO root fetch - processPackages [iac-init]: Remove: archive file [/home/abi/fetcher/tmp/iac_init-0.7.4.tar.gz]
 [2024-05-19 09:57:35] INFO root fetch - main [MainThread]: End processing [iac-init]: success
 [2024-05-19 09:57:35] INFO root fetch - main [MainThread]: Store serial: [23274401]
+[2024-05-19 09:59:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274401]
+[2024-05-19 09:59:49] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-19 09:59:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tf-nightly
+[2024-05-19 09:59:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: data-preprocessing-lib
+[2024-05-19 09:59:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gymconnectx
+[2024-05-19 09:59:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: outpostcli
+[2024-05-19 09:59:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: symbolicai
+[2024-05-19 09:59:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: uncivilz
+[2024-05-19 09:59:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mass-composition
+[2024-05-19 09:59:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: data-preprocessing-lib-byarat
+[2024-05-19 09:59:49] INFO root fetch - processPackages [gymconnectx]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-19 09:59:49] INFO root fetch - processPackages [outpostcli]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 09:59:49] INFO root fetch - processPackages [mass-composition]: New version: [0.6.6] Old Version: [0.6.5]
+[2024-05-19 09:59:49] WARNING root fetch - processPackages [data-preprocessing-lib]: Skipping, unable to determine old version
+[2024-05-19 09:59:49] INFO root fetch - main [MainThread]: End processing [data-preprocessing-lib] error
+[2024-05-19 09:59:49] WARNING root fetch - processPackages [uncivilz]: Skipping, unable to determine old version
+[2024-05-19 09:59:49] INFO root fetch - main [MainThread]: End processing [uncivilz] error
+[2024-05-19 09:59:49] WARNING root fetch - processPackages [data-preprocessing-lib-byarat]: Skipping, unable to determine old version
+[2024-05-19 09:59:49] INFO root fetch - main [MainThread]: End processing [data-preprocessing-lib-byarat] error
+[2024-05-19 09:59:49] INFO root fetch - processPackages [gymconnectx]: Downloading https://files.pythonhosted.org/packages/0d/d9/a6b70e1236bdcd8f855d3e646d3baec73585dbf1070f545d2bdfdab674c7/gymconnectx-1.0.3.tar.gz
+[2024-05-19 09:59:49] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/7e/e2/114a39eac567286d0418645c0ea24089c48fcbe4cccec6c79191a5cefccf/outpostcli-0.0.8.tar.gz
+[2024-05-19 09:59:49] INFO root fetch - processPackages [mass-composition]: Downloading https://files.pythonhosted.org/packages/eb/bc/4b4aaf6537cf458f75cd2dcc74fc0e9065a8080671c5b0bb02c522e1c07d/mass_composition-0.6.5.tar.gz
+[2024-05-19 09:59:49] INFO root fetch - processPackages [symbolicai]: New version: [0.6.2] Old Version: [0.6.1]
+[2024-05-19 09:59:49] INFO root fetch - processPackages [tf-nightly]: New version: [2.17.0.dev20240519] Old Version: [2.17.0.dev20240518]
+[2024-05-19 09:59:49] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/df/ab/82b6853cec170d33c2aff19e3a298b0bf56f7ba1b885f6f7d42a10ae43dc/outpostcli-0.0.9.tar.gz
+[2024-05-19 09:59:49] INFO root fetch - processPackages [gymconnectx]: Downloading https://files.pythonhosted.org/packages/89/37/b797f355e05b9bc71cc75e1402e896a5b9bad5da387401328dcf712bec98/gymconnectx-1.0.4.tar.gz
+[2024-05-19 09:59:49] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/53/98/36d5da1efbbfacffc215eefc45c1db3b6e4084b5508bd8ed43acd35c9976/tf_nightly-2.17.0.dev20240518-cp39-cp39-win_amd64.whl
+[2024-05-19 09:59:49] INFO root fetch - processPackages [mass-composition]: Downloading https://files.pythonhosted.org/packages/40/93/1f7868b5680c5d45c95e16291667f955344e4854ed1b6d76a8404e6a14a3/mass_composition-0.6.6.tar.gz
+[2024-05-19 09:59:49] INFO root fetch - processPackages [symbolicai]: Downloading https://files.pythonhosted.org/packages/7e/26/5043a739e2a73b568cc211e6f6a4b3b08580f4be2b036884dc4e085f6312/symbolicai-0.6.1.tar.gz
+[2024-05-19 09:59:49] INFO root fetch - processPackages [outpostcli]: executing diffoscope
+[2024-05-19 09:59:49] INFO root fetch - processPackages [outpostcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outpostcli-0.0.8.tar.gz tmp/outpostcli-0.0.9.tar.gz --markdown 20240519/o/outpostcli/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 09:59:49] INFO root fetch - processPackages [gymconnectx]: executing diffoscope
+[2024-05-19 09:59:49] INFO root fetch - processPackages [gymconnectx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gymconnectx-1.0.3.tar.gz tmp/gymconnectx-1.0.4.tar.gz --markdown 20240519/g/gymconnectx/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-19 09:59:49] INFO root fetch - processPackages [mass-composition]: executing diffoscope
+[2024-05-19 09:59:49] INFO root fetch - processPackages [mass-composition]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mass_composition-0.6.5.tar.gz tmp/mass_composition-0.6.6.tar.gz --markdown 20240519/m/mass-composition/0.6.5-0.6.6/README.md --exclude *.pyd
+[2024-05-19 09:59:50] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/76/91/e3db14be9964d538e420e3475cae9c780d1122f7f75f01aa07a6bbfbb92e/tf_nightly-2.17.0.dev20240519-cp39-cp39-win_amd64.whl
+[2024-05-19 09:59:50] INFO root fetch - processPackages [tf-nightly]: executing diffoscope
+[2024-05-19 09:59:50] INFO root fetch - processPackages [tf-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly-2.17.0.dev20240518-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly-2.17.0.dev20240519-cp39-cp39-win_amd64.whl.zip --markdown 20240519/t/tf-nightly/2.17.0.dev20240518-2.17.0.dev20240519/README.md --exclude *.pyd
+[2024-05-19 09:59:50] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.8.tar.gz]
+[2024-05-19 09:59:50] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.9.tar.gz]
+[2024-05-19 09:59:50] INFO root fetch - main [MainThread]: End processing [outpostcli]: success
+[2024-05-19 09:59:50] INFO root fetch - processPackages [gymconnectx]: Remove: archive file [/home/abi/fetcher/tmp/gymconnectx-1.0.3.tar.gz]
+[2024-05-19 09:59:50] INFO root fetch - processPackages [gymconnectx]: Remove: archive file [/home/abi/fetcher/tmp/gymconnectx-1.0.4.tar.gz]
+[2024-05-19 09:59:50] INFO root fetch - main [MainThread]: End processing [gymconnectx]: success
+[2024-05-19 09:59:50] INFO root fetch - processPackages [mass-composition]: Remove: archive file [/home/abi/fetcher/tmp/mass_composition-0.6.5.tar.gz]
+[2024-05-19 09:59:50] INFO root fetch - processPackages [mass-composition]: Remove: archive file [/home/abi/fetcher/tmp/mass_composition-0.6.6.tar.gz]
+[2024-05-19 09:59:50] INFO root fetch - main [MainThread]: End processing [mass-composition]: success
+[2024-05-19 09:59:51] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240518-cp39-cp39-win_amd64.whl.zip]
+[2024-05-19 09:59:51] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240519-cp39-cp39-win_amd64.whl.zip]
+[2024-05-19 09:59:51] INFO root fetch - main [MainThread]: End processing [tf-nightly]: success
+[2024-05-19 09:59:51] INFO root fetch - processPackages [symbolicai]: Downloading https://files.pythonhosted.org/packages/ca/40/fd045cf61d09701558f154f6c78a9c82bf5e36f046eae9b4dc6c17376df9/symbolicai-0.6.2.tar.gz
+[2024-05-19 09:59:51] INFO root fetch - processPackages [symbolicai]: executing diffoscope
+[2024-05-19 09:59:51] INFO root fetch - processPackages [symbolicai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symbolicai-0.6.1.tar.gz tmp/symbolicai-0.6.2.tar.gz --markdown 20240519/s/symbolicai/0.6.1-0.6.2/README.md --exclude *.pyd
+[2024-05-19 09:59:53] INFO root fetch - processPackages [symbolicai]: Remove: archive file [/home/abi/fetcher/tmp/symbolicai-0.6.1.tar.gz]
+[2024-05-19 09:59:53] INFO root fetch - processPackages [symbolicai]: Remove: archive file [/home/abi/fetcher/tmp/symbolicai-0.6.2.tar.gz]
+[2024-05-19 09:59:53] INFO root fetch - main [MainThread]: End processing [symbolicai]: success
+[2024-05-19 09:59:53] INFO root fetch - main [MainThread]: Store serial: [23274430]
