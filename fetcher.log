@@ -17572,3 +17572,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 21:37:35] INFO root fetch - processPackages [Simba-UW-tf-dev]: Remove: archive file [/home/abi/fetcher/tmp/Simba-UW-tf-dev-1.92.9.tar.gz]
 [2024-05-19 21:37:35] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
 [2024-05-19 21:37:35] INFO root fetch - main [MainThread]: Store serial: [23279771]
+[2024-05-19 21:39:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279771]
+[2024-05-19 21:39:44] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 21:39:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nadeo-api
+[2024-05-19 21:39:44] INFO root fetch - processPackages [nadeo-api]: New version: [0.3.3] Old Version: [0.3.0]
+[2024-05-19 21:39:44] INFO root fetch - processPackages [nadeo-api]: Downloading https://files.pythonhosted.org/packages/59/07/29e0d39e10b3c4640dcd639de5bb6ba1e377fcdf2f2d7d6ab2be9a353589/nadeo_api-0.3.0.tar.gz
+[2024-05-19 21:39:44] INFO root fetch - processPackages [nadeo-api]: Downloading https://files.pythonhosted.org/packages/89/06/337a7995366ed9f7c23952b5ad0602fc67f29d5db646233b21694bada256/nadeo_api-0.3.3.tar.gz
+[2024-05-19 21:39:44] INFO root fetch - processPackages [nadeo-api]: executing diffoscope
+[2024-05-19 21:39:44] INFO root fetch - processPackages [nadeo-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nadeo_api-0.3.0.tar.gz tmp/nadeo_api-0.3.3.tar.gz --markdown 20240519/n/nadeo-api/0.3.0-0.3.3/README.md --exclude *.pyd
+[2024-05-19 21:39:45] INFO root fetch - processPackages [nadeo-api]: Remove: archive file [/home/abi/fetcher/tmp/nadeo_api-0.3.0.tar.gz]
+[2024-05-19 21:39:45] INFO root fetch - processPackages [nadeo-api]: Remove: archive file [/home/abi/fetcher/tmp/nadeo_api-0.3.3.tar.gz]
+[2024-05-19 21:39:45] INFO root fetch - main [MainThread]: End processing [nadeo-api]: success
+[2024-05-19 21:39:45] INFO root fetch - main [MainThread]: Store serial: [23279774]
