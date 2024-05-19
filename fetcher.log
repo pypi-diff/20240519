@@ -7891,3 +7891,9 @@
 [2024-05-19 11:49:12] INFO root fetch - processPackages [bppy]: Remove: archive file [/home/abi/fetcher/tmp/bppy-1.0.2.tar.gz]
 [2024-05-19 11:49:12] INFO root fetch - main [MainThread]: End processing [bppy]: success
 [2024-05-19 11:49:12] INFO root fetch - main [MainThread]: Store serial: [23275214]
+[2024-05-19 11:51:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275214]
+[2024-05-19 11:51:20] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 11:51:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pharyngotyphoidz
+[2024-05-19 11:51:20] WARNING root fetch - processPackages [pharyngotyphoidz]: Skipping, unable to determine old version
+[2024-05-19 11:51:20] INFO root fetch - main [MainThread]: End processing [pharyngotyphoidz] error
+[2024-05-19 11:51:20] INFO root fetch - main [MainThread]: Store serial: [23275223]
