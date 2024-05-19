@@ -7114,3 +7114,15 @@
 [2024-05-19 10:45:48] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip]
 [2024-05-19 10:45:48] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
 [2024-05-19 10:45:48] INFO root fetch - main [MainThread]: Store serial: [23274759]
+[2024-05-19 10:47:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274759]
+[2024-05-19 10:47:57] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 10:47:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: auto-coder
+[2024-05-19 10:47:57] INFO root fetch - processPackages [auto-coder]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-19 10:47:57] INFO root fetch - processPackages [auto-coder]: Downloading https://files.pythonhosted.org/packages/d1/69/520c5552e42e8901e930364867dc863b8beb917b52544194a46c864a7385/auto-coder-0.1.8.tar.gz
+[2024-05-19 10:47:57] INFO root fetch - processPackages [auto-coder]: Downloading https://files.pythonhosted.org/packages/4d/9a/1bad03fbe8fd6d47cd359f857b05e28efaa8cba07c33aa029696a40dd646/auto-coder-0.1.9.tar.gz
+[2024-05-19 10:47:57] INFO root fetch - processPackages [auto-coder]: executing diffoscope
+[2024-05-19 10:47:57] INFO root fetch - processPackages [auto-coder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto-coder-0.1.8.tar.gz tmp/auto-coder-0.1.9.tar.gz --markdown 20240519/a/auto-coder/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-19 10:47:58] INFO root fetch - processPackages [auto-coder]: Remove: archive file [/home/abi/fetcher/tmp/auto-coder-0.1.8.tar.gz]
+[2024-05-19 10:47:58] INFO root fetch - processPackages [auto-coder]: Remove: archive file [/home/abi/fetcher/tmp/auto-coder-0.1.9.tar.gz]
+[2024-05-19 10:47:58] INFO root fetch - main [MainThread]: End processing [auto-coder]: success
+[2024-05-19 10:47:58] INFO root fetch - main [MainThread]: Store serial: [23274763]
