@@ -5400,3 +5400,45 @@
 [2024-05-19 08:44:23] INFO root fetch - processPackages [func2stream]: Remove: archive file [/home/abi/fetcher/tmp/func2stream-0.0.1.dev240519063726-py3-none-any.whl.zip]
 [2024-05-19 08:44:23] INFO root fetch - main [MainThread]: End processing [func2stream]: success
 [2024-05-19 08:44:23] INFO root fetch - main [MainThread]: Store serial: [23273901]
+[2024-05-19 08:46:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273901]
+[2024-05-19 08:46:31] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 08:46:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: beanqueue
+[2024-05-19 08:46:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: onfon-sms-sender
+[2024-05-19 08:46:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dcm2nii
+[2024-05-19 08:46:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: qrawl
+[2024-05-19 08:46:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: embykeeper
+[2024-05-19 08:46:31] INFO root fetch - processPackages [beanqueue]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-19 08:46:31] INFO root fetch - processPackages [qrawl]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-05-19 08:46:32] INFO root fetch - processPackages [onfon-sms-sender]: New version: [0.1.2] Old Version: [0.1]
+[2024-05-19 08:46:32] INFO root fetch - processPackages [beanqueue]: Downloading https://files.pythonhosted.org/packages/28/a5/9950fac8ecfe196ec3b4bd708772b87053c5b4140dbd3c2de3b6850bd781/beanqueue-0.2.0.tar.gz
+[2024-05-19 08:46:32] INFO root fetch - processPackages [embykeeper]: New version: [3.2.9] Old Version: [3.2.8]
+[2024-05-19 08:46:32] INFO root fetch - processPackages [qrawl]: Downloading https://files.pythonhosted.org/packages/81/85/6649621e4958120947783835f4ef679bc90a31cf73455cfb63135758e245/qrawl-0.2.4.tar.gz
+[2024-05-19 08:46:32] WARNING root fetch - processPackages [dcm2nii]: Skipping, unable to determine old version
+[2024-05-19 08:46:32] INFO root fetch - main [MainThread]: End processing [dcm2nii] error
+[2024-05-19 08:46:32] INFO root fetch - processPackages [onfon-sms-sender]: Downloading https://files.pythonhosted.org/packages/04/9d/054ac742a41de4c6d1ca1316f05816ab251cb0a6ea4066d8111c6e0918b0/onfon_sms_sender-0.1.tar.gz
+[2024-05-19 08:46:32] INFO root fetch - processPackages [embykeeper]: Downloading https://files.pythonhosted.org/packages/d0/e6/4bb1ee3290f4aba08e9d6751566f039db27dba7d51553fc0681095c6a015/embykeeper-3.2.8.tar.gz
+[2024-05-19 08:46:32] INFO root fetch - processPackages [beanqueue]: Downloading https://files.pythonhosted.org/packages/b9/b3/4725c48915d0e314f2494b6496865ebcfee468d8e7729d518645222f9369/beanqueue-0.2.1.tar.gz
+[2024-05-19 08:46:32] INFO root fetch - processPackages [qrawl]: Downloading https://files.pythonhosted.org/packages/fa/2d/60024c3ac22409848c0180ea6edcee33faceacfdea32bf45ac95c73192af/qrawl-0.2.5.tar.gz
+[2024-05-19 08:46:32] INFO root fetch - processPackages [onfon-sms-sender]: Downloading https://files.pythonhosted.org/packages/16/99/e999e9f681513caeb920f4fdafb4189575a833f22ccace5f84f6f52af70d/onfon_sms_sender-0.1.2.tar.gz
+[2024-05-19 08:46:32] INFO root fetch - processPackages [beanqueue]: executing diffoscope
+[2024-05-19 08:46:32] INFO root fetch - processPackages [beanqueue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beanqueue-0.2.0.tar.gz tmp/beanqueue-0.2.1.tar.gz --markdown 20240519/b/beanqueue/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-19 08:46:32] INFO root fetch - processPackages [qrawl]: executing diffoscope
+[2024-05-19 08:46:32] INFO root fetch - processPackages [qrawl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qrawl-0.2.4.tar.gz tmp/qrawl-0.2.5.tar.gz --markdown 20240519/q/qrawl/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-05-19 08:46:32] INFO root fetch - processPackages [embykeeper]: Downloading https://files.pythonhosted.org/packages/02/85/cffd52bc872be074110305f46303d258fa7478eab3eae08d86465d0653a8/embykeeper-3.2.9.tar.gz
+[2024-05-19 08:46:32] INFO root fetch - processPackages [onfon-sms-sender]: executing diffoscope
+[2024-05-19 08:46:32] INFO root fetch - processPackages [onfon-sms-sender]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onfon_sms_sender-0.1.tar.gz tmp/onfon_sms_sender-0.1.2.tar.gz --markdown 20240519/o/onfon-sms-sender/0.1-0.1.2/README.md --exclude *.pyd
+[2024-05-19 08:46:32] INFO root fetch - processPackages [embykeeper]: executing diffoscope
+[2024-05-19 08:46:32] INFO root fetch - processPackages [embykeeper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embykeeper-3.2.8.tar.gz tmp/embykeeper-3.2.9.tar.gz --markdown 20240519/e/embykeeper/3.2.8-3.2.9/README.md --exclude *.pyd
+[2024-05-19 08:46:33] INFO root fetch - processPackages [beanqueue]: Remove: archive file [/home/abi/fetcher/tmp/beanqueue-0.2.0.tar.gz]
+[2024-05-19 08:46:33] INFO root fetch - processPackages [beanqueue]: Remove: archive file [/home/abi/fetcher/tmp/beanqueue-0.2.1.tar.gz]
+[2024-05-19 08:46:33] INFO root fetch - main [MainThread]: End processing [beanqueue]: success
+[2024-05-19 08:46:33] INFO root fetch - processPackages [qrawl]: Remove: archive file [/home/abi/fetcher/tmp/qrawl-0.2.4.tar.gz]
+[2024-05-19 08:46:33] INFO root fetch - processPackages [qrawl]: Remove: archive file [/home/abi/fetcher/tmp/qrawl-0.2.5.tar.gz]
+[2024-05-19 08:46:33] INFO root fetch - main [MainThread]: End processing [qrawl]: success
+[2024-05-19 08:46:33] INFO root fetch - processPackages [onfon-sms-sender]: Remove: archive file [/home/abi/fetcher/tmp/onfon_sms_sender-0.1.tar.gz]
+[2024-05-19 08:46:33] INFO root fetch - processPackages [onfon-sms-sender]: Remove: archive file [/home/abi/fetcher/tmp/onfon_sms_sender-0.1.2.tar.gz]
+[2024-05-19 08:46:33] INFO root fetch - main [MainThread]: End processing [onfon-sms-sender]: success
+[2024-05-19 08:46:33] INFO root fetch - processPackages [embykeeper]: Remove: archive file [/home/abi/fetcher/tmp/embykeeper-3.2.8.tar.gz]
+[2024-05-19 08:46:33] INFO root fetch - processPackages [embykeeper]: Remove: archive file [/home/abi/fetcher/tmp/embykeeper-3.2.9.tar.gz]
+[2024-05-19 08:46:33] INFO root fetch - main [MainThread]: End processing [embykeeper]: success
+[2024-05-19 08:46:33] INFO root fetch - main [MainThread]: Store serial: [23273918]
