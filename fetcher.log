@@ -2959,3 +2959,24 @@
 [2024-05-19 04:48:58] WARNING root fetch - processPackages [pyschwab]: Skipping, unable to determine old version
 [2024-05-19 04:48:58] INFO root fetch - main [MainThread]: End processing [pyschwab] error
 [2024-05-19 04:48:58] INFO root fetch - main [MainThread]: Store serial: [23272871]
+[2024-05-19 04:51:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272871]
+[2024-05-19 04:51:06] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 04:51:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyo3Tree
+[2024-05-19 04:51:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py4web
+[2024-05-19 04:51:06] INFO root fetch - processPackages [pyo3Tree]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-19 04:51:06] INFO root fetch - processPackages [py4web]: New version: [1.20240518.3] Old Version: [1.20240518.2]
+[2024-05-19 04:51:06] INFO root fetch - processPackages [pyo3Tree]: Downloading https://files.pythonhosted.org/packages/be/32/dce314e617403363dbf05b158c3dbd89149aa346bdab003ebb0f28674a8c/pyo3Tree-0.1.0-cp39-cp39-macosx_11_0_arm64.whl
+[2024-05-19 04:51:06] INFO root fetch - processPackages [py4web]: Downloading https://files.pythonhosted.org/packages/d4/c9/f088a9877cb4e80757c50ceca51d413c949f43eeb469b95bad5ecc6adb64/py4web-1.20240518.2.tar.gz
+[2024-05-19 04:51:07] INFO root fetch - processPackages [pyo3Tree]: Downloading https://files.pythonhosted.org/packages/96/b8/8a2a171881c315e5795bcd75a8e761cb9f6f1d3b5ca86ea5500a8c14de31/pyo3Tree-0.1.1-cp39-cp39-macosx_11_0_arm64.whl
+[2024-05-19 04:51:07] INFO root fetch - processPackages [pyo3Tree]: executing diffoscope
+[2024-05-19 04:51:07] INFO root fetch - processPackages [pyo3Tree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyo3Tree-0.1.0-cp39-cp39-macosx_11_0_arm64.whl.zip tmp/pyo3Tree-0.1.1-cp39-cp39-macosx_11_0_arm64.whl.zip --markdown 20240519/p/pyo3Tree/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-19 04:51:07] INFO root fetch - processPackages [py4web]: Downloading https://files.pythonhosted.org/packages/89/5b/2ae25d176221581deba7af7af7b864fae3fdafea73936a326e57e111bc7f/py4web-1.20240518.3.tar.gz
+[2024-05-19 04:51:07] INFO root fetch - processPackages [pyo3Tree]: Remove: archive file [/home/abi/fetcher/tmp/pyo3Tree-0.1.0-cp39-cp39-macosx_11_0_arm64.whl.zip]
+[2024-05-19 04:51:07] INFO root fetch - processPackages [pyo3Tree]: Remove: archive file [/home/abi/fetcher/tmp/pyo3Tree-0.1.1-cp39-cp39-macosx_11_0_arm64.whl.zip]
+[2024-05-19 04:51:07] INFO root fetch - main [MainThread]: End processing [pyo3Tree]: success
+[2024-05-19 04:51:09] INFO root fetch - processPackages [py4web]: executing diffoscope
+[2024-05-19 04:51:09] INFO root fetch - processPackages [py4web]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py4web-1.20240518.2.tar.gz tmp/py4web-1.20240518.3.tar.gz --markdown 20240519/p/py4web/1.20240518.2-1.20240518.3/README.md --exclude *.pyd
+[2024-05-19 04:51:10] INFO root fetch - processPackages [py4web]: Remove: archive file [/home/abi/fetcher/tmp/py4web-1.20240518.2.tar.gz]
+[2024-05-19 04:51:10] INFO root fetch - processPackages [py4web]: Remove: archive file [/home/abi/fetcher/tmp/py4web-1.20240518.3.tar.gz]
+[2024-05-19 04:51:10] INFO root fetch - main [MainThread]: End processing [py4web]: success
+[2024-05-19 04:51:10] INFO root fetch - main [MainThread]: Store serial: [23272885]
