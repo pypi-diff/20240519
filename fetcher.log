@@ -11615,3 +11615,81 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 15:51:19] INFO root fetch - processPackages [itkwasm-compress-stringify-emscripten]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_compress_stringify_emscripten-3.2.0.tar.gz]
 [2024-05-19 15:51:19] INFO root fetch - main [MainThread]: End processing [itkwasm-compress-stringify-emscripten]: success
 [2024-05-19 15:51:19] INFO root fetch - main [MainThread]: Store serial: [23276946]
+[2024-05-19 15:53:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276946]
+[2024-05-19 15:53:28] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-19 15:53:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: itkwasm-compress-stringify-emscripten
+[2024-05-19 15:53:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: itkwasm-compress-stringify
+[2024-05-19 15:53:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: djangorestframework-hybridrouter
+[2024-05-19 15:53:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: TaGra
+[2024-05-19 15:53:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vvspy
+[2024-05-19 15:53:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: roostersz
+[2024-05-19 15:53:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: fontra
+[2024-05-19 15:53:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: marqo
+[2024-05-19 15:53:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: txm-sandbox
+[2024-05-19 15:53:28] INFO root fetch - processPackages [TaGra]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-19 15:53:28] INFO root fetch - processPackages [itkwasm-compress-stringify-emscripten]: New version: [3.2.0] Old Version: [3.0.0]
+[2024-05-19 15:53:28] INFO root fetch - processPackages [djangorestframework-hybridrouter]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-19 15:53:28] INFO root fetch - processPackages [TaGra]: Downloading https://files.pythonhosted.org/packages/40/65/cf7ccb4896c3c65adb9275077da3eb9334b39413b9eca711be4865ee59e1/TaGra-0.1.5.tar.gz
+[2024-05-19 15:53:28] INFO root fetch - processPackages [itkwasm-compress-stringify-emscripten]: Downloading https://files.pythonhosted.org/packages/80/2f/dc47df6578d36ab5ffc16ee204ccd6998c48c06913a9fb4dd026b6040dbf/itkwasm_compress_stringify_emscripten-3.0.0.tar.gz
+[2024-05-19 15:53:28] INFO root fetch - processPackages [itkwasm-compress-stringify]: New version: [3.2.0] Old Version: [3.0.0]
+[2024-05-19 15:53:28] INFO root fetch - processPackages [djangorestframework-hybridrouter]: Downloading https://files.pythonhosted.org/packages/82/7b/73f4684b38f8ebd7db04f226de3c4e85108401873d99d25305ecd34cc7bc/djangorestframework_hybridrouter-0.1.3.tar.gz
+[2024-05-19 15:53:28] INFO root fetch - processPackages [vvspy]: New version: [2.0.0b1] Old Version: [1.2.0]
+[2024-05-19 15:53:28] WARNING root fetch - processPackages [roostersz]: Skipping, unable to determine old version
+[2024-05-19 15:53:28] INFO root fetch - processPackages [fontra]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-19 15:53:28] INFO root fetch - main [MainThread]: End processing [roostersz] error
+[2024-05-19 15:53:28] INFO root fetch - processPackages [marqo]: New version: [3.5.0] Old Version: [3.4.0]
+[2024-05-19 15:53:28] INFO root fetch - processPackages [txm-sandbox]: New version: [0.3.1.post2] Old Version: [0.3.1.post1]
+[2024-05-19 15:53:28] INFO root fetch - processPackages [itkwasm-compress-stringify]: Downloading https://files.pythonhosted.org/packages/8d/cd/67a04093a055a301faf7e4a6713dfb456c6dfdc2fc7fc0414adbe7c46a9a/itkwasm_compress_stringify-3.0.0.tar.gz
+[2024-05-19 15:53:28] INFO root fetch - processPackages [itkwasm-compress-stringify-emscripten]: Downloading https://files.pythonhosted.org/packages/7e/d3/889535345335a88a34b73d881d51fdd7bee8ab46dd866e3a1cec1f50725c/itkwasm_compress_stringify_emscripten-3.2.0.tar.gz
+[2024-05-19 15:53:28] INFO root fetch - processPackages [vvspy]: Downloading https://files.pythonhosted.org/packages/77/c8/b6796e3693401a32278c9bd72a4f8b39aa6b4c5482106e9c813ada994163/vvspy-1.2.0.tar.gz
+[2024-05-19 15:53:29] INFO root fetch - processPackages [fontra]: Downloading https://files.pythonhosted.org/packages/f8/3f/fb4728ac5a7c9d1b7017070db86a3b62fbcb33b0cc7c01de924f23963a19/fontra-0.2.0.tar.gz
+[2024-05-19 15:53:29] INFO root fetch - processPackages [marqo]: Downloading https://files.pythonhosted.org/packages/cd/a7/4aa18c024c0256c86865ccc9fb1a2915a15ddc6cbd45ae9963d0db1b2b22/marqo-3.4.0.tar.gz
+[2024-05-19 15:53:29] INFO root fetch - processPackages [txm-sandbox]: Downloading https://files.pythonhosted.org/packages/29/51/ccd8507fdd2d2e6ce755934a19700efc6ab01835dd44f7e2334a182887bc/txm_sandbox-0.3.1.post1.tar.gz
+[2024-05-19 15:53:29] INFO root fetch - processPackages [djangorestframework-hybridrouter]: Downloading https://files.pythonhosted.org/packages/16/8e/e4923af070c299d034d47b5a105cf275081d116bd5fcb4d28047b58da3ff/djangorestframework_hybridrouter-0.1.4.tar.gz
+[2024-05-19 15:53:29] INFO root fetch - processPackages [TaGra]: Downloading https://files.pythonhosted.org/packages/22/f0/7df8c69a05051fbbc824e4263c0a8eb57c636c82f9293675a81e96a30688/TaGra-0.1.6.tar.gz
+[2024-05-19 15:53:29] INFO root fetch - processPackages [itkwasm-compress-stringify-emscripten]: executing diffoscope
+[2024-05-19 15:53:29] INFO root fetch - processPackages [itkwasm-compress-stringify-emscripten]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/itkwasm_compress_stringify_emscripten-3.0.0.tar.gz tmp/itkwasm_compress_stringify_emscripten-3.2.0.tar.gz --markdown 20240519/i/itkwasm-compress-stringify-emscripten/3.0.0-3.2.0/README.md --exclude *.pyd
+[2024-05-19 15:53:29] INFO root fetch - processPackages [djangorestframework-hybridrouter]: executing diffoscope
+[2024-05-19 15:53:29] INFO root fetch - processPackages [djangorestframework-hybridrouter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangorestframework_hybridrouter-0.1.3.tar.gz tmp/djangorestframework_hybridrouter-0.1.4.tar.gz --markdown 20240519/d/djangorestframework-hybridrouter/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-19 15:53:29] INFO root fetch - processPackages [TaGra]: executing diffoscope
+[2024-05-19 15:53:29] INFO root fetch - processPackages [TaGra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TaGra-0.1.5.tar.gz tmp/TaGra-0.1.6.tar.gz --markdown 20240519/T/TaGra/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-19 15:53:29] INFO root fetch - processPackages [itkwasm-compress-stringify]: Downloading https://files.pythonhosted.org/packages/d5/5e/0416b7c44a8d3545bb4a0f3c537d1990bd45e474bf297eb1bf4016d49f23/itkwasm_compress_stringify-3.2.0.tar.gz
+[2024-05-19 15:53:29] INFO root fetch - processPackages [vvspy]: Downloading https://files.pythonhosted.org/packages/ed/77/145ad40e2cb366ab3ffe4106e5ed59a65b749debc77ef2197bef11af225d/vvspy-2.0.0b1.tar.gz
+[2024-05-19 15:53:29] INFO root fetch - processPackages [fontra]: Downloading https://files.pythonhosted.org/packages/eb/2d/e2d49ec1c3200c995018f8f3a0445abd74c8fb79032f8ca1719df028698d/fontra-0.2.1.tar.gz
+[2024-05-19 15:53:29] INFO root fetch - processPackages [marqo]: Downloading https://files.pythonhosted.org/packages/62/10/41936f8b8fa4b45787bd5ea911ad71e4e3b8f1910dfb8a8551b110d85bc3/marqo-3.5.0.tar.gz
+[2024-05-19 15:53:29] INFO root fetch - processPackages [itkwasm-compress-stringify]: executing diffoscope
+[2024-05-19 15:53:29] INFO root fetch - processPackages [itkwasm-compress-stringify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/itkwasm_compress_stringify-3.0.0.tar.gz tmp/itkwasm_compress_stringify-3.2.0.tar.gz --markdown 20240519/i/itkwasm-compress-stringify/3.0.0-3.2.0/README.md --exclude *.pyd
+[2024-05-19 15:53:29] INFO root fetch - processPackages [txm-sandbox]: Downloading https://files.pythonhosted.org/packages/7a/41/30ff89e13c5f9e959606635120078d121d09bd2cf8e7b1cb4d6cc117ab0b/txm_sandbox-0.3.1.post2-py3-none-any.whl
+[2024-05-19 15:53:29] INFO root fetch - processPackages [fontra]: executing diffoscope
+[2024-05-19 15:53:29] INFO root fetch - processPackages [fontra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fontra-0.2.0.tar.gz tmp/fontra-0.2.1.tar.gz --markdown 20240519/f/fontra/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-19 15:53:29] INFO root fetch - processPackages [vvspy]: executing diffoscope
+[2024-05-19 15:53:29] INFO root fetch - processPackages [vvspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vvspy-1.2.0.tar.gz tmp/vvspy-2.0.0b1.tar.gz --markdown 20240519/v/vvspy/1.2.0-2.0.0b1/README.md --exclude *.pyd
+[2024-05-19 15:53:29] INFO root fetch - processPackages [marqo]: executing diffoscope
+[2024-05-19 15:53:29] INFO root fetch - processPackages [marqo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/marqo-3.4.0.tar.gz tmp/marqo-3.5.0.tar.gz --markdown 20240519/m/marqo/3.4.0-3.5.0/README.md --exclude *.pyd
+[2024-05-19 15:53:30] INFO root fetch - processPackages [itkwasm-compress-stringify-emscripten]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_compress_stringify_emscripten-3.0.0.tar.gz]
+[2024-05-19 15:53:30] INFO root fetch - processPackages [itkwasm-compress-stringify-emscripten]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_compress_stringify_emscripten-3.2.0.tar.gz]
+[2024-05-19 15:53:30] INFO root fetch - main [MainThread]: End processing [itkwasm-compress-stringify-emscripten]: success
+[2024-05-19 15:53:30] INFO root fetch - processPackages [djangorestframework-hybridrouter]: Remove: archive file [/home/abi/fetcher/tmp/djangorestframework_hybridrouter-0.1.3.tar.gz]
+[2024-05-19 15:53:30] INFO root fetch - processPackages [djangorestframework-hybridrouter]: Remove: archive file [/home/abi/fetcher/tmp/djangorestframework_hybridrouter-0.1.4.tar.gz]
+[2024-05-19 15:53:30] INFO root fetch - main [MainThread]: End processing [djangorestframework-hybridrouter]: success
+[2024-05-19 15:53:30] INFO root fetch - processPackages [TaGra]: Remove: archive file [/home/abi/fetcher/tmp/TaGra-0.1.5.tar.gz]
+[2024-05-19 15:53:30] INFO root fetch - processPackages [TaGra]: Remove: archive file [/home/abi/fetcher/tmp/TaGra-0.1.6.tar.gz]
+[2024-05-19 15:53:30] INFO root fetch - main [MainThread]: End processing [TaGra]: success
+[2024-05-19 15:53:30] INFO root fetch - processPackages [itkwasm-compress-stringify]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_compress_stringify-3.0.0.tar.gz]
+[2024-05-19 15:53:30] INFO root fetch - processPackages [itkwasm-compress-stringify]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_compress_stringify-3.2.0.tar.gz]
+[2024-05-19 15:53:30] INFO root fetch - processPackages [txm-sandbox]: executing diffoscope
+[2024-05-19 15:53:30] INFO root fetch - processPackages [txm-sandbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/txm_sandbox-0.3.1.post1.tar.gz tmp/txm_sandbox-0.3.1.post2-py3-none-any.whl.zip --markdown 20240519/t/txm-sandbox/0.3.1.post1-0.3.1.post2/README.md --exclude *.pyd
+[2024-05-19 15:53:30] INFO root fetch - main [MainThread]: End processing [itkwasm-compress-stringify]: success
+[2024-05-19 15:53:30] INFO root fetch - processPackages [fontra]: Remove: archive file [/home/abi/fetcher/tmp/fontra-0.2.0.tar.gz]
+[2024-05-19 15:53:30] INFO root fetch - processPackages [fontra]: Remove: archive file [/home/abi/fetcher/tmp/fontra-0.2.1.tar.gz]
+[2024-05-19 15:53:30] INFO root fetch - main [MainThread]: End processing [fontra]: success
+[2024-05-19 15:53:30] INFO root fetch - processPackages [marqo]: Remove: archive file [/home/abi/fetcher/tmp/marqo-3.4.0.tar.gz]
+[2024-05-19 15:53:30] INFO root fetch - processPackages [marqo]: Remove: archive file [/home/abi/fetcher/tmp/marqo-3.5.0.tar.gz]
+[2024-05-19 15:53:30] INFO root fetch - main [MainThread]: End processing [marqo]: success
+[2024-05-19 15:53:30] INFO root fetch - processPackages [vvspy]: Remove: archive file [/home/abi/fetcher/tmp/vvspy-1.2.0.tar.gz]
+[2024-05-19 15:53:30] INFO root fetch - processPackages [vvspy]: Remove: archive file [/home/abi/fetcher/tmp/vvspy-2.0.0b1.tar.gz]
+[2024-05-19 15:53:30] INFO root fetch - main [MainThread]: End processing [vvspy]: success
+[2024-05-19 15:53:30] INFO root fetch - processPackages [txm-sandbox]: Remove: archive file [/home/abi/fetcher/tmp/txm_sandbox-0.3.1.post1.tar.gz]
+[2024-05-19 15:53:30] INFO root fetch - processPackages [txm-sandbox]: Remove: archive file [/home/abi/fetcher/tmp/txm_sandbox-0.3.1.post2-py3-none-any.whl.zip]
+[2024-05-19 15:53:30] INFO root fetch - main [MainThread]: End processing [txm-sandbox]: success
+[2024-05-19 15:53:30] INFO root fetch - main [MainThread]: Store serial: [23276972]
