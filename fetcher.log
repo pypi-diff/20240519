@@ -17758,3 +17758,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 21:53:50] INFO root fetch - processPackages [sageworks]: Remove: archive file [/home/abi/fetcher/tmp/sageworks-0.6.3.tar.gz]
 [2024-05-19 21:53:50] INFO root fetch - main [MainThread]: End processing [sageworks]: success
 [2024-05-19 21:53:50] INFO root fetch - main [MainThread]: Store serial: [23279836]
+[2024-05-19 21:55:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279836]
+[2024-05-19 21:55:59] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 21:55:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Crackerjack
+[2024-05-19 21:55:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lib-version-urlphishing
+[2024-05-19 21:55:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: purequransearch
+[2024-05-19 21:55:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: catalogiaz
+[2024-05-19 21:55:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Nara
+[2024-05-19 21:55:59] INFO root fetch - processPackages [lib-version-urlphishing]: New version: [2.1.8] Old Version: [2.1.7]
+[2024-05-19 21:55:59] INFO root fetch - processPackages [lib-version-urlphishing]: Downloading https://files.pythonhosted.org/packages/66/ca/0da7bc5f476df4a1f13872b14964d8fe377e43ecd4767dcba0ecf1717925/lib_version_urlphishing-2.1.7.tar.gz
+[2024-05-19 21:56:00] WARNING root fetch - processPackages [catalogiaz]: Skipping, unable to determine old version
+[2024-05-19 21:56:00] INFO root fetch - main [MainThread]: End processing [catalogiaz] error
+[2024-05-19 21:56:00] WARNING root fetch - processPackages [purequransearch]: Skipping, unable to determine old version
+[2024-05-19 21:56:00] INFO root fetch - main [MainThread]: End processing [purequransearch] error
+[2024-05-19 21:56:00] INFO root fetch - processPackages [Crackerjack]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-05-19 21:56:00] WARNING root fetch - processPackages [Nara]: Skipping, unable to determine old version
+[2024-05-19 21:56:00] INFO root fetch - main [MainThread]: End processing [Nara] error
+[2024-05-19 21:56:00] INFO root fetch - processPackages [Crackerjack]: Downloading https://files.pythonhosted.org/packages/a7/40/682dbf1a6b1f3d3ad06a2cdda255b0e2c3c5397a8830e62ede4c0dd7a9ae/crackerjack-0.7.8.tar.gz
+[2024-05-19 21:56:00] INFO root fetch - processPackages [lib-version-urlphishing]: Downloading https://files.pythonhosted.org/packages/dc/88/5cd9ad927ecf3814b7a25b8013d6d69ae0555b805f3ecf0fe056aaef0d8d/lib_version_urlphishing-2.1.8.tar.gz
+[2024-05-19 21:56:00] INFO root fetch - processPackages [lib-version-urlphishing]: executing diffoscope
+[2024-05-19 21:56:00] INFO root fetch - processPackages [lib-version-urlphishing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib_version_urlphishing-2.1.7.tar.gz tmp/lib_version_urlphishing-2.1.8.tar.gz --markdown 20240519/l/lib-version-urlphishing/2.1.7-2.1.8/README.md --exclude *.pyd
+[2024-05-19 21:56:00] INFO root fetch - processPackages [Crackerjack]: Downloading https://files.pythonhosted.org/packages/c5/75/3568b19058277b8cd82499102cf3be7570336f14e93bacedeb931e7e18cd/crackerjack-0.7.9.tar.gz
+[2024-05-19 21:56:00] INFO root fetch - processPackages [Crackerjack]: executing diffoscope
+[2024-05-19 21:56:00] INFO root fetch - processPackages [Crackerjack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crackerjack-0.7.8.tar.gz tmp/crackerjack-0.7.9.tar.gz --markdown 20240519/C/Crackerjack/0.7.8-0.7.9/README.md --exclude *.pyd
+[2024-05-19 21:56:00] INFO root fetch - processPackages [lib-version-urlphishing]: Remove: archive file [/home/abi/fetcher/tmp/lib_version_urlphishing-2.1.7.tar.gz]
+[2024-05-19 21:56:00] INFO root fetch - processPackages [lib-version-urlphishing]: Remove: archive file [/home/abi/fetcher/tmp/lib_version_urlphishing-2.1.8.tar.gz]
+[2024-05-19 21:56:00] INFO root fetch - main [MainThread]: End processing [lib-version-urlphishing]: success
+[2024-05-19 21:56:01] INFO root fetch - processPackages [Crackerjack]: Remove: archive file [/home/abi/fetcher/tmp/crackerjack-0.7.8.tar.gz]
+[2024-05-19 21:56:01] INFO root fetch - processPackages [Crackerjack]: Remove: archive file [/home/abi/fetcher/tmp/crackerjack-0.7.9.tar.gz]
+[2024-05-19 21:56:01] INFO root fetch - main [MainThread]: End processing [Crackerjack]: success
+[2024-05-19 21:56:01] INFO root fetch - main [MainThread]: Store serial: [23279856]
