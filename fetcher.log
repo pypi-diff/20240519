@@ -11858,3 +11858,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 16:02:17] INFO root fetch - processPackages [spaceone-inventory]: Remove: archive file [/home/abi/fetcher/tmp/spaceone-inventory-2.0.dev99.tar.gz]
 [2024-05-19 16:02:17] INFO root fetch - main [MainThread]: End processing [spaceone-inventory]: success
 [2024-05-19 16:02:17] INFO root fetch - main [MainThread]: Store serial: [23277088]
+[2024-05-19 16:04:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277088]
+[2024-05-19 16:04:26] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 16:04:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: morphdb-utils
+[2024-05-19 16:04:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: drapersz
+[2024-05-19 16:04:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ev3dev2simulator
+[2024-05-19 16:04:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: beancount-multitool
+[2024-05-19 16:04:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: monstr-terminal
+[2024-05-19 16:04:26] WARNING root fetch - processPackages [monstr-terminal]: Skipping, unable to determine old version
+[2024-05-19 16:04:26] INFO root fetch - main [MainThread]: End processing [monstr-terminal] error
+[2024-05-19 16:04:26] WARNING root fetch - processPackages [beancount-multitool]: Skipping, unable to determine old version
+[2024-05-19 16:04:26] INFO root fetch - main [MainThread]: End processing [beancount-multitool] error
+[2024-05-19 16:04:26] INFO root fetch - processPackages [ev3dev2simulator]: New version: [2.0.7] Old Version: [2.0.6]
+[2024-05-19 16:04:26] WARNING root fetch - processPackages [drapersz]: Skipping, unable to determine old version
+[2024-05-19 16:04:26] INFO root fetch - main [MainThread]: End processing [drapersz] error
+[2024-05-19 16:04:26] INFO root fetch - processPackages [morphdb-utils]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-19 16:04:27] INFO root fetch - processPackages [ev3dev2simulator]: Downloading https://files.pythonhosted.org/packages/60/d5/bb6250570adfd81fec8e0a9dc628e125ac7aa2e56a6cae39deb2f1f67e9a/ev3dev2simulator-2.0.6-py3-none-any.whl
+[2024-05-19 16:04:27] INFO root fetch - processPackages [morphdb-utils]: Downloading https://files.pythonhosted.org/packages/cd/4f/c6949258d5647c0aa4d14e61014c6e3a7c9f08086b8ff176bee34576864d/morphdb_utils-0.1.8.tar.gz
+[2024-05-19 16:04:27] INFO root fetch - processPackages [morphdb-utils]: Downloading https://files.pythonhosted.org/packages/f4/69/729494d22abe49b72c25e4b1efa215d54cab59388bae925f40777fce21f3/morphdb_utils-0.1.9.tar.gz
+[2024-05-19 16:04:27] INFO root fetch - processPackages [ev3dev2simulator]: Downloading https://files.pythonhosted.org/packages/fc/c2/f4d5bba2a67f4a1b187376dd722bcf4de5fc02bb906350a7c091847c2a61/ev3dev2simulator-2.0.7.tar.gz
+[2024-05-19 16:04:27] INFO root fetch - processPackages [morphdb-utils]: executing diffoscope
+[2024-05-19 16:04:27] INFO root fetch - processPackages [morphdb-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/morphdb_utils-0.1.8.tar.gz tmp/morphdb_utils-0.1.9.tar.gz --markdown 20240519/m/morphdb-utils/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-19 16:04:27] INFO root fetch - processPackages [ev3dev2simulator]: executing diffoscope
+[2024-05-19 16:04:27] INFO root fetch - processPackages [ev3dev2simulator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ev3dev2simulator-2.0.6-py3-none-any.whl.zip tmp/ev3dev2simulator-2.0.7.tar.gz --markdown 20240519/e/ev3dev2simulator/2.0.6-2.0.7/README.md --exclude *.pyd
+[2024-05-19 16:04:27] INFO root fetch - processPackages [morphdb-utils]: Remove: archive file [/home/abi/fetcher/tmp/morphdb_utils-0.1.8.tar.gz]
+[2024-05-19 16:04:27] INFO root fetch - processPackages [morphdb-utils]: Remove: archive file [/home/abi/fetcher/tmp/morphdb_utils-0.1.9.tar.gz]
+[2024-05-19 16:04:27] INFO root fetch - main [MainThread]: End processing [morphdb-utils]: success
+[2024-05-19 16:04:28] INFO root fetch - processPackages [ev3dev2simulator]: Remove: archive file [/home/abi/fetcher/tmp/ev3dev2simulator-2.0.6-py3-none-any.whl.zip]
+[2024-05-19 16:04:28] INFO root fetch - processPackages [ev3dev2simulator]: Remove: archive file [/home/abi/fetcher/tmp/ev3dev2simulator-2.0.7.tar.gz]
+[2024-05-19 16:04:28] INFO root fetch - main [MainThread]: End processing [ev3dev2simulator]: success
+[2024-05-19 16:04:28] INFO root fetch - main [MainThread]: Store serial: [23277105]
