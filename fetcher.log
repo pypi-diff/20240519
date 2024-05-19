@@ -9361,3 +9361,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 13:27:13] INFO root fetch - processPackages [torchrl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchrl_nightly-2024.5.9-cp39-cp39-win_amd64.whl.zip]
 [2024-05-19 13:27:13] INFO root fetch - main [MainThread]: End processing [torchrl-nightly]: success
 [2024-05-19 13:27:13] INFO root fetch - main [MainThread]: Store serial: [23275865]
+[2024-05-19 13:29:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275865]
+[2024-05-19 13:29:21] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 13:29:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: proxies-tg-wrapper
+[2024-05-19 13:29:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: thymus-ast
+[2024-05-19 13:29:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: versalign
+[2024-05-19 13:29:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: insurrectoz
+[2024-05-19 13:29:21] INFO root fetch - processPackages [thymus-ast]: New version: [0.1.8.1] Old Version: [0.1.8]
+[2024-05-19 13:29:22] INFO root fetch - processPackages [thymus-ast]: Downloading https://files.pythonhosted.org/packages/60/9e/41bdd93aff22a94ef085bcf694374f85cc381d2e16fef0a589989f21b874/thymus_ast-0.1.8.tar.gz
+[2024-05-19 13:29:22] WARNING root fetch - processPackages [proxies-tg-wrapper]: Skipping, unable to determine old version
+[2024-05-19 13:29:22] INFO root fetch - main [MainThread]: End processing [proxies-tg-wrapper] error
+[2024-05-19 13:29:22] WARNING root fetch - processPackages [insurrectoz]: Skipping, unable to determine old version
+[2024-05-19 13:29:22] INFO root fetch - main [MainThread]: End processing [insurrectoz] error
+[2024-05-19 13:29:22] WARNING root fetch - processPackages [versalign]: Skipping, unable to determine old version
+[2024-05-19 13:29:22] INFO root fetch - main [MainThread]: End processing [versalign] error
+[2024-05-19 13:29:22] INFO root fetch - processPackages [thymus-ast]: Downloading https://files.pythonhosted.org/packages/62/07/5e825fb89502ddc2a396639d4bbec4fb859fcbf82746bdc01e27088af6ea/thymus_ast-0.1.8.1.tar.gz
+[2024-05-19 13:29:22] INFO root fetch - processPackages [thymus-ast]: executing diffoscope
+[2024-05-19 13:29:22] INFO root fetch - processPackages [thymus-ast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thymus_ast-0.1.8.tar.gz tmp/thymus_ast-0.1.8.1.tar.gz --markdown 20240519/t/thymus-ast/0.1.8-0.1.8.1/README.md --exclude *.pyd
+[2024-05-19 13:29:23] INFO root fetch - processPackages [thymus-ast]: Remove: archive file [/home/abi/fetcher/tmp/thymus_ast-0.1.8.tar.gz]
+[2024-05-19 13:29:23] INFO root fetch - processPackages [thymus-ast]: Remove: archive file [/home/abi/fetcher/tmp/thymus_ast-0.1.8.1.tar.gz]
+[2024-05-19 13:29:23] INFO root fetch - main [MainThread]: End processing [thymus-ast]: success
+[2024-05-19 13:29:23] INFO root fetch - main [MainThread]: Store serial: [23275883]
