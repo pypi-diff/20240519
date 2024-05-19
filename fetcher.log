@@ -11504,3 +11504,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 15:46:58] INFO root fetch - processPackages [auto-coder]: Remove: archive file [/home/abi/fetcher/tmp/auto-coder-0.1.9.tar.gz]
 [2024-05-19 15:46:58] INFO root fetch - main [MainThread]: End processing [auto-coder]: success
 [2024-05-19 15:46:58] INFO root fetch - main [MainThread]: Store serial: [23276911]
+[2024-05-19 15:49:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276911]
+[2024-05-19 15:49:07] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-19 15:49:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: outpostcli
+[2024-05-19 15:49:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xenarthralz
+[2024-05-19 15:49:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: reasonify-headless
+[2024-05-19 15:49:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: TaGra
+[2024-05-19 15:49:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: prompeteer
+[2024-05-19 15:49:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hftbacktest
+[2024-05-19 15:49:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: spaceone-inventory
+[2024-05-19 15:49:07] INFO root fetch - processPackages [TaGra]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-19 15:49:07] INFO root fetch - processPackages [reasonify-headless]: New version: [0.1.0a1] Old Version: [0.0.2.2]
+[2024-05-19 15:49:07] INFO root fetch - processPackages [outpostcli]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 15:49:07] INFO root fetch - processPackages [spaceone-inventory]: New version: [2.0.dev99] Old Version: [2.0.dev98]
+[2024-05-19 15:49:07] INFO root fetch - processPackages [TaGra]: Downloading https://files.pythonhosted.org/packages/0d/19/e1eb4474e1f2f1fd9dcce6d3c511ff2b8d91c46be0039fc360a61e246072/TaGra-0.1.4.tar.gz
+[2024-05-19 15:49:07] INFO root fetch - processPackages [hftbacktest]: New version: [1.8.2] Old Version: [1.8.1]
+[2024-05-19 15:49:07] INFO root fetch - processPackages [prompeteer]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-05-19 15:49:07] WARNING root fetch - processPackages [xenarthralz]: Skipping, unable to determine old version
+[2024-05-19 15:49:07] INFO root fetch - main [MainThread]: End processing [xenarthralz] error
+[2024-05-19 15:49:07] INFO root fetch - processPackages [reasonify-headless]: Downloading https://files.pythonhosted.org/packages/55/02/4f30284be16d42efeb2642faa0af2e1679f4c918e6ed5e63dec58c2af438/reasonify_headless-0.0.2.2.tar.gz
+[2024-05-19 15:49:07] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/7e/e2/114a39eac567286d0418645c0ea24089c48fcbe4cccec6c79191a5cefccf/outpostcli-0.0.8.tar.gz
+[2024-05-19 15:49:07] INFO root fetch - processPackages [spaceone-inventory]: Downloading https://files.pythonhosted.org/packages/2b/23/73e091142fbd007706604f94cc95718e79d9259d998aa9dd424fc7cc6f7f/spaceone-inventory-2.0.dev98.tar.gz
+[2024-05-19 15:49:07] INFO root fetch - processPackages [hftbacktest]: Downloading https://files.pythonhosted.org/packages/59/ec/4f6bdcdacf9aef72965829d32930fc935b1e665e69b432ec014a78033b78/hftbacktest-1.8.1.tar.gz
+[2024-05-19 15:49:07] INFO root fetch - processPackages [prompeteer]: Downloading https://files.pythonhosted.org/packages/c8/94/2667fac61788a96e5c93374da9060eb37bf2766bec29669b6edf6d6e3a9a/prompeteer-0.3.1.tar.gz
+[2024-05-19 15:49:07] INFO root fetch - processPackages [reasonify-headless]: Downloading https://files.pythonhosted.org/packages/84/00/22558f7cbcb52e033c74e3bdcd543c58228faa8848635c0f2907567346a4/reasonify_headless-0.1.0a1.tar.gz
+[2024-05-19 15:49:07] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/df/ab/82b6853cec170d33c2aff19e3a298b0bf56f7ba1b885f6f7d42a10ae43dc/outpostcli-0.0.9.tar.gz
+[2024-05-19 15:49:07] INFO root fetch - processPackages [TaGra]: Downloading https://files.pythonhosted.org/packages/40/65/cf7ccb4896c3c65adb9275077da3eb9334b39413b9eca711be4865ee59e1/TaGra-0.1.5.tar.gz
+[2024-05-19 15:49:07] INFO root fetch - processPackages [spaceone-inventory]: Downloading https://files.pythonhosted.org/packages/e7/30/f1229bb9f69283d6576804b473d6fe73ff3118fb5543c89d48b18f899ca2/spaceone-inventory-2.0.dev99.tar.gz
+[2024-05-19 15:49:07] INFO root fetch - processPackages [reasonify-headless]: executing diffoscope
+[2024-05-19 15:49:07] INFO root fetch - processPackages [reasonify-headless]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reasonify_headless-0.0.2.2.tar.gz tmp/reasonify_headless-0.1.0a1.tar.gz --markdown 20240519/r/reasonify-headless/0.0.2.2-0.1.0a1/README.md --exclude *.pyd
+[2024-05-19 15:49:07] INFO root fetch - processPackages [outpostcli]: executing diffoscope
+[2024-05-19 15:49:07] INFO root fetch - processPackages [outpostcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outpostcli-0.0.8.tar.gz tmp/outpostcli-0.0.9.tar.gz --markdown 20240519/o/outpostcli/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 15:49:07] INFO root fetch - processPackages [TaGra]: executing diffoscope
+[2024-05-19 15:49:07] INFO root fetch - processPackages [TaGra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TaGra-0.1.4.tar.gz tmp/TaGra-0.1.5.tar.gz --markdown 20240519/T/TaGra/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-19 15:49:08] INFO root fetch - processPackages [spaceone-inventory]: executing diffoscope
+[2024-05-19 15:49:08] INFO root fetch - processPackages [spaceone-inventory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spaceone-inventory-2.0.dev98.tar.gz tmp/spaceone-inventory-2.0.dev99.tar.gz --markdown 20240519/s/spaceone-inventory/2.0.dev98-2.0.dev99/README.md --exclude *.pyd
+[2024-05-19 15:49:08] INFO root fetch - processPackages [hftbacktest]: Downloading https://files.pythonhosted.org/packages/28/55/fbee6f515e504921226f96d0d57ccbe85574ecfad96263030347b08956b1/hftbacktest-1.8.2.tar.gz
+[2024-05-19 15:49:08] INFO root fetch - processPackages [prompeteer]: Downloading https://files.pythonhosted.org/packages/10/c5/296108b53ce970884035f8ec6949e29f73dab692d5e5e20e5007fbd39266/prompeteer-0.3.2.tar.gz
+[2024-05-19 15:49:08] INFO root fetch - processPackages [hftbacktest]: executing diffoscope
+[2024-05-19 15:49:08] INFO root fetch - processPackages [hftbacktest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hftbacktest-1.8.1.tar.gz tmp/hftbacktest-1.8.2.tar.gz --markdown 20240519/h/hftbacktest/1.8.1-1.8.2/README.md --exclude *.pyd
+[2024-05-19 15:49:08] INFO root fetch - processPackages [prompeteer]: executing diffoscope
+[2024-05-19 15:49:08] INFO root fetch - processPackages [prompeteer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prompeteer-0.3.1.tar.gz tmp/prompeteer-0.3.2.tar.gz --markdown 20240519/p/prompeteer/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-05-19 15:49:08] INFO root fetch - processPackages [reasonify-headless]: Remove: archive file [/home/abi/fetcher/tmp/reasonify_headless-0.0.2.2.tar.gz]
+[2024-05-19 15:49:08] INFO root fetch - processPackages [reasonify-headless]: Remove: archive file [/home/abi/fetcher/tmp/reasonify_headless-0.1.0a1.tar.gz]
+[2024-05-19 15:49:08] INFO root fetch - main [MainThread]: End processing [reasonify-headless]: success
+[2024-05-19 15:49:08] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.8.tar.gz]
+[2024-05-19 15:49:08] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.9.tar.gz]
+[2024-05-19 15:49:08] INFO root fetch - main [MainThread]: End processing [outpostcli]: success
+[2024-05-19 15:49:08] INFO root fetch - processPackages [TaGra]: Remove: archive file [/home/abi/fetcher/tmp/TaGra-0.1.4.tar.gz]
+[2024-05-19 15:49:08] INFO root fetch - processPackages [TaGra]: Remove: archive file [/home/abi/fetcher/tmp/TaGra-0.1.5.tar.gz]
+[2024-05-19 15:49:08] INFO root fetch - main [MainThread]: End processing [TaGra]: success
+[2024-05-19 15:49:08] INFO root fetch - processPackages [prompeteer]: Remove: archive file [/home/abi/fetcher/tmp/prompeteer-0.3.1.tar.gz]
+[2024-05-19 15:49:08] INFO root fetch - processPackages [prompeteer]: Remove: archive file [/home/abi/fetcher/tmp/prompeteer-0.3.2.tar.gz]
+[2024-05-19 15:49:08] INFO root fetch - main [MainThread]: End processing [prompeteer]: success
+[2024-05-19 15:49:08] INFO root fetch - processPackages [hftbacktest]: Remove: archive file [/home/abi/fetcher/tmp/hftbacktest-1.8.1.tar.gz]
+[2024-05-19 15:49:08] INFO root fetch - processPackages [hftbacktest]: Remove: archive file [/home/abi/fetcher/tmp/hftbacktest-1.8.2.tar.gz]
+[2024-05-19 15:49:08] INFO root fetch - main [MainThread]: End processing [hftbacktest]: success
+[2024-05-19 15:49:08] INFO root fetch - processPackages [spaceone-inventory]: Remove: archive file [/home/abi/fetcher/tmp/spaceone-inventory-2.0.dev98.tar.gz]
+[2024-05-19 15:49:08] INFO root fetch - processPackages [spaceone-inventory]: Remove: archive file [/home/abi/fetcher/tmp/spaceone-inventory-2.0.dev99.tar.gz]
+[2024-05-19 15:49:08] INFO root fetch - main [MainThread]: End processing [spaceone-inventory]: success
+[2024-05-19 15:49:08] INFO root fetch - main [MainThread]: Store serial: [23276932]
