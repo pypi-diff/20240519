@@ -17860,3 +17860,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 22:02:31] INFO root fetch - processPackages [Quart]: Remove: archive file [/home/abi/fetcher/tmp/Quart-0.9.1.tar.gz]
 [2024-05-19 22:02:31] INFO root fetch - main [MainThread]: End processing [Quart]: success
 [2024-05-19 22:02:31] INFO root fetch - main [MainThread]: Store serial: [23279902]
+[2024-05-19 22:04:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279902]
+[2024-05-19 22:04:39] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 22:04:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: that-depends
+[2024-05-19 22:04:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: minaibot
+[2024-05-19 22:04:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: woningwaardering
+[2024-05-19 22:04:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: eras
+[2024-05-19 22:04:39] INFO root fetch - processPackages [eras]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-19 22:04:39] INFO root fetch - processPackages [that-depends]: New version: [1.7.1] Old Version: [1.7.0]
+[2024-05-19 22:04:39] INFO root fetch - processPackages [woningwaardering]: New version: [0.2.14a0] Old Version: [0.2.0a1]
+[2024-05-19 22:04:39] WARNING root fetch - processPackages [minaibot]: Skipping, unable to determine old version
+[2024-05-19 22:04:39] INFO root fetch - main [MainThread]: End processing [minaibot] error
+[2024-05-19 22:04:39] INFO root fetch - processPackages [eras]: Downloading https://files.pythonhosted.org/packages/a6/06/d869d50825f56bb2be19d0e3aee680fbd437831ad661eec874446625d8d7/eras-0.1.2.tar.gz
+[2024-05-19 22:04:39] INFO root fetch - processPackages [that-depends]: Downloading https://files.pythonhosted.org/packages/62/09/017e6f23d85f7159db412f0a62962b99bfbe1561a9d9f3148f3afd8af118/that_depends-1.7.0.tar.gz
+[2024-05-19 22:04:39] INFO root fetch - processPackages [woningwaardering]: Downloading https://files.pythonhosted.org/packages/9b/75/cf8335aa18bbecc1694754b3b1fe7a045aace36a6763b0b3003142dda316/woningwaardering-0.2.0a1.tar.gz
+[2024-05-19 22:04:40] INFO root fetch - processPackages [that-depends]: Downloading https://files.pythonhosted.org/packages/dc/16/0e1e6e1805162a7509cc02d6435dc40c456190c2f58863518bccc16a5b28/that_depends-1.7.1.tar.gz
+[2024-05-19 22:04:40] INFO root fetch - processPackages [woningwaardering]: Downloading https://files.pythonhosted.org/packages/71/10/70bd4c83b5eca22d7be75758c32fc78e58fe396cbe1bd219a38caece87bc/woningwaardering-0.2.14a0.tar.gz
+[2024-05-19 22:04:40] INFO root fetch - processPackages [eras]: Downloading https://files.pythonhosted.org/packages/a3/be/7ca5dbde6b1b434db21d8ccf3a1c35c39587dd83f8067e9fc2a97a3a37c5/eras-0.1.3.tar.gz
+[2024-05-19 22:04:40] INFO root fetch - processPackages [that-depends]: executing diffoscope
+[2024-05-19 22:04:40] INFO root fetch - processPackages [that-depends]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/that_depends-1.7.0.tar.gz tmp/that_depends-1.7.1.tar.gz --markdown 20240519/t/that-depends/1.7.0-1.7.1/README.md --exclude *.pyd
+[2024-05-19 22:04:40] INFO root fetch - processPackages [eras]: executing diffoscope
+[2024-05-19 22:04:40] INFO root fetch - processPackages [eras]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eras-0.1.2.tar.gz tmp/eras-0.1.3.tar.gz --markdown 20240519/e/eras/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-19 22:04:40] INFO root fetch - processPackages [woningwaardering]: executing diffoscope
+[2024-05-19 22:04:40] INFO root fetch - processPackages [woningwaardering]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/woningwaardering-0.2.0a1.tar.gz tmp/woningwaardering-0.2.14a0.tar.gz --markdown 20240519/w/woningwaardering/0.2.0a1-0.2.14a0/README.md --exclude *.pyd
+[2024-05-19 22:04:40] INFO root fetch - processPackages [that-depends]: Remove: archive file [/home/abi/fetcher/tmp/that_depends-1.7.0.tar.gz]
+[2024-05-19 22:04:40] INFO root fetch - processPackages [that-depends]: Remove: archive file [/home/abi/fetcher/tmp/that_depends-1.7.1.tar.gz]
+[2024-05-19 22:04:40] INFO root fetch - main [MainThread]: End processing [that-depends]: success
+[2024-05-19 22:04:40] INFO root fetch - processPackages [eras]: Remove: archive file [/home/abi/fetcher/tmp/eras-0.1.2.tar.gz]
+[2024-05-19 22:04:40] INFO root fetch - processPackages [eras]: Remove: archive file [/home/abi/fetcher/tmp/eras-0.1.3.tar.gz]
+[2024-05-19 22:04:40] INFO root fetch - main [MainThread]: End processing [eras]: success
+[2024-05-19 22:04:41] INFO root fetch - processPackages [woningwaardering]: Remove: archive file [/home/abi/fetcher/tmp/woningwaardering-0.2.0a1.tar.gz]
+[2024-05-19 22:04:41] INFO root fetch - processPackages [woningwaardering]: Remove: archive file [/home/abi/fetcher/tmp/woningwaardering-0.2.14a0.tar.gz]
+[2024-05-19 22:04:41] INFO root fetch - main [MainThread]: End processing [woningwaardering]: success
+[2024-05-19 22:04:41] INFO root fetch - main [MainThread]: Store serial: [23279918]
