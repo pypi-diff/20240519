@@ -13877,3 +13877,44 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 17:59:38] INFO root fetch - processPackages [group-local]: Remove: archive file [/home/abi/fetcher/tmp/group_local-0.0.27.tar.gz]
 [2024-05-19 17:59:38] INFO root fetch - main [MainThread]: End processing [group-local]: success
 [2024-05-19 17:59:38] INFO root fetch - main [MainThread]: Store serial: [23278028]
+[2024-05-19 18:01:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23278028]
+[2024-05-19 18:01:47] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-19 18:01:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flops-utils
+[2024-05-19 18:01:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: llvm2py
+[2024-05-19 18:01:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mushedz
+[2024-05-19 18:01:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yeref
+[2024-05-19 18:01:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: natten
+[2024-05-19 18:01:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: trengine
+[2024-05-19 18:01:47] INFO root fetch - processPackages [trengine]: New version: [1.3] Old Version: [1.2]
+[2024-05-19 18:01:47] INFO root fetch - processPackages [flops-utils]: New version: [0.4.5] Old Version: [0.4.4]
+[2024-05-19 18:01:47] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-19 18:01:47] WARNING root fetch - processPackages [mushedz]: Skipping, unable to determine old version
+[2024-05-19 18:01:47] INFO root fetch - main [MainThread]: End processing [mushedz] error
+[2024-05-19 18:01:47] INFO root fetch - processPackages [natten]: New version: [0.17.1] Old Version: [0.17.0]
+[2024-05-19 18:01:47] WARNING root fetch - processPackages [llvm2py]: Skipping, unable to determine old version
+[2024-05-19 18:01:47] INFO root fetch - main [MainThread]: End processing [llvm2py] error
+[2024-05-19 18:01:47] INFO root fetch - processPackages [trengine]: Downloading https://files.pythonhosted.org/packages/85/76/4336a37e9bf4d5543b17da5b27cce5c7d6af803fbbe7c35abe667e982284/trengine-1.2.tar.gz
+[2024-05-19 18:01:47] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-19 18:01:47] INFO root fetch - processPackages [flops-utils]: Downloading https://files.pythonhosted.org/packages/d7/48/745c9a9a6cf19548b3b2d7d9e7800c489078c2f72f66fc0dfae353be0abb/flops_utils-0.4.4.tar.gz
+[2024-05-19 18:01:47] INFO root fetch - processPackages [natten]: Downloading https://files.pythonhosted.org/packages/ca/11/ffc2227b67e5376ff44d03b991427fe743fea42fa6032ee8e91b21059f50/natten-0.17.0.tar.gz
+[2024-05-19 18:01:47] INFO root fetch - processPackages [trengine]: Downloading https://files.pythonhosted.org/packages/5b/f0/c2b943617d5cc055c279de642a5b186ea1df27e0a82e60d1106674fcf64f/trengine-1.3.tar.gz
+[2024-05-19 18:01:47] WARNING root fetch - processPackages [natten]: Skipping package: exceeds size limit 10848012>=10485760
+[2024-05-19 18:01:47] INFO root fetch - main [MainThread]: End processing [natten] error
+[2024-05-19 18:01:47] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-19 18:01:47] INFO root fetch - processPackages [trengine]: executing diffoscope
+[2024-05-19 18:01:47] INFO root fetch - processPackages [trengine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trengine-1.2.tar.gz tmp/trengine-1.3.tar.gz --markdown 20240519/t/trengine/1.2-1.3/README.md --exclude *.pyd
+[2024-05-19 18:01:47] INFO root fetch - processPackages [flops-utils]: Downloading https://files.pythonhosted.org/packages/15/27/5f65772eb36e420198bc08163abd1e9aac916a00d2a4268bde09c92f0363/flops_utils-0.4.5.tar.gz
+[2024-05-19 18:01:47] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-19 18:01:47] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240519/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-19 18:01:47] INFO root fetch - processPackages [flops-utils]: executing diffoscope
+[2024-05-19 18:01:47] INFO root fetch - processPackages [flops-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flops_utils-0.4.4.tar.gz tmp/flops_utils-0.4.5.tar.gz --markdown 20240519/f/flops-utils/0.4.4-0.4.5/README.md --exclude *.pyd
+[2024-05-19 18:01:48] INFO root fetch - processPackages [trengine]: Remove: archive file [/home/abi/fetcher/tmp/trengine-1.2.tar.gz]
+[2024-05-19 18:01:48] INFO root fetch - processPackages [trengine]: Remove: archive file [/home/abi/fetcher/tmp/trengine-1.3.tar.gz]
+[2024-05-19 18:01:48] INFO root fetch - main [MainThread]: End processing [trengine]: success
+[2024-05-19 18:01:48] INFO root fetch - processPackages [flops-utils]: Remove: archive file [/home/abi/fetcher/tmp/flops_utils-0.4.4.tar.gz]
+[2024-05-19 18:01:48] INFO root fetch - processPackages [flops-utils]: Remove: archive file [/home/abi/fetcher/tmp/flops_utils-0.4.5.tar.gz]
+[2024-05-19 18:01:48] INFO root fetch - main [MainThread]: End processing [flops-utils]: success
+[2024-05-19 18:01:48] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-19 18:01:48] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-19 18:01:48] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-19 18:01:48] INFO root fetch - main [MainThread]: Store serial: [23278056]
