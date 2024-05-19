@@ -4413,3 +4413,27 @@
 [2024-05-19 07:14:52] INFO root fetch - processPackages [zhlyr]: Remove: archive file [/home/abi/fetcher/tmp/zhlyr-4.9-cp312-cp312-win_amd64.whl.zip]
 [2024-05-19 07:14:52] INFO root fetch - main [MainThread]: End processing [zhlyr]: success
 [2024-05-19 07:14:52] INFO root fetch - main [MainThread]: Store serial: [23273482]
+[2024-05-19 07:16:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273482]
+[2024-05-19 07:17:00] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 07:17:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sportswrangler
+[2024-05-19 07:17:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-kubernetes-the-hard-way
+[2024-05-19 07:17:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zibuyu-llm
+[2024-05-19 07:17:01] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: New version: [0.0.21a1716058855] Old Version: [0.0.21a1716012211]
+[2024-05-19 07:17:01] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/a6/68/6b0e24c17bc1ae8c89da395b348f33a3119035ea01f3a6cc9ea6f92f6fc5/pulumi_kubernetes_the_hard_way-0.0.21a1716012211.tar.gz
+[2024-05-19 07:17:01] WARNING root fetch - processPackages [zibuyu-llm]: Skipping, unable to determine old version
+[2024-05-19 07:17:01] INFO root fetch - main [MainThread]: End processing [zibuyu-llm] error
+[2024-05-19 07:17:01] INFO root fetch - processPackages [sportswrangler]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-19 07:17:01] INFO root fetch - processPackages [sportswrangler]: Downloading https://files.pythonhosted.org/packages/5c/7c/31593829a4dccc86d269eadb889f413943646894e99ce6d17b059d68dd71/sportswrangler-0.1.4.tar.gz
+[2024-05-19 07:17:01] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/79/f5/327470fc428cf6eb7e530200cc2bac743f42ccbe7494e83ad1e2e5217c33/pulumi_kubernetes_the_hard_way-0.0.21a1716058855.tar.gz
+[2024-05-19 07:17:01] INFO root fetch - processPackages [sportswrangler]: Downloading https://files.pythonhosted.org/packages/c5/f7/18a5f091eb03e3b97386024f883237775f5874d25a1678ed538b8c1090ba/sportswrangler-0.1.5.tar.gz
+[2024-05-19 07:17:01] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: executing diffoscope
+[2024-05-19 07:17:01] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kubernetes_the_hard_way-0.0.21a1716012211.tar.gz tmp/pulumi_kubernetes_the_hard_way-0.0.21a1716058855.tar.gz --markdown 20240519/p/pulumi-kubernetes-the-hard-way/0.0.21a1716012211-0.0.21a1716058855/README.md --exclude *.pyd
+[2024-05-19 07:17:01] INFO root fetch - processPackages [sportswrangler]: executing diffoscope
+[2024-05-19 07:17:01] INFO root fetch - processPackages [sportswrangler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sportswrangler-0.1.4.tar.gz tmp/sportswrangler-0.1.5.tar.gz --markdown 20240519/s/sportswrangler/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-19 07:17:02] INFO root fetch - processPackages [sportswrangler]: Remove: archive file [/home/abi/fetcher/tmp/sportswrangler-0.1.4.tar.gz]
+[2024-05-19 07:17:02] INFO root fetch - processPackages [sportswrangler]: Remove: archive file [/home/abi/fetcher/tmp/sportswrangler-0.1.5.tar.gz]
+[2024-05-19 07:17:02] INFO root fetch - main [MainThread]: End processing [sportswrangler]: success
+[2024-05-19 07:17:02] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.21a1716012211.tar.gz]
+[2024-05-19 07:17:02] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.21a1716058855.tar.gz]
+[2024-05-19 07:17:02] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
+[2024-05-19 07:17:02] INFO root fetch - main [MainThread]: Store serial: [23273492]
