@@ -9304,3 +9304,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 13:25:02] INFO root fetch - processPackages [swarmtube]: Remove: archive file [/home/abi/fetcher/tmp/swarmtube-0.1.43-py2.py3-none-any.whl.zip]
 [2024-05-19 13:25:02] INFO root fetch - main [MainThread]: End processing [swarmtube]: success
 [2024-05-19 13:25:02] INFO root fetch - main [MainThread]: Store serial: [23275845]
+[2024-05-19 13:27:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275845]
+[2024-05-19 13:27:11] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-19 13:27:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: RTS-WebUIBuilder
+[2024-05-19 13:27:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torchrl-nightly
+[2024-05-19 13:27:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: myjd-api
+[2024-05-19 13:27:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torchx-nightly
+[2024-05-19 13:27:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: plugpack
+[2024-05-19 13:27:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: audiconnectpy
+[2024-05-19 13:27:11] INFO root fetch - processPackages [RTS-WebUIBuilder]: New version: [0.8] Old Version: [0.7]
+[2024-05-19 13:27:11] INFO root fetch - processPackages [audiconnectpy]: New version: [2.1.6] Old Version: [2.1.5]
+[2024-05-19 13:27:11] INFO root fetch - processPackages [torchx-nightly]: New version: [2024.5.9] Old Version: [2024.5.8]
+[2024-05-19 13:27:11] INFO root fetch - processPackages [RTS-WebUIBuilder]: Downloading https://files.pythonhosted.org/packages/39/80/8e8ae89d588cdbefab59751963adc99cdc1ff655eed65159ccb46b1f58a3/RTS-WebUIBuilder-0.7.tar.gz
+[2024-05-19 13:27:11] INFO root fetch - processPackages [myjd-api]: New version: [1.2.0] Old Version: [1.1.1]
+[2024-05-19 13:27:11] INFO root fetch - processPackages [audiconnectpy]: Downloading https://files.pythonhosted.org/packages/ca/65/896f8c1949109770d407320a35ee66db3cf4c3282f12146ebf67288fab16/audiconnectpy-2.1.5.tar.gz
+[2024-05-19 13:27:11] INFO root fetch - processPackages [torchrl-nightly]: New version: [2024.5.9] Old Version: [2024.5.8]
+[2024-05-19 13:27:11] INFO root fetch - processPackages [torchx-nightly]: Downloading https://files.pythonhosted.org/packages/4f/2c/1b1fd11c1eb29345cef72d90c551ee6ca39cb1ca91dcb13a62e39d09d3e9/torchx_nightly-2024.5.8-py3-none-any.whl
+[2024-05-19 13:27:11] INFO root fetch - processPackages [plugpack]: New version: [0.1.0] Old Version: [0.0.2]
+[2024-05-19 13:27:11] INFO root fetch - processPackages [myjd-api]: Downloading https://files.pythonhosted.org/packages/c6/bc/6affa2f99cb05b76a1c404d604d0a971279c710a5e92ad362ccab093c738/myjd_api-1.1.1.tar.gz
+[2024-05-19 13:27:11] INFO root fetch - processPackages [RTS-WebUIBuilder]: Downloading https://files.pythonhosted.org/packages/16/91/c46d8a10d59df3fe43042764ca95e1b7963e6882ecf3c9a381ec3d9309b3/RTS-WebUIBuilder-0.8.tar.gz
+[2024-05-19 13:27:11] INFO root fetch - processPackages [torchrl-nightly]: Downloading https://files.pythonhosted.org/packages/a5/6d/9461214af24f1d24305421c7f45896fa740108e193fceb8f3145648e07e2/torchrl_nightly-2024.5.8-cp39-cp39-win_amd64.whl
+[2024-05-19 13:27:11] INFO root fetch - processPackages [plugpack]: Downloading https://files.pythonhosted.org/packages/85/c7/2f0841965b983115d0c7e2e7a436e692155160bfac412d7c0c418eedb34f/plugpack-0.0.2-py3-none-any.whl
+[2024-05-19 13:27:11] INFO root fetch - processPackages [torchx-nightly]: Downloading https://files.pythonhosted.org/packages/77/19/3475ceeec15466054f155b399d006faaf128258c35d771397c04ac9cf1e4/torchx_nightly-2024.5.9-py3-none-any.whl
+[2024-05-19 13:27:11] INFO root fetch - processPackages [RTS-WebUIBuilder]: executing diffoscope
+[2024-05-19 13:27:11] INFO root fetch - processPackages [RTS-WebUIBuilder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RTS-WebUIBuilder-0.7.tar.gz tmp/RTS-WebUIBuilder-0.8.tar.gz --markdown 20240519/R/RTS-WebUIBuilder/0.7-0.8/README.md --exclude *.pyd
+[2024-05-19 13:27:11] INFO root fetch - processPackages [audiconnectpy]: Downloading https://files.pythonhosted.org/packages/bf/74/3699d86e1d660cf65147b81aeeb14253a9fa27e070ef9af28e6d023a8f43/audiconnectpy-2.1.6.tar.gz
+[2024-05-19 13:27:11] INFO root fetch - processPackages [torchx-nightly]: executing diffoscope
+[2024-05-19 13:27:11] INFO root fetch - processPackages [torchx-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchx_nightly-2024.5.8-py3-none-any.whl.zip tmp/torchx_nightly-2024.5.9-py3-none-any.whl.zip --markdown 20240519/t/torchx-nightly/2024.5.8-2024.5.9/README.md --exclude *.pyd
+[2024-05-19 13:27:11] INFO root fetch - processPackages [audiconnectpy]: executing diffoscope
+[2024-05-19 13:27:11] INFO root fetch - processPackages [audiconnectpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audiconnectpy-2.1.5.tar.gz tmp/audiconnectpy-2.1.6.tar.gz --markdown 20240519/a/audiconnectpy/2.1.5-2.1.6/README.md --exclude *.pyd
+[2024-05-19 13:27:11] INFO root fetch - processPackages [myjd-api]: Downloading https://files.pythonhosted.org/packages/7c/14/3a16f0dc00ae4541dcc3adb2df8b43dda5220d168ccac601f85b12fbda30/myjd_api-1.2.0.tar.gz
+[2024-05-19 13:27:12] INFO root fetch - processPackages [myjd-api]: executing diffoscope
+[2024-05-19 13:27:12] INFO root fetch - processPackages [myjd-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myjd_api-1.1.1.tar.gz tmp/myjd_api-1.2.0.tar.gz --markdown 20240519/m/myjd-api/1.1.1-1.2.0/README.md --exclude *.pyd
+[2024-05-19 13:27:12] INFO root fetch - processPackages [torchrl-nightly]: Downloading https://files.pythonhosted.org/packages/e9/e4/1d21a71adb0d6367cd81a5f47617cabf90f99ac96a421dda991f6aeefff2/torchrl_nightly-2024.5.9-cp39-cp39-win_amd64.whl
+[2024-05-19 13:27:12] INFO root fetch - processPackages [plugpack]: Downloading https://files.pythonhosted.org/packages/42/09/82306302bdc4c91ea42cdc30c488aa98eaf98a06cb9c74f42949091edc22/plugpack-0.1.0-py3-none-any.whl
+[2024-05-19 13:27:12] INFO root fetch - processPackages [torchrl-nightly]: executing diffoscope
+[2024-05-19 13:27:12] INFO root fetch - processPackages [torchrl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchrl_nightly-2024.5.8-cp39-cp39-win_amd64.whl.zip tmp/torchrl_nightly-2024.5.9-cp39-cp39-win_amd64.whl.zip --markdown 20240519/t/torchrl-nightly/2024.5.8-2024.5.9/README.md --exclude *.pyd
+[2024-05-19 13:27:12] INFO root fetch - processPackages [plugpack]: executing diffoscope
+[2024-05-19 13:27:12] INFO root fetch - processPackages [plugpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plugpack-0.0.2-py3-none-any.whl.zip tmp/plugpack-0.1.0-py3-none-any.whl.zip --markdown 20240519/p/plugpack/0.0.2-0.1.0/README.md --exclude *.pyd
+[2024-05-19 13:27:12] INFO root fetch - processPackages [RTS-WebUIBuilder]: Remove: archive file [/home/abi/fetcher/tmp/RTS-WebUIBuilder-0.7.tar.gz]
+[2024-05-19 13:27:12] INFO root fetch - processPackages [RTS-WebUIBuilder]: Remove: archive file [/home/abi/fetcher/tmp/RTS-WebUIBuilder-0.8.tar.gz]
+[2024-05-19 13:27:12] INFO root fetch - main [MainThread]: End processing [RTS-WebUIBuilder]: success
+[2024-05-19 13:27:12] INFO root fetch - processPackages [audiconnectpy]: Remove: archive file [/home/abi/fetcher/tmp/audiconnectpy-2.1.5.tar.gz]
+[2024-05-19 13:27:12] INFO root fetch - processPackages [audiconnectpy]: Remove: archive file [/home/abi/fetcher/tmp/audiconnectpy-2.1.6.tar.gz]
+[2024-05-19 13:27:12] INFO root fetch - main [MainThread]: End processing [audiconnectpy]: success
+[2024-05-19 13:27:12] INFO root fetch - processPackages [torchx-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchx_nightly-2024.5.8-py3-none-any.whl.zip]
+[2024-05-19 13:27:12] INFO root fetch - processPackages [torchx-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchx_nightly-2024.5.9-py3-none-any.whl.zip]
+[2024-05-19 13:27:12] INFO root fetch - main [MainThread]: End processing [torchx-nightly]: success
+[2024-05-19 13:27:12] INFO root fetch - processPackages [myjd-api]: Remove: archive file [/home/abi/fetcher/tmp/myjd_api-1.1.1.tar.gz]
+[2024-05-19 13:27:12] INFO root fetch - processPackages [myjd-api]: Remove: archive file [/home/abi/fetcher/tmp/myjd_api-1.2.0.tar.gz]
+[2024-05-19 13:27:12] INFO root fetch - main [MainThread]: End processing [myjd-api]: success
+[2024-05-19 13:27:13] INFO root fetch - processPackages [plugpack]: Remove: archive file [/home/abi/fetcher/tmp/plugpack-0.0.2-py3-none-any.whl.zip]
+[2024-05-19 13:27:13] INFO root fetch - processPackages [plugpack]: Remove: archive file [/home/abi/fetcher/tmp/plugpack-0.1.0-py3-none-any.whl.zip]
+[2024-05-19 13:27:13] INFO root fetch - main [MainThread]: End processing [plugpack]: success
+[2024-05-19 13:27:13] INFO root fetch - processPackages [torchrl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchrl_nightly-2024.5.8-cp39-cp39-win_amd64.whl.zip]
+[2024-05-19 13:27:13] INFO root fetch - processPackages [torchrl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchrl_nightly-2024.5.9-cp39-cp39-win_amd64.whl.zip]
+[2024-05-19 13:27:13] INFO root fetch - main [MainThread]: End processing [torchrl-nightly]: success
+[2024-05-19 13:27:13] INFO root fetch - main [MainThread]: Store serial: [23275865]
