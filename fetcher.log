@@ -4784,3 +4784,24 @@
 [2024-05-19 07:51:52] INFO root fetch - processPackages [hydromodel]: Remove: archive file [/home/abi/fetcher/tmp/hydromodel-0.2.3.tar.gz]
 [2024-05-19 07:51:52] INFO root fetch - main [MainThread]: End processing [hydromodel]: success
 [2024-05-19 07:51:52] INFO root fetch - main [MainThread]: Store serial: [23273630]
+[2024-05-19 07:53:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273630]
+[2024-05-19 07:54:00] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 07:54:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: donware
+[2024-05-19 07:54:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: compose_x_common
+[2024-05-19 07:54:00] INFO root fetch - processPackages [donware]: New version: [0.1.9] Old Version: [0.1.11]
+[2024-05-19 07:54:01] INFO root fetch - processPackages [compose_x_common]: New version: [1.4.8] Old Version: [1.4.7]
+[2024-05-19 07:54:01] INFO root fetch - processPackages [donware]: Downloading https://files.pythonhosted.org/packages/90/d8/3765fde71c0d4ad3ec1599f370d10c4dec17af47845d72aede0a30eda1c2/donware-0.1.11.tar.gz
+[2024-05-19 07:54:01] INFO root fetch - processPackages [compose_x_common]: Downloading https://files.pythonhosted.org/packages/c7/34/6c3a6455f70d720c79375563d2098e9ec23127a5a8f7db81e1c2828e5f13/compose_x_common-1.4.7.tar.gz
+[2024-05-19 07:54:01] INFO root fetch - processPackages [donware]: Downloading https://files.pythonhosted.org/packages/fe/8e/83b9db87c05ce764e53c9976cbc2389c98231b770ce8d64a986981faf472/donware-0.1.9.tar.gz
+[2024-05-19 07:54:01] INFO root fetch - processPackages [donware]: executing diffoscope
+[2024-05-19 07:54:01] INFO root fetch - processPackages [donware]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/donware-0.1.11.tar.gz tmp/donware-0.1.9.tar.gz --markdown 20240519/d/donware/0.1.11-0.1.9/README.md --exclude *.pyd
+[2024-05-19 07:54:01] INFO root fetch - processPackages [compose_x_common]: Downloading https://files.pythonhosted.org/packages/6e/e4/c12833dcc50f03022796c3bd64b0862c44945171d4372ae85cb517e2237d/compose_x_common-1.4.8.tar.gz
+[2024-05-19 07:54:01] INFO root fetch - processPackages [compose_x_common]: executing diffoscope
+[2024-05-19 07:54:01] INFO root fetch - processPackages [compose_x_common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/compose_x_common-1.4.7.tar.gz tmp/compose_x_common-1.4.8.tar.gz --markdown 20240519/c/compose_x_common/1.4.7-1.4.8/README.md --exclude *.pyd
+[2024-05-19 07:54:02] INFO root fetch - processPackages [donware]: Remove: archive file [/home/abi/fetcher/tmp/donware-0.1.11.tar.gz]
+[2024-05-19 07:54:02] INFO root fetch - processPackages [donware]: Remove: archive file [/home/abi/fetcher/tmp/donware-0.1.9.tar.gz]
+[2024-05-19 07:54:02] INFO root fetch - main [MainThread]: End processing [donware]: success
+[2024-05-19 07:54:02] INFO root fetch - processPackages [compose_x_common]: Remove: archive file [/home/abi/fetcher/tmp/compose_x_common-1.4.7.tar.gz]
+[2024-05-19 07:54:02] INFO root fetch - processPackages [compose_x_common]: Remove: archive file [/home/abi/fetcher/tmp/compose_x_common-1.4.8.tar.gz]
+[2024-05-19 07:54:02] INFO root fetch - main [MainThread]: End processing [compose_x_common]: success
+[2024-05-19 07:54:02] INFO root fetch - main [MainThread]: Store serial: [23273637]
