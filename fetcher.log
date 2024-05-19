@@ -12180,3 +12180,62 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 16:23:05] INFO root fetch - processPackages [utilmy]: Remove: archive file [/home/abi/fetcher/tmp/utilmy-0.1.17161284.tar.gz]
 [2024-05-19 16:23:05] INFO root fetch - main [MainThread]: End processing [utilmy]: success
 [2024-05-19 16:23:05] INFO root fetch - main [MainThread]: Store serial: [23277223]
+[2024-05-19 16:25:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277223]
+[2024-05-19 16:25:13] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-19 16:25:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: camera-ui-python-types
+[2024-05-19 16:25:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: corradez
+[2024-05-19 16:25:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gando
+[2024-05-19 16:25:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: outpostcli
+[2024-05-19 16:25:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: eksamen
+[2024-05-19 16:25:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fleekapi
+[2024-05-19 16:25:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cortexannotate
+[2024-05-19 16:25:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nodetool
+[2024-05-19 16:25:13] INFO root fetch - processPackages [camera-ui-python-types]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-19 16:25:13] INFO root fetch - processPackages [fleekapi]: New version: [0.1.23] Old Version: [0.1.22]
+[2024-05-19 16:25:13] INFO root fetch - processPackages [cortexannotate]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-19 16:25:13] INFO root fetch - processPackages [outpostcli]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 16:25:14] INFO root fetch - processPackages [gando]: New version: [0.9.8] Old Version: [0.9.7]
+[2024-05-19 16:25:14] INFO root fetch - processPackages [camera-ui-python-types]: Downloading https://files.pythonhosted.org/packages/4d/91/8f66920b92ee71f302a89040cd5bda06874eb3068a8e2783d2727e21e145/camera-ui-python-types-0.1.8.tar.gz
+[2024-05-19 16:25:14] INFO root fetch - processPackages [fleekapi]: Downloading https://files.pythonhosted.org/packages/f7/ca/3ac2ee95498caf572fbcdda408e49e4244f1d4de452a3f207b42085ae767/fleekapi-0.1.22.tar.gz
+[2024-05-19 16:25:14] INFO root fetch - processPackages [nodetool]: New version: [0.1.27] Old Version: [0.1.26]
+[2024-05-19 16:25:14] WARNING root fetch - processPackages [eksamen]: Skipping, unable to determine old version
+[2024-05-19 16:25:14] WARNING root fetch - processPackages [corradez]: Skipping, unable to determine old version
+[2024-05-19 16:25:14] INFO root fetch - main [MainThread]: End processing [eksamen] error
+[2024-05-19 16:25:14] INFO root fetch - main [MainThread]: End processing [corradez] error
+[2024-05-19 16:25:14] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/7e/e2/114a39eac567286d0418645c0ea24089c48fcbe4cccec6c79191a5cefccf/outpostcli-0.0.8.tar.gz
+[2024-05-19 16:25:14] INFO root fetch - processPackages [cortexannotate]: Downloading https://files.pythonhosted.org/packages/fb/f6/c122f7a80c751d7bbf851aaa83ca397c7651c46c4b34689c44135082223f/cortexannotate-0.1.1.tar.gz
+[2024-05-19 16:25:14] INFO root fetch - processPackages [gando]: Downloading https://files.pythonhosted.org/packages/5f/ad/9ce3a6ba3c5faf8984d231b1d4e350dc99ef5decdc96e34bfe1ccc8ba490/gando-0.9.7.tar.gz
+[2024-05-19 16:25:14] INFO root fetch - processPackages [camera-ui-python-types]: Downloading https://files.pythonhosted.org/packages/aa/10/16d19e4d819a9d548f5b24a065fd209324b510898722599b0caf5da342e7/camera-ui-python-types-0.1.9.tar.gz
+[2024-05-19 16:25:14] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/df/ab/82b6853cec170d33c2aff19e3a298b0bf56f7ba1b885f6f7d42a10ae43dc/outpostcli-0.0.9.tar.gz
+[2024-05-19 16:25:14] INFO root fetch - processPackages [nodetool]: Downloading https://files.pythonhosted.org/packages/b2/0c/5f3068f9ac8ece16f413b75e89cbf7700b92871523aa3b838023d273d248/nodetool-0.1.26.tar.gz
+[2024-05-19 16:25:14] INFO root fetch - processPackages [fleekapi]: Downloading https://files.pythonhosted.org/packages/43/b6/543ae0a398b2f1be25e71fa68bfbb51500debc8c8482f623cbbcbc861da7/fleekapi-0.1.23.tar.gz
+[2024-05-19 16:25:14] INFO root fetch - processPackages [camera-ui-python-types]: executing diffoscope
+[2024-05-19 16:25:14] INFO root fetch - processPackages [camera-ui-python-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/camera-ui-python-types-0.1.8.tar.gz tmp/camera-ui-python-types-0.1.9.tar.gz --markdown 20240519/c/camera-ui-python-types/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-19 16:25:14] INFO root fetch - processPackages [outpostcli]: executing diffoscope
+[2024-05-19 16:25:14] INFO root fetch - processPackages [outpostcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outpostcli-0.0.8.tar.gz tmp/outpostcli-0.0.9.tar.gz --markdown 20240519/o/outpostcli/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 16:25:14] WARNING root fetch - processPackages [nodetool]: Skipping package: exceeds size limit 10852536>=10485760
+[2024-05-19 16:25:14] INFO root fetch - main [MainThread]: End processing [nodetool] error
+[2024-05-19 16:25:14] INFO root fetch - processPackages [fleekapi]: executing diffoscope
+[2024-05-19 16:25:14] INFO root fetch - processPackages [fleekapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fleekapi-0.1.22.tar.gz tmp/fleekapi-0.1.23.tar.gz --markdown 20240519/f/fleekapi/0.1.22-0.1.23/README.md --exclude *.pyd
+[2024-05-19 16:25:14] INFO root fetch - processPackages [cortexannotate]: Downloading https://files.pythonhosted.org/packages/d3/e2/3652e0308d9522ae3cc9c32f6dee9f44f816501df99a7f76b6cfd52c1e6c/cortexannotate-0.1.2.tar.gz
+[2024-05-19 16:25:14] INFO root fetch - processPackages [gando]: Downloading https://files.pythonhosted.org/packages/55/b4/3eacdbfcda93734a9bbee501af687c86bfb442a8f0f000f752e95377527e/gando-0.9.8.tar.gz
+[2024-05-19 16:25:14] INFO root fetch - processPackages [cortexannotate]: executing diffoscope
+[2024-05-19 16:25:14] INFO root fetch - processPackages [cortexannotate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cortexannotate-0.1.1.tar.gz tmp/cortexannotate-0.1.2.tar.gz --markdown 20240519/c/cortexannotate/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-19 16:25:14] INFO root fetch - processPackages [gando]: executing diffoscope
+[2024-05-19 16:25:14] INFO root fetch - processPackages [gando]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gando-0.9.7.tar.gz tmp/gando-0.9.8.tar.gz --markdown 20240519/g/gando/0.9.7-0.9.8/README.md --exclude *.pyd
+[2024-05-19 16:25:15] INFO root fetch - processPackages [camera-ui-python-types]: Remove: archive file [/home/abi/fetcher/tmp/camera-ui-python-types-0.1.8.tar.gz]
+[2024-05-19 16:25:15] INFO root fetch - processPackages [camera-ui-python-types]: Remove: archive file [/home/abi/fetcher/tmp/camera-ui-python-types-0.1.9.tar.gz]
+[2024-05-19 16:25:15] INFO root fetch - main [MainThread]: End processing [camera-ui-python-types]: success
+[2024-05-19 16:25:15] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.8.tar.gz]
+[2024-05-19 16:25:15] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.9.tar.gz]
+[2024-05-19 16:25:15] INFO root fetch - main [MainThread]: End processing [outpostcli]: success
+[2024-05-19 16:25:15] INFO root fetch - processPackages [fleekapi]: Remove: archive file [/home/abi/fetcher/tmp/fleekapi-0.1.22.tar.gz]
+[2024-05-19 16:25:15] INFO root fetch - processPackages [fleekapi]: Remove: archive file [/home/abi/fetcher/tmp/fleekapi-0.1.23.tar.gz]
+[2024-05-19 16:25:15] INFO root fetch - main [MainThread]: End processing [fleekapi]: success
+[2024-05-19 16:25:15] INFO root fetch - processPackages [cortexannotate]: Remove: archive file [/home/abi/fetcher/tmp/cortexannotate-0.1.1.tar.gz]
+[2024-05-19 16:25:15] INFO root fetch - processPackages [cortexannotate]: Remove: archive file [/home/abi/fetcher/tmp/cortexannotate-0.1.2.tar.gz]
+[2024-05-19 16:25:15] INFO root fetch - main [MainThread]: End processing [cortexannotate]: success
+[2024-05-19 16:25:15] INFO root fetch - processPackages [gando]: Remove: archive file [/home/abi/fetcher/tmp/gando-0.9.7.tar.gz]
+[2024-05-19 16:25:15] INFO root fetch - processPackages [gando]: Remove: archive file [/home/abi/fetcher/tmp/gando-0.9.8.tar.gz]
+[2024-05-19 16:25:15] INFO root fetch - main [MainThread]: End processing [gando]: success
+[2024-05-19 16:25:15] INFO root fetch - main [MainThread]: Store serial: [23277249]
