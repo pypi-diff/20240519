@@ -7234,3 +7234,24 @@
 [2024-05-19 10:56:57] INFO root fetch - processPackages [tdrpa.tdcore]: Remove: archive file [/home/abi/fetcher/tmp/tdrpa.tdcore-1.1.35-py39-none-win_amd64.whl.zip]
 [2024-05-19 10:56:57] INFO root fetch - main [MainThread]: End processing [tdrpa.tdcore]: success
 [2024-05-19 10:56:57] INFO root fetch - main [MainThread]: Store serial: [23274843]
+[2024-05-19 10:59:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274843]
+[2024-05-19 10:59:06] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 10:59:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-sdk-remote
+[2024-05-19 10:59:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rio-ui
+[2024-05-19 10:59:06] INFO root fetch - processPackages [python-sdk-remote]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-19 10:59:06] INFO root fetch - processPackages [python-sdk-remote]: Downloading https://files.pythonhosted.org/packages/b2/73/ff727800d332ba3412e3135ded7fed3d1b78930e48ab4f978b5038b41b5f/python_sdk_remote-0.0.98.tar.gz
+[2024-05-19 10:59:06] INFO root fetch - processPackages [rio-ui]: New version: [0.7] Old Version: [0.6.9]
+[2024-05-19 10:59:06] INFO root fetch - processPackages [rio-ui]: Downloading https://files.pythonhosted.org/packages/4c/fd/22b5408245b2c43530d6f4c03525f4cfb5149b6b9a8607014456dc6a4c8c/rio_ui-0.6.9.tar.gz
+[2024-05-19 10:59:07] INFO root fetch - processPackages [python-sdk-remote]: Downloading https://files.pythonhosted.org/packages/c6/6c/d232e7e91dcb30944e7eee0abdeb4922803eca620e93ce6940350682eaeb/python_sdk_remote-0.0.99.tar.gz
+[2024-05-19 10:59:07] INFO root fetch - processPackages [python-sdk-remote]: executing diffoscope
+[2024-05-19 10:59:07] INFO root fetch - processPackages [python-sdk-remote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_sdk_remote-0.0.98.tar.gz tmp/python_sdk_remote-0.0.99.tar.gz --markdown 20240519/p/python-sdk-remote/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-19 10:59:07] INFO root fetch - processPackages [rio-ui]: Downloading https://files.pythonhosted.org/packages/74/b4/8215b89f841066b9cd95844a9df26dfb8d34fc83612b447d63d96ca9fe7e/rio_ui-0.7.tar.gz
+[2024-05-19 10:59:07] INFO root fetch - processPackages [python-sdk-remote]: Remove: archive file [/home/abi/fetcher/tmp/python_sdk_remote-0.0.98.tar.gz]
+[2024-05-19 10:59:07] INFO root fetch - processPackages [python-sdk-remote]: Remove: archive file [/home/abi/fetcher/tmp/python_sdk_remote-0.0.99.tar.gz]
+[2024-05-19 10:59:07] INFO root fetch - main [MainThread]: End processing [python-sdk-remote]: success
+[2024-05-19 10:59:08] INFO root fetch - processPackages [rio-ui]: executing diffoscope
+[2024-05-19 10:59:08] INFO root fetch - processPackages [rio-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rio_ui-0.6.9.tar.gz tmp/rio_ui-0.7.tar.gz --markdown 20240519/r/rio-ui/0.6.9-0.7/README.md --exclude *.pyd
+[2024-05-19 10:59:09] INFO root fetch - processPackages [rio-ui]: Remove: archive file [/home/abi/fetcher/tmp/rio_ui-0.6.9.tar.gz]
+[2024-05-19 10:59:09] INFO root fetch - processPackages [rio-ui]: Remove: archive file [/home/abi/fetcher/tmp/rio_ui-0.7.tar.gz]
+[2024-05-19 10:59:09] INFO root fetch - main [MainThread]: End processing [rio-ui]: success
+[2024-05-19 10:59:09] INFO root fetch - main [MainThread]: Store serial: [23274855]
