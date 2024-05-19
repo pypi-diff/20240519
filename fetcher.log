@@ -19852,3 +19852,72 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 23:08:08] INFO root fetch - processPackages [tencentcloud-sdk-python-iai]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-iai-3.0.999.tar.gz]
 [2024-05-19 23:08:08] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-iai]: success
 [2024-05-19 23:08:08] INFO root fetch - main [MainThread]: Store serial: [23280701]
+[2024-05-19 23:10:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23280701]
+[2024-05-19 23:10:16] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-19 23:10:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tencentcloud-sdk-python-iecp
+[2024-05-19 23:10:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tencentcloud-sdk-python-iir
+[2024-05-19 23:10:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mo-json
+[2024-05-19 23:10:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tencentcloud-sdk-python-ims
+[2024-05-19 23:10:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: eras
+[2024-05-19 23:10:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: colalamo
+[2024-05-19 23:10:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyslth
+[2024-05-19 23:10:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mo-files
+[2024-05-19 23:10:17] INFO root fetch - processPackages [mo-files]: New version: [6.636.24140] Old Version: [6.635.24139]
+[2024-05-19 23:10:17] WARNING root fetch - processPackages [colalamo]: Skipping, unable to determine old version
+[2024-05-19 23:10:17] INFO root fetch - main [MainThread]: End processing [colalamo] error
+[2024-05-19 23:10:17] INFO root fetch - processPackages [eras]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-19 23:10:17] INFO root fetch - processPackages [mo-json]: New version: [6.637.24140] Old Version: [6.634.24139]
+[2024-05-19 23:10:17] INFO root fetch - processPackages [pyslth]: New version: [0.4.0] Old Version: [0.3.9]
+[2024-05-19 23:10:17] INFO root fetch - processPackages [eras]: Downloading https://files.pythonhosted.org/packages/83/0b/72b8084f3ff693e1ad40e9f6ecf743d11dc891f79fdc2e39637b2d5877d0/eras-0.1.8.tar.gz
+[2024-05-19 23:10:17] INFO root fetch - processPackages [mo-files]: Downloading https://files.pythonhosted.org/packages/c1/b1/365dee076a6d4d6ddc4dc4680066fc270f9eb5a186d0ab297fcf628b90b6/mo_files-6.635.24139.tar.gz
+[2024-05-19 23:10:17] INFO root fetch - processPackages [tencentcloud-sdk-python-iecp]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-19 23:10:17] INFO root fetch - processPackages [tencentcloud-sdk-python-iir]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-19 23:10:17] INFO root fetch - processPackages [tencentcloud-sdk-python-ims]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-19 23:10:17] INFO root fetch - processPackages [mo-json]: Downloading https://files.pythonhosted.org/packages/0b/46/b8d572d4078aa5cc30c836dec1ae15677f5cd3b98c6728d2ea6002caa398/mo_json-6.634.24139.tar.gz
+[2024-05-19 23:10:17] INFO root fetch - processPackages [pyslth]: Downloading https://files.pythonhosted.org/packages/8b/46/6c58c8b92ab41f3271285178c18e49d3abcca332059813426548febe0bca/pyslth-0.3.9.tar.gz
+[2024-05-19 23:10:17] INFO root fetch - processPackages [tencentcloud-sdk-python-iecp]: Downloading https://files.pythonhosted.org/packages/1d/64/a4f43928e1309bda6bb01f47fe53e9328d8e8caf1b567e60f036ee8e9802/tencentcloud-sdk-python-iecp-3.0.998.tar.gz
+[2024-05-19 23:10:17] INFO root fetch - processPackages [eras]: Downloading https://files.pythonhosted.org/packages/cc/d6/d32f9c2d6bd9bac196208e02fc9cacdb78b4010f5fa59a02b413c9407d18/eras-0.1.9.tar.gz
+[2024-05-19 23:10:17] INFO root fetch - processPackages [tencentcloud-sdk-python-iir]: Downloading https://files.pythonhosted.org/packages/3d/b3/d20345d7a8002b50de278c3cabb7a70fe78f757ea99bb99d2869f2fd300b/tencentcloud-sdk-python-iir-3.0.998.tar.gz
+[2024-05-19 23:10:17] INFO root fetch - processPackages [tencentcloud-sdk-python-ims]: Downloading https://files.pythonhosted.org/packages/6c/0d/30e4b5ce8dc574db2fcae78e45d0eb12d592e4600a8e970e7048ca0fbf11/tencentcloud-sdk-python-ims-3.0.998.tar.gz
+[2024-05-19 23:10:17] INFO root fetch - processPackages [mo-files]: Downloading https://files.pythonhosted.org/packages/60/af/b1adfd2550e638a45c1db56b3e6ce68bf1c238679734ac4027f61b5a7c81/mo_files-6.636.24140.tar.gz
+[2024-05-19 23:10:17] INFO root fetch - processPackages [eras]: executing diffoscope
+[2024-05-19 23:10:17] INFO root fetch - processPackages [eras]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eras-0.1.8.tar.gz tmp/eras-0.1.9.tar.gz --markdown 20240519/e/eras/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-19 23:10:17] INFO root fetch - processPackages [mo-files]: executing diffoscope
+[2024-05-19 23:10:17] INFO root fetch - processPackages [mo-files]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_files-6.635.24139.tar.gz tmp/mo_files-6.636.24140.tar.gz --markdown 20240519/m/mo-files/6.635.24139-6.636.24140/README.md --exclude *.pyd
+[2024-05-19 23:10:17] INFO root fetch - processPackages [mo-json]: Downloading https://files.pythonhosted.org/packages/8c/e2/d6cc14c9e9facc941b0b6fdfd55667e4cf5f094925dbf8739b5c39f1e642/mo_json-6.637.24140.tar.gz
+[2024-05-19 23:10:17] INFO root fetch - processPackages [pyslth]: Downloading https://files.pythonhosted.org/packages/2f/55/173aaddf30562a50f3194d81955e13a8b4e7dd638f98e0a23f38a7bbfa4a/pyslth-0.4.0.tar.gz
+[2024-05-19 23:10:17] INFO root fetch - processPackages [tencentcloud-sdk-python-iecp]: Downloading https://files.pythonhosted.org/packages/07/af/d208cecd475331e8455666ce4bc853ce95f5cf8301b4795a4a860275c37f/tencentcloud-sdk-python-iecp-3.0.999.tar.gz
+[2024-05-19 23:10:17] INFO root fetch - processPackages [tencentcloud-sdk-python-iir]: Downloading https://files.pythonhosted.org/packages/52/da/85aec58cba2fc06f4a045a73930e80675059c99e27eeb0f037641c368cb0/tencentcloud-sdk-python-iir-3.0.999.tar.gz
+[2024-05-19 23:10:17] INFO root fetch - processPackages [tencentcloud-sdk-python-ims]: Downloading https://files.pythonhosted.org/packages/de/42/df4f98e5da862816138beb3ca2911b3fae59971a3eaf9076fd4220c950ec/tencentcloud-sdk-python-ims-3.0.999.tar.gz
+[2024-05-19 23:10:17] INFO root fetch - processPackages [mo-json]: executing diffoscope
+[2024-05-19 23:10:17] INFO root fetch - processPackages [mo-json]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_json-6.634.24139.tar.gz tmp/mo_json-6.637.24140.tar.gz --markdown 20240519/m/mo-json/6.634.24139-6.637.24140/README.md --exclude *.pyd
+[2024-05-19 23:10:18] INFO root fetch - processPackages [tencentcloud-sdk-python-iir]: executing diffoscope
+[2024-05-19 23:10:18] INFO root fetch - processPackages [tencentcloud-sdk-python-iir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-iir-3.0.998.tar.gz tmp/tencentcloud-sdk-python-iir-3.0.999.tar.gz --markdown 20240519/t/tencentcloud-sdk-python-iir/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-19 23:10:18] INFO root fetch - processPackages [tencentcloud-sdk-python-iecp]: executing diffoscope
+[2024-05-19 23:10:18] INFO root fetch - processPackages [tencentcloud-sdk-python-iecp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-iecp-3.0.998.tar.gz tmp/tencentcloud-sdk-python-iecp-3.0.999.tar.gz --markdown 20240519/t/tencentcloud-sdk-python-iecp/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-19 23:10:18] INFO root fetch - processPackages [tencentcloud-sdk-python-ims]: executing diffoscope
+[2024-05-19 23:10:18] INFO root fetch - processPackages [tencentcloud-sdk-python-ims]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-ims-3.0.998.tar.gz tmp/tencentcloud-sdk-python-ims-3.0.999.tar.gz --markdown 20240519/t/tencentcloud-sdk-python-ims/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-19 23:10:18] INFO root fetch - processPackages [pyslth]: executing diffoscope
+[2024-05-19 23:10:18] INFO root fetch - processPackages [pyslth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyslth-0.3.9.tar.gz tmp/pyslth-0.4.0.tar.gz --markdown 20240519/p/pyslth/0.3.9-0.4.0/README.md --exclude *.pyd
+[2024-05-19 23:10:18] INFO root fetch - processPackages [eras]: Remove: archive file [/home/abi/fetcher/tmp/eras-0.1.8.tar.gz]
+[2024-05-19 23:10:18] INFO root fetch - processPackages [eras]: Remove: archive file [/home/abi/fetcher/tmp/eras-0.1.9.tar.gz]
+[2024-05-19 23:10:18] INFO root fetch - main [MainThread]: End processing [eras]: success
+[2024-05-19 23:10:18] INFO root fetch - processPackages [mo-files]: Remove: archive file [/home/abi/fetcher/tmp/mo_files-6.635.24139.tar.gz]
+[2024-05-19 23:10:18] INFO root fetch - processPackages [mo-files]: Remove: archive file [/home/abi/fetcher/tmp/mo_files-6.636.24140.tar.gz]
+[2024-05-19 23:10:18] INFO root fetch - main [MainThread]: End processing [mo-files]: success
+[2024-05-19 23:10:18] INFO root fetch - processPackages [mo-json]: Remove: archive file [/home/abi/fetcher/tmp/mo_json-6.634.24139.tar.gz]
+[2024-05-19 23:10:18] INFO root fetch - processPackages [mo-json]: Remove: archive file [/home/abi/fetcher/tmp/mo_json-6.637.24140.tar.gz]
+[2024-05-19 23:10:18] INFO root fetch - main [MainThread]: End processing [mo-json]: success
+[2024-05-19 23:10:18] INFO root fetch - processPackages [tencentcloud-sdk-python-iir]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-iir-3.0.998.tar.gz]
+[2024-05-19 23:10:18] INFO root fetch - processPackages [tencentcloud-sdk-python-iir]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-iir-3.0.999.tar.gz]
+[2024-05-19 23:10:18] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-iir]: success
+[2024-05-19 23:10:18] INFO root fetch - processPackages [tencentcloud-sdk-python-ims]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-ims-3.0.998.tar.gz]
+[2024-05-19 23:10:18] INFO root fetch - processPackages [tencentcloud-sdk-python-ims]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-ims-3.0.999.tar.gz]
+[2024-05-19 23:10:18] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-ims]: success
+[2024-05-19 23:10:18] INFO root fetch - processPackages [tencentcloud-sdk-python-iecp]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-iecp-3.0.998.tar.gz]
+[2024-05-19 23:10:18] INFO root fetch - processPackages [tencentcloud-sdk-python-iecp]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-iecp-3.0.999.tar.gz]
+[2024-05-19 23:10:18] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-iecp]: success
+[2024-05-19 23:10:19] INFO root fetch - processPackages [pyslth]: Remove: archive file [/home/abi/fetcher/tmp/pyslth-0.3.9.tar.gz]
+[2024-05-19 23:10:19] INFO root fetch - processPackages [pyslth]: Remove: archive file [/home/abi/fetcher/tmp/pyslth-0.4.0.tar.gz]
+[2024-05-19 23:10:19] INFO root fetch - main [MainThread]: End processing [pyslth]: success
+[2024-05-19 23:10:19] INFO root fetch - main [MainThread]: Store serial: [23280726]
