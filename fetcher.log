@@ -5980,3 +5980,36 @@
 [2024-05-19 09:28:24] INFO root fetch - processPackages [Dans-Diffraction]: Remove: archive file [/home/abi/fetcher/tmp/Dans_Diffraction-3.2.0.tar.gz]
 [2024-05-19 09:28:24] INFO root fetch - main [MainThread]: End processing [Dans-Diffraction]: success
 [2024-05-19 09:28:24] INFO root fetch - main [MainThread]: Store serial: [23274149]
+[2024-05-19 09:30:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274149]
+[2024-05-19 09:30:32] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 09:30:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: outpostkit
+[2024-05-19 09:30:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rosa-python-client
+[2024-05-19 09:30:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: modelmerge
+[2024-05-19 09:30:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sr-decorator
+[2024-05-19 09:30:32] WARNING root fetch - processPackages [sr-decorator]: Skipping, unable to determine old version
+[2024-05-19 09:30:32] INFO root fetch - main [MainThread]: End processing [sr-decorator] error
+[2024-05-19 09:30:32] INFO root fetch - processPackages [outpostkit]: New version: [0.0.9] Old Version: [0.0.7]
+[2024-05-19 09:30:33] INFO root fetch - processPackages [outpostkit]: Downloading https://files.pythonhosted.org/packages/e8/20/6f4f3b0edb61dd5f691668605b0901894c58c85e728662fff6913423203c/outpostkit-0.0.7.tar.gz
+[2024-05-19 09:30:33] INFO root fetch - processPackages [modelmerge]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-19 09:30:33] INFO root fetch - processPackages [rosa-python-client]: New version: [1.0.92] Old Version: [1.0.9]
+[2024-05-19 09:30:33] INFO root fetch - processPackages [modelmerge]: Downloading https://files.pythonhosted.org/packages/60/9c/6d76457c36ac188f0e08917fafb2ff3dc893318e73901e92eff2cc72569a/modelmerge-0.4.8.tar.gz
+[2024-05-19 09:30:33] INFO root fetch - processPackages [outpostkit]: Downloading https://files.pythonhosted.org/packages/b3/af/8945c62fc6dc5596e5618810b3971a4c11d217517a24d0cd40a10b5b9553/outpostkit-0.0.9.tar.gz
+[2024-05-19 09:30:33] INFO root fetch - processPackages [rosa-python-client]: Downloading https://files.pythonhosted.org/packages/57/71/77aa94783e126449ad00cda27a853d3161809a6117e0e34f7ab67ade9050/rosa_python_client-1.0.9.tar.gz
+[2024-05-19 09:30:33] INFO root fetch - processPackages [outpostkit]: executing diffoscope
+[2024-05-19 09:30:33] INFO root fetch - processPackages [outpostkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outpostkit-0.0.7.tar.gz tmp/outpostkit-0.0.9.tar.gz --markdown 20240519/o/outpostkit/0.0.7-0.0.9/README.md --exclude *.pyd
+[2024-05-19 09:30:33] INFO root fetch - processPackages [modelmerge]: Downloading https://files.pythonhosted.org/packages/46/43/60af7eb9cd19b018b9509958f07001de6e87b9d78dab4bd30639c40396fc/modelmerge-0.4.9.tar.gz
+[2024-05-19 09:30:33] INFO root fetch - processPackages [rosa-python-client]: Downloading https://files.pythonhosted.org/packages/5e/38/231bee8dc6ce3d3749fe595541082a6fd494f44d0533d9ab8934024c635b/rosa_python_client-1.0.92.tar.gz
+[2024-05-19 09:30:33] INFO root fetch - processPackages [modelmerge]: executing diffoscope
+[2024-05-19 09:30:33] INFO root fetch - processPackages [modelmerge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modelmerge-0.4.8.tar.gz tmp/modelmerge-0.4.9.tar.gz --markdown 20240519/m/modelmerge/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-19 09:30:33] INFO root fetch - processPackages [rosa-python-client]: executing diffoscope
+[2024-05-19 09:30:33] INFO root fetch - processPackages [rosa-python-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rosa_python_client-1.0.9.tar.gz tmp/rosa_python_client-1.0.92.tar.gz --markdown 20240519/r/rosa-python-client/1.0.9-1.0.92/README.md --exclude *.pyd
+[2024-05-19 09:30:33] INFO root fetch - processPackages [outpostkit]: Remove: archive file [/home/abi/fetcher/tmp/outpostkit-0.0.7.tar.gz]
+[2024-05-19 09:30:33] INFO root fetch - processPackages [outpostkit]: Remove: archive file [/home/abi/fetcher/tmp/outpostkit-0.0.9.tar.gz]
+[2024-05-19 09:30:33] INFO root fetch - main [MainThread]: End processing [outpostkit]: success
+[2024-05-19 09:30:34] INFO root fetch - processPackages [modelmerge]: Remove: archive file [/home/abi/fetcher/tmp/modelmerge-0.4.8.tar.gz]
+[2024-05-19 09:30:34] INFO root fetch - processPackages [modelmerge]: Remove: archive file [/home/abi/fetcher/tmp/modelmerge-0.4.9.tar.gz]
+[2024-05-19 09:30:34] INFO root fetch - main [MainThread]: End processing [modelmerge]: success
+[2024-05-19 09:30:34] INFO root fetch - processPackages [rosa-python-client]: Remove: archive file [/home/abi/fetcher/tmp/rosa_python_client-1.0.9.tar.gz]
+[2024-05-19 09:30:34] INFO root fetch - processPackages [rosa-python-client]: Remove: archive file [/home/abi/fetcher/tmp/rosa_python_client-1.0.92.tar.gz]
+[2024-05-19 09:30:34] INFO root fetch - main [MainThread]: End processing [rosa-python-client]: success
+[2024-05-19 09:30:34] INFO root fetch - main [MainThread]: Store serial: [23274160]
