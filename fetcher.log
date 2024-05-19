@@ -3315,3 +3315,24 @@
 [2024-05-19 05:28:16] INFO root fetch - processPackages [crossword-puzzle]: Remove: archive file [/home/abi/fetcher/tmp/crossword_puzzle-1.2.72.tar.gz]
 [2024-05-19 05:28:16] INFO root fetch - main [MainThread]: End processing [crossword-puzzle]: success
 [2024-05-19 05:28:16] INFO root fetch - main [MainThread]: Store serial: [23273014]
+[2024-05-19 05:30:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273014]
+[2024-05-19 05:30:25] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 05:30:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sapiopycommons
+[2024-05-19 05:30:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyflagoras
+[2024-05-19 05:30:25] INFO root fetch - processPackages [sapiopycommons]: New version: [32.0.0.24.5] Old Version: [31.3.0.23.12.3]
+[2024-05-19 05:30:25] INFO root fetch - processPackages [sapiopycommons]: Downloading https://files.pythonhosted.org/packages/65/85/c26462638385d6921c9e6e2dd91d7bb1d0ce38c3a35ccf5becf78fea900d/sapiopycommons-31.3.0.23.12.3.tar.gz
+[2024-05-19 05:30:25] INFO root fetch - processPackages [pyflagoras]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-05-19 05:30:25] INFO root fetch - processPackages [pyflagoras]: Downloading https://files.pythonhosted.org/packages/0e/30/c1da4c067f5c8fa448164f345e19fe4ba0e9c170fee42e587fd37e1bfdf6/pyflagoras-0.1.0.tar.gz
+[2024-05-19 05:30:25] INFO root fetch - processPackages [sapiopycommons]: Downloading https://files.pythonhosted.org/packages/0c/8b/0170bd70e4900ced2aa4175842870794a40878c22e225984082dc82568b7/sapiopycommons-32.0.0.24.5.tar.gz
+[2024-05-19 05:30:25] INFO root fetch - processPackages [sapiopycommons]: executing diffoscope
+[2024-05-19 05:30:25] INFO root fetch - processPackages [sapiopycommons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sapiopycommons-31.3.0.23.12.3.tar.gz tmp/sapiopycommons-32.0.0.24.5.tar.gz --markdown 20240519/s/sapiopycommons/31.3.0.23.12.3-32.0.0.24.5/README.md --exclude *.pyd
+[2024-05-19 05:30:25] INFO root fetch - processPackages [pyflagoras]: Downloading https://files.pythonhosted.org/packages/c2/48/6620fb03460fb9637bfb4f47eb01af1f3370868240531a4c934a7cae4a4d/pyflagoras-0.2.0.tar.gz
+[2024-05-19 05:30:25] INFO root fetch - processPackages [pyflagoras]: executing diffoscope
+[2024-05-19 05:30:25] INFO root fetch - processPackages [pyflagoras]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyflagoras-0.1.0.tar.gz tmp/pyflagoras-0.2.0.tar.gz --markdown 20240519/p/pyflagoras/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-05-19 05:30:26] INFO root fetch - processPackages [pyflagoras]: Remove: archive file [/home/abi/fetcher/tmp/pyflagoras-0.1.0.tar.gz]
+[2024-05-19 05:30:26] INFO root fetch - processPackages [pyflagoras]: Remove: archive file [/home/abi/fetcher/tmp/pyflagoras-0.2.0.tar.gz]
+[2024-05-19 05:30:26] INFO root fetch - main [MainThread]: End processing [pyflagoras]: success
+[2024-05-19 05:30:26] INFO root fetch - processPackages [sapiopycommons]: Remove: archive file [/home/abi/fetcher/tmp/sapiopycommons-31.3.0.23.12.3.tar.gz]
+[2024-05-19 05:30:26] INFO root fetch - processPackages [sapiopycommons]: Remove: archive file [/home/abi/fetcher/tmp/sapiopycommons-32.0.0.24.5.tar.gz]
+[2024-05-19 05:30:26] INFO root fetch - main [MainThread]: End processing [sapiopycommons]: success
+[2024-05-19 05:30:26] INFO root fetch - main [MainThread]: Store serial: [23273021]
