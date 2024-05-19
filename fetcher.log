@@ -4641,3 +4641,25 @@
 [2024-05-19 07:38:31] INFO root fetch - processPackages [wah]: Remove: archive file [/home/abi/fetcher/tmp/wah-0.1.9.tar.gz]
 [2024-05-19 07:38:31] INFO root fetch - main [MainThread]: End processing [wah]: success
 [2024-05-19 07:38:31] INFO root fetch - main [MainThread]: Store serial: [23273573]
+[2024-05-19 07:40:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273573]
+[2024-05-19 07:40:40] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 07:40:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sop-deutils
+[2024-05-19 07:40:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unvauntinglyz
+[2024-05-19 07:40:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sop-deutils
+[2024-05-19 07:40:41] INFO root fetch - processPackages [sop-deutils]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-19 07:40:41] WARNING root fetch - processPackages [unvauntinglyz]: Skipping, unable to determine old version
+[2024-05-19 07:40:41] INFO root fetch - main [MainThread]: End processing [unvauntinglyz] error
+[2024-05-19 07:40:41] INFO root fetch - processPackages [sop-deutils]: Downloading https://files.pythonhosted.org/packages/90/25/061e7abb0dc44de63510dded7da9654bc6f0a284ca9a978c052e8bdcd739/sop_deutils-0.9.8.tar.gz
+[2024-05-19 07:40:41] INFO root fetch - processPackages [sop-deutils]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-19 07:40:41] INFO root fetch - processPackages [sop-deutils]: Downloading https://files.pythonhosted.org/packages/90/25/061e7abb0dc44de63510dded7da9654bc6f0a284ca9a978c052e8bdcd739/sop_deutils-0.9.8.tar.gz
+[2024-05-19 07:40:42] INFO root fetch - processPackages [sop-deutils]: Downloading https://files.pythonhosted.org/packages/72/95/95da46c4d54440e29e58711f950067fb490f12e5d5cd23f645102a47e372/sop_deutils-0.9.9.tar.gz
+[2024-05-19 07:40:42] INFO root fetch - processPackages [sop-deutils]: Downloading https://files.pythonhosted.org/packages/72/95/95da46c4d54440e29e58711f950067fb490f12e5d5cd23f645102a47e372/sop_deutils-0.9.9.tar.gz
+[2024-05-19 07:40:42] INFO root fetch - processPackages [sop-deutils]: executing diffoscope
+[2024-05-19 07:40:42] INFO root fetch - processPackages [sop-deutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sop_deutils-0.9.8.tar.gz tmp/sop_deutils-0.9.9.tar.gz --markdown 20240519/s/sop-deutils/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-19 07:40:42] INFO root fetch - processPackages [sop-deutils]: executing diffoscope
+[2024-05-19 07:40:42] INFO root fetch - processPackages [sop-deutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sop_deutils-0.9.8.tar.gz tmp/sop_deutils-0.9.9.tar.gz --markdown 20240519/s/sop-deutils/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-19 07:40:43] INFO root fetch - processPackages [sop-deutils]: Remove: archive file [/home/abi/fetcher/tmp/sop_deutils-0.9.8.tar.gz]
+[2024-05-19 07:40:43] INFO root fetch - processPackages [sop-deutils]: Remove: archive file [/home/abi/fetcher/tmp/sop_deutils-0.9.9.tar.gz]
+[2024-05-19 07:40:43] INFO root fetch - main [MainThread]: End processing [sop-deutils]: success
+[2024-05-19 07:40:43] INFO root fetch - main [MainThread]: End processing [sop-deutils]: success
+[2024-05-19 07:40:43] INFO root fetch - main [MainThread]: Store serial: [23273582]
