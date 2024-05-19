@@ -1479,3 +1479,27 @@
 [2024-05-19 02:27:20] INFO root fetch - processPackages [pulumi-spotinst]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_spotinst-3.9.0a1633346805.tar.gz]
 [2024-05-19 02:27:20] INFO root fetch - main [MainThread]: End processing [pulumi-spotinst]: success
 [2024-05-19 02:27:20] INFO root fetch - main [MainThread]: Store serial: [23272124]
+[2024-05-19 02:29:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272124]
+[2024-05-19 02:29:30] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 02:29:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sweetrpg-api-core
+[2024-05-19 02:29:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: porosez
+[2024-05-19 02:29:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Unified-python-sdk
+[2024-05-19 02:29:30] INFO root fetch - processPackages [Unified-python-sdk]: New version: [0.22.4] Old Version: [0.22.3]
+[2024-05-19 02:29:30] WARNING root fetch - processPackages [porosez]: Skipping, unable to determine old version
+[2024-05-19 02:29:30] INFO root fetch - main [MainThread]: End processing [porosez] error
+[2024-05-19 02:29:30] INFO root fetch - processPackages [Unified-python-sdk]: Downloading https://files.pythonhosted.org/packages/b6/6b/03ac5b163743c89af9a5f7c52b6fde9060552ac994e88f031fd2235d0a74/Unified-python-sdk-0.22.3.tar.gz
+[2024-05-19 02:29:30] INFO root fetch - processPackages [sweetrpg-api-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-19 02:29:30] INFO root fetch - processPackages [sweetrpg-api-core]: Downloading https://files.pythonhosted.org/packages/5d/9d/2398efc534be1a806373637db31588bc65727faee8d3d4ad1e210310552e/sweetrpg-api-core-0.0.98.tar.gz
+[2024-05-19 02:29:30] INFO root fetch - processPackages [Unified-python-sdk]: Downloading https://files.pythonhosted.org/packages/08/0b/5c04f98f088beb50f941b4815f657cbdf56ff4f61187cc898037c4c94701/Unified-python-sdk-0.22.4.tar.gz
+[2024-05-19 02:29:30] INFO root fetch - processPackages [Unified-python-sdk]: executing diffoscope
+[2024-05-19 02:29:30] INFO root fetch - processPackages [Unified-python-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Unified-python-sdk-0.22.3.tar.gz tmp/Unified-python-sdk-0.22.4.tar.gz --markdown 20240519/U/Unified-python-sdk/0.22.3-0.22.4/README.md --exclude *.pyd
+[2024-05-19 02:29:30] INFO root fetch - processPackages [sweetrpg-api-core]: Downloading https://files.pythonhosted.org/packages/bf/6c/3cd8f95074a8f63967790523ccf02ffe9aef45c9c675b0a443c0371e8e04/sweetrpg-api-core-0.0.99.tar.gz
+[2024-05-19 02:29:31] INFO root fetch - processPackages [sweetrpg-api-core]: executing diffoscope
+[2024-05-19 02:29:31] INFO root fetch - processPackages [sweetrpg-api-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-api-core-0.0.98.tar.gz tmp/sweetrpg-api-core-0.0.99.tar.gz --markdown 20240519/s/sweetrpg-api-core/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-19 02:29:31] INFO root fetch - processPackages [sweetrpg-api-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-api-core-0.0.98.tar.gz]
+[2024-05-19 02:29:31] INFO root fetch - processPackages [sweetrpg-api-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-api-core-0.0.99.tar.gz]
+[2024-05-19 02:29:31] INFO root fetch - main [MainThread]: End processing [sweetrpg-api-core]: success
+[2024-05-19 02:29:32] INFO root fetch - processPackages [Unified-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/Unified-python-sdk-0.22.3.tar.gz]
+[2024-05-19 02:29:32] INFO root fetch - processPackages [Unified-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/Unified-python-sdk-0.22.4.tar.gz]
+[2024-05-19 02:29:32] INFO root fetch - main [MainThread]: End processing [Unified-python-sdk]: success
+[2024-05-19 02:29:32] INFO root fetch - main [MainThread]: Store serial: [23272134]
