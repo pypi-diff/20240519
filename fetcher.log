@@ -14598,3 +14598,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 18:56:25] INFO root fetch - processPackages [lamindb_setup]: Remove: archive file [/home/abi/fetcher/tmp/lamindb_setup-0.72.0.tar.gz]
 [2024-05-19 18:56:25] INFO root fetch - main [MainThread]: End processing [lamindb_setup]: success
 [2024-05-19 18:56:25] INFO root fetch - main [MainThread]: Store serial: [23278349]
+[2024-05-19 18:58:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23278349]
+[2024-05-19 18:58:33] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 18:58:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chowtimesz
+[2024-05-19 18:58:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: biliup
+[2024-05-19 18:58:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lnschema_core
+[2024-05-19 18:58:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chalpak
+[2024-05-19 18:58:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: audiconnectpy
+[2024-05-19 18:58:33] WARNING root fetch - processPackages [chalpak]: Skipping, unable to determine old version
+[2024-05-19 18:58:33] INFO root fetch - main [MainThread]: End processing [chalpak] error
+[2024-05-19 18:58:33] INFO root fetch - processPackages [audiconnectpy]: New version: [2.1.8] Old Version: [2.1.7]
+[2024-05-19 18:58:33] INFO root fetch - processPackages [biliup]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-19 18:58:33] WARNING root fetch - processPackages [chowtimesz]: Skipping, unable to determine old version
+[2024-05-19 18:58:33] INFO root fetch - main [MainThread]: End processing [chowtimesz] error
+[2024-05-19 18:58:33] INFO root fetch - processPackages [audiconnectpy]: Downloading https://files.pythonhosted.org/packages/00/4d/83544755c328258448288ec7ec649dacaeec7db82846eecbd59d8f38822d/audiconnectpy-2.1.7.tar.gz
+[2024-05-19 18:58:34] INFO root fetch - processPackages [biliup]: Downloading https://files.pythonhosted.org/packages/33/26/87446b9e80024414938248abd6d5d23524d52b9a0e07980909695db33a0a/biliup-0.4.8.tar.gz
+[2024-05-19 18:58:34] INFO root fetch - processPackages [lnschema_core]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-05-19 18:58:34] INFO root fetch - processPackages [lnschema_core]: Downloading https://files.pythonhosted.org/packages/7a/53/1459e32f6943488250f623718aeb560351a142d81c57a5fc8ef6b0dd1680/lnschema_core-0.8.1.tar.gz
+[2024-05-19 18:58:34] INFO root fetch - processPackages [biliup]: Downloading https://files.pythonhosted.org/packages/ca/50/28c81627954370eeba7075b44c9ef20597ed8f140a1390c814dd976e6c70/biliup-0.4.9.tar.gz
+[2024-05-19 18:58:34] INFO root fetch - processPackages [audiconnectpy]: Downloading https://files.pythonhosted.org/packages/0e/7a/cf8403eb2c3fcb408c147e7b0b13d65b88b5bfb2c03af18e5984964b6608/audiconnectpy-2.1.8.tar.gz
+[2024-05-19 18:58:34] INFO root fetch - processPackages [biliup]: executing diffoscope
+[2024-05-19 18:58:34] INFO root fetch - processPackages [biliup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biliup-0.4.8.tar.gz tmp/biliup-0.4.9.tar.gz --markdown 20240519/b/biliup/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-19 18:58:34] INFO root fetch - processPackages [audiconnectpy]: executing diffoscope
+[2024-05-19 18:58:34] INFO root fetch - processPackages [audiconnectpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audiconnectpy-2.1.7.tar.gz tmp/audiconnectpy-2.1.8.tar.gz --markdown 20240519/a/audiconnectpy/2.1.7-2.1.8/README.md --exclude *.pyd
+[2024-05-19 18:58:34] INFO root fetch - processPackages [lnschema_core]: Downloading https://files.pythonhosted.org/packages/39/cd/cc4d91db21934f66692bedcbdb15fc2c82698c7cc9d0288133e8fa2f5cee/lnschema_core-0.9.0.tar.gz
+[2024-05-19 18:58:34] INFO root fetch - processPackages [lnschema_core]: executing diffoscope
+[2024-05-19 18:58:34] INFO root fetch - processPackages [lnschema_core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lnschema_core-0.8.1.tar.gz tmp/lnschema_core-0.9.0.tar.gz --markdown 20240519/l/lnschema_core/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-05-19 18:58:35] INFO root fetch - processPackages [audiconnectpy]: Remove: archive file [/home/abi/fetcher/tmp/audiconnectpy-2.1.7.tar.gz]
+[2024-05-19 18:58:35] INFO root fetch - processPackages [audiconnectpy]: Remove: archive file [/home/abi/fetcher/tmp/audiconnectpy-2.1.8.tar.gz]
+[2024-05-19 18:58:35] INFO root fetch - main [MainThread]: End processing [audiconnectpy]: success
+[2024-05-19 18:58:35] INFO root fetch - processPackages [biliup]: Remove: archive file [/home/abi/fetcher/tmp/biliup-0.4.8.tar.gz]
+[2024-05-19 18:58:35] INFO root fetch - processPackages [biliup]: Remove: archive file [/home/abi/fetcher/tmp/biliup-0.4.9.tar.gz]
+[2024-05-19 18:58:35] INFO root fetch - main [MainThread]: End processing [biliup]: success
+[2024-05-19 18:58:35] INFO root fetch - processPackages [lnschema_core]: Remove: archive file [/home/abi/fetcher/tmp/lnschema_core-0.8.1.tar.gz]
+[2024-05-19 18:58:35] INFO root fetch - processPackages [lnschema_core]: Remove: archive file [/home/abi/fetcher/tmp/lnschema_core-0.9.0.tar.gz]
+[2024-05-19 18:58:35] INFO root fetch - main [MainThread]: End processing [lnschema_core]: success
+[2024-05-19 18:58:35] INFO root fetch - main [MainThread]: Store serial: [23278366]
