@@ -3395,3 +3395,30 @@
 [2024-05-19 05:39:00] WARNING root fetch - processPackages [nonsuccessivez]: Skipping, unable to determine old version
 [2024-05-19 05:39:00] INFO root fetch - main [MainThread]: End processing [nonsuccessivez] error
 [2024-05-19 05:39:00] INFO root fetch - main [MainThread]: Store serial: [23273048]
+[2024-05-19 05:41:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273048]
+[2024-05-19 05:41:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 05:41:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kaizen-cloudcode
+[2024-05-19 05:41:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: awsync
+[2024-05-19 05:41:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spacy-thai
+[2024-05-19 05:41:09] INFO root fetch - processPackages [kaizen-cloudcode]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-19 05:41:09] INFO root fetch - processPackages [kaizen-cloudcode]: Downloading https://files.pythonhosted.org/packages/d7/41/c6f720ceefd61b444dcab9bbdbfdb1a8ad5538b62c00b23142d86d1388ed/kaizen_cloudcode-0.1.6.tar.gz
+[2024-05-19 05:41:09] INFO root fetch - processPackages [awsync]: New version: [0.4.3] Old Version: [0.3.1]
+[2024-05-19 05:41:09] INFO root fetch - processPackages [spacy-thai]: New version: [0.7.4] Old Version: [0.7.3]
+[2024-05-19 05:41:10] INFO root fetch - processPackages [spacy-thai]: Downloading https://files.pythonhosted.org/packages/84/76/7b7974e65a818c1ec3117f868d056bf8578129ac281edb711b9a2b3fc15a/spacy_thai-0.7.3-py3-none-any.whl
+[2024-05-19 05:41:10] INFO root fetch - processPackages [awsync]: Downloading https://files.pythonhosted.org/packages/f3/86/4fde191795757b767ba38b30e8e25ff70829f19c3f5ffc279dd46bbce358/awsync-0.3.1.tar.gz
+[2024-05-19 05:41:10] INFO root fetch - processPackages [kaizen-cloudcode]: Downloading https://files.pythonhosted.org/packages/6f/d0/0dbb7bf2ee1531a7ea441e30ba8871544933dfe91575f061ba83f3dd2ad8/kaizen_cloudcode-0.1.7.tar.gz
+[2024-05-19 05:41:10] INFO root fetch - processPackages [kaizen-cloudcode]: executing diffoscope
+[2024-05-19 05:41:10] INFO root fetch - processPackages [kaizen-cloudcode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kaizen_cloudcode-0.1.6.tar.gz tmp/kaizen_cloudcode-0.1.7.tar.gz --markdown 20240519/k/kaizen-cloudcode/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-19 05:41:10] INFO root fetch - processPackages [awsync]: Downloading https://files.pythonhosted.org/packages/ca/40/ac95adba0ceb6f3c8b5d9c9e6c6089589b8f964dd761e119578cf4b99c4c/awsync-0.4.3.tar.gz
+[2024-05-19 05:41:10] INFO root fetch - processPackages [awsync]: executing diffoscope
+[2024-05-19 05:41:10] INFO root fetch - processPackages [awsync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/awsync-0.3.1.tar.gz tmp/awsync-0.4.3.tar.gz --markdown 20240519/a/awsync/0.3.1-0.4.3/README.md --exclude *.pyd
+[2024-05-19 05:41:10] INFO root fetch - processPackages [kaizen-cloudcode]: Remove: archive file [/home/abi/fetcher/tmp/kaizen_cloudcode-0.1.6.tar.gz]
+[2024-05-19 05:41:10] INFO root fetch - processPackages [kaizen-cloudcode]: Remove: archive file [/home/abi/fetcher/tmp/kaizen_cloudcode-0.1.7.tar.gz]
+[2024-05-19 05:41:10] INFO root fetch - main [MainThread]: End processing [kaizen-cloudcode]: success
+[2024-05-19 05:41:10] INFO root fetch - processPackages [awsync]: Remove: archive file [/home/abi/fetcher/tmp/awsync-0.3.1.tar.gz]
+[2024-05-19 05:41:10] INFO root fetch - processPackages [awsync]: Remove: archive file [/home/abi/fetcher/tmp/awsync-0.4.3.tar.gz]
+[2024-05-19 05:41:10] INFO root fetch - main [MainThread]: End processing [awsync]: success
+[2024-05-19 05:41:11] INFO root fetch - processPackages [spacy-thai]: Downloading https://files.pythonhosted.org/packages/fa/25/145491811adf6c2ebdf7baf7d5943d068e64d75befe9649db4b072d5ccea/spacy_thai-0.7.4-py3-none-any.whl
+[2024-05-19 05:41:11] WARNING root fetch - processPackages [spacy-thai]: Skipping package: exceeds size limit 15708592>=10485760
+[2024-05-19 05:41:11] INFO root fetch - main [MainThread]: End processing [spacy-thai] error
+[2024-05-19 05:41:11] INFO root fetch - main [MainThread]: Store serial: [23273056]
