@@ -5827,3 +5827,24 @@
 [2024-05-19 09:19:18] INFO root fetch - processPackages [seqlogic]: Remove: archive file [/home/abi/fetcher/tmp/seqlogic-0.1.0.tar.gz]
 [2024-05-19 09:19:18] INFO root fetch - main [MainThread]: End processing [seqlogic]: success
 [2024-05-19 09:19:18] INFO root fetch - main [MainThread]: Store serial: [23274099]
+[2024-05-19 09:21:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274099]
+[2024-05-19 09:21:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 09:21:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xarizmi
+[2024-05-19 09:21:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ChordReviewsVis
+[2024-05-19 09:21:28] INFO root fetch - processPackages [xarizmi]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-05-19 09:21:29] INFO root fetch - processPackages [xarizmi]: Downloading https://files.pythonhosted.org/packages/72/4f/980c3e77315c34e470b3395c2241dbebfabf273b4e19280f52419aba2212/xarizmi-0.1.0.tar.gz
+[2024-05-19 09:21:29] INFO root fetch - processPackages [ChordReviewsVis]: New version: [0.2.5] Old Version: [0.2.3]
+[2024-05-19 09:21:29] INFO root fetch - processPackages [ChordReviewsVis]: Downloading https://files.pythonhosted.org/packages/0a/5b/9454f15e43c4ad811d74aed2dd36b31b9d45c7f64b16847f764f64daf9b3/chordreviewsvis-0.2.3.tar.gz
+[2024-05-19 09:21:29] INFO root fetch - processPackages [xarizmi]: Downloading https://files.pythonhosted.org/packages/d0/29/d769e715c931a7c17345e78f29b9501038260bad7d816cab433bfb559fab/xarizmi-0.2.0.tar.gz
+[2024-05-19 09:21:29] INFO root fetch - processPackages [xarizmi]: executing diffoscope
+[2024-05-19 09:21:29] INFO root fetch - processPackages [xarizmi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xarizmi-0.1.0.tar.gz tmp/xarizmi-0.2.0.tar.gz --markdown 20240519/x/xarizmi/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-05-19 09:21:29] INFO root fetch - processPackages [ChordReviewsVis]: Downloading https://files.pythonhosted.org/packages/45/43/1924744031ccc77265341c98776eb22a70420a938840eedf05cdf027e977/chordreviewsvis-0.2.5.tar.gz
+[2024-05-19 09:21:29] INFO root fetch - processPackages [ChordReviewsVis]: executing diffoscope
+[2024-05-19 09:21:29] INFO root fetch - processPackages [ChordReviewsVis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chordreviewsvis-0.2.3.tar.gz tmp/chordreviewsvis-0.2.5.tar.gz --markdown 20240519/C/ChordReviewsVis/0.2.3-0.2.5/README.md --exclude *.pyd
+[2024-05-19 09:21:30] INFO root fetch - processPackages [xarizmi]: Remove: archive file [/home/abi/fetcher/tmp/xarizmi-0.1.0.tar.gz]
+[2024-05-19 09:21:30] INFO root fetch - processPackages [xarizmi]: Remove: archive file [/home/abi/fetcher/tmp/xarizmi-0.2.0.tar.gz]
+[2024-05-19 09:21:30] INFO root fetch - main [MainThread]: End processing [xarizmi]: success
+[2024-05-19 09:21:30] INFO root fetch - processPackages [ChordReviewsVis]: Remove: archive file [/home/abi/fetcher/tmp/chordreviewsvis-0.2.3.tar.gz]
+[2024-05-19 09:21:30] INFO root fetch - processPackages [ChordReviewsVis]: Remove: archive file [/home/abi/fetcher/tmp/chordreviewsvis-0.2.5.tar.gz]
+[2024-05-19 09:21:30] INFO root fetch - main [MainThread]: End processing [ChordReviewsVis]: success
+[2024-05-19 09:21:30] INFO root fetch - main [MainThread]: Store serial: [23274105]
