@@ -7631,3 +7631,18 @@
 [2024-05-19 11:25:18] INFO root fetch - processPackages [Project-ppchem-tools-kit]: Remove: archive file [/home/abi/fetcher/tmp/project_ppchem_tools_kit-0.1.1.tar.gz]
 [2024-05-19 11:25:18] INFO root fetch - main [MainThread]: End processing [Project-ppchem-tools-kit]: success
 [2024-05-19 11:25:18] INFO root fetch - main [MainThread]: Store serial: [23275045]
+[2024-05-19 11:27:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275045]
+[2024-05-19 11:27:27] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 11:27:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jiggermastz
+[2024-05-19 11:27:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: clean-alchemy
+[2024-05-19 11:27:27] INFO root fetch - processPackages [clean-alchemy]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-19 11:27:27] INFO root fetch - processPackages [clean-alchemy]: Downloading https://files.pythonhosted.org/packages/36/b4/aec2776de97d42c68ad39f356e228953adce45501a820c6c5dfdb773e20a/clean-alchemy-0.1.8.tar.gz
+[2024-05-19 11:27:27] WARNING root fetch - processPackages [jiggermastz]: Skipping, unable to determine old version
+[2024-05-19 11:27:27] INFO root fetch - main [MainThread]: End processing [jiggermastz] error
+[2024-05-19 11:27:27] INFO root fetch - processPackages [clean-alchemy]: Downloading https://files.pythonhosted.org/packages/5b/e4/60134ac4287e46e229febe044f53137cf8baa2858710c19174580ad9c18c/clean-alchemy-0.1.9.tar.gz
+[2024-05-19 11:27:27] INFO root fetch - processPackages [clean-alchemy]: executing diffoscope
+[2024-05-19 11:27:27] INFO root fetch - processPackages [clean-alchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clean-alchemy-0.1.8.tar.gz tmp/clean-alchemy-0.1.9.tar.gz --markdown 20240519/c/clean-alchemy/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-19 11:27:28] INFO root fetch - processPackages [clean-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/clean-alchemy-0.1.8.tar.gz]
+[2024-05-19 11:27:28] INFO root fetch - processPackages [clean-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/clean-alchemy-0.1.9.tar.gz]
+[2024-05-19 11:27:28] INFO root fetch - main [MainThread]: End processing [clean-alchemy]: success
+[2024-05-19 11:27:28] INFO root fetch - main [MainThread]: Store serial: [23275052]
