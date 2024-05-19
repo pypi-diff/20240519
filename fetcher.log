@@ -6162,3 +6162,50 @@
 [2024-05-19 09:37:07] INFO root fetch - processPackages [qwak-core]: Remove: archive file [/home/abi/fetcher/tmp/qwak_core-0.4.9.tar.gz]
 [2024-05-19 09:37:07] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
 [2024-05-19 09:37:07] INFO root fetch - main [MainThread]: Store serial: [23274259]
+[2024-05-19 09:39:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274259]
+[2024-05-19 09:39:16] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-19 09:39:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nondeprecativelyz
+[2024-05-19 09:39:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: outpostcli
+[2024-05-19 09:39:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-bilibili-notifier
+[2024-05-19 09:39:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: stigg-api-client
+[2024-05-19 09:39:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lalsuite
+[2024-05-19 09:39:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mlcbase
+[2024-05-19 09:39:17] INFO root fetch - processPackages [outpostcli]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 09:39:17] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/7e/e2/114a39eac567286d0418645c0ea24089c48fcbe4cccec6c79191a5cefccf/outpostcli-0.0.8.tar.gz
+[2024-05-19 09:39:17] INFO root fetch - processPackages [nonebot-plugin-bilibili-notifier]: New version: [0.1] Old Version: [0.0.4]
+[2024-05-19 09:39:17] WARNING root fetch - processPackages [nondeprecativelyz]: Skipping, unable to determine old version
+[2024-05-19 09:39:17] INFO root fetch - main [MainThread]: End processing [nondeprecativelyz] error
+[2024-05-19 09:39:17] INFO root fetch - processPackages [mlcbase]: New version: [1.2.0a3] Old Version: [1.2.0a2]
+[2024-05-19 09:39:17] INFO root fetch - processPackages [stigg-api-client]: New version: [1.98.1] Old Version: [1.98.0]
+[2024-05-19 09:39:17] INFO root fetch - processPackages [lalsuite]: New version: [7.9] Old Version: [7.8]
+[2024-05-19 09:39:17] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/df/ab/82b6853cec170d33c2aff19e3a298b0bf56f7ba1b885f6f7d42a10ae43dc/outpostcli-0.0.9.tar.gz
+[2024-05-19 09:39:17] INFO root fetch - processPackages [nonebot-plugin-bilibili-notifier]: Downloading https://files.pythonhosted.org/packages/12/f4/f49edb769b1cf8be73c422ea253d0d57b6e57b01f2de9b824027f48fb968/nonebot-plugin-bilibili-notifier-0.0.4.tar.gz
+[2024-05-19 09:39:17] INFO root fetch - processPackages [mlcbase]: Downloading https://files.pythonhosted.org/packages/69/1f/7a5de978b3dcfdab98eae276bfeaaa08c65e29c029468bf01a6141583c5a/mlcbase-1.2.0a2.tar.gz
+[2024-05-19 09:39:17] INFO root fetch - processPackages [stigg-api-client]: Downloading https://files.pythonhosted.org/packages/98/38/1422eb2135687adff8e0844dc4afcdcdd3c44140b3b89335819f7a678037/stigg_api_client-1.98.0.tar.gz
+[2024-05-19 09:39:17] INFO root fetch - processPackages [lalsuite]: Downloading https://files.pythonhosted.org/packages/53/92/fc43211ca56b7c5532fc1b47c701a564c7ddcaf866c62ae45acbfdc34f23/lalsuite-7.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-19 09:39:17] INFO root fetch - processPackages [outpostcli]: executing diffoscope
+[2024-05-19 09:39:17] INFO root fetch - processPackages [outpostcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outpostcli-0.0.8.tar.gz tmp/outpostcli-0.0.9.tar.gz --markdown 20240519/o/outpostcli/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 09:39:17] WARNING root fetch - processPackages [lalsuite]: Skipping package: exceeds size limit 48394251>=10485760
+[2024-05-19 09:39:17] INFO root fetch - main [MainThread]: End processing [lalsuite] error
+[2024-05-19 09:39:17] INFO root fetch - processPackages [nonebot-plugin-bilibili-notifier]: Downloading https://files.pythonhosted.org/packages/d3/90/106b086eea767d8c464958c329bb464e5b7656709be6b8e550cf53e9ed02/nonebot-plugin-bilibili-notifier-0.1.tar.gz
+[2024-05-19 09:39:17] INFO root fetch - processPackages [mlcbase]: Downloading https://files.pythonhosted.org/packages/bb/a5/fec8091f2bfec6f56fedafa301520cb966d5b68e1bcc65736da7ef5d35c2/mlcbase-1.2.0a3.tar.gz
+[2024-05-19 09:39:17] INFO root fetch - processPackages [stigg-api-client]: Downloading https://files.pythonhosted.org/packages/da/d2/6b7a0c4e4205896d09042773fe56913ad646e6493900cc11613eabb26e05/stigg_api_client-1.98.1.tar.gz
+[2024-05-19 09:39:17] INFO root fetch - processPackages [nonebot-plugin-bilibili-notifier]: executing diffoscope
+[2024-05-19 09:39:17] INFO root fetch - processPackages [nonebot-plugin-bilibili-notifier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-bilibili-notifier-0.0.4.tar.gz tmp/nonebot-plugin-bilibili-notifier-0.1.tar.gz --markdown 20240519/n/nonebot-plugin-bilibili-notifier/0.0.4-0.1/README.md --exclude *.pyd
+[2024-05-19 09:39:18] INFO root fetch - processPackages [stigg-api-client]: executing diffoscope
+[2024-05-19 09:39:18] INFO root fetch - processPackages [stigg-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stigg_api_client-1.98.0.tar.gz tmp/stigg_api_client-1.98.1.tar.gz --markdown 20240519/s/stigg-api-client/1.98.0-1.98.1/README.md --exclude *.pyd
+[2024-05-19 09:39:18] INFO root fetch - processPackages [mlcbase]: executing diffoscope
+[2024-05-19 09:39:18] INFO root fetch - processPackages [mlcbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlcbase-1.2.0a2.tar.gz tmp/mlcbase-1.2.0a3.tar.gz --markdown 20240519/m/mlcbase/1.2.0a2-1.2.0a3/README.md --exclude *.pyd
+[2024-05-19 09:39:18] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.8.tar.gz]
+[2024-05-19 09:39:18] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.9.tar.gz]
+[2024-05-19 09:39:18] INFO root fetch - main [MainThread]: End processing [outpostcli]: success
+[2024-05-19 09:39:18] INFO root fetch - processPackages [nonebot-plugin-bilibili-notifier]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-bilibili-notifier-0.0.4.tar.gz]
+[2024-05-19 09:39:18] INFO root fetch - processPackages [nonebot-plugin-bilibili-notifier]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-bilibili-notifier-0.1.tar.gz]
+[2024-05-19 09:39:18] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-bilibili-notifier]: success
+[2024-05-19 09:39:18] INFO root fetch - processPackages [mlcbase]: Remove: archive file [/home/abi/fetcher/tmp/mlcbase-1.2.0a2.tar.gz]
+[2024-05-19 09:39:18] INFO root fetch - processPackages [mlcbase]: Remove: archive file [/home/abi/fetcher/tmp/mlcbase-1.2.0a3.tar.gz]
+[2024-05-19 09:39:18] INFO root fetch - main [MainThread]: End processing [mlcbase]: success
+[2024-05-19 09:39:18] INFO root fetch - processPackages [stigg-api-client]: Remove: archive file [/home/abi/fetcher/tmp/stigg_api_client-1.98.0.tar.gz]
+[2024-05-19 09:39:18] INFO root fetch - processPackages [stigg-api-client]: Remove: archive file [/home/abi/fetcher/tmp/stigg_api_client-1.98.1.tar.gz]
+[2024-05-19 09:39:18] INFO root fetch - main [MainThread]: End processing [stigg-api-client]: success
+[2024-05-19 09:39:18] INFO root fetch - main [MainThread]: Store serial: [23274278]
