@@ -5005,3 +5005,23 @@
 [2024-05-19 08:09:08] INFO root fetch - processPackages [mentabotix]: Remove: archive file [/home/abi/fetcher/tmp/mentabotix-0.1.4.8.tar.gz]
 [2024-05-19 08:09:08] INFO root fetch - main [MainThread]: End processing [mentabotix]: success
 [2024-05-19 08:09:08] INFO root fetch - main [MainThread]: Store serial: [23273712]
+[2024-05-19 08:11:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273712]
+[2024-05-19 08:11:16] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 08:11:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: donware
+[2024-05-19 08:11:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: LughaatNLP
+[2024-05-19 08:11:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lepidospermaez
+[2024-05-19 08:11:16] INFO root fetch - processPackages [donware]: New version: [0.1.9] Old Version: [0.1.12]
+[2024-05-19 08:11:16] WARNING root fetch - processPackages [lepidospermaez]: Skipping, unable to determine old version
+[2024-05-19 08:11:16] INFO root fetch - main [MainThread]: End processing [lepidospermaez] error
+[2024-05-19 08:11:16] INFO root fetch - processPackages [LughaatNLP]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-05-19 08:11:17] INFO root fetch - processPackages [donware]: Downloading https://files.pythonhosted.org/packages/8e/38/6a8ee061a2f696838c1d9191093ecf48683ae51062aebb02639197726887/donware-0.1.12.tar.gz
+[2024-05-19 08:11:17] INFO root fetch - processPackages [LughaatNLP]: Downloading https://files.pythonhosted.org/packages/41/42/6fa7c283651a7e6d0f4b60e7f57147f30bf1573ab5245ed9b5d2ba665d8a/LughaatNLP-1.0.5.tar.gz
+[2024-05-19 08:11:17] WARNING root fetch - processPackages [LughaatNLP]: Skipping package: exceeds size limit 69793331>=10485760
+[2024-05-19 08:11:17] INFO root fetch - main [MainThread]: End processing [LughaatNLP] error
+[2024-05-19 08:11:17] INFO root fetch - processPackages [donware]: Downloading https://files.pythonhosted.org/packages/fe/8e/83b9db87c05ce764e53c9976cbc2389c98231b770ce8d64a986981faf472/donware-0.1.9.tar.gz
+[2024-05-19 08:11:17] INFO root fetch - processPackages [donware]: executing diffoscope
+[2024-05-19 08:11:17] INFO root fetch - processPackages [donware]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/donware-0.1.12.tar.gz tmp/donware-0.1.9.tar.gz --markdown 20240519/d/donware/0.1.12-0.1.9/README.md --exclude *.pyd
+[2024-05-19 08:11:17] INFO root fetch - processPackages [donware]: Remove: archive file [/home/abi/fetcher/tmp/donware-0.1.12.tar.gz]
+[2024-05-19 08:11:17] INFO root fetch - processPackages [donware]: Remove: archive file [/home/abi/fetcher/tmp/donware-0.1.9.tar.gz]
+[2024-05-19 08:11:17] INFO root fetch - main [MainThread]: End processing [donware]: success
+[2024-05-19 08:11:17] INFO root fetch - main [MainThread]: Store serial: [23273721]
