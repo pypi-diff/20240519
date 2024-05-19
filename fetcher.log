@@ -9624,3 +9624,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 13:44:36] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
 [2024-05-19 13:44:36] INFO root fetch - main [MainThread]: End processing [yeref]: success
 [2024-05-19 13:44:36] INFO root fetch - main [MainThread]: Store serial: [23275982]
+[2024-05-19 13:46:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275982]
+[2024-05-19 13:46:45] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 13:46:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wwpdb.utils.oe-util
+[2024-05-19 13:46:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SPLayout
+[2024-05-19 13:46:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: RTS-WebUIBuilder
+[2024-05-19 13:46:45] INFO root fetch - processPackages [RTS-WebUIBuilder]: New version: [0.9] Old Version: [0.8]
+[2024-05-19 13:46:45] INFO root fetch - processPackages [RTS-WebUIBuilder]: Downloading https://files.pythonhosted.org/packages/16/91/c46d8a10d59df3fe43042764ca95e1b7963e6882ecf3c9a381ec3d9309b3/RTS-WebUIBuilder-0.8.tar.gz
+[2024-05-19 13:46:45] INFO root fetch - processPackages [wwpdb.utils.oe-util]: New version: [0.8.1] Old Version: [0.8]
+[2024-05-19 13:46:45] INFO root fetch - processPackages [SPLayout]: New version: [0.5.3] Old Version: [0.5.2]
+[2024-05-19 13:46:45] INFO root fetch - processPackages [wwpdb.utils.oe-util]: Downloading https://files.pythonhosted.org/packages/f5/32/9facd582882e8f4f858215716f7dd3224a06ad44d92f2468200ab5743d71/wwpdb.utils.oe_util-0.8.tar.gz
+[2024-05-19 13:46:45] INFO root fetch - processPackages [SPLayout]: Downloading https://files.pythonhosted.org/packages/b5/76/2646b3d155625ba8c7919a8cd81416730977c3fe977839005c04b7857dd7/SPLayout-0.5.2.tar.gz
+[2024-05-19 13:46:45] INFO root fetch - processPackages [RTS-WebUIBuilder]: Downloading https://files.pythonhosted.org/packages/ad/8a/7f2d768080b6230a8374ee186707e4ee5d7ac222665e2d51cc3114645734/RTS-WebUIBuilder-0.9.tar.gz
+[2024-05-19 13:46:45] INFO root fetch - processPackages [RTS-WebUIBuilder]: executing diffoscope
+[2024-05-19 13:46:45] INFO root fetch - processPackages [RTS-WebUIBuilder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RTS-WebUIBuilder-0.8.tar.gz tmp/RTS-WebUIBuilder-0.9.tar.gz --markdown 20240519/R/RTS-WebUIBuilder/0.8-0.9/README.md --exclude *.pyd
+[2024-05-19 13:46:46] INFO root fetch - processPackages [wwpdb.utils.oe-util]: Downloading https://files.pythonhosted.org/packages/c4/c8/c35641ec763de3ed4719fce179f92f1c38283f45a8879e1982a34bd98993/wwpdb_utils_oe_util-0.8.1.tar.gz
+[2024-05-19 13:46:46] INFO root fetch - processPackages [SPLayout]: Downloading https://files.pythonhosted.org/packages/11/14/e7140987754590b0b7c86456a3a5efcf615e16a83f01a03d515effeab0cc/splayout-0.5.3.tar.gz
+[2024-05-19 13:46:46] INFO root fetch - processPackages [wwpdb.utils.oe-util]: executing diffoscope
+[2024-05-19 13:46:46] INFO root fetch - processPackages [wwpdb.utils.oe-util]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wwpdb.utils.oe_util-0.8.tar.gz tmp/wwpdb_utils_oe_util-0.8.1.tar.gz --markdown 20240519/w/wwpdb.utils.oe-util/0.8-0.8.1/README.md --exclude *.pyd
+[2024-05-19 13:46:46] INFO root fetch - processPackages [SPLayout]: executing diffoscope
+[2024-05-19 13:46:46] INFO root fetch - processPackages [SPLayout]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SPLayout-0.5.2.tar.gz tmp/splayout-0.5.3.tar.gz --markdown 20240519/S/SPLayout/0.5.2-0.5.3/README.md --exclude *.pyd
+[2024-05-19 13:46:46] INFO root fetch - processPackages [RTS-WebUIBuilder]: Remove: archive file [/home/abi/fetcher/tmp/RTS-WebUIBuilder-0.8.tar.gz]
+[2024-05-19 13:46:46] INFO root fetch - processPackages [RTS-WebUIBuilder]: Remove: archive file [/home/abi/fetcher/tmp/RTS-WebUIBuilder-0.9.tar.gz]
+[2024-05-19 13:46:46] INFO root fetch - main [MainThread]: End processing [RTS-WebUIBuilder]: success
+[2024-05-19 13:46:46] INFO root fetch - processPackages [wwpdb.utils.oe-util]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb.utils.oe_util-0.8.tar.gz]
+[2024-05-19 13:46:46] INFO root fetch - processPackages [wwpdb.utils.oe-util]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb_utils_oe_util-0.8.1.tar.gz]
+[2024-05-19 13:46:46] INFO root fetch - main [MainThread]: End processing [wwpdb.utils.oe-util]: success
+[2024-05-19 13:46:46] INFO root fetch - processPackages [SPLayout]: Remove: archive file [/home/abi/fetcher/tmp/SPLayout-0.5.2.tar.gz]
+[2024-05-19 13:46:46] INFO root fetch - processPackages [SPLayout]: Remove: archive file [/home/abi/fetcher/tmp/splayout-0.5.3.tar.gz]
+[2024-05-19 13:46:46] INFO root fetch - main [MainThread]: End processing [SPLayout]: success
+[2024-05-19 13:46:46] INFO root fetch - main [MainThread]: Store serial: [23275991]
