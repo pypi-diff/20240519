@@ -12392,3 +12392,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 16:36:18] INFO root fetch - processPackages [BunkrrUploader]: Remove: archive file [/home/abi/fetcher/tmp/bunkrruploader-0.10.7.tar.gz]
 [2024-05-19 16:36:18] INFO root fetch - main [MainThread]: End processing [BunkrrUploader]: success
 [2024-05-19 16:36:18] INFO root fetch - main [MainThread]: Store serial: [23277313]
+[2024-05-19 16:38:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277313]
+[2024-05-19 16:38:27] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-19 16:38:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: perian
+[2024-05-19 16:38:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ev3dev2simulator
+[2024-05-19 16:38:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: outpostcli
+[2024-05-19 16:38:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: clusterfun
+[2024-05-19 16:38:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonebot-plugin-alconna
+[2024-05-19 16:38:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: lib-version-urlphishing
+[2024-05-19 16:38:27] INFO root fetch - processPackages [outpostcli]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 16:38:27] INFO root fetch - processPackages [clusterfun]: New version: [0.4.0a7] Old Version: [0.3.3a7]
+[2024-05-19 16:38:27] INFO root fetch - processPackages [clusterfun]: Downloading https://files.pythonhosted.org/packages/b8/98/716cc1e2a17611ab8acc9c4ee37ce277a7f4c94119ff697af2e38b17acca/clusterfun-0.3.3a7.tar.gz
+[2024-05-19 16:38:27] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/7e/e2/114a39eac567286d0418645c0ea24089c48fcbe4cccec6c79191a5cefccf/outpostcli-0.0.8.tar.gz
+[2024-05-19 16:38:27] INFO root fetch - processPackages [lib-version-urlphishing]: New version: [2.0.9] Old Version: [2.0.0]
+[2024-05-19 16:38:27] INFO root fetch - processPackages [perian]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-19 16:38:27] INFO root fetch - processPackages [ev3dev2simulator]: New version: [2.0.8] Old Version: [2.0.7]
+[2024-05-19 16:38:27] INFO root fetch - processPackages [nonebot-plugin-alconna]: New version: [0.9.3] Old Version: [0.9.0]
+[2024-05-19 16:38:27] INFO root fetch - processPackages [ev3dev2simulator]: Downloading https://files.pythonhosted.org/packages/fc/c2/f4d5bba2a67f4a1b187376dd722bcf4de5fc02bb906350a7c091847c2a61/ev3dev2simulator-2.0.7.tar.gz
+[2024-05-19 16:38:27] INFO root fetch - processPackages [lib-version-urlphishing]: Downloading https://files.pythonhosted.org/packages/26/21/ac52a30a9889d274bd4d54b40c34890330c4b7b522a0627990009bbcc5c3/lib_version_urlphishing-2.0.0.tar.gz
+[2024-05-19 16:38:27] INFO root fetch - processPackages [perian]: Downloading https://files.pythonhosted.org/packages/64/e6/92a5748fe22de295364dc09f6055a3382985cc374f6cdaee54183fcfa1df/perian-0.2.1-py3-none-any.whl
+[2024-05-19 16:38:28] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/df/ab/82b6853cec170d33c2aff19e3a298b0bf56f7ba1b885f6f7d42a10ae43dc/outpostcli-0.0.9.tar.gz
+[2024-05-19 16:38:28] INFO root fetch - processPackages [nonebot-plugin-alconna]: Downloading https://files.pythonhosted.org/packages/c8/67/1065373af14f845f6112a3d2cb8d6187d838b4c0d90d89282ccef9f5133d/nonebot-plugin-alconna-0.9.0.tar.gz
+[2024-05-19 16:38:28] INFO root fetch - processPackages [outpostcli]: executing diffoscope
+[2024-05-19 16:38:28] INFO root fetch - processPackages [outpostcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outpostcli-0.0.8.tar.gz tmp/outpostcli-0.0.9.tar.gz --markdown 20240519/o/outpostcli/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 16:38:28] INFO root fetch - processPackages [clusterfun]: Downloading https://files.pythonhosted.org/packages/54/8c/699172c7efa36b3d3106db11d3445920b4b5c9d3245906236d79784c82e2/clusterfun-0.4.0a7.tar.gz
+[2024-05-19 16:38:28] INFO root fetch - processPackages [ev3dev2simulator]: Downloading https://files.pythonhosted.org/packages/c7/ee/98426385f87256309c2abd93469bf8290a536bb946c3fe5f73c40b8fa287/ev3dev2simulator-2.0.8.tar.gz
+[2024-05-19 16:38:28] INFO root fetch - processPackages [perian]: Downloading https://files.pythonhosted.org/packages/94/6f/187a56eac4aadf5538de6230cc28a668ccad2ff76b3f1d88d3f678e7ca11/perian-0.2.2-py3-none-any.whl
+[2024-05-19 16:38:28] INFO root fetch - processPackages [nonebot-plugin-alconna]: Downloading https://files.pythonhosted.org/packages/f4/fd/830dd6604cd5dc44a467d959ff595e8da0a087d9b75368acaecfc83c3417/nonebot_plugin_alconna-0.9.3.tar.gz
+[2024-05-19 16:38:28] INFO root fetch - processPackages [lib-version-urlphishing]: Downloading https://files.pythonhosted.org/packages/f8/77/74db47dffc939151791554dd99fd92cbba4dbc86ad18b6d127b179dc830a/lib_version_urlphishing-2.0.9.tar.gz
+[2024-05-19 16:38:28] INFO root fetch - processPackages [perian]: executing diffoscope
+[2024-05-19 16:38:28] INFO root fetch - processPackages [perian]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/perian-0.2.1-py3-none-any.whl.zip tmp/perian-0.2.2-py3-none-any.whl.zip --markdown 20240519/p/perian/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-19 16:38:28] INFO root fetch - processPackages [nonebot-plugin-alconna]: executing diffoscope
+[2024-05-19 16:38:28] INFO root fetch - processPackages [nonebot-plugin-alconna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-alconna-0.9.0.tar.gz tmp/nonebot_plugin_alconna-0.9.3.tar.gz --markdown 20240519/n/nonebot-plugin-alconna/0.9.0-0.9.3/README.md --exclude *.pyd
+[2024-05-19 16:38:28] INFO root fetch - processPackages [ev3dev2simulator]: executing diffoscope
+[2024-05-19 16:38:28] INFO root fetch - processPackages [ev3dev2simulator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ev3dev2simulator-2.0.7.tar.gz tmp/ev3dev2simulator-2.0.8.tar.gz --markdown 20240519/e/ev3dev2simulator/2.0.7-2.0.8/README.md --exclude *.pyd
+[2024-05-19 16:38:28] INFO root fetch - processPackages [lib-version-urlphishing]: executing diffoscope
+[2024-05-19 16:38:28] INFO root fetch - processPackages [lib-version-urlphishing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib_version_urlphishing-2.0.0.tar.gz tmp/lib_version_urlphishing-2.0.9.tar.gz --markdown 20240519/l/lib-version-urlphishing/2.0.0-2.0.9/README.md --exclude *.pyd
+[2024-05-19 16:38:28] INFO root fetch - processPackages [clusterfun]: executing diffoscope
+[2024-05-19 16:38:28] INFO root fetch - processPackages [clusterfun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clusterfun-0.3.3a7.tar.gz tmp/clusterfun-0.4.0a7.tar.gz --markdown 20240519/c/clusterfun/0.3.3a7-0.4.0a7/README.md --exclude *.pyd
+[2024-05-19 16:38:28] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.8.tar.gz]
+[2024-05-19 16:38:28] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.9.tar.gz]
+[2024-05-19 16:38:28] INFO root fetch - main [MainThread]: End processing [outpostcli]: success
+[2024-05-19 16:38:29] INFO root fetch - processPackages [lib-version-urlphishing]: Remove: archive file [/home/abi/fetcher/tmp/lib_version_urlphishing-2.0.0.tar.gz]
+[2024-05-19 16:38:29] INFO root fetch - processPackages [lib-version-urlphishing]: Remove: archive file [/home/abi/fetcher/tmp/lib_version_urlphishing-2.0.9.tar.gz]
+[2024-05-19 16:38:29] INFO root fetch - main [MainThread]: End processing [lib-version-urlphishing]: success
+[2024-05-19 16:38:29] INFO root fetch - processPackages [nonebot-plugin-alconna]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-alconna-0.9.0.tar.gz]
+[2024-05-19 16:38:29] INFO root fetch - processPackages [nonebot-plugin-alconna]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_alconna-0.9.3.tar.gz]
+[2024-05-19 16:38:29] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-alconna]: success
+[2024-05-19 16:38:29] INFO root fetch - processPackages [ev3dev2simulator]: Remove: archive file [/home/abi/fetcher/tmp/ev3dev2simulator-2.0.7.tar.gz]
+[2024-05-19 16:38:29] INFO root fetch - processPackages [ev3dev2simulator]: Remove: archive file [/home/abi/fetcher/tmp/ev3dev2simulator-2.0.8.tar.gz]
+[2024-05-19 16:38:29] INFO root fetch - main [MainThread]: End processing [ev3dev2simulator]: success
+[2024-05-19 16:38:29] INFO root fetch - processPackages [perian]: Remove: archive file [/home/abi/fetcher/tmp/perian-0.2.1-py3-none-any.whl.zip]
+[2024-05-19 16:38:29] INFO root fetch - processPackages [perian]: Remove: archive file [/home/abi/fetcher/tmp/perian-0.2.2-py3-none-any.whl.zip]
+[2024-05-19 16:38:29] INFO root fetch - main [MainThread]: End processing [perian]: success
+[2024-05-19 16:38:30] INFO root fetch - processPackages [clusterfun]: Remove: archive file [/home/abi/fetcher/tmp/clusterfun-0.3.3a7.tar.gz]
+[2024-05-19 16:38:30] INFO root fetch - processPackages [clusterfun]: Remove: archive file [/home/abi/fetcher/tmp/clusterfun-0.4.0a7.tar.gz]
+[2024-05-19 16:38:30] INFO root fetch - main [MainThread]: End processing [clusterfun]: success
+[2024-05-19 16:38:30] INFO root fetch - main [MainThread]: Store serial: [23277332]
