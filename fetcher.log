@@ -12353,3 +12353,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 16:34:08] INFO root fetch - processPackages [clusterfun]: Remove: archive file [/home/abi/fetcher/tmp/clusterfun-0.3.3a7.tar.gz]
 [2024-05-19 16:34:08] INFO root fetch - main [MainThread]: End processing [clusterfun]: success
 [2024-05-19 16:34:08] INFO root fetch - main [MainThread]: Store serial: [23277301]
+[2024-05-19 16:36:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277301]
+[2024-05-19 16:36:17] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 16:36:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: outpostcli
+[2024-05-19 16:36:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dom-tokenizers
+[2024-05-19 16:36:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: BunkrrUploader
+[2024-05-19 16:36:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: requestrepo
+[2024-05-19 16:36:17] INFO root fetch - processPackages [outpostcli]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 16:36:17] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/7e/e2/114a39eac567286d0418645c0ea24089c48fcbe4cccec6c79191a5cefccf/outpostcli-0.0.8.tar.gz
+[2024-05-19 16:36:17] INFO root fetch - processPackages [requestrepo]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-19 16:36:17] INFO root fetch - processPackages [BunkrrUploader]: New version: [0.10.7] Old Version: [0.10.6]
+[2024-05-19 16:36:17] INFO root fetch - processPackages [dom-tokenizers]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-19 16:36:17] INFO root fetch - processPackages [requestrepo]: Downloading https://files.pythonhosted.org/packages/97/ee/332c68594b36b7f591e8592ab31b1c9d3ee93846bde9b6650765bacbf135/requestrepo-0.0.5.tar.gz
+[2024-05-19 16:36:17] INFO root fetch - processPackages [BunkrrUploader]: Downloading https://files.pythonhosted.org/packages/c3/37/94eb4217925c4dac254b8f0e24507409536d9ca6484e0e56cfb5514d0e40/bunkrruploader-0.10.6.tar.gz
+[2024-05-19 16:36:17] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/df/ab/82b6853cec170d33c2aff19e3a298b0bf56f7ba1b885f6f7d42a10ae43dc/outpostcli-0.0.9.tar.gz
+[2024-05-19 16:36:17] INFO root fetch - processPackages [dom-tokenizers]: Downloading https://files.pythonhosted.org/packages/87/b9/b4ee8e7a7d2b2061198e3b88e1dbc5c89aa15234b0c97e04454fe00d9086/dom_tokenizers-0.0.6.tar.gz
+[2024-05-19 16:36:17] INFO root fetch - processPackages [outpostcli]: executing diffoscope
+[2024-05-19 16:36:17] INFO root fetch - processPackages [outpostcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outpostcli-0.0.8.tar.gz tmp/outpostcli-0.0.9.tar.gz --markdown 20240519/o/outpostcli/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 16:36:18] INFO root fetch - processPackages [requestrepo]: Downloading https://files.pythonhosted.org/packages/00/4c/d7c54355964d8e18fda6868ca0e8e87033b7556cc46df2b6393bf982773a/requestrepo-0.0.6.tar.gz
+[2024-05-19 16:36:18] INFO root fetch - processPackages [BunkrrUploader]: Downloading https://files.pythonhosted.org/packages/b6/13/4467e99af4cdac7b8eaf4b2ba591f5a90f1744cc273b5e05d40db834d104/bunkrruploader-0.10.7.tar.gz
+[2024-05-19 16:36:18] INFO root fetch - processPackages [dom-tokenizers]: Downloading https://files.pythonhosted.org/packages/f9/2b/8cbdc33017b5294b01e235b3c63e65fa238d6e08e8b753b7cd9ba16803cf/dom_tokenizers-0.0.7.tar.gz
+[2024-05-19 16:36:18] INFO root fetch - processPackages [requestrepo]: executing diffoscope
+[2024-05-19 16:36:18] INFO root fetch - processPackages [requestrepo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/requestrepo-0.0.5.tar.gz tmp/requestrepo-0.0.6.tar.gz --markdown 20240519/r/requestrepo/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-19 16:36:18] INFO root fetch - processPackages [BunkrrUploader]: executing diffoscope
+[2024-05-19 16:36:18] INFO root fetch - processPackages [BunkrrUploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bunkrruploader-0.10.6.tar.gz tmp/bunkrruploader-0.10.7.tar.gz --markdown 20240519/B/BunkrrUploader/0.10.6-0.10.7/README.md --exclude *.pyd
+[2024-05-19 16:36:18] INFO root fetch - processPackages [dom-tokenizers]: executing diffoscope
+[2024-05-19 16:36:18] INFO root fetch - processPackages [dom-tokenizers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dom_tokenizers-0.0.6.tar.gz tmp/dom_tokenizers-0.0.7.tar.gz --markdown 20240519/d/dom-tokenizers/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-05-19 16:36:18] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.8.tar.gz]
+[2024-05-19 16:36:18] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.9.tar.gz]
+[2024-05-19 16:36:18] INFO root fetch - main [MainThread]: End processing [outpostcli]: success
+[2024-05-19 16:36:18] INFO root fetch - processPackages [requestrepo]: Remove: archive file [/home/abi/fetcher/tmp/requestrepo-0.0.5.tar.gz]
+[2024-05-19 16:36:18] INFO root fetch - processPackages [requestrepo]: Remove: archive file [/home/abi/fetcher/tmp/requestrepo-0.0.6.tar.gz]
+[2024-05-19 16:36:18] INFO root fetch - main [MainThread]: End processing [requestrepo]: success
+[2024-05-19 16:36:18] INFO root fetch - processPackages [dom-tokenizers]: Remove: archive file [/home/abi/fetcher/tmp/dom_tokenizers-0.0.6.tar.gz]
+[2024-05-19 16:36:18] INFO root fetch - processPackages [dom-tokenizers]: Remove: archive file [/home/abi/fetcher/tmp/dom_tokenizers-0.0.7.tar.gz]
+[2024-05-19 16:36:18] INFO root fetch - main [MainThread]: End processing [dom-tokenizers]: success
+[2024-05-19 16:36:18] INFO root fetch - processPackages [BunkrrUploader]: Remove: archive file [/home/abi/fetcher/tmp/bunkrruploader-0.10.6.tar.gz]
+[2024-05-19 16:36:18] INFO root fetch - processPackages [BunkrrUploader]: Remove: archive file [/home/abi/fetcher/tmp/bunkrruploader-0.10.7.tar.gz]
+[2024-05-19 16:36:18] INFO root fetch - main [MainThread]: End processing [BunkrrUploader]: success
+[2024-05-19 16:36:18] INFO root fetch - main [MainThread]: Store serial: [23277313]
