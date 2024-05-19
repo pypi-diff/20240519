@@ -17836,3 +17836,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 22:00:20] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.99.tar.gz]
 [2024-05-19 22:00:20] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
 [2024-05-19 22:00:20] INFO root fetch - main [MainThread]: Store serial: [23279887]
+[2024-05-19 22:02:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279887]
+[2024-05-19 22:02:29] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 22:02:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Quart
+[2024-05-19 22:02:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unrestfulz
+[2024-05-19 22:02:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: acb
+[2024-05-19 22:02:29] INFO root fetch - processPackages [acb]: New version: [0.6.0] Old Version: [0.5.9]
+[2024-05-19 22:02:29] WARNING root fetch - processPackages [unrestfulz]: Skipping, unable to determine old version
+[2024-05-19 22:02:29] INFO root fetch - main [MainThread]: End processing [unrestfulz] error
+[2024-05-19 22:02:29] INFO root fetch - processPackages [acb]: Downloading https://files.pythonhosted.org/packages/b5/f5/39ede17ab765abc34045bfa50de2b3f0e5623063ab516cc694299140ef50/acb-0.5.9.tar.gz
+[2024-05-19 22:02:29] INFO root fetch - processPackages [Quart]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-05-19 22:02:29] INFO root fetch - processPackages [Quart]: Downloading https://files.pythonhosted.org/packages/b8/8d/24289d24ad210f036b19e463d75c2243a315db2a489704de44a8609607f9/Quart-0.9.0.tar.gz
+[2024-05-19 22:02:29] INFO root fetch - processPackages [acb]: Downloading https://files.pythonhosted.org/packages/13/e3/49c170ca7477015f48d61bd7a60ab5bb102673e9010f4ed52453b07f70f4/acb-0.6.0.tar.gz
+[2024-05-19 22:02:29] INFO root fetch - processPackages [acb]: executing diffoscope
+[2024-05-19 22:02:29] INFO root fetch - processPackages [acb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acb-0.5.9.tar.gz tmp/acb-0.6.0.tar.gz --markdown 20240519/a/acb/0.5.9-0.6.0/README.md --exclude *.pyd
+[2024-05-19 22:02:30] INFO root fetch - processPackages [Quart]: Downloading https://files.pythonhosted.org/packages/4e/ad/f63cc6835e61486ef936f838dc242cfb2c0985884d856a2a37cad93cc4ee/Quart-0.9.1.tar.gz
+[2024-05-19 22:02:30] INFO root fetch - processPackages [Quart]: executing diffoscope
+[2024-05-19 22:02:30] INFO root fetch - processPackages [Quart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Quart-0.9.0.tar.gz tmp/Quart-0.9.1.tar.gz --markdown 20240519/Q/Quart/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-05-19 22:02:30] INFO root fetch - processPackages [acb]: Remove: archive file [/home/abi/fetcher/tmp/acb-0.5.9.tar.gz]
+[2024-05-19 22:02:30] INFO root fetch - processPackages [acb]: Remove: archive file [/home/abi/fetcher/tmp/acb-0.6.0.tar.gz]
+[2024-05-19 22:02:30] INFO root fetch - main [MainThread]: End processing [acb]: success
+[2024-05-19 22:02:31] INFO root fetch - processPackages [Quart]: Remove: archive file [/home/abi/fetcher/tmp/Quart-0.9.0.tar.gz]
+[2024-05-19 22:02:31] INFO root fetch - processPackages [Quart]: Remove: archive file [/home/abi/fetcher/tmp/Quart-0.9.1.tar.gz]
+[2024-05-19 22:02:31] INFO root fetch - main [MainThread]: End processing [Quart]: success
+[2024-05-19 22:02:31] INFO root fetch - main [MainThread]: Store serial: [23279902]
