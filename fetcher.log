@@ -8293,3 +8293,24 @@
 [2024-05-19 12:19:38] INFO root fetch - processPackages [tdrpa.tdcore]: Remove: archive file [/home/abi/fetcher/tmp/tdrpa.tdcore-1.1.38-py39-none-win_amd64.whl.zip]
 [2024-05-19 12:19:38] INFO root fetch - main [MainThread]: End processing [tdrpa.tdcore]: success
 [2024-05-19 12:19:38] INFO root fetch - main [MainThread]: Store serial: [23275393]
+[2024-05-19 12:21:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275393]
+[2024-05-19 12:21:48] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 12:21:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: usso
+[2024-05-19 12:21:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: colorist
+[2024-05-19 12:21:48] INFO root fetch - processPackages [usso]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-19 12:21:48] INFO root fetch - processPackages [colorist]: New version: [1.7.3] Old Version: [1.7.2]
+[2024-05-19 12:21:48] INFO root fetch - processPackages [usso]: Downloading https://files.pythonhosted.org/packages/32/6b/affc9cd10fca733f24a31679e715e276c8462d5b2199f3d9a35123e9e7d2/usso-0.8.0.tar.gz
+[2024-05-19 12:21:48] INFO root fetch - processPackages [colorist]: Downloading https://files.pythonhosted.org/packages/d9/85/8dc286cb8f9b8de378ed9ac390eaddefac9040213a4fc98836c9fd95c03f/colorist-1.7.2.tar.gz
+[2024-05-19 12:21:48] INFO root fetch - processPackages [usso]: Downloading https://files.pythonhosted.org/packages/70/21/51c7a85adbbfdaf9730493f23f5076201187ebeed4cf1923b633e2a66a14/usso-0.9.0.tar.gz
+[2024-05-19 12:21:48] INFO root fetch - processPackages [colorist]: Downloading https://files.pythonhosted.org/packages/a1/16/85ad154de6676981538b3c768137f66cab406695f3613bebd98b52fdfc65/colorist-1.7.3.tar.gz
+[2024-05-19 12:21:49] INFO root fetch - processPackages [usso]: executing diffoscope
+[2024-05-19 12:21:49] INFO root fetch - processPackages [usso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/usso-0.8.0.tar.gz tmp/usso-0.9.0.tar.gz --markdown 20240519/u/usso/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-19 12:21:49] INFO root fetch - processPackages [colorist]: executing diffoscope
+[2024-05-19 12:21:49] INFO root fetch - processPackages [colorist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/colorist-1.7.2.tar.gz tmp/colorist-1.7.3.tar.gz --markdown 20240519/c/colorist/1.7.2-1.7.3/README.md --exclude *.pyd
+[2024-05-19 12:21:49] INFO root fetch - processPackages [usso]: Remove: archive file [/home/abi/fetcher/tmp/usso-0.8.0.tar.gz]
+[2024-05-19 12:21:49] INFO root fetch - processPackages [usso]: Remove: archive file [/home/abi/fetcher/tmp/usso-0.9.0.tar.gz]
+[2024-05-19 12:21:49] INFO root fetch - main [MainThread]: End processing [usso]: success
+[2024-05-19 12:21:49] INFO root fetch - processPackages [colorist]: Remove: archive file [/home/abi/fetcher/tmp/colorist-1.7.2.tar.gz]
+[2024-05-19 12:21:49] INFO root fetch - processPackages [colorist]: Remove: archive file [/home/abi/fetcher/tmp/colorist-1.7.3.tar.gz]
+[2024-05-19 12:21:49] INFO root fetch - main [MainThread]: End processing [colorist]: success
+[2024-05-19 12:21:49] INFO root fetch - main [MainThread]: Store serial: [23275400]
