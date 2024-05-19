@@ -11918,3 +11918,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 16:06:42] INFO root fetch - processPackages [geoformat]: Remove: archive file [/home/abi/fetcher/tmp/geoformat-20240519.tar.gz]
 [2024-05-19 16:06:42] INFO root fetch - main [MainThread]: End processing [geoformat]: success
 [2024-05-19 16:06:42] INFO root fetch - main [MainThread]: Store serial: [23277114]
+[2024-05-19 16:08:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277114]
+[2024-05-19 16:08:51] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 16:08:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: conferencez
+[2024-05-19 16:08:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xiuyutools
+[2024-05-19 16:08:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: itkwasm-dicom-wasi
+[2024-05-19 16:08:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: itkwasm-dicom-emscripten
+[2024-05-19 16:08:51] INFO root fetch - processPackages [xiuyutools]: New version: [1.1] Old Version: [1.0]
+[2024-05-19 16:08:51] WARNING root fetch - processPackages [conferencez]: Skipping, unable to determine old version
+[2024-05-19 16:08:51] INFO root fetch - main [MainThread]: End processing [conferencez] error
+[2024-05-19 16:08:51] INFO root fetch - processPackages [itkwasm-dicom-wasi]: New version: [7.0.0] Old Version: [6.0.0]
+[2024-05-19 16:08:51] INFO root fetch - processPackages [itkwasm-dicom-emscripten]: New version: [7.0.0] Old Version: [6.0.0]
+[2024-05-19 16:08:51] INFO root fetch - processPackages [xiuyutools]: Downloading https://files.pythonhosted.org/packages/96/50/ca0a63450a5c41bc7bc195f766fa7c596d36a59bf9cc2c0965a628dda18a/xiuyutools-1.0.tar.gz
+[2024-05-19 16:08:51] INFO root fetch - processPackages [itkwasm-dicom-wasi]: Downloading https://files.pythonhosted.org/packages/3e/73/7adf22eb248df4a3640f7680d1614e75b082d74ef0aa7ca4ca0753c79d1f/itkwasm_dicom_wasi-6.0.0.tar.gz
+[2024-05-19 16:08:51] INFO root fetch - processPackages [itkwasm-dicom-emscripten]: Downloading https://files.pythonhosted.org/packages/33/15/40518d9ed359182114c7267afdca09131e8bfc6cd9ebf9f43da3842d5f3a/itkwasm_dicom_emscripten-6.0.0.tar.gz
+[2024-05-19 16:08:51] INFO root fetch - processPackages [xiuyutools]: Downloading https://files.pythonhosted.org/packages/aa/59/6b79bd9de48d3d43242365793291e95ded9c32be787e477a25ac05314b89/xiuyutools-1.1.tar.gz
+[2024-05-19 16:08:52] INFO root fetch - processPackages [itkwasm-dicom-emscripten]: Downloading https://files.pythonhosted.org/packages/2e/4c/da7ad37dd5286e0dc34ff1b03f7cb8629936707df06662c0e93c33981ae8/itkwasm_dicom_emscripten-7.0.0.tar.gz
+[2024-05-19 16:08:52] INFO root fetch - processPackages [xiuyutools]: executing diffoscope
+[2024-05-19 16:08:52] INFO root fetch - processPackages [xiuyutools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xiuyutools-1.0.tar.gz tmp/xiuyutools-1.1.tar.gz --markdown 20240519/x/xiuyutools/1.0-1.1/README.md --exclude *.pyd
+[2024-05-19 16:08:52] INFO root fetch - processPackages [itkwasm-dicom-emscripten]: executing diffoscope
+[2024-05-19 16:08:52] INFO root fetch - processPackages [itkwasm-dicom-emscripten]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/itkwasm_dicom_emscripten-6.0.0.tar.gz tmp/itkwasm_dicom_emscripten-7.0.0.tar.gz --markdown 20240519/i/itkwasm-dicom-emscripten/6.0.0-7.0.0/README.md --exclude *.pyd
+[2024-05-19 16:08:52] INFO root fetch - processPackages [itkwasm-dicom-wasi]: Downloading https://files.pythonhosted.org/packages/51/e1/e64cc0be9b541578fbc84c34026d5d0af03450d965238c359543d379d703/itkwasm_dicom_wasi-7.0.0.tar.gz
+[2024-05-19 16:08:52] INFO root fetch - processPackages [xiuyutools]: Remove: archive file [/home/abi/fetcher/tmp/xiuyutools-1.0.tar.gz]
+[2024-05-19 16:08:52] INFO root fetch - processPackages [xiuyutools]: Remove: archive file [/home/abi/fetcher/tmp/xiuyutools-1.1.tar.gz]
+[2024-05-19 16:08:52] INFO root fetch - main [MainThread]: End processing [xiuyutools]: success
+[2024-05-19 16:08:52] INFO root fetch - processPackages [itkwasm-dicom-emscripten]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_dicom_emscripten-6.0.0.tar.gz]
+[2024-05-19 16:08:52] INFO root fetch - processPackages [itkwasm-dicom-emscripten]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_dicom_emscripten-7.0.0.tar.gz]
+[2024-05-19 16:08:52] INFO root fetch - main [MainThread]: End processing [itkwasm-dicom-emscripten]: success
+[2024-05-19 16:08:53] INFO root fetch - processPackages [itkwasm-dicom-wasi]: executing diffoscope
+[2024-05-19 16:08:53] INFO root fetch - processPackages [itkwasm-dicom-wasi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/itkwasm_dicom_wasi-6.0.0.tar.gz tmp/itkwasm_dicom_wasi-7.0.0.tar.gz --markdown 20240519/i/itkwasm-dicom-wasi/6.0.0-7.0.0/README.md --exclude *.pyd
+[2024-05-19 16:09:46] INFO root fetch - processPackages [itkwasm-dicom-wasi]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_dicom_wasi-6.0.0.tar.gz]
+[2024-05-19 16:09:46] INFO root fetch - processPackages [itkwasm-dicom-wasi]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_dicom_wasi-7.0.0.tar.gz]
+[2024-05-19 16:09:46] INFO root fetch - main [MainThread]: End processing [itkwasm-dicom-wasi]: success
+[2024-05-19 16:09:46] INFO root fetch - main [MainThread]: Store serial: [23277126]
