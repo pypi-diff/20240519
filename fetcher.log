@@ -5451,3 +5451,15 @@
 [2024-05-19 08:48:43] WARNING root fetch - processPackages [nonpejorativez]: Skipping, unable to determine old version
 [2024-05-19 08:48:43] INFO root fetch - main [MainThread]: End processing [nonpejorativez] error
 [2024-05-19 08:48:43] INFO root fetch - main [MainThread]: Store serial: [23273927]
+[2024-05-19 08:50:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273927]
+[2024-05-19 08:50:51] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 08:50:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llm-parametrizer
+[2024-05-19 08:50:51] INFO root fetch - processPackages [llm-parametrizer]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-19 08:50:52] INFO root fetch - processPackages [llm-parametrizer]: Downloading https://files.pythonhosted.org/packages/e5/d9/bc503d4d95ed280ea248a27bc521b83ccbab9ec8ee042cfd00c2f7d0f250/llm_parametrizer-0.1.1.tar.gz
+[2024-05-19 08:50:52] INFO root fetch - processPackages [llm-parametrizer]: Downloading https://files.pythonhosted.org/packages/a0/2c/0fafc714ec3176f3c6f6c027ad1efa592d9dac1d2866eba57bd45205ccb3/llm_parametrizer-0.1.2.tar.gz
+[2024-05-19 08:50:52] INFO root fetch - processPackages [llm-parametrizer]: executing diffoscope
+[2024-05-19 08:50:52] INFO root fetch - processPackages [llm-parametrizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_parametrizer-0.1.1.tar.gz tmp/llm_parametrizer-0.1.2.tar.gz --markdown 20240519/l/llm-parametrizer/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-19 08:50:53] INFO root fetch - processPackages [llm-parametrizer]: Remove: archive file [/home/abi/fetcher/tmp/llm_parametrizer-0.1.1.tar.gz]
+[2024-05-19 08:50:53] INFO root fetch - processPackages [llm-parametrizer]: Remove: archive file [/home/abi/fetcher/tmp/llm_parametrizer-0.1.2.tar.gz]
+[2024-05-19 08:50:53] INFO root fetch - main [MainThread]: End processing [llm-parametrizer]: success
+[2024-05-19 08:50:53] INFO root fetch - main [MainThread]: Store serial: [23273932]
