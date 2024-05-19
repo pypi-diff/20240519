@@ -5586,3 +5586,42 @@
 [2024-05-19 08:59:34] INFO root fetch - processPackages [odoo-addon-sale-force-invoiced]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_force_invoiced-17.0.1.1.0.4-py3-none-any.whl.zip]
 [2024-05-19 08:59:34] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-force-invoiced]: success
 [2024-05-19 08:59:34] INFO root fetch - main [MainThread]: Store serial: [23273988]
+[2024-05-19 09:01:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273988]
+[2024-05-19 09:01:43] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 09:01:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addons-oca-sale-workflow
+[2024-05-19 09:01:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-relay-endpoint
+[2024-05-19 09:01:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: auto-coder
+[2024-05-19 09:01:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tf-models-nightly
+[2024-05-19 09:01:43] INFO root fetch - processPackages [odoo-addons-oca-sale-workflow]: New version: [16.0.20240502.1] Old Version: [16.0.20240213.0]
+[2024-05-19 09:01:43] INFO root fetch - processPackages [tf-models-nightly]: New version: [2.9.0.dev20220920] Old Version: [2.9.0.dev20220919]
+[2024-05-19 09:01:43] INFO root fetch - processPackages [django-relay-endpoint]: New version: [2.0.0] Old Version: [1.2.0]
+[2024-05-19 09:01:43] INFO root fetch - processPackages [odoo-addons-oca-sale-workflow]: Downloading https://files.pythonhosted.org/packages/e6/9d/df5e0ce3613ec4510ce7cc5e8bcca93c415b973b0fdca158d2ea701d2a3c/odoo_addons_oca_sale_workflow-16.0.20240213.0-py3-none-any.whl
+[2024-05-19 09:01:43] INFO root fetch - processPackages [auto-coder]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-19 09:01:43] INFO root fetch - processPackages [tf-models-nightly]: Downloading https://files.pythonhosted.org/packages/73/e9/06af7a12cda1722ec668213b9e91a8a2e918011d3ef8e9a98146ee4f76ef/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl
+[2024-05-19 09:01:43] INFO root fetch - processPackages [django-relay-endpoint]: Downloading https://files.pythonhosted.org/packages/2b/3c/4f3c746401b63fca3d00b91c68c4457a385b71506c5db768e667284fff3f/django_relay_endpoint-1.2.0.tar.gz
+[2024-05-19 09:01:43] INFO root fetch - processPackages [odoo-addons-oca-sale-workflow]: Downloading https://files.pythonhosted.org/packages/31/3d/163b2ea43dada577af8fb1d3062ef3bcdb67a172374847a71db194270694/odoo_addons_oca_sale_workflow-16.0.20240502.1-py3-none-any.whl
+[2024-05-19 09:01:43] INFO root fetch - processPackages [auto-coder]: Downloading https://files.pythonhosted.org/packages/d1/69/520c5552e42e8901e930364867dc863b8beb917b52544194a46c864a7385/auto-coder-0.1.8.tar.gz
+[2024-05-19 09:01:43] INFO root fetch - processPackages [odoo-addons-oca-sale-workflow]: executing diffoscope
+[2024-05-19 09:01:43] INFO root fetch - processPackages [odoo-addons-oca-sale-workflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_sale_workflow-16.0.20240213.0-py3-none-any.whl.zip tmp/odoo_addons_oca_sale_workflow-16.0.20240502.1-py3-none-any.whl.zip --markdown 20240519/o/odoo-addons-oca-sale-workflow/16.0.20240213.0-16.0.20240502.1/README.md --exclude *.pyd
+[2024-05-19 09:01:43] INFO root fetch - processPackages [tf-models-nightly]: Downloading https://files.pythonhosted.org/packages/e2/76/79c5fb2cd23f346ee912b9c289c2a9bab6fc8d178658f931ac9a023224c6/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl
+[2024-05-19 09:01:43] INFO root fetch - processPackages [django-relay-endpoint]: Downloading https://files.pythonhosted.org/packages/bc/28/e03c7f1bf8fda84f4f7d90e0a389fa9419823019a4f42caa2d377866d23d/django_relay_endpoint-2.0.0-py3-none-any.whl
+[2024-05-19 09:01:44] INFO root fetch - processPackages [auto-coder]: Downloading https://files.pythonhosted.org/packages/4d/9a/1bad03fbe8fd6d47cd359f857b05e28efaa8cba07c33aa029696a40dd646/auto-coder-0.1.9.tar.gz
+[2024-05-19 09:01:44] INFO root fetch - processPackages [django-relay-endpoint]: executing diffoscope
+[2024-05-19 09:01:44] INFO root fetch - processPackages [django-relay-endpoint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_relay_endpoint-1.2.0.tar.gz tmp/django_relay_endpoint-2.0.0-py3-none-any.whl.zip --markdown 20240519/d/django-relay-endpoint/1.2.0-2.0.0/README.md --exclude *.pyd
+[2024-05-19 09:01:44] INFO root fetch - processPackages [auto-coder]: executing diffoscope
+[2024-05-19 09:01:44] INFO root fetch - processPackages [auto-coder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto-coder-0.1.8.tar.gz tmp/auto-coder-0.1.9.tar.gz --markdown 20240519/a/auto-coder/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-19 09:01:44] INFO root fetch - processPackages [odoo-addons-oca-sale-workflow]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_sale_workflow-16.0.20240213.0-py3-none-any.whl.zip]
+[2024-05-19 09:01:44] INFO root fetch - processPackages [odoo-addons-oca-sale-workflow]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_sale_workflow-16.0.20240502.1-py3-none-any.whl.zip]
+[2024-05-19 09:01:44] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-sale-workflow]: success
+[2024-05-19 09:01:44] INFO root fetch - processPackages [django-relay-endpoint]: Remove: archive file [/home/abi/fetcher/tmp/django_relay_endpoint-1.2.0.tar.gz]
+[2024-05-19 09:01:44] INFO root fetch - processPackages [django-relay-endpoint]: Remove: archive file [/home/abi/fetcher/tmp/django_relay_endpoint-2.0.0-py3-none-any.whl.zip]
+[2024-05-19 09:01:44] INFO root fetch - main [MainThread]: End processing [django-relay-endpoint]: success
+[2024-05-19 09:01:44] INFO root fetch - processPackages [auto-coder]: Remove: archive file [/home/abi/fetcher/tmp/auto-coder-0.1.8.tar.gz]
+[2024-05-19 09:01:44] INFO root fetch - processPackages [auto-coder]: Remove: archive file [/home/abi/fetcher/tmp/auto-coder-0.1.9.tar.gz]
+[2024-05-19 09:01:44] INFO root fetch - main [MainThread]: End processing [auto-coder]: success
+[2024-05-19 09:01:45] INFO root fetch - processPackages [tf-models-nightly]: executing diffoscope
+[2024-05-19 09:01:45] INFO root fetch - processPackages [tf-models-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl.zip tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip --markdown 20240519/t/tf-models-nightly/2.9.0.dev20220919-2.9.0.dev20220920/README.md --exclude *.pyd
+[2024-05-19 09:01:48] INFO root fetch - processPackages [tf-models-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl.zip]
+[2024-05-19 09:01:48] INFO root fetch - processPackages [tf-models-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip]
+[2024-05-19 09:01:48] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
+[2024-05-19 09:01:48] INFO root fetch - main [MainThread]: Store serial: [23273997]
