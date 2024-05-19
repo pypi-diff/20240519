@@ -3249,3 +3249,36 @@
 [2024-05-19 05:21:25] INFO root fetch - processPackages [toyhouse]: Remove: archive file [/home/abi/fetcher/tmp/toyhouse-0.2.1.tar.gz]
 [2024-05-19 05:21:25] INFO root fetch - main [MainThread]: End processing [toyhouse]: success
 [2024-05-19 05:21:25] INFO root fetch - main [MainThread]: Store serial: [23272978]
+[2024-05-19 05:23:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272978]
+[2024-05-19 05:23:34] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 05:23:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ytmusic-deleter
+[2024-05-19 05:23:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-resource-booking
+[2024-05-19 05:23:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: farmholdz
+[2024-05-19 05:23:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: keras-nightly
+[2024-05-19 05:23:34] INFO root fetch - processPackages [odoo-addon-resource-booking]: New version: [16.0.1.1.0] Old Version: [16.0.1.0.0.9]
+[2024-05-19 05:23:34] INFO root fetch - processPackages [keras-nightly]: New version: [3.3.3.dev2024051803] Old Version: [3.3.3.dev2024051703]
+[2024-05-19 05:23:34] INFO root fetch - processPackages [odoo-addon-resource-booking]: Downloading https://files.pythonhosted.org/packages/7d/96/9eddad90ad28dc64ecdc3b2e68f13e6f5c3f3797d0ec4462190e9a99b1d3/odoo_addon_resource_booking-16.0.1.0.0.9-py3-none-any.whl
+[2024-05-19 05:23:34] WARNING root fetch - processPackages [farmholdz]: Skipping, unable to determine old version
+[2024-05-19 05:23:34] INFO root fetch - main [MainThread]: End processing [farmholdz] error
+[2024-05-19 05:23:34] INFO root fetch - processPackages [keras-nightly]: Downloading https://files.pythonhosted.org/packages/6e/6d/b4bcf485be6659b96eb6fba5a64e3b4c132da46c3d25c2d22592d6b7a69d/keras_nightly-3.3.3.dev2024051703.tar.gz
+[2024-05-19 05:23:34] INFO root fetch - processPackages [ytmusic-deleter]: New version: [2.3.3] Old Version: [2.3.2]
+[2024-05-19 05:23:34] INFO root fetch - processPackages [odoo-addon-resource-booking]: Downloading https://files.pythonhosted.org/packages/72/a5/2fd33c09ad21a58cad539e75f1b0af0c267f88251f35807186ddd7034fd3/odoo_addon_resource_booking-16.0.1.1.0-py3-none-any.whl
+[2024-05-19 05:23:34] INFO root fetch - processPackages [ytmusic-deleter]: Downloading https://files.pythonhosted.org/packages/37/6c/9ce2b1167ba4a84b40030e941bde24ca22bea6b8db2bcba29e5fe7ba8996/ytmusic_deleter-2.3.2.tar.gz
+[2024-05-19 05:23:34] INFO root fetch - processPackages [odoo-addon-resource-booking]: executing diffoscope
+[2024-05-19 05:23:34] INFO root fetch - processPackages [odoo-addon-resource-booking]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_resource_booking-16.0.1.0.0.9-py3-none-any.whl.zip tmp/odoo_addon_resource_booking-16.0.1.1.0-py3-none-any.whl.zip --markdown 20240519/o/odoo-addon-resource-booking/16.0.1.0.0.9-16.0.1.1.0/README.md --exclude *.pyd
+[2024-05-19 05:23:34] INFO root fetch - processPackages [keras-nightly]: Downloading https://files.pythonhosted.org/packages/ef/42/eff1ba4d31d3b91cb4483c3625975f62bbd273ef87d98d821d57a8b2f70a/keras_nightly-3.3.3.dev2024051803.tar.gz
+[2024-05-19 05:23:35] INFO root fetch - processPackages [ytmusic-deleter]: Downloading https://files.pythonhosted.org/packages/92/02/3e7ecd5f6118b6763129162da5b61c434ea3590c10274cb19c33ce6c3a21/ytmusic_deleter-2.3.3.tar.gz
+[2024-05-19 05:23:35] INFO root fetch - processPackages [keras-nightly]: executing diffoscope
+[2024-05-19 05:23:35] INFO root fetch - processPackages [keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_nightly-3.3.3.dev2024051703.tar.gz tmp/keras_nightly-3.3.3.dev2024051803.tar.gz --markdown 20240519/k/keras-nightly/3.3.3.dev2024051703-3.3.3.dev2024051803/README.md --exclude *.pyd
+[2024-05-19 05:23:35] INFO root fetch - processPackages [ytmusic-deleter]: executing diffoscope
+[2024-05-19 05:23:35] INFO root fetch - processPackages [ytmusic-deleter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ytmusic_deleter-2.3.2.tar.gz tmp/ytmusic_deleter-2.3.3.tar.gz --markdown 20240519/y/ytmusic-deleter/2.3.2-2.3.3/README.md --exclude *.pyd
+[2024-05-19 05:23:35] INFO root fetch - processPackages [odoo-addon-resource-booking]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_resource_booking-16.0.1.0.0.9-py3-none-any.whl.zip]
+[2024-05-19 05:23:35] INFO root fetch - processPackages [odoo-addon-resource-booking]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_resource_booking-16.0.1.1.0-py3-none-any.whl.zip]
+[2024-05-19 05:23:35] INFO root fetch - main [MainThread]: End processing [odoo-addon-resource-booking]: success
+[2024-05-19 05:23:35] INFO root fetch - processPackages [ytmusic-deleter]: Remove: archive file [/home/abi/fetcher/tmp/ytmusic_deleter-2.3.2.tar.gz]
+[2024-05-19 05:23:35] INFO root fetch - processPackages [ytmusic-deleter]: Remove: archive file [/home/abi/fetcher/tmp/ytmusic_deleter-2.3.3.tar.gz]
+[2024-05-19 05:23:35] INFO root fetch - main [MainThread]: End processing [ytmusic-deleter]: success
+[2024-05-19 05:23:37] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_nightly-3.3.3.dev2024051703.tar.gz]
+[2024-05-19 05:23:37] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_nightly-3.3.3.dev2024051803.tar.gz]
+[2024-05-19 05:23:37] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
+[2024-05-19 05:23:37] INFO root fetch - main [MainThread]: Store serial: [23272990]
