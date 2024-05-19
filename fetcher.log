@@ -2648,3 +2648,47 @@
 [2024-05-19 04:22:37] INFO root fetch - processPackages [GSG]: Remove: archive file [/home/abi/fetcher/tmp/GSG-0.5.8.tar.gz]
 [2024-05-19 04:22:37] INFO root fetch - main [MainThread]: End processing [GSG]: success
 [2024-05-19 04:22:37] INFO root fetch - main [MainThread]: Store serial: [23272761]
+[2024-05-19 04:24:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272761]
+[2024-05-19 04:24:46] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 04:24:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tracktour
+[2024-05-19 04:24:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: types-antlr4-python3-runtime
+[2024-05-19 04:24:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: types-regex
+[2024-05-19 04:24:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: types-setuptools
+[2024-05-19 04:24:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: types-influxdb-client
+[2024-05-19 04:24:46] INFO root fetch - processPackages [types-setuptools]: New version: [69.5.0.20240518] Old Version: [69.5.0.20240513]
+[2024-05-19 04:24:46] INFO root fetch - processPackages [types-setuptools]: Downloading https://files.pythonhosted.org/packages/2c/e4/cb3049f93874a0f81c7c384021074871c1729990e5c2a6117a619505bded/types-setuptools-69.5.0.20240513.tar.gz
+[2024-05-19 04:24:46] INFO root fetch - processPackages [tracktour]: New version: [0.0.5rc1] Old Version: [0.0.5]
+[2024-05-19 04:24:46] INFO root fetch - processPackages [types-regex]: New version: [2024.5.15.20240519] Old Version: [2024.5.15.20240516]
+[2024-05-19 04:24:46] INFO root fetch - processPackages [types-antlr4-python3-runtime]: New version: [4.13.0.20240519] Old Version: [4.13.0.20240331]
+[2024-05-19 04:24:46] INFO root fetch - processPackages [types-influxdb-client]: New version: [1.42.0.20240425] Old Version: [1.42.0.20240423]
+[2024-05-19 04:24:46] INFO root fetch - processPackages [tracktour]: Downloading https://files.pythonhosted.org/packages/17/7d/c44f0e03cd6c74fa676c87cc53a9211022c257d77518ce2b54d648effcf9/tracktour-0.0.5.tar.gz
+[2024-05-19 04:24:46] WARNING root fetch - processPackages [tracktour]: Skipping package: exceeds size limit 13042570>=10485760
+[2024-05-19 04:24:46] INFO root fetch - main [MainThread]: End processing [tracktour] error
+[2024-05-19 04:24:46] INFO root fetch - processPackages [types-regex]: Downloading https://files.pythonhosted.org/packages/17/86/671b64bf94b959e9f7ef5c2196577dc4adc89be635291ae382a5865ac961/types-regex-2024.5.15.20240516.tar.gz
+[2024-05-19 04:24:46] INFO root fetch - processPackages [types-antlr4-python3-runtime]: Downloading https://files.pythonhosted.org/packages/ee/01/c012de5895e363d24a0962741e420e45e6df7853f1a549891dd17067f77b/types-antlr4-python3-runtime-4.13.0.20240331.tar.gz
+[2024-05-19 04:24:46] INFO root fetch - processPackages [types-setuptools]: Downloading https://files.pythonhosted.org/packages/e7/09/b64ba80dde9090c391b861d9d0543bc3d8bc8f191e92f3711f47f4ada519/types-setuptools-69.5.0.20240518.tar.gz
+[2024-05-19 04:24:46] INFO root fetch - processPackages [types-influxdb-client]: Downloading https://files.pythonhosted.org/packages/60/3f/6c6d39e9cd26598e6ef1082c7ad232870a9e599935515dd59641fe7845d8/types-influxdb-client-1.42.0.20240423.tar.gz
+[2024-05-19 04:24:47] INFO root fetch - processPackages [types-setuptools]: executing diffoscope
+[2024-05-19 04:24:47] INFO root fetch - processPackages [types-setuptools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-setuptools-69.5.0.20240513.tar.gz tmp/types-setuptools-69.5.0.20240518.tar.gz --markdown 20240519/t/types-setuptools/69.5.0.20240513-69.5.0.20240518/README.md --exclude *.pyd
+[2024-05-19 04:24:47] INFO root fetch - processPackages [types-regex]: Downloading https://files.pythonhosted.org/packages/dc/97/a8c740b8ffc7e3bd49eb5f155e4213532f6de8492b5f7be412a19f49cfbb/types-regex-2024.5.15.20240519.tar.gz
+[2024-05-19 04:24:47] INFO root fetch - processPackages [types-antlr4-python3-runtime]: Downloading https://files.pythonhosted.org/packages/dc/7b/9cd1346fb578e2ff620298cbf36d2291f562762ed77063d88bbc57cd2740/types-antlr4-python3-runtime-4.13.0.20240519.tar.gz
+[2024-05-19 04:24:47] INFO root fetch - processPackages [types-influxdb-client]: Downloading https://files.pythonhosted.org/packages/6c/0c/23f68207b8c53a8a35bbb7949a0ef53b06ca88da32bbc409a370f1cbf699/types-influxdb-client-1.42.0.20240425.tar.gz
+[2024-05-19 04:24:47] INFO root fetch - processPackages [types-antlr4-python3-runtime]: executing diffoscope
+[2024-05-19 04:24:47] INFO root fetch - processPackages [types-antlr4-python3-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-antlr4-python3-runtime-4.13.0.20240331.tar.gz tmp/types-antlr4-python3-runtime-4.13.0.20240519.tar.gz --markdown 20240519/t/types-antlr4-python3-runtime/4.13.0.20240331-4.13.0.20240519/README.md --exclude *.pyd
+[2024-05-19 04:24:47] INFO root fetch - processPackages [types-influxdb-client]: executing diffoscope
+[2024-05-19 04:24:47] INFO root fetch - processPackages [types-influxdb-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-influxdb-client-1.42.0.20240423.tar.gz tmp/types-influxdb-client-1.42.0.20240425.tar.gz --markdown 20240519/t/types-influxdb-client/1.42.0.20240423-1.42.0.20240425/README.md --exclude *.pyd
+[2024-05-19 04:24:47] INFO root fetch - processPackages [types-regex]: executing diffoscope
+[2024-05-19 04:24:47] INFO root fetch - processPackages [types-regex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-regex-2024.5.15.20240516.tar.gz tmp/types-regex-2024.5.15.20240519.tar.gz --markdown 20240519/t/types-regex/2024.5.15.20240516-2024.5.15.20240519/README.md --exclude *.pyd
+[2024-05-19 04:24:47] INFO root fetch - processPackages [types-setuptools]: Remove: archive file [/home/abi/fetcher/tmp/types-setuptools-69.5.0.20240513.tar.gz]
+[2024-05-19 04:24:47] INFO root fetch - processPackages [types-setuptools]: Remove: archive file [/home/abi/fetcher/tmp/types-setuptools-69.5.0.20240518.tar.gz]
+[2024-05-19 04:24:47] INFO root fetch - main [MainThread]: End processing [types-setuptools]: success
+[2024-05-19 04:24:48] INFO root fetch - processPackages [types-regex]: Remove: archive file [/home/abi/fetcher/tmp/types-regex-2024.5.15.20240516.tar.gz]
+[2024-05-19 04:24:48] INFO root fetch - processPackages [types-regex]: Remove: archive file [/home/abi/fetcher/tmp/types-regex-2024.5.15.20240519.tar.gz]
+[2024-05-19 04:24:48] INFO root fetch - main [MainThread]: End processing [types-regex]: success
+[2024-05-19 04:24:48] INFO root fetch - processPackages [types-antlr4-python3-runtime]: Remove: archive file [/home/abi/fetcher/tmp/types-antlr4-python3-runtime-4.13.0.20240331.tar.gz]
+[2024-05-19 04:24:48] INFO root fetch - processPackages [types-antlr4-python3-runtime]: Remove: archive file [/home/abi/fetcher/tmp/types-antlr4-python3-runtime-4.13.0.20240519.tar.gz]
+[2024-05-19 04:24:48] INFO root fetch - main [MainThread]: End processing [types-antlr4-python3-runtime]: success
+[2024-05-19 04:24:48] INFO root fetch - processPackages [types-influxdb-client]: Remove: archive file [/home/abi/fetcher/tmp/types-influxdb-client-1.42.0.20240423.tar.gz]
+[2024-05-19 04:24:48] INFO root fetch - processPackages [types-influxdb-client]: Remove: archive file [/home/abi/fetcher/tmp/types-influxdb-client-1.42.0.20240425.tar.gz]
+[2024-05-19 04:24:48] INFO root fetch - main [MainThread]: End processing [types-influxdb-client]: success
+[2024-05-19 04:24:48] INFO root fetch - main [MainThread]: Store serial: [23272775]
