@@ -2929,3 +2929,27 @@
 [2024-05-19 04:44:37] INFO root fetch - processPackages [stefutils]: Remove: archive file [/home/abi/fetcher/tmp/stefutils-0.9.0.tar.gz]
 [2024-05-19 04:44:37] INFO root fetch - main [MainThread]: End processing [stefutils]: success
 [2024-05-19 04:44:37] INFO root fetch - main [MainThread]: Store serial: [23272856]
+[2024-05-19 04:46:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272856]
+[2024-05-19 04:46:48] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 04:46:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: airbyte-source-iterable
+[2024-05-19 04:46:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: seeact
+[2024-05-19 04:46:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rationalnessz
+[2024-05-19 04:46:48] INFO root fetch - processPackages [seeact]: New version: [0.2.6] Old Version: [0.2.5.1]
+[2024-05-19 04:46:48] INFO root fetch - processPackages [airbyte-source-iterable]: New version: [0.5.1.dev202405190244] Old Version: [0.5.1.dev202405182050]
+[2024-05-19 04:46:48] WARNING root fetch - processPackages [rationalnessz]: Skipping, unable to determine old version
+[2024-05-19 04:46:48] INFO root fetch - main [MainThread]: End processing [rationalnessz] error
+[2024-05-19 04:46:48] INFO root fetch - processPackages [seeact]: Downloading https://files.pythonhosted.org/packages/10/3b/b197944fc514bd347de4c62a778b82f1220558ed7ebd85f5d59435c9d92f/seeact-0.2.5.1.tar.gz
+[2024-05-19 04:46:48] INFO root fetch - processPackages [airbyte-source-iterable]: Downloading https://files.pythonhosted.org/packages/d8/ea/472dfdfb8aab7078bccd63efcc655bf07d6d9dbd7ee6891f41a1514dcfaa/airbyte_source_iterable-0.5.1.dev202405182050.tar.gz
+[2024-05-19 04:46:49] INFO root fetch - processPackages [seeact]: Downloading https://files.pythonhosted.org/packages/b3/ff/d343392a950de53bf3e9172c9e5e98d89a9e8e71e0a0070b96e0f433e712/seeact-0.2.6.tar.gz
+[2024-05-19 04:46:49] INFO root fetch - processPackages [airbyte-source-iterable]: Downloading https://files.pythonhosted.org/packages/37/62/0a7644718b967e48f8c70a5babcaf152627a45499f60139cf8dbbf30dd46/airbyte_source_iterable-0.5.1.dev202405190244.tar.gz
+[2024-05-19 04:46:49] INFO root fetch - processPackages [seeact]: executing diffoscope
+[2024-05-19 04:46:49] INFO root fetch - processPackages [seeact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seeact-0.2.5.1.tar.gz tmp/seeact-0.2.6.tar.gz --markdown 20240519/s/seeact/0.2.5.1-0.2.6/README.md --exclude *.pyd
+[2024-05-19 04:46:49] INFO root fetch - processPackages [airbyte-source-iterable]: executing diffoscope
+[2024-05-19 04:46:49] INFO root fetch - processPackages [airbyte-source-iterable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airbyte_source_iterable-0.5.1.dev202405182050.tar.gz tmp/airbyte_source_iterable-0.5.1.dev202405190244.tar.gz --markdown 20240519/a/airbyte-source-iterable/0.5.1.dev202405182050-0.5.1.dev202405190244/README.md --exclude *.pyd
+[2024-05-19 04:46:49] INFO root fetch - processPackages [seeact]: Remove: archive file [/home/abi/fetcher/tmp/seeact-0.2.5.1.tar.gz]
+[2024-05-19 04:46:49] INFO root fetch - processPackages [seeact]: Remove: archive file [/home/abi/fetcher/tmp/seeact-0.2.6.tar.gz]
+[2024-05-19 04:46:49] INFO root fetch - main [MainThread]: End processing [seeact]: success
+[2024-05-19 04:46:49] INFO root fetch - processPackages [airbyte-source-iterable]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_iterable-0.5.1.dev202405182050.tar.gz]
+[2024-05-19 04:46:49] INFO root fetch - processPackages [airbyte-source-iterable]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_iterable-0.5.1.dev202405190244.tar.gz]
+[2024-05-19 04:46:49] INFO root fetch - main [MainThread]: End processing [airbyte-source-iterable]: success
+[2024-05-19 04:46:49] INFO root fetch - main [MainThread]: Store serial: [23272867]
