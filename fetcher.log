@@ -4045,3 +4045,36 @@
 [2024-05-19 06:42:00] INFO root fetch - processPackages [easy-llama]: Remove: archive file [/home/abi/fetcher/tmp/easy_llama-0.1.9.tar.gz]
 [2024-05-19 06:42:00] INFO root fetch - main [MainThread]: End processing [easy-llama]: success
 [2024-05-19 06:42:00] INFO root fetch - main [MainThread]: Store serial: [23273303]
+[2024-05-19 06:44:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273303]
+[2024-05-19 06:44:09] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 06:44:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytest-parameterize-from-files
+[2024-05-19 06:44:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: psqlparse2
+[2024-05-19 06:44:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: salgorithm
+[2024-05-19 06:44:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: woodshockz
+[2024-05-19 06:44:09] INFO root fetch - processPackages [psqlparse2]: New version: [0.0.8] Old Version: [0.0.6]
+[2024-05-19 06:44:09] INFO root fetch - processPackages [salgorithm]: New version: [0.2.4] Old Version: [0.2.2]
+[2024-05-19 06:44:09] INFO root fetch - processPackages [psqlparse2]: Downloading https://files.pythonhosted.org/packages/4b/26/e7ff50549e5f248d536737d7c85590c6e302ab8a68276793bcec20614db9/psqlparse2-0.0.6.tar.gz
+[2024-05-19 06:44:09] INFO root fetch - processPackages [salgorithm]: Downloading https://files.pythonhosted.org/packages/98/2d/960d4527fcb9b68b3683117ea7254bdfd6225c05243b57c8a556b0168a8b/salgorithm-0.2.2.tar.gz
+[2024-05-19 06:44:09] WARNING root fetch - processPackages [woodshockz]: Skipping, unable to determine old version
+[2024-05-19 06:44:09] INFO root fetch - main [MainThread]: End processing [woodshockz] error
+[2024-05-19 06:44:09] INFO root fetch - processPackages [pytest-parameterize-from-files]: New version: [0.9.5] Old Version: [0.12]
+[2024-05-19 06:44:09] INFO root fetch - processPackages [salgorithm]: Downloading https://files.pythonhosted.org/packages/a7/cc/6b815ab0988e7f178088acc97ff63d6bed2629675da5f352725204e5183d/salgorithm-0.2.4.tar.gz
+[2024-05-19 06:44:09] INFO root fetch - processPackages [pytest-parameterize-from-files]: Downloading https://files.pythonhosted.org/packages/b6/23/9862e7b44d15acba77e0b70fe0dcc160cd59d097cb60d47711ef4093d61d/pytest_parameterize_from_files-0.12.tar.gz
+[2024-05-19 06:44:09] INFO root fetch - processPackages [salgorithm]: executing diffoscope
+[2024-05-19 06:44:09] INFO root fetch - processPackages [salgorithm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/salgorithm-0.2.2.tar.gz tmp/salgorithm-0.2.4.tar.gz --markdown 20240519/s/salgorithm/0.2.2-0.2.4/README.md --exclude *.pyd
+[2024-05-19 06:44:09] INFO root fetch - processPackages [psqlparse2]: Downloading https://files.pythonhosted.org/packages/ab/f1/b843371a6517f45b69db6ca56dc8450f9ab9c38995460606a4dd3cf90b85/psqlparse2-0.0.8.tar.gz
+[2024-05-19 06:44:09] INFO root fetch - processPackages [pytest-parameterize-from-files]: Downloading https://files.pythonhosted.org/packages/7f/e8/c757c75751e8b7f33ba89ccd1931edf47df6a0ff772905cd0990211918db/pytest_parameterize_from_files-0.9.5.tar.gz
+[2024-05-19 06:44:10] INFO root fetch - processPackages [psqlparse2]: executing diffoscope
+[2024-05-19 06:44:10] INFO root fetch - processPackages [psqlparse2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psqlparse2-0.0.6.tar.gz tmp/psqlparse2-0.0.8.tar.gz --markdown 20240519/p/psqlparse2/0.0.6-0.0.8/README.md --exclude *.pyd
+[2024-05-19 06:44:10] INFO root fetch - processPackages [pytest-parameterize-from-files]: executing diffoscope
+[2024-05-19 06:44:10] INFO root fetch - processPackages [pytest-parameterize-from-files]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest_parameterize_from_files-0.12.tar.gz tmp/pytest_parameterize_from_files-0.9.5.tar.gz --markdown 20240519/p/pytest-parameterize-from-files/0.12-0.9.5/README.md --exclude *.pyd
+[2024-05-19 06:44:10] INFO root fetch - processPackages [salgorithm]: Remove: archive file [/home/abi/fetcher/tmp/salgorithm-0.2.2.tar.gz]
+[2024-05-19 06:44:10] INFO root fetch - processPackages [salgorithm]: Remove: archive file [/home/abi/fetcher/tmp/salgorithm-0.2.4.tar.gz]
+[2024-05-19 06:44:10] INFO root fetch - main [MainThread]: End processing [salgorithm]: success
+[2024-05-19 06:44:10] INFO root fetch - processPackages [pytest-parameterize-from-files]: Remove: archive file [/home/abi/fetcher/tmp/pytest_parameterize_from_files-0.12.tar.gz]
+[2024-05-19 06:44:10] INFO root fetch - processPackages [pytest-parameterize-from-files]: Remove: archive file [/home/abi/fetcher/tmp/pytest_parameterize_from_files-0.9.5.tar.gz]
+[2024-05-19 06:44:10] INFO root fetch - main [MainThread]: End processing [pytest-parameterize-from-files]: success
+[2024-05-19 06:44:15] INFO root fetch - processPackages [psqlparse2]: Remove: archive file [/home/abi/fetcher/tmp/psqlparse2-0.0.6.tar.gz]
+[2024-05-19 06:44:15] INFO root fetch - processPackages [psqlparse2]: Remove: archive file [/home/abi/fetcher/tmp/psqlparse2-0.0.8.tar.gz]
+[2024-05-19 06:44:15] INFO root fetch - main [MainThread]: End processing [psqlparse2]: success
+[2024-05-19 06:44:15] INFO root fetch - main [MainThread]: Store serial: [23273314]
