@@ -10402,3 +10402,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 14:30:25] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
 [2024-05-19 14:30:25] INFO root fetch - main [MainThread]: End processing [yeref]: success
 [2024-05-19 14:30:25] INFO root fetch - main [MainThread]: Store serial: [23276281]
+[2024-05-19 14:32:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276281]
+[2024-05-19 14:32:34] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 14:32:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yeref
+[2024-05-19 14:32:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: connectome-interpreter
+[2024-05-19 14:32:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zbl
+[2024-05-19 14:32:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: afeng-py-tools
+[2024-05-19 14:32:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: zaku
+[2024-05-19 14:32:34] INFO root fetch - processPackages [zaku]: New version: [0.0.9] Old Version: [0.0.8rc1]
+[2024-05-19 14:32:34] INFO root fetch - processPackages [zbl]: New version: [0.4.0] Old Version: [0.2.1]
+[2024-05-19 14:32:34] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-19 14:32:34] INFO root fetch - processPackages [connectome-interpreter]: New version: [1.9.0] Old Version: [1.8.2]
+[2024-05-19 14:32:34] INFO root fetch - processPackages [zaku]: Downloading https://files.pythonhosted.org/packages/36/63/843de81065e8c450c9dd14f7dd36425a40393dc131450c91bebeb4c5dd43/zaku-0.0.8rc1-py3-none-any.whl
+[2024-05-19 14:32:34] INFO root fetch - processPackages [zbl]: Downloading https://files.pythonhosted.org/packages/7a/53/907432acafb6622d10a523b91853c16dde5add1be2f5c5a7406e4c7bc49c/zbl-0.2.1-cp39-none-win_amd64.whl
+[2024-05-19 14:32:34] INFO root fetch - processPackages [afeng-py-tools]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-19 14:32:34] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-19 14:32:34] INFO root fetch - processPackages [connectome-interpreter]: Downloading https://files.pythonhosted.org/packages/1c/49/5c245817048a740cf15bd6f7a96259f0dfbfd1acd044f458bd8f5d2931fa/connectome_interpreter-1.8.2.tar.gz
+[2024-05-19 14:32:35] INFO root fetch - processPackages [zaku]: Downloading https://files.pythonhosted.org/packages/cf/0e/96a80c4cc62c4a2fa75fb4a3fbfabb21a029116202d8e513617930bcdd4a/zaku-0.0.9-py3-none-any.whl
+[2024-05-19 14:32:35] INFO root fetch - processPackages [zbl]: Downloading https://files.pythonhosted.org/packages/a8/f8/aaad7d75df30c6b7522d98a65b3d0bb2837ce694c2ce55c07ce27ea76ef3/zbl-0.4.0-cp39-none-win_amd64.whl
+[2024-05-19 14:32:35] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/03/96/e24f6bbf418707708ed1ab31dd8f4af000cdfcd56c3955e6bcf876e28182/afeng-py-tools-0.0.98.tar.gz
+[2024-05-19 14:32:35] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-19 14:32:35] INFO root fetch - processPackages [zaku]: executing diffoscope
+[2024-05-19 14:32:35] INFO root fetch - processPackages [zaku]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zaku-0.0.8rc1-py3-none-any.whl.zip tmp/zaku-0.0.9-py3-none-any.whl.zip --markdown 20240519/z/zaku/0.0.8rc1-0.0.9/README.md --exclude *.pyd
+[2024-05-19 14:32:35] INFO root fetch - processPackages [zbl]: executing diffoscope
+[2024-05-19 14:32:35] INFO root fetch - processPackages [zbl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zbl-0.2.1-cp39-none-win_amd64.whl.zip tmp/zbl-0.4.0-cp39-none-win_amd64.whl.zip --markdown 20240519/z/zbl/0.2.1-0.4.0/README.md --exclude *.pyd
+[2024-05-19 14:32:35] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-19 14:32:35] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240519/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-19 14:32:35] INFO root fetch - processPackages [connectome-interpreter]: Downloading https://files.pythonhosted.org/packages/a6/24/ebda52e583f4a09107c45e930652e623c85bb8a43878a83370b746d90ee7/connectome_interpreter-1.9.0.tar.gz
+[2024-05-19 14:32:35] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/b2/0a/41c6034fd5c224a859e4249b1b09e63d7acefba4ae5ac80d406a778a1e32/afeng-py-tools-0.0.99.tar.gz
+[2024-05-19 14:32:35] INFO root fetch - processPackages [connectome-interpreter]: executing diffoscope
+[2024-05-19 14:32:35] INFO root fetch - processPackages [connectome-interpreter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/connectome_interpreter-1.8.2.tar.gz tmp/connectome_interpreter-1.9.0.tar.gz --markdown 20240519/c/connectome-interpreter/1.8.2-1.9.0/README.md --exclude *.pyd
+[2024-05-19 14:32:35] INFO root fetch - processPackages [afeng-py-tools]: executing diffoscope
+[2024-05-19 14:32:35] INFO root fetch - processPackages [afeng-py-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/afeng-py-tools-0.0.98.tar.gz tmp/afeng-py-tools-0.0.99.tar.gz --markdown 20240519/a/afeng-py-tools/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-19 14:32:35] INFO root fetch - processPackages [zaku]: Remove: archive file [/home/abi/fetcher/tmp/zaku-0.0.8rc1-py3-none-any.whl.zip]
+[2024-05-19 14:32:35] INFO root fetch - processPackages [zaku]: Remove: archive file [/home/abi/fetcher/tmp/zaku-0.0.9-py3-none-any.whl.zip]
+[2024-05-19 14:32:35] INFO root fetch - main [MainThread]: End processing [zaku]: success
+[2024-05-19 14:32:35] INFO root fetch - processPackages [zbl]: Remove: archive file [/home/abi/fetcher/tmp/zbl-0.2.1-cp39-none-win_amd64.whl.zip]
+[2024-05-19 14:32:35] INFO root fetch - processPackages [zbl]: Remove: archive file [/home/abi/fetcher/tmp/zbl-0.4.0-cp39-none-win_amd64.whl.zip]
+[2024-05-19 14:32:35] INFO root fetch - main [MainThread]: End processing [zbl]: success
+[2024-05-19 14:32:36] INFO root fetch - processPackages [connectome-interpreter]: Remove: archive file [/home/abi/fetcher/tmp/connectome_interpreter-1.8.2.tar.gz]
+[2024-05-19 14:32:36] INFO root fetch - processPackages [connectome-interpreter]: Remove: archive file [/home/abi/fetcher/tmp/connectome_interpreter-1.9.0.tar.gz]
+[2024-05-19 14:32:36] INFO root fetch - main [MainThread]: End processing [connectome-interpreter]: success
+[2024-05-19 14:32:36] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-19 14:32:36] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-19 14:32:36] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-19 14:32:36] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.98.tar.gz]
+[2024-05-19 14:32:36] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
+[2024-05-19 14:32:36] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
+[2024-05-19 14:32:36] INFO root fetch - main [MainThread]: Store serial: [23276302]
