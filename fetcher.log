@@ -1963,3 +1963,54 @@
 [2024-05-19 03:28:21] INFO root fetch - processPackages [csv2notion-neo]: Remove: archive file [/home/abi/fetcher/tmp/csv2notion_neo-1.2.6.tar.gz]
 [2024-05-19 03:28:21] INFO root fetch - main [MainThread]: End processing [csv2notion-neo]: success
 [2024-05-19 03:28:21] INFO root fetch - main [MainThread]: Store serial: [23272376]
+[2024-05-19 03:30:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272376]
+[2024-05-19 03:30:30] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-19 03:30:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sweetrpg-api-core
+[2024-05-19 03:30:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sweetrpg-web-core
+[2024-05-19 03:30:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pycde
+[2024-05-19 03:30:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: polymniaz
+[2024-05-19 03:30:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: onediff
+[2024-05-19 03:30:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: onediffx
+[2024-05-19 03:30:31] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-19 03:30:31] INFO root fetch - processPackages [onediffx]: New version: [1.1.0.dev202405180127] Old Version: [1.1.0.dev202405170128]
+[2024-05-19 03:30:31] INFO root fetch - processPackages [onediff]: New version: [1.1.0.dev202405180127] Old Version: [1.1.0.dev202405170128]
+[2024-05-19 03:30:31] INFO root fetch - processPackages [sweetrpg-api-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-19 03:30:31] WARNING root fetch - processPackages [polymniaz]: Skipping, unable to determine old version
+[2024-05-19 03:30:31] INFO root fetch - main [MainThread]: End processing [polymniaz] error
+[2024-05-19 03:30:31] INFO root fetch - processPackages [pycde]: New version: [0.3.1.dev1066] Old Version: [0.3.1.dev1004]
+[2024-05-19 03:30:31] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/10/78/7e4ec24c92190fa564c9ba8a1797ccda0c7472064d109da37e0d283f94d2/sweetrpg-web-core-0.0.98.tar.gz
+[2024-05-19 03:30:31] INFO root fetch - processPackages [onediffx]: Downloading https://files.pythonhosted.org/packages/a4/e5/634ae60e62699f76e205052da956986ee6c3b17247c7684c9d52e8c8bfec/onediffx-1.1.0.dev202405170128.tar.gz
+[2024-05-19 03:30:31] INFO root fetch - processPackages [sweetrpg-api-core]: Downloading https://files.pythonhosted.org/packages/5d/9d/2398efc534be1a806373637db31588bc65727faee8d3d4ad1e210310552e/sweetrpg-api-core-0.0.98.tar.gz
+[2024-05-19 03:30:31] INFO root fetch - processPackages [onediff]: Downloading https://files.pythonhosted.org/packages/a1/c1/254da700684a705ff88dcde8bc7a727d3dc1f42ca35093b0e7c6a61d8805/onediff-1.1.0.dev202405170128.tar.gz
+[2024-05-19 03:30:31] INFO root fetch - processPackages [pycde]: Downloading https://files.pythonhosted.org/packages/ce/53/86a2d253e2c1a7d2cd0ea22e5022d13a85459718db26934be347688a84e4/pycde-0.3.1.dev1004-cp39-cp39-win_amd64.whl
+[2024-05-19 03:30:31] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/bd/15/72a761101e501277066578a42896229ae4a254ecf7602e2e15f38b35310d/sweetrpg-web-core-0.0.99.tar.gz
+[2024-05-19 03:30:31] INFO root fetch - processPackages [sweetrpg-api-core]: Downloading https://files.pythonhosted.org/packages/bf/6c/3cd8f95074a8f63967790523ccf02ffe9aef45c9c675b0a443c0371e8e04/sweetrpg-api-core-0.0.99.tar.gz
+[2024-05-19 03:30:31] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2024-05-19 03:30:31] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20240519/s/sweetrpg-web-core/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-19 03:30:31] INFO root fetch - processPackages [sweetrpg-api-core]: executing diffoscope
+[2024-05-19 03:30:31] INFO root fetch - processPackages [sweetrpg-api-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-api-core-0.0.98.tar.gz tmp/sweetrpg-api-core-0.0.99.tar.gz --markdown 20240519/s/sweetrpg-api-core/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-19 03:30:31] INFO root fetch - processPackages [onediff]: Downloading https://files.pythonhosted.org/packages/1a/9f/90ec1c352f67ea9ae4645324931e7dd6e65cc9d9f633c7de3643ad4d30b3/onediff-1.1.0.dev202405180127.tar.gz
+[2024-05-19 03:30:31] INFO root fetch - processPackages [onediffx]: Downloading https://files.pythonhosted.org/packages/3f/2b/b2702fb7db83474fc06f81757187d060f16dfe9500a6fa0ffea694eb49e1/onediffx-1.1.0.dev202405180127.tar.gz
+[2024-05-19 03:30:31] INFO root fetch - processPackages [onediffx]: executing diffoscope
+[2024-05-19 03:30:31] INFO root fetch - processPackages [onediffx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onediffx-1.1.0.dev202405170128.tar.gz tmp/onediffx-1.1.0.dev202405180127.tar.gz --markdown 20240519/o/onediffx/1.1.0.dev202405170128-1.1.0.dev202405180127/README.md --exclude *.pyd
+[2024-05-19 03:30:31] INFO root fetch - processPackages [onediff]: executing diffoscope
+[2024-05-19 03:30:31] INFO root fetch - processPackages [onediff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onediff-1.1.0.dev202405170128.tar.gz tmp/onediff-1.1.0.dev202405180127.tar.gz --markdown 20240519/o/onediff/1.1.0.dev202405170128-1.1.0.dev202405180127/README.md --exclude *.pyd
+[2024-05-19 03:30:31] INFO root fetch - processPackages [pycde]: Downloading https://files.pythonhosted.org/packages/d1/2a/291098d6e87211de4e7e1d97600c470c05c911c013a349ea2e1040a45976/pycde-0.3.1.dev1066-cp39-cp39-win_amd64.whl
+[2024-05-19 03:30:32] INFO root fetch - processPackages [sweetrpg-web-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-web-core-0.0.98.tar.gz]
+[2024-05-19 03:30:32] INFO root fetch - processPackages [sweetrpg-web-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-web-core-0.0.99.tar.gz]
+[2024-05-19 03:30:32] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2024-05-19 03:30:32] INFO root fetch - processPackages [sweetrpg-api-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-api-core-0.0.98.tar.gz]
+[2024-05-19 03:30:32] INFO root fetch - processPackages [sweetrpg-api-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-api-core-0.0.99.tar.gz]
+[2024-05-19 03:30:32] INFO root fetch - main [MainThread]: End processing [sweetrpg-api-core]: success
+[2024-05-19 03:30:32] INFO root fetch - processPackages [onediffx]: Remove: archive file [/home/abi/fetcher/tmp/onediffx-1.1.0.dev202405170128.tar.gz]
+[2024-05-19 03:30:32] INFO root fetch - processPackages [onediffx]: Remove: archive file [/home/abi/fetcher/tmp/onediffx-1.1.0.dev202405180127.tar.gz]
+[2024-05-19 03:30:32] INFO root fetch - main [MainThread]: End processing [onediffx]: success
+[2024-05-19 03:30:32] INFO root fetch - processPackages [onediff]: Remove: archive file [/home/abi/fetcher/tmp/onediff-1.1.0.dev202405170128.tar.gz]
+[2024-05-19 03:30:32] INFO root fetch - processPackages [onediff]: Remove: archive file [/home/abi/fetcher/tmp/onediff-1.1.0.dev202405180127.tar.gz]
+[2024-05-19 03:30:32] INFO root fetch - main [MainThread]: End processing [onediff]: success
+[2024-05-19 03:30:33] INFO root fetch - processPackages [pycde]: executing diffoscope
+[2024-05-19 03:30:33] INFO root fetch - processPackages [pycde]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycde-0.3.1.dev1004-cp39-cp39-win_amd64.whl.zip tmp/pycde-0.3.1.dev1066-cp39-cp39-win_amd64.whl.zip --markdown 20240519/p/pycde/0.3.1.dev1004-0.3.1.dev1066/README.md --exclude *.pyd
+[2024-05-19 03:31:46] INFO root fetch - processPackages [pycde]: Remove: archive file [/home/abi/fetcher/tmp/pycde-0.3.1.dev1004-cp39-cp39-win_amd64.whl.zip]
+[2024-05-19 03:31:46] INFO root fetch - processPackages [pycde]: Remove: archive file [/home/abi/fetcher/tmp/pycde-0.3.1.dev1066-cp39-cp39-win_amd64.whl.zip]
+[2024-05-19 03:31:46] INFO root fetch - main [MainThread]: End processing [pycde]: success
+[2024-05-19 03:31:46] INFO root fetch - main [MainThread]: Store serial: [23272403]
