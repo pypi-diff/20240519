@@ -8782,3 +8782,24 @@
 [2024-05-19 12:55:35] INFO root fetch - processPackages [metaffi-api]: Remove: archive file [/home/abi/fetcher/tmp/metaffi_api-0.0.25.tar.gz]
 [2024-05-19 12:55:35] INFO root fetch - main [MainThread]: End processing [metaffi-api]: success
 [2024-05-19 12:55:35] INFO root fetch - main [MainThread]: Store serial: [23275660]
+[2024-05-19 12:57:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275660]
+[2024-05-19 12:57:43] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 12:57:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ctrip-app-ui
+[2024-05-19 12:57:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: evernote2
+[2024-05-19 12:57:43] INFO root fetch - processPackages [evernote2]: New version: [1.9.1] Old Version: [1.0.2]
+[2024-05-19 12:57:43] INFO root fetch - processPackages [ctrip-app-ui]: New version: [0.6.3] Old Version: [0.6.2]
+[2024-05-19 12:57:43] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/fc/b1/4fbf6213a08271e2f6500ec8619d8832fa14af508a8563e28e6cc831e337/ctrip-app-ui-0.6.2.tar.gz
+[2024-05-19 12:57:43] INFO root fetch - processPackages [evernote2]: Downloading https://files.pythonhosted.org/packages/e2/c9/2c5c532e54905b6041e84d9ca68bef35930b0c90e77a928040e62afee247/evernote2-1.0.2.tar.gz
+[2024-05-19 12:57:43] INFO root fetch - processPackages [evernote2]: Downloading https://files.pythonhosted.org/packages/23/d6/52019b6334807321a404653f09b02d841f59a44fce250d3212f3cbfbbde5/evernote2-1.9.1.tar.gz
+[2024-05-19 12:57:43] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/7c/1a/9b0e242879c5c9478bf210dc60723713d1cee5443834f6542a9573dce3d2/ctrip-app-ui-0.6.3.tar.gz
+[2024-05-19 12:57:43] INFO root fetch - processPackages [evernote2]: executing diffoscope
+[2024-05-19 12:57:43] INFO root fetch - processPackages [evernote2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evernote2-1.0.2.tar.gz tmp/evernote2-1.9.1.tar.gz --markdown 20240519/e/evernote2/1.0.2-1.9.1/README.md --exclude *.pyd
+[2024-05-19 12:57:43] INFO root fetch - processPackages [ctrip-app-ui]: executing diffoscope
+[2024-05-19 12:57:43] INFO root fetch - processPackages [ctrip-app-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctrip-app-ui-0.6.2.tar.gz tmp/ctrip-app-ui-0.6.3.tar.gz --markdown 20240519/c/ctrip-app-ui/0.6.2-0.6.3/README.md --exclude *.pyd
+[2024-05-19 12:57:44] INFO root fetch - processPackages [evernote2]: Remove: archive file [/home/abi/fetcher/tmp/evernote2-1.0.2.tar.gz]
+[2024-05-19 12:57:44] INFO root fetch - processPackages [evernote2]: Remove: archive file [/home/abi/fetcher/tmp/evernote2-1.9.1.tar.gz]
+[2024-05-19 12:57:44] INFO root fetch - main [MainThread]: End processing [evernote2]: success
+[2024-05-19 12:57:44] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.6.2.tar.gz]
+[2024-05-19 12:57:44] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.6.3.tar.gz]
+[2024-05-19 12:57:44] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
+[2024-05-19 12:57:44] INFO root fetch - main [MainThread]: Store serial: [23275665]
