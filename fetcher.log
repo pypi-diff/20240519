@@ -8821,3 +8821,47 @@
 [2024-05-19 12:59:54] INFO root fetch - processPackages [PythonToSW]: Remove: archive file [/home/abi/fetcher/tmp/PythonToSW-1.2.5.tar.gz]
 [2024-05-19 12:59:54] INFO root fetch - main [MainThread]: End processing [PythonToSW]: success
 [2024-05-19 12:59:54] INFO root fetch - main [MainThread]: Store serial: [23275676]
+[2024-05-19 13:01:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275676]
+[2024-05-19 13:02:03] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-19 13:04:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275676]
+[2024-05-19 13:04:08] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-19 13:04:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moto
+[2024-05-19 13:04:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: simmeredz
+[2024-05-19 13:04:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pytest-minio-mock
+[2024-05-19 13:04:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sbcli-mig
+[2024-05-19 13:04:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PyCutee
+[2024-05-19 13:04:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: budgeteer
+[2024-05-19 13:04:08] WARNING root fetch - processPackages [PyCutee]: Skipping, unable to determine old version
+[2024-05-19 13:04:08] INFO root fetch - main [MainThread]: End processing [PyCutee] error
+[2024-05-19 13:04:08] INFO root fetch - processPackages [moto]: New version: [5.0.8.dev8] Old Version: [5.0.8.dev7]
+[2024-05-19 13:04:09] WARNING root fetch - processPackages [simmeredz]: Skipping, unable to determine old version
+[2024-05-19 13:04:09] INFO root fetch - main [MainThread]: End processing [simmeredz] error
+[2024-05-19 13:04:09] INFO root fetch - processPackages [pytest-minio-mock]: New version: [0.4.14] Old Version: [0.4.13]
+[2024-05-19 13:04:09] INFO root fetch - processPackages [budgeteer]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-19 13:04:09] INFO root fetch - processPackages [sbcli-mig]: New version: [1.0.99] Old Version: [1.0.98]
+[2024-05-19 13:04:09] INFO root fetch - processPackages [moto]: executing diffoscope
+[2024-05-19 13:04:09] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-5.0.8.dev7.tar.gz tmp/moto-5.0.8.dev8.tar.gz --markdown 20240519/m/moto/5.0.8.dev7-5.0.8.dev8/README.md --exclude *.pyd
+[2024-05-19 13:04:09] INFO root fetch - processPackages [budgeteer]: Downloading https://files.pythonhosted.org/packages/88/47/016de1f7061d1390f9ab098f35d7af1dfbe4ee0cc9a5a85cdecf47accdfe/budgeteer-0.1.2.tar.gz
+[2024-05-19 13:04:09] INFO root fetch - processPackages [pytest-minio-mock]: Downloading https://files.pythonhosted.org/packages/91/4f/493e76710987632f20c12eb1c9115175946c5bc826117a51a9a5ebd519ca/pytest_minio_mock-0.4.13.tar.gz
+[2024-05-19 13:04:09] INFO root fetch - processPackages [sbcli-mig]: Downloading https://files.pythonhosted.org/packages/6b/ca/195b17c881ccf7d806544ac663e3d3ba0fdf8d4fb2d49de83841f3a372d8/sbcli_mig-1.0.98.zip
+[2024-05-19 13:04:09] INFO root fetch - processPackages [sbcli-mig]: Downloading https://files.pythonhosted.org/packages/cf/04/ae220da966a36c254f338107cfb89676096dd3639725049e08c36876035d/sbcli_mig-1.0.99.zip
+[2024-05-19 13:04:09] INFO root fetch - processPackages [pytest-minio-mock]: Downloading https://files.pythonhosted.org/packages/c6/c3/94579189fb6fe3cacde33008cd31b962aefa99dbcc82897a906bfe14ddef/pytest_minio_mock-0.4.14.tar.gz
+[2024-05-19 13:04:09] INFO root fetch - processPackages [budgeteer]: Downloading https://files.pythonhosted.org/packages/0e/1f/cf06ebf5fe5883a60257d675f69d2a899fc0ac48856d505e8b14b9c062e5/budgeteer-0.1.3.tar.gz
+[2024-05-19 13:04:09] INFO root fetch - processPackages [sbcli-mig]: executing diffoscope
+[2024-05-19 13:04:09] INFO root fetch - processPackages [sbcli-mig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sbcli_mig-1.0.98.zip tmp/sbcli_mig-1.0.99.zip --markdown 20240519/s/sbcli-mig/1.0.98-1.0.99/README.md --exclude *.pyd
+[2024-05-19 13:04:09] INFO root fetch - processPackages [pytest-minio-mock]: executing diffoscope
+[2024-05-19 13:04:09] INFO root fetch - processPackages [pytest-minio-mock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest_minio_mock-0.4.13.tar.gz tmp/pytest_minio_mock-0.4.14.tar.gz --markdown 20240519/p/pytest-minio-mock/0.4.13-0.4.14/README.md --exclude *.pyd
+[2024-05-19 13:04:09] INFO root fetch - processPackages [budgeteer]: executing diffoscope
+[2024-05-19 13:04:09] INFO root fetch - processPackages [budgeteer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/budgeteer-0.1.2.tar.gz tmp/budgeteer-0.1.3.tar.gz --markdown 20240519/b/budgeteer/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-19 13:04:10] INFO root fetch - processPackages [pytest-minio-mock]: Remove: archive file [/home/abi/fetcher/tmp/pytest_minio_mock-0.4.13.tar.gz]
+[2024-05-19 13:04:10] INFO root fetch - processPackages [pytest-minio-mock]: Remove: archive file [/home/abi/fetcher/tmp/pytest_minio_mock-0.4.14.tar.gz]
+[2024-05-19 13:04:10] INFO root fetch - main [MainThread]: End processing [pytest-minio-mock]: success
+[2024-05-19 13:04:10] INFO root fetch - processPackages [budgeteer]: Remove: archive file [/home/abi/fetcher/tmp/budgeteer-0.1.2.tar.gz]
+[2024-05-19 13:04:10] INFO root fetch - processPackages [budgeteer]: Remove: archive file [/home/abi/fetcher/tmp/budgeteer-0.1.3.tar.gz]
+[2024-05-19 13:04:10] INFO root fetch - main [MainThread]: End processing [budgeteer]: success
+[2024-05-19 13:04:10] INFO root fetch - processPackages [sbcli-mig]: Remove: archive file [/home/abi/fetcher/tmp/sbcli_mig-1.0.98.zip]
+[2024-05-19 13:04:10] INFO root fetch - processPackages [sbcli-mig]: Remove: archive file [/home/abi/fetcher/tmp/sbcli_mig-1.0.99.zip]
+[2024-05-19 13:04:10] INFO root fetch - main [MainThread]: End processing [sbcli-mig]: success
+[2024-05-19 13:07:09] ERROR root fetch - processPackages [moto]: Timeout during execution of pkgdiff
+[2024-05-19 13:07:09] INFO root fetch - main [MainThread]: End processing [moto] error
+[2024-05-19 13:07:09] INFO root fetch - main [MainThread]: Store serial: [23275694]
