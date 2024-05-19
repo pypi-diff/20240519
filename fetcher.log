@@ -14084,3 +14084,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 18:14:47] INFO root fetch - processPackages [binary_wheel_builder]: Remove: archive file [/home/abi/fetcher/tmp/binary_wheel_builder-3.3.0.tar.gz]
 [2024-05-19 18:14:47] INFO root fetch - main [MainThread]: End processing [binary_wheel_builder]: success
 [2024-05-19 18:14:47] INFO root fetch - main [MainThread]: Store serial: [23278141]
+[2024-05-19 18:16:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23278141]
+[2024-05-19 18:16:56] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 18:16:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jaims-py
+[2024-05-19 18:16:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cli-command-parser
+[2024-05-19 18:16:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: floatingparser
+[2024-05-19 18:16:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: onsweepingz
+[2024-05-19 18:16:56] INFO root fetch - processPackages [cli-command-parser]: New version: [2024.5.18.post1] Old Version: [2024.4.21]
+[2024-05-19 18:16:56] WARNING root fetch - processPackages [onsweepingz]: Skipping, unable to determine old version
+[2024-05-19 18:16:56] INFO root fetch - main [MainThread]: End processing [onsweepingz] error
+[2024-05-19 18:16:56] WARNING root fetch - processPackages [floatingparser]: Skipping, unable to determine old version
+[2024-05-19 18:16:56] INFO root fetch - main [MainThread]: End processing [floatingparser] error
+[2024-05-19 18:16:56] INFO root fetch - processPackages [jaims-py]: New version: [2.0.0b2] Old Version: [2.0.0b1]
+[2024-05-19 18:16:56] INFO root fetch - processPackages [cli-command-parser]: Downloading https://files.pythonhosted.org/packages/fa/97/daabb6b8664b54c46b5d5e640c276a3d86a64037fb53eb5b4ea5576bb5af/cli_command_parser-2024.4.21.tar.gz
+[2024-05-19 18:16:56] INFO root fetch - processPackages [jaims-py]: Downloading https://files.pythonhosted.org/packages/3c/15/9ec2191387af627af3989a85e4e7cd2f5182be1b21b54b1e08066c816eb9/jaims_py-2.0.0b1.tar.gz
+[2024-05-19 18:16:56] INFO root fetch - processPackages [cli-command-parser]: Downloading https://files.pythonhosted.org/packages/72/8e/56879f21f6648cdb662c760330166c8a53775d24709b04703cb396650780/cli_command_parser-2024.5.18.post1.tar.gz
+[2024-05-19 18:16:56] INFO root fetch - processPackages [cli-command-parser]: executing diffoscope
+[2024-05-19 18:16:56] INFO root fetch - processPackages [cli-command-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cli_command_parser-2024.4.21.tar.gz tmp/cli_command_parser-2024.5.18.post1.tar.gz --markdown 20240519/c/cli-command-parser/2024.4.21-2024.5.18.post1/README.md --exclude *.pyd
+[2024-05-19 18:16:56] INFO root fetch - processPackages [jaims-py]: Downloading https://files.pythonhosted.org/packages/ca/70/f3273dc7b95f23230841db7d759f9bacf9e88177afe3f2ee4cc26a9942f7/jaims_py-2.0.0b2.tar.gz
+[2024-05-19 18:16:57] INFO root fetch - processPackages [jaims-py]: executing diffoscope
+[2024-05-19 18:16:57] INFO root fetch - processPackages [jaims-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaims_py-2.0.0b1.tar.gz tmp/jaims_py-2.0.0b2.tar.gz --markdown 20240519/j/jaims-py/2.0.0b1-2.0.0b2/README.md --exclude *.pyd
+[2024-05-19 18:16:57] INFO root fetch - processPackages [jaims-py]: Remove: archive file [/home/abi/fetcher/tmp/jaims_py-2.0.0b1.tar.gz]
+[2024-05-19 18:16:57] INFO root fetch - processPackages [jaims-py]: Remove: archive file [/home/abi/fetcher/tmp/jaims_py-2.0.0b2.tar.gz]
+[2024-05-19 18:16:57] INFO root fetch - main [MainThread]: End processing [jaims-py]: success
+[2024-05-19 18:16:57] INFO root fetch - processPackages [cli-command-parser]: Remove: archive file [/home/abi/fetcher/tmp/cli_command_parser-2024.4.21.tar.gz]
+[2024-05-19 18:16:57] INFO root fetch - processPackages [cli-command-parser]: Remove: archive file [/home/abi/fetcher/tmp/cli_command_parser-2024.5.18.post1.tar.gz]
+[2024-05-19 18:16:57] INFO root fetch - main [MainThread]: End processing [cli-command-parser]: success
+[2024-05-19 18:16:57] INFO root fetch - main [MainThread]: Store serial: [23278155]
