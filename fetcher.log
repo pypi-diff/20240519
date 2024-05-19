@@ -7927,3 +7927,24 @@
 [2024-05-19 11:53:31] INFO root fetch - processPackages [smol_k8s_lab]: Remove: archive file [/home/abi/fetcher/tmp/smol_k8s_lab-5.0.3.tar.gz]
 [2024-05-19 11:53:31] INFO root fetch - main [MainThread]: End processing [smol_k8s_lab]: success
 [2024-05-19 11:53:31] INFO root fetch - main [MainThread]: Store serial: [23275232]
+[2024-05-19 11:55:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275232]
+[2024-05-19 11:55:40] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 11:55:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: points-table-simulator
+[2024-05-19 11:55:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: evidently
+[2024-05-19 11:55:40] INFO root fetch - processPackages [points-table-simulator]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-05-19 11:55:40] INFO root fetch - processPackages [evidently]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-19 11:55:40] INFO root fetch - processPackages [points-table-simulator]: Downloading https://files.pythonhosted.org/packages/ae/76/603d013187340617419a85ef6e59f9aa3cdfe1128406d538eb8576560098/points_table_simulator-2.0.0.tar.gz
+[2024-05-19 11:55:40] INFO root fetch - processPackages [evidently]: Downloading https://files.pythonhosted.org/packages/a8/84/f04bbc9292434936bced5f8abefaced3dc6057e65a577635526d42d4ae8d/evidently-0.4.8.tar.gz
+[2024-05-19 11:55:40] INFO root fetch - processPackages [points-table-simulator]: Downloading https://files.pythonhosted.org/packages/4c/9d/f6fb1c03170c8a8e68800a8dcfbbbaa05b18349f7f72c49ba190dcaee924/points_table_simulator-2.0.1.tar.gz
+[2024-05-19 11:55:40] INFO root fetch - processPackages [points-table-simulator]: executing diffoscope
+[2024-05-19 11:55:40] INFO root fetch - processPackages [points-table-simulator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/points_table_simulator-2.0.0.tar.gz tmp/points_table_simulator-2.0.1.tar.gz --markdown 20240519/p/points-table-simulator/2.0.0-2.0.1/README.md --exclude *.pyd
+[2024-05-19 11:55:41] INFO root fetch - processPackages [evidently]: Downloading https://files.pythonhosted.org/packages/34/78/ea88fc8fef84cca22abdaf6523318e796cf529d4f76692d12a6259c5b7c9/evidently-0.4.9.tar.gz
+[2024-05-19 11:55:41] INFO root fetch - processPackages [evidently]: executing diffoscope
+[2024-05-19 11:55:41] INFO root fetch - processPackages [evidently]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evidently-0.4.8.tar.gz tmp/evidently-0.4.9.tar.gz --markdown 20240519/e/evidently/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-19 11:55:41] INFO root fetch - processPackages [points-table-simulator]: Remove: archive file [/home/abi/fetcher/tmp/points_table_simulator-2.0.0.tar.gz]
+[2024-05-19 11:55:41] INFO root fetch - processPackages [points-table-simulator]: Remove: archive file [/home/abi/fetcher/tmp/points_table_simulator-2.0.1.tar.gz]
+[2024-05-19 11:55:41] INFO root fetch - main [MainThread]: End processing [points-table-simulator]: success
+[2024-05-19 11:56:34] INFO root fetch - processPackages [evidently]: Remove: archive file [/home/abi/fetcher/tmp/evidently-0.4.8.tar.gz]
+[2024-05-19 11:56:34] INFO root fetch - processPackages [evidently]: Remove: archive file [/home/abi/fetcher/tmp/evidently-0.4.9.tar.gz]
+[2024-05-19 11:56:34] INFO root fetch - main [MainThread]: End processing [evidently]: success
+[2024-05-19 11:56:34] INFO root fetch - main [MainThread]: Store serial: [23275245]
