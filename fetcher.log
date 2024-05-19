@@ -1936,3 +1936,18 @@
 [2024-05-19 03:23:59] INFO root fetch - processPackages [opvious]: Remove: archive file [/home/abi/fetcher/tmp/opvious-0.9.6.tar.gz]
 [2024-05-19 03:23:59] INFO root fetch - main [MainThread]: End processing [opvious]: success
 [2024-05-19 03:23:59] INFO root fetch - main [MainThread]: Store serial: [23272366]
+[2024-05-19 03:26:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272366]
+[2024-05-19 03:26:08] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 03:26:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: presensionz
+[2024-05-19 03:26:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rdatapp
+[2024-05-19 03:26:08] INFO root fetch - processPackages [rdatapp]: New version: [0.2b0] Old Version: [0.2a0]
+[2024-05-19 03:26:08] WARNING root fetch - processPackages [presensionz]: Skipping, unable to determine old version
+[2024-05-19 03:26:08] INFO root fetch - main [MainThread]: End processing [presensionz] error
+[2024-05-19 03:26:08] INFO root fetch - processPackages [rdatapp]: Downloading https://files.pythonhosted.org/packages/ac/9b/f5090535435147c9c7bc54546ea692758dff83b895bfd2082ea84ecbfd22/rdatapp-0.2a0.tar.gz
+[2024-05-19 03:26:09] INFO root fetch - processPackages [rdatapp]: Downloading https://files.pythonhosted.org/packages/4b/22/b23363a2c8df7cb74574a37a2e070f6f1aaa41020238aa05501da6e7f9f1/rdatapp-0.2b0.tar.gz
+[2024-05-19 03:26:09] INFO root fetch - processPackages [rdatapp]: executing diffoscope
+[2024-05-19 03:26:09] INFO root fetch - processPackages [rdatapp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rdatapp-0.2a0.tar.gz tmp/rdatapp-0.2b0.tar.gz --markdown 20240519/r/rdatapp/0.2a0-0.2b0/README.md --exclude *.pyd
+[2024-05-19 03:26:09] INFO root fetch - processPackages [rdatapp]: Remove: archive file [/home/abi/fetcher/tmp/rdatapp-0.2a0.tar.gz]
+[2024-05-19 03:26:09] INFO root fetch - processPackages [rdatapp]: Remove: archive file [/home/abi/fetcher/tmp/rdatapp-0.2b0.tar.gz]
+[2024-05-19 03:26:09] INFO root fetch - main [MainThread]: End processing [rdatapp]: success
+[2024-05-19 03:26:09] INFO root fetch - main [MainThread]: Store serial: [23272373]
