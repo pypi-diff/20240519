@@ -16749,3 +16749,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 20:42:25] INFO root fetch - processPackages [gruel]: Remove: archive file [/home/abi/fetcher/tmp/gruel-4.1.0.tar.gz]
 [2024-05-19 20:42:25] INFO root fetch - main [MainThread]: End processing [gruel]: success
 [2024-05-19 20:42:25] INFO root fetch - main [MainThread]: Store serial: [23279362]
+[2024-05-19 20:44:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279362]
+[2024-05-19 20:44:34] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-19 20:44:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rococo-test
+[2024-05-19 20:44:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: leads
+[2024-05-19 20:44:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qualystbx
+[2024-05-19 20:44:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: delocalisedz
+[2024-05-19 20:44:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: altstore-proxy
+[2024-05-19 20:44:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: betterschema
+[2024-05-19 20:44:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: openadapt
+[2024-05-19 20:44:34] INFO root fetch - processPackages [rococo-test]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-19 20:44:34] INFO root fetch - processPackages [altstore-proxy]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-05-19 20:44:34] INFO root fetch - processPackages [qualystbx]: New version: [0.8.0] Old Version: [0.7.0]
+[2024-05-19 20:44:34] INFO root fetch - processPackages [betterschema]: New version: [0.1.6] Old Version: [0.1.1]
+[2024-05-19 20:44:34] INFO root fetch - processPackages [qualystbx]: Downloading https://files.pythonhosted.org/packages/3d/13/d82c3acb0e9ea3a9ff76fe6e73a521edc75e84ab686d483a4f360a6a88cb/qualystbx-0.7.0.tar.gz
+[2024-05-19 20:44:34] INFO root fetch - processPackages [altstore-proxy]: Downloading https://files.pythonhosted.org/packages/0c/bc/3665a9b9885e817ed69064b7d3b2a248b8d9ffd85fbc9f64c7b52c7f8d2a/altstore_proxy-1.2.1.tar.gz
+[2024-05-19 20:44:34] WARNING root fetch - processPackages [delocalisedz]: Skipping, unable to determine old version
+[2024-05-19 20:44:34] INFO root fetch - main [MainThread]: End processing [delocalisedz] error
+[2024-05-19 20:44:34] INFO root fetch - processPackages [leads]: New version: [0.8.9] Old Version: [0.8.8]
+[2024-05-19 20:44:34] INFO root fetch - processPackages [openadapt]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-05-19 20:44:34] INFO root fetch - processPackages [rococo-test]: Downloading https://files.pythonhosted.org/packages/6a/03/60cb06c44411cbb5a0eb69aed0b8ffe4321d2a7a5e67ed2e96d64b89b3a6/rococo_test-1.0.1.tar.gz
+[2024-05-19 20:44:34] INFO root fetch - processPackages [leads]: Downloading https://files.pythonhosted.org/packages/84/22/bb12180e417960ef462483ba20dfa702c1c44cabac5e47042cf8d4f7061a/leads-0.8.8.tar.gz
+[2024-05-19 20:44:34] INFO root fetch - processPackages [betterschema]: Downloading https://files.pythonhosted.org/packages/50/94/2cd6608bac591595ecf63048d067e13e3d55612470d50f20eac680ecf799/betterschema-0.1.1.tar.gz
+[2024-05-19 20:44:34] INFO root fetch - processPackages [qualystbx]: Downloading https://files.pythonhosted.org/packages/88/de/04f9bde377b2e4f3959a99661bf58cb5824a3b55cd37d179c781c0db6773/qualystbx-0.8.0.tar.gz
+[2024-05-19 20:44:35] INFO root fetch - processPackages [openadapt]: Downloading https://files.pythonhosted.org/packages/79/02/9909659ccbba301efcb1ca065eb1d9413e5e760d2cefd4a01ba5e723511b/openadapt-0.8.1.tar.gz
+[2024-05-19 20:44:35] INFO root fetch - processPackages [qualystbx]: executing diffoscope
+[2024-05-19 20:44:35] INFO root fetch - processPackages [qualystbx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qualystbx-0.7.0.tar.gz tmp/qualystbx-0.8.0.tar.gz --markdown 20240519/q/qualystbx/0.7.0-0.8.0/README.md --exclude *.pyd
+[2024-05-19 20:44:35] INFO root fetch - processPackages [altstore-proxy]: Downloading https://files.pythonhosted.org/packages/f6/74/d4bbc8f5840f09bc170c92bc6be55a37c1c95b9deebc54b5bf085fc28ea0/altstore_proxy-1.2.2.tar.gz
+[2024-05-19 20:44:35] INFO root fetch - processPackages [rococo-test]: Downloading https://files.pythonhosted.org/packages/73/76/e615a06560f6c4602bae3e7d3e55378b366a8081501a11bce3921eed559e/rococo_test-1.0.2.tar.gz
+[2024-05-19 20:44:35] INFO root fetch - processPackages [altstore-proxy]: executing diffoscope
+[2024-05-19 20:44:35] INFO root fetch - processPackages [altstore-proxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altstore_proxy-1.2.1.tar.gz tmp/altstore_proxy-1.2.2.tar.gz --markdown 20240519/a/altstore-proxy/1.2.1-1.2.2/README.md --exclude *.pyd
+[2024-05-19 20:44:35] INFO root fetch - processPackages [rococo-test]: executing diffoscope
+[2024-05-19 20:44:35] INFO root fetch - processPackages [rococo-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rococo_test-1.0.1.tar.gz tmp/rococo_test-1.0.2.tar.gz --markdown 20240519/r/rococo-test/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-19 20:44:35] INFO root fetch - processPackages [betterschema]: Downloading https://files.pythonhosted.org/packages/08/5f/a91197f7daf8b9e1db5b42b5c6e05a7cc1acc8d83c6014989d9bddbc86f9/betterschema-0.1.6.tar.gz
+[2024-05-19 20:44:35] INFO root fetch - processPackages [leads]: Downloading https://files.pythonhosted.org/packages/39/e8/fa2e5f7f0d11837315b2fee4d21c7cb7c4973873d9d51b4abc5b357bf19f/leads-0.8.9.tar.gz
+[2024-05-19 20:44:35] INFO root fetch - processPackages [openadapt]: Downloading https://files.pythonhosted.org/packages/b7/9c/6198cbb491bbd32347e3741b41ee70e6ad1916e573ef76ae3aeb9e0fc8ef/openadapt-0.9.0.tar.gz
+[2024-05-19 20:44:35] INFO root fetch - processPackages [betterschema]: executing diffoscope
+[2024-05-19 20:44:35] INFO root fetch - processPackages [betterschema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/betterschema-0.1.1.tar.gz tmp/betterschema-0.1.6.tar.gz --markdown 20240519/b/betterschema/0.1.1-0.1.6/README.md --exclude *.pyd
+[2024-05-19 20:44:35] INFO root fetch - processPackages [openadapt]: executing diffoscope
+[2024-05-19 20:44:35] INFO root fetch - processPackages [openadapt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openadapt-0.8.1.tar.gz tmp/openadapt-0.9.0.tar.gz --markdown 20240519/o/openadapt/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-05-19 20:44:35] INFO root fetch - processPackages [leads]: executing diffoscope
+[2024-05-19 20:44:35] INFO root fetch - processPackages [leads]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leads-0.8.8.tar.gz tmp/leads-0.8.9.tar.gz --markdown 20240519/l/leads/0.8.8-0.8.9/README.md --exclude *.pyd
+[2024-05-19 20:44:35] INFO root fetch - processPackages [qualystbx]: Remove: archive file [/home/abi/fetcher/tmp/qualystbx-0.7.0.tar.gz]
+[2024-05-19 20:44:35] INFO root fetch - processPackages [qualystbx]: Remove: archive file [/home/abi/fetcher/tmp/qualystbx-0.8.0.tar.gz]
+[2024-05-19 20:44:35] INFO root fetch - main [MainThread]: End processing [qualystbx]: success
+[2024-05-19 20:44:35] INFO root fetch - processPackages [altstore-proxy]: Remove: archive file [/home/abi/fetcher/tmp/altstore_proxy-1.2.1.tar.gz]
+[2024-05-19 20:44:35] INFO root fetch - processPackages [altstore-proxy]: Remove: archive file [/home/abi/fetcher/tmp/altstore_proxy-1.2.2.tar.gz]
+[2024-05-19 20:44:35] INFO root fetch - main [MainThread]: End processing [altstore-proxy]: success
+[2024-05-19 20:44:36] INFO root fetch - processPackages [betterschema]: Remove: archive file [/home/abi/fetcher/tmp/betterschema-0.1.1.tar.gz]
+[2024-05-19 20:44:36] INFO root fetch - processPackages [betterschema]: Remove: archive file [/home/abi/fetcher/tmp/betterschema-0.1.6.tar.gz]
+[2024-05-19 20:44:36] INFO root fetch - main [MainThread]: End processing [betterschema]: success
+[2024-05-19 20:44:36] INFO root fetch - processPackages [rococo-test]: Remove: archive file [/home/abi/fetcher/tmp/rococo_test-1.0.1.tar.gz]
+[2024-05-19 20:44:36] INFO root fetch - processPackages [rococo-test]: Remove: archive file [/home/abi/fetcher/tmp/rococo_test-1.0.2.tar.gz]
+[2024-05-19 20:44:36] INFO root fetch - main [MainThread]: End processing [rococo-test]: success
+[2024-05-19 20:44:36] INFO root fetch - processPackages [openadapt]: Remove: archive file [/home/abi/fetcher/tmp/openadapt-0.8.1.tar.gz]
+[2024-05-19 20:44:36] INFO root fetch - processPackages [openadapt]: Remove: archive file [/home/abi/fetcher/tmp/openadapt-0.9.0.tar.gz]
+[2024-05-19 20:44:36] INFO root fetch - main [MainThread]: End processing [openadapt]: success
+[2024-05-19 20:44:36] INFO root fetch - processPackages [leads]: Remove: archive file [/home/abi/fetcher/tmp/leads-0.8.8.tar.gz]
+[2024-05-19 20:44:36] INFO root fetch - processPackages [leads]: Remove: archive file [/home/abi/fetcher/tmp/leads-0.8.9.tar.gz]
+[2024-05-19 20:44:36] INFO root fetch - main [MainThread]: End processing [leads]: success
+[2024-05-19 20:44:36] INFO root fetch - main [MainThread]: Store serial: [23279382]
