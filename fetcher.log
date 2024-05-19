@@ -3204,3 +3204,18 @@
 [2024-05-19 05:17:04] INFO root fetch - processPackages [keras-cv-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_cv_nightly-0.9.0.dev2024043000.tar.gz]
 [2024-05-19 05:17:04] INFO root fetch - main [MainThread]: End processing [keras-cv-nightly]: success
 [2024-05-19 05:17:04] INFO root fetch - main [MainThread]: Store serial: [23272963]
+[2024-05-19 05:19:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272963]
+[2024-05-19 05:19:14] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 05:19:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonconviviallyz
+[2024-05-19 05:19:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ctrip-app-ui
+[2024-05-19 05:19:14] INFO root fetch - processPackages [ctrip-app-ui]: New version: [0.5.5] Old Version: [0.5.4]
+[2024-05-19 05:19:14] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/5a/61/8032eeb0fe493cd370c89d493ced1c74ae08530bd5d584fb04548c464aa7/ctrip-app-ui-0.5.4.tar.gz
+[2024-05-19 05:19:14] WARNING root fetch - processPackages [nonconviviallyz]: Skipping, unable to determine old version
+[2024-05-19 05:19:14] INFO root fetch - main [MainThread]: End processing [nonconviviallyz] error
+[2024-05-19 05:19:14] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/c0/fc/b200b182bf7a98e7ea2be94e2de59b8ad9f057ddc08180e66ebecbbd144b/ctrip-app-ui-0.5.5.tar.gz
+[2024-05-19 05:19:14] INFO root fetch - processPackages [ctrip-app-ui]: executing diffoscope
+[2024-05-19 05:19:14] INFO root fetch - processPackages [ctrip-app-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctrip-app-ui-0.5.4.tar.gz tmp/ctrip-app-ui-0.5.5.tar.gz --markdown 20240519/c/ctrip-app-ui/0.5.4-0.5.5/README.md --exclude *.pyd
+[2024-05-19 05:19:15] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.5.4.tar.gz]
+[2024-05-19 05:19:15] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.5.5.tar.gz]
+[2024-05-19 05:19:15] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
+[2024-05-19 05:19:15] INFO root fetch - main [MainThread]: Store serial: [23272969]
