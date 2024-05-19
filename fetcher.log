@@ -9205,3 +9205,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 13:18:32] INFO root fetch - processPackages [tenant-schemas-celery]: Remove: archive file [/home/abi/fetcher/tmp/tenant_schemas_celery-3.0.0.tar.gz]
 [2024-05-19 13:18:32] INFO root fetch - main [MainThread]: End processing [tenant-schemas-celery]: success
 [2024-05-19 13:18:32] INFO root fetch - main [MainThread]: Store serial: [23275809]
+[2024-05-19 13:20:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275809]
+[2024-05-19 13:20:40] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 13:20:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: outpostcli
+[2024-05-19 13:20:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openredirect
+[2024-05-19 13:20:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Maslib
+[2024-05-19 13:20:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: RTS-WebUIBuilder
+[2024-05-19 13:20:40] INFO root fetch - processPackages [Maslib]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-19 13:20:40] INFO root fetch - processPackages [outpostcli]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 13:20:40] WARNING root fetch - processPackages [openredirect]: Skipping, unable to determine old version
+[2024-05-19 13:20:40] INFO root fetch - main [MainThread]: End processing [openredirect] error
+[2024-05-19 13:20:40] INFO root fetch - processPackages [RTS-WebUIBuilder]: New version: [0.8] Old Version: [0.7]
+[2024-05-19 13:20:40] INFO root fetch - processPackages [Maslib]: Downloading https://files.pythonhosted.org/packages/22/df/7ff6c12ff83b102134bf365d30d23483f140c1915dbabeea59d2d0d109ba/Maslib-0.0.6.tar.gz
+[2024-05-19 13:20:40] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/7e/e2/114a39eac567286d0418645c0ea24089c48fcbe4cccec6c79191a5cefccf/outpostcli-0.0.8.tar.gz
+[2024-05-19 13:20:41] INFO root fetch - processPackages [RTS-WebUIBuilder]: Downloading https://files.pythonhosted.org/packages/39/80/8e8ae89d588cdbefab59751963adc99cdc1ff655eed65159ccb46b1f58a3/RTS-WebUIBuilder-0.7.tar.gz
+[2024-05-19 13:20:41] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/df/ab/82b6853cec170d33c2aff19e3a298b0bf56f7ba1b885f6f7d42a10ae43dc/outpostcli-0.0.9.tar.gz
+[2024-05-19 13:20:41] INFO root fetch - processPackages [Maslib]: Downloading https://files.pythonhosted.org/packages/13/60/f214eff7478b9603f94813be6226c1361711802efe9ea51ff815fa0ef7cc/Maslib-0.0.7.tar.gz
+[2024-05-19 13:20:41] INFO root fetch - processPackages [outpostcli]: executing diffoscope
+[2024-05-19 13:20:41] INFO root fetch - processPackages [outpostcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outpostcli-0.0.8.tar.gz tmp/outpostcli-0.0.9.tar.gz --markdown 20240519/o/outpostcli/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 13:20:41] INFO root fetch - processPackages [Maslib]: executing diffoscope
+[2024-05-19 13:20:41] INFO root fetch - processPackages [Maslib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Maslib-0.0.6.tar.gz tmp/Maslib-0.0.7.tar.gz --markdown 20240519/M/Maslib/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-05-19 13:20:41] INFO root fetch - processPackages [RTS-WebUIBuilder]: Downloading https://files.pythonhosted.org/packages/16/91/c46d8a10d59df3fe43042764ca95e1b7963e6882ecf3c9a381ec3d9309b3/RTS-WebUIBuilder-0.8.tar.gz
+[2024-05-19 13:20:41] INFO root fetch - processPackages [RTS-WebUIBuilder]: executing diffoscope
+[2024-05-19 13:20:41] INFO root fetch - processPackages [RTS-WebUIBuilder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RTS-WebUIBuilder-0.7.tar.gz tmp/RTS-WebUIBuilder-0.8.tar.gz --markdown 20240519/R/RTS-WebUIBuilder/0.7-0.8/README.md --exclude *.pyd
+[2024-05-19 13:20:41] INFO root fetch - processPackages [Maslib]: Remove: archive file [/home/abi/fetcher/tmp/Maslib-0.0.6.tar.gz]
+[2024-05-19 13:20:41] INFO root fetch - processPackages [Maslib]: Remove: archive file [/home/abi/fetcher/tmp/Maslib-0.0.7.tar.gz]
+[2024-05-19 13:20:41] INFO root fetch - main [MainThread]: End processing [Maslib]: success
+[2024-05-19 13:20:41] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.8.tar.gz]
+[2024-05-19 13:20:41] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.9.tar.gz]
+[2024-05-19 13:20:41] INFO root fetch - main [MainThread]: End processing [outpostcli]: success
+[2024-05-19 13:20:42] INFO root fetch - processPackages [RTS-WebUIBuilder]: Remove: archive file [/home/abi/fetcher/tmp/RTS-WebUIBuilder-0.7.tar.gz]
+[2024-05-19 13:20:42] INFO root fetch - processPackages [RTS-WebUIBuilder]: Remove: archive file [/home/abi/fetcher/tmp/RTS-WebUIBuilder-0.8.tar.gz]
+[2024-05-19 13:20:42] INFO root fetch - main [MainThread]: End processing [RTS-WebUIBuilder]: success
+[2024-05-19 13:20:42] INFO root fetch - main [MainThread]: Store serial: [23275822]
