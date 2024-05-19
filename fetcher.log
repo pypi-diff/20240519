@@ -6687,3 +6687,33 @@
 [2024-05-19 10:10:50] INFO root fetch - processPackages [coldp]: Remove: archive file [/home/abi/fetcher/tmp/coldp-2024.5.4.tar.gz]
 [2024-05-19 10:10:50] INFO root fetch - main [MainThread]: End processing [coldp]: success
 [2024-05-19 10:10:50] INFO root fetch - main [MainThread]: Store serial: [23274480]
+[2024-05-19 10:12:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274480]
+[2024-05-19 10:12:58] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 10:12:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: baosight
+[2024-05-19 10:12:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fnschool
+[2024-05-19 10:12:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pydglab-ws
+[2024-05-19 10:12:58] INFO root fetch - processPackages [baosight]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 10:12:58] INFO root fetch - processPackages [pydglab-ws]: New version: [1.0.0] Old Version: [0.1.0]
+[2024-05-19 10:12:58] INFO root fetch - processPackages [fnschool]: New version: [20240519.80822.833] Old Version: [20240518.81739.834]
+[2024-05-19 10:12:58] INFO root fetch - processPackages [baosight]: Downloading https://files.pythonhosted.org/packages/72/e0/5c051218be62e92d7cc33bcf889a9f069781fab83c116c9e05a6f86721fe/baosight-0.0.8.tar.gz
+[2024-05-19 10:12:58] INFO root fetch - processPackages [pydglab-ws]: Downloading https://files.pythonhosted.org/packages/53/09/838654d114f72be784845b5a869dbaddc3fbcd4218853c61e3eca5d2e716/pydglab_ws-0.1.0.tar.gz
+[2024-05-19 10:12:58] INFO root fetch - processPackages [fnschool]: Downloading https://files.pythonhosted.org/packages/c1/35/f9c6fd0778df3a14105f0c71faa8e413d6c8012afce79d09b65a6ea523df/fnschool-20240518.81739.834.tar.gz
+[2024-05-19 10:12:58] INFO root fetch - processPackages [baosight]: Downloading https://files.pythonhosted.org/packages/58/9d/77d14df517a7f6c898a66f8dfe33d03cdf374f66524ab680d57de93c1320/baosight-0.0.9.tar.gz
+[2024-05-19 10:12:58] INFO root fetch - processPackages [pydglab-ws]: Downloading https://files.pythonhosted.org/packages/e0/d1/4e1f7b292c534bb9a0d3c59ab2de9969ca4d39dae08b93df75910fbd6e74/pydglab_ws-1.0.0.tar.gz
+[2024-05-19 10:12:58] INFO root fetch - processPackages [baosight]: executing diffoscope
+[2024-05-19 10:12:58] INFO root fetch - processPackages [baosight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baosight-0.0.8.tar.gz tmp/baosight-0.0.9.tar.gz --markdown 20240519/b/baosight/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 10:12:58] INFO root fetch - processPackages [pydglab-ws]: executing diffoscope
+[2024-05-19 10:12:58] INFO root fetch - processPackages [pydglab-ws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydglab_ws-0.1.0.tar.gz tmp/pydglab_ws-1.0.0.tar.gz --markdown 20240519/p/pydglab-ws/0.1.0-1.0.0/README.md --exclude *.pyd
+[2024-05-19 10:12:58] INFO root fetch - processPackages [fnschool]: Downloading https://files.pythonhosted.org/packages/ea/18/a92615bcb9e5ea8b1fff0330680a3821dc36f8c60fb44803cfc3dd9b593c/fnschool-20240519.80822.833.tar.gz
+[2024-05-19 10:12:59] INFO root fetch - processPackages [fnschool]: executing diffoscope
+[2024-05-19 10:12:59] INFO root fetch - processPackages [fnschool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fnschool-20240518.81739.834.tar.gz tmp/fnschool-20240519.80822.833.tar.gz --markdown 20240519/f/fnschool/20240518.81739.834-20240519.80822.833/README.md --exclude *.pyd
+[2024-05-19 10:12:59] INFO root fetch - processPackages [baosight]: Remove: archive file [/home/abi/fetcher/tmp/baosight-0.0.8.tar.gz]
+[2024-05-19 10:12:59] INFO root fetch - processPackages [baosight]: Remove: archive file [/home/abi/fetcher/tmp/baosight-0.0.9.tar.gz]
+[2024-05-19 10:12:59] INFO root fetch - main [MainThread]: End processing [baosight]: success
+[2024-05-19 10:12:59] INFO root fetch - processPackages [pydglab-ws]: Remove: archive file [/home/abi/fetcher/tmp/pydglab_ws-0.1.0.tar.gz]
+[2024-05-19 10:12:59] INFO root fetch - processPackages [pydglab-ws]: Remove: archive file [/home/abi/fetcher/tmp/pydglab_ws-1.0.0.tar.gz]
+[2024-05-19 10:12:59] INFO root fetch - main [MainThread]: End processing [pydglab-ws]: success
+[2024-05-19 10:12:59] INFO root fetch - processPackages [fnschool]: Remove: archive file [/home/abi/fetcher/tmp/fnschool-20240518.81739.834.tar.gz]
+[2024-05-19 10:12:59] INFO root fetch - processPackages [fnschool]: Remove: archive file [/home/abi/fetcher/tmp/fnschool-20240519.80822.833.tar.gz]
+[2024-05-19 10:12:59] INFO root fetch - main [MainThread]: End processing [fnschool]: success
+[2024-05-19 10:12:59] INFO root fetch - main [MainThread]: Store serial: [23274491]
