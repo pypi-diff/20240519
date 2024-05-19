@@ -3031,3 +3031,15 @@
 [2024-05-19 04:53:20] INFO root fetch - processPackages [vonage]: Remove: archive file [/home/abi/fetcher/tmp/vonage-3.99.1a10.tar.gz]
 [2024-05-19 04:53:20] INFO root fetch - main [MainThread]: End processing [vonage]: success
 [2024-05-19 04:53:20] INFO root fetch - main [MainThread]: Store serial: [23272904]
+[2024-05-19 04:55:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272904]
+[2024-05-19 04:55:28] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 04:55:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: toc-trade-pb-v2
+[2024-05-19 04:55:28] INFO root fetch - processPackages [toc-trade-pb-v2]: New version: [0.1.7] Old Version: [0.1.4]
+[2024-05-19 04:55:29] INFO root fetch - processPackages [toc-trade-pb-v2]: Downloading https://files.pythonhosted.org/packages/71/65/faf4f4d1b3a3a653e72ba8d23d8dc9a1a4d708af91e15132014f39c2342c/toc_trade_pb_v2-0.1.4.tar.gz
+[2024-05-19 04:55:29] INFO root fetch - processPackages [toc-trade-pb-v2]: Downloading https://files.pythonhosted.org/packages/b8/78/462dcf2bca427021f971196b91be5c113dd24a196a2b51d1d730db840bf6/toc_trade_pb_v2-0.1.7.tar.gz
+[2024-05-19 04:55:29] INFO root fetch - processPackages [toc-trade-pb-v2]: executing diffoscope
+[2024-05-19 04:55:29] INFO root fetch - processPackages [toc-trade-pb-v2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toc_trade_pb_v2-0.1.4.tar.gz tmp/toc_trade_pb_v2-0.1.7.tar.gz --markdown 20240519/t/toc-trade-pb-v2/0.1.4-0.1.7/README.md --exclude *.pyd
+[2024-05-19 04:55:30] INFO root fetch - processPackages [toc-trade-pb-v2]: Remove: archive file [/home/abi/fetcher/tmp/toc_trade_pb_v2-0.1.4.tar.gz]
+[2024-05-19 04:55:30] INFO root fetch - processPackages [toc-trade-pb-v2]: Remove: archive file [/home/abi/fetcher/tmp/toc_trade_pb_v2-0.1.7.tar.gz]
+[2024-05-19 04:55:30] INFO root fetch - main [MainThread]: End processing [toc-trade-pb-v2]: success
+[2024-05-19 04:55:30] INFO root fetch - main [MainThread]: Store serial: [23272907]
