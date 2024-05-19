@@ -5625,3 +5625,21 @@
 [2024-05-19 09:01:48] INFO root fetch - processPackages [tf-models-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip]
 [2024-05-19 09:01:48] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
 [2024-05-19 09:01:48] INFO root fetch - main [MainThread]: Store serial: [23273997]
+[2024-05-19 09:03:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273997]
+[2024-05-19 09:03:57] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 09:03:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hyperdactylz
+[2024-05-19 09:03:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: seqio-nightly
+[2024-05-19 09:03:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: monicapf
+[2024-05-19 09:03:57] WARNING root fetch - processPackages [monicapf]: Skipping, unable to determine old version
+[2024-05-19 09:03:57] INFO root fetch - main [MainThread]: End processing [monicapf] error
+[2024-05-19 09:03:57] INFO root fetch - processPackages [seqio-nightly]: New version: [0.0.8.dev20220907] Old Version: [0.0.8.dev20220906]
+[2024-05-19 09:03:57] WARNING root fetch - processPackages [hyperdactylz]: Skipping, unable to determine old version
+[2024-05-19 09:03:57] INFO root fetch - main [MainThread]: End processing [hyperdactylz] error
+[2024-05-19 09:03:57] INFO root fetch - processPackages [seqio-nightly]: Downloading https://files.pythonhosted.org/packages/43/a0/f60ad514b6f8534fa5ba8cc5fcc2a8f2e32e7d06d2dbfd43b12c2cb29931/seqio-nightly-0.0.8.dev20220906.tar.gz
+[2024-05-19 09:03:57] INFO root fetch - processPackages [seqio-nightly]: Downloading https://files.pythonhosted.org/packages/2a/76/25f4c7602cdd724deac948a914e454756abfad2119a525c06d9ce341b918/seqio-nightly-0.0.8.dev20220907.tar.gz
+[2024-05-19 09:03:57] INFO root fetch - processPackages [seqio-nightly]: executing diffoscope
+[2024-05-19 09:03:57] INFO root fetch - processPackages [seqio-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seqio-nightly-0.0.8.dev20220906.tar.gz tmp/seqio-nightly-0.0.8.dev20220907.tar.gz --markdown 20240519/s/seqio-nightly/0.0.8.dev20220906-0.0.8.dev20220907/README.md --exclude *.pyd
+[2024-05-19 09:03:58] INFO root fetch - processPackages [seqio-nightly]: Remove: archive file [/home/abi/fetcher/tmp/seqio-nightly-0.0.8.dev20220906.tar.gz]
+[2024-05-19 09:03:58] INFO root fetch - processPackages [seqio-nightly]: Remove: archive file [/home/abi/fetcher/tmp/seqio-nightly-0.0.8.dev20220907.tar.gz]
+[2024-05-19 09:03:58] INFO root fetch - main [MainThread]: End processing [seqio-nightly]: success
+[2024-05-19 09:03:58] INFO root fetch - main [MainThread]: Store serial: [23274010]
