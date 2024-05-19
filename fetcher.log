@@ -18829,3 +18829,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 22:37:06] INFO root fetch - processPackages [Simba-UW-tf-dev]: Remove: archive file [/home/abi/fetcher/tmp/Simba-UW-tf-dev-1.93.3.tar.gz]
 [2024-05-19 22:37:06] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
 [2024-05-19 22:37:06] INFO root fetch - main [MainThread]: Store serial: [23280320]
+[2024-05-19 22:39:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23280320]
+[2024-05-19 22:39:15] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 22:39:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tencentcloud-sdk-python-cds
+[2024-05-19 22:39:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MobileInventoryCLI
+[2024-05-19 22:39:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kodi-repo-bootstrap
+[2024-05-19 22:39:15] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.99] Old Version: [0.4.98]
+[2024-05-19 22:39:15] INFO root fetch - processPackages [kodi-repo-bootstrap]: New version: [3.0.2] Old Version: [3.0.0]
+[2024-05-19 22:39:15] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/34/2d/1e50d7f512e3d39590afb4a6c37340af98e5c4eadc77d9de653aab0cb49f/MobileInventoryCLI-0.4.98.tar.gz
+[2024-05-19 22:39:15] INFO root fetch - processPackages [tencentcloud-sdk-python-cds]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-19 22:39:16] INFO root fetch - processPackages [kodi-repo-bootstrap]: Downloading https://files.pythonhosted.org/packages/6d/56/7b72ee34a9c7bc1a3ac99b9621147c3bf4a263331f18b3072ad51e4cb017/kodi_repo_bootstrap-3.0.0.tar.gz
+[2024-05-19 22:39:16] INFO root fetch - processPackages [tencentcloud-sdk-python-cds]: Downloading https://files.pythonhosted.org/packages/b3/ea/1ac86e855d4ce5e4ed0275233038dd26feee80c8f87ca39cae88f117bba1/tencentcloud-sdk-python-cds-3.0.998.tar.gz
+[2024-05-19 22:39:16] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/44/8c/14cdf7fc3f0b69cae35ba7ee2852fb70e3cab687142869ee3deb104ffc71/MobileInventoryCLI-0.4.99.tar.gz
+[2024-05-19 22:39:16] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-05-19 22:39:16] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.98.tar.gz tmp/MobileInventoryCLI-0.4.99.tar.gz --markdown 20240519/M/MobileInventoryCLI/0.4.98-0.4.99/README.md --exclude *.pyd
+[2024-05-19 22:39:16] INFO root fetch - processPackages [kodi-repo-bootstrap]: Downloading https://files.pythonhosted.org/packages/73/c4/a1a334b08958b6b95a9db4da1033aa7dea227ef3f0a46eec84bed5ceaf42/kodi_repo_bootstrap-3.0.2.tar.gz
+[2024-05-19 22:39:16] INFO root fetch - processPackages [tencentcloud-sdk-python-cds]: Downloading https://files.pythonhosted.org/packages/55/ee/bf8d875ee88416fa2fd3babfd4d8be07f81ea7ddee8b18c1c7197770284f/tencentcloud-sdk-python-cds-3.0.999.tar.gz
+[2024-05-19 22:39:16] INFO root fetch - processPackages [kodi-repo-bootstrap]: executing diffoscope
+[2024-05-19 22:39:16] INFO root fetch - processPackages [kodi-repo-bootstrap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kodi_repo_bootstrap-3.0.0.tar.gz tmp/kodi_repo_bootstrap-3.0.2.tar.gz --markdown 20240519/k/kodi-repo-bootstrap/3.0.0-3.0.2/README.md --exclude *.pyd
+[2024-05-19 22:39:16] INFO root fetch - processPackages [tencentcloud-sdk-python-cds]: executing diffoscope
+[2024-05-19 22:39:16] INFO root fetch - processPackages [tencentcloud-sdk-python-cds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-cds-3.0.998.tar.gz tmp/tencentcloud-sdk-python-cds-3.0.999.tar.gz --markdown 20240519/t/tencentcloud-sdk-python-cds/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-19 22:39:17] INFO root fetch - processPackages [kodi-repo-bootstrap]: Remove: archive file [/home/abi/fetcher/tmp/kodi_repo_bootstrap-3.0.0.tar.gz]
+[2024-05-19 22:39:17] INFO root fetch - processPackages [kodi-repo-bootstrap]: Remove: archive file [/home/abi/fetcher/tmp/kodi_repo_bootstrap-3.0.2.tar.gz]
+[2024-05-19 22:39:17] INFO root fetch - main [MainThread]: End processing [kodi-repo-bootstrap]: success
+[2024-05-19 22:39:17] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.98.tar.gz]
+[2024-05-19 22:39:17] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.99.tar.gz]
+[2024-05-19 22:39:17] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-05-19 22:39:17] INFO root fetch - processPackages [tencentcloud-sdk-python-cds]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-cds-3.0.998.tar.gz]
+[2024-05-19 22:39:17] INFO root fetch - processPackages [tencentcloud-sdk-python-cds]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-cds-3.0.999.tar.gz]
+[2024-05-19 22:39:17] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-cds]: success
+[2024-05-19 22:39:17] INFO root fetch - main [MainThread]: Store serial: [23280329]
