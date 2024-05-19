@@ -17683,3 +17683,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 21:47:09] INFO root fetch - processPackages [nextguild]: Remove: archive file [/home/abi/fetcher/tmp/nextguild-1.2.9.tar.gz]
 [2024-05-19 21:47:09] INFO root fetch - main [MainThread]: End processing [nextguild]: success
 [2024-05-19 21:47:09] INFO root fetch - main [MainThread]: Store serial: [23279811]
+[2024-05-19 21:49:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279811]
+[2024-05-19 21:49:18] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 21:49:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyslth
+[2024-05-19 21:49:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: notolog
+[2024-05-19 21:49:18] INFO root fetch - processPackages [pyslth]: New version: [0.3.6] Old Version: [0.3.4]
+[2024-05-19 21:49:18] INFO root fetch - processPackages [pyslth]: Downloading https://files.pythonhosted.org/packages/8c/04/707fae2fc22bd420a200818613ce1efed8edba33df430301cfe06dc8feb2/pyslth-0.3.4.tar.gz
+[2024-05-19 21:49:18] INFO root fetch - processPackages [notolog]: New version: [0.9.1b5] Old Version: [0.9.1b4]
+[2024-05-19 21:49:19] INFO root fetch - processPackages [notolog]: Downloading https://files.pythonhosted.org/packages/e2/13/781c89d52619545e074d663abdaa92242ad39b8217d7b64cda30504908bf/notolog-0.9.1b4.tar.gz
+[2024-05-19 21:49:19] INFO root fetch - processPackages [pyslth]: Downloading https://files.pythonhosted.org/packages/d7/9b/162de79c91cf34fc9077998488b1de884f1bdcb54da8ba32898a84ba8a03/pyslth-0.3.6.tar.gz
+[2024-05-19 21:49:19] INFO root fetch - processPackages [pyslth]: executing diffoscope
+[2024-05-19 21:49:19] INFO root fetch - processPackages [pyslth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyslth-0.3.4.tar.gz tmp/pyslth-0.3.6.tar.gz --markdown 20240519/p/pyslth/0.3.4-0.3.6/README.md --exclude *.pyd
+[2024-05-19 21:49:19] INFO root fetch - processPackages [notolog]: Downloading https://files.pythonhosted.org/packages/9c/1e/c111b3eb092b4e8d52b461802243f42f5482be2e30474f666e8a870c097b/notolog-0.9.1b5.tar.gz
+[2024-05-19 21:49:19] INFO root fetch - processPackages [notolog]: executing diffoscope
+[2024-05-19 21:49:20] INFO root fetch - processPackages [notolog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notolog-0.9.1b4.tar.gz tmp/notolog-0.9.1b5.tar.gz --markdown 20240519/n/notolog/0.9.1b4-0.9.1b5/README.md --exclude *.pyd
+[2024-05-19 21:49:21] INFO root fetch - processPackages [notolog]: Remove: archive file [/home/abi/fetcher/tmp/notolog-0.9.1b4.tar.gz]
+[2024-05-19 21:49:21] INFO root fetch - processPackages [notolog]: Remove: archive file [/home/abi/fetcher/tmp/notolog-0.9.1b5.tar.gz]
+[2024-05-19 21:49:21] INFO root fetch - main [MainThread]: End processing [notolog]: success
+[2024-05-19 21:49:27] INFO root fetch - processPackages [pyslth]: Remove: archive file [/home/abi/fetcher/tmp/pyslth-0.3.4.tar.gz]
+[2024-05-19 21:49:27] INFO root fetch - processPackages [pyslth]: Remove: archive file [/home/abi/fetcher/tmp/pyslth-0.3.6.tar.gz]
+[2024-05-19 21:49:27] INFO root fetch - main [MainThread]: End processing [pyslth]: success
+[2024-05-19 21:49:27] INFO root fetch - main [MainThread]: Store serial: [23279817]
