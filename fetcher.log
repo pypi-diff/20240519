@@ -12020,3 +12020,34 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 16:14:10] INFO root fetch - processPackages [textual]: Remove: archive file [/home/abi/fetcher/tmp/textual-0.9.1.tar.gz]
 [2024-05-19 16:14:10] INFO root fetch - main [MainThread]: End processing [textual]: success
 [2024-05-19 16:14:10] INFO root fetch - main [MainThread]: Store serial: [23277159]
+[2024-05-19 16:16:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277159]
+[2024-05-19 16:16:19] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 16:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spanishconjugator
+[2024-05-19 16:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spanishconjugator
+[2024-05-19 16:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: brq
+[2024-05-19 16:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: DFPlayer
+[2024-05-19 16:16:19] INFO root fetch - processPackages [brq]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-19 16:16:19] WARNING root fetch - processPackages [DFPlayer]: Skipping, unable to determine old version
+[2024-05-19 16:16:19] INFO root fetch - main [MainThread]: End processing [DFPlayer] error
+[2024-05-19 16:16:19] INFO root fetch - processPackages [brq]: Downloading https://files.pythonhosted.org/packages/17/d7/d930933525537e2fc9ccb7402fff49ae6ceb41f179a7a2d68ff84837d128/brq-0.1.0.tar.gz
+[2024-05-19 16:16:19] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-19 16:16:19] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-19 16:16:19] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-19 16:16:19] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-19 16:16:19] INFO root fetch - processPackages [brq]: Downloading https://files.pythonhosted.org/packages/e4/ee/9616d8513562c20b6173c22f522b5a06c66afe2c4c0a06f6edf9adad3440/brq-0.1.1.tar.gz
+[2024-05-19 16:16:20] INFO root fetch - processPackages [brq]: executing diffoscope
+[2024-05-19 16:16:20] INFO root fetch - processPackages [brq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brq-0.1.0.tar.gz tmp/brq-0.1.1.tar.gz --markdown 20240519/b/brq/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-19 16:16:20] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-19 16:16:20] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-19 16:16:20] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-19 16:16:20] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240519/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-19 16:16:20] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-19 16:16:20] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240519/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-19 16:16:20] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-05-19 16:16:20] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-05-19 16:16:20] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-19 16:16:20] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-19 16:16:20] INFO root fetch - processPackages [brq]: Remove: archive file [/home/abi/fetcher/tmp/brq-0.1.0.tar.gz]
+[2024-05-19 16:16:20] INFO root fetch - processPackages [brq]: Remove: archive file [/home/abi/fetcher/tmp/brq-0.1.1.tar.gz]
+[2024-05-19 16:16:20] INFO root fetch - main [MainThread]: End processing [brq]: success
+[2024-05-19 16:16:20] INFO root fetch - main [MainThread]: Store serial: [23277173]
