@@ -9765,3 +9765,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 13:51:08] INFO root fetch - processPackages [sbcli-mig]: Remove: archive file [/home/abi/fetcher/tmp/sbcli_mig-1.0.99.zip]
 [2024-05-19 13:51:08] INFO root fetch - main [MainThread]: End processing [sbcli-mig]: success
 [2024-05-19 13:51:08] INFO root fetch - main [MainThread]: Store serial: [23276025]
+[2024-05-19 13:53:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276025]
+[2024-05-19 13:53:16] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 13:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: docugenr8-core
+[2024-05-19 13:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-bf1marneserverlist
+[2024-05-19 13:53:16] INFO root fetch - processPackages [docugenr8-core]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-19 13:53:16] INFO root fetch - processPackages [docugenr8-core]: Downloading https://files.pythonhosted.org/packages/0f/aa/b4514dd9ba0da121a326865161a18a46eeb6921a045f04d56330ac8cc411/docugenr8_core-0.0.4.tar.gz
+[2024-05-19 13:53:16] INFO root fetch - processPackages [nonebot-plugin-bf1marneserverlist]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-19 13:53:17] INFO root fetch - processPackages [nonebot-plugin-bf1marneserverlist]: Downloading https://files.pythonhosted.org/packages/71/1d/dbe6627ed2ad2109d2475cf2b931a5ea453eb75d09c34c5b51b9002a8937/nonebot_plugin_bf1marneserverlist-0.1.7.tar.gz
+[2024-05-19 13:53:17] INFO root fetch - processPackages [docugenr8-core]: Downloading https://files.pythonhosted.org/packages/a0/83/0d13a3ebf6ede58ab2156780bbb03001f6f85818079da3dbab63df3bd9d1/docugenr8_core-0.0.5.tar.gz
+[2024-05-19 13:53:17] INFO root fetch - processPackages [docugenr8-core]: executing diffoscope
+[2024-05-19 13:53:17] INFO root fetch - processPackages [docugenr8-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docugenr8_core-0.0.4.tar.gz tmp/docugenr8_core-0.0.5.tar.gz --markdown 20240519/d/docugenr8-core/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-19 13:53:17] INFO root fetch - processPackages [nonebot-plugin-bf1marneserverlist]: Downloading https://files.pythonhosted.org/packages/0c/cb/d1b6a49b091020e6a7f2b6fdcc74be6a0ae052f98bb603126e0e2662ecdf/nonebot_plugin_bf1marneserverlist-0.1.8.tar.gz
+[2024-05-19 13:53:17] INFO root fetch - processPackages [nonebot-plugin-bf1marneserverlist]: executing diffoscope
+[2024-05-19 13:53:17] INFO root fetch - processPackages [nonebot-plugin-bf1marneserverlist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_bf1marneserverlist-0.1.7.tar.gz tmp/nonebot_plugin_bf1marneserverlist-0.1.8.tar.gz --markdown 20240519/n/nonebot-plugin-bf1marneserverlist/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-19 13:53:17] INFO root fetch - processPackages [docugenr8-core]: Remove: archive file [/home/abi/fetcher/tmp/docugenr8_core-0.0.4.tar.gz]
+[2024-05-19 13:53:17] INFO root fetch - processPackages [docugenr8-core]: Remove: archive file [/home/abi/fetcher/tmp/docugenr8_core-0.0.5.tar.gz]
+[2024-05-19 13:53:17] INFO root fetch - main [MainThread]: End processing [docugenr8-core]: success
+[2024-05-19 13:53:18] INFO root fetch - processPackages [nonebot-plugin-bf1marneserverlist]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_bf1marneserverlist-0.1.7.tar.gz]
+[2024-05-19 13:53:18] INFO root fetch - processPackages [nonebot-plugin-bf1marneserverlist]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_bf1marneserverlist-0.1.8.tar.gz]
+[2024-05-19 13:53:18] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-bf1marneserverlist]: success
+[2024-05-19 13:53:18] INFO root fetch - main [MainThread]: Store serial: [23276032]
