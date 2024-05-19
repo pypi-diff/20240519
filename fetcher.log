@@ -4336,3 +4336,28 @@
 [2024-05-19 07:01:56] INFO root fetch - main [MainThread]: End processing [plmvnojeqfeiejqb]: success
 [2024-05-19 07:01:56] INFO root fetch - main [MainThread]: End processing [plmvnojeqfeiejqb]: success
 [2024-05-19 07:01:56] INFO root fetch - main [MainThread]: Store serial: [23273433]
+[2024-05-19 07:04:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273433]
+[2024-05-19 07:04:10] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 07:04:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: airdeploy
+[2024-05-19 07:04:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: reqs-cli
+[2024-05-19 07:04:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: reqs-cli
+[2024-05-19 07:04:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: airscale
+[2024-05-19 07:04:10] INFO root fetch - processPackages [reqs-cli]: New version: [0.20240518.0a1] Old Version: [0.20240518.0a0]
+[2024-05-19 07:04:10] INFO root fetch - processPackages [reqs-cli]: New version: [0.20240518.0a1] Old Version: [0.20240518.0a0]
+[2024-05-19 07:04:10] INFO root fetch - processPackages [reqs-cli]: Downloading https://files.pythonhosted.org/packages/32/f6/3acb3fec1356eb0d9e0eb482ad5560f95cac893b761997d92192e8ee505a/reqs_cli-0.20240518.0a0.tar.gz
+[2024-05-19 07:04:10] WARNING root fetch - processPackages [airdeploy]: Skipping, unable to determine old version
+[2024-05-19 07:04:10] INFO root fetch - main [MainThread]: End processing [airdeploy] error
+[2024-05-19 07:04:10] INFO root fetch - processPackages [reqs-cli]: Downloading https://files.pythonhosted.org/packages/32/f6/3acb3fec1356eb0d9e0eb482ad5560f95cac893b761997d92192e8ee505a/reqs_cli-0.20240518.0a0.tar.gz
+[2024-05-19 07:04:10] WARNING root fetch - processPackages [airscale]: Skipping, unable to determine old version
+[2024-05-19 07:04:10] INFO root fetch - main [MainThread]: End processing [airscale] error
+[2024-05-19 07:04:10] INFO root fetch - processPackages [reqs-cli]: Downloading https://files.pythonhosted.org/packages/e3/0d/5d4addbe72e47de7a32b03df06a988a6e05d364d46e4ca63d6a846f7f34a/reqs_cli-0.20240518.0a1.tar.gz
+[2024-05-19 07:04:10] INFO root fetch - processPackages [reqs-cli]: Downloading https://files.pythonhosted.org/packages/e3/0d/5d4addbe72e47de7a32b03df06a988a6e05d364d46e4ca63d6a846f7f34a/reqs_cli-0.20240518.0a1.tar.gz
+[2024-05-19 07:04:10] INFO root fetch - processPackages [reqs-cli]: executing diffoscope
+[2024-05-19 07:04:10] INFO root fetch - processPackages [reqs-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reqs_cli-0.20240518.0a0.tar.gz tmp/reqs_cli-0.20240518.0a1.tar.gz --markdown 20240519/r/reqs-cli/0.20240518.0a0-0.20240518.0a1/README.md --exclude *.pyd
+[2024-05-19 07:04:10] INFO root fetch - processPackages [reqs-cli]: executing diffoscope
+[2024-05-19 07:04:10] INFO root fetch - processPackages [reqs-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reqs_cli-0.20240518.0a0.tar.gz tmp/reqs_cli-0.20240518.0a1.tar.gz --markdown 20240519/r/reqs-cli/0.20240518.0a0-0.20240518.0a1/README.md --exclude *.pyd
+[2024-05-19 07:04:11] INFO root fetch - processPackages [reqs-cli]: Remove: archive file [/home/abi/fetcher/tmp/reqs_cli-0.20240518.0a0.tar.gz]
+[2024-05-19 07:04:11] INFO root fetch - processPackages [reqs-cli]: Remove: archive file [/home/abi/fetcher/tmp/reqs_cli-0.20240518.0a1.tar.gz]
+[2024-05-19 07:04:11] INFO root fetch - main [MainThread]: End processing [reqs-cli]: success
+[2024-05-19 07:04:11] INFO root fetch - main [MainThread]: End processing [reqs-cli]: success
+[2024-05-19 07:04:11] INFO root fetch - main [MainThread]: Store serial: [23273447]
