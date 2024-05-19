@@ -12614,3 +12614,38 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 16:49:19] INFO root fetch - processPackages [py-alpaca-api]: Remove: archive file [/home/abi/fetcher/tmp/py_alpaca_api-0.4.7.tar.gz]
 [2024-05-19 16:49:19] INFO root fetch - main [MainThread]: End processing [py-alpaca-api]: success
 [2024-05-19 16:49:19] INFO root fetch - main [MainThread]: Store serial: [23277416]
+[2024-05-19 16:51:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277416]
+[2024-05-19 16:51:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 16:51:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lm-dw-deezer
+[2024-05-19 16:51:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ibish
+[2024-05-19 16:51:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: stable-diffusion-cpp-python
+[2024-05-19 16:51:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: apygee
+[2024-05-19 16:51:28] INFO root fetch - processPackages [apygee]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-19 16:51:28] INFO root fetch - processPackages [stable-diffusion-cpp-python]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-19 16:51:28] INFO root fetch - processPackages [apygee]: Downloading https://files.pythonhosted.org/packages/03/3a/4b60282bb4ea57fc82c8e41968b034f47558d8a4815215cb4b5be2f0b772/apygee-1.0.3.tar.gz
+[2024-05-19 16:51:28] INFO root fetch - processPackages [lm-dw-deezer]: New version: [0.0.2b6] Old Version: [0.0.2b5]
+[2024-05-19 16:51:28] INFO root fetch - processPackages [ibish]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-19 16:51:28] INFO root fetch - processPackages [stable-diffusion-cpp-python]: Downloading https://files.pythonhosted.org/packages/e6/65/789b2ea8926cb32284b1174bab7e6f3bc85b5da120568c9d18b82f340f83/stable_diffusion_cpp_python-0.1.4.tar.gz
+[2024-05-19 16:51:28] WARNING root fetch - processPackages [stable-diffusion-cpp-python]: Skipping package: exceeds size limit 30482682>=10485760
+[2024-05-19 16:51:28] INFO root fetch - main [MainThread]: End processing [stable-diffusion-cpp-python] error
+[2024-05-19 16:51:28] INFO root fetch - processPackages [lm-dw-deezer]: Downloading https://files.pythonhosted.org/packages/7c/df/2c8360ac7d9d388c75e8825d755643e706a6be1020b6fa3902e346fb40bb/lm_dw_deezer-0.0.2b5.tar.gz
+[2024-05-19 16:51:28] INFO root fetch - processPackages [ibish]: Downloading https://files.pythonhosted.org/packages/de/48/06996b2be24414536719a54efebeca72080f5d9d578fe5019da400263386/ibish-1.0.2.tar.gz
+[2024-05-19 16:51:28] INFO root fetch - processPackages [apygee]: Downloading https://files.pythonhosted.org/packages/c4/3d/8096ade983c0895917a453a265c4a836a491bb2c0a2307064a756e50c453/apygee-1.0.4.tar.gz
+[2024-05-19 16:51:28] INFO root fetch - processPackages [apygee]: executing diffoscope
+[2024-05-19 16:51:28] INFO root fetch - processPackages [apygee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apygee-1.0.3.tar.gz tmp/apygee-1.0.4.tar.gz --markdown 20240519/a/apygee/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-19 16:51:28] INFO root fetch - processPackages [lm-dw-deezer]: Downloading https://files.pythonhosted.org/packages/fa/52/e132d31f8a0180f2b24d99c7e3ec8ffd6c1a14e52a3412cb9bb13d2541aa/lm_dw_deezer-0.0.2b6.tar.gz
+[2024-05-19 16:51:28] INFO root fetch - processPackages [ibish]: Downloading https://files.pythonhosted.org/packages/00/84/ccbc7eaccc77d17d42f112d6f584e87d6fe52a89091d10a66b789f061541/ibish-1.0.3.tar.gz
+[2024-05-19 16:51:29] INFO root fetch - processPackages [lm-dw-deezer]: executing diffoscope
+[2024-05-19 16:51:29] INFO root fetch - processPackages [lm-dw-deezer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lm_dw_deezer-0.0.2b5.tar.gz tmp/lm_dw_deezer-0.0.2b6.tar.gz --markdown 20240519/l/lm-dw-deezer/0.0.2b5-0.0.2b6/README.md --exclude *.pyd
+[2024-05-19 16:51:29] INFO root fetch - processPackages [ibish]: executing diffoscope
+[2024-05-19 16:51:29] INFO root fetch - processPackages [ibish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ibish-1.0.2.tar.gz tmp/ibish-1.0.3.tar.gz --markdown 20240519/i/ibish/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-19 16:51:29] INFO root fetch - processPackages [apygee]: Remove: archive file [/home/abi/fetcher/tmp/apygee-1.0.3.tar.gz]
+[2024-05-19 16:51:29] INFO root fetch - processPackages [apygee]: Remove: archive file [/home/abi/fetcher/tmp/apygee-1.0.4.tar.gz]
+[2024-05-19 16:51:29] INFO root fetch - main [MainThread]: End processing [apygee]: success
+[2024-05-19 16:51:29] INFO root fetch - processPackages [lm-dw-deezer]: Remove: archive file [/home/abi/fetcher/tmp/lm_dw_deezer-0.0.2b5.tar.gz]
+[2024-05-19 16:51:29] INFO root fetch - processPackages [lm-dw-deezer]: Remove: archive file [/home/abi/fetcher/tmp/lm_dw_deezer-0.0.2b6.tar.gz]
+[2024-05-19 16:51:29] INFO root fetch - main [MainThread]: End processing [lm-dw-deezer]: success
+[2024-05-19 16:51:29] INFO root fetch - processPackages [ibish]: Remove: archive file [/home/abi/fetcher/tmp/ibish-1.0.2.tar.gz]
+[2024-05-19 16:51:29] INFO root fetch - processPackages [ibish]: Remove: archive file [/home/abi/fetcher/tmp/ibish-1.0.3.tar.gz]
+[2024-05-19 16:51:29] INFO root fetch - main [MainThread]: End processing [ibish]: success
+[2024-05-19 16:51:29] INFO root fetch - main [MainThread]: Store serial: [23277428]
