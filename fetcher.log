@@ -6717,3 +6717,63 @@
 [2024-05-19 10:12:59] INFO root fetch - processPackages [fnschool]: Remove: archive file [/home/abi/fetcher/tmp/fnschool-20240519.80822.833.tar.gz]
 [2024-05-19 10:12:59] INFO root fetch - main [MainThread]: End processing [fnschool]: success
 [2024-05-19 10:12:59] INFO root fetch - main [MainThread]: Store serial: [23274491]
+[2024-05-19 10:15:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274491]
+[2024-05-19 10:15:08] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-19 10:15:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ministatez
+[2024-05-19 10:15:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dbmig
+[2024-05-19 10:15:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: richard
+[2024-05-19 10:15:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sciveo
+[2024-05-19 10:15:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: paka
+[2024-05-19 10:15:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: REVHubInterface
+[2024-05-19 10:15:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: g4f
+[2024-05-19 10:15:08] INFO root fetch - processPackages [REVHubInterface]: New version: [1.3.3.dev9] Old Version: [1.3.3.dev8]
+[2024-05-19 10:15:08] INFO root fetch - processPackages [g4f]: New version: [0.3.1.6] Old Version: [0.3.1.5]
+[2024-05-19 10:15:08] INFO root fetch - processPackages [dbmig]: New version: [1.7.1] Old Version: [1.7.0]
+[2024-05-19 10:15:08] INFO root fetch - processPackages [REVHubInterface]: Downloading https://files.pythonhosted.org/packages/0d/90/3c74a9c7310ba2da2e673cb67d3e8c65e5460209759ef2fa291efce82ab5/revhubinterface-1.3.3.dev8.tar.gz
+[2024-05-19 10:15:08] INFO root fetch - processPackages [paka]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-19 10:15:08] INFO root fetch - processPackages [richard]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-05-19 10:15:08] WARNING root fetch - processPackages [ministatez]: Skipping, unable to determine old version
+[2024-05-19 10:15:08] INFO root fetch - processPackages [sciveo]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-19 10:15:08] INFO root fetch - main [MainThread]: End processing [ministatez] error
+[2024-05-19 10:15:08] INFO root fetch - processPackages [g4f]: Downloading https://files.pythonhosted.org/packages/be/81/229d9cf5e2e6ffcba925d8d07a972d06bf6bb72455da1da24ce2d3c9a18b/g4f-0.3.1.5.tar.gz
+[2024-05-19 10:15:08] INFO root fetch - processPackages [dbmig]: Downloading https://files.pythonhosted.org/packages/fb/37/635fc7d417eaa9e2764693950ebb3860332b40b28494fc62a8a85c25553d/dbmig-1.7.0-py3-none-any.whl
+[2024-05-19 10:15:08] INFO root fetch - processPackages [sciveo]: Downloading https://files.pythonhosted.org/packages/85/99/e330c28ea35d53c91ffe35ba9a05c6574c23c196383b00ccaba7377b555d/sciveo-0.1.8.tar.gz
+[2024-05-19 10:15:09] INFO root fetch - processPackages [paka]: Downloading https://files.pythonhosted.org/packages/88/34/b1963fddf8c8d04c31ba4908ba661ac1774cfdb6f38f6f9dbff304546858/paka-0.1.7.tar.gz
+[2024-05-19 10:15:09] INFO root fetch - processPackages [richard]: Downloading https://files.pythonhosted.org/packages/ed/4a/041064ae18994b725d2ce18f16d91f92594f261d26037ac049b33c71b488/richard-0.1.0.tar.gz
+[2024-05-19 10:15:09] INFO root fetch - processPackages [REVHubInterface]: Downloading https://files.pythonhosted.org/packages/47/93/e2ab5da20dcdca793ff04faa5aa5f38bb3f149e7bf70c77c15ac7d127689/revhubinterface-1.3.3.dev9.tar.gz
+[2024-05-19 10:15:09] INFO root fetch - processPackages [REVHubInterface]: executing diffoscope
+[2024-05-19 10:15:09] INFO root fetch - processPackages [REVHubInterface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/revhubinterface-1.3.3.dev8.tar.gz tmp/revhubinterface-1.3.3.dev9.tar.gz --markdown 20240519/R/REVHubInterface/1.3.3.dev8-1.3.3.dev9/README.md --exclude *.pyd
+[2024-05-19 10:15:09] INFO root fetch - processPackages [g4f]: Downloading https://files.pythonhosted.org/packages/0d/3a/3a2aa9d2555d4e2109b4a8bd65754076a8532dc61879de7f6ddcaf955cae/g4f-0.3.1.6.tar.gz
+[2024-05-19 10:15:09] INFO root fetch - processPackages [sciveo]: Downloading https://files.pythonhosted.org/packages/55/36/a475b3eb4f39af7a51ba0625a4b0bbbafb80028cd971e233e90e7416b916/sciveo-0.1.9.tar.gz
+[2024-05-19 10:15:09] INFO root fetch - processPackages [dbmig]: Downloading https://files.pythonhosted.org/packages/ab/3a/a32c0165829052d490c99b844ca11e6dbb407145b1c8ad800ad2f23e4170/dbmig-1.7.1.tar.gz
+[2024-05-19 10:15:09] INFO root fetch - processPackages [paka]: Downloading https://files.pythonhosted.org/packages/46/9f/18b9dfb41dc3df5192e90384d859b7e619009522c945e879ea8465389689/paka-0.1.8.tar.gz
+[2024-05-19 10:15:09] INFO root fetch - processPackages [richard]: Downloading https://files.pythonhosted.org/packages/83/e2/ef0ae84d1a55dbdd6b7212f129ef185945d17b6f404885a0181a91fe657d/richard-0.2.0.tar.gz
+[2024-05-19 10:15:09] INFO root fetch - processPackages [sciveo]: executing diffoscope
+[2024-05-19 10:15:09] INFO root fetch - processPackages [sciveo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sciveo-0.1.8.tar.gz tmp/sciveo-0.1.9.tar.gz --markdown 20240519/s/sciveo/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-19 10:15:09] INFO root fetch - processPackages [g4f]: executing diffoscope
+[2024-05-19 10:15:09] INFO root fetch - processPackages [g4f]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g4f-0.3.1.5.tar.gz tmp/g4f-0.3.1.6.tar.gz --markdown 20240519/g/g4f/0.3.1.5-0.3.1.6/README.md --exclude *.pyd
+[2024-05-19 10:15:09] INFO root fetch - processPackages [dbmig]: executing diffoscope
+[2024-05-19 10:15:09] INFO root fetch - processPackages [dbmig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbmig-1.7.0-py3-none-any.whl.zip tmp/dbmig-1.7.1.tar.gz --markdown 20240519/d/dbmig/1.7.0-1.7.1/README.md --exclude *.pyd
+[2024-05-19 10:15:09] INFO root fetch - processPackages [paka]: executing diffoscope
+[2024-05-19 10:15:09] INFO root fetch - processPackages [paka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paka-0.1.7.tar.gz tmp/paka-0.1.8.tar.gz --markdown 20240519/p/paka/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-19 10:15:09] INFO root fetch - processPackages [richard]: executing diffoscope
+[2024-05-19 10:15:09] INFO root fetch - processPackages [richard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/richard-0.1.0.tar.gz tmp/richard-0.2.0.tar.gz --markdown 20240519/r/richard/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-05-19 10:15:10] INFO root fetch - processPackages [REVHubInterface]: Remove: archive file [/home/abi/fetcher/tmp/revhubinterface-1.3.3.dev8.tar.gz]
+[2024-05-19 10:15:10] INFO root fetch - processPackages [REVHubInterface]: Remove: archive file [/home/abi/fetcher/tmp/revhubinterface-1.3.3.dev9.tar.gz]
+[2024-05-19 10:15:10] INFO root fetch - main [MainThread]: End processing [REVHubInterface]: success
+[2024-05-19 10:15:10] INFO root fetch - processPackages [dbmig]: Remove: archive file [/home/abi/fetcher/tmp/dbmig-1.7.0-py3-none-any.whl.zip]
+[2024-05-19 10:15:10] INFO root fetch - processPackages [dbmig]: Remove: archive file [/home/abi/fetcher/tmp/dbmig-1.7.1.tar.gz]
+[2024-05-19 10:15:10] INFO root fetch - main [MainThread]: End processing [dbmig]: success
+[2024-05-19 10:15:10] INFO root fetch - processPackages [sciveo]: Remove: archive file [/home/abi/fetcher/tmp/sciveo-0.1.8.tar.gz]
+[2024-05-19 10:15:10] INFO root fetch - processPackages [sciveo]: Remove: archive file [/home/abi/fetcher/tmp/sciveo-0.1.9.tar.gz]
+[2024-05-19 10:15:10] INFO root fetch - main [MainThread]: End processing [sciveo]: success
+[2024-05-19 10:15:10] INFO root fetch - processPackages [richard]: Remove: archive file [/home/abi/fetcher/tmp/richard-0.1.0.tar.gz]
+[2024-05-19 10:15:10] INFO root fetch - processPackages [richard]: Remove: archive file [/home/abi/fetcher/tmp/richard-0.2.0.tar.gz]
+[2024-05-19 10:15:10] INFO root fetch - main [MainThread]: End processing [richard]: success
+[2024-05-19 10:15:10] INFO root fetch - processPackages [paka]: Remove: archive file [/home/abi/fetcher/tmp/paka-0.1.7.tar.gz]
+[2024-05-19 10:15:10] INFO root fetch - processPackages [paka]: Remove: archive file [/home/abi/fetcher/tmp/paka-0.1.8.tar.gz]
+[2024-05-19 10:15:10] INFO root fetch - main [MainThread]: End processing [paka]: success
+[2024-05-19 10:15:11] INFO root fetch - processPackages [g4f]: Remove: archive file [/home/abi/fetcher/tmp/g4f-0.3.1.5.tar.gz]
+[2024-05-19 10:15:11] INFO root fetch - processPackages [g4f]: Remove: archive file [/home/abi/fetcher/tmp/g4f-0.3.1.6.tar.gz]
+[2024-05-19 10:15:11] INFO root fetch - main [MainThread]: End processing [g4f]: success
+[2024-05-19 10:15:11] INFO root fetch - main [MainThread]: Store serial: [23274532]
