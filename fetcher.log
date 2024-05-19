@@ -8562,3 +8562,15 @@
 [2024-05-19 12:35:16] INFO root fetch - processPackages [gns3-gui]: Remove: archive file [/home/abi/fetcher/tmp/gns3_gui-3.0.0b3.tar.gz]
 [2024-05-19 12:35:16] INFO root fetch - main [MainThread]: End processing [gns3-gui]: success
 [2024-05-19 12:35:16] INFO root fetch - main [MainThread]: Store serial: [23275510]
+[2024-05-19 12:37:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275510]
+[2024-05-19 12:37:25] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 12:37:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pymixfit-tspspi
+[2024-05-19 12:37:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fast-multi-regex
+[2024-05-19 12:37:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: baculumz
+[2024-05-19 12:37:25] WARNING root fetch - processPackages [fast-multi-regex]: Skipping, unable to determine old version
+[2024-05-19 12:37:25] INFO root fetch - main [MainThread]: End processing [fast-multi-regex] error
+[2024-05-19 12:37:25] WARNING root fetch - processPackages [pymixfit-tspspi]: Skipping, unable to determine old version
+[2024-05-19 12:37:25] INFO root fetch - main [MainThread]: End processing [pymixfit-tspspi] error
+[2024-05-19 12:37:25] WARNING root fetch - processPackages [baculumz]: Skipping, unable to determine old version
+[2024-05-19 12:37:25] INFO root fetch - main [MainThread]: End processing [baculumz] error
+[2024-05-19 12:37:25] INFO root fetch - main [MainThread]: Store serial: [23275521]
