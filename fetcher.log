@@ -10872,3 +10872,72 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 15:04:30] INFO root fetch - processPackages [libresvip]: Remove: archive file [/home/abi/fetcher/tmp/libresvip-1.1.3.tar.gz]
 [2024-05-19 15:04:30] INFO root fetch - main [MainThread]: End processing [libresvip]: success
 [2024-05-19 15:04:30] INFO root fetch - main [MainThread]: Store serial: [23276553]
+[2024-05-19 15:06:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276553]
+[2024-05-19 15:06:39] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-19 15:06:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openplantbook-sdk
+[2024-05-19 15:06:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fixupsz
+[2024-05-19 15:06:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yeref
+[2024-05-19 15:06:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pymonit
+[2024-05-19 15:06:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: swc-utils
+[2024-05-19 15:06:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: itkwasm-mesh-to-poly-data-wasi
+[2024-05-19 15:06:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: itkwasm-mesh-to-poly-data-emscripten
+[2024-05-19 15:06:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: itkwasm-mesh-to-poly-data
+[2024-05-19 15:06:39] INFO root fetch - processPackages [openplantbook-sdk]: New version: [0.4.6] Old Version: [0.4.5]
+[2024-05-19 15:06:39] INFO root fetch - processPackages [pymonit]: New version: [1.4.6] Old Version: [1.4.5]
+[2024-05-19 15:06:39] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-19 15:06:39] WARNING root fetch - processPackages [fixupsz]: Skipping, unable to determine old version
+[2024-05-19 15:06:39] INFO root fetch - main [MainThread]: End processing [fixupsz] error
+[2024-05-19 15:06:39] INFO root fetch - processPackages [itkwasm-mesh-to-poly-data]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-05-19 15:06:39] INFO root fetch - processPackages [swc-utils]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-19 15:06:39] INFO root fetch - processPackages [itkwasm-mesh-to-poly-data-wasi]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-05-19 15:06:39] INFO root fetch - processPackages [openplantbook-sdk]: Downloading https://files.pythonhosted.org/packages/b3/48/b42c69cbacd4046450cdd0630d54ec73975c3c150d55fa754c049bd2ba06/openplantbook-sdk-0.4.5.tar.gz
+[2024-05-19 15:06:40] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-19 15:06:40] INFO root fetch - processPackages [itkwasm-mesh-to-poly-data-emscripten]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-05-19 15:06:40] INFO root fetch - processPackages [pymonit]: Downloading https://files.pythonhosted.org/packages/1e/d3/e9f58c139f390c9e6537696c4b7439b47f394f6909caf5e059ec0d8a3e7b/pymonit-1.4.5.tar.gz
+[2024-05-19 15:06:40] INFO root fetch - processPackages [swc-utils]: Downloading https://files.pythonhosted.org/packages/fa/9d/8198dd446657b89824f9d147c9ec18c013bdcea857d68c78af2a307c2998/swc_utils-0.0.1.tar.gz
+[2024-05-19 15:06:40] INFO root fetch - processPackages [openplantbook-sdk]: Downloading https://files.pythonhosted.org/packages/da/ea/6ce5a55eae0a66c1ab4cda3dfbd767f1fb14277756d20b34bc74efc56a54/openplantbook_sdk-0.4.6.tar.gz
+[2024-05-19 15:06:40] INFO root fetch - processPackages [itkwasm-mesh-to-poly-data]: Downloading https://files.pythonhosted.org/packages/fa/b6/d292d1cc9c6f273cd6a73d1bac4f8ecd0b45e3b2d281801491983d0822bc/itkwasm_mesh_to_poly_data-1.0.0.tar.gz
+[2024-05-19 15:06:40] INFO root fetch - processPackages [itkwasm-mesh-to-poly-data-wasi]: Downloading https://files.pythonhosted.org/packages/97/09/45518cc75b943a7b35dd1b8d0f313ec4c318c243ae742ca8bc6d88964ce4/itkwasm_mesh_to_poly_data_wasi-1.0.0.tar.gz
+[2024-05-19 15:06:40] INFO root fetch - processPackages [itkwasm-mesh-to-poly-data-emscripten]: Downloading https://files.pythonhosted.org/packages/8f/ad/3e7eeaec17773db535c3fac4e42704c4914e3c6cf0a9d6696bda67d3ac4c/itkwasm_mesh_to_poly_data_emscripten-1.0.0.tar.gz
+[2024-05-19 15:06:40] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-19 15:06:40] INFO root fetch - processPackages [openplantbook-sdk]: executing diffoscope
+[2024-05-19 15:06:40] INFO root fetch - processPackages [openplantbook-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openplantbook-sdk-0.4.5.tar.gz tmp/openplantbook_sdk-0.4.6.tar.gz --markdown 20240519/o/openplantbook-sdk/0.4.5-0.4.6/README.md --exclude *.pyd
+[2024-05-19 15:06:40] INFO root fetch - processPackages [pymonit]: Downloading https://files.pythonhosted.org/packages/b0/a9/dfb355debf4e679af8106f7e93fff78a5c52bc6cbb4cb666f58e4462d518/pymonit-1.4.6.tar.gz
+[2024-05-19 15:06:40] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-19 15:06:40] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240519/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-19 15:06:40] INFO root fetch - processPackages [pymonit]: executing diffoscope
+[2024-05-19 15:06:40] INFO root fetch - processPackages [pymonit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymonit-1.4.5.tar.gz tmp/pymonit-1.4.6.tar.gz --markdown 20240519/p/pymonit/1.4.5-1.4.6/README.md --exclude *.pyd
+[2024-05-19 15:06:40] INFO root fetch - processPackages [swc-utils]: Downloading https://files.pythonhosted.org/packages/85/0c/45a053befc12639f8961c5f29ea1a47c1611929c611e081e9c6e90466e40/swc_utils-0.0.2.tar.gz
+[2024-05-19 15:06:40] INFO root fetch - processPackages [swc-utils]: executing diffoscope
+[2024-05-19 15:06:40] INFO root fetch - processPackages [swc-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swc_utils-0.0.1.tar.gz tmp/swc_utils-0.0.2.tar.gz --markdown 20240519/s/swc-utils/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-19 15:06:40] INFO root fetch - processPackages [itkwasm-mesh-to-poly-data-emscripten]: Downloading https://files.pythonhosted.org/packages/18/02/ec357c87bd3662007c027c3a76faa91d5a795132061e891c35221d0aba96/itkwasm_mesh_to_poly_data_emscripten-1.1.0.tar.gz
+[2024-05-19 15:06:40] INFO root fetch - processPackages [itkwasm-mesh-to-poly-data-wasi]: Downloading https://files.pythonhosted.org/packages/ce/19/3d95b58bf911b382497ca573ce8b8110a68c56d8c441d503a1c291319038/itkwasm_mesh_to_poly_data_wasi-1.1.0.tar.gz
+[2024-05-19 15:06:40] INFO root fetch - processPackages [itkwasm-mesh-to-poly-data]: Downloading https://files.pythonhosted.org/packages/51/e9/8b1e9fb8a39b601a4c92bf638e653f521f2242da743106f6a8582b12958f/itkwasm_mesh_to_poly_data-1.1.0.tar.gz
+[2024-05-19 15:06:40] INFO root fetch - processPackages [itkwasm-mesh-to-poly-data-emscripten]: executing diffoscope
+[2024-05-19 15:06:40] INFO root fetch - processPackages [itkwasm-mesh-to-poly-data-emscripten]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/itkwasm_mesh_to_poly_data_emscripten-1.0.0.tar.gz tmp/itkwasm_mesh_to_poly_data_emscripten-1.1.0.tar.gz --markdown 20240519/i/itkwasm-mesh-to-poly-data-emscripten/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-05-19 15:06:40] INFO root fetch - processPackages [itkwasm-mesh-to-poly-data]: executing diffoscope
+[2024-05-19 15:06:40] INFO root fetch - processPackages [itkwasm-mesh-to-poly-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/itkwasm_mesh_to_poly_data-1.0.0.tar.gz tmp/itkwasm_mesh_to_poly_data-1.1.0.tar.gz --markdown 20240519/i/itkwasm-mesh-to-poly-data/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-05-19 15:06:41] INFO root fetch - processPackages [itkwasm-mesh-to-poly-data-wasi]: executing diffoscope
+[2024-05-19 15:06:41] INFO root fetch - processPackages [itkwasm-mesh-to-poly-data-wasi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/itkwasm_mesh_to_poly_data_wasi-1.0.0.tar.gz tmp/itkwasm_mesh_to_poly_data_wasi-1.1.0.tar.gz --markdown 20240519/i/itkwasm-mesh-to-poly-data-wasi/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-05-19 15:06:41] INFO root fetch - processPackages [openplantbook-sdk]: Remove: archive file [/home/abi/fetcher/tmp/openplantbook-sdk-0.4.5.tar.gz]
+[2024-05-19 15:06:41] INFO root fetch - processPackages [openplantbook-sdk]: Remove: archive file [/home/abi/fetcher/tmp/openplantbook_sdk-0.4.6.tar.gz]
+[2024-05-19 15:06:41] INFO root fetch - main [MainThread]: End processing [openplantbook-sdk]: success
+[2024-05-19 15:06:41] INFO root fetch - processPackages [pymonit]: Remove: archive file [/home/abi/fetcher/tmp/pymonit-1.4.5.tar.gz]
+[2024-05-19 15:06:41] INFO root fetch - processPackages [pymonit]: Remove: archive file [/home/abi/fetcher/tmp/pymonit-1.4.6.tar.gz]
+[2024-05-19 15:06:41] INFO root fetch - main [MainThread]: End processing [pymonit]: success
+[2024-05-19 15:06:41] INFO root fetch - processPackages [swc-utils]: Remove: archive file [/home/abi/fetcher/tmp/swc_utils-0.0.1.tar.gz]
+[2024-05-19 15:06:41] INFO root fetch - processPackages [swc-utils]: Remove: archive file [/home/abi/fetcher/tmp/swc_utils-0.0.2.tar.gz]
+[2024-05-19 15:06:41] INFO root fetch - main [MainThread]: End processing [swc-utils]: success
+[2024-05-19 15:06:41] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-19 15:06:41] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-19 15:06:41] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-19 15:06:41] INFO root fetch - processPackages [itkwasm-mesh-to-poly-data-emscripten]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_mesh_to_poly_data_emscripten-1.0.0.tar.gz]
+[2024-05-19 15:06:41] INFO root fetch - processPackages [itkwasm-mesh-to-poly-data-emscripten]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_mesh_to_poly_data_emscripten-1.1.0.tar.gz]
+[2024-05-19 15:06:41] INFO root fetch - main [MainThread]: End processing [itkwasm-mesh-to-poly-data-emscripten]: success
+[2024-05-19 15:06:41] INFO root fetch - processPackages [itkwasm-mesh-to-poly-data]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_mesh_to_poly_data-1.0.0.tar.gz]
+[2024-05-19 15:06:41] INFO root fetch - processPackages [itkwasm-mesh-to-poly-data]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_mesh_to_poly_data-1.1.0.tar.gz]
+[2024-05-19 15:06:41] INFO root fetch - main [MainThread]: End processing [itkwasm-mesh-to-poly-data]: success
+[2024-05-19 15:06:41] INFO root fetch - processPackages [itkwasm-mesh-to-poly-data-wasi]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_mesh_to_poly_data_wasi-1.0.0.tar.gz]
+[2024-05-19 15:06:41] INFO root fetch - processPackages [itkwasm-mesh-to-poly-data-wasi]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_mesh_to_poly_data_wasi-1.1.0.tar.gz]
+[2024-05-19 15:06:41] INFO root fetch - main [MainThread]: End processing [itkwasm-mesh-to-poly-data-wasi]: success
+[2024-05-19 15:06:41] INFO root fetch - main [MainThread]: Store serial: [23276579]
