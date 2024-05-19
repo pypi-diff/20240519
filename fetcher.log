@@ -8865,3 +8865,82 @@
 [2024-05-19 13:07:09] ERROR root fetch - processPackages [moto]: Timeout during execution of pkgdiff
 [2024-05-19 13:07:09] INFO root fetch - main [MainThread]: End processing [moto] error
 [2024-05-19 13:07:09] INFO root fetch - main [MainThread]: Store serial: [23275694]
+[2024-05-19 13:09:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275694]
+[2024-05-19 13:09:17] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-05-19 13:09:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: checkrepublic
+[2024-05-19 13:09:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: altstore-proxy
+[2024-05-19 13:09:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: akshare
+[2024-05-19 13:09:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ctrip-app-ui
+[2024-05-19 13:09:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PyCutee
+[2024-05-19 13:09:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: outpostcli
+[2024-05-19 13:09:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: stepup
+[2024-05-19 13:09:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: PyCutee
+[2024-05-19 13:09:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: almudez
+[2024-05-19 13:09:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: Maslib
+[2024-05-19 13:09:17] INFO root fetch - processPackages [altstore-proxy]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-05-19 13:09:17] INFO root fetch - processPackages [PyCutee]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-19 13:09:17] INFO root fetch - processPackages [ctrip-app-ui]: New version: [0.6.4] Old Version: [0.6.3]
+[2024-05-19 13:09:17] INFO root fetch - processPackages [Maslib]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-19 13:09:17] INFO root fetch - processPackages [PyCutee]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-19 13:09:17] INFO root fetch - processPackages [akshare]: New version: [1.9.99] Old Version: [1.9.98]
+[2024-05-19 13:09:17] INFO root fetch - processPackages [stepup]: New version: [1.2.3] Old Version: [1.2.2]
+[2024-05-19 13:09:17] INFO root fetch - processPackages [outpostcli]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 13:09:17] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/7c/1a/9b0e242879c5c9478bf210dc60723713d1cee5443834f6542a9573dce3d2/ctrip-app-ui-0.6.3.tar.gz
+[2024-05-19 13:09:17] WARNING root fetch - processPackages [checkrepublic]: Skipping, unable to determine old version
+[2024-05-19 13:09:17] INFO root fetch - main [MainThread]: End processing [checkrepublic] error
+[2024-05-19 13:09:17] WARNING root fetch - processPackages [almudez]: Skipping, unable to determine old version
+[2024-05-19 13:09:17] INFO root fetch - main [MainThread]: End processing [almudez] error
+[2024-05-19 13:09:17] INFO root fetch - processPackages [altstore-proxy]: Downloading https://files.pythonhosted.org/packages/07/7f/d8f24e4fdcdde03a9896ab7917639d95f4b4d438b2f042def24d427b0cb1/altstore_proxy-1.2.0.tar.gz
+[2024-05-19 13:09:17] INFO root fetch - processPackages [Maslib]: Downloading https://files.pythonhosted.org/packages/e3/14/f056515de5c104287c10afda8140c871174bcd0a7eba88274ce7d7096398/Maslib-0.0.2.tar.gz
+[2024-05-19 13:09:17] INFO root fetch - processPackages [akshare]: Downloading https://files.pythonhosted.org/packages/ec/a4/f1c21d8fbb349e15f0bf76d32a496003bcff9b66215f81b940337a510e36/akshare-1.9.98.tar.gz
+[2024-05-19 13:09:17] INFO root fetch - processPackages [PyCutee]: Downloading https://files.pythonhosted.org/packages/d4/c0/774ae2aa8a3739eaaa93ce40e8fef174a1c62288bd209b41f0955b3e6e72/pycutee-0.0.1.tar.gz
+[2024-05-19 13:09:17] INFO root fetch - processPackages [stepup]: Downloading https://files.pythonhosted.org/packages/28/0c/c773daa3e2cb911e71359459b0f32875dcfbc256d03a275c54505025a2d4/stepup-1.2.2.tar.gz
+[2024-05-19 13:09:17] INFO root fetch - processPackages [PyCutee]: Downloading https://files.pythonhosted.org/packages/d4/c0/774ae2aa8a3739eaaa93ce40e8fef174a1c62288bd209b41f0955b3e6e72/pycutee-0.0.1.tar.gz
+[2024-05-19 13:09:18] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/7e/e2/114a39eac567286d0418645c0ea24089c48fcbe4cccec6c79191a5cefccf/outpostcli-0.0.8.tar.gz
+[2024-05-19 13:09:18] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/d8/4c/2ff325aa575e255da7e1f50a2fb66ccdf96a84eef674e856f2f6e51ce30d/ctrip-app-ui-0.6.4.tar.gz
+[2024-05-19 13:09:18] INFO root fetch - processPackages [altstore-proxy]: Downloading https://files.pythonhosted.org/packages/0c/bc/3665a9b9885e817ed69064b7d3b2a248b8d9ffd85fbc9f64c7b52c7f8d2a/altstore_proxy-1.2.1.tar.gz
+[2024-05-19 13:09:18] INFO root fetch - processPackages [akshare]: Downloading https://files.pythonhosted.org/packages/53/e8/f58e96016752567ca09f3f67abdc7e935d0afa919aded528d50590ed9170/akshare-1.9.99.tar.gz
+[2024-05-19 13:09:18] INFO root fetch - processPackages [Maslib]: Downloading https://files.pythonhosted.org/packages/06/47/7456e5971255a7c47fe8f2ebd7ce8a555ecdb60b12fac9ac1ddb221a7575/Maslib-0.0.3.tar.gz
+[2024-05-19 13:09:18] INFO root fetch - processPackages [PyCutee]: Downloading https://files.pythonhosted.org/packages/cf/61/068bac4dd1d1a3cd8ce96bf267c5a15b37d5193367db8ffa759256046222/pycutee-0.0.2.tar.gz
+[2024-05-19 13:09:18] INFO root fetch - processPackages [PyCutee]: Downloading https://files.pythonhosted.org/packages/cf/61/068bac4dd1d1a3cd8ce96bf267c5a15b37d5193367db8ffa759256046222/pycutee-0.0.2.tar.gz
+[2024-05-19 13:09:18] INFO root fetch - processPackages [ctrip-app-ui]: executing diffoscope
+[2024-05-19 13:09:18] INFO root fetch - processPackages [ctrip-app-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctrip-app-ui-0.6.3.tar.gz tmp/ctrip-app-ui-0.6.4.tar.gz --markdown 20240519/c/ctrip-app-ui/0.6.3-0.6.4/README.md --exclude *.pyd
+[2024-05-19 13:09:18] INFO root fetch - processPackages [stepup]: Downloading https://files.pythonhosted.org/packages/1d/36/7d0cbcf4a442988c9ab03d57e2f03a54c6fa8fb01dd54149efcb74523d3f/stepup-1.2.3.tar.gz
+[2024-05-19 13:09:18] INFO root fetch - processPackages [altstore-proxy]: executing diffoscope
+[2024-05-19 13:09:18] INFO root fetch - processPackages [altstore-proxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altstore_proxy-1.2.0.tar.gz tmp/altstore_proxy-1.2.1.tar.gz --markdown 20240519/a/altstore-proxy/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-05-19 13:09:18] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/df/ab/82b6853cec170d33c2aff19e3a298b0bf56f7ba1b885f6f7d42a10ae43dc/outpostcli-0.0.9.tar.gz
+[2024-05-19 13:09:18] INFO root fetch - processPackages [Maslib]: executing diffoscope
+[2024-05-19 13:09:18] INFO root fetch - processPackages [Maslib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Maslib-0.0.2.tar.gz tmp/Maslib-0.0.3.tar.gz --markdown 20240519/M/Maslib/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-19 13:09:18] INFO root fetch - processPackages [PyCutee]: executing diffoscope
+[2024-05-19 13:09:18] INFO root fetch - processPackages [PyCutee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycutee-0.0.1.tar.gz tmp/pycutee-0.0.2.tar.gz --markdown 20240519/P/PyCutee/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-19 13:09:18] INFO root fetch - processPackages [PyCutee]: executing diffoscope
+[2024-05-19 13:09:18] INFO root fetch - processPackages [PyCutee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycutee-0.0.1.tar.gz tmp/pycutee-0.0.2.tar.gz --markdown 20240519/P/PyCutee/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-19 13:09:18] INFO root fetch - processPackages [akshare]: executing diffoscope
+[2024-05-19 13:09:18] INFO root fetch - processPackages [akshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akshare-1.9.98.tar.gz tmp/akshare-1.9.99.tar.gz --markdown 20240519/a/akshare/1.9.98-1.9.99/README.md --exclude *.pyd
+[2024-05-19 13:09:18] INFO root fetch - processPackages [outpostcli]: executing diffoscope
+[2024-05-19 13:09:18] INFO root fetch - processPackages [outpostcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outpostcli-0.0.8.tar.gz tmp/outpostcli-0.0.9.tar.gz --markdown 20240519/o/outpostcli/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 13:09:18] INFO root fetch - processPackages [stepup]: executing diffoscope
+[2024-05-19 13:09:18] INFO root fetch - processPackages [stepup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stepup-1.2.2.tar.gz tmp/stepup-1.2.3.tar.gz --markdown 20240519/s/stepup/1.2.2-1.2.3/README.md --exclude *.pyd
+[2024-05-19 13:09:19] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.6.3.tar.gz]
+[2024-05-19 13:09:19] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.6.4.tar.gz]
+[2024-05-19 13:09:19] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
+[2024-05-19 13:09:19] INFO root fetch - processPackages [altstore-proxy]: Remove: archive file [/home/abi/fetcher/tmp/altstore_proxy-1.2.0.tar.gz]
+[2024-05-19 13:09:19] INFO root fetch - processPackages [altstore-proxy]: Remove: archive file [/home/abi/fetcher/tmp/altstore_proxy-1.2.1.tar.gz]
+[2024-05-19 13:09:19] INFO root fetch - main [MainThread]: End processing [altstore-proxy]: success
+[2024-05-19 13:09:19] INFO root fetch - processPackages [PyCutee]: Remove: archive file [/home/abi/fetcher/tmp/pycutee-0.0.1.tar.gz]
+[2024-05-19 13:09:19] INFO root fetch - processPackages [PyCutee]: Remove: archive file [/home/abi/fetcher/tmp/pycutee-0.0.2.tar.gz]
+[2024-05-19 13:09:19] INFO root fetch - main [MainThread]: End processing [PyCutee]: success
+[2024-05-19 13:09:19] INFO root fetch - main [MainThread]: End processing [PyCutee]: success
+[2024-05-19 13:09:19] INFO root fetch - processPackages [Maslib]: Remove: archive file [/home/abi/fetcher/tmp/Maslib-0.0.2.tar.gz]
+[2024-05-19 13:09:19] INFO root fetch - processPackages [Maslib]: Remove: archive file [/home/abi/fetcher/tmp/Maslib-0.0.3.tar.gz]
+[2024-05-19 13:09:19] INFO root fetch - main [MainThread]: End processing [Maslib]: success
+[2024-05-19 13:09:19] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.8.tar.gz]
+[2024-05-19 13:09:19] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.9.tar.gz]
+[2024-05-19 13:09:19] INFO root fetch - main [MainThread]: End processing [outpostcli]: success
+[2024-05-19 13:09:21] INFO root fetch - processPackages [stepup]: Remove: archive file [/home/abi/fetcher/tmp/stepup-1.2.2.tar.gz]
+[2024-05-19 13:09:21] INFO root fetch - processPackages [stepup]: Remove: archive file [/home/abi/fetcher/tmp/stepup-1.2.3.tar.gz]
+[2024-05-19 13:09:21] INFO root fetch - main [MainThread]: End processing [stepup]: success
+[2024-05-19 13:09:21] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.98.tar.gz]
+[2024-05-19 13:09:21] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.99.tar.gz]
+[2024-05-19 13:09:21] INFO root fetch - main [MainThread]: End processing [akshare]: success
+[2024-05-19 13:09:21] INFO root fetch - main [MainThread]: Store serial: [23275725]
