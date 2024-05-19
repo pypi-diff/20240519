@@ -3661,3 +3661,24 @@
 [2024-05-19 05:58:32] INFO root fetch - processPackages [llama-index-readers-papers]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_readers_papers-0.1.6.tar.gz]
 [2024-05-19 05:58:32] INFO root fetch - main [MainThread]: End processing [llama-index-readers-papers]: success
 [2024-05-19 05:58:32] INFO root fetch - main [MainThread]: Store serial: [23273151]
+[2024-05-19 06:00:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273151]
+[2024-05-19 06:00:41] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 06:00:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moeralib
+[2024-05-19 06:00:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cstructs
+[2024-05-19 06:00:41] INFO root fetch - processPackages [moeralib]: New version: [0.15.2] Old Version: [0.15.1]
+[2024-05-19 06:00:41] INFO root fetch - processPackages [cstructs]: New version: [0.2.5] Old Version: [0.2.3]
+[2024-05-19 06:00:41] INFO root fetch - processPackages [moeralib]: Downloading https://files.pythonhosted.org/packages/0d/25/f0f6914312d727f6cb3f375788e1ea079bf2304e5042ebf5be499af7ca8b/moeralib-0.15.1.tar.gz
+[2024-05-19 06:00:41] INFO root fetch - processPackages [cstructs]: Downloading https://files.pythonhosted.org/packages/24/23/83bf278270c66124528bc1549351bc99862295521faea29956b8d018e17f/cstructs-0.2.3.tar.gz
+[2024-05-19 06:00:42] INFO root fetch - processPackages [moeralib]: Downloading https://files.pythonhosted.org/packages/bb/4e/f292e5409950c18c90431a835d8ab2d8f3638e8182ec9b0a4f8dfb7039f0/moeralib-0.15.2.tar.gz
+[2024-05-19 06:00:42] INFO root fetch - processPackages [cstructs]: Downloading https://files.pythonhosted.org/packages/19/3e/dbd3cf8df60365523b8f6f244d95fdfe0e46584557fce4e533b8df771eb4/cstructs-0.2.5.tar.gz
+[2024-05-19 06:00:42] INFO root fetch - processPackages [moeralib]: executing diffoscope
+[2024-05-19 06:00:42] INFO root fetch - processPackages [moeralib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moeralib-0.15.1.tar.gz tmp/moeralib-0.15.2.tar.gz --markdown 20240519/m/moeralib/0.15.1-0.15.2/README.md --exclude *.pyd
+[2024-05-19 06:00:42] INFO root fetch - processPackages [cstructs]: executing diffoscope
+[2024-05-19 06:00:42] INFO root fetch - processPackages [cstructs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cstructs-0.2.3.tar.gz tmp/cstructs-0.2.5.tar.gz --markdown 20240519/c/cstructs/0.2.3-0.2.5/README.md --exclude *.pyd
+[2024-05-19 06:00:43] INFO root fetch - processPackages [moeralib]: Remove: archive file [/home/abi/fetcher/tmp/moeralib-0.15.1.tar.gz]
+[2024-05-19 06:00:43] INFO root fetch - processPackages [moeralib]: Remove: archive file [/home/abi/fetcher/tmp/moeralib-0.15.2.tar.gz]
+[2024-05-19 06:00:43] INFO root fetch - main [MainThread]: End processing [moeralib]: success
+[2024-05-19 06:00:43] INFO root fetch - processPackages [cstructs]: Remove: archive file [/home/abi/fetcher/tmp/cstructs-0.2.3.tar.gz]
+[2024-05-19 06:00:43] INFO root fetch - processPackages [cstructs]: Remove: archive file [/home/abi/fetcher/tmp/cstructs-0.2.5.tar.gz]
+[2024-05-19 06:00:43] INFO root fetch - main [MainThread]: End processing [cstructs]: success
+[2024-05-19 06:00:43] INFO root fetch - main [MainThread]: Store serial: [23273156]
