@@ -11951,3 +11951,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 16:09:46] INFO root fetch - processPackages [itkwasm-dicom-wasi]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_dicom_wasi-7.0.0.tar.gz]
 [2024-05-19 16:09:46] INFO root fetch - main [MainThread]: End processing [itkwasm-dicom-wasi]: success
 [2024-05-19 16:09:46] INFO root fetch - main [MainThread]: Store serial: [23277126]
+[2024-05-19 16:11:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277126]
+[2024-05-19 16:11:58] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 16:11:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: itkwasm-dicom
+[2024-05-19 16:11:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: outpostcli
+[2024-05-19 16:11:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Scrapelytix
+[2024-05-19 16:11:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vvspy
+[2024-05-19 16:11:58] INFO root fetch - processPackages [vvspy]: New version: [2.0.0b1] Old Version: [1.2.0]
+[2024-05-19 16:11:58] INFO root fetch - processPackages [outpostcli]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 16:11:58] WARNING root fetch - processPackages [Scrapelytix]: Skipping, unable to determine old version
+[2024-05-19 16:11:58] INFO root fetch - main [MainThread]: End processing [Scrapelytix] error
+[2024-05-19 16:11:58] INFO root fetch - processPackages [itkwasm-dicom]: New version: [7.0.0] Old Version: [6.0.0]
+[2024-05-19 16:11:58] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/7e/e2/114a39eac567286d0418645c0ea24089c48fcbe4cccec6c79191a5cefccf/outpostcli-0.0.8.tar.gz
+[2024-05-19 16:11:58] INFO root fetch - processPackages [vvspy]: Downloading https://files.pythonhosted.org/packages/77/c8/b6796e3693401a32278c9bd72a4f8b39aa6b4c5482106e9c813ada994163/vvspy-1.2.0.tar.gz
+[2024-05-19 16:11:58] INFO root fetch - processPackages [itkwasm-dicom]: Downloading https://files.pythonhosted.org/packages/e6/3f/931579bc9634338d52085077172b4e2ee1187b0d2dc56b6efb11e36b674d/itkwasm_dicom-6.0.0.tar.gz
+[2024-05-19 16:11:58] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/df/ab/82b6853cec170d33c2aff19e3a298b0bf56f7ba1b885f6f7d42a10ae43dc/outpostcli-0.0.9.tar.gz
+[2024-05-19 16:11:59] INFO root fetch - processPackages [outpostcli]: executing diffoscope
+[2024-05-19 16:11:59] INFO root fetch - processPackages [outpostcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outpostcli-0.0.8.tar.gz tmp/outpostcli-0.0.9.tar.gz --markdown 20240519/o/outpostcli/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 16:11:59] INFO root fetch - processPackages [vvspy]: Downloading https://files.pythonhosted.org/packages/ed/77/145ad40e2cb366ab3ffe4106e5ed59a65b749debc77ef2197bef11af225d/vvspy-2.0.0b1.tar.gz
+[2024-05-19 16:11:59] INFO root fetch - processPackages [itkwasm-dicom]: Downloading https://files.pythonhosted.org/packages/58/8d/76deef6356f025e69a22b839b276c2dea42502c3da4bf6daec3949cd9a7f/itkwasm_dicom-7.0.0.tar.gz
+[2024-05-19 16:11:59] INFO root fetch - processPackages [vvspy]: executing diffoscope
+[2024-05-19 16:11:59] INFO root fetch - processPackages [vvspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vvspy-1.2.0.tar.gz tmp/vvspy-2.0.0b1.tar.gz --markdown 20240519/v/vvspy/1.2.0-2.0.0b1/README.md --exclude *.pyd
+[2024-05-19 16:11:59] INFO root fetch - processPackages [itkwasm-dicom]: executing diffoscope
+[2024-05-19 16:11:59] INFO root fetch - processPackages [itkwasm-dicom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/itkwasm_dicom-6.0.0.tar.gz tmp/itkwasm_dicom-7.0.0.tar.gz --markdown 20240519/i/itkwasm-dicom/6.0.0-7.0.0/README.md --exclude *.pyd
+[2024-05-19 16:11:59] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.8.tar.gz]
+[2024-05-19 16:11:59] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.9.tar.gz]
+[2024-05-19 16:11:59] INFO root fetch - main [MainThread]: End processing [outpostcli]: success
+[2024-05-19 16:11:59] INFO root fetch - processPackages [vvspy]: Remove: archive file [/home/abi/fetcher/tmp/vvspy-1.2.0.tar.gz]
+[2024-05-19 16:11:59] INFO root fetch - processPackages [vvspy]: Remove: archive file [/home/abi/fetcher/tmp/vvspy-2.0.0b1.tar.gz]
+[2024-05-19 16:11:59] INFO root fetch - main [MainThread]: End processing [vvspy]: success
+[2024-05-19 16:11:59] INFO root fetch - processPackages [itkwasm-dicom]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_dicom-6.0.0.tar.gz]
+[2024-05-19 16:11:59] INFO root fetch - processPackages [itkwasm-dicom]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_dicom-7.0.0.tar.gz]
+[2024-05-19 16:11:59] INFO root fetch - main [MainThread]: End processing [itkwasm-dicom]: success
+[2024-05-19 16:11:59] INFO root fetch - main [MainThread]: Store serial: [23277141]
