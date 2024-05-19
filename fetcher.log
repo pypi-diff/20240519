@@ -5138,3 +5138,39 @@
 [2024-05-19 08:20:21] INFO root fetch - processPackages [fake-bpy-module]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module-20240518.tar.gz]
 [2024-05-19 08:20:21] INFO root fetch - main [MainThread]: End processing [fake-bpy-module]: success
 [2024-05-19 08:20:21] INFO root fetch - main [MainThread]: Store serial: [23273782]
+[2024-05-19 08:22:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273782]
+[2024-05-19 08:22:37] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 08:22:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-project-forecast-line-bokeh-chart
+[2024-05-19 08:22:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: outpostcli
+[2024-05-19 08:22:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: crispierz
+[2024-05-19 08:22:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo14-addons-oca-project
+[2024-05-19 08:22:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: func2stream
+[2024-05-19 08:22:37] WARNING root fetch - processPackages [odoo14-addon-project-forecast-line-bokeh-chart]: Skipping, unable to determine old version
+[2024-05-19 08:22:37] INFO root fetch - main [MainThread]: End processing [odoo14-addon-project-forecast-line-bokeh-chart] error
+[2024-05-19 08:22:37] INFO root fetch - processPackages [outpostcli]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 08:22:37] INFO root fetch - processPackages [odoo14-addons-oca-project]: New version: [14.0.20240518.0] Old Version: [14.0.20240508.0]
+[2024-05-19 08:22:37] INFO root fetch - processPackages [func2stream]: New version: [0.0.1.dev240519060655] Old Version: [0.0.1]
+[2024-05-19 08:22:37] WARNING root fetch - processPackages [crispierz]: Skipping, unable to determine old version
+[2024-05-19 08:22:37] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/7e/e2/114a39eac567286d0418645c0ea24089c48fcbe4cccec6c79191a5cefccf/outpostcli-0.0.8.tar.gz
+[2024-05-19 08:22:37] INFO root fetch - main [MainThread]: End processing [crispierz] error
+[2024-05-19 08:22:37] INFO root fetch - processPackages [func2stream]: Downloading https://files.pythonhosted.org/packages/02/91/901cfe4a61c191e6a2cf0ffc1d36deb4b253c8e8beec8f2023bc46328a66/func2stream-0.0.1.tar.gz
+[2024-05-19 08:22:37] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/df/ab/82b6853cec170d33c2aff19e3a298b0bf56f7ba1b885f6f7d42a10ae43dc/outpostcli-0.0.9.tar.gz
+[2024-05-19 08:22:37] INFO root fetch - processPackages [odoo14-addons-oca-project]: Downloading https://files.pythonhosted.org/packages/c0/c5/9119431d17ec872c64cc650c397efb1d96e39c253f2505b111b41d7294b4/odoo14_addons_oca_project-14.0.20240508.0-py3-none-any.whl
+[2024-05-19 08:22:37] INFO root fetch - processPackages [outpostcli]: executing diffoscope
+[2024-05-19 08:22:37] INFO root fetch - processPackages [outpostcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outpostcli-0.0.8.tar.gz tmp/outpostcli-0.0.9.tar.gz --markdown 20240519/o/outpostcli/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 08:22:37] INFO root fetch - processPackages [func2stream]: Downloading https://files.pythonhosted.org/packages/91/85/aed22fcd31d04bbd38159338638cddf9e7252e0df77bcf2430963f1d2af9/func2stream-0.0.1.dev240519060655-py3-none-any.whl
+[2024-05-19 08:22:37] INFO root fetch - processPackages [odoo14-addons-oca-project]: Downloading https://files.pythonhosted.org/packages/5a/ca/6d3c4735b78e0b0573166fd46ce425c1089bb7a34eacccf19e5937558d12/odoo14_addons_oca_project-14.0.20240518.0-py3-none-any.whl
+[2024-05-19 08:22:37] INFO root fetch - processPackages [func2stream]: executing diffoscope
+[2024-05-19 08:22:37] INFO root fetch - processPackages [func2stream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/func2stream-0.0.1.tar.gz tmp/func2stream-0.0.1.dev240519060655-py3-none-any.whl.zip --markdown 20240519/f/func2stream/0.0.1-0.0.1.dev240519060655/README.md --exclude *.pyd
+[2024-05-19 08:22:38] INFO root fetch - processPackages [odoo14-addons-oca-project]: executing diffoscope
+[2024-05-19 08:22:38] INFO root fetch - processPackages [odoo14-addons-oca-project]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addons_oca_project-14.0.20240508.0-py3-none-any.whl.zip tmp/odoo14_addons_oca_project-14.0.20240518.0-py3-none-any.whl.zip --markdown 20240519/o/odoo14-addons-oca-project/14.0.20240508.0-14.0.20240518.0/README.md --exclude *.pyd
+[2024-05-19 08:22:38] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.8.tar.gz]
+[2024-05-19 08:22:38] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.9.tar.gz]
+[2024-05-19 08:22:38] INFO root fetch - main [MainThread]: End processing [outpostcli]: success
+[2024-05-19 08:22:38] INFO root fetch - processPackages [func2stream]: Remove: archive file [/home/abi/fetcher/tmp/func2stream-0.0.1.tar.gz]
+[2024-05-19 08:22:38] INFO root fetch - processPackages [func2stream]: Remove: archive file [/home/abi/fetcher/tmp/func2stream-0.0.1.dev240519060655-py3-none-any.whl.zip]
+[2024-05-19 08:22:38] INFO root fetch - main [MainThread]: End processing [func2stream]: success
+[2024-05-19 08:22:38] INFO root fetch - processPackages [odoo14-addons-oca-project]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addons_oca_project-14.0.20240508.0-py3-none-any.whl.zip]
+[2024-05-19 08:22:38] INFO root fetch - processPackages [odoo14-addons-oca-project]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addons_oca_project-14.0.20240518.0-py3-none-any.whl.zip]
+[2024-05-19 08:22:38] INFO root fetch - main [MainThread]: End processing [odoo14-addons-oca-project]: success
+[2024-05-19 08:22:38] INFO root fetch - main [MainThread]: Store serial: [23273796]
