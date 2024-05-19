@@ -10746,3 +10746,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 14:55:19] INFO root fetch - processPackages [scidatetime]: Remove: archive file [/home/abi/fetcher/tmp/scidatetime-1.20.2.tar.gz]
 [2024-05-19 14:55:19] INFO root fetch - main [MainThread]: End processing [scidatetime]: success
 [2024-05-19 14:55:19] INFO root fetch - main [MainThread]: Store serial: [23276498]
+[2024-05-19 14:57:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276498]
+[2024-05-19 14:57:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 14:57:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: escallopsz
+[2024-05-19 14:57:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dongraphio
+[2024-05-19 14:57:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: saasyflow
+[2024-05-19 14:57:28] WARNING root fetch - processPackages [saasyflow]: Skipping, unable to determine old version
+[2024-05-19 14:57:28] INFO root fetch - main [MainThread]: End processing [saasyflow] error
+[2024-05-19 14:57:28] WARNING root fetch - processPackages [escallopsz]: Skipping, unable to determine old version
+[2024-05-19 14:57:28] INFO root fetch - main [MainThread]: End processing [escallopsz] error
+[2024-05-19 14:57:28] INFO root fetch - processPackages [dongraphio]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-05-19 14:57:28] INFO root fetch - processPackages [dongraphio]: Downloading https://files.pythonhosted.org/packages/76/9a/c3c32d7f88b05087ce707fe48ca51276f0cf292a97049c3e7a8cdfaa0c5f/dongraphio-0.3.3.tar.gz
+[2024-05-19 14:57:28] INFO root fetch - processPackages [dongraphio]: Downloading https://files.pythonhosted.org/packages/cf/d0/7cffe2caee973ab15ca9b5e3941688c54e5bef13f04d5e0a3d9935bde52f/dongraphio-0.3.4.tar.gz
+[2024-05-19 14:57:29] INFO root fetch - processPackages [dongraphio]: executing diffoscope
+[2024-05-19 14:57:29] INFO root fetch - processPackages [dongraphio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dongraphio-0.3.3.tar.gz tmp/dongraphio-0.3.4.tar.gz --markdown 20240519/d/dongraphio/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-05-19 14:57:29] INFO root fetch - processPackages [dongraphio]: Remove: archive file [/home/abi/fetcher/tmp/dongraphio-0.3.3.tar.gz]
+[2024-05-19 14:57:29] INFO root fetch - processPackages [dongraphio]: Remove: archive file [/home/abi/fetcher/tmp/dongraphio-0.3.4.tar.gz]
+[2024-05-19 14:57:29] INFO root fetch - main [MainThread]: End processing [dongraphio]: success
+[2024-05-19 14:57:29] INFO root fetch - main [MainThread]: Store serial: [23276508]
