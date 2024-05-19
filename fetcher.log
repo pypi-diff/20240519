@@ -5174,3 +5174,18 @@
 [2024-05-19 08:22:38] INFO root fetch - processPackages [odoo14-addons-oca-project]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addons_oca_project-14.0.20240518.0-py3-none-any.whl.zip]
 [2024-05-19 08:22:38] INFO root fetch - main [MainThread]: End processing [odoo14-addons-oca-project]: success
 [2024-05-19 08:22:38] INFO root fetch - main [MainThread]: Store serial: [23273796]
+[2024-05-19 08:24:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273796]
+[2024-05-19 08:24:46] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 08:24:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bosesoundtouchapi
+[2024-05-19 08:24:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openai-izcustom
+[2024-05-19 08:24:47] INFO root fetch - processPackages [bosesoundtouchapi]: New version: [1.0.9] Old Version: [1.0.7]
+[2024-05-19 08:24:47] INFO root fetch - processPackages [bosesoundtouchapi]: Downloading https://files.pythonhosted.org/packages/cf/e2/27416aa49fec3f7e18b1a22c5d976f2267ab5715d97c1314236a77e3a30a/bosesoundtouchapi-1.0.7-py3-none-any.whl
+[2024-05-19 08:24:47] WARNING root fetch - processPackages [openai-izcustom]: Skipping, unable to determine old version
+[2024-05-19 08:24:47] INFO root fetch - main [MainThread]: End processing [openai-izcustom] error
+[2024-05-19 08:24:47] INFO root fetch - processPackages [bosesoundtouchapi]: Downloading https://files.pythonhosted.org/packages/2d/eb/4a9e6b4a41569551a0d849ecbd1619975ae1d3dc5f7649e91fdf88547693/bosesoundtouchapi-1.0.9-py3-none-any.whl
+[2024-05-19 08:24:47] INFO root fetch - processPackages [bosesoundtouchapi]: executing diffoscope
+[2024-05-19 08:24:47] INFO root fetch - processPackages [bosesoundtouchapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bosesoundtouchapi-1.0.7-py3-none-any.whl.zip tmp/bosesoundtouchapi-1.0.9-py3-none-any.whl.zip --markdown 20240519/b/bosesoundtouchapi/1.0.7-1.0.9/README.md --exclude *.pyd
+[2024-05-19 08:24:49] INFO root fetch - processPackages [bosesoundtouchapi]: Remove: archive file [/home/abi/fetcher/tmp/bosesoundtouchapi-1.0.7-py3-none-any.whl.zip]
+[2024-05-19 08:24:49] INFO root fetch - processPackages [bosesoundtouchapi]: Remove: archive file [/home/abi/fetcher/tmp/bosesoundtouchapi-1.0.9-py3-none-any.whl.zip]
+[2024-05-19 08:24:49] INFO root fetch - main [MainThread]: End processing [bosesoundtouchapi]: success
+[2024-05-19 08:24:49] INFO root fetch - main [MainThread]: Store serial: [23273803]
