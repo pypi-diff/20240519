@@ -4361,3 +4361,27 @@
 [2024-05-19 07:04:11] INFO root fetch - main [MainThread]: End processing [reqs-cli]: success
 [2024-05-19 07:04:11] INFO root fetch - main [MainThread]: End processing [reqs-cli]: success
 [2024-05-19 07:04:11] INFO root fetch - main [MainThread]: Store serial: [23273447]
+[2024-05-19 07:06:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273447]
+[2024-05-19 07:06:19] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 07:06:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: untranquilizingz
+[2024-05-19 07:06:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MyLLM
+[2024-05-19 07:06:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rapid-pe
+[2024-05-19 07:06:20] INFO root fetch - processPackages [rapid-pe]: New version: [0.1.2.dev20240518] Old Version: [0.1.2.dev20240517]
+[2024-05-19 07:06:20] WARNING root fetch - processPackages [untranquilizingz]: Skipping, unable to determine old version
+[2024-05-19 07:06:20] INFO root fetch - main [MainThread]: End processing [untranquilizingz] error
+[2024-05-19 07:06:20] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/00/1b/4af0d460041e092a71d2ec2abcb905c1b7c14b734b2e84c6585cc6d609d4/rapid_pe-0.1.2.dev20240517.tar.gz
+[2024-05-19 07:06:20] INFO root fetch - processPackages [MyLLM]: New version: [4.8.9] Old Version: [4.8.8]
+[2024-05-19 07:06:20] INFO root fetch - processPackages [MyLLM]: Downloading https://files.pythonhosted.org/packages/17/a3/c8c72d3fe2409e7c53f4f1b62d22d58eda0f109b746f00cee99c542888b9/myllm-4.8.8.tar.gz
+[2024-05-19 07:06:20] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/35/83/833a0640fa69d3786c9b897cbf565a7c272dd8095e0e372bf686551b2c65/rapid_pe-0.1.2.dev20240518.tar.gz
+[2024-05-19 07:06:20] INFO root fetch - processPackages [rapid-pe]: executing diffoscope
+[2024-05-19 07:06:20] INFO root fetch - processPackages [rapid-pe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapid_pe-0.1.2.dev20240517.tar.gz tmp/rapid_pe-0.1.2.dev20240518.tar.gz --markdown 20240519/r/rapid-pe/0.1.2.dev20240517-0.1.2.dev20240518/README.md --exclude *.pyd
+[2024-05-19 07:06:20] INFO root fetch - processPackages [MyLLM]: Downloading https://files.pythonhosted.org/packages/57/3a/bfe2f2c55e10a6dee7a033bc1731f5ed17fe7c958a210478832a958f6d80/myllm-4.8.9.tar.gz
+[2024-05-19 07:06:20] INFO root fetch - processPackages [MyLLM]: executing diffoscope
+[2024-05-19 07:06:20] INFO root fetch - processPackages [MyLLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myllm-4.8.8.tar.gz tmp/myllm-4.8.9.tar.gz --markdown 20240519/M/MyLLM/4.8.8-4.8.9/README.md --exclude *.pyd
+[2024-05-19 07:06:21] INFO root fetch - processPackages [rapid-pe]: Remove: archive file [/home/abi/fetcher/tmp/rapid_pe-0.1.2.dev20240517.tar.gz]
+[2024-05-19 07:06:21] INFO root fetch - processPackages [rapid-pe]: Remove: archive file [/home/abi/fetcher/tmp/rapid_pe-0.1.2.dev20240518.tar.gz]
+[2024-05-19 07:06:21] INFO root fetch - main [MainThread]: End processing [rapid-pe]: success
+[2024-05-19 07:06:21] INFO root fetch - processPackages [MyLLM]: Remove: archive file [/home/abi/fetcher/tmp/myllm-4.8.8.tar.gz]
+[2024-05-19 07:06:21] INFO root fetch - processPackages [MyLLM]: Remove: archive file [/home/abi/fetcher/tmp/myllm-4.8.9.tar.gz]
+[2024-05-19 07:06:21] INFO root fetch - main [MainThread]: End processing [MyLLM]: success
+[2024-05-19 07:06:21] INFO root fetch - main [MainThread]: Store serial: [23273457]
