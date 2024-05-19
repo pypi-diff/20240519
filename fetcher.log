@@ -9238,3 +9238,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 13:20:42] INFO root fetch - processPackages [RTS-WebUIBuilder]: Remove: archive file [/home/abi/fetcher/tmp/RTS-WebUIBuilder-0.8.tar.gz]
 [2024-05-19 13:20:42] INFO root fetch - main [MainThread]: End processing [RTS-WebUIBuilder]: success
 [2024-05-19 13:20:42] INFO root fetch - main [MainThread]: Store serial: [23275822]
+[2024-05-19 13:22:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275822]
+[2024-05-19 13:22:50] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 13:22:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: eurepoc
+[2024-05-19 13:22:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: remla24-team8-lib-version
+[2024-05-19 13:22:50] INFO root fetch - processPackages [eurepoc]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-19 13:22:50] INFO root fetch - processPackages [eurepoc]: Downloading https://files.pythonhosted.org/packages/a0/84/1d40fe28d74d18cf65e4d2a7b74e00897ecd8974d8acedd497a0e75c11e9/eurepoc-0.1.1.tar.gz
+[2024-05-19 13:22:51] INFO root fetch - processPackages [remla24-team8-lib-version]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-05-19 13:22:51] INFO root fetch - processPackages [remla24-team8-lib-version]: Downloading https://files.pythonhosted.org/packages/db/c3/fdf01625dd613a96db6f0e81734b371333f491569c9e84a91182a42748f8/remla24_team8_lib_version-0.3.0.tar.gz
+[2024-05-19 13:22:51] INFO root fetch - processPackages [eurepoc]: Downloading https://files.pythonhosted.org/packages/cb/55/971ae165a330eaa4a6ea08cd91f5f18edbc6cfb8f833c99ce63d33878c68/eurepoc-0.1.2.tar.gz
+[2024-05-19 13:22:51] INFO root fetch - processPackages [eurepoc]: executing diffoscope
+[2024-05-19 13:22:51] INFO root fetch - processPackages [eurepoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eurepoc-0.1.1.tar.gz tmp/eurepoc-0.1.2.tar.gz --markdown 20240519/e/eurepoc/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-19 13:22:51] INFO root fetch - processPackages [remla24-team8-lib-version]: Downloading https://files.pythonhosted.org/packages/27/55/9b62103387e983d42c1fc828d9b722a4bd8c5af8f052f241e44ebea0b566/remla24_team8_lib_version-0.3.1.tar.gz
+[2024-05-19 13:22:51] INFO root fetch - processPackages [remla24-team8-lib-version]: executing diffoscope
+[2024-05-19 13:22:51] INFO root fetch - processPackages [remla24-team8-lib-version]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/remla24_team8_lib_version-0.3.0.tar.gz tmp/remla24_team8_lib_version-0.3.1.tar.gz --markdown 20240519/r/remla24-team8-lib-version/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-05-19 13:22:52] INFO root fetch - processPackages [eurepoc]: Remove: archive file [/home/abi/fetcher/tmp/eurepoc-0.1.1.tar.gz]
+[2024-05-19 13:22:52] INFO root fetch - processPackages [eurepoc]: Remove: archive file [/home/abi/fetcher/tmp/eurepoc-0.1.2.tar.gz]
+[2024-05-19 13:22:52] INFO root fetch - main [MainThread]: End processing [eurepoc]: success
+[2024-05-19 13:22:52] INFO root fetch - processPackages [remla24-team8-lib-version]: Remove: archive file [/home/abi/fetcher/tmp/remla24_team8_lib_version-0.3.0.tar.gz]
+[2024-05-19 13:22:52] INFO root fetch - processPackages [remla24-team8-lib-version]: Remove: archive file [/home/abi/fetcher/tmp/remla24_team8_lib_version-0.3.1.tar.gz]
+[2024-05-19 13:22:52] INFO root fetch - main [MainThread]: End processing [remla24-team8-lib-version]: success
+[2024-05-19 13:22:52] INFO root fetch - main [MainThread]: Store serial: [23275830]
