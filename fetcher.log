@@ -1921,3 +1921,18 @@
 [2024-05-19 03:21:49] WARNING root fetch - processPackages [codex]: Skipping package: exceeds size limit 18352583>=10485760
 [2024-05-19 03:21:49] INFO root fetch - main [MainThread]: End processing [codex] error
 [2024-05-19 03:21:49] INFO root fetch - main [MainThread]: Store serial: [23272358]
+[2024-05-19 03:23:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272358]
+[2024-05-19 03:23:58] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 03:23:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyschwab
+[2024-05-19 03:23:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: opvious
+[2024-05-19 03:23:58] WARNING root fetch - processPackages [pyschwab]: Skipping, unable to determine old version
+[2024-05-19 03:23:58] INFO root fetch - main [MainThread]: End processing [pyschwab] error
+[2024-05-19 03:23:58] INFO root fetch - processPackages [opvious]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-05-19 03:23:58] INFO root fetch - processPackages [opvious]: Downloading https://files.pythonhosted.org/packages/d1/8f/b7e05d9b24e4dd1af2b9eab96fa7d1f97af088ed0836d9d8cfdb60c51360/opvious-0.9.5.tar.gz
+[2024-05-19 03:23:59] INFO root fetch - processPackages [opvious]: Downloading https://files.pythonhosted.org/packages/c2/c3/e2b95ca71e91eb624497389cb2391d3310907b4f9f25dee1a75b99798c14/opvious-0.9.6.tar.gz
+[2024-05-19 03:23:59] INFO root fetch - processPackages [opvious]: executing diffoscope
+[2024-05-19 03:23:59] INFO root fetch - processPackages [opvious]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opvious-0.9.5.tar.gz tmp/opvious-0.9.6.tar.gz --markdown 20240519/o/opvious/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-05-19 03:23:59] INFO root fetch - processPackages [opvious]: Remove: archive file [/home/abi/fetcher/tmp/opvious-0.9.5.tar.gz]
+[2024-05-19 03:23:59] INFO root fetch - processPackages [opvious]: Remove: archive file [/home/abi/fetcher/tmp/opvious-0.9.6.tar.gz]
+[2024-05-19 03:23:59] INFO root fetch - main [MainThread]: End processing [opvious]: success
+[2024-05-19 03:23:59] INFO root fetch - main [MainThread]: Store serial: [23272366]
