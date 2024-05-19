@@ -7780,3 +7780,45 @@
 [2024-05-19 11:40:31] INFO root fetch - processPackages [python-sdk-remote]: Remove: archive file [/home/abi/fetcher/tmp/python_sdk_remote-0.0.99.tar.gz]
 [2024-05-19 11:40:31] INFO root fetch - main [MainThread]: End processing [python-sdk-remote]: success
 [2024-05-19 11:40:31] INFO root fetch - main [MainThread]: Store serial: [23275164]
+[2024-05-19 11:42:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275164]
+[2024-05-19 11:42:39] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 11:42:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pharmacodynamicz
+[2024-05-19 11:42:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: quart-rate-limiter
+[2024-05-19 11:42:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: anipy-api
+[2024-05-19 11:42:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aa-ledger
+[2024-05-19 11:42:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: anipy-cli
+[2024-05-19 11:42:40] INFO root fetch - processPackages [aa-ledger]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-05-19 11:42:40] INFO root fetch - processPackages [aa-ledger]: Downloading https://files.pythonhosted.org/packages/bf/71/12103a164f247517183c7237a4673eaf10d682068ee55d393f48ae766a52/aa_ledger-0.3.4.tar.gz
+[2024-05-19 11:42:40] INFO root fetch - processPackages [quart-rate-limiter]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-19 11:42:40] WARNING root fetch - processPackages [pharmacodynamicz]: Skipping, unable to determine old version
+[2024-05-19 11:42:40] INFO root fetch - main [MainThread]: End processing [pharmacodynamicz] error
+[2024-05-19 11:42:40] INFO root fetch - processPackages [anipy-api]: New version: [3.0.5] Old Version: [3.0.4]
+[2024-05-19 11:42:40] INFO root fetch - processPackages [anipy-cli]: New version: [3.0.5] Old Version: [3.0.4]
+[2024-05-19 11:42:40] INFO root fetch - processPackages [quart-rate-limiter]: Downloading https://files.pythonhosted.org/packages/2b/70/c456febb81e89b89d9fff424d1ddf1753efffbb6854afaf70de85633df78/quart_rate_limiter-0.8.0.tar.gz
+[2024-05-19 11:42:40] INFO root fetch - processPackages [anipy-api]: Downloading https://files.pythonhosted.org/packages/0b/eb/6ca4e28b10dce284a479ac881201ce11bcbafe13a3e1cea95c73dcc2c1df/anipy_api-3.0.4.tar.gz
+[2024-05-19 11:42:40] INFO root fetch - processPackages [anipy-cli]: Downloading https://files.pythonhosted.org/packages/7e/e3/383cc3a47e3170d23bc024f314098683c66198427a9c2ae0867c474cef14/anipy_cli-3.0.4.tar.gz
+[2024-05-19 11:42:40] INFO root fetch - processPackages [aa-ledger]: Downloading https://files.pythonhosted.org/packages/94/6d/4fa9ace6d0602ca0f53b77af5bf6e52ffa390c5a69745fd2f6f02e538d90/aa_ledger-0.3.5.tar.gz
+[2024-05-19 11:42:40] INFO root fetch - processPackages [aa-ledger]: executing diffoscope
+[2024-05-19 11:42:40] INFO root fetch - processPackages [aa-ledger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aa_ledger-0.3.4.tar.gz tmp/aa_ledger-0.3.5.tar.gz --markdown 20240519/a/aa-ledger/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-05-19 11:42:40] INFO root fetch - processPackages [quart-rate-limiter]: Downloading https://files.pythonhosted.org/packages/80/60/ecdd6313dddd4d3ed117fde35a5fc236caa285fae57c5e11d7373ca1bdfa/quart_rate_limiter-0.9.0.tar.gz
+[2024-05-19 11:42:40] INFO root fetch - processPackages [anipy-api]: Downloading https://files.pythonhosted.org/packages/e9/c9/d52719d7d12968fc6061cde1ff70b883d2a9735d5c16a791aa2d01ad7c8a/anipy_api-3.0.5.tar.gz
+[2024-05-19 11:42:40] INFO root fetch - processPackages [anipy-cli]: Downloading https://files.pythonhosted.org/packages/01/f2/be8be09edaed9570500c43502bb7eeb5a7a66ee71a9b219a55b0cc20d1c4/anipy_cli-3.0.5.tar.gz
+[2024-05-19 11:42:40] INFO root fetch - processPackages [quart-rate-limiter]: executing diffoscope
+[2024-05-19 11:42:40] INFO root fetch - processPackages [quart-rate-limiter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quart_rate_limiter-0.8.0.tar.gz tmp/quart_rate_limiter-0.9.0.tar.gz --markdown 20240519/q/quart-rate-limiter/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-19 11:42:40] INFO root fetch - processPackages [anipy-api]: executing diffoscope
+[2024-05-19 11:42:40] INFO root fetch - processPackages [anipy-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anipy_api-3.0.4.tar.gz tmp/anipy_api-3.0.5.tar.gz --markdown 20240519/a/anipy-api/3.0.4-3.0.5/README.md --exclude *.pyd
+[2024-05-19 11:42:40] INFO root fetch - processPackages [anipy-cli]: executing diffoscope
+[2024-05-19 11:42:40] INFO root fetch - processPackages [anipy-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anipy_cli-3.0.4.tar.gz tmp/anipy_cli-3.0.5.tar.gz --markdown 20240519/a/anipy-cli/3.0.4-3.0.5/README.md --exclude *.pyd
+[2024-05-19 11:42:41] INFO root fetch - processPackages [quart-rate-limiter]: Remove: archive file [/home/abi/fetcher/tmp/quart_rate_limiter-0.8.0.tar.gz]
+[2024-05-19 11:42:41] INFO root fetch - processPackages [quart-rate-limiter]: Remove: archive file [/home/abi/fetcher/tmp/quart_rate_limiter-0.9.0.tar.gz]
+[2024-05-19 11:42:41] INFO root fetch - main [MainThread]: End processing [quart-rate-limiter]: success
+[2024-05-19 11:42:41] INFO root fetch - processPackages [anipy-api]: Remove: archive file [/home/abi/fetcher/tmp/anipy_api-3.0.4.tar.gz]
+[2024-05-19 11:42:41] INFO root fetch - processPackages [anipy-api]: Remove: archive file [/home/abi/fetcher/tmp/anipy_api-3.0.5.tar.gz]
+[2024-05-19 11:42:41] INFO root fetch - main [MainThread]: End processing [anipy-api]: success
+[2024-05-19 11:42:41] INFO root fetch - processPackages [anipy-cli]: Remove: archive file [/home/abi/fetcher/tmp/anipy_cli-3.0.4.tar.gz]
+[2024-05-19 11:42:41] INFO root fetch - processPackages [anipy-cli]: Remove: archive file [/home/abi/fetcher/tmp/anipy_cli-3.0.5.tar.gz]
+[2024-05-19 11:42:41] INFO root fetch - main [MainThread]: End processing [anipy-cli]: success
+[2024-05-19 11:42:41] INFO root fetch - processPackages [aa-ledger]: Remove: archive file [/home/abi/fetcher/tmp/aa_ledger-0.3.4.tar.gz]
+[2024-05-19 11:42:41] INFO root fetch - processPackages [aa-ledger]: Remove: archive file [/home/abi/fetcher/tmp/aa_ledger-0.3.5.tar.gz]
+[2024-05-19 11:42:41] INFO root fetch - main [MainThread]: End processing [aa-ledger]: success
+[2024-05-19 11:42:41] INFO root fetch - main [MainThread]: Store serial: [23275181]
