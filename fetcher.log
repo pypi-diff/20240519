@@ -21526,3 +21526,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 23:47:46] INFO root fetch - processPackages [tencentcloud-sdk-python-wedata]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-wedata-3.0.999.tar.gz]
 [2024-05-19 23:47:46] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-wedata]: success
 [2024-05-19 23:47:46] INFO root fetch - main [MainThread]: Store serial: [23281402]
+[2024-05-19 23:49:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23281402]
+[2024-05-19 23:49:55] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 23:49:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: radioelementz
+[2024-05-19 23:49:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: skfolio
+[2024-05-19 23:49:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: testit-cli
+[2024-05-19 23:49:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: abcli
+[2024-05-19 23:49:55] INFO root fetch - processPackages [abcli]: New version: [8.184.1] Old Version: [8.182.1]
+[2024-05-19 23:49:55] WARNING root fetch - processPackages [radioelementz]: Skipping, unable to determine old version
+[2024-05-19 23:49:55] INFO root fetch - main [MainThread]: End processing [radioelementz] error
+[2024-05-19 23:49:55] INFO root fetch - processPackages [skfolio]: New version: [0.2.0] Old Version: [0.1.3]
+[2024-05-19 23:49:55] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/ea/bc/d11ede22c34d04789f848f615e9a813ebcc5bb8945793feb7da9ada826eb/abcli-8.182.1.tar.gz
+[2024-05-19 23:49:55] INFO root fetch - processPackages [testit-cli]: New version: [2.0.0] Old Version: [1.5.0]
+[2024-05-19 23:49:55] INFO root fetch - processPackages [skfolio]: Downloading https://files.pythonhosted.org/packages/8c/d4/c3843a661165d864ae0003aa1bf11252fcd8bd57e1863c76984ae7d7665e/skfolio-0.1.3.tar.gz
+[2024-05-19 23:49:55] INFO root fetch - processPackages [testit-cli]: Downloading https://files.pythonhosted.org/packages/4f/1a/a5a04194d28d24dd155ffc12db77726989f6a5ea9c73ffe74cc4b5f89352/testit-cli-1.5.0.tar.gz
+[2024-05-19 23:49:55] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/6f/e7/49f43580acabfad049efccc1cf69f0552bb8ec5397317f0fb2d07be5c46a/abcli-8.184.1.tar.gz
+[2024-05-19 23:49:56] INFO root fetch - processPackages [abcli]: executing diffoscope
+[2024-05-19 23:49:56] INFO root fetch - processPackages [abcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abcli-8.182.1.tar.gz tmp/abcli-8.184.1.tar.gz --markdown 20240519/a/abcli/8.182.1-8.184.1/README.md --exclude *.pyd
+[2024-05-19 23:49:56] INFO root fetch - processPackages [testit-cli]: Downloading https://files.pythonhosted.org/packages/0b/9c/b84929b098c0f3598ae59a71a6b0d4951a37236388c713f219530e71d977/testit_cli-2.0.0.tar.gz
+[2024-05-19 23:49:56] INFO root fetch - processPackages [testit-cli]: executing diffoscope
+[2024-05-19 23:49:56] INFO root fetch - processPackages [testit-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/testit-cli-1.5.0.tar.gz tmp/testit_cli-2.0.0.tar.gz --markdown 20240519/t/testit-cli/1.5.0-2.0.0/README.md --exclude *.pyd
+[2024-05-19 23:49:56] INFO root fetch - processPackages [skfolio]: Downloading https://files.pythonhosted.org/packages/17/d6/292be8fc58a8f0bc5bb7aaa9f615fc172f6181c7be9b07b03b2d4c60be58/skfolio-0.2.0.tar.gz
+[2024-05-19 23:49:56] INFO root fetch - processPackages [skfolio]: executing diffoscope
+[2024-05-19 23:49:56] INFO root fetch - processPackages [skfolio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skfolio-0.1.3.tar.gz tmp/skfolio-0.2.0.tar.gz --markdown 20240519/s/skfolio/0.1.3-0.2.0/README.md --exclude *.pyd
+[2024-05-19 23:49:56] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-8.182.1.tar.gz]
+[2024-05-19 23:49:56] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-8.184.1.tar.gz]
+[2024-05-19 23:49:56] INFO root fetch - main [MainThread]: End processing [abcli]: success
+[2024-05-19 23:49:56] INFO root fetch - processPackages [testit-cli]: Remove: archive file [/home/abi/fetcher/tmp/testit-cli-1.5.0.tar.gz]
+[2024-05-19 23:49:56] INFO root fetch - processPackages [testit-cli]: Remove: archive file [/home/abi/fetcher/tmp/testit_cli-2.0.0.tar.gz]
+[2024-05-19 23:49:56] INFO root fetch - main [MainThread]: End processing [testit-cli]: success
+[2024-05-19 23:49:57] INFO root fetch - processPackages [skfolio]: Remove: archive file [/home/abi/fetcher/tmp/skfolio-0.1.3.tar.gz]
+[2024-05-19 23:49:57] INFO root fetch - processPackages [skfolio]: Remove: archive file [/home/abi/fetcher/tmp/skfolio-0.2.0.tar.gz]
+[2024-05-19 23:49:57] INFO root fetch - main [MainThread]: End processing [skfolio]: success
+[2024-05-19 23:49:57] INFO root fetch - main [MainThread]: Store serial: [23281422]
