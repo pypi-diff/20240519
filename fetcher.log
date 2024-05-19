@@ -8631,3 +8631,15 @@
 [2024-05-19 12:39:38] INFO root fetch - processPackages [psqlparse2]: Remove: archive file [/home/abi/fetcher/tmp/psqlparse2-0.0.6.tar.gz]
 [2024-05-19 12:39:38] INFO root fetch - main [MainThread]: End processing [psqlparse2]: success
 [2024-05-19 12:39:38] INFO root fetch - main [MainThread]: Store serial: [23275580]
+[2024-05-19 12:41:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275580]
+[2024-05-19 12:41:47] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 12:41:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CVE-2023-27524
+[2024-05-19 12:41:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aprendo
+[2024-05-19 12:41:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rix-template
+[2024-05-19 12:41:47] WARNING root fetch - processPackages [rix-template]: Skipping, unable to determine old version
+[2024-05-19 12:41:47] INFO root fetch - main [MainThread]: End processing [rix-template] error
+[2024-05-19 12:41:47] WARNING root fetch - processPackages [aprendo]: Skipping, unable to determine old version
+[2024-05-19 12:41:47] INFO root fetch - main [MainThread]: End processing [aprendo] error
+[2024-05-19 12:41:47] WARNING root fetch - processPackages [CVE-2023-27524]: Skipping, unable to determine old version
+[2024-05-19 12:41:47] INFO root fetch - main [MainThread]: End processing [CVE-2023-27524] error
+[2024-05-19 12:41:47] INFO root fetch - main [MainThread]: Store serial: [23275597]
