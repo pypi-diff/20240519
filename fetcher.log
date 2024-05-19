@@ -2752,3 +2752,33 @@
 [2024-05-19 04:27:02] INFO root fetch - processPackages [naif-eop-high-prec]: Remove: archive file [/home/abi/fetcher/tmp/naif_eop_high_prec-2024.5.18.tar.gz]
 [2024-05-19 04:27:02] INFO root fetch - main [MainThread]: End processing [naif-eop-high-prec]: success
 [2024-05-19 04:27:02] INFO root fetch - main [MainThread]: Store serial: [23272798]
+[2024-05-19 04:29:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272798]
+[2024-05-19 04:29:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 04:29:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flyflowclient
+[2024-05-19 04:29:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cs.debug
+[2024-05-19 04:29:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cs.cmdutils
+[2024-05-19 04:29:18] INFO root fetch - processPackages [flyflowclient]: New version: [1.14.9] Old Version: [1.14.8]
+[2024-05-19 04:29:18] INFO root fetch - processPackages [cs.debug]: New version: [20240519] Old Version: [20240423]
+[2024-05-19 04:29:18] INFO root fetch - processPackages [cs.cmdutils]: New version: [20240519] Old Version: [20240422]
+[2024-05-19 04:29:18] INFO root fetch - processPackages [flyflowclient]: Downloading https://files.pythonhosted.org/packages/52/19/188911b120fc670fd18c079aa0e0ec20d15ac0c355875f16867e60aeff25/flyflowclient-1.14.8.tar.gz
+[2024-05-19 04:29:18] INFO root fetch - processPackages [cs.debug]: Downloading https://files.pythonhosted.org/packages/fb/6a/0568e6655a849d48ad930024f1b71ce2d0af2cf9d4f7c0ef81e02c5d47eb/cs.debug-20240423.tar.gz
+[2024-05-19 04:29:18] INFO root fetch - processPackages [flyflowclient]: Downloading https://files.pythonhosted.org/packages/f0/19/28a95b8cd2400eb88c6cb39bb8cf76e4d268621d5b5d68a4a533c6a3a69d/flyflowclient-1.14.9.tar.gz
+[2024-05-19 04:29:18] INFO root fetch - processPackages [cs.debug]: Downloading https://files.pythonhosted.org/packages/09/5d/e44fd90501aa5fec6ec826f6a8b87157fa2b1a26b7b3201071dcb5640c90/cs.debug-20240519.tar.gz
+[2024-05-19 04:29:18] INFO root fetch - processPackages [flyflowclient]: executing diffoscope
+[2024-05-19 04:29:18] INFO root fetch - processPackages [flyflowclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flyflowclient-1.14.8.tar.gz tmp/flyflowclient-1.14.9.tar.gz --markdown 20240519/f/flyflowclient/1.14.8-1.14.9/README.md --exclude *.pyd
+[2024-05-19 04:29:19] INFO root fetch - processPackages [cs.debug]: executing diffoscope
+[2024-05-19 04:29:19] INFO root fetch - processPackages [cs.debug]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs.debug-20240423.tar.gz tmp/cs.debug-20240519.tar.gz --markdown 20240519/c/cs.debug/20240423-20240519/README.md --exclude *.pyd
+[2024-05-19 04:29:19] INFO root fetch - processPackages [cs.cmdutils]: Downloading https://files.pythonhosted.org/packages/07/c1/404cb89a74e50f75723271d78fb5e0c8ecc8657e9e6a447b5a53954cbb98/cs.cmdutils-20240422.tar.gz
+[2024-05-19 04:29:19] INFO root fetch - processPackages [cs.cmdutils]: Downloading https://files.pythonhosted.org/packages/26/ad/3b6714e7f63b8a87e0acb59c758952513967a59c333a487bcefcafa20859/cs.cmdutils-20240519.tar.gz
+[2024-05-19 04:29:19] INFO root fetch - processPackages [flyflowclient]: Remove: archive file [/home/abi/fetcher/tmp/flyflowclient-1.14.8.tar.gz]
+[2024-05-19 04:29:19] INFO root fetch - processPackages [flyflowclient]: Remove: archive file [/home/abi/fetcher/tmp/flyflowclient-1.14.9.tar.gz]
+[2024-05-19 04:29:19] INFO root fetch - main [MainThread]: End processing [flyflowclient]: success
+[2024-05-19 04:29:19] INFO root fetch - processPackages [cs.debug]: Remove: archive file [/home/abi/fetcher/tmp/cs.debug-20240423.tar.gz]
+[2024-05-19 04:29:19] INFO root fetch - processPackages [cs.debug]: Remove: archive file [/home/abi/fetcher/tmp/cs.debug-20240519.tar.gz]
+[2024-05-19 04:29:19] INFO root fetch - main [MainThread]: End processing [cs.debug]: success
+[2024-05-19 04:29:19] INFO root fetch - processPackages [cs.cmdutils]: executing diffoscope
+[2024-05-19 04:29:19] INFO root fetch - processPackages [cs.cmdutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs.cmdutils-20240422.tar.gz tmp/cs.cmdutils-20240519.tar.gz --markdown 20240519/c/cs.cmdutils/20240422-20240519/README.md --exclude *.pyd
+[2024-05-19 04:29:20] INFO root fetch - processPackages [cs.cmdutils]: Remove: archive file [/home/abi/fetcher/tmp/cs.cmdutils-20240422.tar.gz]
+[2024-05-19 04:29:20] INFO root fetch - processPackages [cs.cmdutils]: Remove: archive file [/home/abi/fetcher/tmp/cs.cmdutils-20240519.tar.gz]
+[2024-05-19 04:29:20] INFO root fetch - main [MainThread]: End processing [cs.cmdutils]: success
+[2024-05-19 04:29:20] INFO root fetch - main [MainThread]: Store serial: [23272807]
