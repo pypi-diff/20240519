@@ -3422,3 +3422,18 @@
 [2024-05-19 05:41:11] WARNING root fetch - processPackages [spacy-thai]: Skipping package: exceeds size limit 15708592>=10485760
 [2024-05-19 05:41:11] INFO root fetch - main [MainThread]: End processing [spacy-thai] error
 [2024-05-19 05:41:11] INFO root fetch - main [MainThread]: Store serial: [23273056]
+[2024-05-19 05:43:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273056]
+[2024-05-19 05:43:19] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 05:43:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: model-explorer-onnx
+[2024-05-19 05:43:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chebelz
+[2024-05-19 05:43:19] INFO root fetch - processPackages [model-explorer-onnx]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-19 05:43:19] INFO root fetch - processPackages [model-explorer-onnx]: Downloading https://files.pythonhosted.org/packages/a9/01/d182f5f056bf8d0fbf3f250c46e7bfc5df27cf684263064647d83896cbc1/model_explorer_onnx-0.1.7.tar.gz
+[2024-05-19 05:43:19] WARNING root fetch - processPackages [chebelz]: Skipping, unable to determine old version
+[2024-05-19 05:43:19] INFO root fetch - main [MainThread]: End processing [chebelz] error
+[2024-05-19 05:43:20] INFO root fetch - processPackages [model-explorer-onnx]: Downloading https://files.pythonhosted.org/packages/67/26/fdf6264572a070fb0c98b109fdfb191de0287e4973f0accdcfcabca32a06/model_explorer_onnx-0.1.8.tar.gz
+[2024-05-19 05:43:20] INFO root fetch - processPackages [model-explorer-onnx]: executing diffoscope
+[2024-05-19 05:43:20] INFO root fetch - processPackages [model-explorer-onnx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/model_explorer_onnx-0.1.7.tar.gz tmp/model_explorer_onnx-0.1.8.tar.gz --markdown 20240519/m/model-explorer-onnx/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-19 05:43:20] INFO root fetch - processPackages [model-explorer-onnx]: Remove: archive file [/home/abi/fetcher/tmp/model_explorer_onnx-0.1.7.tar.gz]
+[2024-05-19 05:43:20] INFO root fetch - processPackages [model-explorer-onnx]: Remove: archive file [/home/abi/fetcher/tmp/model_explorer_onnx-0.1.8.tar.gz]
+[2024-05-19 05:43:20] INFO root fetch - main [MainThread]: End processing [model-explorer-onnx]: success
+[2024-05-19 05:43:20] INFO root fetch - main [MainThread]: Store serial: [23273063]
