@@ -7411,3 +7411,18 @@
 [2024-05-19 11:05:46] INFO root fetch - processPackages [autogluon.tabular]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.tabular-1.1.1b20240518.tar.gz]
 [2024-05-19 11:05:46] INFO root fetch - main [MainThread]: End processing [autogluon.tabular]: success
 [2024-05-19 11:05:46] INFO root fetch - main [MainThread]: Store serial: [23274917]
+[2024-05-19 11:07:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274917]
+[2024-05-19 11:07:55] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 11:07:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gadapt
+[2024-05-19 11:07:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PynyHTM
+[2024-05-19 11:07:55] INFO root fetch - processPackages [gadapt]: New version: [0.4.0] Old Version: [0.3.6]
+[2024-05-19 11:07:55] WARNING root fetch - processPackages [PynyHTM]: Skipping, unable to determine old version
+[2024-05-19 11:07:55] INFO root fetch - main [MainThread]: End processing [PynyHTM] error
+[2024-05-19 11:07:55] INFO root fetch - processPackages [gadapt]: Downloading https://files.pythonhosted.org/packages/d3/e7/17448ab318205de6bf7145038d80e264d53452281e9ac882c0820ebe12aa/gadapt-0.3.6.tar.gz
+[2024-05-19 11:07:55] INFO root fetch - processPackages [gadapt]: Downloading https://files.pythonhosted.org/packages/a7/12/3521d54f0af93a6d446fa47530a607aabf3836a5c56b9900ea2c591d16fa/gadapt-0.4.0.tar.gz
+[2024-05-19 11:07:55] INFO root fetch - processPackages [gadapt]: executing diffoscope
+[2024-05-19 11:07:55] INFO root fetch - processPackages [gadapt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gadapt-0.3.6.tar.gz tmp/gadapt-0.4.0.tar.gz --markdown 20240519/g/gadapt/0.3.6-0.4.0/README.md --exclude *.pyd
+[2024-05-19 11:07:56] INFO root fetch - processPackages [gadapt]: Remove: archive file [/home/abi/fetcher/tmp/gadapt-0.3.6.tar.gz]
+[2024-05-19 11:07:56] INFO root fetch - processPackages [gadapt]: Remove: archive file [/home/abi/fetcher/tmp/gadapt-0.4.0.tar.gz]
+[2024-05-19 11:07:56] INFO root fetch - main [MainThread]: End processing [gadapt]: success
+[2024-05-19 11:07:56] INFO root fetch - main [MainThread]: Store serial: [23274928]
