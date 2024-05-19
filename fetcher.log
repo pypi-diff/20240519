@@ -10294,3 +10294,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 14:23:53] INFO root fetch - processPackages [checkov]: Remove: archive file [/home/abi/fetcher/tmp/checkov-3.2.96.tar.gz]
 [2024-05-19 14:23:53] INFO root fetch - main [MainThread]: End processing [checkov]: success
 [2024-05-19 14:23:53] INFO root fetch - main [MainThread]: Store serial: [23276245]
+[2024-05-19 14:25:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276245]
+[2024-05-19 14:26:02] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 14:26:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cnl2feedcrawler
+[2024-05-19 14:26:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: data-prep-toolkit-kfp
+[2024-05-19 14:26:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spotinst-agent-beta
+[2024-05-19 14:26:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: calcaneofibularz
+[2024-05-19 14:26:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: SQLConn
+[2024-05-19 14:26:02] INFO root fetch - processPackages [data-prep-toolkit-kfp]: New version: [0.1.0] Old Version: [0.0.1.dev9]
+[2024-05-19 14:26:02] WARNING root fetch - processPackages [calcaneofibularz]: Skipping, unable to determine old version
+[2024-05-19 14:26:02] INFO root fetch - main [MainThread]: End processing [calcaneofibularz] error
+[2024-05-19 14:26:02] INFO root fetch - processPackages [spotinst-agent-beta]: New version: [2.2.288] Old Version: [2.2.287]
+[2024-05-19 14:26:02] INFO root fetch - processPackages [cnl2feedcrawler]: New version: [2.1.0] Old Version: [2.0.3]
+[2024-05-19 14:26:02] INFO root fetch - processPackages [SQLConn]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 14:26:03] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Downloading https://files.pythonhosted.org/packages/ba/bf/e95575aad408e2aa50198d2c293f708992db973fc14a205c8aaefd64e700/data_prep_toolkit_kfp-0.0.1.dev9.tar.gz
+[2024-05-19 14:26:03] INFO root fetch - processPackages [spotinst-agent-beta]: Downloading https://files.pythonhosted.org/packages/5c/b7/4679f4eb032516d0298b095698989948d2b0ffd6d2fe30599b24618b8fc9/spotinst-agent-beta-2.2.287.tar.gz
+[2024-05-19 14:26:03] INFO root fetch - processPackages [cnl2feedcrawler]: Downloading https://files.pythonhosted.org/packages/38/07/03cefec23f68baadb051a4b0d17e9cf7268791fa765221bfeba853e180a6/cnl2feedcrawler-2.0.3.tar.gz
+[2024-05-19 14:26:03] INFO root fetch - processPackages [SQLConn]: Downloading https://files.pythonhosted.org/packages/87/8c/681230a743c60daa7a6b59cb9dac1dfe1866bb26dffc5783f1a1f35b40c9/SQLConn-0.0.8.tar.gz
+[2024-05-19 14:26:03] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Downloading https://files.pythonhosted.org/packages/c5/c8/8d6d7be956979a103c6894ce424548dff678de6bfc85be8018d305469e67/data_prep_toolkit_kfp-0.1.0.tar.gz
+[2024-05-19 14:26:03] INFO root fetch - processPackages [cnl2feedcrawler]: Downloading https://files.pythonhosted.org/packages/be/53/17c0f9974589714c69e2b2f824373cc844e5fc3f754f04a9288c6d557334/cnl2feedcrawler-2.1.0.tar.gz
+[2024-05-19 14:26:03] INFO root fetch - processPackages [spotinst-agent-beta]: Downloading https://files.pythonhosted.org/packages/98/f6/7bd1270354a993d3ddfe332ed924a9d3ecebd742bbb24462fea6cda14541/spotinst-agent-beta-2.2.288.tar.gz
+[2024-05-19 14:26:03] INFO root fetch - processPackages [data-prep-toolkit-kfp]: executing diffoscope
+[2024-05-19 14:26:03] INFO root fetch - processPackages [data-prep-toolkit-kfp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_prep_toolkit_kfp-0.0.1.dev9.tar.gz tmp/data_prep_toolkit_kfp-0.1.0.tar.gz --markdown 20240519/d/data-prep-toolkit-kfp/0.0.1.dev9-0.1.0/README.md --exclude *.pyd
+[2024-05-19 14:26:03] INFO root fetch - processPackages [cnl2feedcrawler]: executing diffoscope
+[2024-05-19 14:26:03] INFO root fetch - processPackages [cnl2feedcrawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cnl2feedcrawler-2.0.3.tar.gz tmp/cnl2feedcrawler-2.1.0.tar.gz --markdown 20240519/c/cnl2feedcrawler/2.0.3-2.1.0/README.md --exclude *.pyd
+[2024-05-19 14:26:03] INFO root fetch - processPackages [SQLConn]: Downloading https://files.pythonhosted.org/packages/95/50/1363f4cc946bff2defd839576dc120017604a8f2df57f5524e654352de60/SQLConn-0.0.9.tar.gz
+[2024-05-19 14:26:03] INFO root fetch - processPackages [spotinst-agent-beta]: executing diffoscope
+[2024-05-19 14:26:03] INFO root fetch - processPackages [spotinst-agent-beta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotinst-agent-beta-2.2.287.tar.gz tmp/spotinst-agent-beta-2.2.288.tar.gz --markdown 20240519/s/spotinst-agent-beta/2.2.287-2.2.288/README.md --exclude *.pyd
+[2024-05-19 14:26:03] INFO root fetch - processPackages [SQLConn]: executing diffoscope
+[2024-05-19 14:26:03] INFO root fetch - processPackages [SQLConn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SQLConn-0.0.8.tar.gz tmp/SQLConn-0.0.9.tar.gz --markdown 20240519/S/SQLConn/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 14:26:04] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_toolkit_kfp-0.0.1.dev9.tar.gz]
+[2024-05-19 14:26:04] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_toolkit_kfp-0.1.0.tar.gz]
+[2024-05-19 14:26:04] INFO root fetch - main [MainThread]: End processing [data-prep-toolkit-kfp]: success
+[2024-05-19 14:26:04] INFO root fetch - processPackages [spotinst-agent-beta]: Remove: archive file [/home/abi/fetcher/tmp/spotinst-agent-beta-2.2.287.tar.gz]
+[2024-05-19 14:26:04] INFO root fetch - processPackages [spotinst-agent-beta]: Remove: archive file [/home/abi/fetcher/tmp/spotinst-agent-beta-2.2.288.tar.gz]
+[2024-05-19 14:26:04] INFO root fetch - main [MainThread]: End processing [spotinst-agent-beta]: success
+[2024-05-19 14:26:04] INFO root fetch - processPackages [SQLConn]: Remove: archive file [/home/abi/fetcher/tmp/SQLConn-0.0.8.tar.gz]
+[2024-05-19 14:26:04] INFO root fetch - processPackages [SQLConn]: Remove: archive file [/home/abi/fetcher/tmp/SQLConn-0.0.9.tar.gz]
+[2024-05-19 14:26:04] INFO root fetch - main [MainThread]: End processing [SQLConn]: success
+[2024-05-19 14:26:04] INFO root fetch - processPackages [cnl2feedcrawler]: Remove: archive file [/home/abi/fetcher/tmp/cnl2feedcrawler-2.0.3.tar.gz]
+[2024-05-19 14:26:04] INFO root fetch - processPackages [cnl2feedcrawler]: Remove: archive file [/home/abi/fetcher/tmp/cnl2feedcrawler-2.1.0.tar.gz]
+[2024-05-19 14:26:04] INFO root fetch - main [MainThread]: End processing [cnl2feedcrawler]: success
+[2024-05-19 14:26:04] INFO root fetch - main [MainThread]: Store serial: [23276259]
