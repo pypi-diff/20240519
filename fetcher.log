@@ -7483,3 +7483,70 @@
 [2024-05-19 11:14:26] WARNING root fetch - processPackages [pydaab]: Skipping, unable to determine old version
 [2024-05-19 11:14:26] INFO root fetch - main [MainThread]: End processing [pydaab] error
 [2024-05-19 11:14:26] INFO root fetch - main [MainThread]: Store serial: [23274955]
+[2024-05-19 11:16:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274955]
+[2024-05-19 11:16:36] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-05-19 11:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spanishconjugator
+[2024-05-19 11:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: binary-to-text
+[2024-05-19 11:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: curvesimilarities
+[2024-05-19 11:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spanishconjugator
+[2024-05-19 11:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wwbot
+[2024-05-19 11:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nvfuser-cu121
+[2024-05-19 11:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: simpleaudio-patched
+[2024-05-19 11:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pix2text
+[2024-05-19 11:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: phasianidz
+[2024-05-19 11:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: nvfuser-cu118
+[2024-05-19 11:16:37] WARNING root fetch - processPackages [wwbot]: Skipping, unable to determine old version
+[2024-05-19 11:16:37] INFO root fetch - main [MainThread]: End processing [wwbot] error
+[2024-05-19 11:16:37] INFO root fetch - processPackages [nvfuser-cu121]: New version: [0.2.5.dev20240518] Old Version: [0.2.4.dev20240517]
+[2024-05-19 11:16:37] INFO root fetch - processPackages [nvfuser-cu118]: New version: [0.2.5.dev20240518] Old Version: [0.2.4.dev20240517]
+[2024-05-19 11:16:37] INFO root fetch - processPackages [pix2text]: New version: [1.1.0.3] Old Version: [1.1.0.2]
+[2024-05-19 11:16:37] WARNING root fetch - processPackages [curvesimilarities]: Skipping, unable to determine old version
+[2024-05-19 11:16:37] INFO root fetch - main [MainThread]: End processing [curvesimilarities] error
+[2024-05-19 11:16:37] INFO root fetch - processPackages [binary-to-text]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-19 11:16:37] WARNING root fetch - processPackages [phasianidz]: Skipping, unable to determine old version
+[2024-05-19 11:16:37] INFO root fetch - main [MainThread]: End processing [phasianidz] error
+[2024-05-19 11:16:37] WARNING root fetch - processPackages [simpleaudio-patched]: Skipping, unable to determine old version
+[2024-05-19 11:16:37] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-19 11:16:37] INFO root fetch - main [MainThread]: End processing [simpleaudio-patched] error
+[2024-05-19 11:16:37] INFO root fetch - processPackages [nvfuser-cu118]: Downloading https://files.pythonhosted.org/packages/b5/93/baf40d3d569ce99d43ddd65933a25c489310b0a1facdeab85766e38eb75d/nvfuser_cu118-0.2.4.dev20240517.tar.gz
+[2024-05-19 11:16:37] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-19 11:16:37] INFO root fetch - processPackages [nvfuser-cu121]: Downloading https://files.pythonhosted.org/packages/03/db/48e729369362e2c0fe2e657d38fe018c9eb30146c216ad2956680a8da469/nvfuser_cu121-0.2.4.dev20240517.tar.gz
+[2024-05-19 11:16:37] INFO root fetch - processPackages [pix2text]: Downloading https://files.pythonhosted.org/packages/e5/a0/6739e433ccdec6d2d0621e8ae66994a5197925a8aaa6a93eca3562d74513/pix2text-1.1.0.2.tar.gz
+[2024-05-19 11:16:37] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-19 11:16:37] INFO root fetch - processPackages [binary-to-text]: Downloading https://files.pythonhosted.org/packages/a4/14/27c7ffade5c310d5c0afd5d59c3b771480f2618574c766740a989c7b0cc9/binary_to_text-0.0.1.tar.gz
+[2024-05-19 11:16:37] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-19 11:16:37] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-19 11:16:37] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-19 11:16:37] INFO root fetch - processPackages [nvfuser-cu118]: Downloading https://files.pythonhosted.org/packages/66/de/0dfa9468cbc8391a10bf37e66548c480e4f39c2db26525cb6a5e1e2b7fb6/nvfuser_cu118-0.2.5.dev20240518.tar.gz
+[2024-05-19 11:16:37] INFO root fetch - processPackages [nvfuser-cu121]: Downloading https://files.pythonhosted.org/packages/b0/8e/2bff630eee1f5a52bc1fa3eba4b7d130fc213d33ed63faa383442310bd34/nvfuser_cu121-0.2.5.dev20240518.tar.gz
+[2024-05-19 11:16:37] INFO root fetch - processPackages [pix2text]: Downloading https://files.pythonhosted.org/packages/da/fa/ce0419545c9ab929ef0909d4644f9e5b2240d16568dcd1f7ca18ff2da56f/pix2text-1.1.0.3.tar.gz
+[2024-05-19 11:16:37] INFO root fetch - processPackages [binary-to-text]: Downloading https://files.pythonhosted.org/packages/f0/ab/4b2d3908dd4aea70efdce8374603b5ac11c5dadbf765621f69551c4d54c8/binary_to_text-0.0.2.tar.gz
+[2024-05-19 11:16:37] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-19 11:16:37] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240519/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-19 11:16:37] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-19 11:16:37] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240519/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-19 11:16:37] INFO root fetch - processPackages [nvfuser-cu118]: executing diffoscope
+[2024-05-19 11:16:37] INFO root fetch - processPackages [nvfuser-cu118]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu118-0.2.4.dev20240517.tar.gz tmp/nvfuser_cu118-0.2.5.dev20240518.tar.gz --markdown 20240519/n/nvfuser-cu118/0.2.4.dev20240517-0.2.5.dev20240518/README.md --exclude *.pyd
+[2024-05-19 11:16:37] INFO root fetch - processPackages [nvfuser-cu121]: executing diffoscope
+[2024-05-19 11:16:37] INFO root fetch - processPackages [nvfuser-cu121]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu121-0.2.4.dev20240517.tar.gz tmp/nvfuser_cu121-0.2.5.dev20240518.tar.gz --markdown 20240519/n/nvfuser-cu121/0.2.4.dev20240517-0.2.5.dev20240518/README.md --exclude *.pyd
+[2024-05-19 11:16:37] INFO root fetch - processPackages [binary-to-text]: executing diffoscope
+[2024-05-19 11:16:37] INFO root fetch - processPackages [binary-to-text]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/binary_to_text-0.0.1.tar.gz tmp/binary_to_text-0.0.2.tar.gz --markdown 20240519/b/binary-to-text/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-19 11:16:37] INFO root fetch - processPackages [pix2text]: executing diffoscope
+[2024-05-19 11:16:37] INFO root fetch - processPackages [pix2text]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pix2text-1.1.0.2.tar.gz tmp/pix2text-1.1.0.3.tar.gz --markdown 20240519/p/pix2text/1.1.0.2-1.1.0.3/README.md --exclude *.pyd
+[2024-05-19 11:16:38] INFO root fetch - processPackages [binary-to-text]: Remove: archive file [/home/abi/fetcher/tmp/binary_to_text-0.0.1.tar.gz]
+[2024-05-19 11:16:38] INFO root fetch - processPackages [binary-to-text]: Remove: archive file [/home/abi/fetcher/tmp/binary_to_text-0.0.2.tar.gz]
+[2024-05-19 11:16:38] INFO root fetch - main [MainThread]: End processing [binary-to-text]: success
+[2024-05-19 11:16:38] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-05-19 11:16:38] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-05-19 11:16:38] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-19 11:16:38] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-19 11:16:38] INFO root fetch - processPackages [nvfuser-cu118]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu118-0.2.4.dev20240517.tar.gz]
+[2024-05-19 11:16:38] INFO root fetch - processPackages [nvfuser-cu118]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu118-0.2.5.dev20240518.tar.gz]
+[2024-05-19 11:16:38] INFO root fetch - main [MainThread]: End processing [nvfuser-cu118]: success
+[2024-05-19 11:16:38] INFO root fetch - processPackages [nvfuser-cu121]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu121-0.2.4.dev20240517.tar.gz]
+[2024-05-19 11:16:38] INFO root fetch - processPackages [nvfuser-cu121]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu121-0.2.5.dev20240518.tar.gz]
+[2024-05-19 11:16:38] INFO root fetch - main [MainThread]: End processing [nvfuser-cu121]: success
+[2024-05-19 11:16:38] INFO root fetch - processPackages [pix2text]: Remove: archive file [/home/abi/fetcher/tmp/pix2text-1.1.0.2.tar.gz]
+[2024-05-19 11:16:38] INFO root fetch - processPackages [pix2text]: Remove: archive file [/home/abi/fetcher/tmp/pix2text-1.1.0.3.tar.gz]
+[2024-05-19 11:16:38] INFO root fetch - main [MainThread]: End processing [pix2text]: success
+[2024-05-19 11:16:38] INFO root fetch - main [MainThread]: Store serial: [23275016]
