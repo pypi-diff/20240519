@@ -1654,3 +1654,15 @@
 [2024-05-19 02:44:53] INFO root fetch - processPackages [tfds-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfds-nightly-4.9.4.dev202405180044.tar.gz]
 [2024-05-19 02:44:53] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
 [2024-05-19 02:44:53] INFO root fetch - main [MainThread]: Store serial: [23272192]
+[2024-05-19 02:46:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272192]
+[2024-05-19 02:47:01] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 02:47:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: RNASQLite
+[2024-05-19 02:47:02] INFO root fetch - processPackages [RNASQLite]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-19 02:47:02] INFO root fetch - processPackages [RNASQLite]: Downloading https://files.pythonhosted.org/packages/bf/2c/03a590532f9fce8feab1e1bc31deece67a47325245fad739292d70224f99/rnasqlite-0.1.4.tar.gz
+[2024-05-19 02:47:02] INFO root fetch - processPackages [RNASQLite]: Downloading https://files.pythonhosted.org/packages/6c/34/f80a8ef47e6424ad8fb1ef3c2b53dd2bdd0914f987aa33ec241491ee8e33/rnasqlite-0.1.5.tar.gz
+[2024-05-19 02:47:02] INFO root fetch - processPackages [RNASQLite]: executing diffoscope
+[2024-05-19 02:47:02] INFO root fetch - processPackages [RNASQLite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rnasqlite-0.1.4.tar.gz tmp/rnasqlite-0.1.5.tar.gz --markdown 20240519/R/RNASQLite/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-19 02:47:03] INFO root fetch - processPackages [RNASQLite]: Remove: archive file [/home/abi/fetcher/tmp/rnasqlite-0.1.4.tar.gz]
+[2024-05-19 02:47:03] INFO root fetch - processPackages [RNASQLite]: Remove: archive file [/home/abi/fetcher/tmp/rnasqlite-0.1.5.tar.gz]
+[2024-05-19 02:47:03] INFO root fetch - main [MainThread]: End processing [RNASQLite]: success
+[2024-05-19 02:47:03] INFO root fetch - main [MainThread]: Store serial: [23272196]
