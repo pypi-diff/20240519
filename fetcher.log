@@ -7036,3 +7036,36 @@
 [2024-05-19 10:41:24] WARNING root fetch - processPackages [pydaab]: Skipping, unable to determine old version
 [2024-05-19 10:41:24] INFO root fetch - main [MainThread]: End processing [pydaab] error
 [2024-05-19 10:41:24] INFO root fetch - main [MainThread]: Store serial: [23274721]
+[2024-05-19 10:43:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274721]
+[2024-05-19 10:43:32] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 10:43:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: iec-api
+[2024-05-19 10:43:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wwbot
+[2024-05-19 10:43:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: iac-init
+[2024-05-19 10:43:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: datayoga-core
+[2024-05-19 10:43:32] INFO root fetch - processPackages [iac-init]: New version: [0.7.5] Old Version: [0.7.4]
+[2024-05-19 10:43:32] WARNING root fetch - processPackages [wwbot]: Skipping, unable to determine old version
+[2024-05-19 10:43:32] INFO root fetch - main [MainThread]: End processing [wwbot] error
+[2024-05-19 10:43:32] INFO root fetch - processPackages [iac-init]: Downloading https://files.pythonhosted.org/packages/e4/f7/ac0d87d4c783e1312e1642790a7d1b3f1cd59cace8673f0d728bd8709d1f/iac_init-0.7.4.tar.gz
+[2024-05-19 10:43:32] INFO root fetch - processPackages [iec-api]: New version: [0.3.0] Old Version: [0.2.8]
+[2024-05-19 10:43:32] INFO root fetch - processPackages [datayoga-core]: New version: [1.99.0] Old Version: [1.98.0]
+[2024-05-19 10:43:33] INFO root fetch - processPackages [iec-api]: Downloading https://files.pythonhosted.org/packages/7f/cf/4472bb3fefbe8b5e4c1f9425608d821e94332e2815d8236713d592012272/iec_api-0.2.8.tar.gz
+[2024-05-19 10:43:33] INFO root fetch - processPackages [datayoga-core]: Downloading https://files.pythonhosted.org/packages/06/d4/4f896d2b8d6dd95f8cd85ef0cc6ee7139831bcf27cc81cb708a753cf395a/datayoga_core-1.98.0.tar.gz
+[2024-05-19 10:43:33] INFO root fetch - processPackages [iec-api]: Downloading https://files.pythonhosted.org/packages/c8/e4/8e04c8951dda3fbf68b1895f56c68a5c00040757508ef36ddef76bf38a53/iec_api-0.3.0.tar.gz
+[2024-05-19 10:43:33] INFO root fetch - processPackages [iac-init]: Downloading https://files.pythonhosted.org/packages/2b/b3/62165bd709fccfb66e155d325ee480eab253af6e7c6912bf688264e47c46/iac_init-0.7.5.tar.gz
+[2024-05-19 10:43:33] INFO root fetch - processPackages [iec-api]: executing diffoscope
+[2024-05-19 10:43:33] INFO root fetch - processPackages [iec-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iec_api-0.2.8.tar.gz tmp/iec_api-0.3.0.tar.gz --markdown 20240519/i/iec-api/0.2.8-0.3.0/README.md --exclude *.pyd
+[2024-05-19 10:43:33] INFO root fetch - processPackages [iac-init]: executing diffoscope
+[2024-05-19 10:43:33] INFO root fetch - processPackages [iac-init]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iac_init-0.7.4.tar.gz tmp/iac_init-0.7.5.tar.gz --markdown 20240519/i/iac-init/0.7.4-0.7.5/README.md --exclude *.pyd
+[2024-05-19 10:43:33] INFO root fetch - processPackages [datayoga-core]: Downloading https://files.pythonhosted.org/packages/c5/ff/03cec2c97c7a5f55513c9919d9d987f4e3bb96856745e2ea0a04445bad8b/datayoga_core-1.99.0.tar.gz
+[2024-05-19 10:43:33] INFO root fetch - processPackages [datayoga-core]: executing diffoscope
+[2024-05-19 10:43:33] INFO root fetch - processPackages [datayoga-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datayoga_core-1.98.0.tar.gz tmp/datayoga_core-1.99.0.tar.gz --markdown 20240519/d/datayoga-core/1.98.0-1.99.0/README.md --exclude *.pyd
+[2024-05-19 10:43:34] INFO root fetch - processPackages [iec-api]: Remove: archive file [/home/abi/fetcher/tmp/iec_api-0.2.8.tar.gz]
+[2024-05-19 10:43:34] INFO root fetch - processPackages [iec-api]: Remove: archive file [/home/abi/fetcher/tmp/iec_api-0.3.0.tar.gz]
+[2024-05-19 10:43:34] INFO root fetch - main [MainThread]: End processing [iec-api]: success
+[2024-05-19 10:43:34] INFO root fetch - processPackages [datayoga-core]: Remove: archive file [/home/abi/fetcher/tmp/datayoga_core-1.98.0.tar.gz]
+[2024-05-19 10:43:34] INFO root fetch - processPackages [datayoga-core]: Remove: archive file [/home/abi/fetcher/tmp/datayoga_core-1.99.0.tar.gz]
+[2024-05-19 10:43:34] INFO root fetch - main [MainThread]: End processing [datayoga-core]: success
+[2024-05-19 10:43:34] INFO root fetch - processPackages [iac-init]: Remove: archive file [/home/abi/fetcher/tmp/iac_init-0.7.4.tar.gz]
+[2024-05-19 10:43:34] INFO root fetch - processPackages [iac-init]: Remove: archive file [/home/abi/fetcher/tmp/iac_init-0.7.5.tar.gz]
+[2024-05-19 10:43:34] INFO root fetch - main [MainThread]: End processing [iac-init]: success
+[2024-05-19 10:43:34] INFO root fetch - main [MainThread]: Store serial: [23274733]
