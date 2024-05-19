@@ -17291,3 +17291,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 21:23:08] INFO root fetch - processPackages [dann5]: Remove: archive file [/home/abi/fetcher/tmp/dann5-3.0.0.tar.gz]
 [2024-05-19 21:23:08] INFO root fetch - main [MainThread]: End processing [dann5]: success
 [2024-05-19 21:23:08] INFO root fetch - main [MainThread]: Store serial: [23279658]
+[2024-05-19 21:25:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279658]
+[2024-05-19 21:25:22] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-19 21:25:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gadapt
+[2024-05-19 21:25:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: coherent.test
+[2024-05-19 21:25:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flatpack
+[2024-05-19 21:25:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Simba-UW-tf-dev
+[2024-05-19 21:25:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wwpdb.utils.ws-utils
+[2024-05-19 21:25:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: haemophiliacz
+[2024-05-19 21:25:22] INFO root fetch - processPackages [gadapt]: New version: [0.4.4] Old Version: [0.4.3]
+[2024-05-19 21:25:22] INFO root fetch - processPackages [Simba-UW-tf-dev]: New version: [1.92.8] Old Version: [1.92.7]
+[2024-05-19 21:25:22] INFO root fetch - processPackages [coherent.test]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-05-19 21:25:22] INFO root fetch - processPackages [flatpack]: New version: [3.4.9] Old Version: [3.4.8]
+[2024-05-19 21:25:22] INFO root fetch - processPackages [gadapt]: Downloading https://files.pythonhosted.org/packages/9d/ac/1c74f88ff5507d8f757bf9dfbe0251aad31e8d2a0a773a009c38000f0da3/gadapt-0.4.3.tar.gz
+[2024-05-19 21:25:22] WARNING root fetch - processPackages [haemophiliacz]: Skipping, unable to determine old version
+[2024-05-19 21:25:22] INFO root fetch - main [MainThread]: End processing [haemophiliacz] error
+[2024-05-19 21:25:22] INFO root fetch - processPackages [wwpdb.utils.ws-utils]: New version: [0.5.1] Old Version: [0.5]
+[2024-05-19 21:25:22] INFO root fetch - processPackages [Simba-UW-tf-dev]: Downloading https://files.pythonhosted.org/packages/b5/c5/e2bceb17b116650f24b366cb058f278d1e5885c67366837390f276f101d5/Simba-UW-tf-dev-1.92.7.tar.gz
+[2024-05-19 21:25:22] INFO root fetch - processPackages [coherent.test]: Downloading https://files.pythonhosted.org/packages/a1/3f/acb2a2bc6ad7ea6f58dd0a11162697f159f89848c9a6e1207592c16846fa/coherent_test-0.1.0.tar.gz
+[2024-05-19 21:25:22] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/92/5a/46a0817bd1cfcbeb0f041626a2cc2b28a97a17caa6609495cfb355a5d90e/flatpack-3.4.8.tar.gz
+[2024-05-19 21:25:22] INFO root fetch - processPackages [wwpdb.utils.ws-utils]: Downloading https://files.pythonhosted.org/packages/8f/a9/45da4519c2633bb3516113ffc219e8a9c57c55807f0106eefeb80af668e8/wwpdb.utils.ws_utils-0.5.tar.gz
+[2024-05-19 21:25:22] INFO root fetch - processPackages [coherent.test]: Downloading https://files.pythonhosted.org/packages/70/12/ca24458098ce4147f35f30ec5475c218dc2da0c26c678c60d430d4a6cc87/coherent_test-0.2.0.tar.gz
+[2024-05-19 21:25:22] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/29/b6/9545d80064161872f90e25faa6bb7dc31698e88762b3d442b5fb491967fd/flatpack-3.4.9.tar.gz
+[2024-05-19 21:25:22] INFO root fetch - processPackages [gadapt]: Downloading https://files.pythonhosted.org/packages/a7/ce/9ef6ffe40c121390396b9af0fe4f7ebbf61636896ae009a16cc84e18444d/gadapt-0.4.4.tar.gz
+[2024-05-19 21:25:23] INFO root fetch - processPackages [coherent.test]: executing diffoscope
+[2024-05-19 21:25:23] INFO root fetch - processPackages [coherent.test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coherent_test-0.1.0.tar.gz tmp/coherent_test-0.2.0.tar.gz --markdown 20240519/c/coherent.test/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-05-19 21:25:23] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-05-19 21:25:23] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.4.8.tar.gz tmp/flatpack-3.4.9.tar.gz --markdown 20240519/f/flatpack/3.4.8-3.4.9/README.md --exclude *.pyd
+[2024-05-19 21:25:23] INFO root fetch - processPackages [gadapt]: executing diffoscope
+[2024-05-19 21:25:23] INFO root fetch - processPackages [gadapt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gadapt-0.4.3.tar.gz tmp/gadapt-0.4.4.tar.gz --markdown 20240519/g/gadapt/0.4.3-0.4.4/README.md --exclude *.pyd
+[2024-05-19 21:25:23] INFO root fetch - processPackages [Simba-UW-tf-dev]: Downloading https://files.pythonhosted.org/packages/1f/e6/1baae8a45c6f4b9ceae28f7143ca15a40d92040e792391695401235730e8/Simba-UW-tf-dev-1.92.8.tar.gz
+[2024-05-19 21:25:23] INFO root fetch - processPackages [wwpdb.utils.ws-utils]: Downloading https://files.pythonhosted.org/packages/1e/0c/6c2e68ec4d4c3a039ff13a1ffc5d09da8d18e812ba1e0849d6340ccd5057/wwpdb_utils_ws_utils-0.5.1.tar.gz
+[2024-05-19 21:25:23] INFO root fetch - processPackages [wwpdb.utils.ws-utils]: executing diffoscope
+[2024-05-19 21:25:23] INFO root fetch - processPackages [wwpdb.utils.ws-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wwpdb.utils.ws_utils-0.5.tar.gz tmp/wwpdb_utils_ws_utils-0.5.1.tar.gz --markdown 20240519/w/wwpdb.utils.ws-utils/0.5-0.5.1/README.md --exclude *.pyd
+[2024-05-19 21:25:23] INFO root fetch - processPackages [coherent.test]: Remove: archive file [/home/abi/fetcher/tmp/coherent_test-0.1.0.tar.gz]
+[2024-05-19 21:25:23] INFO root fetch - processPackages [coherent.test]: Remove: archive file [/home/abi/fetcher/tmp/coherent_test-0.2.0.tar.gz]
+[2024-05-19 21:25:23] INFO root fetch - main [MainThread]: End processing [coherent.test]: success
+[2024-05-19 21:25:23] INFO root fetch - processPackages [Simba-UW-tf-dev]: executing diffoscope
+[2024-05-19 21:25:23] INFO root fetch - processPackages [Simba-UW-tf-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Simba-UW-tf-dev-1.92.7.tar.gz tmp/Simba-UW-tf-dev-1.92.8.tar.gz --markdown 20240519/S/Simba-UW-tf-dev/1.92.7-1.92.8/README.md --exclude *.pyd
+[2024-05-19 21:25:23] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.8.tar.gz]
+[2024-05-19 21:25:23] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.9.tar.gz]
+[2024-05-19 21:25:23] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-05-19 21:25:23] INFO root fetch - processPackages [gadapt]: Remove: archive file [/home/abi/fetcher/tmp/gadapt-0.4.3.tar.gz]
+[2024-05-19 21:25:23] INFO root fetch - processPackages [gadapt]: Remove: archive file [/home/abi/fetcher/tmp/gadapt-0.4.4.tar.gz]
+[2024-05-19 21:25:23] INFO root fetch - main [MainThread]: End processing [gadapt]: success
+[2024-05-19 21:25:24] INFO root fetch - processPackages [wwpdb.utils.ws-utils]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb.utils.ws_utils-0.5.tar.gz]
+[2024-05-19 21:25:24] INFO root fetch - processPackages [wwpdb.utils.ws-utils]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb_utils_ws_utils-0.5.1.tar.gz]
+[2024-05-19 21:25:24] INFO root fetch - main [MainThread]: End processing [wwpdb.utils.ws-utils]: success
+[2024-05-19 21:25:26] INFO root fetch - processPackages [Simba-UW-tf-dev]: Remove: archive file [/home/abi/fetcher/tmp/Simba-UW-tf-dev-1.92.7.tar.gz]
+[2024-05-19 21:25:26] INFO root fetch - processPackages [Simba-UW-tf-dev]: Remove: archive file [/home/abi/fetcher/tmp/Simba-UW-tf-dev-1.92.8.tar.gz]
+[2024-05-19 21:25:26] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
+[2024-05-19 21:25:26] INFO root fetch - main [MainThread]: Store serial: [23279676]
