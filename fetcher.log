@@ -6362,3 +6362,51 @@
 [2024-05-19 09:50:35] INFO root fetch - processPackages [iac-init]: Remove: archive file [/home/abi/fetcher/tmp/iac_init-0.7.4.tar.gz]
 [2024-05-19 09:50:35] INFO root fetch - main [MainThread]: End processing [iac-init]: success
 [2024-05-19 09:50:35] INFO root fetch - main [MainThread]: Store serial: [23274353]
+[2024-05-19 09:52:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274353]
+[2024-05-19 09:52:48] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 09:52:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: clean-alchemy
+[2024-05-19 09:52:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gymconnectx
+[2024-05-19 09:52:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: REVHubInterface
+[2024-05-19 09:52:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: e4ting
+[2024-05-19 09:52:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo12-addon-web-widget-one2many-product-picker
+[2024-05-19 09:52:48] INFO root fetch - processPackages [odoo12-addon-web-widget-one2many-product-picker]: New version: [12.0.3.0.1] Old Version: [12.0.3.0.0.99.dev5]
+[2024-05-19 09:52:48] INFO root fetch - processPackages [REVHubInterface]: New version: [1.3.3.dev9] Old Version: [1.3.3.dev8]
+[2024-05-19 09:52:48] INFO root fetch - processPackages [gymconnectx]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-19 09:52:48] INFO root fetch - processPackages [e4ting]: New version: [1.1.3319] Old Version: [1.1.2438]
+[2024-05-19 09:52:48] INFO root fetch - processPackages [clean-alchemy]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-19 09:52:48] INFO root fetch - processPackages [REVHubInterface]: Downloading https://files.pythonhosted.org/packages/0d/90/3c74a9c7310ba2da2e673cb67d3e8c65e5460209759ef2fa291efce82ab5/revhubinterface-1.3.3.dev8.tar.gz
+[2024-05-19 09:52:48] INFO root fetch - processPackages [odoo12-addon-web-widget-one2many-product-picker]: Downloading https://files.pythonhosted.org/packages/bc/a4/49eafd9219cf0e4cd901badac74ae1f0ef790f04e497cd670ecd22d2d57d/odoo12_addon_web_widget_one2many_product_picker-12.0.3.0.0.99.dev5-py3-none-any.whl
+[2024-05-19 09:52:48] INFO root fetch - processPackages [gymconnectx]: Downloading https://files.pythonhosted.org/packages/0d/d9/a6b70e1236bdcd8f855d3e646d3baec73585dbf1070f545d2bdfdab674c7/gymconnectx-1.0.3.tar.gz
+[2024-05-19 09:52:48] INFO root fetch - processPackages [clean-alchemy]: Downloading https://files.pythonhosted.org/packages/36/b4/aec2776de97d42c68ad39f356e228953adce45501a820c6c5dfdb773e20a/clean-alchemy-0.1.8.tar.gz
+[2024-05-19 09:52:48] INFO root fetch - processPackages [e4ting]: Downloading https://files.pythonhosted.org/packages/43/1a/239a4bba9c48b20a307cb99a0f97a9d491a16a2c9438ca9d7bf6fe346952/e4ting-1.1.2438-py3-none-any.whl
+[2024-05-19 09:52:48] INFO root fetch - processPackages [REVHubInterface]: Downloading https://files.pythonhosted.org/packages/47/93/e2ab5da20dcdca793ff04faa5aa5f38bb3f149e7bf70c77c15ac7d127689/revhubinterface-1.3.3.dev9.tar.gz
+[2024-05-19 09:52:48] INFO root fetch - processPackages [REVHubInterface]: executing diffoscope
+[2024-05-19 09:52:48] INFO root fetch - processPackages [REVHubInterface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/revhubinterface-1.3.3.dev8.tar.gz tmp/revhubinterface-1.3.3.dev9.tar.gz --markdown 20240519/R/REVHubInterface/1.3.3.dev8-1.3.3.dev9/README.md --exclude *.pyd
+[2024-05-19 09:52:48] INFO root fetch - processPackages [odoo12-addon-web-widget-one2many-product-picker]: Downloading https://files.pythonhosted.org/packages/00/b0/708adb306f082b321181ac6c165eb3c66f34afc211dd9dff7448acf5b60f/odoo12_addon_web_widget_one2many_product_picker-12.0.3.0.1-py3-none-any.whl
+[2024-05-19 09:52:48] INFO root fetch - processPackages [gymconnectx]: Downloading https://files.pythonhosted.org/packages/89/37/b797f355e05b9bc71cc75e1402e896a5b9bad5da387401328dcf712bec98/gymconnectx-1.0.4.tar.gz
+[2024-05-19 09:52:48] INFO root fetch - processPackages [clean-alchemy]: Downloading https://files.pythonhosted.org/packages/5b/e4/60134ac4287e46e229febe044f53137cf8baa2858710c19174580ad9c18c/clean-alchemy-0.1.9.tar.gz
+[2024-05-19 09:52:49] INFO root fetch - processPackages [e4ting]: Downloading https://files.pythonhosted.org/packages/cd/1f/cbe08224118da3b9cdd990847e6ce17f91ffbd9eed9daacffb09053dc5eb/e4ting-1.1.3319-py3-none-any.whl
+[2024-05-19 09:52:49] INFO root fetch - processPackages [gymconnectx]: executing diffoscope
+[2024-05-19 09:52:49] INFO root fetch - processPackages [gymconnectx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gymconnectx-1.0.3.tar.gz tmp/gymconnectx-1.0.4.tar.gz --markdown 20240519/g/gymconnectx/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-19 09:52:49] INFO root fetch - processPackages [clean-alchemy]: executing diffoscope
+[2024-05-19 09:52:49] INFO root fetch - processPackages [clean-alchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clean-alchemy-0.1.8.tar.gz tmp/clean-alchemy-0.1.9.tar.gz --markdown 20240519/c/clean-alchemy/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-19 09:52:49] INFO root fetch - processPackages [e4ting]: executing diffoscope
+[2024-05-19 09:52:49] INFO root fetch - processPackages [e4ting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/e4ting-1.1.2438-py3-none-any.whl.zip tmp/e4ting-1.1.3319-py3-none-any.whl.zip --markdown 20240519/e/e4ting/1.1.2438-1.1.3319/README.md --exclude *.pyd
+[2024-05-19 09:52:49] INFO root fetch - processPackages [odoo12-addon-web-widget-one2many-product-picker]: executing diffoscope
+[2024-05-19 09:52:49] INFO root fetch - processPackages [odoo12-addon-web-widget-one2many-product-picker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_web_widget_one2many_product_picker-12.0.3.0.0.99.dev5-py3-none-any.whl.zip tmp/odoo12_addon_web_widget_one2many_product_picker-12.0.3.0.1-py3-none-any.whl.zip --markdown 20240519/o/odoo12-addon-web-widget-one2many-product-picker/12.0.3.0.0.99.dev5-12.0.3.0.1/README.md --exclude *.pyd
+[2024-05-19 09:52:49] INFO root fetch - processPackages [gymconnectx]: Remove: archive file [/home/abi/fetcher/tmp/gymconnectx-1.0.3.tar.gz]
+[2024-05-19 09:52:49] INFO root fetch - processPackages [gymconnectx]: Remove: archive file [/home/abi/fetcher/tmp/gymconnectx-1.0.4.tar.gz]
+[2024-05-19 09:52:49] INFO root fetch - main [MainThread]: End processing [gymconnectx]: success
+[2024-05-19 09:52:49] INFO root fetch - processPackages [REVHubInterface]: Remove: archive file [/home/abi/fetcher/tmp/revhubinterface-1.3.3.dev8.tar.gz]
+[2024-05-19 09:52:49] INFO root fetch - processPackages [REVHubInterface]: Remove: archive file [/home/abi/fetcher/tmp/revhubinterface-1.3.3.dev9.tar.gz]
+[2024-05-19 09:52:49] INFO root fetch - main [MainThread]: End processing [REVHubInterface]: success
+[2024-05-19 09:52:49] INFO root fetch - processPackages [clean-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/clean-alchemy-0.1.8.tar.gz]
+[2024-05-19 09:52:49] INFO root fetch - processPackages [clean-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/clean-alchemy-0.1.9.tar.gz]
+[2024-05-19 09:52:49] INFO root fetch - main [MainThread]: End processing [clean-alchemy]: success
+[2024-05-19 09:52:49] INFO root fetch - processPackages [e4ting]: Remove: archive file [/home/abi/fetcher/tmp/e4ting-1.1.2438-py3-none-any.whl.zip]
+[2024-05-19 09:52:49] INFO root fetch - processPackages [e4ting]: Remove: archive file [/home/abi/fetcher/tmp/e4ting-1.1.3319-py3-none-any.whl.zip]
+[2024-05-19 09:52:49] INFO root fetch - main [MainThread]: End processing [e4ting]: success
+[2024-05-19 09:52:50] INFO root fetch - processPackages [odoo12-addon-web-widget-one2many-product-picker]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_web_widget_one2many_product_picker-12.0.3.0.0.99.dev5-py3-none-any.whl.zip]
+[2024-05-19 09:52:50] INFO root fetch - processPackages [odoo12-addon-web-widget-one2many-product-picker]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_web_widget_one2many_product_picker-12.0.3.0.1-py3-none-any.whl.zip]
+[2024-05-19 09:52:50] INFO root fetch - main [MainThread]: End processing [odoo12-addon-web-widget-one2many-product-picker]: success
+[2024-05-19 09:52:50] INFO root fetch - main [MainThread]: Store serial: [23274366]
