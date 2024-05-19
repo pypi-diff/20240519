@@ -18300,3 +18300,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 22:21:43] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.99.tar.gz]
 [2024-05-19 22:21:43] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
 [2024-05-19 22:21:43] INFO root fetch - main [MainThread]: Store serial: [23280109]
+[2024-05-19 22:23:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23280109]
+[2024-05-19 22:23:51] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 22:23:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: reasonify-headless
+[2024-05-19 22:23:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-mqtt-framework
+[2024-05-19 22:23:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: arctix
+[2024-05-19 22:23:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: max-random-baseline
+[2024-05-19 22:23:52] WARNING root fetch - processPackages [max-random-baseline]: Skipping, unable to determine old version
+[2024-05-19 22:23:52] INFO root fetch - main [MainThread]: End processing [max-random-baseline] error
+[2024-05-19 22:23:52] INFO root fetch - processPackages [python-mqtt-framework]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-19 22:23:52] INFO root fetch - processPackages [reasonify-headless]: New version: [0.1.0a2] Old Version: [0.1.0a1]
+[2024-05-19 22:23:52] INFO root fetch - processPackages [arctix]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-19 22:23:52] INFO root fetch - processPackages [python-mqtt-framework]: Downloading https://files.pythonhosted.org/packages/9c/8a/3295b839fa52e9e8396b8388d699013bb29617bb770f4b33b0c856bb5061/python_mqtt_framework-0.0.2.tar.gz
+[2024-05-19 22:23:52] INFO root fetch - processPackages [reasonify-headless]: Downloading https://files.pythonhosted.org/packages/84/00/22558f7cbcb52e033c74e3bdcd543c58228faa8848635c0f2907567346a4/reasonify_headless-0.1.0a1.tar.gz
+[2024-05-19 22:23:52] INFO root fetch - processPackages [arctix]: Downloading https://files.pythonhosted.org/packages/69/9b/07396bffe832abd616f7f3c15fd60074f69587fc3d381950ffa0e70b2268/arctix-0.0.5.tar.gz
+[2024-05-19 22:23:52] INFO root fetch - processPackages [python-mqtt-framework]: Downloading https://files.pythonhosted.org/packages/9a/cf/28e8aecd51e623de5db136737d912bb168e9e67cd32fe25b03dabd3626a4/python_mqtt_framework-0.0.3.tar.gz
+[2024-05-19 22:23:52] INFO root fetch - processPackages [reasonify-headless]: Downloading https://files.pythonhosted.org/packages/02/39/035b4f7d33b44eb769b20fd7a2bd1f8ecfe19b4fed29bb732843a915e2f9/reasonify_headless-0.1.0a2.tar.gz
+[2024-05-19 22:23:52] INFO root fetch - processPackages [python-mqtt-framework]: executing diffoscope
+[2024-05-19 22:23:52] INFO root fetch - processPackages [python-mqtt-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_mqtt_framework-0.0.2.tar.gz tmp/python_mqtt_framework-0.0.3.tar.gz --markdown 20240519/p/python-mqtt-framework/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-19 22:23:52] INFO root fetch - processPackages [reasonify-headless]: executing diffoscope
+[2024-05-19 22:23:52] INFO root fetch - processPackages [reasonify-headless]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reasonify_headless-0.1.0a1.tar.gz tmp/reasonify_headless-0.1.0a2.tar.gz --markdown 20240519/r/reasonify-headless/0.1.0a1-0.1.0a2/README.md --exclude *.pyd
+[2024-05-19 22:23:52] INFO root fetch - processPackages [arctix]: Downloading https://files.pythonhosted.org/packages/4d/2a/9ab4ad06f5b0797abfac470547b0e662c273e2a8c93397787eee17522ffe/arctix-0.0.6.tar.gz
+[2024-05-19 22:23:52] INFO root fetch - processPackages [arctix]: executing diffoscope
+[2024-05-19 22:23:52] INFO root fetch - processPackages [arctix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arctix-0.0.5.tar.gz tmp/arctix-0.0.6.tar.gz --markdown 20240519/a/arctix/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-19 22:23:53] INFO root fetch - processPackages [reasonify-headless]: Remove: archive file [/home/abi/fetcher/tmp/reasonify_headless-0.1.0a1.tar.gz]
+[2024-05-19 22:23:53] INFO root fetch - processPackages [reasonify-headless]: Remove: archive file [/home/abi/fetcher/tmp/reasonify_headless-0.1.0a2.tar.gz]
+[2024-05-19 22:23:53] INFO root fetch - main [MainThread]: End processing [reasonify-headless]: success
+[2024-05-19 22:23:53] INFO root fetch - processPackages [python-mqtt-framework]: Remove: archive file [/home/abi/fetcher/tmp/python_mqtt_framework-0.0.2.tar.gz]
+[2024-05-19 22:23:53] INFO root fetch - processPackages [python-mqtt-framework]: Remove: archive file [/home/abi/fetcher/tmp/python_mqtt_framework-0.0.3.tar.gz]
+[2024-05-19 22:23:53] INFO root fetch - main [MainThread]: End processing [python-mqtt-framework]: success
+[2024-05-19 22:23:53] INFO root fetch - processPackages [arctix]: Remove: archive file [/home/abi/fetcher/tmp/arctix-0.0.5.tar.gz]
+[2024-05-19 22:23:53] INFO root fetch - processPackages [arctix]: Remove: archive file [/home/abi/fetcher/tmp/arctix-0.0.6.tar.gz]
+[2024-05-19 22:23:53] INFO root fetch - main [MainThread]: End processing [arctix]: success
+[2024-05-19 22:23:53] INFO root fetch - main [MainThread]: Store serial: [23280121]
