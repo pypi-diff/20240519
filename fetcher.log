@@ -3934,3 +3934,42 @@
 [2024-05-19 06:29:04] INFO root fetch - processPackages [reqs-cli]: Remove: archive file [/home/abi/fetcher/tmp/reqs_cli-0.20240517.2.post1.tar.gz]
 [2024-05-19 06:29:04] INFO root fetch - main [MainThread]: End processing [reqs-cli]: success
 [2024-05-19 06:29:04] INFO root fetch - main [MainThread]: Store serial: [23273260]
+[2024-05-19 06:31:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273260]
+[2024-05-19 06:31:12] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-19 06:33:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273260]
+[2024-05-19 06:33:18] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 06:33:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: med-imagetools
+[2024-05-19 06:33:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: donware
+[2024-05-19 06:33:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gink
+[2024-05-19 06:33:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gink
+[2024-05-19 06:33:18] INFO root fetch - processPackages [gink]: New version: [0.20240518.1716010702] Old Version: [0.20240516.1715898271]
+[2024-05-19 06:33:18] INFO root fetch - processPackages [gink]: New version: [0.20240518.1716010702] Old Version: [0.20240516.1715898271]
+[2024-05-19 06:33:18] INFO root fetch - processPackages [donware]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-19 06:33:18] INFO root fetch - processPackages [med-imagetools]: New version: [1.3.0] Old Version: [1.2.0.2]
+[2024-05-19 06:33:18] INFO root fetch - processPackages [gink]: Downloading https://files.pythonhosted.org/packages/98/00/baa0d237e1937cae8c607b2a24ef1a7e21f845d8dcdcf5fbdac1e1f94437/gink-0.20240516.1715898271.tar.gz
+[2024-05-19 06:33:18] INFO root fetch - processPackages [gink]: Downloading https://files.pythonhosted.org/packages/98/00/baa0d237e1937cae8c607b2a24ef1a7e21f845d8dcdcf5fbdac1e1f94437/gink-0.20240516.1715898271.tar.gz
+[2024-05-19 06:33:18] INFO root fetch - processPackages [med-imagetools]: Downloading https://files.pythonhosted.org/packages/8c/2f/94312e38ccfcc02f5736fcd5753d0c82de33479da9961bf6ce3ea543021c/med_imagetools-1.2.0.2-py3-none-any.whl
+[2024-05-19 06:33:18] INFO root fetch - processPackages [donware]: Downloading https://files.pythonhosted.org/packages/b6/8e/6279c7455ba2ded02e6d8b7675c22e35382803218049011a9578b7fde49b/donware-0.1.8.tar.gz
+[2024-05-19 06:33:18] INFO root fetch - processPackages [gink]: Downloading https://files.pythonhosted.org/packages/ef/3c/74c4183f0765fdff33fc8a36b874601dfecb94246d2e7e49644fcc5ce8ad/gink-0.20240518.1716010702.tar.gz
+[2024-05-19 06:33:18] INFO root fetch - processPackages [gink]: Downloading https://files.pythonhosted.org/packages/ef/3c/74c4183f0765fdff33fc8a36b874601dfecb94246d2e7e49644fcc5ce8ad/gink-0.20240518.1716010702.tar.gz
+[2024-05-19 06:33:18] INFO root fetch - processPackages [gink]: executing diffoscope
+[2024-05-19 06:33:18] INFO root fetch - processPackages [gink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gink-0.20240516.1715898271.tar.gz tmp/gink-0.20240518.1716010702.tar.gz --markdown 20240519/g/gink/0.20240516.1715898271-0.20240518.1716010702/README.md --exclude *.pyd
+[2024-05-19 06:33:18] INFO root fetch - processPackages [gink]: executing diffoscope
+[2024-05-19 06:33:18] INFO root fetch - processPackages [gink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gink-0.20240516.1715898271.tar.gz tmp/gink-0.20240518.1716010702.tar.gz --markdown 20240519/g/gink/0.20240516.1715898271-0.20240518.1716010702/README.md --exclude *.pyd
+[2024-05-19 06:33:18] INFO root fetch - processPackages [donware]: Downloading https://files.pythonhosted.org/packages/fe/8e/83b9db87c05ce764e53c9976cbc2389c98231b770ce8d64a986981faf472/donware-0.1.9.tar.gz
+[2024-05-19 06:33:19] INFO root fetch - processPackages [med-imagetools]: Downloading https://files.pythonhosted.org/packages/d5/13/bf654ef9a8b195ff0ab64cbe194f1aa504784ef196df4608918083fa48d7/med_imagetools-1.3.0.tar.gz
+[2024-05-19 06:33:19] INFO root fetch - processPackages [donware]: executing diffoscope
+[2024-05-19 06:33:19] INFO root fetch - processPackages [donware]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/donware-0.1.8.tar.gz tmp/donware-0.1.9.tar.gz --markdown 20240519/d/donware/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-19 06:33:19] INFO root fetch - processPackages [med-imagetools]: executing diffoscope
+[2024-05-19 06:33:19] INFO root fetch - processPackages [med-imagetools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/med_imagetools-1.2.0.2-py3-none-any.whl.zip tmp/med_imagetools-1.3.0.tar.gz --markdown 20240519/m/med-imagetools/1.2.0.2-1.3.0/README.md --exclude *.pyd
+[2024-05-19 06:33:19] INFO root fetch - processPackages [donware]: Remove: archive file [/home/abi/fetcher/tmp/donware-0.1.8.tar.gz]
+[2024-05-19 06:33:19] INFO root fetch - processPackages [donware]: Remove: archive file [/home/abi/fetcher/tmp/donware-0.1.9.tar.gz]
+[2024-05-19 06:33:19] INFO root fetch - main [MainThread]: End processing [donware]: success
+[2024-05-19 06:33:19] INFO root fetch - processPackages [gink]: Remove: archive file [/home/abi/fetcher/tmp/gink-0.20240516.1715898271.tar.gz]
+[2024-05-19 06:33:19] INFO root fetch - processPackages [gink]: Remove: archive file [/home/abi/fetcher/tmp/gink-0.20240518.1716010702.tar.gz]
+[2024-05-19 06:33:19] INFO root fetch - main [MainThread]: End processing [gink]: success
+[2024-05-19 06:33:19] INFO root fetch - processPackages [med-imagetools]: Remove: archive file [/home/abi/fetcher/tmp/med_imagetools-1.2.0.2-py3-none-any.whl.zip]
+[2024-05-19 06:33:19] INFO root fetch - processPackages [med-imagetools]: Remove: archive file [/home/abi/fetcher/tmp/med_imagetools-1.3.0.tar.gz]
+[2024-05-19 06:33:19] INFO root fetch - main [MainThread]: End processing [med-imagetools]: success
+[2024-05-19 06:33:19] INFO root fetch - main [MainThread]: End processing [gink]: success
+[2024-05-19 06:33:19] INFO root fetch - main [MainThread]: Store serial: [23273277]
