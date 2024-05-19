@@ -5220,3 +5220,27 @@
 [2024-05-19 08:26:59] INFO root fetch - processPackages [infinity-emb]: Remove: archive file [/home/abi/fetcher/tmp/infinity_emb-0.0.9.tar.gz]
 [2024-05-19 08:26:59] INFO root fetch - main [MainThread]: End processing [infinity-emb]: success
 [2024-05-19 08:26:59] INFO root fetch - main [MainThread]: Store serial: [23273814]
+[2024-05-19 08:29:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273814]
+[2024-05-19 08:29:08] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 08:29:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sr-decorator
+[2024-05-19 08:29:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pypomes-s3
+[2024-05-19 08:29:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo13-addons-oca-purchase-workflow
+[2024-05-19 08:29:08] INFO root fetch - processPackages [pypomes-s3]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-05-19 08:29:08] INFO root fetch - processPackages [pypomes-s3]: Downloading https://files.pythonhosted.org/packages/78/c0/d2e60f06d3ad3443cac0183fb363357557dfd31b33d9debe6a7d3e939ca6/pypomes_s3-0.3.4.tar.gz
+[2024-05-19 08:29:08] WARNING root fetch - processPackages [sr-decorator]: Skipping, unable to determine old version
+[2024-05-19 08:29:08] INFO root fetch - main [MainThread]: End processing [sr-decorator] error
+[2024-05-19 08:29:08] INFO root fetch - processPackages [odoo13-addons-oca-purchase-workflow]: New version: [13.0.20240518.0] Old Version: [13.0.20230612.0]
+[2024-05-19 08:29:09] INFO root fetch - processPackages [odoo13-addons-oca-purchase-workflow]: Downloading https://files.pythonhosted.org/packages/23/0d/947d677a6a1d0cb858ac5027ac9bfb39ba244e2c3de559eb7122e070238e/odoo13_addons_oca_purchase_workflow-13.0.20230612.0-py3-none-any.whl
+[2024-05-19 08:29:09] INFO root fetch - processPackages [pypomes-s3]: Downloading https://files.pythonhosted.org/packages/79/3e/d0ce54e683678b723eaf905e9e183f5ce544441a9bc6d11e93cc37b6228f/pypomes_s3-0.3.5.tar.gz
+[2024-05-19 08:29:09] INFO root fetch - processPackages [pypomes-s3]: executing diffoscope
+[2024-05-19 08:29:09] INFO root fetch - processPackages [pypomes-s3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypomes_s3-0.3.4.tar.gz tmp/pypomes_s3-0.3.5.tar.gz --markdown 20240519/p/pypomes-s3/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-05-19 08:29:09] INFO root fetch - processPackages [odoo13-addons-oca-purchase-workflow]: Downloading https://files.pythonhosted.org/packages/0a/21/0f4b6ce3663fb1fe85faefcab0e823be23d7e9dbad8e62a4677250a99204/odoo13_addons_oca_purchase_workflow-13.0.20240518.0-py3-none-any.whl
+[2024-05-19 08:29:09] INFO root fetch - processPackages [odoo13-addons-oca-purchase-workflow]: executing diffoscope
+[2024-05-19 08:29:09] INFO root fetch - processPackages [odoo13-addons-oca-purchase-workflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addons_oca_purchase_workflow-13.0.20230612.0-py3-none-any.whl.zip tmp/odoo13_addons_oca_purchase_workflow-13.0.20240518.0-py3-none-any.whl.zip --markdown 20240519/o/odoo13-addons-oca-purchase-workflow/13.0.20230612.0-13.0.20240518.0/README.md --exclude *.pyd
+[2024-05-19 08:29:09] INFO root fetch - processPackages [pypomes-s3]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_s3-0.3.4.tar.gz]
+[2024-05-19 08:29:09] INFO root fetch - processPackages [pypomes-s3]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_s3-0.3.5.tar.gz]
+[2024-05-19 08:29:09] INFO root fetch - main [MainThread]: End processing [pypomes-s3]: success
+[2024-05-19 08:29:10] INFO root fetch - processPackages [odoo13-addons-oca-purchase-workflow]: Remove: archive file [/home/abi/fetcher/tmp/odoo13_addons_oca_purchase_workflow-13.0.20230612.0-py3-none-any.whl.zip]
+[2024-05-19 08:29:10] INFO root fetch - processPackages [odoo13-addons-oca-purchase-workflow]: Remove: archive file [/home/abi/fetcher/tmp/odoo13_addons_oca_purchase_workflow-13.0.20240518.0-py3-none-any.whl.zip]
+[2024-05-19 08:29:10] INFO root fetch - main [MainThread]: End processing [odoo13-addons-oca-purchase-workflow]: success
+[2024-05-19 08:29:10] INFO root fetch - main [MainThread]: Store serial: [23273825]
