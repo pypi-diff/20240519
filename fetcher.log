@@ -12784,3 +12784,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 16:58:00] INFO root fetch - processPackages [digitalarztools]: Remove: archive file [/home/abi/fetcher/tmp/digitalarztools-0.1.9.tar.gz]
 [2024-05-19 16:58:00] INFO root fetch - main [MainThread]: End processing [digitalarztools]: success
 [2024-05-19 16:58:00] INFO root fetch - main [MainThread]: Store serial: [23277483]
+[2024-05-19 17:00:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277483]
+[2024-05-19 17:00:09] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 17:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: exagitatez
+[2024-05-19 17:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ibish
+[2024-05-19 17:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: discord-disnake
+[2024-05-19 17:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lib-version-urlphishing
+[2024-05-19 17:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: libsrg-apps
+[2024-05-19 17:00:09] INFO root fetch - processPackages [ibish]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-19 17:00:09] INFO root fetch - processPackages [lib-version-urlphishing]: New version: [2.1.0] Old Version: [2.0.9]
+[2024-05-19 17:00:10] INFO root fetch - processPackages [ibish]: Downloading https://files.pythonhosted.org/packages/de/48/06996b2be24414536719a54efebeca72080f5d9d578fe5019da400263386/ibish-1.0.2.tar.gz
+[2024-05-19 17:00:10] WARNING root fetch - processPackages [exagitatez]: Skipping, unable to determine old version
+[2024-05-19 17:00:10] INFO root fetch - main [MainThread]: End processing [exagitatez] error
+[2024-05-19 17:00:10] INFO root fetch - processPackages [lib-version-urlphishing]: Downloading https://files.pythonhosted.org/packages/f8/77/74db47dffc939151791554dd99fd92cbba4dbc86ad18b6d127b179dc830a/lib_version_urlphishing-2.0.9.tar.gz
+[2024-05-19 17:00:10] INFO root fetch - processPackages [discord-disnake]: New version: [2.3.0.2.post0] Old Version: [2.3.0.2]
+[2024-05-19 17:00:10] INFO root fetch - processPackages [libsrg-apps]: New version: [1.1.0] Old Version: [1.0.1]
+[2024-05-19 17:00:10] INFO root fetch - processPackages [ibish]: Downloading https://files.pythonhosted.org/packages/00/84/ccbc7eaccc77d17d42f112d6f584e87d6fe52a89091d10a66b789f061541/ibish-1.0.3.tar.gz
+[2024-05-19 17:00:10] INFO root fetch - processPackages [discord-disnake]: Downloading https://files.pythonhosted.org/packages/05/89/090edbd2526da0811d4a5e6b0114b8db2da19e7b7b1553f38a305798392d/discord-disnake-2.3.0.2.tar.gz
+[2024-05-19 17:00:10] INFO root fetch - processPackages [libsrg-apps]: Downloading https://files.pythonhosted.org/packages/5c/90/600ac8726d674e65b6a033eecd73dfd4a9b3b313e9028410fa72aa5c1066/libsrg_apps-1.0.1.tar.gz
+[2024-05-19 17:00:10] INFO root fetch - processPackages [ibish]: executing diffoscope
+[2024-05-19 17:00:10] INFO root fetch - processPackages [ibish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ibish-1.0.2.tar.gz tmp/ibish-1.0.3.tar.gz --markdown 20240519/i/ibish/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-19 17:00:10] INFO root fetch - processPackages [lib-version-urlphishing]: Downloading https://files.pythonhosted.org/packages/b8/15/11f155185448afd34ee6aaafe2505cfdfaaf062745905ff54491d8a2da24/lib_version_urlphishing-2.1.0.tar.gz
+[2024-05-19 17:00:10] INFO root fetch - processPackages [lib-version-urlphishing]: executing diffoscope
+[2024-05-19 17:00:10] INFO root fetch - processPackages [lib-version-urlphishing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib_version_urlphishing-2.0.9.tar.gz tmp/lib_version_urlphishing-2.1.0.tar.gz --markdown 20240519/l/lib-version-urlphishing/2.0.9-2.1.0/README.md --exclude *.pyd
+[2024-05-19 17:00:10] INFO root fetch - processPackages [discord-disnake]: Downloading https://files.pythonhosted.org/packages/8d/b5/d72865fc9bcbfa1d3e1eb9109ebe74f6af2a4440c441045e613f887cb1f7/discord_disnake-2.3.0.2.post0.tar.gz
+[2024-05-19 17:00:10] INFO root fetch - processPackages [discord-disnake]: executing diffoscope
+[2024-05-19 17:00:10] INFO root fetch - processPackages [discord-disnake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discord-disnake-2.3.0.2.tar.gz tmp/discord_disnake-2.3.0.2.post0.tar.gz --markdown 20240519/d/discord-disnake/2.3.0.2-2.3.0.2.post0/README.md --exclude *.pyd
+[2024-05-19 17:00:10] INFO root fetch - processPackages [ibish]: Remove: archive file [/home/abi/fetcher/tmp/ibish-1.0.2.tar.gz]
+[2024-05-19 17:00:10] INFO root fetch - processPackages [ibish]: Remove: archive file [/home/abi/fetcher/tmp/ibish-1.0.3.tar.gz]
+[2024-05-19 17:00:10] INFO root fetch - main [MainThread]: End processing [ibish]: success
+[2024-05-19 17:00:10] INFO root fetch - processPackages [libsrg-apps]: Downloading https://files.pythonhosted.org/packages/58/8f/7209cc75eeed4a1f1037348294151af7bdb8a41a894393b3ff4ea77a5cc3/libsrg_apps-1.1.0.tar.gz
+[2024-05-19 17:00:11] INFO root fetch - processPackages [lib-version-urlphishing]: Remove: archive file [/home/abi/fetcher/tmp/lib_version_urlphishing-2.0.9.tar.gz]
+[2024-05-19 17:00:11] INFO root fetch - processPackages [lib-version-urlphishing]: Remove: archive file [/home/abi/fetcher/tmp/lib_version_urlphishing-2.1.0.tar.gz]
+[2024-05-19 17:00:11] INFO root fetch - main [MainThread]: End processing [lib-version-urlphishing]: success
+[2024-05-19 17:00:11] INFO root fetch - processPackages [libsrg-apps]: executing diffoscope
+[2024-05-19 17:00:11] INFO root fetch - processPackages [libsrg-apps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libsrg_apps-1.0.1.tar.gz tmp/libsrg_apps-1.1.0.tar.gz --markdown 20240519/l/libsrg-apps/1.0.1-1.1.0/README.md --exclude *.pyd
+[2024-05-19 17:00:11] INFO root fetch - processPackages [discord-disnake]: Remove: archive file [/home/abi/fetcher/tmp/discord-disnake-2.3.0.2.tar.gz]
+[2024-05-19 17:00:11] INFO root fetch - processPackages [discord-disnake]: Remove: archive file [/home/abi/fetcher/tmp/discord_disnake-2.3.0.2.post0.tar.gz]
+[2024-05-19 17:00:11] INFO root fetch - main [MainThread]: End processing [discord-disnake]: success
+[2024-05-19 17:00:12] INFO root fetch - processPackages [libsrg-apps]: Remove: archive file [/home/abi/fetcher/tmp/libsrg_apps-1.0.1.tar.gz]
+[2024-05-19 17:00:12] INFO root fetch - processPackages [libsrg-apps]: Remove: archive file [/home/abi/fetcher/tmp/libsrg_apps-1.1.0.tar.gz]
+[2024-05-19 17:00:12] INFO root fetch - main [MainThread]: End processing [libsrg-apps]: success
+[2024-05-19 17:00:12] INFO root fetch - main [MainThread]: Store serial: [23277496]
