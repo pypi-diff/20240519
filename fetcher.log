@@ -8509,3 +8509,56 @@
 [2024-05-19 12:33:02] INFO root fetch - processPackages [verysimpletree]: Remove: archive file [/home/abi/fetcher/tmp/verysimpletree-0.1.1b0.tar.gz]
 [2024-05-19 12:33:02] INFO root fetch - main [MainThread]: End processing [verysimpletree]: success
 [2024-05-19 12:33:02] INFO root fetch - main [MainThread]: Store serial: [23275493]
+[2024-05-19 12:35:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275493]
+[2024-05-19 12:35:10] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-19 12:35:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gns3-gui
+[2024-05-19 12:35:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mybar
+[2024-05-19 12:35:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gns3-server
+[2024-05-19 12:35:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: maat-machine
+[2024-05-19 12:35:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pip-inside
+[2024-05-19 12:35:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gadapt
+[2024-05-19 12:35:11] INFO root fetch - processPackages [mybar]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-05-19 12:35:11] INFO root fetch - processPackages [maat-machine]: New version: [0.1.1b3] Old Version: [0.1.1b2]
+[2024-05-19 12:35:11] INFO root fetch - processPackages [gadapt]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-05-19 12:35:11] INFO root fetch - processPackages [mybar]: Downloading https://files.pythonhosted.org/packages/0e/c0/fa158a979e12e4ff92d61ba85b851319b3fea74eacbf23c4b49346ccffe6/mybar-0.9.1.tar.gz
+[2024-05-19 12:35:11] INFO root fetch - processPackages [maat-machine]: Downloading https://files.pythonhosted.org/packages/28/7a/db0d30829430aecf88215fbf12b8a82bd5f2dbc88fd9a848e587e0bc67c3/maat-machine-0.1.1b2.tar.gz
+[2024-05-19 12:35:11] INFO root fetch - processPackages [gadapt]: Downloading https://files.pythonhosted.org/packages/9f/8f/e573e653fa160b2db6020a806c4a03d561ea1d124e30cd55080141a23155/gadapt-0.4.1.tar.gz
+[2024-05-19 12:35:11] INFO root fetch - processPackages [pip-inside]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-19 12:35:11] INFO root fetch - processPackages [gns3-gui]: New version: [3.0.0b3] Old Version: [3.0.0b2]
+[2024-05-19 12:35:11] INFO root fetch - processPackages [gns3-server]: New version: [3.0.0b3] Old Version: [3.0.0b2]
+[2024-05-19 12:35:11] INFO root fetch - processPackages [gns3-gui]: Downloading https://files.pythonhosted.org/packages/81/b6/2f4f3563a6dcaf9e29e7825461430c9f644f78ff40ec9d292df82b761a78/gns3-gui-3.0.0b2.tar.gz
+[2024-05-19 12:35:11] INFO root fetch - processPackages [mybar]: Downloading https://files.pythonhosted.org/packages/56/f1/a358e017c72716356a95dc22a2a93cd5940ea76b94683acd08bd88fff497/mybar-0.9.2.tar.gz
+[2024-05-19 12:35:11] INFO root fetch - processPackages [pip-inside]: Downloading https://files.pythonhosted.org/packages/31/85/c65b034d8851cb72d7c89301b1924f50ba82a0168757624cf8d075f07c43/pip_inside-0.2.1.tar.gz
+[2024-05-19 12:35:11] INFO root fetch - processPackages [gns3-server]: Downloading https://files.pythonhosted.org/packages/e5/37/36b14ca0d13261b4e9adaa9e53de4d7e126c356752a802b4bb944bf29db0/gns3-server-3.0.0b2.tar.gz
+[2024-05-19 12:35:11] INFO root fetch - processPackages [maat-machine]: Downloading https://files.pythonhosted.org/packages/04/b8/218c351908880618764fd9f25f26a1c494352a835a3f6621d59f52ccc22e/maat-machine-0.1.1b3.tar.gz
+[2024-05-19 12:35:11] INFO root fetch - processPackages [gadapt]: Downloading https://files.pythonhosted.org/packages/a6/a1/dcc81aab2d97e0ff428d6902fe4a69efe59d73ed285bf69dbae865e0b92d/gadapt-0.4.2.tar.gz
+[2024-05-19 12:35:11] INFO root fetch - processPackages [mybar]: executing diffoscope
+[2024-05-19 12:35:11] INFO root fetch - processPackages [mybar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mybar-0.9.1.tar.gz tmp/mybar-0.9.2.tar.gz --markdown 20240519/m/mybar/0.9.1-0.9.2/README.md --exclude *.pyd
+[2024-05-19 12:35:11] WARNING root fetch - processPackages [gns3-server]: Skipping package: exceeds size limit 12146726>=10485760
+[2024-05-19 12:35:11] INFO root fetch - main [MainThread]: End processing [gns3-server] error
+[2024-05-19 12:35:11] INFO root fetch - processPackages [maat-machine]: executing diffoscope
+[2024-05-19 12:35:11] INFO root fetch - processPackages [maat-machine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maat-machine-0.1.1b2.tar.gz tmp/maat-machine-0.1.1b3.tar.gz --markdown 20240519/m/maat-machine/0.1.1b2-0.1.1b3/README.md --exclude *.pyd
+[2024-05-19 12:35:11] INFO root fetch - processPackages [gadapt]: executing diffoscope
+[2024-05-19 12:35:11] INFO root fetch - processPackages [gadapt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gadapt-0.4.1.tar.gz tmp/gadapt-0.4.2.tar.gz --markdown 20240519/g/gadapt/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-05-19 12:35:11] INFO root fetch - processPackages [pip-inside]: Downloading https://files.pythonhosted.org/packages/53/78/9b26753c26527d778fbe8e866cd7bacb48667bdf95db9f091390918820d8/pip_inside-0.2.2.tar.gz
+[2024-05-19 12:35:11] INFO root fetch - processPackages [gns3-gui]: Downloading https://files.pythonhosted.org/packages/3b/40/747700973d4c1b774176795665dac0031d9b69028d9dc2bb3c02ce3a49b2/gns3_gui-3.0.0b3.tar.gz
+[2024-05-19 12:35:11] INFO root fetch - processPackages [pip-inside]: executing diffoscope
+[2024-05-19 12:35:11] INFO root fetch - processPackages [pip-inside]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pip_inside-0.2.1.tar.gz tmp/pip_inside-0.2.2.tar.gz --markdown 20240519/p/pip-inside/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-19 12:35:12] INFO root fetch - processPackages [mybar]: Remove: archive file [/home/abi/fetcher/tmp/mybar-0.9.1.tar.gz]
+[2024-05-19 12:35:12] INFO root fetch - processPackages [mybar]: Remove: archive file [/home/abi/fetcher/tmp/mybar-0.9.2.tar.gz]
+[2024-05-19 12:35:12] INFO root fetch - main [MainThread]: End processing [mybar]: success
+[2024-05-19 12:35:12] INFO root fetch - processPackages [gns3-gui]: executing diffoscope
+[2024-05-19 12:35:12] INFO root fetch - processPackages [gns3-gui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gns3-gui-3.0.0b2.tar.gz tmp/gns3_gui-3.0.0b3.tar.gz --markdown 20240519/g/gns3-gui/3.0.0b2-3.0.0b3/README.md --exclude *.pyd
+[2024-05-19 12:35:12] INFO root fetch - processPackages [maat-machine]: Remove: archive file [/home/abi/fetcher/tmp/maat-machine-0.1.1b2.tar.gz]
+[2024-05-19 12:35:12] INFO root fetch - processPackages [maat-machine]: Remove: archive file [/home/abi/fetcher/tmp/maat-machine-0.1.1b3.tar.gz]
+[2024-05-19 12:35:12] INFO root fetch - main [MainThread]: End processing [maat-machine]: success
+[2024-05-19 12:35:12] INFO root fetch - processPackages [gadapt]: Remove: archive file [/home/abi/fetcher/tmp/gadapt-0.4.1.tar.gz]
+[2024-05-19 12:35:12] INFO root fetch - processPackages [gadapt]: Remove: archive file [/home/abi/fetcher/tmp/gadapt-0.4.2.tar.gz]
+[2024-05-19 12:35:12] INFO root fetch - main [MainThread]: End processing [gadapt]: success
+[2024-05-19 12:35:12] INFO root fetch - processPackages [pip-inside]: Remove: archive file [/home/abi/fetcher/tmp/pip_inside-0.2.1.tar.gz]
+[2024-05-19 12:35:12] INFO root fetch - processPackages [pip-inside]: Remove: archive file [/home/abi/fetcher/tmp/pip_inside-0.2.2.tar.gz]
+[2024-05-19 12:35:12] INFO root fetch - main [MainThread]: End processing [pip-inside]: success
+[2024-05-19 12:35:16] INFO root fetch - processPackages [gns3-gui]: Remove: archive file [/home/abi/fetcher/tmp/gns3-gui-3.0.0b2.tar.gz]
+[2024-05-19 12:35:16] INFO root fetch - processPackages [gns3-gui]: Remove: archive file [/home/abi/fetcher/tmp/gns3_gui-3.0.0b3.tar.gz]
+[2024-05-19 12:35:16] INFO root fetch - main [MainThread]: End processing [gns3-gui]: success
+[2024-05-19 12:35:16] INFO root fetch - main [MainThread]: Store serial: [23275510]
