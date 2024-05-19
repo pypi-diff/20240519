@@ -13149,3 +13149,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 17:19:56] INFO root fetch - processPackages [autosar-data]: Remove: archive file [/home/abi/fetcher/tmp/autosar_data-0.8.0-cp311-cp311-manylinux_2_17_armv7l.manylinux2014_armv7l.whl.zip]
 [2024-05-19 17:19:56] INFO root fetch - main [MainThread]: End processing [autosar-data]: success
 [2024-05-19 17:19:56] INFO root fetch - main [MainThread]: Store serial: [23277625]
+[2024-05-19 17:22:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277625]
+[2024-05-19 17:22:05] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 17:22:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xiaomusic
+[2024-05-19 17:22:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cterasdk
+[2024-05-19 17:22:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: batch-framework
+[2024-05-19 17:22:05] INFO root fetch - processPackages [batch-framework]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-19 17:22:05] INFO root fetch - processPackages [xiaomusic]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-19 17:22:05] INFO root fetch - processPackages [cterasdk]: New version: [2.9.0] Old Version: [2.8.32]
+[2024-05-19 17:22:05] INFO root fetch - processPackages [batch-framework]: Downloading https://files.pythonhosted.org/packages/0e/44/5bdbb39d3c2b36b2c63dad5c29e58261b9e156f88d9101a46382387b5480/batch-framework-0.2.0.tar.gz
+[2024-05-19 17:22:05] INFO root fetch - processPackages [xiaomusic]: Downloading https://files.pythonhosted.org/packages/43/b7/00d5b5484c941fbe637c09c55a9c8eb8efa9613e8f748eb82063230d7c40/xiaomusic-0.1.8.tar.gz
+[2024-05-19 17:22:05] INFO root fetch - processPackages [cterasdk]: Downloading https://files.pythonhosted.org/packages/c2/ce/c95746ee47212ba7b5c85fcfa94d1ebbcf4e2531af136ebcc0e3a2e3bf1e/cterasdk-2.8.32.tar.gz
+[2024-05-19 17:22:05] INFO root fetch - processPackages [batch-framework]: Downloading https://files.pythonhosted.org/packages/ef/09/e8f40d6988d5da3456e1cc038c268cffb78137cd143bfe9054254692531d/batch-framework-0.2.1.tar.gz
+[2024-05-19 17:22:05] INFO root fetch - processPackages [xiaomusic]: Downloading https://files.pythonhosted.org/packages/a1/21/10e07d79cc47710402442039f3fe0d28c854c8225032a4972152505951a3/xiaomusic-0.1.9.tar.gz
+[2024-05-19 17:22:05] INFO root fetch - processPackages [batch-framework]: executing diffoscope
+[2024-05-19 17:22:05] INFO root fetch - processPackages [batch-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/batch-framework-0.2.0.tar.gz tmp/batch-framework-0.2.1.tar.gz --markdown 20240519/b/batch-framework/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-19 17:22:05] INFO root fetch - processPackages [xiaomusic]: executing diffoscope
+[2024-05-19 17:22:05] INFO root fetch - processPackages [xiaomusic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xiaomusic-0.1.8.tar.gz tmp/xiaomusic-0.1.9.tar.gz --markdown 20240519/x/xiaomusic/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-19 17:22:05] INFO root fetch - processPackages [cterasdk]: Downloading https://files.pythonhosted.org/packages/d4/ab/317328c3787fbc48fb1b583a042be4337d3957d4b83b9eaa386bffe76e02/cterasdk-2.9.0.tar.gz
+[2024-05-19 17:22:06] INFO root fetch - processPackages [cterasdk]: executing diffoscope
+[2024-05-19 17:22:06] INFO root fetch - processPackages [cterasdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cterasdk-2.8.32.tar.gz tmp/cterasdk-2.9.0.tar.gz --markdown 20240519/c/cterasdk/2.8.32-2.9.0/README.md --exclude *.pyd
+[2024-05-19 17:22:06] INFO root fetch - processPackages [batch-framework]: Remove: archive file [/home/abi/fetcher/tmp/batch-framework-0.2.0.tar.gz]
+[2024-05-19 17:22:06] INFO root fetch - processPackages [batch-framework]: Remove: archive file [/home/abi/fetcher/tmp/batch-framework-0.2.1.tar.gz]
+[2024-05-19 17:22:06] INFO root fetch - main [MainThread]: End processing [batch-framework]: success
+[2024-05-19 17:22:06] INFO root fetch - processPackages [xiaomusic]: Remove: archive file [/home/abi/fetcher/tmp/xiaomusic-0.1.8.tar.gz]
+[2024-05-19 17:22:06] INFO root fetch - processPackages [xiaomusic]: Remove: archive file [/home/abi/fetcher/tmp/xiaomusic-0.1.9.tar.gz]
+[2024-05-19 17:22:06] INFO root fetch - main [MainThread]: End processing [xiaomusic]: success
+[2024-05-19 17:22:07] INFO root fetch - processPackages [cterasdk]: Remove: archive file [/home/abi/fetcher/tmp/cterasdk-2.8.32.tar.gz]
+[2024-05-19 17:22:07] INFO root fetch - processPackages [cterasdk]: Remove: archive file [/home/abi/fetcher/tmp/cterasdk-2.9.0.tar.gz]
+[2024-05-19 17:22:07] INFO root fetch - main [MainThread]: End processing [cterasdk]: success
+[2024-05-19 17:22:07] INFO root fetch - main [MainThread]: Store serial: [23277703]
