@@ -5917,3 +5917,66 @@
 [2024-05-19 09:26:11] INFO root fetch - processPackages [actionlint-py]: Remove: archive file [/home/abi/fetcher/tmp/actionlint_py-1.7.0.14.tar.gz]
 [2024-05-19 09:26:11] INFO root fetch - main [MainThread]: End processing [actionlint-py]: success
 [2024-05-19 09:26:11] INFO root fetch - main [MainThread]: Store serial: [23274126]
+[2024-05-19 09:28:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274126]
+[2024-05-19 09:28:20] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-19 09:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: translator-uabthehack
+[2024-05-19 09:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openshift-cli-installer
+[2024-05-19 09:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openshift-cluster-management-python-wrapper
+[2024-05-19 09:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: openshift-python-wrapper
+[2024-05-19 09:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Dans-Diffraction
+[2024-05-19 09:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyhelper-utils
+[2024-05-19 09:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: curratowz
+[2024-05-19 09:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: python-utility-scripts
+[2024-05-19 09:28:20] WARNING root fetch - processPackages [translator-uabthehack]: Skipping, unable to determine old version
+[2024-05-19 09:28:20] INFO root fetch - main [MainThread]: End processing [translator-uabthehack] error
+[2024-05-19 09:28:20] INFO root fetch - processPackages [pyhelper-utils]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 09:28:20] INFO root fetch - processPackages [Dans-Diffraction]: New version: [3.2.0] Old Version: [3.0.0]
+[2024-05-19 09:28:20] INFO root fetch - processPackages [openshift-cli-installer]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-05-19 09:28:20] INFO root fetch - processPackages [python-utility-scripts]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 09:28:20] INFO root fetch - processPackages [openshift-cluster-management-python-wrapper]: New version: [1.0.99] Old Version: [1.0.98]
+[2024-05-19 09:28:20] WARNING root fetch - processPackages [curratowz]: Skipping, unable to determine old version
+[2024-05-19 09:28:20] INFO root fetch - main [MainThread]: End processing [curratowz] error
+[2024-05-19 09:28:20] INFO root fetch - processPackages [openshift-python-wrapper]: New version: [4.9.9.12] Old Version: [4.9.7.12]
+[2024-05-19 09:28:20] INFO root fetch - processPackages [pyhelper-utils]: Downloading https://files.pythonhosted.org/packages/b0/79/7f514832f284b942b0701ed9c59de4c8e6ea368ae1637fe0e5bbf4346cec/pyhelper_utils-0.0.8.tar.gz
+[2024-05-19 09:28:20] INFO root fetch - processPackages [openshift-cli-installer]: Downloading https://files.pythonhosted.org/packages/93/ea/081916b4f7f911ee0b4d2373be0df43c7c020915e4dc0daddae9d0c85d23/openshift_cli_installer-2.0.8.tar.gz
+[2024-05-19 09:28:20] INFO root fetch - processPackages [openshift-cluster-management-python-wrapper]: Downloading https://files.pythonhosted.org/packages/c0/59/4a411cf32353a4aa27ed7df897022dba7186efabe6440e073e02e93578c7/openshift_cluster_management_python_wrapper-1.0.98.tar.gz
+[2024-05-19 09:28:20] INFO root fetch - processPackages [Dans-Diffraction]: Downloading https://files.pythonhosted.org/packages/53/cc/2862f720cb241197f538cd26ebb2a75e57eda6bd1af4cb316f9692bcd6b3/Dans_Diffraction-3.0.0.tar.gz
+[2024-05-19 09:28:20] INFO root fetch - processPackages [openshift-python-wrapper]: Downloading https://files.pythonhosted.org/packages/9f/52/8943f0836c823ed0ab894348233d99a219025753e654fa494137828358f9/openshift-python-wrapper-4.9.7.12.tar.gz
+[2024-05-19 09:28:20] INFO root fetch - processPackages [python-utility-scripts]: Downloading https://files.pythonhosted.org/packages/6c/01/51bfeb2fcf48de8e85393b7dc865596d4ef5a95d7c36d178832b3a4f77bb/python_utility_scripts-0.0.8.tar.gz
+[2024-05-19 09:28:21] INFO root fetch - processPackages [pyhelper-utils]: Downloading https://files.pythonhosted.org/packages/36/fc/49838721a63519de9a0bf1ceec71298239af5e448eaef761acf5b828a024/pyhelper_utils-0.0.9.tar.gz
+[2024-05-19 09:28:21] INFO root fetch - processPackages [openshift-cluster-management-python-wrapper]: Downloading https://files.pythonhosted.org/packages/11/56/6990be30b6f5fcf73a2731cd41504a76f9454ec027047d669aeb3f238561/openshift_cluster_management_python_wrapper-1.0.99.tar.gz
+[2024-05-19 09:28:21] INFO root fetch - processPackages [openshift-cli-installer]: Downloading https://files.pythonhosted.org/packages/2e/36/23bd27005a72d5bc87d2d81bd55477f2c4cbdee088189ef184dea2fb149c/openshift_cli_installer-2.0.9.tar.gz
+[2024-05-19 09:28:21] INFO root fetch - processPackages [openshift-python-wrapper]: Downloading https://files.pythonhosted.org/packages/e7/2c/25381b003b6e49919b5c98f68796af474a0b6fb3e28c46552a6949c6160a/openshift-python-wrapper-4.9.9.12.tar.gz
+[2024-05-19 09:28:21] INFO root fetch - processPackages [python-utility-scripts]: Downloading https://files.pythonhosted.org/packages/b5/1f/a795660b71037e5c289d162daebc6fa80614879af1af487e37846d02355e/python_utility_scripts-0.0.9.tar.gz
+[2024-05-19 09:28:21] INFO root fetch - processPackages [pyhelper-utils]: executing diffoscope
+[2024-05-19 09:28:21] INFO root fetch - processPackages [pyhelper-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhelper_utils-0.0.8.tar.gz tmp/pyhelper_utils-0.0.9.tar.gz --markdown 20240519/p/pyhelper-utils/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 09:28:21] INFO root fetch - processPackages [openshift-cluster-management-python-wrapper]: executing diffoscope
+[2024-05-19 09:28:21] INFO root fetch - processPackages [openshift-cluster-management-python-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openshift_cluster_management_python_wrapper-1.0.98.tar.gz tmp/openshift_cluster_management_python_wrapper-1.0.99.tar.gz --markdown 20240519/o/openshift-cluster-management-python-wrapper/1.0.98-1.0.99/README.md --exclude *.pyd
+[2024-05-19 09:28:21] INFO root fetch - processPackages [openshift-python-wrapper]: executing diffoscope
+[2024-05-19 09:28:21] INFO root fetch - processPackages [openshift-python-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openshift-python-wrapper-4.9.7.12.tar.gz tmp/openshift-python-wrapper-4.9.9.12.tar.gz --markdown 20240519/o/openshift-python-wrapper/4.9.7.12-4.9.9.12/README.md --exclude *.pyd
+[2024-05-19 09:28:21] INFO root fetch - processPackages [python-utility-scripts]: executing diffoscope
+[2024-05-19 09:28:21] INFO root fetch - processPackages [python-utility-scripts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_utility_scripts-0.0.8.tar.gz tmp/python_utility_scripts-0.0.9.tar.gz --markdown 20240519/p/python-utility-scripts/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 09:28:21] INFO root fetch - processPackages [Dans-Diffraction]: Downloading https://files.pythonhosted.org/packages/33/33/75106f6162a5b79c8380acc0bb916875a7ab5f37c589642c3a28db51f429/Dans_Diffraction-3.2.0.tar.gz
+[2024-05-19 09:28:21] INFO root fetch - processPackages [openshift-cli-installer]: executing diffoscope
+[2024-05-19 09:28:21] INFO root fetch - processPackages [openshift-cli-installer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openshift_cli_installer-2.0.8.tar.gz tmp/openshift_cli_installer-2.0.9.tar.gz --markdown 20240519/o/openshift-cli-installer/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-05-19 09:28:21] INFO root fetch - processPackages [Dans-Diffraction]: executing diffoscope
+[2024-05-19 09:28:21] INFO root fetch - processPackages [Dans-Diffraction]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Dans_Diffraction-3.0.0.tar.gz tmp/Dans_Diffraction-3.2.0.tar.gz --markdown 20240519/D/Dans-Diffraction/3.0.0-3.2.0/README.md --exclude *.pyd
+[2024-05-19 09:28:22] INFO root fetch - processPackages [pyhelper-utils]: Remove: archive file [/home/abi/fetcher/tmp/pyhelper_utils-0.0.8.tar.gz]
+[2024-05-19 09:28:22] INFO root fetch - processPackages [pyhelper-utils]: Remove: archive file [/home/abi/fetcher/tmp/pyhelper_utils-0.0.9.tar.gz]
+[2024-05-19 09:28:22] INFO root fetch - main [MainThread]: End processing [pyhelper-utils]: success
+[2024-05-19 09:28:22] INFO root fetch - processPackages [openshift-cluster-management-python-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/openshift_cluster_management_python_wrapper-1.0.98.tar.gz]
+[2024-05-19 09:28:22] INFO root fetch - processPackages [openshift-cluster-management-python-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/openshift_cluster_management_python_wrapper-1.0.99.tar.gz]
+[2024-05-19 09:28:22] INFO root fetch - main [MainThread]: End processing [openshift-cluster-management-python-wrapper]: success
+[2024-05-19 09:28:22] INFO root fetch - processPackages [python-utility-scripts]: Remove: archive file [/home/abi/fetcher/tmp/python_utility_scripts-0.0.8.tar.gz]
+[2024-05-19 09:28:22] INFO root fetch - processPackages [python-utility-scripts]: Remove: archive file [/home/abi/fetcher/tmp/python_utility_scripts-0.0.9.tar.gz]
+[2024-05-19 09:28:22] INFO root fetch - main [MainThread]: End processing [python-utility-scripts]: success
+[2024-05-19 09:28:22] INFO root fetch - processPackages [openshift-python-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/openshift-python-wrapper-4.9.7.12.tar.gz]
+[2024-05-19 09:28:22] INFO root fetch - processPackages [openshift-python-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/openshift-python-wrapper-4.9.9.12.tar.gz]
+[2024-05-19 09:28:22] INFO root fetch - main [MainThread]: End processing [openshift-python-wrapper]: success
+[2024-05-19 09:28:22] INFO root fetch - processPackages [openshift-cli-installer]: Remove: archive file [/home/abi/fetcher/tmp/openshift_cli_installer-2.0.8.tar.gz]
+[2024-05-19 09:28:22] INFO root fetch - processPackages [openshift-cli-installer]: Remove: archive file [/home/abi/fetcher/tmp/openshift_cli_installer-2.0.9.tar.gz]
+[2024-05-19 09:28:22] INFO root fetch - main [MainThread]: End processing [openshift-cli-installer]: success
+[2024-05-19 09:28:24] INFO root fetch - processPackages [Dans-Diffraction]: Remove: archive file [/home/abi/fetcher/tmp/Dans_Diffraction-3.0.0.tar.gz]
+[2024-05-19 09:28:24] INFO root fetch - processPackages [Dans-Diffraction]: Remove: archive file [/home/abi/fetcher/tmp/Dans_Diffraction-3.2.0.tar.gz]
+[2024-05-19 09:28:24] INFO root fetch - main [MainThread]: End processing [Dans-Diffraction]: success
+[2024-05-19 09:28:24] INFO root fetch - main [MainThread]: Store serial: [23274149]
