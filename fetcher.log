@@ -15857,3 +15857,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 19:51:07] INFO root fetch - processPackages [themoviedb-lib]: Remove: archive file [/home/abi/fetcher/tmp/themoviedb_lib-0.0.4.tar.gz]
 [2024-05-19 19:51:07] INFO root fetch - main [MainThread]: End processing [themoviedb-lib]: success
 [2024-05-19 19:51:07] INFO root fetch - main [MainThread]: Store serial: [23278919]
+[2024-05-19 19:53:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23278919]
+[2024-05-19 19:53:16] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-19 19:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: plagiarism-detect-for-nju
+[2024-05-19 19:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: connectlife
+[2024-05-19 19:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: radprompter
+[2024-05-19 19:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mussulwomanz
+[2024-05-19 19:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: qualystbx
+[2024-05-19 19:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mojo-testplus
+[2024-05-19 19:53:16] INFO root fetch - processPackages [qualystbx]: New version: [0.8.0] Old Version: [0.7.0]
+[2024-05-19 19:53:16] INFO root fetch - processPackages [radprompter]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-19 19:53:16] INFO root fetch - processPackages [plagiarism-detect-for-nju]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-19 19:53:16] INFO root fetch - processPackages [connectlife]: New version: [0.1.0] Old Version: [0.0.5]
+[2024-05-19 19:53:16] WARNING root fetch - processPackages [mussulwomanz]: Skipping, unable to determine old version
+[2024-05-19 19:53:16] INFO root fetch - main [MainThread]: End processing [mussulwomanz] error
+[2024-05-19 19:53:16] INFO root fetch - processPackages [radprompter]: Downloading https://files.pythonhosted.org/packages/5b/6d/85d418f3a3fff94c0b7eec64a3cc91ffc7c11a7c43afb5031748111b77df/radprompter-1.0.1.tar.gz
+[2024-05-19 19:53:16] INFO root fetch - processPackages [qualystbx]: Downloading https://files.pythonhosted.org/packages/3d/13/d82c3acb0e9ea3a9ff76fe6e73a521edc75e84ab686d483a4f360a6a88cb/qualystbx-0.7.0.tar.gz
+[2024-05-19 19:53:16] INFO root fetch - processPackages [plagiarism-detect-for-nju]: Downloading https://files.pythonhosted.org/packages/96/9b/f430bbcca4b50fdaaa26f3f5a0b8d0284d2dcb48395105f8f8f4d4eda5cf/plagiarism_detect_for_nju-1.0.2.tar.gz
+[2024-05-19 19:53:16] INFO root fetch - processPackages [mojo-testplus]: New version: [1.3.9] Old Version: [1.3.8]
+[2024-05-19 19:53:16] INFO root fetch - processPackages [connectlife]: Downloading https://files.pythonhosted.org/packages/90/b2/f7de9f6f22d3e46aed0a1c54713cdc921aed395fdd09263f029db289a18c/connectlife-0.0.5.tar.gz
+[2024-05-19 19:53:16] INFO root fetch - processPackages [mojo-testplus]: Downloading https://files.pythonhosted.org/packages/a5/fe/6ef403e4cd8937907cb1b6d2bfaee70af2ccb33355ae49346889ebd9d153/mojo_testplus-1.3.8.tar.gz
+[2024-05-19 19:53:16] INFO root fetch - processPackages [qualystbx]: Downloading https://files.pythonhosted.org/packages/88/de/04f9bde377b2e4f3959a99661bf58cb5824a3b55cd37d179c781c0db6773/qualystbx-0.8.0.tar.gz
+[2024-05-19 19:53:16] INFO root fetch - processPackages [plagiarism-detect-for-nju]: Downloading https://files.pythonhosted.org/packages/44/2c/1a0a11050b8f76d8d73cdfcf9bdadfc3fb026970bed2e2c395d914397ec1/plagiarism_detect_for_nju-1.0.3.tar.gz
+[2024-05-19 19:53:16] INFO root fetch - processPackages [radprompter]: Downloading https://files.pythonhosted.org/packages/24/4f/b5faaf24ed624777b0ded19fc1c396c9612aa330f920a80ae2d0ac50d9eb/radprompter-1.0.2.tar.gz
+[2024-05-19 19:53:16] INFO root fetch - processPackages [qualystbx]: executing diffoscope
+[2024-05-19 19:53:16] INFO root fetch - processPackages [qualystbx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qualystbx-0.7.0.tar.gz tmp/qualystbx-0.8.0.tar.gz --markdown 20240519/q/qualystbx/0.7.0-0.8.0/README.md --exclude *.pyd
+[2024-05-19 19:53:17] INFO root fetch - processPackages [plagiarism-detect-for-nju]: executing diffoscope
+[2024-05-19 19:53:17] INFO root fetch - processPackages [plagiarism-detect-for-nju]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plagiarism_detect_for_nju-1.0.2.tar.gz tmp/plagiarism_detect_for_nju-1.0.3.tar.gz --markdown 20240519/p/plagiarism-detect-for-nju/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-19 19:53:17] INFO root fetch - processPackages [radprompter]: executing diffoscope
+[2024-05-19 19:53:17] INFO root fetch - processPackages [radprompter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/radprompter-1.0.1.tar.gz tmp/radprompter-1.0.2.tar.gz --markdown 20240519/r/radprompter/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-19 19:53:17] INFO root fetch - processPackages [connectlife]: Downloading https://files.pythonhosted.org/packages/94/5e/953250a6d175cb0545dcabebd8049e35721f9b19240d6867b0c3e5fbbbad/connectlife-0.1.0.tar.gz
+[2024-05-19 19:53:17] INFO root fetch - processPackages [connectlife]: executing diffoscope
+[2024-05-19 19:53:17] INFO root fetch - processPackages [connectlife]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/connectlife-0.0.5.tar.gz tmp/connectlife-0.1.0.tar.gz --markdown 20240519/c/connectlife/0.0.5-0.1.0/README.md --exclude *.pyd
+[2024-05-19 19:53:17] INFO root fetch - processPackages [mojo-testplus]: Downloading https://files.pythonhosted.org/packages/a4/cd/894241650e47414136a3bf37ddbbef7907d3dc69c678f40c9716e3afbfd2/mojo_testplus-1.3.9.tar.gz
+[2024-05-19 19:53:17] INFO root fetch - processPackages [plagiarism-detect-for-nju]: Remove: archive file [/home/abi/fetcher/tmp/plagiarism_detect_for_nju-1.0.2.tar.gz]
+[2024-05-19 19:53:17] INFO root fetch - processPackages [plagiarism-detect-for-nju]: Remove: archive file [/home/abi/fetcher/tmp/plagiarism_detect_for_nju-1.0.3.tar.gz]
+[2024-05-19 19:53:17] INFO root fetch - main [MainThread]: End processing [plagiarism-detect-for-nju]: success
+[2024-05-19 19:53:17] INFO root fetch - processPackages [qualystbx]: Remove: archive file [/home/abi/fetcher/tmp/qualystbx-0.7.0.tar.gz]
+[2024-05-19 19:53:17] INFO root fetch - processPackages [qualystbx]: Remove: archive file [/home/abi/fetcher/tmp/qualystbx-0.8.0.tar.gz]
+[2024-05-19 19:53:17] INFO root fetch - main [MainThread]: End processing [qualystbx]: success
+[2024-05-19 19:53:17] INFO root fetch - processPackages [radprompter]: Remove: archive file [/home/abi/fetcher/tmp/radprompter-1.0.1.tar.gz]
+[2024-05-19 19:53:17] INFO root fetch - processPackages [radprompter]: Remove: archive file [/home/abi/fetcher/tmp/radprompter-1.0.2.tar.gz]
+[2024-05-19 19:53:17] INFO root fetch - main [MainThread]: End processing [radprompter]: success
+[2024-05-19 19:53:17] INFO root fetch - processPackages [connectlife]: Remove: archive file [/home/abi/fetcher/tmp/connectlife-0.0.5.tar.gz]
+[2024-05-19 19:53:17] INFO root fetch - processPackages [connectlife]: Remove: archive file [/home/abi/fetcher/tmp/connectlife-0.1.0.tar.gz]
+[2024-05-19 19:53:17] INFO root fetch - main [MainThread]: End processing [connectlife]: success
+[2024-05-19 19:53:18] INFO root fetch - processPackages [mojo-testplus]: executing diffoscope
+[2024-05-19 19:53:18] INFO root fetch - processPackages [mojo-testplus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mojo_testplus-1.3.8.tar.gz tmp/mojo_testplus-1.3.9.tar.gz --markdown 20240519/m/mojo-testplus/1.3.8-1.3.9/README.md --exclude *.pyd
+[2024-05-19 19:53:18] INFO root fetch - processPackages [mojo-testplus]: Remove: archive file [/home/abi/fetcher/tmp/mojo_testplus-1.3.8.tar.gz]
+[2024-05-19 19:53:18] INFO root fetch - processPackages [mojo-testplus]: Remove: archive file [/home/abi/fetcher/tmp/mojo_testplus-1.3.9.tar.gz]
+[2024-05-19 19:53:18] INFO root fetch - main [MainThread]: End processing [mojo-testplus]: success
+[2024-05-19 19:53:18] INFO root fetch - main [MainThread]: Store serial: [23278940]
