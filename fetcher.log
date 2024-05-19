@@ -9427,3 +9427,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 13:33:43] INFO root fetch - processPackages [eurepoc]: Remove: archive file [/home/abi/fetcher/tmp/eurepoc-0.1.3.tar.gz]
 [2024-05-19 13:33:43] INFO root fetch - main [MainThread]: End processing [eurepoc]: success
 [2024-05-19 13:33:43] INFO root fetch - main [MainThread]: Store serial: [23275903]
+[2024-05-19 13:35:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275903]
+[2024-05-19 13:35:52] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 13:35:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: outpostcli
+[2024-05-19 13:35:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flatpack
+[2024-05-19 13:35:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yeref
+[2024-05-19 13:35:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mergemate
+[2024-05-19 13:35:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fairbench
+[2024-05-19 13:35:52] INFO root fetch - processPackages [outpostcli]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 13:35:52] INFO root fetch - processPackages [mergemate]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-19 13:35:53] INFO root fetch - processPackages [flatpack]: New version: [3.4.9] Old Version: [3.4.8]
+[2024-05-19 13:35:53] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/7e/e2/114a39eac567286d0418645c0ea24089c48fcbe4cccec6c79191a5cefccf/outpostcli-0.0.8.tar.gz
+[2024-05-19 13:35:53] INFO root fetch - processPackages [fairbench]: New version: [0.3.0] Old Version: [0.2.9]
+[2024-05-19 13:35:53] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/92/5a/46a0817bd1cfcbeb0f041626a2cc2b28a97a17caa6609495cfb355a5d90e/flatpack-3.4.8.tar.gz
+[2024-05-19 13:35:53] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-19 13:35:53] INFO root fetch - processPackages [mergemate]: Downloading https://files.pythonhosted.org/packages/94/8d/7951c2606767ed73c0164fa9c328c89b817483812ac13d6e1859e869502f/mergemate-0.1.0.tar.gz
+[2024-05-19 13:35:53] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/df/ab/82b6853cec170d33c2aff19e3a298b0bf56f7ba1b885f6f7d42a10ae43dc/outpostcli-0.0.9.tar.gz
+[2024-05-19 13:35:53] INFO root fetch - processPackages [fairbench]: Downloading https://files.pythonhosted.org/packages/02/70/d98a39f38fd8222f826f0948d6adaad6c2eb2f933355f84b7560c9563b34/fairbench-0.2.9-py3-none-any.whl
+[2024-05-19 13:35:53] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/29/b6/9545d80064161872f90e25faa6bb7dc31698e88762b3d442b5fb491967fd/flatpack-3.4.9.tar.gz
+[2024-05-19 13:35:53] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-19 13:35:53] INFO root fetch - processPackages [outpostcli]: executing diffoscope
+[2024-05-19 13:35:53] INFO root fetch - processPackages [outpostcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outpostcli-0.0.8.tar.gz tmp/outpostcli-0.0.9.tar.gz --markdown 20240519/o/outpostcli/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 13:35:53] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-05-19 13:35:53] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.4.8.tar.gz tmp/flatpack-3.4.9.tar.gz --markdown 20240519/f/flatpack/3.4.8-3.4.9/README.md --exclude *.pyd
+[2024-05-19 13:35:53] INFO root fetch - processPackages [mergemate]: Downloading https://files.pythonhosted.org/packages/14/0a/5a9109e350d5ba41771ea8b78a38aa648b1136487cdf95ddac98acac133e/mergemate-0.1.1.tar.gz
+[2024-05-19 13:35:53] INFO root fetch - processPackages [fairbench]: Downloading https://files.pythonhosted.org/packages/52/36/81f311f68499cd41d6d6f25dfdc8f4a8054c064e24913c4cf9f4ddc91c5b/fairbench-0.3.0-py3-none-any.whl
+[2024-05-19 13:35:53] INFO root fetch - processPackages [mergemate]: executing diffoscope
+[2024-05-19 13:35:53] INFO root fetch - processPackages [mergemate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mergemate-0.1.0.tar.gz tmp/mergemate-0.1.1.tar.gz --markdown 20240519/m/mergemate/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-19 13:35:53] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-19 13:35:53] INFO root fetch - processPackages [fairbench]: executing diffoscope
+[2024-05-19 13:35:53] INFO root fetch - processPackages [fairbench]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fairbench-0.2.9-py3-none-any.whl.zip tmp/fairbench-0.3.0-py3-none-any.whl.zip --markdown 20240519/f/fairbench/0.2.9-0.3.0/README.md --exclude *.pyd
+[2024-05-19 13:35:54] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-19 13:35:54] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240519/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-19 13:35:54] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.8.tar.gz]
+[2024-05-19 13:35:54] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.9.tar.gz]
+[2024-05-19 13:35:54] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-05-19 13:35:54] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.8.tar.gz]
+[2024-05-19 13:35:54] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.9.tar.gz]
+[2024-05-19 13:35:54] INFO root fetch - main [MainThread]: End processing [outpostcli]: success
+[2024-05-19 13:35:54] INFO root fetch - processPackages [mergemate]: Remove: archive file [/home/abi/fetcher/tmp/mergemate-0.1.0.tar.gz]
+[2024-05-19 13:35:54] INFO root fetch - processPackages [mergemate]: Remove: archive file [/home/abi/fetcher/tmp/mergemate-0.1.1.tar.gz]
+[2024-05-19 13:35:54] INFO root fetch - main [MainThread]: End processing [mergemate]: success
+[2024-05-19 13:35:54] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-19 13:35:54] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-19 13:35:54] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-19 13:35:54] INFO root fetch - processPackages [fairbench]: Remove: archive file [/home/abi/fetcher/tmp/fairbench-0.2.9-py3-none-any.whl.zip]
+[2024-05-19 13:35:54] INFO root fetch - processPackages [fairbench]: Remove: archive file [/home/abi/fetcher/tmp/fairbench-0.3.0-py3-none-any.whl.zip]
+[2024-05-19 13:35:54] INFO root fetch - main [MainThread]: End processing [fairbench]: success
+[2024-05-19 13:35:54] INFO root fetch - main [MainThread]: Store serial: [23275928]
