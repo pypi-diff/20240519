@@ -21679,3 +21679,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 23:54:18] INFO root fetch - processPackages [testit-adapter-behave]: Remove: archive file [/home/abi/fetcher/tmp/testit_adapter_behave-3.2.0.tar.gz]
 [2024-05-19 23:54:18] INFO root fetch - main [MainThread]: End processing [testit-adapter-behave]: success
 [2024-05-19 23:54:18] INFO root fetch - main [MainThread]: Store serial: [23281461]
+[2024-05-19 23:56:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23281461]
+[2024-05-19 23:56:27] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 23:56:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ScreenPro2
+[2024-05-19 23:56:27] INFO root fetch - processPackages [ScreenPro2]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-05-19 23:56:27] INFO root fetch - processPackages [ScreenPro2]: Downloading https://files.pythonhosted.org/packages/5a/85/141aa01043b1d245823dddc67fb604cb260081466b203e066a2fb7fd54b9/ScreenPro2-0.3.1-py2.py3-none-any.whl
+[2024-05-19 23:56:28] INFO root fetch - processPackages [ScreenPro2]: Downloading https://files.pythonhosted.org/packages/3d/d6/b5515074005dbb1e765b63681824709caf40066badfa07b3956458c38d7f/ScreenPro2-0.3.2-py2.py3-none-any.whl
+[2024-05-19 23:56:28] INFO root fetch - processPackages [ScreenPro2]: executing diffoscope
+[2024-05-19 23:56:28] INFO root fetch - processPackages [ScreenPro2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ScreenPro2-0.3.1-py2.py3-none-any.whl.zip tmp/ScreenPro2-0.3.2-py2.py3-none-any.whl.zip --markdown 20240519/S/ScreenPro2/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-05-19 23:56:28] INFO root fetch - processPackages [ScreenPro2]: Remove: archive file [/home/abi/fetcher/tmp/ScreenPro2-0.3.1-py2.py3-none-any.whl.zip]
+[2024-05-19 23:56:28] INFO root fetch - processPackages [ScreenPro2]: Remove: archive file [/home/abi/fetcher/tmp/ScreenPro2-0.3.2-py2.py3-none-any.whl.zip]
+[2024-05-19 23:56:28] INFO root fetch - main [MainThread]: End processing [ScreenPro2]: success
+[2024-05-19 23:56:28] INFO root fetch - main [MainThread]: Store serial: [23281463]
