@@ -8574,3 +8574,60 @@
 [2024-05-19 12:37:25] WARNING root fetch - processPackages [baculumz]: Skipping, unable to determine old version
 [2024-05-19 12:37:25] INFO root fetch - main [MainThread]: End processing [baculumz] error
 [2024-05-19 12:37:25] INFO root fetch - main [MainThread]: Store serial: [23275521]
+[2024-05-19 12:39:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275521]
+[2024-05-19 12:39:33] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-19 12:39:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: timebasedcv
+[2024-05-19 12:39:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: psqlparse2
+[2024-05-19 12:39:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: skypilot-nightly
+[2024-05-19 12:39:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dlomix
+[2024-05-19 12:39:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pymemgpt-nightly
+[2024-05-19 12:39:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: verysimpletree
+[2024-05-19 12:39:34] INFO root fetch - processPackages [pymemgpt-nightly]: New version: [0.3.9.dev20240412103904] Old Version: [0.3.9.dev20240411103902]
+[2024-05-19 12:39:34] INFO root fetch - processPackages [psqlparse2]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-19 12:39:34] INFO root fetch - processPackages [verysimpletree]: New version: [0.1.1b0] Old Version: [0.1.0b0]
+[2024-05-19 12:39:34] INFO root fetch - processPackages [skypilot-nightly]: New version: [1.0.0.dev20240518] Old Version: [1.0.0.dev20240517]
+[2024-05-19 12:39:34] INFO root fetch - processPackages [timebasedcv]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-19 12:39:34] INFO root fetch - processPackages [pymemgpt-nightly]: Downloading https://files.pythonhosted.org/packages/28/e7/e8c0c970c21e3670e810627cef085bbbbac1f9e994540354838d7781a0ac/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz
+[2024-05-19 12:39:34] INFO root fetch - processPackages [dlomix]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-19 12:39:34] INFO root fetch - processPackages [psqlparse2]: Downloading https://files.pythonhosted.org/packages/c2/29/3f6bd20e6e4504c3df0c40dd41f8e5ac3aad3a6aa6f050248dbd2c090036/psqlparse2-0.0.5-pp39-pypy39_pp73-macosx_11_0_arm64.whl
+[2024-05-19 12:39:34] INFO root fetch - processPackages [verysimpletree]: Downloading https://files.pythonhosted.org/packages/43/bd/1f1254fa4243e919a9e89baf73f1b83ae01bc615a1f4f43295bd7eaa3f31/verysimpletree-0.1.0b0.tar.gz
+[2024-05-19 12:39:34] INFO root fetch - processPackages [skypilot-nightly]: Downloading https://files.pythonhosted.org/packages/fd/1e/f8fb3170d2236393b467da3abc2f22b6d47b900d0acd9beec08ab19cdd66/skypilot_nightly-1.0.0.dev20240517.tar.gz
+[2024-05-19 12:39:34] INFO root fetch - processPackages [timebasedcv]: Downloading https://files.pythonhosted.org/packages/ef/ae/48215667dcda87c2f620ceb6f2e0b187c89a7e26640c8bbd7e42acaa79d3/timebasedcv-0.2.0.tar.gz
+[2024-05-19 12:39:34] INFO root fetch - processPackages [dlomix]: Downloading https://files.pythonhosted.org/packages/9c/b2/08130150ac69403420d873d2cd717bd55c8b4032608f9e62e31de7aed3e9/dlomix-0.1.0.tar.gz
+[2024-05-19 12:39:34] INFO root fetch - processPackages [verysimpletree]: Downloading https://files.pythonhosted.org/packages/69/cc/a87d8748eb8f8346d077f54cf58420fbb0747aa0eb62d2299815953a7dc3/verysimpletree-0.1.1b0.tar.gz
+[2024-05-19 12:39:34] INFO root fetch - processPackages [pymemgpt-nightly]: Downloading https://files.pythonhosted.org/packages/50/4a/4c9c1fb70a7ee971f3c8697cc6dedb251e3b10cafdd23be4d035ece0f2ec/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz
+[2024-05-19 12:39:34] INFO root fetch - processPackages [psqlparse2]: Downloading https://files.pythonhosted.org/packages/4b/26/e7ff50549e5f248d536737d7c85590c6e302ab8a68276793bcec20614db9/psqlparse2-0.0.6.tar.gz
+[2024-05-19 12:39:34] INFO root fetch - processPackages [verysimpletree]: executing diffoscope
+[2024-05-19 12:39:34] INFO root fetch - processPackages [verysimpletree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/verysimpletree-0.1.0b0.tar.gz tmp/verysimpletree-0.1.1b0.tar.gz --markdown 20240519/v/verysimpletree/0.1.0b0-0.1.1b0/README.md --exclude *.pyd
+[2024-05-19 12:39:34] INFO root fetch - processPackages [skypilot-nightly]: Downloading https://files.pythonhosted.org/packages/4b/24/62587e5d79ca87db045e04b2a359cc7c9acbe79db56271a2049ba8a91e26/skypilot_nightly-1.0.0.dev20240518.tar.gz
+[2024-05-19 12:39:34] INFO root fetch - processPackages [timebasedcv]: Downloading https://files.pythonhosted.org/packages/57/1c/ec2e0e771422f99a6b25d4c414d8a80162e3cab78d96558174e796fe445d/timebasedcv-0.2.1.tar.gz
+[2024-05-19 12:39:34] INFO root fetch - processPackages [pymemgpt-nightly]: executing diffoscope
+[2024-05-19 12:39:34] INFO root fetch - processPackages [pymemgpt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz tmp/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz --markdown 20240519/p/pymemgpt-nightly/0.3.9.dev20240411103902-0.3.9.dev20240412103904/README.md --exclude *.pyd
+[2024-05-19 12:39:34] INFO root fetch - processPackages [timebasedcv]: executing diffoscope
+[2024-05-19 12:39:34] INFO root fetch - processPackages [timebasedcv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/timebasedcv-0.2.0.tar.gz tmp/timebasedcv-0.2.1.tar.gz --markdown 20240519/t/timebasedcv/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-19 12:39:34] INFO root fetch - processPackages [dlomix]: Downloading https://files.pythonhosted.org/packages/d5/42/ea3a3c589a6bc4c502e25a7cda92674dbc2555308326132fe04191dbc276/dlomix-0.1.1.tar.gz
+[2024-05-19 12:39:34] INFO root fetch - processPackages [skypilot-nightly]: executing diffoscope
+[2024-05-19 12:39:34] INFO root fetch - processPackages [skypilot-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skypilot_nightly-1.0.0.dev20240517.tar.gz tmp/skypilot_nightly-1.0.0.dev20240518.tar.gz --markdown 20240519/s/skypilot-nightly/1.0.0.dev20240517-1.0.0.dev20240518/README.md --exclude *.pyd
+[2024-05-19 12:39:34] INFO root fetch - processPackages [dlomix]: executing diffoscope
+[2024-05-19 12:39:34] INFO root fetch - processPackages [dlomix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dlomix-0.1.0.tar.gz tmp/dlomix-0.1.1.tar.gz --markdown 20240519/d/dlomix/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-19 12:39:34] INFO root fetch - processPackages [psqlparse2]: executing diffoscope
+[2024-05-19 12:39:34] INFO root fetch - processPackages [psqlparse2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psqlparse2-0.0.5-pp39-pypy39_pp73-macosx_11_0_arm64.whl.zip tmp/psqlparse2-0.0.6.tar.gz --markdown 20240519/p/psqlparse2/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-19 12:39:35] INFO root fetch - processPackages [verysimpletree]: Remove: archive file [/home/abi/fetcher/tmp/verysimpletree-0.1.0b0.tar.gz]
+[2024-05-19 12:39:35] INFO root fetch - processPackages [verysimpletree]: Remove: archive file [/home/abi/fetcher/tmp/verysimpletree-0.1.1b0.tar.gz]
+[2024-05-19 12:39:35] INFO root fetch - main [MainThread]: End processing [verysimpletree]: success
+[2024-05-19 12:39:35] INFO root fetch - processPackages [timebasedcv]: Remove: archive file [/home/abi/fetcher/tmp/timebasedcv-0.2.0.tar.gz]
+[2024-05-19 12:39:35] INFO root fetch - processPackages [timebasedcv]: Remove: archive file [/home/abi/fetcher/tmp/timebasedcv-0.2.1.tar.gz]
+[2024-05-19 12:39:35] INFO root fetch - main [MainThread]: End processing [timebasedcv]: success
+[2024-05-19 12:39:35] INFO root fetch - processPackages [dlomix]: Remove: archive file [/home/abi/fetcher/tmp/dlomix-0.1.0.tar.gz]
+[2024-05-19 12:39:35] INFO root fetch - processPackages [dlomix]: Remove: archive file [/home/abi/fetcher/tmp/dlomix-0.1.1.tar.gz]
+[2024-05-19 12:39:35] INFO root fetch - main [MainThread]: End processing [dlomix]: success
+[2024-05-19 12:39:35] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz]
+[2024-05-19 12:39:35] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz]
+[2024-05-19 12:39:35] INFO root fetch - main [MainThread]: End processing [pymemgpt-nightly]: success
+[2024-05-19 12:39:36] INFO root fetch - processPackages [skypilot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/skypilot_nightly-1.0.0.dev20240517.tar.gz]
+[2024-05-19 12:39:36] INFO root fetch - processPackages [skypilot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/skypilot_nightly-1.0.0.dev20240518.tar.gz]
+[2024-05-19 12:39:36] INFO root fetch - main [MainThread]: End processing [skypilot-nightly]: success
+[2024-05-19 12:39:38] INFO root fetch - processPackages [psqlparse2]: Remove: archive file [/home/abi/fetcher/tmp/psqlparse2-0.0.5-pp39-pypy39_pp73-macosx_11_0_arm64.whl.zip]
+[2024-05-19 12:39:38] INFO root fetch - processPackages [psqlparse2]: Remove: archive file [/home/abi/fetcher/tmp/psqlparse2-0.0.6.tar.gz]
+[2024-05-19 12:39:38] INFO root fetch - main [MainThread]: End processing [psqlparse2]: success
+[2024-05-19 12:39:38] INFO root fetch - main [MainThread]: Store serial: [23275580]
