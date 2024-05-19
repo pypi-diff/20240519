@@ -3389,3 +3389,9 @@
 [2024-05-19 05:36:52] INFO root fetch - processPackages [odoo-addon-asterisk-click2dial]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_asterisk_click2dial-17.0.1.0.0.2-py3-none-any.whl.zip]
 [2024-05-19 05:36:52] INFO root fetch - main [MainThread]: End processing [odoo-addon-asterisk-click2dial]: success
 [2024-05-19 05:36:52] INFO root fetch - main [MainThread]: Store serial: [23273044]
+[2024-05-19 05:38:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273044]
+[2024-05-19 05:39:00] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 05:39:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonsuccessivez
+[2024-05-19 05:39:00] WARNING root fetch - processPackages [nonsuccessivez]: Skipping, unable to determine old version
+[2024-05-19 05:39:00] INFO root fetch - main [MainThread]: End processing [nonsuccessivez] error
+[2024-05-19 05:39:00] INFO root fetch - main [MainThread]: Store serial: [23273048]
