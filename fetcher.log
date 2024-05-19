@@ -1804,3 +1804,15 @@
 [2024-05-19 03:00:21] INFO root fetch - processPackages [pandasai]: Remove: archive file [/home/abi/fetcher/tmp/pandasai-2.0a9.tar.gz]
 [2024-05-19 03:00:21] INFO root fetch - main [MainThread]: End processing [pandasai]: success
 [2024-05-19 03:00:21] INFO root fetch - main [MainThread]: Store serial: [23272252]
+[2024-05-19 03:02:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272252]
+[2024-05-19 03:02:29] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 03:02:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: salgorithm
+[2024-05-19 03:02:29] INFO root fetch - processPackages [salgorithm]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-05-19 03:02:29] INFO root fetch - processPackages [salgorithm]: Downloading https://files.pythonhosted.org/packages/23/26/9a1ba5c0ca7d8136c8ab26620dcd77e6a2616a0122a423a91b58bec56af2/salgorithm-0.1.1.tar.gz
+[2024-05-19 03:02:30] INFO root fetch - processPackages [salgorithm]: Downloading https://files.pythonhosted.org/packages/44/ed/fe93c0e663521510577db21ba3d76abfdc2fd46f450cf985b164fb793a23/salgorithm-0.2.0.tar.gz
+[2024-05-19 03:02:30] INFO root fetch - processPackages [salgorithm]: executing diffoscope
+[2024-05-19 03:02:30] INFO root fetch - processPackages [salgorithm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/salgorithm-0.1.1.tar.gz tmp/salgorithm-0.2.0.tar.gz --markdown 20240519/s/salgorithm/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-05-19 03:02:30] INFO root fetch - processPackages [salgorithm]: Remove: archive file [/home/abi/fetcher/tmp/salgorithm-0.1.1.tar.gz]
+[2024-05-19 03:02:30] INFO root fetch - processPackages [salgorithm]: Remove: archive file [/home/abi/fetcher/tmp/salgorithm-0.2.0.tar.gz]
+[2024-05-19 03:02:30] INFO root fetch - main [MainThread]: End processing [salgorithm]: success
+[2024-05-19 03:02:30] INFO root fetch - main [MainThread]: Store serial: [23272254]
