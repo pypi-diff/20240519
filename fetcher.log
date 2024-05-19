@@ -15241,3 +15241,66 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 19:33:28] INFO root fetch - processPackages [staging-cacao-accounting]: Remove: archive file [/home/abi/fetcher/tmp/staging_cacao_accounting-0.0.1b20240519.tar.gz]
 [2024-05-19 19:33:28] INFO root fetch - main [MainThread]: End processing [staging-cacao-accounting]: success
 [2024-05-19 19:33:28] INFO root fetch - main [MainThread]: Store serial: [23278649]
+[2024-05-19 19:35:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23278649]
+[2024-05-19 19:35:37] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-19 19:35:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonForWindows
+[2024-05-19 19:35:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: coti-sdk
+[2024-05-19 19:35:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mimllearning
+[2024-05-19 19:35:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gpt-pr
+[2024-05-19 19:35:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: clerk-django
+[2024-05-19 19:35:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: TensorFlowASR
+[2024-05-19 19:35:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: fastblocks
+[2024-05-19 19:35:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: plagiarism-detect-for-nju
+[2024-05-19 19:35:37] WARNING root fetch - processPackages [coti-sdk]: Skipping, unable to determine old version
+[2024-05-19 19:35:37] INFO root fetch - main [MainThread]: End processing [coti-sdk] error
+[2024-05-19 19:35:37] INFO root fetch - processPackages [gpt-pr]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-05-19 19:35:37] WARNING root fetch - processPackages [plagiarism-detect-for-nju]: Skipping, unable to determine old version
+[2024-05-19 19:35:37] INFO root fetch - main [MainThread]: End processing [plagiarism-detect-for-nju] error
+[2024-05-19 19:35:37] INFO root fetch - processPackages [TensorFlowASR]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-05-19 19:35:37] INFO root fetch - processPackages [gpt-pr]: Downloading https://files.pythonhosted.org/packages/4e/f6/49184ec34768da82b73c81d929dc5541ef4d66dd3393ee6e50384d46439b/gpt-pr-0.3.0.tar.gz
+[2024-05-19 19:35:37] INFO root fetch - processPackages [PythonForWindows]: New version: [0.6.8] Old Version: [0.6.5]
+[2024-05-19 19:35:37] INFO root fetch - processPackages [clerk-django]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-19 19:35:37] INFO root fetch - processPackages [fastblocks]: New version: [0.4.0] Old Version: [0.3.9]
+[2024-05-19 19:35:37] INFO root fetch - processPackages [mimllearning]: New version: [0.5.0] Old Version: [0.4.9]
+[2024-05-19 19:35:38] INFO root fetch - processPackages [PythonForWindows]: Downloading https://files.pythonhosted.org/packages/e5/e4/64f414f17e7188b20a05d4715e80edd3971303e4e31d723d60f19b8412b9/PythonForWindows-0.6.5.tar.gz
+[2024-05-19 19:35:38] INFO root fetch - processPackages [clerk-django]: Downloading https://files.pythonhosted.org/packages/5a/17/bf00621c9ba27999700c9d65da0d03e35b20c7f6312deaf6c7195686338a/clerk_django-1.0.2.tar.gz
+[2024-05-19 19:35:38] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/84/bd/958d70b5217227bc933005c3bb746e70ea6d2a534843b2e0f6a0e93e2c98/mimllearning-0.4.9.tar.gz
+[2024-05-19 19:35:38] INFO root fetch - processPackages [TensorFlowASR]: Downloading https://files.pythonhosted.org/packages/8c/ba/75c7d38a4dec17d63cb9a62d1ee2313f3f6138979438fbc2f267e051471d/TensorFlowASR-2.0.0.tar.gz
+[2024-05-19 19:35:38] INFO root fetch - processPackages [gpt-pr]: Downloading https://files.pythonhosted.org/packages/0a/95/ab0c4a7250b11a3ca6c183dfbcc010c677d0cbcebfd69b698e5eb63b5e85/gpt-pr-0.4.0.tar.gz
+[2024-05-19 19:35:38] INFO root fetch - processPackages [fastblocks]: Downloading https://files.pythonhosted.org/packages/c3/3f/12e28742315fe38c04bbb820d6d382f5d37354232b2d79d5927aa52fb407/fastblocks-0.3.9.tar.gz
+[2024-05-19 19:35:38] INFO root fetch - processPackages [gpt-pr]: executing diffoscope
+[2024-05-19 19:35:38] INFO root fetch - processPackages [gpt-pr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt-pr-0.3.0.tar.gz tmp/gpt-pr-0.4.0.tar.gz --markdown 20240519/g/gpt-pr/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-05-19 19:35:38] INFO root fetch - processPackages [clerk-django]: Downloading https://files.pythonhosted.org/packages/33/53/0cfe88f1a1ae9d3cfdbfc09605a20864e66ceeca1f6ff79196d2ec025060/clerk_django-1.0.3.tar.gz
+[2024-05-19 19:35:38] INFO root fetch - processPackages [TensorFlowASR]: Downloading https://files.pythonhosted.org/packages/ed/a7/604b038689e103be549cfee87746616a40c4e89f73197ed5d5120bb19e7a/TensorFlowASR-2.0.1.tar.gz
+[2024-05-19 19:35:38] INFO root fetch - processPackages [PythonForWindows]: Downloading https://files.pythonhosted.org/packages/0f/34/ddc6391c14c0f33b655fcd51408703cf8b47caf487867a4fcb11116fb667/PythonForWindows-0.6.8.tar.gz
+[2024-05-19 19:35:38] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/66/ea/d789263cd559dda77cf4ff6d31e163d98fa57b9d81d50e0ff647d44bef82/mimllearning-0.5.0.tar.gz
+[2024-05-19 19:35:38] INFO root fetch - processPackages [fastblocks]: Downloading https://files.pythonhosted.org/packages/e1/6c/e6e9400ab6ce6851417eeb694cc53161e828738f390f720ec01e9ba5d843/fastblocks-0.4.0.tar.gz
+[2024-05-19 19:35:38] INFO root fetch - processPackages [clerk-django]: executing diffoscope
+[2024-05-19 19:35:38] INFO root fetch - processPackages [clerk-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clerk_django-1.0.2.tar.gz tmp/clerk_django-1.0.3.tar.gz --markdown 20240519/c/clerk-django/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-19 19:35:38] INFO root fetch - processPackages [TensorFlowASR]: executing diffoscope
+[2024-05-19 19:35:38] INFO root fetch - processPackages [TensorFlowASR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TensorFlowASR-2.0.0.tar.gz tmp/TensorFlowASR-2.0.1.tar.gz --markdown 20240519/T/TensorFlowASR/2.0.0-2.0.1/README.md --exclude *.pyd
+[2024-05-19 19:35:38] INFO root fetch - processPackages [PythonForWindows]: executing diffoscope
+[2024-05-19 19:35:38] INFO root fetch - processPackages [PythonForWindows]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PythonForWindows-0.6.5.tar.gz tmp/PythonForWindows-0.6.8.tar.gz --markdown 20240519/P/PythonForWindows/0.6.5-0.6.8/README.md --exclude *.pyd
+[2024-05-19 19:35:38] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-19 19:35:38] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.4.9.tar.gz tmp/mimllearning-0.5.0.tar.gz --markdown 20240519/m/mimllearning/0.4.9-0.5.0/README.md --exclude *.pyd
+[2024-05-19 19:35:38] INFO root fetch - processPackages [fastblocks]: executing diffoscope
+[2024-05-19 19:35:38] INFO root fetch - processPackages [fastblocks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastblocks-0.3.9.tar.gz tmp/fastblocks-0.4.0.tar.gz --markdown 20240519/f/fastblocks/0.3.9-0.4.0/README.md --exclude *.pyd
+[2024-05-19 19:35:38] INFO root fetch - processPackages [gpt-pr]: Remove: archive file [/home/abi/fetcher/tmp/gpt-pr-0.3.0.tar.gz]
+[2024-05-19 19:35:38] INFO root fetch - processPackages [gpt-pr]: Remove: archive file [/home/abi/fetcher/tmp/gpt-pr-0.4.0.tar.gz]
+[2024-05-19 19:35:38] INFO root fetch - main [MainThread]: End processing [gpt-pr]: success
+[2024-05-19 19:35:39] INFO root fetch - processPackages [clerk-django]: Remove: archive file [/home/abi/fetcher/tmp/clerk_django-1.0.2.tar.gz]
+[2024-05-19 19:35:39] INFO root fetch - processPackages [clerk-django]: Remove: archive file [/home/abi/fetcher/tmp/clerk_django-1.0.3.tar.gz]
+[2024-05-19 19:35:39] INFO root fetch - main [MainThread]: End processing [clerk-django]: success
+[2024-05-19 19:35:39] INFO root fetch - processPackages [fastblocks]: Remove: archive file [/home/abi/fetcher/tmp/fastblocks-0.3.9.tar.gz]
+[2024-05-19 19:35:39] INFO root fetch - processPackages [fastblocks]: Remove: archive file [/home/abi/fetcher/tmp/fastblocks-0.4.0.tar.gz]
+[2024-05-19 19:35:39] INFO root fetch - main [MainThread]: End processing [fastblocks]: success
+[2024-05-19 19:35:39] INFO root fetch - processPackages [TensorFlowASR]: Remove: archive file [/home/abi/fetcher/tmp/TensorFlowASR-2.0.0.tar.gz]
+[2024-05-19 19:35:39] INFO root fetch - processPackages [TensorFlowASR]: Remove: archive file [/home/abi/fetcher/tmp/TensorFlowASR-2.0.1.tar.gz]
+[2024-05-19 19:35:39] INFO root fetch - main [MainThread]: End processing [TensorFlowASR]: success
+[2024-05-19 19:35:39] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.4.9.tar.gz]
+[2024-05-19 19:35:39] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.5.0.tar.gz]
+[2024-05-19 19:35:39] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-19 19:35:40] INFO root fetch - processPackages [PythonForWindows]: Remove: archive file [/home/abi/fetcher/tmp/PythonForWindows-0.6.5.tar.gz]
+[2024-05-19 19:35:40] INFO root fetch - processPackages [PythonForWindows]: Remove: archive file [/home/abi/fetcher/tmp/PythonForWindows-0.6.8.tar.gz]
+[2024-05-19 19:35:40] INFO root fetch - main [MainThread]: End processing [PythonForWindows]: success
+[2024-05-19 19:35:40] INFO root fetch - main [MainThread]: Store serial: [23278674]
