@@ -3219,3 +3219,33 @@
 [2024-05-19 05:19:15] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.5.5.tar.gz]
 [2024-05-19 05:19:15] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
 [2024-05-19 05:19:15] INFO root fetch - main [MainThread]: Store serial: [23272969]
+[2024-05-19 05:21:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272969]
+[2024-05-19 05:21:23] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 05:21:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: debug-utility
+[2024-05-19 05:21:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: toyhouse
+[2024-05-19 05:21:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-commandx
+[2024-05-19 05:21:24] INFO root fetch - processPackages [pulumi-commandx]: New version: [0.1.2] Old Version: [0.1.1a1714170747]
+[2024-05-19 05:21:24] INFO root fetch - processPackages [debug-utility]: New version: [0.4] Old Version: [0.3]
+[2024-05-19 05:21:24] INFO root fetch - processPackages [toyhouse]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-19 05:21:24] INFO root fetch - processPackages [debug-utility]: Downloading https://files.pythonhosted.org/packages/f8/ea/7a5565953e4e9f59afa5e733857946e4fa0e8897df871c0ab43c452dde12/debug_utility-0.3.tar.gz
+[2024-05-19 05:21:24] INFO root fetch - processPackages [toyhouse]: Downloading https://files.pythonhosted.org/packages/ba/d3/544ff8a6f02723d09a0ecf2e44cd2782b4b487d722ad70c678076d81eee7/toyhouse-0.2.0.tar.gz
+[2024-05-19 05:21:24] INFO root fetch - processPackages [pulumi-commandx]: Downloading https://files.pythonhosted.org/packages/03/9b/262b4cface8892be2aa4c91e1944ede44567e93b5fcbb2470fb272c58b34/pulumi_commandx-0.1.1a1714170747.tar.gz
+[2024-05-19 05:21:24] INFO root fetch - processPackages [debug-utility]: Downloading https://files.pythonhosted.org/packages/a3/7b/bf540c95104683aeeeb9f54cf7566af3eec93e2c5328895758b344407f73/debug_utility-0.4.tar.gz
+[2024-05-19 05:21:24] INFO root fetch - processPackages [debug-utility]: executing diffoscope
+[2024-05-19 05:21:24] INFO root fetch - processPackages [debug-utility]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/debug_utility-0.3.tar.gz tmp/debug_utility-0.4.tar.gz --markdown 20240519/d/debug-utility/0.3-0.4/README.md --exclude *.pyd
+[2024-05-19 05:21:24] INFO root fetch - processPackages [toyhouse]: Downloading https://files.pythonhosted.org/packages/8f/db/6c3559e8c27819c041d60a2e69c4ea381597c9c8029c600d58c0bb17d88e/toyhouse-0.2.1.tar.gz
+[2024-05-19 05:21:24] INFO root fetch - processPackages [pulumi-commandx]: Downloading https://files.pythonhosted.org/packages/82/64/068116a7aea2b0f29c965f22227b7c5fe18cd20763c00314219d29b1a5e1/pulumi_commandx-0.1.2.tar.gz
+[2024-05-19 05:21:25] INFO root fetch - processPackages [toyhouse]: executing diffoscope
+[2024-05-19 05:21:25] INFO root fetch - processPackages [toyhouse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toyhouse-0.2.0.tar.gz tmp/toyhouse-0.2.1.tar.gz --markdown 20240519/t/toyhouse/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-19 05:21:25] INFO root fetch - processPackages [pulumi-commandx]: executing diffoscope
+[2024-05-19 05:21:25] INFO root fetch - processPackages [pulumi-commandx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_commandx-0.1.1a1714170747.tar.gz tmp/pulumi_commandx-0.1.2.tar.gz --markdown 20240519/p/pulumi-commandx/0.1.1a1714170747-0.1.2/README.md --exclude *.pyd
+[2024-05-19 05:21:25] INFO root fetch - processPackages [debug-utility]: Remove: archive file [/home/abi/fetcher/tmp/debug_utility-0.3.tar.gz]
+[2024-05-19 05:21:25] INFO root fetch - processPackages [debug-utility]: Remove: archive file [/home/abi/fetcher/tmp/debug_utility-0.4.tar.gz]
+[2024-05-19 05:21:25] INFO root fetch - main [MainThread]: End processing [debug-utility]: success
+[2024-05-19 05:21:25] INFO root fetch - processPackages [pulumi-commandx]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_commandx-0.1.1a1714170747.tar.gz]
+[2024-05-19 05:21:25] INFO root fetch - processPackages [pulumi-commandx]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_commandx-0.1.2.tar.gz]
+[2024-05-19 05:21:25] INFO root fetch - main [MainThread]: End processing [pulumi-commandx]: success
+[2024-05-19 05:21:25] INFO root fetch - processPackages [toyhouse]: Remove: archive file [/home/abi/fetcher/tmp/toyhouse-0.2.0.tar.gz]
+[2024-05-19 05:21:25] INFO root fetch - processPackages [toyhouse]: Remove: archive file [/home/abi/fetcher/tmp/toyhouse-0.2.1.tar.gz]
+[2024-05-19 05:21:25] INFO root fetch - main [MainThread]: End processing [toyhouse]: success
+[2024-05-19 05:21:25] INFO root fetch - main [MainThread]: Store serial: [23272978]
