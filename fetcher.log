@@ -16543,3 +16543,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 20:28:38] INFO root fetch - processPackages [Simba-UW-tf-dev]: Remove: archive file [/home/abi/fetcher/tmp/Simba-UW-tf-dev-1.92.5.tar.gz]
 [2024-05-19 20:28:38] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
 [2024-05-19 20:28:38] INFO root fetch - main [MainThread]: Store serial: [23279285]
+[2024-05-19 20:30:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279285]
+[2024-05-19 20:30:47] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 20:30:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gptwc
+[2024-05-19 20:30:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: antichristianz
+[2024-05-19 20:30:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi
+[2024-05-19 20:30:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dann5
+[2024-05-19 20:30:47] WARNING root fetch - processPackages [antichristianz]: Skipping, unable to determine old version
+[2024-05-19 20:30:47] INFO root fetch - main [MainThread]: End processing [antichristianz] error
+[2024-05-19 20:30:47] INFO root fetch - processPackages [gptwc]: New version: [1.3.0] Old Version: [1.2.6]
+[2024-05-19 20:30:47] INFO root fetch - processPackages [dann5]: New version: [3.0.0] Old Version: [2.2.2]
+[2024-05-19 20:30:47] INFO root fetch - processPackages [pulumi]: New version: [3.99.0] Old Version: [3.98.0]
+[2024-05-19 20:30:48] INFO root fetch - processPackages [gptwc]: Downloading https://files.pythonhosted.org/packages/bd/7f/01c3441ff7d6c627f33bb41d3268c8671bf1a862b1a363e26e6a2ba287e2/gptwc-1.2.6.tar.gz
+[2024-05-19 20:30:48] INFO root fetch - processPackages [dann5]: Downloading https://files.pythonhosted.org/packages/d2/c5/10f5f62108a2568531fe450d2e771707453870945bab24e76015978c4dd8/dann5-2.2.2.tar.gz
+[2024-05-19 20:30:48] INFO root fetch - processPackages [pulumi]: Downloading https://files.pythonhosted.org/packages/c1/38/8ac5a8420c7a95ad63a48e5881ef08233e7ce3dbe95751bfcc7746f0c383/pulumi-3.98.0-py3-none-any.whl
+[2024-05-19 20:30:48] INFO root fetch - processPackages [gptwc]: Downloading https://files.pythonhosted.org/packages/58/a3/3364c0fa3ebe4655488d12708829de957bfe34dc324a9807de6f14012d98/gptwc-1.3.0.tar.gz
+[2024-05-19 20:30:48] INFO root fetch - processPackages [gptwc]: executing diffoscope
+[2024-05-19 20:30:48] INFO root fetch - processPackages [gptwc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gptwc-1.2.6.tar.gz tmp/gptwc-1.3.0.tar.gz --markdown 20240519/g/gptwc/1.2.6-1.3.0/README.md --exclude *.pyd
+[2024-05-19 20:30:48] INFO root fetch - processPackages [pulumi]: Downloading https://files.pythonhosted.org/packages/17/49/ac369781e6bea40b4e15ca66620d1815ffa59727e6dab5e543a8971e8cd9/pulumi-3.99.0-py3-none-any.whl
+[2024-05-19 20:30:48] INFO root fetch - processPackages [pulumi]: executing diffoscope
+[2024-05-19 20:30:48] INFO root fetch - processPackages [pulumi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi-3.98.0-py3-none-any.whl.zip tmp/pulumi-3.99.0-py3-none-any.whl.zip --markdown 20240519/p/pulumi/3.98.0-3.99.0/README.md --exclude *.pyd
+[2024-05-19 20:30:48] INFO root fetch - processPackages [dann5]: Downloading https://files.pythonhosted.org/packages/86/ec/e75b3385b087967d7a03189cd2b7f44bdb44b906cbb7dfd066be4a296576/dann5-3.0.0.tar.gz
+[2024-05-19 20:30:48] INFO root fetch - processPackages [gptwc]: Remove: archive file [/home/abi/fetcher/tmp/gptwc-1.2.6.tar.gz]
+[2024-05-19 20:30:48] INFO root fetch - processPackages [gptwc]: Remove: archive file [/home/abi/fetcher/tmp/gptwc-1.3.0.tar.gz]
+[2024-05-19 20:30:48] INFO root fetch - main [MainThread]: End processing [gptwc]: success
+[2024-05-19 20:30:49] INFO root fetch - processPackages [pulumi]: Remove: archive file [/home/abi/fetcher/tmp/pulumi-3.98.0-py3-none-any.whl.zip]
+[2024-05-19 20:30:49] INFO root fetch - processPackages [pulumi]: Remove: archive file [/home/abi/fetcher/tmp/pulumi-3.99.0-py3-none-any.whl.zip]
+[2024-05-19 20:30:49] INFO root fetch - main [MainThread]: End processing [pulumi]: success
+[2024-05-19 20:30:49] INFO root fetch - processPackages [dann5]: executing diffoscope
+[2024-05-19 20:30:49] INFO root fetch - processPackages [dann5]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dann5-2.2.2.tar.gz tmp/dann5-3.0.0.tar.gz --markdown 20240519/d/dann5/2.2.2-3.0.0/README.md --exclude *.pyd
+[2024-05-19 20:31:29] INFO root fetch - processPackages [dann5]: Remove: archive file [/home/abi/fetcher/tmp/dann5-2.2.2.tar.gz]
+[2024-05-19 20:31:29] INFO root fetch - processPackages [dann5]: Remove: archive file [/home/abi/fetcher/tmp/dann5-3.0.0.tar.gz]
+[2024-05-19 20:31:29] INFO root fetch - main [MainThread]: End processing [dann5]: success
+[2024-05-19 20:31:29] INFO root fetch - main [MainThread]: Store serial: [23279298]
