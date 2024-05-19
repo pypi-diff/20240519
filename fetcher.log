@@ -13784,3 +13784,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 17:53:07] INFO root fetch - processPackages [acb]: Remove: archive file [/home/abi/fetcher/tmp/acb-0.6.0.tar.gz]
 [2024-05-19 17:53:07] INFO root fetch - main [MainThread]: End processing [acb]: success
 [2024-05-19 17:53:07] INFO root fetch - main [MainThread]: Store serial: [23277995]
+[2024-05-19 17:55:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277995]
+[2024-05-19 17:55:16] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 17:55:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: funread
+[2024-05-19 17:55:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xiaomusic
+[2024-05-19 17:55:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yeref
+[2024-05-19 17:55:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rix-template
+[2024-05-19 17:55:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fargoingz
+[2024-05-19 17:55:16] WARNING root fetch - processPackages [rix-template]: Skipping, unable to determine old version
+[2024-05-19 17:55:16] INFO root fetch - main [MainThread]: End processing [rix-template] error
+[2024-05-19 17:55:16] INFO root fetch - processPackages [xiaomusic]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-19 17:55:16] INFO root fetch - processPackages [funread]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-05-19 17:55:16] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-19 17:55:16] WARNING root fetch - processPackages [fargoingz]: Skipping, unable to determine old version
+[2024-05-19 17:55:16] INFO root fetch - main [MainThread]: End processing [fargoingz] error
+[2024-05-19 17:55:16] INFO root fetch - processPackages [xiaomusic]: Downloading https://files.pythonhosted.org/packages/43/b7/00d5b5484c941fbe637c09c55a9c8eb8efa9613e8f748eb82063230d7c40/xiaomusic-0.1.8.tar.gz
+[2024-05-19 17:55:16] INFO root fetch - processPackages [funread]: Downloading https://files.pythonhosted.org/packages/59/52/fdf969b3e9a5973d1fbcb899f509b88b33136ef855d9cd8d1b4a3cb2ccc7/funread-0.5.8-py3-none-any.whl
+[2024-05-19 17:55:16] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-19 17:55:16] INFO root fetch - processPackages [funread]: Downloading https://files.pythonhosted.org/packages/f0/76/53e18f8f375f24948c9d218296c2612cbfffe77f1410d9d22be9cfa54ba7/funread-0.5.9-py3-none-any.whl
+[2024-05-19 17:55:16] INFO root fetch - processPackages [xiaomusic]: Downloading https://files.pythonhosted.org/packages/a1/21/10e07d79cc47710402442039f3fe0d28c854c8225032a4972152505951a3/xiaomusic-0.1.9.tar.gz
+[2024-05-19 17:55:16] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-19 17:55:16] INFO root fetch - processPackages [funread]: executing diffoscope
+[2024-05-19 17:55:16] INFO root fetch - processPackages [funread]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funread-0.5.8-py3-none-any.whl.zip tmp/funread-0.5.9-py3-none-any.whl.zip --markdown 20240519/f/funread/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-05-19 17:55:16] INFO root fetch - processPackages [xiaomusic]: executing diffoscope
+[2024-05-19 17:55:16] INFO root fetch - processPackages [xiaomusic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xiaomusic-0.1.8.tar.gz tmp/xiaomusic-0.1.9.tar.gz --markdown 20240519/x/xiaomusic/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-19 17:55:16] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-19 17:55:16] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240519/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-19 17:55:17] INFO root fetch - processPackages [funread]: Remove: archive file [/home/abi/fetcher/tmp/funread-0.5.8-py3-none-any.whl.zip]
+[2024-05-19 17:55:17] INFO root fetch - processPackages [funread]: Remove: archive file [/home/abi/fetcher/tmp/funread-0.5.9-py3-none-any.whl.zip]
+[2024-05-19 17:55:17] INFO root fetch - main [MainThread]: End processing [funread]: success
+[2024-05-19 17:55:17] INFO root fetch - processPackages [xiaomusic]: Remove: archive file [/home/abi/fetcher/tmp/xiaomusic-0.1.8.tar.gz]
+[2024-05-19 17:55:17] INFO root fetch - processPackages [xiaomusic]: Remove: archive file [/home/abi/fetcher/tmp/xiaomusic-0.1.9.tar.gz]
+[2024-05-19 17:55:17] INFO root fetch - main [MainThread]: End processing [xiaomusic]: success
+[2024-05-19 17:55:17] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-19 17:55:17] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-19 17:55:17] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-19 17:55:17] INFO root fetch - main [MainThread]: Store serial: [23278006]
