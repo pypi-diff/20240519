@@ -11033,3 +11033,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 15:13:11] WARNING root fetch - processPackages [juxtapose]: Skipping package: exceeds size limit 19361597>=10485760
 [2024-05-19 15:13:11] INFO root fetch - main [MainThread]: End processing [juxtapose] error
 [2024-05-19 15:13:11] INFO root fetch - main [MainThread]: Store serial: [23276624]
+[2024-05-19 15:15:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276624]
+[2024-05-19 15:15:19] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 15:15:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fbgemm-gpu-nightly-cpu
+[2024-05-19 15:15:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rio-ui
+[2024-05-19 15:15:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aiogram-broadcaster
+[2024-05-19 15:15:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-cfran
+[2024-05-19 15:15:19] INFO root fetch - processPackages [rio-ui]: New version: [0.7] Old Version: [0.6.9]
+[2024-05-19 15:15:19] INFO root fetch - processPackages [django-cfran]: New version: [11.2.3] Old Version: [11.2.2]
+[2024-05-19 15:15:19] WARNING root fetch - processPackages [aiogram-broadcaster]: Skipping, unable to determine old version
+[2024-05-19 15:15:19] INFO root fetch - main [MainThread]: End processing [aiogram-broadcaster] error
+[2024-05-19 15:15:19] INFO root fetch - processPackages [rio-ui]: Downloading https://files.pythonhosted.org/packages/4c/fd/22b5408245b2c43530d6f4c03525f4cfb5149b6b9a8607014456dc6a4c8c/rio_ui-0.6.9.tar.gz
+[2024-05-19 15:15:20] INFO root fetch - processPackages [django-cfran]: Downloading https://files.pythonhosted.org/packages/e0/96/0f20dc1c64c124a61aa2bd68944a00e6e77313314de84a44820ef9b64caa/django_cfran-11.2.2.tar.gz
+[2024-05-19 15:15:20] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: New version: [2024.5.19] Old Version: [2024.5.18]
+[2024-05-19 15:15:20] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/8d/03/00d5825e94b60476ed28079137936e5477c289baf7bce294913cc644c474/fbgemm_gpu_nightly_cpu-2024.5.18-cp39-cp39-manylinux2014_x86_64.whl
+[2024-05-19 15:15:20] INFO root fetch - processPackages [rio-ui]: Downloading https://files.pythonhosted.org/packages/74/b4/8215b89f841066b9cd95844a9df26dfb8d34fc83612b447d63d96ca9fe7e/rio_ui-0.7.tar.gz
+[2024-05-19 15:15:20] INFO root fetch - processPackages [rio-ui]: executing diffoscope
+[2024-05-19 15:15:20] INFO root fetch - processPackages [rio-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rio_ui-0.6.9.tar.gz tmp/rio_ui-0.7.tar.gz --markdown 20240519/r/rio-ui/0.6.9-0.7/README.md --exclude *.pyd
+[2024-05-19 15:15:20] INFO root fetch - processPackages [django-cfran]: Downloading https://files.pythonhosted.org/packages/39/b4/077fbafc1928f9961349804c7bdfbe9ae952ce9887a0e69d19761c999c62/django_cfran-11.2.3.tar.gz
+[2024-05-19 15:15:21] INFO root fetch - processPackages [django-cfran]: executing diffoscope
+[2024-05-19 15:15:21] INFO root fetch - processPackages [django-cfran]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_cfran-11.2.2.tar.gz tmp/django_cfran-11.2.3.tar.gz --markdown 20240519/d/django-cfran/11.2.2-11.2.3/README.md --exclude *.pyd
+[2024-05-19 15:15:21] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/97/2d/043eb9d7fc689cb39b3262c6a02960e77b73d170dead44c2ee0d1b657b1f/fbgemm_gpu_nightly_cpu-2024.5.19-cp39-cp39-manylinux2014_x86_64.whl
+[2024-05-19 15:15:21] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: executing diffoscope
+[2024-05-19 15:15:21] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fbgemm_gpu_nightly_cpu-2024.5.18-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/fbgemm_gpu_nightly_cpu-2024.5.19-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20240519/f/fbgemm-gpu-nightly-cpu/2024.5.18-2024.5.19/README.md --exclude *.pyd
+[2024-05-19 15:15:22] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/fbgemm_gpu_nightly_cpu-2024.5.18-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-05-19 15:15:22] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/fbgemm_gpu_nightly_cpu-2024.5.19-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-05-19 15:15:22] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
+[2024-05-19 15:15:22] INFO root fetch - processPackages [rio-ui]: Remove: archive file [/home/abi/fetcher/tmp/rio_ui-0.6.9.tar.gz]
+[2024-05-19 15:15:22] INFO root fetch - processPackages [rio-ui]: Remove: archive file [/home/abi/fetcher/tmp/rio_ui-0.7.tar.gz]
+[2024-05-19 15:15:22] INFO root fetch - main [MainThread]: End processing [rio-ui]: success
+[2024-05-19 15:16:32] INFO root fetch - processPackages [django-cfran]: Remove: archive file [/home/abi/fetcher/tmp/django_cfran-11.2.2.tar.gz]
+[2024-05-19 15:16:32] INFO root fetch - processPackages [django-cfran]: Remove: archive file [/home/abi/fetcher/tmp/django_cfran-11.2.3.tar.gz]
+[2024-05-19 15:16:32] INFO root fetch - main [MainThread]: End processing [django-cfran]: success
+[2024-05-19 15:16:32] INFO root fetch - main [MainThread]: Store serial: [23276641]
