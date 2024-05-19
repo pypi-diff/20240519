@@ -7198,3 +7198,39 @@
 [2024-05-19 10:54:45] INFO root fetch - processPackages [pywxdump]: Remove: archive file [/home/abi/fetcher/tmp/pywxdump-3.0.8.tar.gz]
 [2024-05-19 10:54:45] INFO root fetch - main [MainThread]: End processing [pywxdump]: success
 [2024-05-19 10:54:45] INFO root fetch - main [MainThread]: Store serial: [23274824]
+[2024-05-19 10:56:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274824]
+[2024-05-19 10:56:54] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 10:56:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ridingmenz
+[2024-05-19 10:56:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: netbox4-interface-sync
+[2024-05-19 10:56:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: eolymp
+[2024-05-19 10:56:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: maat-machine
+[2024-05-19 10:56:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tdrpa.tdcore
+[2024-05-19 10:56:54] WARNING root fetch - processPackages [netbox4-interface-sync]: Skipping, unable to determine old version
+[2024-05-19 10:56:54] INFO root fetch - main [MainThread]: End processing [netbox4-interface-sync] error
+[2024-05-19 10:56:54] INFO root fetch - processPackages [tdrpa.tdcore]: New version: [1.1.35] Old Version: [1.1.34]
+[2024-05-19 10:56:54] INFO root fetch - processPackages [tdrpa.tdcore]: Downloading https://files.pythonhosted.org/packages/f9/a3/91c533a1707a824e669cdb6f96e28dd19cc3db6fe5de46a97bd08b3cd808/tdrpa.tdcore-1.1.34-py39-none-win_amd64.whl
+[2024-05-19 10:56:54] WARNING root fetch - processPackages [ridingmenz]: Skipping, unable to determine old version
+[2024-05-19 10:56:54] INFO root fetch - main [MainThread]: End processing [ridingmenz] error
+[2024-05-19 10:56:54] INFO root fetch - processPackages [maat-machine]: New version: [0.1.1b2] Old Version: [0.1.1b1]
+[2024-05-19 10:56:54] INFO root fetch - processPackages [eolymp]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-19 10:56:55] INFO root fetch - processPackages [maat-machine]: Downloading https://files.pythonhosted.org/packages/5c/ba/c6df07b9f98edaae64416c9e35c511f7bb0b3d89592a3abaafa3101e03f1/maat-machine-0.1.1b1.tar.gz
+[2024-05-19 10:56:55] INFO root fetch - processPackages [eolymp]: Downloading https://files.pythonhosted.org/packages/b4/7e/616d80edbba0ebc4de3d8b9e073268ed513845acc17f3f0c5687e2745d1d/eolymp-0.9.8.tar.gz
+[2024-05-19 10:56:55] INFO root fetch - processPackages [tdrpa.tdcore]: Downloading https://files.pythonhosted.org/packages/17/6b/d2121c7f8a146ad44cdf6601b98aa3c938071e50808695ee035bf8959628/tdrpa.tdcore-1.1.35-py39-none-win_amd64.whl
+[2024-05-19 10:56:55] INFO root fetch - processPackages [maat-machine]: Downloading https://files.pythonhosted.org/packages/28/7a/db0d30829430aecf88215fbf12b8a82bd5f2dbc88fd9a848e587e0bc67c3/maat-machine-0.1.1b2.tar.gz
+[2024-05-19 10:56:55] INFO root fetch - processPackages [eolymp]: Downloading https://files.pythonhosted.org/packages/b7/fe/df96d638fe0a51e45220154bf6bc8588f92805e80d6cf2e908d0226bf3c9/eolymp-0.9.9.tar.gz
+[2024-05-19 10:56:55] INFO root fetch - processPackages [maat-machine]: executing diffoscope
+[2024-05-19 10:56:55] INFO root fetch - processPackages [maat-machine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maat-machine-0.1.1b1.tar.gz tmp/maat-machine-0.1.1b2.tar.gz --markdown 20240519/m/maat-machine/0.1.1b1-0.1.1b2/README.md --exclude *.pyd
+[2024-05-19 10:56:55] INFO root fetch - processPackages [tdrpa.tdcore]: executing diffoscope
+[2024-05-19 10:56:55] INFO root fetch - processPackages [tdrpa.tdcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tdrpa.tdcore-1.1.34-py39-none-win_amd64.whl.zip tmp/tdrpa.tdcore-1.1.35-py39-none-win_amd64.whl.zip --markdown 20240519/t/tdrpa.tdcore/1.1.34-1.1.35/README.md --exclude *.pyd
+[2024-05-19 10:56:55] INFO root fetch - processPackages [eolymp]: executing diffoscope
+[2024-05-19 10:56:55] INFO root fetch - processPackages [eolymp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eolymp-0.9.8.tar.gz tmp/eolymp-0.9.9.tar.gz --markdown 20240519/e/eolymp/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-19 10:56:56] INFO root fetch - processPackages [maat-machine]: Remove: archive file [/home/abi/fetcher/tmp/maat-machine-0.1.1b1.tar.gz]
+[2024-05-19 10:56:56] INFO root fetch - processPackages [maat-machine]: Remove: archive file [/home/abi/fetcher/tmp/maat-machine-0.1.1b2.tar.gz]
+[2024-05-19 10:56:56] INFO root fetch - main [MainThread]: End processing [maat-machine]: success
+[2024-05-19 10:56:57] INFO root fetch - processPackages [eolymp]: Remove: archive file [/home/abi/fetcher/tmp/eolymp-0.9.8.tar.gz]
+[2024-05-19 10:56:57] INFO root fetch - processPackages [eolymp]: Remove: archive file [/home/abi/fetcher/tmp/eolymp-0.9.9.tar.gz]
+[2024-05-19 10:56:57] INFO root fetch - main [MainThread]: End processing [eolymp]: success
+[2024-05-19 10:56:57] INFO root fetch - processPackages [tdrpa.tdcore]: Remove: archive file [/home/abi/fetcher/tmp/tdrpa.tdcore-1.1.34-py39-none-win_amd64.whl.zip]
+[2024-05-19 10:56:57] INFO root fetch - processPackages [tdrpa.tdcore]: Remove: archive file [/home/abi/fetcher/tmp/tdrpa.tdcore-1.1.35-py39-none-win_amd64.whl.zip]
+[2024-05-19 10:56:57] INFO root fetch - main [MainThread]: End processing [tdrpa.tdcore]: success
+[2024-05-19 10:56:57] INFO root fetch - main [MainThread]: Store serial: [23274843]
