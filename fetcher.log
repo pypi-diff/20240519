@@ -11309,3 +11309,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 15:29:38] INFO root fetch - processPackages [abses]: Remove: archive file [/home/abi/fetcher/tmp/abses-0.6.6.tar.gz]
 [2024-05-19 15:29:38] INFO root fetch - main [MainThread]: End processing [abses]: success
 [2024-05-19 15:29:38] INFO root fetch - main [MainThread]: Store serial: [23276779]
+[2024-05-19 15:31:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276779]
+[2024-05-19 15:31:46] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 15:31:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: revel
+[2024-05-19 15:31:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spaceone-inventory
+[2024-05-19 15:31:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xyz-parse
+[2024-05-19 15:31:47] INFO root fetch - processPackages [spaceone-inventory]: New version: [2.0.dev99] Old Version: [2.0.dev98]
+[2024-05-19 15:31:47] INFO root fetch - processPackages [xyz-parse]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-19 15:31:47] INFO root fetch - processPackages [revel]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-05-19 15:31:47] INFO root fetch - processPackages [spaceone-inventory]: Downloading https://files.pythonhosted.org/packages/2b/23/73e091142fbd007706604f94cc95718e79d9259d998aa9dd424fc7cc6f7f/spaceone-inventory-2.0.dev98.tar.gz
+[2024-05-19 15:31:47] INFO root fetch - processPackages [revel]: Downloading https://files.pythonhosted.org/packages/a0/df/d443e5b0b97bfc80647c4e9f94a147fcbc567cfa9dcae819e868b6292f0d/revel-0.9.0.tar.gz
+[2024-05-19 15:31:47] INFO root fetch - processPackages [xyz-parse]: Downloading https://files.pythonhosted.org/packages/63/67/d833a2bc09b20d2b501279409d25c1006bba4ae51e9b764c9d5471d48da4/xyz_parse-0.1.2.tar.gz
+[2024-05-19 15:31:47] INFO root fetch - processPackages [spaceone-inventory]: Downloading https://files.pythonhosted.org/packages/e7/30/f1229bb9f69283d6576804b473d6fe73ff3118fb5543c89d48b18f899ca2/spaceone-inventory-2.0.dev99.tar.gz
+[2024-05-19 15:31:47] INFO root fetch - processPackages [spaceone-inventory]: executing diffoscope
+[2024-05-19 15:31:47] INFO root fetch - processPackages [spaceone-inventory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spaceone-inventory-2.0.dev98.tar.gz tmp/spaceone-inventory-2.0.dev99.tar.gz --markdown 20240519/s/spaceone-inventory/2.0.dev98-2.0.dev99/README.md --exclude *.pyd
+[2024-05-19 15:31:47] INFO root fetch - processPackages [revel]: Downloading https://files.pythonhosted.org/packages/6c/8a/7403ea61e970794dc4de3ae340c9bad12e793b27d968d40f56856566992d/revel-0.9.1.tar.gz
+[2024-05-19 15:31:47] INFO root fetch - processPackages [xyz-parse]: Downloading https://files.pythonhosted.org/packages/dd/67/ad19f58434dfc89598b41cbe213a767c153f72237d7903be9f83139d7602/xyz_parse-0.1.3.tar.gz
+[2024-05-19 15:31:47] INFO root fetch - processPackages [revel]: executing diffoscope
+[2024-05-19 15:31:47] INFO root fetch - processPackages [revel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/revel-0.9.0.tar.gz tmp/revel-0.9.1.tar.gz --markdown 20240519/r/revel/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-05-19 15:31:47] INFO root fetch - processPackages [xyz-parse]: executing diffoscope
+[2024-05-19 15:31:47] INFO root fetch - processPackages [xyz-parse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xyz_parse-0.1.2.tar.gz tmp/xyz_parse-0.1.3.tar.gz --markdown 20240519/x/xyz-parse/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-19 15:31:48] INFO root fetch - processPackages [revel]: Remove: archive file [/home/abi/fetcher/tmp/revel-0.9.0.tar.gz]
+[2024-05-19 15:31:48] INFO root fetch - processPackages [revel]: Remove: archive file [/home/abi/fetcher/tmp/revel-0.9.1.tar.gz]
+[2024-05-19 15:31:48] INFO root fetch - main [MainThread]: End processing [revel]: success
+[2024-05-19 15:31:48] INFO root fetch - processPackages [xyz-parse]: Remove: archive file [/home/abi/fetcher/tmp/xyz_parse-0.1.2.tar.gz]
+[2024-05-19 15:31:48] INFO root fetch - processPackages [xyz-parse]: Remove: archive file [/home/abi/fetcher/tmp/xyz_parse-0.1.3.tar.gz]
+[2024-05-19 15:31:48] INFO root fetch - main [MainThread]: End processing [xyz-parse]: success
+[2024-05-19 15:31:48] INFO root fetch - processPackages [spaceone-inventory]: Remove: archive file [/home/abi/fetcher/tmp/spaceone-inventory-2.0.dev98.tar.gz]
+[2024-05-19 15:31:48] INFO root fetch - processPackages [spaceone-inventory]: Remove: archive file [/home/abi/fetcher/tmp/spaceone-inventory-2.0.dev99.tar.gz]
+[2024-05-19 15:31:48] INFO root fetch - main [MainThread]: End processing [spaceone-inventory]: success
+[2024-05-19 15:31:48] INFO root fetch - main [MainThread]: Store serial: [23276795]
