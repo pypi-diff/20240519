@@ -7126,3 +7126,21 @@
 [2024-05-19 10:47:58] INFO root fetch - processPackages [auto-coder]: Remove: archive file [/home/abi/fetcher/tmp/auto-coder-0.1.9.tar.gz]
 [2024-05-19 10:47:58] INFO root fetch - main [MainThread]: End processing [auto-coder]: success
 [2024-05-19 10:47:58] INFO root fetch - main [MainThread]: Store serial: [23274763]
+[2024-05-19 10:50:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274763]
+[2024-05-19 10:50:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 10:50:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bionty-base
+[2024-05-19 10:50:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: eventum-content-manager
+[2024-05-19 10:50:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: anguishousz
+[2024-05-19 10:50:07] WARNING root fetch - processPackages [eventum-content-manager]: Skipping, unable to determine old version
+[2024-05-19 10:50:07] INFO root fetch - main [MainThread]: End processing [eventum-content-manager] error
+[2024-05-19 10:50:07] INFO root fetch - processPackages [bionty-base]: New version: [0.37.3] Old Version: [0.37.2]
+[2024-05-19 10:50:07] WARNING root fetch - processPackages [anguishousz]: Skipping, unable to determine old version
+[2024-05-19 10:50:07] INFO root fetch - main [MainThread]: End processing [anguishousz] error
+[2024-05-19 10:50:07] INFO root fetch - processPackages [bionty-base]: Downloading https://files.pythonhosted.org/packages/7b/10/b534d43dd3edd1e5a4ee0547f5a4fb683bce7e29e62b01a9dbb527d91401/bionty-base-0.37.2.tar.gz
+[2024-05-19 10:50:07] INFO root fetch - processPackages [bionty-base]: Downloading https://files.pythonhosted.org/packages/58/c8/bfef7ee08068823f7f454b5586e3edaee53780dfe9eb685778db1fc9f4d8/bionty_base-0.37.3.tar.gz
+[2024-05-19 10:50:07] INFO root fetch - processPackages [bionty-base]: executing diffoscope
+[2024-05-19 10:50:07] INFO root fetch - processPackages [bionty-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bionty-base-0.37.2.tar.gz tmp/bionty_base-0.37.3.tar.gz --markdown 20240519/b/bionty-base/0.37.2-0.37.3/README.md --exclude *.pyd
+[2024-05-19 10:50:08] INFO root fetch - processPackages [bionty-base]: Remove: archive file [/home/abi/fetcher/tmp/bionty-base-0.37.2.tar.gz]
+[2024-05-19 10:50:08] INFO root fetch - processPackages [bionty-base]: Remove: archive file [/home/abi/fetcher/tmp/bionty_base-0.37.3.tar.gz]
+[2024-05-19 10:50:08] INFO root fetch - main [MainThread]: End processing [bionty-base]: success
+[2024-05-19 10:50:08] INFO root fetch - main [MainThread]: Store serial: [23274779]
