@@ -8197,3 +8197,51 @@
 [2024-05-19 12:12:58] INFO root fetch - processPackages [retk]: Remove: archive file [/home/abi/fetcher/tmp/retk-0.2.8.tar.gz]
 [2024-05-19 12:12:58] INFO root fetch - main [MainThread]: End processing [retk]: success
 [2024-05-19 12:12:58] INFO root fetch - main [MainThread]: Store serial: [23275357]
+[2024-05-19 12:15:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275357]
+[2024-05-19 12:15:07] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 12:15:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: extrautilities
+[2024-05-19 12:15:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: maat-machine
+[2024-05-19 12:15:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: iac-init
+[2024-05-19 12:15:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: exoml
+[2024-05-19 12:15:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PKDevTools
+[2024-05-19 12:15:07] INFO root fetch - processPackages [iac-init]: New version: [0.7.6] Old Version: [0.7.5]
+[2024-05-19 12:15:07] INFO root fetch - processPackages [maat-machine]: New version: [0.1.1b2] Old Version: [0.1.1b1]
+[2024-05-19 12:15:07] INFO root fetch - processPackages [PKDevTools]: New version: [0.13.20240519.124] Old Version: [0.13.20240518.123]
+[2024-05-19 12:15:07] INFO root fetch - processPackages [extrautilities]: New version: [1.1] Old Version: [1.0]
+[2024-05-19 12:15:07] INFO root fetch - processPackages [iac-init]: Downloading https://files.pythonhosted.org/packages/2b/b3/62165bd709fccfb66e155d325ee480eab253af6e7c6912bf688264e47c46/iac_init-0.7.5.tar.gz
+[2024-05-19 12:15:07] INFO root fetch - processPackages [exoml]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-19 12:15:07] INFO root fetch - processPackages [maat-machine]: Downloading https://files.pythonhosted.org/packages/5c/ba/c6df07b9f98edaae64416c9e35c511f7bb0b3d89592a3abaafa3101e03f1/maat-machine-0.1.1b1.tar.gz
+[2024-05-19 12:15:07] INFO root fetch - processPackages [PKDevTools]: Downloading https://files.pythonhosted.org/packages/86/17/3adf0616e198719e888d0c99e26e6626a5c60e6d0d5eebba3da94c915f04/PKDevTools-0.13.20240518.123.tar.gz
+[2024-05-19 12:15:07] INFO root fetch - processPackages [extrautilities]: Downloading https://files.pythonhosted.org/packages/39/6f/d855f5b2c4fb6991ec5a8d8c526e55e100ca03b6610c900ba7f3166b158f/extrautilities-1.0.tar.gz
+[2024-05-19 12:15:07] INFO root fetch - processPackages [exoml]: Downloading https://files.pythonhosted.org/packages/01/c6/c69e6c3e4f7816b784360d5d0b4f0b4bc1b0b04ac8b2134f47dbba420089/exoml-0.1.8.tar.gz
+[2024-05-19 12:15:07] INFO root fetch - processPackages [maat-machine]: Downloading https://files.pythonhosted.org/packages/28/7a/db0d30829430aecf88215fbf12b8a82bd5f2dbc88fd9a848e587e0bc67c3/maat-machine-0.1.1b2.tar.gz
+[2024-05-19 12:15:07] INFO root fetch - processPackages [PKDevTools]: Downloading https://files.pythonhosted.org/packages/62/d2/483adb89105827c1911d4f0f776c7fa352757ec89488534d198a00576f74/PKDevTools-0.13.20240519.124.tar.gz
+[2024-05-19 12:15:08] INFO root fetch - processPackages [extrautilities]: Downloading https://files.pythonhosted.org/packages/a1/55/96bb6f1df1e7757e3f80b15620563d586fd6267ecee8e4e38ce63aa09d5c/extrautilities-1.1.tar.gz
+[2024-05-19 12:15:08] INFO root fetch - processPackages [maat-machine]: executing diffoscope
+[2024-05-19 12:15:08] INFO root fetch - processPackages [maat-machine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maat-machine-0.1.1b1.tar.gz tmp/maat-machine-0.1.1b2.tar.gz --markdown 20240519/m/maat-machine/0.1.1b1-0.1.1b2/README.md --exclude *.pyd
+[2024-05-19 12:15:08] INFO root fetch - processPackages [PKDevTools]: executing diffoscope
+[2024-05-19 12:15:08] INFO root fetch - processPackages [PKDevTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PKDevTools-0.13.20240518.123.tar.gz tmp/PKDevTools-0.13.20240519.124.tar.gz --markdown 20240519/P/PKDevTools/0.13.20240518.123-0.13.20240519.124/README.md --exclude *.pyd
+[2024-05-19 12:15:08] INFO root fetch - processPackages [iac-init]: Downloading https://files.pythonhosted.org/packages/07/26/64301587460ac6dd8f9f57424ef190aa48551deedd63a91fd0ab8d300079/iac_init-0.7.6.tar.gz
+[2024-05-19 12:15:08] INFO root fetch - processPackages [extrautilities]: executing diffoscope
+[2024-05-19 12:15:08] INFO root fetch - processPackages [extrautilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/extrautilities-1.0.tar.gz tmp/extrautilities-1.1.tar.gz --markdown 20240519/e/extrautilities/1.0-1.1/README.md --exclude *.pyd
+[2024-05-19 12:15:08] INFO root fetch - processPackages [exoml]: Downloading https://files.pythonhosted.org/packages/0b/19/f1be2b6c9e89d040510ae0a0dd8508d61b4171fe02dc51c250bc2252cf05/exoml-0.1.9.tar.gz
+[2024-05-19 12:15:08] INFO root fetch - processPackages [exoml]: executing diffoscope
+[2024-05-19 12:15:08] INFO root fetch - processPackages [exoml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exoml-0.1.8.tar.gz tmp/exoml-0.1.9.tar.gz --markdown 20240519/e/exoml/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-19 12:15:08] INFO root fetch - processPackages [iac-init]: executing diffoscope
+[2024-05-19 12:15:08] INFO root fetch - processPackages [iac-init]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iac_init-0.7.5.tar.gz tmp/iac_init-0.7.6.tar.gz --markdown 20240519/i/iac-init/0.7.5-0.7.6/README.md --exclude *.pyd
+[2024-05-19 12:15:08] INFO root fetch - processPackages [extrautilities]: Remove: archive file [/home/abi/fetcher/tmp/extrautilities-1.0.tar.gz]
+[2024-05-19 12:15:08] INFO root fetch - processPackages [extrautilities]: Remove: archive file [/home/abi/fetcher/tmp/extrautilities-1.1.tar.gz]
+[2024-05-19 12:15:08] INFO root fetch - main [MainThread]: End processing [extrautilities]: success
+[2024-05-19 12:15:08] INFO root fetch - processPackages [maat-machine]: Remove: archive file [/home/abi/fetcher/tmp/maat-machine-0.1.1b1.tar.gz]
+[2024-05-19 12:15:08] INFO root fetch - processPackages [maat-machine]: Remove: archive file [/home/abi/fetcher/tmp/maat-machine-0.1.1b2.tar.gz]
+[2024-05-19 12:15:08] INFO root fetch - main [MainThread]: End processing [maat-machine]: success
+[2024-05-19 12:15:08] INFO root fetch - processPackages [PKDevTools]: Remove: archive file [/home/abi/fetcher/tmp/PKDevTools-0.13.20240518.123.tar.gz]
+[2024-05-19 12:15:08] INFO root fetch - processPackages [PKDevTools]: Remove: archive file [/home/abi/fetcher/tmp/PKDevTools-0.13.20240519.124.tar.gz]
+[2024-05-19 12:15:08] INFO root fetch - main [MainThread]: End processing [PKDevTools]: success
+[2024-05-19 12:15:09] INFO root fetch - processPackages [exoml]: Remove: archive file [/home/abi/fetcher/tmp/exoml-0.1.8.tar.gz]
+[2024-05-19 12:15:09] INFO root fetch - processPackages [exoml]: Remove: archive file [/home/abi/fetcher/tmp/exoml-0.1.9.tar.gz]
+[2024-05-19 12:15:09] INFO root fetch - main [MainThread]: End processing [exoml]: success
+[2024-05-19 12:15:13] INFO root fetch - processPackages [iac-init]: Remove: archive file [/home/abi/fetcher/tmp/iac_init-0.7.5.tar.gz]
+[2024-05-19 12:15:13] INFO root fetch - processPackages [iac-init]: Remove: archive file [/home/abi/fetcher/tmp/iac_init-0.7.6.tar.gz]
+[2024-05-19 12:15:13] INFO root fetch - main [MainThread]: End processing [iac-init]: success
+[2024-05-19 12:15:13] INFO root fetch - main [MainThread]: Store serial: [23275372]
