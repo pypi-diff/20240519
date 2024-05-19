@@ -15011,3 +15011,29 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 19:18:09] INFO root fetch - processPackages [retriever-search]: Remove: archive file [/home/abi/fetcher/tmp/retriever_search-0.2.1.tar.gz]
 [2024-05-19 19:18:09] INFO root fetch - main [MainThread]: End processing [retriever-search]: success
 [2024-05-19 19:18:09] INFO root fetch - main [MainThread]: Store serial: [23278556]
+[2024-05-19 19:20:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23278556]
+[2024-05-19 19:20:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 19:20:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vllm-flash-attn
+[2024-05-19 19:20:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sh1106-framework
+[2024-05-19 19:20:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: database-mysql-local
+[2024-05-19 19:20:18] INFO root fetch - processPackages [sh1106-framework]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-19 19:20:18] INFO root fetch - processPackages [database-mysql-local]: New version: [0.0.305] Old Version: [0.0.304]
+[2024-05-19 19:20:18] INFO root fetch - processPackages [sh1106-framework]: Downloading https://files.pythonhosted.org/packages/b9/45/f61e98f8b19f7ae3b948c00562f81d6f544c98ef947ef7aa01c2b6823199/sh1106_framework-0.0.3.tar.gz
+[2024-05-19 19:20:18] INFO root fetch - processPackages [vllm-flash-attn]: New version: [2.5.8.post2] Old Version: [2.5.8.post1]
+[2024-05-19 19:20:18] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/3c/2e/a20bb8841b9ce624d354ebc80c8dbdaad6f98bd25ac4f5da13a55149d782/database_mysql_local-0.0.304.tar.gz
+[2024-05-19 19:20:18] INFO root fetch - processPackages [vllm-flash-attn]: Downloading https://files.pythonhosted.org/packages/20/c9/e433d35625d5cd7aa3ced835b676a4b516e1851d35d06997c9ef8c030a0d/vllm_flash_attn-2.5.8.post1-cp39-cp39-manylinux1_x86_64.whl
+[2024-05-19 19:20:18] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/f4/48/aa66e6fd8849f48605644b655e4707e3ac741ec7e240f715237136b7b7cf/database_mysql_local-0.0.305.tar.gz
+[2024-05-19 19:20:18] INFO root fetch - processPackages [sh1106-framework]: Downloading https://files.pythonhosted.org/packages/90/91/728a55ded3f6559074e30312d4dc6ba74d236c471d7fec20cfd382543af8/sh1106_framework-0.0.4.tar.gz
+[2024-05-19 19:20:18] INFO root fetch - processPackages [database-mysql-local]: executing diffoscope
+[2024-05-19 19:20:18] INFO root fetch - processPackages [database-mysql-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/database_mysql_local-0.0.304.tar.gz tmp/database_mysql_local-0.0.305.tar.gz --markdown 20240519/d/database-mysql-local/0.0.304-0.0.305/README.md --exclude *.pyd
+[2024-05-19 19:20:18] INFO root fetch - processPackages [sh1106-framework]: executing diffoscope
+[2024-05-19 19:20:18] INFO root fetch - processPackages [sh1106-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sh1106_framework-0.0.3.tar.gz tmp/sh1106_framework-0.0.4.tar.gz --markdown 20240519/s/sh1106-framework/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-19 19:20:19] INFO root fetch - processPackages [sh1106-framework]: Remove: archive file [/home/abi/fetcher/tmp/sh1106_framework-0.0.3.tar.gz]
+[2024-05-19 19:20:19] INFO root fetch - processPackages [sh1106-framework]: Remove: archive file [/home/abi/fetcher/tmp/sh1106_framework-0.0.4.tar.gz]
+[2024-05-19 19:20:19] INFO root fetch - main [MainThread]: End processing [sh1106-framework]: success
+[2024-05-19 19:20:19] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.304.tar.gz]
+[2024-05-19 19:20:19] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.305.tar.gz]
+[2024-05-19 19:20:19] INFO root fetch - main [MainThread]: End processing [database-mysql-local]: success
+[2024-05-19 19:20:19] WARNING root fetch - processPackages [vllm-flash-attn]: Skipping package: exceeds size limit 101404204>=10485760
+[2024-05-19 19:20:19] INFO root fetch - main [MainThread]: End processing [vllm-flash-attn] error
+[2024-05-19 19:20:19] INFO root fetch - main [MainThread]: Store serial: [23278567]
