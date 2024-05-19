@@ -6446,3 +6446,54 @@
 [2024-05-19 09:55:02] INFO root fetch - processPackages [odoo-addons-oca-web]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_web-16.0.20240415.1-py3-none-any.whl.zip]
 [2024-05-19 09:55:02] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-web]: success
 [2024-05-19 09:55:02] INFO root fetch - main [MainThread]: Store serial: [23274382]
+[2024-05-19 09:57:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274382]
+[2024-05-19 09:57:10] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-19 09:57:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: monicapf
+[2024-05-19 09:57:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: iac-init
+[2024-05-19 09:57:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addons-oca-web
+[2024-05-19 09:57:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: config-center
+[2024-05-19 09:57:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: baosight
+[2024-05-19 09:57:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: graphene-mlx
+[2024-05-19 09:57:10] INFO root fetch - processPackages [baosight]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 09:57:10] INFO root fetch - processPackages [monicapf]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-19 09:57:10] INFO root fetch - processPackages [config-center]: New version: [0.0.40] Old Version: [0.0.39]
+[2024-05-19 09:57:10] INFO root fetch - processPackages [iac-init]: New version: [0.7.4] Old Version: [0.7.1]
+[2024-05-19 09:57:10] INFO root fetch - processPackages [odoo-addons-oca-web]: New version: [16.0.20240415.1] Old Version: [16.0.20240322.0]
+[2024-05-19 09:57:10] WARNING root fetch - processPackages [graphene-mlx]: Skipping, unable to determine old version
+[2024-05-19 09:57:10] INFO root fetch - main [MainThread]: End processing [graphene-mlx] error
+[2024-05-19 09:57:10] INFO root fetch - processPackages [baosight]: Downloading https://files.pythonhosted.org/packages/72/e0/5c051218be62e92d7cc33bcf889a9f069781fab83c116c9e05a6f86721fe/baosight-0.0.8.tar.gz
+[2024-05-19 09:57:10] INFO root fetch - processPackages [iac-init]: Downloading https://files.pythonhosted.org/packages/d6/cf/a27dddc9aa3bccaa225630e0ab30d4be1f1081ae3ec75f05af7c2d6ab022/iac_init-0.7.1.tar.gz
+[2024-05-19 09:57:10] INFO root fetch - processPackages [config-center]: Downloading https://files.pythonhosted.org/packages/14/ab/4d0770aa2ce93c0d4966e66a486da4245121289a52caeb99ed7b1bde0978/config_center-0.0.39.tar.gz
+[2024-05-19 09:57:10] INFO root fetch - processPackages [odoo-addons-oca-web]: Downloading https://files.pythonhosted.org/packages/41/45/2d26383462884e4072c6b553bf051da610b7e8ac60e0bbc3a973a1132b0f/odoo_addons_oca_web-16.0.20240322.0-py3-none-any.whl
+[2024-05-19 09:57:11] INFO root fetch - processPackages [monicapf]: Downloading https://files.pythonhosted.org/packages/61/6c/c046c23a9e9ace390d946c1703d5ca33cc4dda41e447aaee3f6737d3e84a/monicapf-0.1.0.tar.gz
+[2024-05-19 09:57:11] INFO root fetch - processPackages [baosight]: Downloading https://files.pythonhosted.org/packages/58/9d/77d14df517a7f6c898a66f8dfe33d03cdf374f66524ab680d57de93c1320/baosight-0.0.9.tar.gz
+[2024-05-19 09:57:11] INFO root fetch - processPackages [odoo-addons-oca-web]: Downloading https://files.pythonhosted.org/packages/c6/5c/15e74fa4589b90b99d0919ab74e62670e6907e69f2fdd04f828739778476/odoo_addons_oca_web-16.0.20240415.1-py3-none-any.whl
+[2024-05-19 09:57:11] INFO root fetch - processPackages [baosight]: executing diffoscope
+[2024-05-19 09:57:11] INFO root fetch - processPackages [baosight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baosight-0.0.8.tar.gz tmp/baosight-0.0.9.tar.gz --markdown 20240519/b/baosight/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 09:57:11] INFO root fetch - processPackages [config-center]: Downloading https://files.pythonhosted.org/packages/db/1f/ec82f0cb116638bd992cec1fd52cafd1ccde2273db494dfc3acbb0d2f3dc/config_center-0.0.40.tar.gz
+[2024-05-19 09:57:11] INFO root fetch - processPackages [odoo-addons-oca-web]: executing diffoscope
+[2024-05-19 09:57:11] INFO root fetch - processPackages [odoo-addons-oca-web]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_web-16.0.20240322.0-py3-none-any.whl.zip tmp/odoo_addons_oca_web-16.0.20240415.1-py3-none-any.whl.zip --markdown 20240519/o/odoo-addons-oca-web/16.0.20240322.0-16.0.20240415.1/README.md --exclude *.pyd
+[2024-05-19 09:57:11] INFO root fetch - processPackages [monicapf]: Downloading https://files.pythonhosted.org/packages/06/ff/1dca21974f102f8cc3071a21b0181b29370af24efb427f7d4fa51e9cff8d/monicapf-0.1.1.tar.gz
+[2024-05-19 09:57:11] INFO root fetch - processPackages [iac-init]: Downloading https://files.pythonhosted.org/packages/e4/f7/ac0d87d4c783e1312e1642790a7d1b3f1cd59cace8673f0d728bd8709d1f/iac_init-0.7.4.tar.gz
+[2024-05-19 09:57:11] INFO root fetch - processPackages [config-center]: executing diffoscope
+[2024-05-19 09:57:11] INFO root fetch - processPackages [config-center]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/config_center-0.0.39.tar.gz tmp/config_center-0.0.40.tar.gz --markdown 20240519/c/config-center/0.0.39-0.0.40/README.md --exclude *.pyd
+[2024-05-19 09:57:11] INFO root fetch - processPackages [monicapf]: executing diffoscope
+[2024-05-19 09:57:11] INFO root fetch - processPackages [monicapf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monicapf-0.1.0.tar.gz tmp/monicapf-0.1.1.tar.gz --markdown 20240519/m/monicapf/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-19 09:57:11] INFO root fetch - processPackages [iac-init]: executing diffoscope
+[2024-05-19 09:57:11] INFO root fetch - processPackages [iac-init]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iac_init-0.7.1.tar.gz tmp/iac_init-0.7.4.tar.gz --markdown 20240519/i/iac-init/0.7.1-0.7.4/README.md --exclude *.pyd
+[2024-05-19 09:57:12] INFO root fetch - processPackages [baosight]: Remove: archive file [/home/abi/fetcher/tmp/baosight-0.0.8.tar.gz]
+[2024-05-19 09:57:12] INFO root fetch - processPackages [baosight]: Remove: archive file [/home/abi/fetcher/tmp/baosight-0.0.9.tar.gz]
+[2024-05-19 09:57:12] INFO root fetch - main [MainThread]: End processing [baosight]: success
+[2024-05-19 09:57:12] INFO root fetch - processPackages [odoo-addons-oca-web]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_web-16.0.20240322.0-py3-none-any.whl.zip]
+[2024-05-19 09:57:12] INFO root fetch - processPackages [odoo-addons-oca-web]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_web-16.0.20240415.1-py3-none-any.whl.zip]
+[2024-05-19 09:57:12] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-web]: success
+[2024-05-19 09:57:12] INFO root fetch - processPackages [monicapf]: Remove: archive file [/home/abi/fetcher/tmp/monicapf-0.1.0.tar.gz]
+[2024-05-19 09:57:12] INFO root fetch - processPackages [monicapf]: Remove: archive file [/home/abi/fetcher/tmp/monicapf-0.1.1.tar.gz]
+[2024-05-19 09:57:12] INFO root fetch - main [MainThread]: End processing [monicapf]: success
+[2024-05-19 09:57:12] INFO root fetch - processPackages [config-center]: Remove: archive file [/home/abi/fetcher/tmp/config_center-0.0.39.tar.gz]
+[2024-05-19 09:57:12] INFO root fetch - processPackages [config-center]: Remove: archive file [/home/abi/fetcher/tmp/config_center-0.0.40.tar.gz]
+[2024-05-19 09:57:12] INFO root fetch - main [MainThread]: End processing [config-center]: success
+[2024-05-19 09:57:35] INFO root fetch - processPackages [iac-init]: Remove: archive file [/home/abi/fetcher/tmp/iac_init-0.7.1.tar.gz]
+[2024-05-19 09:57:35] INFO root fetch - processPackages [iac-init]: Remove: archive file [/home/abi/fetcher/tmp/iac_init-0.7.4.tar.gz]
+[2024-05-19 09:57:35] INFO root fetch - main [MainThread]: End processing [iac-init]: success
+[2024-05-19 09:57:35] INFO root fetch - main [MainThread]: Store serial: [23274401]
