@@ -16043,3 +16043,76 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 20:00:05] INFO root fetch - main [MainThread]: End processing [klqanbacjnwbwbez]: success
 [2024-05-19 20:00:05] INFO root fetch - main [MainThread]: End processing [klqanbacjnwbwbez]: success
 [2024-05-19 20:00:05] INFO root fetch - main [MainThread]: Store serial: [23279045]
+[2024-05-19 20:02:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279045]
+[2024-05-19 20:02:15] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-19 20:02:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: QtHarmony
+[2024-05-19 20:02:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: youtubedlez
+[2024-05-19 20:02:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sphinxcontrib-cldomain
+[2024-05-19 20:02:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: youtubedlez
+[2024-05-19 20:02:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sh1106-framework
+[2024-05-19 20:02:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: urlgenie
+[2024-05-19 20:02:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: opvious
+[2024-05-19 20:02:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: radprompter
+[2024-05-19 20:02:15] INFO root fetch - processPackages [QtHarmony]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-05-19 20:02:15] INFO root fetch - processPackages [radprompter]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-19 20:02:15] INFO root fetch - processPackages [opvious]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-05-19 20:02:15] INFO root fetch - processPackages [sh1106-framework]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-19 20:02:15] INFO root fetch - processPackages [QtHarmony]: Downloading https://files.pythonhosted.org/packages/d6/ff/0bb4e2d7314513bf7af252d0ff93ab303c890866de6d10be742e9751cf27/qtharmony-0.3.1.tar.gz
+[2024-05-19 20:02:15] INFO root fetch - processPackages [radprompter]: Downloading https://files.pythonhosted.org/packages/24/4f/b5faaf24ed624777b0ded19fc1c396c9612aa330f920a80ae2d0ac50d9eb/radprompter-1.0.2.tar.gz
+[2024-05-19 20:02:15] INFO root fetch - processPackages [youtubedlez]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-19 20:02:15] INFO root fetch - processPackages [youtubedlez]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-19 20:02:15] INFO root fetch - processPackages [sphinxcontrib-cldomain]: New version: [0.9] Old Version: [0.8-]
+[2024-05-19 20:02:15] INFO root fetch - processPackages [urlgenie]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-05-19 20:02:15] INFO root fetch - processPackages [opvious]: Downloading https://files.pythonhosted.org/packages/d1/8f/b7e05d9b24e4dd1af2b9eab96fa7d1f97af088ed0836d9d8cfdb60c51360/opvious-0.9.5.tar.gz
+[2024-05-19 20:02:16] INFO root fetch - processPackages [sh1106-framework]: Downloading https://files.pythonhosted.org/packages/f8/3b/6fcbac4de7778efa43e17a32f138c66b4985bffa7b7f7038216b9f6e90ed/sh1106_framework-0.0.5.tar.gz
+[2024-05-19 20:02:16] INFO root fetch - processPackages [youtubedlez]: Downloading https://files.pythonhosted.org/packages/5a/d1/56ed7197f66fd87d9e5558eaac0eeb4b891b62d1debacd557cc43e6879b9/youtubedlez-1.0.0.tar.gz
+[2024-05-19 20:02:16] INFO root fetch - processPackages [youtubedlez]: Downloading https://files.pythonhosted.org/packages/5a/d1/56ed7197f66fd87d9e5558eaac0eeb4b891b62d1debacd557cc43e6879b9/youtubedlez-1.0.0.tar.gz
+[2024-05-19 20:02:16] INFO root fetch - processPackages [opvious]: Downloading https://files.pythonhosted.org/packages/c2/c3/e2b95ca71e91eb624497389cb2391d3310907b4f9f25dee1a75b99798c14/opvious-0.9.6.tar.gz
+[2024-05-19 20:02:16] INFO root fetch - processPackages [urlgenie]: Downloading https://files.pythonhosted.org/packages/f2/3a/619a28a5f4df7d2c12ecb0a61b77f50f2a5852ab722d212d1c04c8e55f28/urlgenie-1.0.0.tar.gz
+[2024-05-19 20:02:16] INFO root fetch - processPackages [sphinxcontrib-cldomain]: Downloading https://files.pythonhosted.org/packages/bc/1c/b13419a9135c4ad54863ce1e7ddd617109f92f5fda908e1ecf095fd1ed5a/sphinxcontrib-cldomain-0.8-.tar.gz
+[2024-05-19 20:02:16] INFO root fetch - processPackages [QtHarmony]: Downloading https://files.pythonhosted.org/packages/9e/a4/46922bba1878271c240f94d97d667e3130a77680f5ed9e1d392ca0011207/qtharmony-0.3.2.tar.gz
+[2024-05-19 20:02:16] INFO root fetch - processPackages [radprompter]: Downloading https://files.pythonhosted.org/packages/ee/35/bf7dacc07b2228a737f503f071654422f6946937995dc0a2621a73c321f2/radprompter-1.0.3.tar.gz
+[2024-05-19 20:02:16] INFO root fetch - processPackages [opvious]: executing diffoscope
+[2024-05-19 20:02:16] INFO root fetch - processPackages [opvious]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opvious-0.9.5.tar.gz tmp/opvious-0.9.6.tar.gz --markdown 20240519/o/opvious/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-05-19 20:02:16] INFO root fetch - processPackages [QtHarmony]: executing diffoscope
+[2024-05-19 20:02:16] INFO root fetch - processPackages [QtHarmony]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qtharmony-0.3.1.tar.gz tmp/qtharmony-0.3.2.tar.gz --markdown 20240519/Q/QtHarmony/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-05-19 20:02:16] INFO root fetch - processPackages [sh1106-framework]: Downloading https://files.pythonhosted.org/packages/d7/ad/748c0c085cf15eee1daf1a1cd705916c5daf5b96b41a29f32c541bab158d/sh1106_framework-0.0.6.tar.gz
+[2024-05-19 20:02:16] INFO root fetch - processPackages [radprompter]: executing diffoscope
+[2024-05-19 20:02:16] INFO root fetch - processPackages [radprompter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/radprompter-1.0.2.tar.gz tmp/radprompter-1.0.3.tar.gz --markdown 20240519/r/radprompter/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-19 20:02:16] INFO root fetch - processPackages [youtubedlez]: Downloading https://files.pythonhosted.org/packages/54/da/e63fe94f9fb7bb9b1f41d4f4fc0e562894c16e712ee62d8c0a1e93cdcd8b/youtubedlez-1.0.1.tar.gz
+[2024-05-19 20:02:16] INFO root fetch - processPackages [youtubedlez]: Downloading https://files.pythonhosted.org/packages/54/da/e63fe94f9fb7bb9b1f41d4f4fc0e562894c16e712ee62d8c0a1e93cdcd8b/youtubedlez-1.0.1.tar.gz
+[2024-05-19 20:02:16] INFO root fetch - processPackages [urlgenie]: Downloading https://files.pythonhosted.org/packages/2b/e8/1525a71f51bded4b9ef7a7cfe8faab2fd1bf1e3579301d826ae81efddb23/urlgenie-1.1.0.tar.gz
+[2024-05-19 20:02:16] INFO root fetch - processPackages [sh1106-framework]: executing diffoscope
+[2024-05-19 20:02:16] INFO root fetch - processPackages [sh1106-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sh1106_framework-0.0.5.tar.gz tmp/sh1106_framework-0.0.6.tar.gz --markdown 20240519/s/sh1106-framework/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-19 20:02:16] INFO root fetch - processPackages [sphinxcontrib-cldomain]: Downloading https://files.pythonhosted.org/packages/5b/09/4edef5ac539db71a20dfd991a2dc126a2e680c0e024e584c79e9296e9b78/sphinxcontrib-cldomain-0.9.tar.gz
+[2024-05-19 20:02:16] INFO root fetch - processPackages [youtubedlez]: executing diffoscope
+[2024-05-19 20:02:16] INFO root fetch - processPackages [youtubedlez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/youtubedlez-1.0.0.tar.gz tmp/youtubedlez-1.0.1.tar.gz --markdown 20240519/y/youtubedlez/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-19 20:02:16] INFO root fetch - processPackages [youtubedlez]: executing diffoscope
+[2024-05-19 20:02:16] INFO root fetch - processPackages [youtubedlez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/youtubedlez-1.0.0.tar.gz tmp/youtubedlez-1.0.1.tar.gz --markdown 20240519/y/youtubedlez/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-19 20:02:16] INFO root fetch - processPackages [urlgenie]: executing diffoscope
+[2024-05-19 20:02:16] INFO root fetch - processPackages [urlgenie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/urlgenie-1.0.0.tar.gz tmp/urlgenie-1.1.0.tar.gz --markdown 20240519/u/urlgenie/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-05-19 20:02:16] INFO root fetch - processPackages [sphinxcontrib-cldomain]: executing diffoscope
+[2024-05-19 20:02:16] INFO root fetch - processPackages [sphinxcontrib-cldomain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinxcontrib-cldomain-0.8-.tar.gz tmp/sphinxcontrib-cldomain-0.9.tar.gz --markdown 20240519/s/sphinxcontrib-cldomain/0.8--0.9/README.md --exclude *.pyd
+[2024-05-19 20:02:17] INFO root fetch - processPackages [opvious]: Remove: archive file [/home/abi/fetcher/tmp/opvious-0.9.5.tar.gz]
+[2024-05-19 20:02:17] INFO root fetch - processPackages [opvious]: Remove: archive file [/home/abi/fetcher/tmp/opvious-0.9.6.tar.gz]
+[2024-05-19 20:02:17] INFO root fetch - main [MainThread]: End processing [opvious]: success
+[2024-05-19 20:02:17] INFO root fetch - processPackages [QtHarmony]: Remove: archive file [/home/abi/fetcher/tmp/qtharmony-0.3.1.tar.gz]
+[2024-05-19 20:02:17] INFO root fetch - processPackages [QtHarmony]: Remove: archive file [/home/abi/fetcher/tmp/qtharmony-0.3.2.tar.gz]
+[2024-05-19 20:02:17] INFO root fetch - main [MainThread]: End processing [QtHarmony]: success
+[2024-05-19 20:02:17] INFO root fetch - processPackages [radprompter]: Remove: archive file [/home/abi/fetcher/tmp/radprompter-1.0.2.tar.gz]
+[2024-05-19 20:02:17] INFO root fetch - processPackages [radprompter]: Remove: archive file [/home/abi/fetcher/tmp/radprompter-1.0.3.tar.gz]
+[2024-05-19 20:02:17] INFO root fetch - main [MainThread]: End processing [radprompter]: success
+[2024-05-19 20:02:17] INFO root fetch - processPackages [sh1106-framework]: Remove: archive file [/home/abi/fetcher/tmp/sh1106_framework-0.0.5.tar.gz]
+[2024-05-19 20:02:17] INFO root fetch - processPackages [sh1106-framework]: Remove: archive file [/home/abi/fetcher/tmp/sh1106_framework-0.0.6.tar.gz]
+[2024-05-19 20:02:17] INFO root fetch - main [MainThread]: End processing [sh1106-framework]: success
+[2024-05-19 20:02:17] INFO root fetch - processPackages [urlgenie]: Remove: archive file [/home/abi/fetcher/tmp/urlgenie-1.0.0.tar.gz]
+[2024-05-19 20:02:17] INFO root fetch - processPackages [urlgenie]: Remove: archive file [/home/abi/fetcher/tmp/urlgenie-1.1.0.tar.gz]
+[2024-05-19 20:02:17] INFO root fetch - main [MainThread]: End processing [urlgenie]: success
+[2024-05-19 20:02:17] INFO root fetch - processPackages [youtubedlez]: Remove: archive file [/home/abi/fetcher/tmp/youtubedlez-1.0.0.tar.gz]
+[2024-05-19 20:02:17] INFO root fetch - processPackages [youtubedlez]: Remove: archive file [/home/abi/fetcher/tmp/youtubedlez-1.0.1.tar.gz]
+[2024-05-19 20:02:17] INFO root fetch - main [MainThread]: End processing [youtubedlez]: success
+[2024-05-19 20:02:17] INFO root fetch - processPackages [sphinxcontrib-cldomain]: Remove: archive file [/home/abi/fetcher/tmp/sphinxcontrib-cldomain-0.8-.tar.gz]
+[2024-05-19 20:02:17] INFO root fetch - processPackages [sphinxcontrib-cldomain]: Remove: archive file [/home/abi/fetcher/tmp/sphinxcontrib-cldomain-0.9.tar.gz]
+[2024-05-19 20:02:17] INFO root fetch - main [MainThread]: End processing [sphinxcontrib-cldomain]: success
+[2024-05-19 20:02:17] INFO root fetch - main [MainThread]: End processing [youtubedlez]: success
+[2024-05-19 20:02:17] INFO root fetch - main [MainThread]: Store serial: [23279069]
