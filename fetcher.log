@@ -7276,3 +7276,42 @@
 [2024-05-19 11:01:22] INFO root fetch - processPackages [arclet-alconna]: Remove: archive file [/home/abi/fetcher/tmp/arclet_alconna-2.0.0a1.tar.gz]
 [2024-05-19 11:01:22] INFO root fetch - main [MainThread]: End processing [arclet-alconna]: success
 [2024-05-19 11:01:22] INFO root fetch - main [MainThread]: Store serial: [23274868]
+[2024-05-19 11:03:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274868]
+[2024-05-19 11:03:32] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 11:03:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sharepoint-utils
+[2024-05-19 11:03:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: protein-turnover
+[2024-05-19 11:03:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mmo-tools
+[2024-05-19 11:03:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: protein-turnover-website
+[2024-05-19 11:03:32] INFO root fetch - processPackages [mmo-tools]: New version: [0.2.0] Old Version: [0.1.7]
+[2024-05-19 11:03:32] INFO root fetch - processPackages [mmo-tools]: Downloading https://files.pythonhosted.org/packages/3a/10/e644dd3b762f04974635c05e627a8ad87ba68de129a4662f60902da8937b/mmo_tools-0.1.7.tar.gz
+[2024-05-19 11:03:32] INFO root fetch - processPackages [protein-turnover]: New version: [0.4.0] Old Version: [0.3.8]
+[2024-05-19 11:03:32] INFO root fetch - processPackages [sharepoint-utils]: New version: [2.0] Old Version: [1.1]
+[2024-05-19 11:03:32] INFO root fetch - processPackages [protein-turnover-website]: New version: [0.4.0] Old Version: [0.3.12]
+[2024-05-19 11:03:32] INFO root fetch - processPackages [protein-turnover]: Downloading https://files.pythonhosted.org/packages/38/8f/767e304cd304905cc70dee8473f3d19976fcef7b4ccf0d37097a8afd6feb/protein_turnover-0.3.8.tar.gz
+[2024-05-19 11:03:32] INFO root fetch - processPackages [sharepoint-utils]: Downloading https://files.pythonhosted.org/packages/53/7e/3442a1faa9859512daba9e61580d75b360de2e0f9d5620f62ead944e13c1/sharepoint_utils-1.1.tar.gz
+[2024-05-19 11:03:32] INFO root fetch - processPackages [mmo-tools]: Downloading https://files.pythonhosted.org/packages/2b/d5/3bc172d7a1da7475a310680e664325b7fec5e1b4a9cee8cee8cd0e4354a5/mmo_tools-0.2.0.tar.gz
+[2024-05-19 11:03:32] INFO root fetch - processPackages [protein-turnover-website]: Downloading https://files.pythonhosted.org/packages/d8/ae/9705158c57b346c695958f462486e0b72451f06b483de7534228c19a57f2/protein_turnover_website-0.3.12.tar.gz
+[2024-05-19 11:03:33] INFO root fetch - processPackages [mmo-tools]: executing diffoscope
+[2024-05-19 11:03:33] INFO root fetch - processPackages [mmo-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mmo_tools-0.1.7.tar.gz tmp/mmo_tools-0.2.0.tar.gz --markdown 20240519/m/mmo-tools/0.1.7-0.2.0/README.md --exclude *.pyd
+[2024-05-19 11:03:33] INFO root fetch - processPackages [sharepoint-utils]: Downloading https://files.pythonhosted.org/packages/7a/80/1e5008dfee60782c7a5001d67ab633d30eeb7843aa1b269a43f8bc2fcdbd/sharepoint_utils-2.0.tar.gz
+[2024-05-19 11:03:33] INFO root fetch - processPackages [protein-turnover]: Downloading https://files.pythonhosted.org/packages/95/b1/26558e795c11d45122d95d0d71d1baa9d89a7977a15daa321f0454f536c6/protein_turnover-0.4.0.tar.gz
+[2024-05-19 11:03:33] INFO root fetch - processPackages [sharepoint-utils]: executing diffoscope
+[2024-05-19 11:03:33] INFO root fetch - processPackages [sharepoint-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sharepoint_utils-1.1.tar.gz tmp/sharepoint_utils-2.0.tar.gz --markdown 20240519/s/sharepoint-utils/1.1-2.0/README.md --exclude *.pyd
+[2024-05-19 11:03:33] INFO root fetch - processPackages [protein-turnover]: executing diffoscope
+[2024-05-19 11:03:33] INFO root fetch - processPackages [protein-turnover]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protein_turnover-0.3.8.tar.gz tmp/protein_turnover-0.4.0.tar.gz --markdown 20240519/p/protein-turnover/0.3.8-0.4.0/README.md --exclude *.pyd
+[2024-05-19 11:03:33] INFO root fetch - processPackages [protein-turnover-website]: Downloading https://files.pythonhosted.org/packages/fb/2e/44df293ae2792c3fecba1e40cafff27cd73edb183d88db214ccebe997352/protein_turnover_website-0.4.0.tar.gz
+[2024-05-19 11:03:33] INFO root fetch - processPackages [mmo-tools]: Remove: archive file [/home/abi/fetcher/tmp/mmo_tools-0.1.7.tar.gz]
+[2024-05-19 11:03:33] INFO root fetch - processPackages [mmo-tools]: Remove: archive file [/home/abi/fetcher/tmp/mmo_tools-0.2.0.tar.gz]
+[2024-05-19 11:03:33] INFO root fetch - main [MainThread]: End processing [mmo-tools]: success
+[2024-05-19 11:03:33] INFO root fetch - processPackages [sharepoint-utils]: Remove: archive file [/home/abi/fetcher/tmp/sharepoint_utils-1.1.tar.gz]
+[2024-05-19 11:03:33] INFO root fetch - processPackages [sharepoint-utils]: Remove: archive file [/home/abi/fetcher/tmp/sharepoint_utils-2.0.tar.gz]
+[2024-05-19 11:03:33] INFO root fetch - main [MainThread]: End processing [sharepoint-utils]: success
+[2024-05-19 11:03:34] INFO root fetch - processPackages [protein-turnover]: Remove: archive file [/home/abi/fetcher/tmp/protein_turnover-0.3.8.tar.gz]
+[2024-05-19 11:03:34] INFO root fetch - processPackages [protein-turnover]: Remove: archive file [/home/abi/fetcher/tmp/protein_turnover-0.4.0.tar.gz]
+[2024-05-19 11:03:34] INFO root fetch - main [MainThread]: End processing [protein-turnover]: success
+[2024-05-19 11:03:34] INFO root fetch - processPackages [protein-turnover-website]: executing diffoscope
+[2024-05-19 11:03:34] INFO root fetch - processPackages [protein-turnover-website]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protein_turnover_website-0.3.12.tar.gz tmp/protein_turnover_website-0.4.0.tar.gz --markdown 20240519/p/protein-turnover-website/0.3.12-0.4.0/README.md --exclude *.pyd
+[2024-05-19 11:03:35] INFO root fetch - processPackages [protein-turnover-website]: Remove: archive file [/home/abi/fetcher/tmp/protein_turnover_website-0.3.12.tar.gz]
+[2024-05-19 11:03:35] INFO root fetch - processPackages [protein-turnover-website]: Remove: archive file [/home/abi/fetcher/tmp/protein_turnover_website-0.4.0.tar.gz]
+[2024-05-19 11:03:35] INFO root fetch - main [MainThread]: End processing [protein-turnover-website]: success
+[2024-05-19 11:03:35] INFO root fetch - main [MainThread]: Store serial: [23274882]
