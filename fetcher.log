@@ -15184,3 +15184,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 19:29:00] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.5.9.1.tar.gz]
 [2024-05-19 19:29:00] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
 [2024-05-19 19:29:00] INFO root fetch - main [MainThread]: Store serial: [23278626]
+[2024-05-19 19:31:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23278626]
+[2024-05-19 19:31:08] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 19:31:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pycitysim
+[2024-05-19 19:31:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dimples
+[2024-05-19 19:31:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: opvious
+[2024-05-19 19:31:08] INFO root fetch - processPackages [opvious]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-05-19 19:31:08] INFO root fetch - processPackages [opvious]: Downloading https://files.pythonhosted.org/packages/d1/8f/b7e05d9b24e4dd1af2b9eab96fa7d1f97af088ed0836d9d8cfdb60c51360/opvious-0.9.5.tar.gz
+[2024-05-19 19:31:08] INFO root fetch - processPackages [pycitysim]: New version: [1.13.0] Old Version: [1.12.2]
+[2024-05-19 19:31:08] INFO root fetch - processPackages [dimples]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-05-19 19:31:09] INFO root fetch - processPackages [pycitysim]: Downloading https://files.pythonhosted.org/packages/ff/7a/9d2d702f86578d4a9829e492e4d25df681ec9d19567ef5f77c29f830b36e/pycitysim-1.12.2.tar.gz
+[2024-05-19 19:31:09] INFO root fetch - processPackages [dimples]: Downloading https://files.pythonhosted.org/packages/0c/11/87cfb34b1cc0380ecb0477944173358d2a922adbb2df36a2bca7f088e39f/dimples-1.2.0.tar.gz
+[2024-05-19 19:31:09] INFO root fetch - processPackages [opvious]: Downloading https://files.pythonhosted.org/packages/c2/c3/e2b95ca71e91eb624497389cb2391d3310907b4f9f25dee1a75b99798c14/opvious-0.9.6.tar.gz
+[2024-05-19 19:31:09] INFO root fetch - processPackages [opvious]: executing diffoscope
+[2024-05-19 19:31:09] INFO root fetch - processPackages [opvious]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opvious-0.9.5.tar.gz tmp/opvious-0.9.6.tar.gz --markdown 20240519/o/opvious/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-05-19 19:31:09] INFO root fetch - processPackages [pycitysim]: Downloading https://files.pythonhosted.org/packages/88/36/6d79070c06dfe63f745eb2a427c0e74ab48824178bdaa6ee72fe4836fc3a/pycitysim-1.13.0.tar.gz
+[2024-05-19 19:31:09] INFO root fetch - processPackages [dimples]: Downloading https://files.pythonhosted.org/packages/5d/cd/b55ece3a355b9bf6871fd3c378687b8d510ffff75e1f7eaf79c84850339a/dimples-1.2.1.tar.gz
+[2024-05-19 19:31:09] INFO root fetch - processPackages [pycitysim]: executing diffoscope
+[2024-05-19 19:31:09] INFO root fetch - processPackages [pycitysim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycitysim-1.12.2.tar.gz tmp/pycitysim-1.13.0.tar.gz --markdown 20240519/p/pycitysim/1.12.2-1.13.0/README.md --exclude *.pyd
+[2024-05-19 19:31:09] INFO root fetch - processPackages [dimples]: executing diffoscope
+[2024-05-19 19:31:09] INFO root fetch - processPackages [dimples]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dimples-1.2.0.tar.gz tmp/dimples-1.2.1.tar.gz --markdown 20240519/d/dimples/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-05-19 19:31:09] INFO root fetch - processPackages [opvious]: Remove: archive file [/home/abi/fetcher/tmp/opvious-0.9.5.tar.gz]
+[2024-05-19 19:31:09] INFO root fetch - processPackages [opvious]: Remove: archive file [/home/abi/fetcher/tmp/opvious-0.9.6.tar.gz]
+[2024-05-19 19:31:09] INFO root fetch - main [MainThread]: End processing [opvious]: success
+[2024-05-19 19:31:10] INFO root fetch - processPackages [pycitysim]: Remove: archive file [/home/abi/fetcher/tmp/pycitysim-1.12.2.tar.gz]
+[2024-05-19 19:31:10] INFO root fetch - processPackages [pycitysim]: Remove: archive file [/home/abi/fetcher/tmp/pycitysim-1.13.0.tar.gz]
+[2024-05-19 19:31:10] INFO root fetch - main [MainThread]: End processing [pycitysim]: success
+[2024-05-19 19:31:10] INFO root fetch - processPackages [dimples]: Remove: archive file [/home/abi/fetcher/tmp/dimples-1.2.0.tar.gz]
+[2024-05-19 19:31:10] INFO root fetch - processPackages [dimples]: Remove: archive file [/home/abi/fetcher/tmp/dimples-1.2.1.tar.gz]
+[2024-05-19 19:31:10] INFO root fetch - main [MainThread]: End processing [dimples]: success
+[2024-05-19 19:31:10] INFO root fetch - main [MainThread]: Store serial: [23278635]
