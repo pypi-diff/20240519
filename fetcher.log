@@ -12649,3 +12649,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 16:51:29] INFO root fetch - processPackages [ibish]: Remove: archive file [/home/abi/fetcher/tmp/ibish-1.0.3.tar.gz]
 [2024-05-19 16:51:29] INFO root fetch - main [MainThread]: End processing [ibish]: success
 [2024-05-19 16:51:29] INFO root fetch - main [MainThread]: Store serial: [23277428]
+[2024-05-19 16:53:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277428]
+[2024-05-19 16:53:38] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 16:53:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: madokami
+[2024-05-19 16:53:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lib-version-urlphishing
+[2024-05-19 16:53:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: beancount-multitool
+[2024-05-19 16:53:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: libsrg
+[2024-05-19 16:53:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: perian-cli
+[2024-05-19 16:53:38] INFO root fetch - processPackages [lib-version-urlphishing]: New version: [2.0.9] Old Version: [2.0.0]
+[2024-05-19 16:53:38] WARNING root fetch - processPackages [beancount-multitool]: Skipping, unable to determine old version
+[2024-05-19 16:53:38] INFO root fetch - main [MainThread]: End processing [beancount-multitool] error
+[2024-05-19 16:53:38] INFO root fetch - processPackages [madokami]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-19 16:53:38] INFO root fetch - processPackages [perian-cli]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-19 16:53:38] INFO root fetch - processPackages [libsrg]: New version: [5.2.2] Old Version: [5.2.1]
+[2024-05-19 16:53:38] INFO root fetch - processPackages [lib-version-urlphishing]: Downloading https://files.pythonhosted.org/packages/26/21/ac52a30a9889d274bd4d54b40c34890330c4b7b522a0627990009bbcc5c3/lib_version_urlphishing-2.0.0.tar.gz
+[2024-05-19 16:53:38] INFO root fetch - processPackages [madokami]: Downloading https://files.pythonhosted.org/packages/fe/91/2f6a7815523221b58cb395851b8bdc6b0f5304315b5f18c18ddf700325d9/madokami-0.1.1.tar.gz
+[2024-05-19 16:53:38] INFO root fetch - processPackages [libsrg]: Downloading https://files.pythonhosted.org/packages/01/c3/2cd25a8ce0620b9d01fc32fe76305ad47b78c747e7133cc57515f99ce68d/libsrg-5.2.1.tar.gz
+[2024-05-19 16:53:38] INFO root fetch - processPackages [perian-cli]: Downloading https://files.pythonhosted.org/packages/f2/39/66a26701537bacc5e22a0bb39de1b75fb27bad48bc1f721eac2642968ba9/perian_cli-0.1.4.tar.gz
+[2024-05-19 16:53:38] INFO root fetch - processPackages [lib-version-urlphishing]: Downloading https://files.pythonhosted.org/packages/f8/77/74db47dffc939151791554dd99fd92cbba4dbc86ad18b6d127b179dc830a/lib_version_urlphishing-2.0.9.tar.gz
+[2024-05-19 16:53:38] INFO root fetch - processPackages [madokami]: Downloading https://files.pythonhosted.org/packages/c1/a1/a046cf5ec0cf04aeae54a321026ee176bd1f784bdb71c21ce4c4647ab501/madokami-0.1.2.tar.gz
+[2024-05-19 16:53:39] INFO root fetch - processPackages [lib-version-urlphishing]: executing diffoscope
+[2024-05-19 16:53:39] INFO root fetch - processPackages [lib-version-urlphishing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib_version_urlphishing-2.0.0.tar.gz tmp/lib_version_urlphishing-2.0.9.tar.gz --markdown 20240519/l/lib-version-urlphishing/2.0.0-2.0.9/README.md --exclude *.pyd
+[2024-05-19 16:53:39] INFO root fetch - processPackages [madokami]: executing diffoscope
+[2024-05-19 16:53:39] INFO root fetch - processPackages [madokami]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/madokami-0.1.1.tar.gz tmp/madokami-0.1.2.tar.gz --markdown 20240519/m/madokami/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-19 16:53:39] INFO root fetch - processPackages [libsrg]: Downloading https://files.pythonhosted.org/packages/60/2e/2e7a5561680e9b0bb2c5092e5a36b78faf895c10003fa1ada1e62c753238/libsrg-5.2.2.tar.gz
+[2024-05-19 16:53:39] INFO root fetch - processPackages [perian-cli]: Downloading https://files.pythonhosted.org/packages/ec/76/d58443389b6c4d976e2f4d6426a5ceef4610c2f563b28a200ce90c8fde3d/perian_cli-0.1.5.tar.gz
+[2024-05-19 16:53:39] INFO root fetch - processPackages [libsrg]: executing diffoscope
+[2024-05-19 16:53:39] INFO root fetch - processPackages [libsrg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libsrg-5.2.1.tar.gz tmp/libsrg-5.2.2.tar.gz --markdown 20240519/l/libsrg/5.2.1-5.2.2/README.md --exclude *.pyd
+[2024-05-19 16:53:39] INFO root fetch - processPackages [perian-cli]: executing diffoscope
+[2024-05-19 16:53:39] INFO root fetch - processPackages [perian-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/perian_cli-0.1.4.tar.gz tmp/perian_cli-0.1.5.tar.gz --markdown 20240519/p/perian-cli/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-19 16:53:39] INFO root fetch - processPackages [lib-version-urlphishing]: Remove: archive file [/home/abi/fetcher/tmp/lib_version_urlphishing-2.0.0.tar.gz]
+[2024-05-19 16:53:39] INFO root fetch - processPackages [lib-version-urlphishing]: Remove: archive file [/home/abi/fetcher/tmp/lib_version_urlphishing-2.0.9.tar.gz]
+[2024-05-19 16:53:39] INFO root fetch - main [MainThread]: End processing [lib-version-urlphishing]: success
+[2024-05-19 16:53:39] INFO root fetch - processPackages [madokami]: Remove: archive file [/home/abi/fetcher/tmp/madokami-0.1.1.tar.gz]
+[2024-05-19 16:53:39] INFO root fetch - processPackages [madokami]: Remove: archive file [/home/abi/fetcher/tmp/madokami-0.1.2.tar.gz]
+[2024-05-19 16:53:39] INFO root fetch - main [MainThread]: End processing [madokami]: success
+[2024-05-19 16:53:39] INFO root fetch - processPackages [perian-cli]: Remove: archive file [/home/abi/fetcher/tmp/perian_cli-0.1.4.tar.gz]
+[2024-05-19 16:53:39] INFO root fetch - processPackages [perian-cli]: Remove: archive file [/home/abi/fetcher/tmp/perian_cli-0.1.5.tar.gz]
+[2024-05-19 16:53:39] INFO root fetch - main [MainThread]: End processing [perian-cli]: success
+[2024-05-19 16:53:39] INFO root fetch - processPackages [libsrg]: Remove: archive file [/home/abi/fetcher/tmp/libsrg-5.2.1.tar.gz]
+[2024-05-19 16:53:39] INFO root fetch - processPackages [libsrg]: Remove: archive file [/home/abi/fetcher/tmp/libsrg-5.2.2.tar.gz]
+[2024-05-19 16:53:39] INFO root fetch - main [MainThread]: End processing [libsrg]: success
+[2024-05-19 16:53:39] INFO root fetch - main [MainThread]: Store serial: [23277444]
