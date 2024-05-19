@@ -7144,3 +7144,24 @@
 [2024-05-19 10:50:08] INFO root fetch - processPackages [bionty-base]: Remove: archive file [/home/abi/fetcher/tmp/bionty_base-0.37.3.tar.gz]
 [2024-05-19 10:50:08] INFO root fetch - main [MainThread]: End processing [bionty-base]: success
 [2024-05-19 10:50:08] INFO root fetch - main [MainThread]: Store serial: [23274779]
+[2024-05-19 10:52:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274779]
+[2024-05-19 10:52:17] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 10:52:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: GraphRetrieval
+[2024-05-19 10:52:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fcecodec
+[2024-05-19 10:52:17] INFO root fetch - processPackages [GraphRetrieval]: New version: [0.1.1] Old Version: [0.1]
+[2024-05-19 10:52:17] INFO root fetch - processPackages [fcecodec]: New version: [1.6] Old Version: [1.5]
+[2024-05-19 10:52:17] INFO root fetch - processPackages [GraphRetrieval]: Downloading https://files.pythonhosted.org/packages/69/a9/fc060237d5af833ab68e61ae2af382713a16e71565977e993b1c13941a86/graphretrieval-0.1.tar.gz
+[2024-05-19 10:52:17] INFO root fetch - processPackages [fcecodec]: Downloading https://files.pythonhosted.org/packages/59/36/6b79beef7425c30939e0a4c72e7975f38751d57611fb57856f01d018b6c3/fcecodec-1.5.tar.gz
+[2024-05-19 10:52:17] INFO root fetch - processPackages [GraphRetrieval]: Downloading https://files.pythonhosted.org/packages/ad/38/fdda5cf532b488e8dbe2b8cbe32439784529fa2f2797ecf4ab0c37713058/graphretrieval-0.1.1.tar.gz
+[2024-05-19 10:52:18] INFO root fetch - processPackages [GraphRetrieval]: executing diffoscope
+[2024-05-19 10:52:18] INFO root fetch - processPackages [GraphRetrieval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphretrieval-0.1.tar.gz tmp/graphretrieval-0.1.1.tar.gz --markdown 20240519/G/GraphRetrieval/0.1-0.1.1/README.md --exclude *.pyd
+[2024-05-19 10:52:18] INFO root fetch - processPackages [fcecodec]: Downloading https://files.pythonhosted.org/packages/d6/6a/49ef1a4e06c48a8fed77985c5de1ae9992ce6a0e6abaf8d8bf5b10500f37/fcecodec-1.6-cp310-cp310-musllinux_1_2_x86_64.whl
+[2024-05-19 10:52:18] INFO root fetch - processPackages [GraphRetrieval]: Remove: archive file [/home/abi/fetcher/tmp/graphretrieval-0.1.tar.gz]
+[2024-05-19 10:52:18] INFO root fetch - processPackages [GraphRetrieval]: Remove: archive file [/home/abi/fetcher/tmp/graphretrieval-0.1.1.tar.gz]
+[2024-05-19 10:52:18] INFO root fetch - main [MainThread]: End processing [GraphRetrieval]: success
+[2024-05-19 10:52:19] INFO root fetch - processPackages [fcecodec]: executing diffoscope
+[2024-05-19 10:52:19] INFO root fetch - processPackages [fcecodec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fcecodec-1.5.tar.gz tmp/fcecodec-1.6-cp310-cp310-musllinux_1_2_x86_64.whl.zip --markdown 20240519/f/fcecodec/1.5-1.6/README.md --exclude *.pyd
+[2024-05-19 10:52:20] INFO root fetch - processPackages [fcecodec]: Remove: archive file [/home/abi/fetcher/tmp/fcecodec-1.5.tar.gz]
+[2024-05-19 10:52:20] INFO root fetch - processPackages [fcecodec]: Remove: archive file [/home/abi/fetcher/tmp/fcecodec-1.6-cp310-cp310-musllinux_1_2_x86_64.whl.zip]
+[2024-05-19 10:52:20] INFO root fetch - main [MainThread]: End processing [fcecodec]: success
+[2024-05-19 10:52:20] INFO root fetch - main [MainThread]: Store serial: [23274787]
