@@ -7837,3 +7837,36 @@
 [2024-05-19 11:44:52] INFO root fetch - processPackages [mazegroup]: Remove: archive file [/home/abi/fetcher/tmp/mazegroup-0.1.4.1.tar.gz]
 [2024-05-19 11:44:52] INFO root fetch - main [MainThread]: End processing [mazegroup]: success
 [2024-05-19 11:44:52] INFO root fetch - main [MainThread]: Store serial: [23275187]
+[2024-05-19 11:46:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275187]
+[2024-05-19 11:47:00] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 11:47:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: heatmap_cli
+[2024-05-19 11:47:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: overmixingz
+[2024-05-19 11:47:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chess-pairings
+[2024-05-19 11:47:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chess-utils
+[2024-05-19 11:47:00] INFO root fetch - processPackages [chess-pairings]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-19 11:47:00] WARNING root fetch - processPackages [overmixingz]: Skipping, unable to determine old version
+[2024-05-19 11:47:00] INFO root fetch - main [MainThread]: End processing [overmixingz] error
+[2024-05-19 11:47:00] INFO root fetch - processPackages [heatmap_cli]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-05-19 11:47:00] INFO root fetch - processPackages [chess-utils]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-19 11:47:00] INFO root fetch - processPackages [heatmap_cli]: Downloading https://files.pythonhosted.org/packages/89/3e/1667a0d6257328a7ee164f2d02fa5cb906e15b8317152b4e5b6389990a48/heatmap_cli-0.9.2.tar.gz
+[2024-05-19 11:47:00] INFO root fetch - processPackages [chess-pairings]: Downloading https://files.pythonhosted.org/packages/ee/75/6a121434339f55fbc4b1d42c96b088b29435cffdc16bcdb51ac975ca72d4/chess_pairings-0.1.4.tar.gz
+[2024-05-19 11:47:00] INFO root fetch - processPackages [chess-utils]: Downloading https://files.pythonhosted.org/packages/a3/dc/1afe218e54667934bab5660e347ffb7cefed78c6dfddc717fb5f962ae659/chess_utils-0.1.8.tar.gz
+[2024-05-19 11:47:01] INFO root fetch - processPackages [heatmap_cli]: Downloading https://files.pythonhosted.org/packages/cc/a1/f410c7350b196bcf8384439baacdbf7e8db2363ac46eb6d4872308462d8e/heatmap_cli-0.9.3.tar.gz
+[2024-05-19 11:47:01] INFO root fetch - processPackages [chess-pairings]: Downloading https://files.pythonhosted.org/packages/69/cf/765adecba45ecf0f9cc213caad5640cfb6ee1f43837bcea6be5df69ccc67/chess_pairings-0.1.5.tar.gz
+[2024-05-19 11:47:01] INFO root fetch - processPackages [chess-pairings]: executing diffoscope
+[2024-05-19 11:47:01] INFO root fetch - processPackages [chess-pairings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chess_pairings-0.1.4.tar.gz tmp/chess_pairings-0.1.5.tar.gz --markdown 20240519/c/chess-pairings/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-19 11:47:01] INFO root fetch - processPackages [heatmap_cli]: executing diffoscope
+[2024-05-19 11:47:01] INFO root fetch - processPackages [heatmap_cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heatmap_cli-0.9.2.tar.gz tmp/heatmap_cli-0.9.3.tar.gz --markdown 20240519/h/heatmap_cli/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-05-19 11:47:01] INFO root fetch - processPackages [chess-utils]: Downloading https://files.pythonhosted.org/packages/91/10/67dd0bbf7400db91ed6e38e5428df297885a142cb6307e0a05c302654e5e/chess_utils-0.1.9.tar.gz
+[2024-05-19 11:47:01] INFO root fetch - processPackages [chess-utils]: executing diffoscope
+[2024-05-19 11:47:01] INFO root fetch - processPackages [chess-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chess_utils-0.1.8.tar.gz tmp/chess_utils-0.1.9.tar.gz --markdown 20240519/c/chess-utils/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-19 11:47:01] INFO root fetch - processPackages [chess-pairings]: Remove: archive file [/home/abi/fetcher/tmp/chess_pairings-0.1.4.tar.gz]
+[2024-05-19 11:47:01] INFO root fetch - processPackages [chess-pairings]: Remove: archive file [/home/abi/fetcher/tmp/chess_pairings-0.1.5.tar.gz]
+[2024-05-19 11:47:01] INFO root fetch - main [MainThread]: End processing [chess-pairings]: success
+[2024-05-19 11:47:01] INFO root fetch - processPackages [chess-utils]: Remove: archive file [/home/abi/fetcher/tmp/chess_utils-0.1.8.tar.gz]
+[2024-05-19 11:47:01] INFO root fetch - processPackages [chess-utils]: Remove: archive file [/home/abi/fetcher/tmp/chess_utils-0.1.9.tar.gz]
+[2024-05-19 11:47:01] INFO root fetch - main [MainThread]: End processing [chess-utils]: success
+[2024-05-19 11:47:01] INFO root fetch - processPackages [heatmap_cli]: Remove: archive file [/home/abi/fetcher/tmp/heatmap_cli-0.9.2.tar.gz]
+[2024-05-19 11:47:01] INFO root fetch - processPackages [heatmap_cli]: Remove: archive file [/home/abi/fetcher/tmp/heatmap_cli-0.9.3.tar.gz]
+[2024-05-19 11:47:01] INFO root fetch - main [MainThread]: End processing [heatmap_cli]: success
+[2024-05-19 11:47:01] INFO root fetch - main [MainThread]: Store serial: [23275200]
