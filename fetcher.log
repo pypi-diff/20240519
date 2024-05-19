@@ -1560,3 +1560,24 @@
 [2024-05-19 02:33:53] INFO root fetch - processPackages [wfl]: Remove: archive file [/home/abi/fetcher/tmp/wfl-0.2.6.tar.gz]
 [2024-05-19 02:33:53] INFO root fetch - main [MainThread]: End processing [wfl]: success
 [2024-05-19 02:33:53] INFO root fetch - main [MainThread]: Store serial: [23272158]
+[2024-05-19 02:35:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272158]
+[2024-05-19 02:36:02] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 02:36:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aeppl-nightly
+[2024-05-19 02:36:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TaGra
+[2024-05-19 02:36:02] INFO root fetch - processPackages [TaGra]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-19 02:36:02] INFO root fetch - processPackages [aeppl-nightly]: New version: [0.1.5.dev20240518] Old Version: [0.1.5.dev20240517]
+[2024-05-19 02:36:02] INFO root fetch - processPackages [TaGra]: Downloading https://files.pythonhosted.org/packages/39/4a/80658f0baa4edbf6c20465c0000284b01c9c83f0f24b2a072ecc19bc72e0/TaGra-0.1.3.tar.gz
+[2024-05-19 02:36:02] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/d2/b7/4d4824b887c10df7950d96823e51ff63fdcc48fb6fc9694d7b0f443ef080/aeppl_nightly-0.1.5.dev20240517.tar.gz
+[2024-05-19 02:36:02] INFO root fetch - processPackages [TaGra]: Downloading https://files.pythonhosted.org/packages/0d/19/e1eb4474e1f2f1fd9dcce6d3c511ff2b8d91c46be0039fc360a61e246072/TaGra-0.1.4.tar.gz
+[2024-05-19 02:36:02] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/98/a5/5796801d9d9dee14d856ab04304b2a5978d514cb66cb8263b9fbe925c89d/aeppl_nightly-0.1.5.dev20240518.tar.gz
+[2024-05-19 02:36:02] INFO root fetch - processPackages [TaGra]: executing diffoscope
+[2024-05-19 02:36:02] INFO root fetch - processPackages [TaGra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TaGra-0.1.3.tar.gz tmp/TaGra-0.1.4.tar.gz --markdown 20240519/T/TaGra/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-19 02:36:02] INFO root fetch - processPackages [aeppl-nightly]: executing diffoscope
+[2024-05-19 02:36:02] INFO root fetch - processPackages [aeppl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aeppl_nightly-0.1.5.dev20240517.tar.gz tmp/aeppl_nightly-0.1.5.dev20240518.tar.gz --markdown 20240519/a/aeppl-nightly/0.1.5.dev20240517-0.1.5.dev20240518/README.md --exclude *.pyd
+[2024-05-19 02:36:03] INFO root fetch - processPackages [TaGra]: Remove: archive file [/home/abi/fetcher/tmp/TaGra-0.1.3.tar.gz]
+[2024-05-19 02:36:03] INFO root fetch - processPackages [TaGra]: Remove: archive file [/home/abi/fetcher/tmp/TaGra-0.1.4.tar.gz]
+[2024-05-19 02:36:03] INFO root fetch - main [MainThread]: End processing [TaGra]: success
+[2024-05-19 02:36:03] INFO root fetch - processPackages [aeppl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/aeppl_nightly-0.1.5.dev20240517.tar.gz]
+[2024-05-19 02:36:03] INFO root fetch - processPackages [aeppl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/aeppl_nightly-0.1.5.dev20240518.tar.gz]
+[2024-05-19 02:36:03] INFO root fetch - main [MainThread]: End processing [aeppl-nightly]: success
+[2024-05-19 02:36:03] INFO root fetch - main [MainThread]: Store serial: [23272163]
