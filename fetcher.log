@@ -19132,3 +19132,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 22:50:13] INFO root fetch - processPackages [qablet-contracts]: Remove: archive file [/home/abi/fetcher/tmp/qablet_contracts-0.2.2.tar.gz]
 [2024-05-19 22:50:13] INFO root fetch - main [MainThread]: End processing [qablet-contracts]: success
 [2024-05-19 22:50:13] INFO root fetch - main [MainThread]: Store serial: [23280429]
+[2024-05-19 22:52:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23280429]
+[2024-05-19 22:52:22] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-19 22:52:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qablet-contracts
+[2024-05-19 22:52:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: eras
+[2024-05-19 22:52:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pain001
+[2024-05-19 22:52:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: clbwaximpbspfjrm
+[2024-05-19 22:52:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wwpdb.utils.nmr
+[2024-05-19 22:52:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: catellaz
+[2024-05-19 22:52:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: needto
+[2024-05-19 22:52:23] INFO root fetch - processPackages [needto]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-19 22:52:23] INFO root fetch - processPackages [eras]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-19 22:52:23] INFO root fetch - processPackages [qablet-contracts]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-19 22:52:23] INFO root fetch - processPackages [needto]: Downloading https://files.pythonhosted.org/packages/c9/95/9885b4b7d549dfb6c250742a4e5d78b64b76fd4e848ec1305d07bbda74fc/needto-0.1.0.tar.gz
+[2024-05-19 22:52:23] INFO root fetch - processPackages [eras]: Downloading https://files.pythonhosted.org/packages/83/0b/72b8084f3ff693e1ad40e9f6ecf743d11dc891f79fdc2e39637b2d5877d0/eras-0.1.8.tar.gz
+[2024-05-19 22:52:23] INFO root fetch - processPackages [qablet-contracts]: Downloading https://files.pythonhosted.org/packages/da/6b/662c19f5157a97c81d7cb2b988aa7fbf2a571f5c323db8f3df969a5c1ef8/qablet_contracts-0.2.1.tar.gz
+[2024-05-19 22:52:23] WARNING root fetch - processPackages [catellaz]: Skipping, unable to determine old version
+[2024-05-19 22:52:23] INFO root fetch - main [MainThread]: End processing [catellaz] error
+[2024-05-19 22:52:23] INFO root fetch - processPackages [pain001]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 22:52:23] WARNING root fetch - processPackages [clbwaximpbspfjrm]: Skipping, unable to determine old version
+[2024-05-19 22:52:23] INFO root fetch - main [MainThread]: End processing [clbwaximpbspfjrm] error
+[2024-05-19 22:52:23] INFO root fetch - processPackages [wwpdb.utils.nmr]: New version: [0.35] Old Version: [0.34.1]
+[2024-05-19 22:52:23] INFO root fetch - processPackages [pain001]: Downloading https://files.pythonhosted.org/packages/4a/3d/d7e0138fb8e4374dd250c07d0545376b3f547ff00c3971b4eec2d3eca3d7/pain001-0.0.8.tar.gz
+[2024-05-19 22:52:23] INFO root fetch - processPackages [qablet-contracts]: Downloading https://files.pythonhosted.org/packages/46/e5/9c9447059af5153c2e06f730fbb4a30d1d97faf6c8d6a9f97bc821618729/qablet_contracts-0.2.2.tar.gz
+[2024-05-19 22:52:23] INFO root fetch - processPackages [eras]: Downloading https://files.pythonhosted.org/packages/cc/d6/d32f9c2d6bd9bac196208e02fc9cacdb78b4010f5fa59a02b413c9407d18/eras-0.1.9.tar.gz
+[2024-05-19 22:52:23] INFO root fetch - processPackages [wwpdb.utils.nmr]: Downloading https://files.pythonhosted.org/packages/25/27/add01ef0a7027a0597af3e6557e87b7ae35ce9047184a5deef67a111aa9b/wwpdb.utils.nmr-0.34.1.tar.gz
+[2024-05-19 22:52:23] INFO root fetch - processPackages [needto]: Downloading https://files.pythonhosted.org/packages/d8/c9/551655ae6a86dcc55c0e1d00726bae63f9a6812cfa2dab57004540a688b9/needto-0.1.1.tar.gz
+[2024-05-19 22:52:23] INFO root fetch - processPackages [qablet-contracts]: executing diffoscope
+[2024-05-19 22:52:23] INFO root fetch - processPackages [qablet-contracts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qablet_contracts-0.2.1.tar.gz tmp/qablet_contracts-0.2.2.tar.gz --markdown 20240519/q/qablet-contracts/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-19 22:52:23] INFO root fetch - processPackages [eras]: executing diffoscope
+[2024-05-19 22:52:23] INFO root fetch - processPackages [eras]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eras-0.1.8.tar.gz tmp/eras-0.1.9.tar.gz --markdown 20240519/e/eras/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-19 22:52:23] INFO root fetch - processPackages [needto]: executing diffoscope
+[2024-05-19 22:52:23] INFO root fetch - processPackages [needto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/needto-0.1.0.tar.gz tmp/needto-0.1.1.tar.gz --markdown 20240519/n/needto/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-19 22:52:23] INFO root fetch - processPackages [pain001]: Downloading https://files.pythonhosted.org/packages/dd/25/3eca8b1274384435ffb54b9a70f098888e7946583f195e055315bc9f82f8/pain001-0.0.9.tar.gz
+[2024-05-19 22:52:23] INFO root fetch - processPackages [pain001]: executing diffoscope
+[2024-05-19 22:52:23] INFO root fetch - processPackages [pain001]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pain001-0.0.8.tar.gz tmp/pain001-0.0.9.tar.gz --markdown 20240519/p/pain001/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 22:52:24] INFO root fetch - processPackages [wwpdb.utils.nmr]: Downloading https://files.pythonhosted.org/packages/0c/5a/f9b63a0c4878e83e3d19d3cf97155182f1392717f8ab929516416886ea1a/wwpdb_utils_nmr-0.35.tar.gz
+[2024-05-19 22:52:24] INFO root fetch - processPackages [eras]: Remove: archive file [/home/abi/fetcher/tmp/eras-0.1.8.tar.gz]
+[2024-05-19 22:52:24] INFO root fetch - processPackages [eras]: Remove: archive file [/home/abi/fetcher/tmp/eras-0.1.9.tar.gz]
+[2024-05-19 22:52:24] INFO root fetch - main [MainThread]: End processing [eras]: success
+[2024-05-19 22:52:24] INFO root fetch - processPackages [qablet-contracts]: Remove: archive file [/home/abi/fetcher/tmp/qablet_contracts-0.2.1.tar.gz]
+[2024-05-19 22:52:24] INFO root fetch - processPackages [qablet-contracts]: Remove: archive file [/home/abi/fetcher/tmp/qablet_contracts-0.2.2.tar.gz]
+[2024-05-19 22:52:24] INFO root fetch - main [MainThread]: End processing [qablet-contracts]: success
+[2024-05-19 22:52:24] INFO root fetch - processPackages [needto]: Remove: archive file [/home/abi/fetcher/tmp/needto-0.1.0.tar.gz]
+[2024-05-19 22:52:24] INFO root fetch - processPackages [needto]: Remove: archive file [/home/abi/fetcher/tmp/needto-0.1.1.tar.gz]
+[2024-05-19 22:52:24] INFO root fetch - main [MainThread]: End processing [needto]: success
+[2024-05-19 22:52:24] INFO root fetch - processPackages [pain001]: Remove: archive file [/home/abi/fetcher/tmp/pain001-0.0.8.tar.gz]
+[2024-05-19 22:52:24] INFO root fetch - processPackages [pain001]: Remove: archive file [/home/abi/fetcher/tmp/pain001-0.0.9.tar.gz]
+[2024-05-19 22:52:24] INFO root fetch - main [MainThread]: End processing [pain001]: success
+[2024-05-19 22:52:24] INFO root fetch - processPackages [wwpdb.utils.nmr]: executing diffoscope
+[2024-05-19 22:52:24] INFO root fetch - processPackages [wwpdb.utils.nmr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wwpdb.utils.nmr-0.34.1.tar.gz tmp/wwpdb_utils_nmr-0.35.tar.gz --markdown 20240519/w/wwpdb.utils.nmr/0.34.1-0.35/README.md --exclude *.pyd
+[2024-05-19 22:52:29] INFO root fetch - processPackages [wwpdb.utils.nmr]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb.utils.nmr-0.34.1.tar.gz]
+[2024-05-19 22:52:29] INFO root fetch - processPackages [wwpdb.utils.nmr]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb_utils_nmr-0.35.tar.gz]
+[2024-05-19 22:52:29] INFO root fetch - main [MainThread]: End processing [wwpdb.utils.nmr]: success
+[2024-05-19 22:52:29] INFO root fetch - main [MainThread]: Store serial: [23280453]
