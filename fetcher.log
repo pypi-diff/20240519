@@ -11004,3 +11004,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 15:08:52] INFO root fetch - processPackages [fleekapi]: Remove: archive file [/home/abi/fetcher/tmp/fleekapi-0.1.22.tar.gz]
 [2024-05-19 15:08:52] INFO root fetch - main [MainThread]: End processing [fleekapi]: success
 [2024-05-19 15:08:52] INFO root fetch - main [MainThread]: Store serial: [23276605]
+[2024-05-19 15:10:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276605]
+[2024-05-19 15:11:01] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 15:11:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fleekapi
+[2024-05-19 15:11:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: berylatez
+[2024-05-19 15:11:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: BPK-CAT
+[2024-05-19 15:11:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: BPK-CAT
+[2024-05-19 15:11:01] WARNING root fetch - processPackages [BPK-CAT]: Skipping, unable to determine old version
+[2024-05-19 15:11:01] INFO root fetch - main [MainThread]: End processing [BPK-CAT] error
+[2024-05-19 15:11:01] WARNING root fetch - processPackages [BPK-CAT]: Skipping, unable to determine old version
+[2024-05-19 15:11:01] INFO root fetch - main [MainThread]: End processing [BPK-CAT] error
+[2024-05-19 15:11:01] INFO root fetch - processPackages [fleekapi]: New version: [0.1.23] Old Version: [0.1.22]
+[2024-05-19 15:11:01] INFO root fetch - processPackages [fleekapi]: Downloading https://files.pythonhosted.org/packages/f7/ca/3ac2ee95498caf572fbcdda408e49e4244f1d4de452a3f207b42085ae767/fleekapi-0.1.22.tar.gz
+[2024-05-19 15:11:01] WARNING root fetch - processPackages [berylatez]: Skipping, unable to determine old version
+[2024-05-19 15:11:01] INFO root fetch - main [MainThread]: End processing [berylatez] error
+[2024-05-19 15:11:01] INFO root fetch - processPackages [fleekapi]: Downloading https://files.pythonhosted.org/packages/43/b6/543ae0a398b2f1be25e71fa68bfbb51500debc8c8482f623cbbcbc861da7/fleekapi-0.1.23.tar.gz
+[2024-05-19 15:11:01] INFO root fetch - processPackages [fleekapi]: executing diffoscope
+[2024-05-19 15:11:01] INFO root fetch - processPackages [fleekapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fleekapi-0.1.22.tar.gz tmp/fleekapi-0.1.23.tar.gz --markdown 20240519/f/fleekapi/0.1.22-0.1.23/README.md --exclude *.pyd
+[2024-05-19 15:11:02] INFO root fetch - processPackages [fleekapi]: Remove: archive file [/home/abi/fetcher/tmp/fleekapi-0.1.22.tar.gz]
+[2024-05-19 15:11:02] INFO root fetch - processPackages [fleekapi]: Remove: archive file [/home/abi/fetcher/tmp/fleekapi-0.1.23.tar.gz]
+[2024-05-19 15:11:02] INFO root fetch - main [MainThread]: End processing [fleekapi]: success
+[2024-05-19 15:11:02] INFO root fetch - main [MainThread]: Store serial: [23276618]
