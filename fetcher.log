@@ -2189,3 +2189,24 @@
 [2024-05-19 03:47:40] INFO root fetch - processPackages [aa-ledger]: Remove: archive file [/home/abi/fetcher/tmp/aa_ledger-0.3.5.tar.gz]
 [2024-05-19 03:47:40] INFO root fetch - main [MainThread]: End processing [aa-ledger]: success
 [2024-05-19 03:47:40] INFO root fetch - main [MainThread]: Store serial: [23272506]
+[2024-05-19 03:49:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272506]
+[2024-05-19 03:49:49] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 03:49:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quickstart-vdk
+[2024-05-19 03:49:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: p3orm
+[2024-05-19 03:49:49] INFO root fetch - processPackages [quickstart-vdk]: New version: [0.2.999091100.dev13356] Old Version: [0.2.998635022.dev13355]
+[2024-05-19 03:49:49] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/e3/a6/b7424a3be777980068df32f41ef9085422b79289fef725cba5cabf2b502e/quickstart-vdk-0.2.998635022.dev13355.tar.gz
+[2024-05-19 03:49:49] INFO root fetch - processPackages [p3orm]: New version: [1.0.0rc1] Old Version: [1.0.0a1]
+[2024-05-19 03:49:49] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/fa/72/2a48eb94b876fa0c01eda0450a3e80c80101dd5fdfe10124d5474b64f5fd/quickstart-vdk-0.2.999091100.dev13356.tar.gz
+[2024-05-19 03:49:49] INFO root fetch - processPackages [p3orm]: Downloading https://files.pythonhosted.org/packages/7b/b9/ec5e4e9aff2d1cf8487444a12462db25353c9bc414843558b368db97a2ba/p3orm-1.0.0a1.tar.gz
+[2024-05-19 03:49:49] INFO root fetch - processPackages [quickstart-vdk]: executing diffoscope
+[2024-05-19 03:49:49] INFO root fetch - processPackages [quickstart-vdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz --markdown 20240519/q/quickstart-vdk/0.2.998635022.dev13355-0.2.999091100.dev13356/README.md --exclude *.pyd
+[2024-05-19 03:49:49] INFO root fetch - processPackages [p3orm]: Downloading https://files.pythonhosted.org/packages/16/f8/e1263c3105007ae5ba4dca4e1a815035d9fe17b54c5e1ac3e97c4a188788/p3orm-1.0.0rc1.tar.gz
+[2024-05-19 03:49:50] INFO root fetch - processPackages [p3orm]: executing diffoscope
+[2024-05-19 03:49:50] INFO root fetch - processPackages [p3orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p3orm-1.0.0a1.tar.gz tmp/p3orm-1.0.0rc1.tar.gz --markdown 20240519/p/p3orm/1.0.0a1-1.0.0rc1/README.md --exclude *.pyd
+[2024-05-19 03:49:50] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz]
+[2024-05-19 03:49:50] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz]
+[2024-05-19 03:49:50] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
+[2024-05-19 03:49:50] INFO root fetch - processPackages [p3orm]: Remove: archive file [/home/abi/fetcher/tmp/p3orm-1.0.0a1.tar.gz]
+[2024-05-19 03:49:50] INFO root fetch - processPackages [p3orm]: Remove: archive file [/home/abi/fetcher/tmp/p3orm-1.0.0rc1.tar.gz]
+[2024-05-19 03:49:50] INFO root fetch - main [MainThread]: End processing [p3orm]: success
+[2024-05-19 03:49:50] INFO root fetch - main [MainThread]: Store serial: [23272514]
