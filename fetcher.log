@@ -2336,3 +2336,15 @@
 [2024-05-19 04:00:49] INFO root fetch - processPackages [yoto-api]: Remove: archive file [/home/abi/fetcher/tmp/yoto_api-1.9.0.tar.gz]
 [2024-05-19 04:00:49] INFO root fetch - main [MainThread]: End processing [yoto-api]: success
 [2024-05-19 04:00:49] INFO root fetch - main [MainThread]: Store serial: [23272568]
+[2024-05-19 04:02:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272568]
+[2024-05-19 04:02:58] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 04:02:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyluba
+[2024-05-19 04:02:58] INFO root fetch - processPackages [pyluba]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-19 04:02:58] INFO root fetch - processPackages [pyluba]: Downloading https://files.pythonhosted.org/packages/3a/ee/e19f07d02d402bfb565bf549d8d24341a98e4834a55d92c4f02f5e678585/pyluba-0.0.7.tar.gz
+[2024-05-19 04:02:58] INFO root fetch - processPackages [pyluba]: Downloading https://files.pythonhosted.org/packages/52/99/e29e1d5ada99bf72806e253adb260c8ac9718c47fdfc9c9a26d99fcc0d52/pyluba-0.0.8.tar.gz
+[2024-05-19 04:02:58] INFO root fetch - processPackages [pyluba]: executing diffoscope
+[2024-05-19 04:02:58] INFO root fetch - processPackages [pyluba]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyluba-0.0.7.tar.gz tmp/pyluba-0.0.8.tar.gz --markdown 20240519/p/pyluba/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-19 04:02:59] INFO root fetch - processPackages [pyluba]: Remove: archive file [/home/abi/fetcher/tmp/pyluba-0.0.7.tar.gz]
+[2024-05-19 04:02:59] INFO root fetch - processPackages [pyluba]: Remove: archive file [/home/abi/fetcher/tmp/pyluba-0.0.8.tar.gz]
+[2024-05-19 04:02:59] INFO root fetch - main [MainThread]: End processing [pyluba]: success
+[2024-05-19 04:02:59] INFO root fetch - main [MainThread]: Store serial: [23272571]
