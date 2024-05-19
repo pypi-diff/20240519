@@ -8392,3 +8392,45 @@
 [2024-05-19 12:26:11] INFO root fetch - processPackages [all-repos-envvar]: Remove: archive file [/home/abi/fetcher/tmp/all_repos_envvar-1.1.6.tar.gz]
 [2024-05-19 12:26:11] INFO root fetch - main [MainThread]: End processing [all-repos-envvar]: success
 [2024-05-19 12:26:11] INFO root fetch - main [MainThread]: Store serial: [23275436]
+[2024-05-19 12:28:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275436]
+[2024-05-19 12:28:20] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-19 12:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dqpu
+[2024-05-19 12:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: crossword-puzzle
+[2024-05-19 12:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: monopylaeaz
+[2024-05-19 12:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fast-multi-regex
+[2024-05-19 12:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: python-filewrap
+[2024-05-19 12:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: netbox-interface-synchronization
+[2024-05-19 12:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: apiframe
+[2024-05-19 12:28:20] INFO root fetch - processPackages [crossword-puzzle]: New version: [1.2.74] Old Version: [1.2.73]
+[2024-05-19 12:28:20] WARNING root fetch - processPackages [dqpu]: Skipping, unable to determine old version
+[2024-05-19 12:28:20] INFO root fetch - main [MainThread]: End processing [dqpu] error
+[2024-05-19 12:28:20] INFO root fetch - processPackages [python-filewrap]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-19 12:28:20] INFO root fetch - processPackages [apiframe]: New version: [1.0.0] Old Version: [0.0.2]
+[2024-05-19 12:28:20] WARNING root fetch - processPackages [monopylaeaz]: Skipping, unable to determine old version
+[2024-05-19 12:28:20] INFO root fetch - main [MainThread]: End processing [monopylaeaz] error
+[2024-05-19 12:28:20] WARNING root fetch - processPackages [fast-multi-regex]: Skipping, unable to determine old version
+[2024-05-19 12:28:20] INFO root fetch - main [MainThread]: End processing [fast-multi-regex] error
+[2024-05-19 12:28:20] INFO root fetch - processPackages [crossword-puzzle]: Downloading https://files.pythonhosted.org/packages/96/31/eaf3a079f212116e486d2fe54f8d296d8b28ba77df2adb97438265b07846/crossword_puzzle-1.2.73.tar.gz
+[2024-05-19 12:28:20] WARNING root fetch - processPackages [netbox-interface-synchronization]: Skipping, unable to determine old version
+[2024-05-19 12:28:20] INFO root fetch - main [MainThread]: End processing [netbox-interface-synchronization] error
+[2024-05-19 12:28:20] INFO root fetch - processPackages [python-filewrap]: Downloading https://files.pythonhosted.org/packages/28/fb/29ef9ce735c10409d639ca06952187744dfef62bdd754102da8b0e1fc0ed/python_filewrap-0.0.5.tar.gz
+[2024-05-19 12:28:20] INFO root fetch - processPackages [apiframe]: Downloading https://files.pythonhosted.org/packages/11/fd/f914ca6b77bbe391624ee5549ebb39dabea1761e79692ced8295bdd4e107/apiframe-0.0.2.tar.gz
+[2024-05-19 12:28:20] INFO root fetch - processPackages [crossword-puzzle]: Downloading https://files.pythonhosted.org/packages/89/60/7e184957811b7ccf971aad4a11a2d73ed1d072238e6ae03b409da8882ec9/crossword_puzzle-1.2.74.tar.gz
+[2024-05-19 12:28:21] INFO root fetch - processPackages [apiframe]: Downloading https://files.pythonhosted.org/packages/c8/05/f266e6af7eccf8603cd227098221d3c32c6137a29ab1cc5fb1ab496548d1/apiframe-1.0.0.tar.gz
+[2024-05-19 12:28:21] INFO root fetch - processPackages [python-filewrap]: Downloading https://files.pythonhosted.org/packages/13/82/df92b68469fea432abb69389cd21d85ff6a9705b807edbf3c53b51e4508f/python_filewrap-0.0.6.tar.gz
+[2024-05-19 12:28:21] INFO root fetch - processPackages [python-filewrap]: executing diffoscope
+[2024-05-19 12:28:21] INFO root fetch - processPackages [python-filewrap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_filewrap-0.0.5.tar.gz tmp/python_filewrap-0.0.6.tar.gz --markdown 20240519/p/python-filewrap/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-19 12:28:21] INFO root fetch - processPackages [crossword-puzzle]: executing diffoscope
+[2024-05-19 12:28:21] INFO root fetch - processPackages [crossword-puzzle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crossword_puzzle-1.2.73.tar.gz tmp/crossword_puzzle-1.2.74.tar.gz --markdown 20240519/c/crossword-puzzle/1.2.73-1.2.74/README.md --exclude *.pyd
+[2024-05-19 12:28:21] INFO root fetch - processPackages [apiframe]: executing diffoscope
+[2024-05-19 12:28:21] INFO root fetch - processPackages [apiframe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apiframe-0.0.2.tar.gz tmp/apiframe-1.0.0.tar.gz --markdown 20240519/a/apiframe/0.0.2-1.0.0/README.md --exclude *.pyd
+[2024-05-19 12:28:21] INFO root fetch - processPackages [apiframe]: Remove: archive file [/home/abi/fetcher/tmp/apiframe-0.0.2.tar.gz]
+[2024-05-19 12:28:21] INFO root fetch - processPackages [apiframe]: Remove: archive file [/home/abi/fetcher/tmp/apiframe-1.0.0.tar.gz]
+[2024-05-19 12:28:21] INFO root fetch - main [MainThread]: End processing [apiframe]: success
+[2024-05-19 12:28:21] INFO root fetch - processPackages [python-filewrap]: Remove: archive file [/home/abi/fetcher/tmp/python_filewrap-0.0.5.tar.gz]
+[2024-05-19 12:28:21] INFO root fetch - processPackages [python-filewrap]: Remove: archive file [/home/abi/fetcher/tmp/python_filewrap-0.0.6.tar.gz]
+[2024-05-19 12:28:21] INFO root fetch - main [MainThread]: End processing [python-filewrap]: success
+[2024-05-19 12:28:42] INFO root fetch - processPackages [crossword-puzzle]: Remove: archive file [/home/abi/fetcher/tmp/crossword_puzzle-1.2.73.tar.gz]
+[2024-05-19 12:28:42] INFO root fetch - processPackages [crossword-puzzle]: Remove: archive file [/home/abi/fetcher/tmp/crossword_puzzle-1.2.74.tar.gz]
+[2024-05-19 12:28:42] INFO root fetch - main [MainThread]: End processing [crossword-puzzle]: success
+[2024-05-19 12:28:42] INFO root fetch - main [MainThread]: Store serial: [23275466]
