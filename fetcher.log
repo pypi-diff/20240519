@@ -3096,3 +3096,25 @@
 [2024-05-19 05:01:54] WARNING root fetch - processPackages [frustulaz]: Skipping, unable to determine old version
 [2024-05-19 05:01:54] INFO root fetch - main [MainThread]: End processing [frustulaz] error
 [2024-05-19 05:01:54] INFO root fetch - main [MainThread]: Store serial: [23272933]
+[2024-05-19 05:03:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272933]
+[2024-05-19 05:04:04] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 05:04:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-account-portal-hide-invoice
+[2024-05-19 05:04:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addons-oca-account-invoicing
+[2024-05-19 05:04:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addons-oca-account-invoicing
+[2024-05-19 05:04:04] WARNING root fetch - processPackages [odoo-addon-account-portal-hide-invoice]: Skipping, unable to determine old version
+[2024-05-19 05:04:04] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-portal-hide-invoice] error
+[2024-05-19 05:04:04] INFO root fetch - processPackages [odoo-addons-oca-account-invoicing]: New version: [16.0.20240518.0] Old Version: [16.0.20240517.0]
+[2024-05-19 05:04:04] INFO root fetch - processPackages [odoo-addons-oca-account-invoicing]: New version: [16.0.20240518.0] Old Version: [16.0.20240517.0]
+[2024-05-19 05:04:04] INFO root fetch - processPackages [odoo-addons-oca-account-invoicing]: Downloading https://files.pythonhosted.org/packages/01/1f/a249b4e7bd9a80309b30c955169c038c0c35580590f68607f32c45c7bf68/odoo_addons_oca_account_invoicing-16.0.20240517.0-py3-none-any.whl
+[2024-05-19 05:04:04] INFO root fetch - processPackages [odoo-addons-oca-account-invoicing]: Downloading https://files.pythonhosted.org/packages/01/1f/a249b4e7bd9a80309b30c955169c038c0c35580590f68607f32c45c7bf68/odoo_addons_oca_account_invoicing-16.0.20240517.0-py3-none-any.whl
+[2024-05-19 05:04:04] INFO root fetch - processPackages [odoo-addons-oca-account-invoicing]: Downloading https://files.pythonhosted.org/packages/c6/c1/3653cd30ecf733da78c97ba9e9d6daab217c1311bc8d0deab8ea93d55bea/odoo_addons_oca_account_invoicing-16.0.20240518.0-py3-none-any.whl
+[2024-05-19 05:04:04] INFO root fetch - processPackages [odoo-addons-oca-account-invoicing]: Downloading https://files.pythonhosted.org/packages/c6/c1/3653cd30ecf733da78c97ba9e9d6daab217c1311bc8d0deab8ea93d55bea/odoo_addons_oca_account_invoicing-16.0.20240518.0-py3-none-any.whl
+[2024-05-19 05:04:05] INFO root fetch - processPackages [odoo-addons-oca-account-invoicing]: executing diffoscope
+[2024-05-19 05:04:05] INFO root fetch - processPackages [odoo-addons-oca-account-invoicing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_account_invoicing-16.0.20240517.0-py3-none-any.whl.zip tmp/odoo_addons_oca_account_invoicing-16.0.20240518.0-py3-none-any.whl.zip --markdown 20240519/o/odoo-addons-oca-account-invoicing/16.0.20240517.0-16.0.20240518.0/README.md --exclude *.pyd
+[2024-05-19 05:04:05] INFO root fetch - processPackages [odoo-addons-oca-account-invoicing]: executing diffoscope
+[2024-05-19 05:04:05] INFO root fetch - processPackages [odoo-addons-oca-account-invoicing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_account_invoicing-16.0.20240517.0-py3-none-any.whl.zip tmp/odoo_addons_oca_account_invoicing-16.0.20240518.0-py3-none-any.whl.zip --markdown 20240519/o/odoo-addons-oca-account-invoicing/16.0.20240517.0-16.0.20240518.0/README.md --exclude *.pyd
+[2024-05-19 05:04:05] INFO root fetch - processPackages [odoo-addons-oca-account-invoicing]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_account_invoicing-16.0.20240517.0-py3-none-any.whl.zip]
+[2024-05-19 05:04:05] INFO root fetch - processPackages [odoo-addons-oca-account-invoicing]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_account_invoicing-16.0.20240518.0-py3-none-any.whl.zip]
+[2024-05-19 05:04:05] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-account-invoicing]: success
+[2024-05-19 05:04:05] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-account-invoicing]: success
+[2024-05-19 05:04:05] INFO root fetch - main [MainThread]: Store serial: [23272939]
