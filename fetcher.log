@@ -13060,3 +13060,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 17:15:33] INFO root fetch - processPackages [ark-mainsail]: Remove: archive file [/home/abi/fetcher/tmp/ark-mainsail-1.2.1.tar.gz]
 [2024-05-19 17:15:33] INFO root fetch - main [MainThread]: End processing [ark-mainsail]: success
 [2024-05-19 17:15:33] INFO root fetch - main [MainThread]: Store serial: [23277581]
+[2024-05-19 17:17:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277581]
+[2024-05-19 17:17:41] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 17:17:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fontra
+[2024-05-19 17:17:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: coti-sdk
+[2024-05-19 17:17:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: classiq
+[2024-05-19 17:17:41] INFO root fetch - processPackages [fontra]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-19 17:17:41] INFO root fetch - processPackages [fontra]: Downloading https://files.pythonhosted.org/packages/f8/3f/fb4728ac5a7c9d1b7017070db86a3b62fbcb33b0cc7c01de924f23963a19/fontra-0.2.0.tar.gz
+[2024-05-19 17:17:41] WARNING root fetch - processPackages [coti-sdk]: Skipping, unable to determine old version
+[2024-05-19 17:17:41] INFO root fetch - main [MainThread]: End processing [coti-sdk] error
+[2024-05-19 17:17:41] INFO root fetch - processPackages [classiq]: New version: [0.9.3] Old Version: [0.9.1]
+[2024-05-19 17:17:41] INFO root fetch - processPackages [fontra]: Downloading https://files.pythonhosted.org/packages/eb/2d/e2d49ec1c3200c995018f8f3a0445abd74c8fb79032f8ca1719df028698d/fontra-0.2.1.tar.gz
+[2024-05-19 17:17:42] INFO root fetch - processPackages [classiq]: Downloading https://files.pythonhosted.org/packages/62/bd/a743e4141094b0e9dc17aeac1cedfe15efc910502e7411611d5cdf9d1878/classiq-0.9.1-py3-none-any.whl
+[2024-05-19 17:17:42] INFO root fetch - processPackages [fontra]: executing diffoscope
+[2024-05-19 17:17:42] INFO root fetch - processPackages [fontra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fontra-0.2.0.tar.gz tmp/fontra-0.2.1.tar.gz --markdown 20240519/f/fontra/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-19 17:17:42] INFO root fetch - processPackages [classiq]: Downloading https://files.pythonhosted.org/packages/e5/eb/9b39365fd2d7c2027f6610a884229059149ab9a3395be331767306762c07/classiq-0.9.3-py3-none-any.whl
+[2024-05-19 17:17:42] INFO root fetch - processPackages [classiq]: executing diffoscope
+[2024-05-19 17:17:42] INFO root fetch - processPackages [classiq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/classiq-0.9.1-py3-none-any.whl.zip tmp/classiq-0.9.3-py3-none-any.whl.zip --markdown 20240519/c/classiq/0.9.1-0.9.3/README.md --exclude *.pyd
+[2024-05-19 17:17:42] INFO root fetch - processPackages [fontra]: Remove: archive file [/home/abi/fetcher/tmp/fontra-0.2.0.tar.gz]
+[2024-05-19 17:17:42] INFO root fetch - processPackages [fontra]: Remove: archive file [/home/abi/fetcher/tmp/fontra-0.2.1.tar.gz]
+[2024-05-19 17:17:42] INFO root fetch - main [MainThread]: End processing [fontra]: success
+[2024-05-19 17:17:43] INFO root fetch - processPackages [classiq]: Remove: archive file [/home/abi/fetcher/tmp/classiq-0.9.1-py3-none-any.whl.zip]
+[2024-05-19 17:17:43] INFO root fetch - processPackages [classiq]: Remove: archive file [/home/abi/fetcher/tmp/classiq-0.9.3-py3-none-any.whl.zip]
+[2024-05-19 17:17:43] INFO root fetch - main [MainThread]: End processing [classiq]: success
+[2024-05-19 17:17:43] INFO root fetch - main [MainThread]: Store serial: [23277590]
