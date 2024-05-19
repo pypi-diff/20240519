@@ -9259,3 +9259,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 13:22:52] INFO root fetch - processPackages [remla24-team8-lib-version]: Remove: archive file [/home/abi/fetcher/tmp/remla24_team8_lib_version-0.3.1.tar.gz]
 [2024-05-19 13:22:52] INFO root fetch - main [MainThread]: End processing [remla24-team8-lib-version]: success
 [2024-05-19 13:22:52] INFO root fetch - main [MainThread]: Store serial: [23275830]
+[2024-05-19 13:24:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275830]
+[2024-05-19 13:25:00] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-19 13:25:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rococo-test
+[2024-05-19 13:25:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mudminnowz
+[2024-05-19 13:25:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: agptools
+[2024-05-19 13:25:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: swarmtube
+[2024-05-19 13:25:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: syncmodels
+[2024-05-19 13:25:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: people-local
+[2024-05-19 13:25:00] WARNING root fetch - processPackages [rococo-test]: Skipping, unable to determine old version
+[2024-05-19 13:25:00] INFO root fetch - main [MainThread]: End processing [rococo-test] error
+[2024-05-19 13:25:00] WARNING root fetch - processPackages [mudminnowz]: Skipping, unable to determine old version
+[2024-05-19 13:25:00] INFO root fetch - main [MainThread]: End processing [mudminnowz] error
+[2024-05-19 13:25:00] INFO root fetch - processPackages [people-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 13:25:00] INFO root fetch - processPackages [agptools]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-19 13:25:00] INFO root fetch - processPackages [syncmodels]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-19 13:25:00] INFO root fetch - processPackages [swarmtube]: New version: [0.1.43] Old Version: [0.1.41]
+[2024-05-19 13:25:00] INFO root fetch - processPackages [people-local]: Downloading https://files.pythonhosted.org/packages/8b/1c/6315cdb848f482a3caf92189f2b65376a69c68543b2b6f4db62d865cb36e/people-local-0.0.8.tar.gz
+[2024-05-19 13:25:01] INFO root fetch - processPackages [agptools]: Downloading https://files.pythonhosted.org/packages/ef/90/08317ea7b8434657a0c64c671a0ce91127781d19896203a19175d974fc12/agptools-0.1.8-py2.py3-none-any.whl
+[2024-05-19 13:25:01] INFO root fetch - processPackages [swarmtube]: Downloading https://files.pythonhosted.org/packages/f5/8d/28bbc24e7b037514c4142ccb2bd6dd11f8d601f5bc209bb93b8efcb1bd52/swarmtube-0.1.41-py2.py3-none-any.whl
+[2024-05-19 13:25:01] INFO root fetch - processPackages [syncmodels]: Downloading https://files.pythonhosted.org/packages/09/13/db4988a642af43523190154e2a5fc392ebeed8a8fa626973e593b7c6b635/syncmodels-0.1.8-py2.py3-none-any.whl
+[2024-05-19 13:25:01] INFO root fetch - processPackages [people-local]: Downloading https://files.pythonhosted.org/packages/cc/ba/07a77e133c7523ecf4191eb3efb5529e4cee964e55f5dff0504d09de7d34/people-local-0.0.9.tar.gz
+[2024-05-19 13:25:01] INFO root fetch - processPackages [people-local]: executing diffoscope
+[2024-05-19 13:25:01] INFO root fetch - processPackages [people-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/people-local-0.0.8.tar.gz tmp/people-local-0.0.9.tar.gz --markdown 20240519/p/people-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 13:25:01] INFO root fetch - processPackages [agptools]: Downloading https://files.pythonhosted.org/packages/b4/96/a1fa0a1e147cbeb8acd6a36e118eb3b3ecfbf93d5b5de31b99b5d8bef5f4/agptools-0.1.9-py2.py3-none-any.whl
+[2024-05-19 13:25:01] INFO root fetch - processPackages [swarmtube]: Downloading https://files.pythonhosted.org/packages/e5/3d/9bc671d993928cada9665e8f792dbd210218fabb99665bce61410e269dc0/swarmtube-0.1.43-py2.py3-none-any.whl
+[2024-05-19 13:25:01] INFO root fetch - processPackages [syncmodels]: Downloading https://files.pythonhosted.org/packages/fa/f6/eeeb0b12fc045f5917cfc3967317eddb0f896b12df99ee9cb26dd42b0529/syncmodels-0.1.9-py2.py3-none-any.whl
+[2024-05-19 13:25:01] INFO root fetch - processPackages [agptools]: executing diffoscope
+[2024-05-19 13:25:01] INFO root fetch - processPackages [agptools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agptools-0.1.8-py2.py3-none-any.whl.zip tmp/agptools-0.1.9-py2.py3-none-any.whl.zip --markdown 20240519/a/agptools/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-19 13:25:01] INFO root fetch - processPackages [swarmtube]: executing diffoscope
+[2024-05-19 13:25:01] INFO root fetch - processPackages [swarmtube]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swarmtube-0.1.41-py2.py3-none-any.whl.zip tmp/swarmtube-0.1.43-py2.py3-none-any.whl.zip --markdown 20240519/s/swarmtube/0.1.41-0.1.43/README.md --exclude *.pyd
+[2024-05-19 13:25:01] INFO root fetch - processPackages [syncmodels]: executing diffoscope
+[2024-05-19 13:25:01] INFO root fetch - processPackages [syncmodels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syncmodels-0.1.8-py2.py3-none-any.whl.zip tmp/syncmodels-0.1.9-py2.py3-none-any.whl.zip --markdown 20240519/s/syncmodels/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-19 13:25:01] INFO root fetch - processPackages [people-local]: Remove: archive file [/home/abi/fetcher/tmp/people-local-0.0.8.tar.gz]
+[2024-05-19 13:25:01] INFO root fetch - processPackages [people-local]: Remove: archive file [/home/abi/fetcher/tmp/people-local-0.0.9.tar.gz]
+[2024-05-19 13:25:01] INFO root fetch - main [MainThread]: End processing [people-local]: success
+[2024-05-19 13:25:02] INFO root fetch - processPackages [agptools]: Remove: archive file [/home/abi/fetcher/tmp/agptools-0.1.8-py2.py3-none-any.whl.zip]
+[2024-05-19 13:25:02] INFO root fetch - processPackages [agptools]: Remove: archive file [/home/abi/fetcher/tmp/agptools-0.1.9-py2.py3-none-any.whl.zip]
+[2024-05-19 13:25:02] INFO root fetch - main [MainThread]: End processing [agptools]: success
+[2024-05-19 13:25:02] INFO root fetch - processPackages [syncmodels]: Remove: archive file [/home/abi/fetcher/tmp/syncmodels-0.1.8-py2.py3-none-any.whl.zip]
+[2024-05-19 13:25:02] INFO root fetch - processPackages [syncmodels]: Remove: archive file [/home/abi/fetcher/tmp/syncmodels-0.1.9-py2.py3-none-any.whl.zip]
+[2024-05-19 13:25:02] INFO root fetch - main [MainThread]: End processing [syncmodels]: success
+[2024-05-19 13:25:02] INFO root fetch - processPackages [swarmtube]: Remove: archive file [/home/abi/fetcher/tmp/swarmtube-0.1.41-py2.py3-none-any.whl.zip]
+[2024-05-19 13:25:02] INFO root fetch - processPackages [swarmtube]: Remove: archive file [/home/abi/fetcher/tmp/swarmtube-0.1.43-py2.py3-none-any.whl.zip]
+[2024-05-19 13:25:02] INFO root fetch - main [MainThread]: End processing [swarmtube]: success
+[2024-05-19 13:25:02] INFO root fetch - main [MainThread]: Store serial: [23275845]
