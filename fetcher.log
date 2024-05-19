@@ -13179,3 +13179,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 17:22:07] INFO root fetch - processPackages [cterasdk]: Remove: archive file [/home/abi/fetcher/tmp/cterasdk-2.9.0.tar.gz]
 [2024-05-19 17:22:07] INFO root fetch - main [MainThread]: End processing [cterasdk]: success
 [2024-05-19 17:22:07] INFO root fetch - main [MainThread]: Store serial: [23277703]
+[2024-05-19 17:24:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277703]
+[2024-05-19 17:24:15] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-19 17:24:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lumberlogger
+[2024-05-19 17:24:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: daimon
+[2024-05-19 17:24:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: servicenow-api
+[2024-05-19 17:24:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tinyagent
+[2024-05-19 17:24:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: funread
+[2024-05-19 17:24:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ccgo
+[2024-05-19 17:24:16] WARNING root fetch - processPackages [ccgo]: Skipping, unable to determine old version
+[2024-05-19 17:24:16] INFO root fetch - main [MainThread]: End processing [ccgo] error
+[2024-05-19 17:24:16] INFO root fetch - processPackages [servicenow-api]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-19 17:24:16] INFO root fetch - processPackages [funread]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-05-19 17:24:16] INFO root fetch - processPackages [servicenow-api]: Downloading https://files.pythonhosted.org/packages/2a/96/cc447e9247636a3ca7fe607e05a327a7076f254221c5c20c960f2d6689fd/servicenow_api-0.8.0-py2.py3-none-any.whl
+[2024-05-19 17:24:16] WARNING root fetch - processPackages [lumberlogger]: Skipping, unable to determine old version
+[2024-05-19 17:24:16] INFO root fetch - main [MainThread]: End processing [lumberlogger] error
+[2024-05-19 17:24:16] INFO root fetch - processPackages [funread]: Downloading https://files.pythonhosted.org/packages/59/52/fdf969b3e9a5973d1fbcb899f509b88b33136ef855d9cd8d1b4a3cb2ccc7/funread-0.5.8-py3-none-any.whl
+[2024-05-19 17:24:16] WARNING root fetch - processPackages [daimon]: Skipping, unable to determine old version
+[2024-05-19 17:24:16] INFO root fetch - main [MainThread]: End processing [daimon] error
+[2024-05-19 17:24:16] INFO root fetch - processPackages [tinyagent]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-19 17:24:16] INFO root fetch - processPackages [tinyagent]: Downloading https://files.pythonhosted.org/packages/33/df/ddd55ac2815ce5f2b52f77d9097e8566af1e9c83f2c8f64fe487fca25c15/tinyagent-0.1.4.tar.gz
+[2024-05-19 17:24:16] INFO root fetch - processPackages [funread]: Downloading https://files.pythonhosted.org/packages/f0/76/53e18f8f375f24948c9d218296c2612cbfffe77f1410d9d22be9cfa54ba7/funread-0.5.9-py3-none-any.whl
+[2024-05-19 17:24:16] INFO root fetch - processPackages [servicenow-api]: Downloading https://files.pythonhosted.org/packages/76/cb/16788288b3e511d9ebf0b67d4e1cd59966bc918931d1953e5f137a9ff712/servicenow_api-0.9.0-py2.py3-none-any.whl
+[2024-05-19 17:24:16] INFO root fetch - processPackages [funread]: executing diffoscope
+[2024-05-19 17:24:16] INFO root fetch - processPackages [funread]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funread-0.5.8-py3-none-any.whl.zip tmp/funread-0.5.9-py3-none-any.whl.zip --markdown 20240519/f/funread/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-05-19 17:24:16] INFO root fetch - processPackages [servicenow-api]: executing diffoscope
+[2024-05-19 17:24:16] INFO root fetch - processPackages [servicenow-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/servicenow_api-0.8.0-py2.py3-none-any.whl.zip tmp/servicenow_api-0.9.0-py2.py3-none-any.whl.zip --markdown 20240519/s/servicenow-api/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-19 17:24:16] INFO root fetch - processPackages [tinyagent]: Downloading https://files.pythonhosted.org/packages/2f/29/da2a2aa1bc40f549082b46bd75ff2c5e83779d2c0b74956e18f33d7209f1/tinyagent-0.1.5.tar.gz
+[2024-05-19 17:24:16] INFO root fetch - processPackages [tinyagent]: executing diffoscope
+[2024-05-19 17:24:16] INFO root fetch - processPackages [tinyagent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinyagent-0.1.4.tar.gz tmp/tinyagent-0.1.5.tar.gz --markdown 20240519/t/tinyagent/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-19 17:24:17] INFO root fetch - processPackages [funread]: Remove: archive file [/home/abi/fetcher/tmp/funread-0.5.8-py3-none-any.whl.zip]
+[2024-05-19 17:24:17] INFO root fetch - processPackages [funread]: Remove: archive file [/home/abi/fetcher/tmp/funread-0.5.9-py3-none-any.whl.zip]
+[2024-05-19 17:24:17] INFO root fetch - main [MainThread]: End processing [funread]: success
+[2024-05-19 17:24:17] INFO root fetch - processPackages [servicenow-api]: Remove: archive file [/home/abi/fetcher/tmp/servicenow_api-0.8.0-py2.py3-none-any.whl.zip]
+[2024-05-19 17:24:17] INFO root fetch - processPackages [servicenow-api]: Remove: archive file [/home/abi/fetcher/tmp/servicenow_api-0.9.0-py2.py3-none-any.whl.zip]
+[2024-05-19 17:24:17] INFO root fetch - main [MainThread]: End processing [servicenow-api]: success
+[2024-05-19 17:24:17] INFO root fetch - processPackages [tinyagent]: Remove: archive file [/home/abi/fetcher/tmp/tinyagent-0.1.4.tar.gz]
+[2024-05-19 17:24:17] INFO root fetch - processPackages [tinyagent]: Remove: archive file [/home/abi/fetcher/tmp/tinyagent-0.1.5.tar.gz]
+[2024-05-19 17:24:17] INFO root fetch - main [MainThread]: End processing [tinyagent]: success
+[2024-05-19 17:24:17] INFO root fetch - main [MainThread]: Store serial: [23277723]
