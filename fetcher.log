@@ -7426,3 +7426,36 @@
 [2024-05-19 11:07:56] INFO root fetch - processPackages [gadapt]: Remove: archive file [/home/abi/fetcher/tmp/gadapt-0.4.0.tar.gz]
 [2024-05-19 11:07:56] INFO root fetch - main [MainThread]: End processing [gadapt]: success
 [2024-05-19 11:07:56] INFO root fetch - main [MainThread]: Store serial: [23274928]
+[2024-05-19 11:10:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274928]
+[2024-05-19 11:10:06] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 11:10:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ix-notifiers
+[2024-05-19 11:10:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arclet-alconna-tools
+[2024-05-19 11:10:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mmo-tools
+[2024-05-19 11:10:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bluntiez
+[2024-05-19 11:10:06] INFO root fetch - processPackages [mmo-tools]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-19 11:10:06] INFO root fetch - processPackages [mmo-tools]: Downloading https://files.pythonhosted.org/packages/2b/d5/3bc172d7a1da7475a310680e664325b7fec5e1b4a9cee8cee8cd0e4354a5/mmo_tools-0.2.0.tar.gz
+[2024-05-19 11:10:06] INFO root fetch - processPackages [ix-notifiers]: New version: [0.0.259196408] Old Version: [0.0.259192762]
+[2024-05-19 11:10:06] INFO root fetch - processPackages [arclet-alconna-tools]: New version: [0.7.4] Old Version: [0.7.3]
+[2024-05-19 11:10:06] WARNING root fetch - processPackages [bluntiez]: Skipping, unable to determine old version
+[2024-05-19 11:10:06] INFO root fetch - main [MainThread]: End processing [bluntiez] error
+[2024-05-19 11:10:07] INFO root fetch - processPackages [ix-notifiers]: Downloading https://files.pythonhosted.org/packages/d5/3c/31890e32c1e1883420e4340c6f6425d0d259bc936e595fbb818dec4789bd/ix-notifiers-0.0.259192762.tar.gz
+[2024-05-19 11:10:07] INFO root fetch - processPackages [arclet-alconna-tools]: Downloading https://files.pythonhosted.org/packages/03/07/e63bc0025b903c41734ea8b555fe7ebf9cc8a920434e64c1aac76abbefbc/arclet_alconna_tools-0.7.3.tar.gz
+[2024-05-19 11:10:07] INFO root fetch - processPackages [ix-notifiers]: Downloading https://files.pythonhosted.org/packages/50/c8/b2ac2388009d5845ea95cd3b5122903cf82ec0a52640bc3acf483ca92701/ix-notifiers-0.0.259196408.tar.gz
+[2024-05-19 11:10:07] INFO root fetch - processPackages [arclet-alconna-tools]: Downloading https://files.pythonhosted.org/packages/37/56/2947f3f97e055d4f23deadc760662435f9947aad99269b347c5796a75f46/arclet_alconna_tools-0.7.4.tar.gz
+[2024-05-19 11:10:07] INFO root fetch - processPackages [mmo-tools]: Downloading https://files.pythonhosted.org/packages/05/62/81d762a66995d11bf44f79515eaa9d91e391f7adad58424df7465e22b688/mmo_tools-0.2.1.tar.gz
+[2024-05-19 11:10:07] INFO root fetch - processPackages [ix-notifiers]: executing diffoscope
+[2024-05-19 11:10:07] INFO root fetch - processPackages [ix-notifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ix-notifiers-0.0.259192762.tar.gz tmp/ix-notifiers-0.0.259196408.tar.gz --markdown 20240519/i/ix-notifiers/0.0.259192762-0.0.259196408/README.md --exclude *.pyd
+[2024-05-19 11:10:07] INFO root fetch - processPackages [arclet-alconna-tools]: executing diffoscope
+[2024-05-19 11:10:07] INFO root fetch - processPackages [arclet-alconna-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arclet_alconna_tools-0.7.3.tar.gz tmp/arclet_alconna_tools-0.7.4.tar.gz --markdown 20240519/a/arclet-alconna-tools/0.7.3-0.7.4/README.md --exclude *.pyd
+[2024-05-19 11:10:07] INFO root fetch - processPackages [mmo-tools]: executing diffoscope
+[2024-05-19 11:10:07] INFO root fetch - processPackages [mmo-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mmo_tools-0.2.0.tar.gz tmp/mmo_tools-0.2.1.tar.gz --markdown 20240519/m/mmo-tools/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-19 11:10:08] INFO root fetch - processPackages [ix-notifiers]: Remove: archive file [/home/abi/fetcher/tmp/ix-notifiers-0.0.259192762.tar.gz]
+[2024-05-19 11:10:08] INFO root fetch - processPackages [ix-notifiers]: Remove: archive file [/home/abi/fetcher/tmp/ix-notifiers-0.0.259196408.tar.gz]
+[2024-05-19 11:10:08] INFO root fetch - main [MainThread]: End processing [ix-notifiers]: success
+[2024-05-19 11:10:08] INFO root fetch - processPackages [mmo-tools]: Remove: archive file [/home/abi/fetcher/tmp/mmo_tools-0.2.0.tar.gz]
+[2024-05-19 11:10:08] INFO root fetch - processPackages [mmo-tools]: Remove: archive file [/home/abi/fetcher/tmp/mmo_tools-0.2.1.tar.gz]
+[2024-05-19 11:10:08] INFO root fetch - main [MainThread]: End processing [mmo-tools]: success
+[2024-05-19 11:10:08] INFO root fetch - processPackages [arclet-alconna-tools]: Remove: archive file [/home/abi/fetcher/tmp/arclet_alconna_tools-0.7.3.tar.gz]
+[2024-05-19 11:10:08] INFO root fetch - processPackages [arclet-alconna-tools]: Remove: archive file [/home/abi/fetcher/tmp/arclet_alconna_tools-0.7.4.tar.gz]
+[2024-05-19 11:10:08] INFO root fetch - main [MainThread]: End processing [arclet-alconna-tools]: success
+[2024-05-19 11:10:08] INFO root fetch - main [MainThread]: Store serial: [23274947]
