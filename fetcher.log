@@ -14039,3 +14039,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 18:10:27] INFO root fetch - processPackages [elicznik]: Remove: archive file [/home/abi/fetcher/tmp/elicznik-2.2.0.tar.gz]
 [2024-05-19 18:10:27] INFO root fetch - main [MainThread]: End processing [elicznik]: success
 [2024-05-19 18:10:27] INFO root fetch - main [MainThread]: Store serial: [23278107]
+[2024-05-19 18:12:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23278107]
+[2024-05-19 18:12:36] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 18:12:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: radiographiesz
+[2024-05-19 18:12:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: trengine
+[2024-05-19 18:12:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: data-place
+[2024-05-19 18:12:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pytest-xprocess
+[2024-05-19 18:12:36] INFO root fetch - processPackages [trengine]: New version: [1.4] Old Version: [1.3]
+[2024-05-19 18:12:36] INFO root fetch - processPackages [trengine]: Downloading https://files.pythonhosted.org/packages/5b/f0/c2b943617d5cc055c279de642a5b186ea1df27e0a82e60d1106674fcf64f/trengine-1.3.tar.gz
+[2024-05-19 18:12:36] WARNING root fetch - processPackages [radiographiesz]: Skipping, unable to determine old version
+[2024-05-19 18:12:36] INFO root fetch - main [MainThread]: End processing [radiographiesz] error
+[2024-05-19 18:12:36] INFO root fetch - processPackages [pytest-xprocess]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-19 18:12:36] INFO root fetch - processPackages [data-place]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-05-19 18:12:36] INFO root fetch - processPackages [data-place]: Downloading https://files.pythonhosted.org/packages/19/dd/01725169e9136657e515c87c1d23c032be9b75fcf40bd76033e16b467c44/data-place-0.3.2.tar.gz
+[2024-05-19 18:12:36] INFO root fetch - processPackages [trengine]: Downloading https://files.pythonhosted.org/packages/a2/30/b065a2f0f894092497299d31d4f607a882fb4d6e961f397d1e126dd1f578/trengine-1.4.tar.gz
+[2024-05-19 18:12:36] INFO root fetch - processPackages [pytest-xprocess]: Downloading https://files.pythonhosted.org/packages/0b/67/be06da46684360dab03ab850081a6ec60a3fb86ae50d50e62e705a034429/pytest-xprocess-1.0.1.tar.gz
+[2024-05-19 18:12:36] INFO root fetch - processPackages [trengine]: executing diffoscope
+[2024-05-19 18:12:36] INFO root fetch - processPackages [trengine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trengine-1.3.tar.gz tmp/trengine-1.4.tar.gz --markdown 20240519/t/trengine/1.3-1.4/README.md --exclude *.pyd
+[2024-05-19 18:12:36] INFO root fetch - processPackages [pytest-xprocess]: Downloading https://files.pythonhosted.org/packages/27/6f/e53d349445b4280f6b47bbed87127e994f331c335377d5e72407b376ad46/pytest-xprocess-1.0.2.tar.gz
+[2024-05-19 18:12:36] INFO root fetch - processPackages [data-place]: Downloading https://files.pythonhosted.org/packages/61/20/220774a117296d2a274243799a540aa0956f72e6210f9018dd0032b67c56/data-place-0.3.3.tar.gz
+[2024-05-19 18:12:37] INFO root fetch - processPackages [pytest-xprocess]: executing diffoscope
+[2024-05-19 18:12:37] INFO root fetch - processPackages [pytest-xprocess]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-xprocess-1.0.1.tar.gz tmp/pytest-xprocess-1.0.2.tar.gz --markdown 20240519/p/pytest-xprocess/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-19 18:12:37] INFO root fetch - processPackages [data-place]: executing diffoscope
+[2024-05-19 18:12:37] INFO root fetch - processPackages [data-place]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data-place-0.3.2.tar.gz tmp/data-place-0.3.3.tar.gz --markdown 20240519/d/data-place/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-05-19 18:12:37] INFO root fetch - processPackages [trengine]: Remove: archive file [/home/abi/fetcher/tmp/trengine-1.3.tar.gz]
+[2024-05-19 18:12:37] INFO root fetch - processPackages [trengine]: Remove: archive file [/home/abi/fetcher/tmp/trengine-1.4.tar.gz]
+[2024-05-19 18:12:37] INFO root fetch - main [MainThread]: End processing [trengine]: success
+[2024-05-19 18:12:37] INFO root fetch - processPackages [data-place]: Remove: archive file [/home/abi/fetcher/tmp/data-place-0.3.2.tar.gz]
+[2024-05-19 18:12:37] INFO root fetch - processPackages [data-place]: Remove: archive file [/home/abi/fetcher/tmp/data-place-0.3.3.tar.gz]
+[2024-05-19 18:12:37] INFO root fetch - main [MainThread]: End processing [data-place]: success
+[2024-05-19 18:12:37] INFO root fetch - processPackages [pytest-xprocess]: Remove: archive file [/home/abi/fetcher/tmp/pytest-xprocess-1.0.1.tar.gz]
+[2024-05-19 18:12:37] INFO root fetch - processPackages [pytest-xprocess]: Remove: archive file [/home/abi/fetcher/tmp/pytest-xprocess-1.0.2.tar.gz]
+[2024-05-19 18:12:37] INFO root fetch - main [MainThread]: End processing [pytest-xprocess]: success
+[2024-05-19 18:12:37] INFO root fetch - main [MainThread]: Store serial: [23278135]
