@@ -6914,3 +6914,27 @@
 [2024-05-19 10:30:25] ERROR root fetch - processPackages [aiozoneinfo]: Unable to get metadata: No such project 'aiozoneinfo'
 [2024-05-19 10:30:25] INFO root fetch - main [MainThread]: End processing [aiozoneinfo] error
 [2024-05-19 10:30:25] INFO root fetch - main [MainThread]: Store serial: [23274643]
+[2024-05-19 10:32:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23274643]
+[2024-05-19 10:32:33] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 10:32:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: entity-type-local
+[2024-05-19 10:32:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyselenscrapr
+[2024-05-19 10:32:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: GraphRetrieval
+[2024-05-19 10:32:33] WARNING root fetch - processPackages [GraphRetrieval]: Skipping, unable to determine old version
+[2024-05-19 10:32:33] INFO root fetch - main [MainThread]: End processing [GraphRetrieval] error
+[2024-05-19 10:32:33] INFO root fetch - processPackages [entity-type-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 10:32:34] INFO root fetch - processPackages [entity-type-local]: Downloading https://files.pythonhosted.org/packages/e1/49/dae38bddfbf5a5379aa666cc312ab320273bd0087679dac56d18476bd2e0/entity-type-local-0.0.8.tar.gz
+[2024-05-19 10:32:34] INFO root fetch - processPackages [pyselenscrapr]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-19 10:32:34] INFO root fetch - processPackages [pyselenscrapr]: Downloading https://files.pythonhosted.org/packages/b5/de/d9683052135e536ba14e328178a21ed4bc6d8ce4bfc73dcd9717e5534abd/pyselenscrapr-0.0.6.tar.gz
+[2024-05-19 10:32:35] INFO root fetch - processPackages [entity-type-local]: Downloading https://files.pythonhosted.org/packages/6d/56/eb9f4b8a5bb633ce9314fab5889a48bc8776e95725798bddf4a63e205caa/entity-type-local-0.0.9.tar.gz
+[2024-05-19 10:32:35] INFO root fetch - processPackages [pyselenscrapr]: Downloading https://files.pythonhosted.org/packages/51/46/9792775ae04748cf44a36cf83b14fc5d711f8ac6e653b78cd6711831788f/pyselenscrapr-0.0.7.tar.gz
+[2024-05-19 10:32:35] INFO root fetch - processPackages [entity-type-local]: executing diffoscope
+[2024-05-19 10:32:35] INFO root fetch - processPackages [entity-type-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/entity-type-local-0.0.8.tar.gz tmp/entity-type-local-0.0.9.tar.gz --markdown 20240519/e/entity-type-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 10:32:35] INFO root fetch - processPackages [pyselenscrapr]: executing diffoscope
+[2024-05-19 10:32:35] INFO root fetch - processPackages [pyselenscrapr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyselenscrapr-0.0.6.tar.gz tmp/pyselenscrapr-0.0.7.tar.gz --markdown 20240519/p/pyselenscrapr/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-05-19 10:32:36] INFO root fetch - processPackages [entity-type-local]: Remove: archive file [/home/abi/fetcher/tmp/entity-type-local-0.0.8.tar.gz]
+[2024-05-19 10:32:36] INFO root fetch - processPackages [entity-type-local]: Remove: archive file [/home/abi/fetcher/tmp/entity-type-local-0.0.9.tar.gz]
+[2024-05-19 10:32:36] INFO root fetch - main [MainThread]: End processing [entity-type-local]: success
+[2024-05-19 10:32:36] INFO root fetch - processPackages [pyselenscrapr]: Remove: archive file [/home/abi/fetcher/tmp/pyselenscrapr-0.0.6.tar.gz]
+[2024-05-19 10:32:36] INFO root fetch - processPackages [pyselenscrapr]: Remove: archive file [/home/abi/fetcher/tmp/pyselenscrapr-0.0.7.tar.gz]
+[2024-05-19 10:32:36] INFO root fetch - main [MainThread]: End processing [pyselenscrapr]: success
+[2024-05-19 10:32:36] INFO root fetch - main [MainThread]: Store serial: [23274652]
