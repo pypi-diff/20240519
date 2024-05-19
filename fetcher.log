@@ -16949,3 +16949,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 20:56:11] INFO root fetch - processPackages [biliup]: Remove: archive file [/home/abi/fetcher/tmp/biliup-0.4.9.tar.gz]
 [2024-05-19 20:56:11] INFO root fetch - main [MainThread]: End processing [biliup]: success
 [2024-05-19 20:56:11] INFO root fetch - main [MainThread]: Store serial: [23279449]
+[2024-05-19 20:58:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279449]
+[2024-05-19 20:58:20] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 20:58:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tcrutils
+[2024-05-19 20:58:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lptp
+[2024-05-19 20:58:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: poker-now-log-converter
+[2024-05-19 20:58:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spark-column-analyzer
+[2024-05-19 20:58:20] WARNING root fetch - processPackages [lptp]: Skipping, unable to determine old version
+[2024-05-19 20:58:20] INFO root fetch - main [MainThread]: End processing [lptp] error
+[2024-05-19 20:58:20] INFO root fetch - processPackages [poker-now-log-converter]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 20:58:20] WARNING root fetch - processPackages [spark-column-analyzer]: Skipping, unable to determine old version
+[2024-05-19 20:58:20] INFO root fetch - main [MainThread]: End processing [spark-column-analyzer] error
+[2024-05-19 20:58:20] INFO root fetch - processPackages [tcrutils]: New version: [12.0.163] Old Version: [12.0.162]
+[2024-05-19 20:58:20] INFO root fetch - processPackages [poker-now-log-converter]: Downloading https://files.pythonhosted.org/packages/67/9d/298f94e9f4620394fe7bc83b27cd4eeed76c2c11f3a2303fcd21d4f8f8a4/poker_now_log_converter-0.0.8.tar.gz
+[2024-05-19 20:58:21] INFO root fetch - processPackages [tcrutils]: Downloading https://files.pythonhosted.org/packages/a3/63/a097a9f8c209683bc609cdd8be32dc0104fadd66d558f313ceae810dab23/tcrutils-12.0.162.tar.gz
+[2024-05-19 20:58:21] INFO root fetch - processPackages [poker-now-log-converter]: Downloading https://files.pythonhosted.org/packages/2f/a4/86e07ea61a31c507b0fd0a2fc59d006a0e49fbb695e8a86848ac413a5112/poker_now_log_converter-0.0.9.tar.gz
+[2024-05-19 20:58:21] INFO root fetch - processPackages [tcrutils]: Downloading https://files.pythonhosted.org/packages/ef/a8/f4004bfb3bfd6fc832ccda39355c3e0cc33c018f6806f0d4eb3d1ba4232e/tcrutils-12.0.163.tar.gz
+[2024-05-19 20:58:21] INFO root fetch - processPackages [poker-now-log-converter]: executing diffoscope
+[2024-05-19 20:58:21] INFO root fetch - processPackages [poker-now-log-converter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poker_now_log_converter-0.0.8.tar.gz tmp/poker_now_log_converter-0.0.9.tar.gz --markdown 20240519/p/poker-now-log-converter/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 20:58:21] INFO root fetch - processPackages [tcrutils]: executing diffoscope
+[2024-05-19 20:58:21] INFO root fetch - processPackages [tcrutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcrutils-12.0.162.tar.gz tmp/tcrutils-12.0.163.tar.gz --markdown 20240519/t/tcrutils/12.0.162-12.0.163/README.md --exclude *.pyd
+[2024-05-19 20:58:22] INFO root fetch - processPackages [poker-now-log-converter]: Remove: archive file [/home/abi/fetcher/tmp/poker_now_log_converter-0.0.8.tar.gz]
+[2024-05-19 20:58:22] INFO root fetch - processPackages [poker-now-log-converter]: Remove: archive file [/home/abi/fetcher/tmp/poker_now_log_converter-0.0.9.tar.gz]
+[2024-05-19 20:58:22] INFO root fetch - main [MainThread]: End processing [poker-now-log-converter]: success
+[2024-05-19 20:58:22] INFO root fetch - processPackages [tcrutils]: Remove: archive file [/home/abi/fetcher/tmp/tcrutils-12.0.162.tar.gz]
+[2024-05-19 20:58:22] INFO root fetch - processPackages [tcrutils]: Remove: archive file [/home/abi/fetcher/tmp/tcrutils-12.0.163.tar.gz]
+[2024-05-19 20:58:22] INFO root fetch - main [MainThread]: End processing [tcrutils]: success
+[2024-05-19 20:58:22] INFO root fetch - main [MainThread]: Store serial: [23279465]
