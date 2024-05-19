@@ -19792,3 +19792,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 23:05:57] INFO root fetch - processPackages [tencentcloud-sdk-python-hasim]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-hasim-3.0.999.tar.gz]
 [2024-05-19 23:05:57] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-hasim]: success
 [2024-05-19 23:05:57] INFO root fetch - main [MainThread]: Store serial: [23280679]
+[2024-05-19 23:08:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23280679]
+[2024-05-19 23:08:06] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-19 23:08:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: colocatez
+[2024-05-19 23:08:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tencentcloud-sdk-python-hunyuan
+[2024-05-19 23:08:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tencentcloud-sdk-python-iai
+[2024-05-19 23:08:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lamindb_setup
+[2024-05-19 23:08:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tencentcloud-sdk-python-ic
+[2024-05-19 23:08:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tencentcloud-sdk-python-icr
+[2024-05-19 23:08:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tencentcloud-sdk-python-ie
+[2024-05-19 23:08:06] INFO root fetch - processPackages [lamindb_setup]: New version: [0.72.0] Old Version: [0.71.4]
+[2024-05-19 23:08:06] WARNING root fetch - processPackages [colocatez]: Skipping, unable to determine old version
+[2024-05-19 23:08:06] INFO root fetch - main [MainThread]: End processing [colocatez] error
+[2024-05-19 23:08:06] INFO root fetch - processPackages [tencentcloud-sdk-python-icr]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-19 23:08:06] INFO root fetch - processPackages [lamindb_setup]: Downloading https://files.pythonhosted.org/packages/18/64/1c2e9cf0683b1e507fbce864b5a84488b31f19e15dd0e18c800c0a5554b6/lamindb_setup-0.71.4.tar.gz
+[2024-05-19 23:08:06] INFO root fetch - processPackages [tencentcloud-sdk-python-iai]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-19 23:08:06] INFO root fetch - processPackages [tencentcloud-sdk-python-hunyuan]: New version: [3.0.1150] Old Version: [3.0.1149]
+[2024-05-19 23:08:06] INFO root fetch - processPackages [tencentcloud-sdk-python-ic]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-19 23:08:06] INFO root fetch - processPackages [tencentcloud-sdk-python-ie]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-19 23:08:06] INFO root fetch - processPackages [tencentcloud-sdk-python-icr]: Downloading https://files.pythonhosted.org/packages/78/99/4e1e7661a2a1fdcc43f4fc3bcc1b63e9087b9986463424d847496a0486a2/tencentcloud-sdk-python-icr-3.0.998.tar.gz
+[2024-05-19 23:08:06] INFO root fetch - processPackages [lamindb_setup]: Downloading https://files.pythonhosted.org/packages/b9/1c/46462c975042a041d615ac53ebb7b3886c92fd5f5679383289e1bd567ffc/lamindb_setup-0.72.0.tar.gz
+[2024-05-19 23:08:06] INFO root fetch - processPackages [tencentcloud-sdk-python-hunyuan]: Downloading https://files.pythonhosted.org/packages/4c/57/e73f16793fd8146768fbd9618780d5c951468fc1b2b05fbd56dd2ff50b94/tencentcloud-sdk-python-hunyuan-3.0.1149.tar.gz
+[2024-05-19 23:08:06] INFO root fetch - processPackages [tencentcloud-sdk-python-iai]: Downloading https://files.pythonhosted.org/packages/45/7a/a9b0e96748d897f1724e7390134d82b628efa2d2231d038f0537179a2d25/tencentcloud-sdk-python-iai-3.0.998.tar.gz
+[2024-05-19 23:08:06] INFO root fetch - processPackages [tencentcloud-sdk-python-ic]: Downloading https://files.pythonhosted.org/packages/83/f4/2dd2a9946db7b141930486cc65218f40fbe1e23b9655cd0c53024fba2d9d/tencentcloud-sdk-python-ic-3.0.998.tar.gz
+[2024-05-19 23:08:06] INFO root fetch - processPackages [tencentcloud-sdk-python-ie]: Downloading https://files.pythonhosted.org/packages/f8/0c/1d02750c6720fe5c88428d152b4d144398c8c9e21910857afcb5796992e2/tencentcloud-sdk-python-ie-3.0.998.tar.gz
+[2024-05-19 23:08:06] INFO root fetch - processPackages [lamindb_setup]: executing diffoscope
+[2024-05-19 23:08:06] INFO root fetch - processPackages [lamindb_setup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lamindb_setup-0.71.4.tar.gz tmp/lamindb_setup-0.72.0.tar.gz --markdown 20240519/l/lamindb_setup/0.71.4-0.72.0/README.md --exclude *.pyd
+[2024-05-19 23:08:07] INFO root fetch - processPackages [tencentcloud-sdk-python-hunyuan]: Downloading https://files.pythonhosted.org/packages/db/19/53be1f8d5daad949fd873a5acf96e190a35609eb1de060c304acf1049858/tencentcloud-sdk-python-hunyuan-3.0.1150.tar.gz
+[2024-05-19 23:08:07] INFO root fetch - processPackages [tencentcloud-sdk-python-icr]: Downloading https://files.pythonhosted.org/packages/b6/5c/c3aa2a2d4478c369fb8abe74f4b50a8c4022c81600b3fe8650216e0201e9/tencentcloud-sdk-python-icr-3.0.999.tar.gz
+[2024-05-19 23:08:07] INFO root fetch - processPackages [tencentcloud-sdk-python-ic]: Downloading https://files.pythonhosted.org/packages/17/c4/e6b699c734f3c72c708def9fc8dc55a7bfb81e447d559c5486deb346823a/tencentcloud-sdk-python-ic-3.0.999.tar.gz
+[2024-05-19 23:08:07] INFO root fetch - processPackages [tencentcloud-sdk-python-hunyuan]: executing diffoscope
+[2024-05-19 23:08:07] INFO root fetch - processPackages [tencentcloud-sdk-python-hunyuan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-hunyuan-3.0.1149.tar.gz tmp/tencentcloud-sdk-python-hunyuan-3.0.1150.tar.gz --markdown 20240519/t/tencentcloud-sdk-python-hunyuan/3.0.1149-3.0.1150/README.md --exclude *.pyd
+[2024-05-19 23:08:07] INFO root fetch - processPackages [tencentcloud-sdk-python-iai]: Downloading https://files.pythonhosted.org/packages/06/69/1c8a0f2ea9d7e73349f3bec5a3e4852fcda9f4656f44460f9bfe0101c32e/tencentcloud-sdk-python-iai-3.0.999.tar.gz
+[2024-05-19 23:08:07] INFO root fetch - processPackages [tencentcloud-sdk-python-icr]: executing diffoscope
+[2024-05-19 23:08:07] INFO root fetch - processPackages [tencentcloud-sdk-python-icr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-icr-3.0.998.tar.gz tmp/tencentcloud-sdk-python-icr-3.0.999.tar.gz --markdown 20240519/t/tencentcloud-sdk-python-icr/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-19 23:08:07] INFO root fetch - processPackages [tencentcloud-sdk-python-ie]: Downloading https://files.pythonhosted.org/packages/df/f8/42c379d1465d61bffed4ee300df5f86e9144a3e4786544499eb4a8c05d53/tencentcloud-sdk-python-ie-3.0.999.tar.gz
+[2024-05-19 23:08:07] INFO root fetch - processPackages [tencentcloud-sdk-python-ic]: executing diffoscope
+[2024-05-19 23:08:07] INFO root fetch - processPackages [tencentcloud-sdk-python-ic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-ic-3.0.998.tar.gz tmp/tencentcloud-sdk-python-ic-3.0.999.tar.gz --markdown 20240519/t/tencentcloud-sdk-python-ic/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-19 23:08:07] INFO root fetch - processPackages [tencentcloud-sdk-python-iai]: executing diffoscope
+[2024-05-19 23:08:07] INFO root fetch - processPackages [tencentcloud-sdk-python-iai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-iai-3.0.998.tar.gz tmp/tencentcloud-sdk-python-iai-3.0.999.tar.gz --markdown 20240519/t/tencentcloud-sdk-python-iai/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-19 23:08:07] INFO root fetch - processPackages [tencentcloud-sdk-python-ie]: executing diffoscope
+[2024-05-19 23:08:07] INFO root fetch - processPackages [tencentcloud-sdk-python-ie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-ie-3.0.998.tar.gz tmp/tencentcloud-sdk-python-ie-3.0.999.tar.gz --markdown 20240519/t/tencentcloud-sdk-python-ie/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-19 23:08:07] INFO root fetch - processPackages [tencentcloud-sdk-python-icr]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-icr-3.0.998.tar.gz]
+[2024-05-19 23:08:07] INFO root fetch - processPackages [tencentcloud-sdk-python-icr]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-icr-3.0.999.tar.gz]
+[2024-05-19 23:08:07] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-icr]: success
+[2024-05-19 23:08:08] INFO root fetch - processPackages [lamindb_setup]: Remove: archive file [/home/abi/fetcher/tmp/lamindb_setup-0.71.4.tar.gz]
+[2024-05-19 23:08:08] INFO root fetch - processPackages [lamindb_setup]: Remove: archive file [/home/abi/fetcher/tmp/lamindb_setup-0.72.0.tar.gz]
+[2024-05-19 23:08:08] INFO root fetch - main [MainThread]: End processing [lamindb_setup]: success
+[2024-05-19 23:08:08] INFO root fetch - processPackages [tencentcloud-sdk-python-ic]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-ic-3.0.998.tar.gz]
+[2024-05-19 23:08:08] INFO root fetch - processPackages [tencentcloud-sdk-python-ic]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-ic-3.0.999.tar.gz]
+[2024-05-19 23:08:08] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-ic]: success
+[2024-05-19 23:08:08] INFO root fetch - processPackages [tencentcloud-sdk-python-ie]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-ie-3.0.998.tar.gz]
+[2024-05-19 23:08:08] INFO root fetch - processPackages [tencentcloud-sdk-python-ie]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-ie-3.0.999.tar.gz]
+[2024-05-19 23:08:08] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-ie]: success
+[2024-05-19 23:08:08] INFO root fetch - processPackages [tencentcloud-sdk-python-hunyuan]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-hunyuan-3.0.1149.tar.gz]
+[2024-05-19 23:08:08] INFO root fetch - processPackages [tencentcloud-sdk-python-hunyuan]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-hunyuan-3.0.1150.tar.gz]
+[2024-05-19 23:08:08] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-hunyuan]: success
+[2024-05-19 23:08:08] INFO root fetch - processPackages [tencentcloud-sdk-python-iai]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-iai-3.0.998.tar.gz]
+[2024-05-19 23:08:08] INFO root fetch - processPackages [tencentcloud-sdk-python-iai]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-iai-3.0.999.tar.gz]
+[2024-05-19 23:08:08] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-iai]: success
+[2024-05-19 23:08:08] INFO root fetch - main [MainThread]: Store serial: [23280701]
