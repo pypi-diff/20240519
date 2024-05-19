@@ -20086,3 +20086,72 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 23:14:42] INFO root fetch - processPackages [better-proxy]: Remove: archive file [/home/abi/fetcher/tmp/better_proxy-1.2.0b1.tar.gz]
 [2024-05-19 23:14:42] INFO root fetch - main [MainThread]: End processing [better-proxy]: success
 [2024-05-19 23:14:42] INFO root fetch - main [MainThread]: Store serial: [23280795]
+[2024-05-19 23:16:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23280795]
+[2024-05-19 23:16:51] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-19 23:16:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: azapyGUI
+[2024-05-19 23:16:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tencentcloud-sdk-python-lcic
+[2024-05-19 23:16:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tencentcloud-sdk-python-lighthouse
+[2024-05-19 23:16:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tencentcloud-sdk-python-live
+[2024-05-19 23:16:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tencentcloud-sdk-python-lke
+[2024-05-19 23:16:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tencentcloud-sdk-python-lowcode
+[2024-05-19 23:16:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: purequransearch
+[2024-05-19 23:16:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: oresat-olaf
+[2024-05-19 23:16:51] WARNING root fetch - processPackages [purequransearch]: Skipping, unable to determine old version
+[2024-05-19 23:16:51] INFO root fetch - main [MainThread]: End processing [purequransearch] error
+[2024-05-19 23:16:51] INFO root fetch - processPackages [azapyGUI]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-19 23:16:51] INFO root fetch - processPackages [tencentcloud-sdk-python-lke]: New version: [3.0.1150] Old Version: [3.0.1149]
+[2024-05-19 23:16:51] INFO root fetch - processPackages [tencentcloud-sdk-python-lcic]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-19 23:16:51] INFO root fetch - processPackages [tencentcloud-sdk-python-lowcode]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-19 23:16:51] INFO root fetch - processPackages [oresat-olaf]: New version: [3.6.0] Old Version: [3.5.0]
+[2024-05-19 23:16:51] INFO root fetch - processPackages [tencentcloud-sdk-python-live]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-19 23:16:51] INFO root fetch - processPackages [tencentcloud-sdk-python-lighthouse]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-19 23:16:51] INFO root fetch - processPackages [azapyGUI]: Downloading https://files.pythonhosted.org/packages/6f/96/e56c521e9ba8240d5e17dae2dd1c5f2a0fd8587e5f90bd49d1827a04302a/azapyGUI-0.0.1.tar.gz
+[2024-05-19 23:16:51] INFO root fetch - processPackages [oresat-olaf]: Downloading https://files.pythonhosted.org/packages/e7/e5/0bc4400faa44909b98627190cee307ced35cd23a764585e6b3c97a8b6d5f/oresat_olaf-3.5.0.tar.gz
+[2024-05-19 23:16:51] INFO root fetch - processPackages [tencentcloud-sdk-python-lke]: Downloading https://files.pythonhosted.org/packages/cb/f2/427d37b808f448afbc74689737ff82a66d792e6fe44769eb0521385b5f00/tencentcloud-sdk-python-lke-3.0.1149.tar.gz
+[2024-05-19 23:16:51] INFO root fetch - processPackages [tencentcloud-sdk-python-lcic]: Downloading https://files.pythonhosted.org/packages/84/5f/27d7e07bcd52c0acfe1e5852a83c600f911208e23cedec47c1a89b1e001a/tencentcloud-sdk-python-lcic-3.0.998.tar.gz
+[2024-05-19 23:16:51] INFO root fetch - processPackages [tencentcloud-sdk-python-lowcode]: Downloading https://files.pythonhosted.org/packages/e4/26/f031555e9e86b1b30f0f1330c1f330b95c2cb83d249a695ead0a05ae75cf/tencentcloud-sdk-python-lowcode-3.0.998.tar.gz
+[2024-05-19 23:16:51] INFO root fetch - processPackages [tencentcloud-sdk-python-lighthouse]: Downloading https://files.pythonhosted.org/packages/0b/8d/60c979aa95503f9edc729f1dfea72f826f8b19b690430bf34afd4ed035da/tencentcloud-sdk-python-lighthouse-3.0.998.tar.gz
+[2024-05-19 23:16:51] INFO root fetch - processPackages [tencentcloud-sdk-python-live]: Downloading https://files.pythonhosted.org/packages/6d/e4/f3af074c2beebb147dea28c08b68f4593e0f41d32264491cea1c24c25a34/tencentcloud-sdk-python-live-3.0.998.tar.gz
+[2024-05-19 23:16:52] INFO root fetch - processPackages [tencentcloud-sdk-python-lke]: Downloading https://files.pythonhosted.org/packages/7e/17/3ca7df7b12469b039cde9215edf1e18dfe3df72a237e6a8cdc7ee0052695/tencentcloud-sdk-python-lke-3.0.1150.tar.gz
+[2024-05-19 23:16:52] INFO root fetch - processPackages [azapyGUI]: Downloading https://files.pythonhosted.org/packages/d9/2b/08a2fdce35ac972d178fa06b2de147c8f2a4fd1f788ae07e1678939002fe/azapygui-0.0.2.tar.gz
+[2024-05-19 23:16:52] INFO root fetch - processPackages [tencentcloud-sdk-python-lcic]: Downloading https://files.pythonhosted.org/packages/5a/19/495d08f782d2e5faba8e9025a90a70d136cca8826a17ad24e73eb8c998d2/tencentcloud-sdk-python-lcic-3.0.999.tar.gz
+[2024-05-19 23:16:52] INFO root fetch - processPackages [tencentcloud-sdk-python-lowcode]: Downloading https://files.pythonhosted.org/packages/23/65/b335540552be64dcbfa4d948258cfca1a8cc873f5f940fde2debda1f1ef6/tencentcloud-sdk-python-lowcode-3.0.999.tar.gz
+[2024-05-19 23:16:52] INFO root fetch - processPackages [oresat-olaf]: Downloading https://files.pythonhosted.org/packages/6f/98/6c0184524c74c76364f5747759c0a7acfb4fce4b6c4808689ac7407a3b2c/oresat_olaf-3.6.0.tar.gz
+[2024-05-19 23:16:52] INFO root fetch - processPackages [tencentcloud-sdk-python-lighthouse]: Downloading https://files.pythonhosted.org/packages/6c/59/611ae599fb5e5ef83d0892fed046edd24a183ca64db4a3d33199be4d4ffc/tencentcloud-sdk-python-lighthouse-3.0.999.tar.gz
+[2024-05-19 23:16:52] INFO root fetch - processPackages [tencentcloud-sdk-python-lke]: executing diffoscope
+[2024-05-19 23:16:52] INFO root fetch - processPackages [tencentcloud-sdk-python-lke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-lke-3.0.1149.tar.gz tmp/tencentcloud-sdk-python-lke-3.0.1150.tar.gz --markdown 20240519/t/tencentcloud-sdk-python-lke/3.0.1149-3.0.1150/README.md --exclude *.pyd
+[2024-05-19 23:16:52] INFO root fetch - processPackages [tencentcloud-sdk-python-live]: Downloading https://files.pythonhosted.org/packages/a5/55/3f97b6ffae81c75fb0c4128805106ed3e2cf61867f386ef73698afd15446/tencentcloud-sdk-python-live-3.0.999.tar.gz
+[2024-05-19 23:16:52] INFO root fetch - processPackages [azapyGUI]: executing diffoscope
+[2024-05-19 23:16:52] INFO root fetch - processPackages [azapyGUI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azapyGUI-0.0.1.tar.gz tmp/azapygui-0.0.2.tar.gz --markdown 20240519/a/azapyGUI/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-19 23:16:52] INFO root fetch - processPackages [tencentcloud-sdk-python-lcic]: executing diffoscope
+[2024-05-19 23:16:52] INFO root fetch - processPackages [tencentcloud-sdk-python-lcic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-lcic-3.0.998.tar.gz tmp/tencentcloud-sdk-python-lcic-3.0.999.tar.gz --markdown 20240519/t/tencentcloud-sdk-python-lcic/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-19 23:16:52] INFO root fetch - processPackages [tencentcloud-sdk-python-lowcode]: executing diffoscope
+[2024-05-19 23:16:52] INFO root fetch - processPackages [tencentcloud-sdk-python-lowcode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-lowcode-3.0.998.tar.gz tmp/tencentcloud-sdk-python-lowcode-3.0.999.tar.gz --markdown 20240519/t/tencentcloud-sdk-python-lowcode/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-19 23:16:52] INFO root fetch - processPackages [tencentcloud-sdk-python-lighthouse]: executing diffoscope
+[2024-05-19 23:16:52] INFO root fetch - processPackages [tencentcloud-sdk-python-lighthouse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-lighthouse-3.0.998.tar.gz tmp/tencentcloud-sdk-python-lighthouse-3.0.999.tar.gz --markdown 20240519/t/tencentcloud-sdk-python-lighthouse/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-19 23:16:52] INFO root fetch - processPackages [tencentcloud-sdk-python-live]: executing diffoscope
+[2024-05-19 23:16:52] INFO root fetch - processPackages [tencentcloud-sdk-python-live]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-live-3.0.998.tar.gz tmp/tencentcloud-sdk-python-live-3.0.999.tar.gz --markdown 20240519/t/tencentcloud-sdk-python-live/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-19 23:16:52] INFO root fetch - processPackages [oresat-olaf]: executing diffoscope
+[2024-05-19 23:16:52] INFO root fetch - processPackages [oresat-olaf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oresat_olaf-3.5.0.tar.gz tmp/oresat_olaf-3.6.0.tar.gz --markdown 20240519/o/oresat-olaf/3.5.0-3.6.0/README.md --exclude *.pyd
+[2024-05-19 23:16:53] INFO root fetch - processPackages [tencentcloud-sdk-python-lowcode]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-lowcode-3.0.998.tar.gz]
+[2024-05-19 23:16:53] INFO root fetch - processPackages [tencentcloud-sdk-python-lowcode]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-lowcode-3.0.999.tar.gz]
+[2024-05-19 23:16:53] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-lowcode]: success
+[2024-05-19 23:16:53] INFO root fetch - processPackages [tencentcloud-sdk-python-lcic]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-lcic-3.0.998.tar.gz]
+[2024-05-19 23:16:53] INFO root fetch - processPackages [tencentcloud-sdk-python-lcic]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-lcic-3.0.999.tar.gz]
+[2024-05-19 23:16:53] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-lcic]: success
+[2024-05-19 23:16:53] INFO root fetch - processPackages [tencentcloud-sdk-python-lke]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-lke-3.0.1149.tar.gz]
+[2024-05-19 23:16:53] INFO root fetch - processPackages [tencentcloud-sdk-python-lke]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-lke-3.0.1150.tar.gz]
+[2024-05-19 23:16:53] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-lke]: success
+[2024-05-19 23:16:53] INFO root fetch - processPackages [tencentcloud-sdk-python-live]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-live-3.0.998.tar.gz]
+[2024-05-19 23:16:53] INFO root fetch - processPackages [tencentcloud-sdk-python-live]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-live-3.0.999.tar.gz]
+[2024-05-19 23:16:53] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-live]: success
+[2024-05-19 23:16:53] INFO root fetch - processPackages [tencentcloud-sdk-python-lighthouse]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-lighthouse-3.0.998.tar.gz]
+[2024-05-19 23:16:53] INFO root fetch - processPackages [tencentcloud-sdk-python-lighthouse]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-lighthouse-3.0.999.tar.gz]
+[2024-05-19 23:16:53] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-lighthouse]: success
+[2024-05-19 23:16:53] INFO root fetch - processPackages [azapyGUI]: Remove: archive file [/home/abi/fetcher/tmp/azapyGUI-0.0.1.tar.gz]
+[2024-05-19 23:16:53] INFO root fetch - processPackages [azapyGUI]: Remove: archive file [/home/abi/fetcher/tmp/azapygui-0.0.2.tar.gz]
+[2024-05-19 23:16:53] INFO root fetch - main [MainThread]: End processing [azapyGUI]: success
+[2024-05-19 23:16:53] INFO root fetch - processPackages [oresat-olaf]: Remove: archive file [/home/abi/fetcher/tmp/oresat_olaf-3.5.0.tar.gz]
+[2024-05-19 23:16:53] INFO root fetch - processPackages [oresat-olaf]: Remove: archive file [/home/abi/fetcher/tmp/oresat_olaf-3.6.0.tar.gz]
+[2024-05-19 23:16:53] INFO root fetch - main [MainThread]: End processing [oresat-olaf]: success
+[2024-05-19 23:16:53] INFO root fetch - main [MainThread]: Store serial: [23280822]
