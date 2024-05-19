@@ -12826,3 +12826,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 17:00:12] INFO root fetch - processPackages [libsrg-apps]: Remove: archive file [/home/abi/fetcher/tmp/libsrg_apps-1.1.0.tar.gz]
 [2024-05-19 17:00:12] INFO root fetch - main [MainThread]: End processing [libsrg-apps]: success
 [2024-05-19 17:00:12] INFO root fetch - main [MainThread]: Store serial: [23277496]
+[2024-05-19 17:02:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277496]
+[2024-05-19 17:02:20] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-19 17:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: libsrg-apps
+[2024-05-19 17:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vvspy
+[2024-05-19 17:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: beangrep
+[2024-05-19 17:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: image2gcode
+[2024-05-19 17:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: warp-python
+[2024-05-19 17:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pbf
+[2024-05-19 17:02:20] INFO root fetch - processPackages [libsrg-apps]: New version: [1.1.0] Old Version: [1.0.1]
+[2024-05-19 17:02:20] INFO root fetch - processPackages [vvspy]: New version: [2.0.0b2] Old Version: [2.0.0b1]
+[2024-05-19 17:02:20] WARNING root fetch - processPackages [pbf]: Skipping, unable to determine old version
+[2024-05-19 17:02:20] INFO root fetch - main [MainThread]: End processing [pbf] error
+[2024-05-19 17:02:20] INFO root fetch - processPackages [warp-python]: New version: [1.2.9] Old Version: [1.2.8]
+[2024-05-19 17:02:21] INFO root fetch - processPackages [beangrep]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-05-19 17:02:21] INFO root fetch - processPackages [image2gcode]: New version: [2.9.9] Old Version: [2.9.8]
+[2024-05-19 17:02:21] INFO root fetch - processPackages [libsrg-apps]: Downloading https://files.pythonhosted.org/packages/5c/90/600ac8726d674e65b6a033eecd73dfd4a9b3b313e9028410fa72aa5c1066/libsrg_apps-1.0.1.tar.gz
+[2024-05-19 17:02:21] INFO root fetch - processPackages [vvspy]: Downloading https://files.pythonhosted.org/packages/ed/77/145ad40e2cb366ab3ffe4106e5ed59a65b749debc77ef2197bef11af225d/vvspy-2.0.0b1.tar.gz
+[2024-05-19 17:02:21] INFO root fetch - processPackages [warp-python]: Downloading https://files.pythonhosted.org/packages/ab/29/f87526b611d22fe1fd2bf578b3da6297a2b7bbeee24ce1d4441558da5f38/warp_python-1.2.8.tar.gz
+[2024-05-19 17:02:21] INFO root fetch - processPackages [beangrep]: Downloading https://files.pythonhosted.org/packages/32/6a/7cc2700d516e7caccc995e071dd32cf7f1f77992bd6cab9c531f10dc0832/beangrep-0.4.0.tar.gz
+[2024-05-19 17:02:21] INFO root fetch - processPackages [image2gcode]: Downloading https://files.pythonhosted.org/packages/e9/bc/02dcf81ae5e54dae3519d1d0faf91546fd527f1c5ce8696f990e65e4cd51/image2gcode-2.9.8.tar.gz
+[2024-05-19 17:02:21] INFO root fetch - processPackages [libsrg-apps]: Downloading https://files.pythonhosted.org/packages/58/8f/7209cc75eeed4a1f1037348294151af7bdb8a41a894393b3ff4ea77a5cc3/libsrg_apps-1.1.0.tar.gz
+[2024-05-19 17:02:21] INFO root fetch - processPackages [warp-python]: Downloading https://files.pythonhosted.org/packages/79/d6/9261521110c41c899ba586c14f59cda7d7020f83001a463cf90aa12040b9/warp_python-1.2.9.tar.gz
+[2024-05-19 17:02:21] INFO root fetch - processPackages [vvspy]: Downloading https://files.pythonhosted.org/packages/5a/87/b377eb17a69c05bd5785e82dd343567dfd1155e98cf4aeb518404a99f32a/vvspy-2.0.0b2.tar.gz
+[2024-05-19 17:02:21] INFO root fetch - processPackages [warp-python]: executing diffoscope
+[2024-05-19 17:02:21] INFO root fetch - processPackages [warp-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/warp_python-1.2.8.tar.gz tmp/warp_python-1.2.9.tar.gz --markdown 20240519/w/warp-python/1.2.8-1.2.9/README.md --exclude *.pyd
+[2024-05-19 17:02:21] INFO root fetch - processPackages [libsrg-apps]: executing diffoscope
+[2024-05-19 17:02:21] INFO root fetch - processPackages [libsrg-apps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libsrg_apps-1.0.1.tar.gz tmp/libsrg_apps-1.1.0.tar.gz --markdown 20240519/l/libsrg-apps/1.0.1-1.1.0/README.md --exclude *.pyd
+[2024-05-19 17:02:21] INFO root fetch - processPackages [beangrep]: Downloading https://files.pythonhosted.org/packages/a8/95/d65f784a1f556c342da26315e448fb999c7f7ae898a3c1d58162742f4d80/beangrep-0.5.0.tar.gz
+[2024-05-19 17:02:21] INFO root fetch - processPackages [vvspy]: executing diffoscope
+[2024-05-19 17:02:21] INFO root fetch - processPackages [vvspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vvspy-2.0.0b1.tar.gz tmp/vvspy-2.0.0b2.tar.gz --markdown 20240519/v/vvspy/2.0.0b1-2.0.0b2/README.md --exclude *.pyd
+[2024-05-19 17:02:21] INFO root fetch - processPackages [image2gcode]: Downloading https://files.pythonhosted.org/packages/db/1a/a805790decab95cc01cfd6f335ab2469f6e728a0d0484a7e67b9f749e7f8/image2gcode-2.9.9.tar.gz
+[2024-05-19 17:02:21] INFO root fetch - processPackages [beangrep]: executing diffoscope
+[2024-05-19 17:02:21] INFO root fetch - processPackages [beangrep]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beangrep-0.4.0.tar.gz tmp/beangrep-0.5.0.tar.gz --markdown 20240519/b/beangrep/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-05-19 17:02:21] INFO root fetch - processPackages [image2gcode]: executing diffoscope
+[2024-05-19 17:02:21] INFO root fetch - processPackages [image2gcode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image2gcode-2.9.8.tar.gz tmp/image2gcode-2.9.9.tar.gz --markdown 20240519/i/image2gcode/2.9.8-2.9.9/README.md --exclude *.pyd
+[2024-05-19 17:02:22] INFO root fetch - processPackages [libsrg-apps]: Remove: archive file [/home/abi/fetcher/tmp/libsrg_apps-1.0.1.tar.gz]
+[2024-05-19 17:02:22] INFO root fetch - processPackages [libsrg-apps]: Remove: archive file [/home/abi/fetcher/tmp/libsrg_apps-1.1.0.tar.gz]
+[2024-05-19 17:02:22] INFO root fetch - main [MainThread]: End processing [libsrg-apps]: success
+[2024-05-19 17:02:22] INFO root fetch - processPackages [warp-python]: Remove: archive file [/home/abi/fetcher/tmp/warp_python-1.2.8.tar.gz]
+[2024-05-19 17:02:22] INFO root fetch - processPackages [warp-python]: Remove: archive file [/home/abi/fetcher/tmp/warp_python-1.2.9.tar.gz]
+[2024-05-19 17:02:22] INFO root fetch - main [MainThread]: End processing [warp-python]: success
+[2024-05-19 17:02:22] INFO root fetch - processPackages [beangrep]: Remove: archive file [/home/abi/fetcher/tmp/beangrep-0.4.0.tar.gz]
+[2024-05-19 17:02:22] INFO root fetch - processPackages [beangrep]: Remove: archive file [/home/abi/fetcher/tmp/beangrep-0.5.0.tar.gz]
+[2024-05-19 17:02:22] INFO root fetch - main [MainThread]: End processing [beangrep]: success
+[2024-05-19 17:02:22] INFO root fetch - processPackages [vvspy]: Remove: archive file [/home/abi/fetcher/tmp/vvspy-2.0.0b1.tar.gz]
+[2024-05-19 17:02:22] INFO root fetch - processPackages [vvspy]: Remove: archive file [/home/abi/fetcher/tmp/vvspy-2.0.0b2.tar.gz]
+[2024-05-19 17:02:22] INFO root fetch - main [MainThread]: End processing [vvspy]: success
+[2024-05-19 17:02:22] INFO root fetch - processPackages [image2gcode]: Remove: archive file [/home/abi/fetcher/tmp/image2gcode-2.9.8.tar.gz]
+[2024-05-19 17:02:22] INFO root fetch - processPackages [image2gcode]: Remove: archive file [/home/abi/fetcher/tmp/image2gcode-2.9.9.tar.gz]
+[2024-05-19 17:02:22] INFO root fetch - main [MainThread]: End processing [image2gcode]: success
+[2024-05-19 17:02:22] INFO root fetch - main [MainThread]: Store serial: [23277513]
