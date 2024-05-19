@@ -3865,3 +3865,9 @@
 [2024-05-19 06:20:25] INFO root fetch - processPackages [pyflagoras]: Remove: archive file [/home/abi/fetcher/tmp/pyflagoras-0.2.0.tar.gz]
 [2024-05-19 06:20:25] INFO root fetch - main [MainThread]: End processing [pyflagoras]: success
 [2024-05-19 06:20:25] INFO root fetch - main [MainThread]: Store serial: [23273229]
+[2024-05-19 06:22:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273229]
+[2024-05-19 06:22:34] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 06:22:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rikibot
+[2024-05-19 06:22:34] WARNING root fetch - processPackages [rikibot]: Skipping, unable to determine old version
+[2024-05-19 06:22:34] INFO root fetch - main [MainThread]: End processing [rikibot] error
+[2024-05-19 06:22:34] INFO root fetch - main [MainThread]: Store serial: [23273232]
