@@ -13594,3 +13594,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 17:44:06] INFO root fetch - processPackages [moval]: Remove: archive file [/home/abi/fetcher/tmp/moval-0.3.8.tar.gz]
 [2024-05-19 17:44:06] INFO root fetch - main [MainThread]: End processing [moval]: success
 [2024-05-19 17:44:06] INFO root fetch - main [MainThread]: Store serial: [23277890]
+[2024-05-19 17:46:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277890]
+[2024-05-19 17:46:15] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 17:46:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lib-version-urlphishing
+[2024-05-19 17:46:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pinbonesz
+[2024-05-19 17:46:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: syncloud-lib
+[2024-05-19 17:46:15] INFO root fetch - processPackages [lib-version-urlphishing]: New version: [2.1.6] Old Version: [2.1.1]
+[2024-05-19 17:46:15] INFO root fetch - processPackages [syncloud-lib]: New version: [99] Old Version: [98]
+[2024-05-19 17:46:15] INFO root fetch - processPackages [lib-version-urlphishing]: Downloading https://files.pythonhosted.org/packages/8f/e0/e3ae54c715cb11df32a157cf18d0317e04649c6de3c1a195e136bf40ccbe/lib_version_urlphishing-2.1.1.tar.gz
+[2024-05-19 17:46:15] WARNING root fetch - processPackages [pinbonesz]: Skipping, unable to determine old version
+[2024-05-19 17:46:15] INFO root fetch - main [MainThread]: End processing [pinbonesz] error
+[2024-05-19 17:46:15] INFO root fetch - processPackages [syncloud-lib]: Downloading https://files.pythonhosted.org/packages/eb/47/46fcc907c66f84d54bb4511b19d9a23d7c91adea96f7e60ce0c74aa570ef/syncloud-lib-98.tar.gz
+[2024-05-19 17:46:15] INFO root fetch - processPackages [syncloud-lib]: Downloading https://files.pythonhosted.org/packages/44/7a/6896c6fbe515ce1d82cba0202681a2dab694b82a4fcab8fe2813ac3b6806/syncloud-lib-99.tar.gz
+[2024-05-19 17:46:16] INFO root fetch - processPackages [lib-version-urlphishing]: Downloading https://files.pythonhosted.org/packages/6a/d7/362ff70e2da39db1268716a59750da25f118af10ca1685f965ce3d9bbc29/lib_version_urlphishing-2.1.6.tar.gz
+[2024-05-19 17:46:16] INFO root fetch - processPackages [syncloud-lib]: executing diffoscope
+[2024-05-19 17:46:16] INFO root fetch - processPackages [syncloud-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syncloud-lib-98.tar.gz tmp/syncloud-lib-99.tar.gz --markdown 20240519/s/syncloud-lib/98-99/README.md --exclude *.pyd
+[2024-05-19 17:46:16] INFO root fetch - processPackages [lib-version-urlphishing]: executing diffoscope
+[2024-05-19 17:46:16] INFO root fetch - processPackages [lib-version-urlphishing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib_version_urlphishing-2.1.1.tar.gz tmp/lib_version_urlphishing-2.1.6.tar.gz --markdown 20240519/l/lib-version-urlphishing/2.1.1-2.1.6/README.md --exclude *.pyd
+[2024-05-19 17:46:16] INFO root fetch - processPackages [syncloud-lib]: Remove: archive file [/home/abi/fetcher/tmp/syncloud-lib-98.tar.gz]
+[2024-05-19 17:46:16] INFO root fetch - processPackages [syncloud-lib]: Remove: archive file [/home/abi/fetcher/tmp/syncloud-lib-99.tar.gz]
+[2024-05-19 17:46:16] INFO root fetch - main [MainThread]: End processing [syncloud-lib]: success
+[2024-05-19 17:46:16] INFO root fetch - processPackages [lib-version-urlphishing]: Remove: archive file [/home/abi/fetcher/tmp/lib_version_urlphishing-2.1.1.tar.gz]
+[2024-05-19 17:46:16] INFO root fetch - processPackages [lib-version-urlphishing]: Remove: archive file [/home/abi/fetcher/tmp/lib_version_urlphishing-2.1.6.tar.gz]
+[2024-05-19 17:46:16] INFO root fetch - main [MainThread]: End processing [lib-version-urlphishing]: success
+[2024-05-19 17:46:16] INFO root fetch - main [MainThread]: Store serial: [23277899]
