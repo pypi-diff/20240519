@@ -1581,3 +1581,16 @@
 [2024-05-19 02:36:03] INFO root fetch - processPackages [aeppl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/aeppl_nightly-0.1.5.dev20240518.tar.gz]
 [2024-05-19 02:36:03] INFO root fetch - main [MainThread]: End processing [aeppl-nightly]: success
 [2024-05-19 02:36:03] INFO root fetch - main [MainThread]: Store serial: [23272163]
+[2024-05-19 02:38:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272163]
+[2024-05-19 02:38:12] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 02:38:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyVHL
+[2024-05-19 02:38:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nm-magic-wand-nightly
+[2024-05-19 02:38:12] INFO root fetch - processPackages [pyVHL]: New version: [0.1.5.1] Old Version: [0.1.5]
+[2024-05-19 02:38:12] INFO root fetch - processPackages [pyVHL]: Downloading https://files.pythonhosted.org/packages/9d/0b/da4cb2786a17db1aef1968a246de38aba76004ea1d13b846af95c23938b5/pyvhl-0.1.5.tar.gz
+[2024-05-19 02:38:12] INFO root fetch - processPackages [nm-magic-wand-nightly]: New version: [0.2.2.20240519] Old Version: [0.2.2.20240518]
+[2024-05-19 02:38:12] WARNING root fetch - processPackages [pyVHL]: Skipping package: exceeds size limit 11318720>=10485760
+[2024-05-19 02:38:12] INFO root fetch - main [MainThread]: End processing [pyVHL] error
+[2024-05-19 02:38:12] INFO root fetch - processPackages [nm-magic-wand-nightly]: Downloading https://files.pythonhosted.org/packages/da/35/c92d669c32bee4f28450438f40f1e2e87688eb8ec611c260a2636b592796/nm_magic_wand_nightly-0.2.2.20240518-cp39-cp39-manylinux_2_17_x86_64.whl
+[2024-05-19 02:38:12] WARNING root fetch - processPackages [nm-magic-wand-nightly]: Skipping package: exceeds size limit 66873168>=10485760
+[2024-05-19 02:38:12] INFO root fetch - main [MainThread]: End processing [nm-magic-wand-nightly] error
+[2024-05-19 02:38:12] INFO root fetch - main [MainThread]: Store serial: [23272169]
