@@ -8380,3 +8380,15 @@
 [2024-05-19 12:24:00] INFO root fetch - processPackages [lakefs-client]: Remove: archive file [/home/abi/fetcher/tmp/lakefs-client-1.9.1.tar.gz]
 [2024-05-19 12:24:00] INFO root fetch - main [MainThread]: End processing [lakefs-client]: success
 [2024-05-19 12:24:00] INFO root fetch - main [MainThread]: Store serial: [23275428]
+[2024-05-19 12:26:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275428]
+[2024-05-19 12:26:10] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 12:26:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: all-repos-envvar
+[2024-05-19 12:26:10] INFO root fetch - processPackages [all-repos-envvar]: New version: [1.1.6] Old Version: [1.1.5]
+[2024-05-19 12:26:10] INFO root fetch - processPackages [all-repos-envvar]: Downloading https://files.pythonhosted.org/packages/0a/63/0e7a6cb01dc8134f2622a463de292092cc4ee703ebbf1d8e0bf50124a371/all_repos_envvar-1.1.5.tar.gz
+[2024-05-19 12:26:11] INFO root fetch - processPackages [all-repos-envvar]: Downloading https://files.pythonhosted.org/packages/b3/e8/40ffdd2ae568c77849d4265046042eabcc6f8247f5eb9ed48f88dce25997/all_repos_envvar-1.1.6.tar.gz
+[2024-05-19 12:26:11] INFO root fetch - processPackages [all-repos-envvar]: executing diffoscope
+[2024-05-19 12:26:11] INFO root fetch - processPackages [all-repos-envvar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/all_repos_envvar-1.1.5.tar.gz tmp/all_repos_envvar-1.1.6.tar.gz --markdown 20240519/a/all-repos-envvar/1.1.5-1.1.6/README.md --exclude *.pyd
+[2024-05-19 12:26:11] INFO root fetch - processPackages [all-repos-envvar]: Remove: archive file [/home/abi/fetcher/tmp/all_repos_envvar-1.1.5.tar.gz]
+[2024-05-19 12:26:11] INFO root fetch - processPackages [all-repos-envvar]: Remove: archive file [/home/abi/fetcher/tmp/all_repos_envvar-1.1.6.tar.gz]
+[2024-05-19 12:26:11] INFO root fetch - main [MainThread]: End processing [all-repos-envvar]: success
+[2024-05-19 12:26:11] INFO root fetch - main [MainThread]: Store serial: [23275436]
