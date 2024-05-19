@@ -4128,3 +4128,27 @@
 [2024-05-19 06:52:52] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz]
 [2024-05-19 06:52:52] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
 [2024-05-19 06:52:52] INFO root fetch - main [MainThread]: Store serial: [23273329]
+[2024-05-19 06:54:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273329]
+[2024-05-19 06:55:00] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 06:55:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ralium
+[2024-05-19 06:55:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qrawl
+[2024-05-19 06:55:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dishabitz
+[2024-05-19 06:55:00] INFO root fetch - processPackages [qrawl]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-05-19 06:55:00] INFO root fetch - processPackages [qrawl]: Downloading https://files.pythonhosted.org/packages/5c/fa/b1fa6cc83befa541e8d415a44f873a8909491c2712c0292882abaae3edfb/qrawl-0.2.2.tar.gz
+[2024-05-19 06:55:01] WARNING root fetch - processPackages [dishabitz]: Skipping, unable to determine old version
+[2024-05-19 06:55:01] INFO root fetch - main [MainThread]: End processing [dishabitz] error
+[2024-05-19 06:55:01] INFO root fetch - processPackages [ralium]: New version: [0.3.6] Old Version: [0.3.5]
+[2024-05-19 06:55:01] INFO root fetch - processPackages [qrawl]: Downloading https://files.pythonhosted.org/packages/b0/18/6fdcf515e5c076ae9b0ef8f11a81d9858e21ea00f375a0cfe00a8f478e02/qrawl-0.2.3.tar.gz
+[2024-05-19 06:55:01] INFO root fetch - processPackages [ralium]: Downloading https://files.pythonhosted.org/packages/61/d3/e84abbda4ef92b2ec3d1baf8279530cbc543283d0283055a95eb7f73f702/ralium-0.3.5-py3-none-any.whl
+[2024-05-19 06:55:01] INFO root fetch - processPackages [qrawl]: executing diffoscope
+[2024-05-19 06:55:01] INFO root fetch - processPackages [qrawl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qrawl-0.2.2.tar.gz tmp/qrawl-0.2.3.tar.gz --markdown 20240519/q/qrawl/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-05-19 06:55:01] INFO root fetch - processPackages [ralium]: Downloading https://files.pythonhosted.org/packages/28/d7/1f211990f134cb07101c879b01c550e2a6b1454b3f258298403ec034df9f/ralium-0.3.6.tar.gz
+[2024-05-19 06:55:01] INFO root fetch - processPackages [ralium]: executing diffoscope
+[2024-05-19 06:55:01] INFO root fetch - processPackages [ralium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ralium-0.3.5-py3-none-any.whl.zip tmp/ralium-0.3.6.tar.gz --markdown 20240519/r/ralium/0.3.5-0.3.6/README.md --exclude *.pyd
+[2024-05-19 06:55:01] INFO root fetch - processPackages [qrawl]: Remove: archive file [/home/abi/fetcher/tmp/qrawl-0.2.2.tar.gz]
+[2024-05-19 06:55:01] INFO root fetch - processPackages [qrawl]: Remove: archive file [/home/abi/fetcher/tmp/qrawl-0.2.3.tar.gz]
+[2024-05-19 06:55:01] INFO root fetch - main [MainThread]: End processing [qrawl]: success
+[2024-05-19 06:55:02] INFO root fetch - processPackages [ralium]: Remove: archive file [/home/abi/fetcher/tmp/ralium-0.3.5-py3-none-any.whl.zip]
+[2024-05-19 06:55:02] INFO root fetch - processPackages [ralium]: Remove: archive file [/home/abi/fetcher/tmp/ralium-0.3.6.tar.gz]
+[2024-05-19 06:55:02] INFO root fetch - main [MainThread]: End processing [ralium]: success
+[2024-05-19 06:55:02] INFO root fetch - main [MainThread]: Store serial: [23273339]
