@@ -12575,3 +12575,9 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 16:45:01] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
 [2024-05-19 16:45:01] INFO root fetch - main [MainThread]: End processing [yeref]: success
 [2024-05-19 16:45:01] INFO root fetch - main [MainThread]: Store serial: [23277398]
+[2024-05-19 16:47:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277398]
+[2024-05-19 16:47:09] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 16:47:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: examify
+[2024-05-19 16:47:09] WARNING root fetch - processPackages [examify]: Skipping, unable to determine old version
+[2024-05-19 16:47:09] INFO root fetch - main [MainThread]: End processing [examify] error
+[2024-05-19 16:47:09] INFO root fetch - main [MainThread]: Store serial: [23277403]
