@@ -14851,3 +14851,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 19:11:38] INFO root fetch - processPackages [signaturesnet]: Remove: archive file [/home/abi/fetcher/tmp/signaturesnet-0.0.3.tar.gz]
 [2024-05-19 19:11:38] INFO root fetch - main [MainThread]: End processing [signaturesnet]: success
 [2024-05-19 19:11:38] INFO root fetch - main [MainThread]: Store serial: [23278448]
+[2024-05-19 19:13:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23278448]
+[2024-05-19 19:13:46] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 19:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: uncalenderedz
+[2024-05-19 19:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chalpak
+[2024-05-19 19:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pysma-plus
+[2024-05-19 19:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: BigEDA
+[2024-05-19 19:13:47] INFO root fetch - processPackages [chalpak]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-19 19:13:47] INFO root fetch - processPackages [BigEDA]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 19:13:47] WARNING root fetch - processPackages [uncalenderedz]: Skipping, unable to determine old version
+[2024-05-19 19:13:47] INFO root fetch - main [MainThread]: End processing [uncalenderedz] error
+[2024-05-19 19:13:47] INFO root fetch - processPackages [pysma-plus]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-05-19 19:13:47] INFO root fetch - processPackages [chalpak]: Downloading https://files.pythonhosted.org/packages/9d/11/0150d9cd23d52b696af68ae6085d3dd3d7da91bfdddc65f4bc17d7a50ca2/chalpak-0.2.1.tar.gz
+[2024-05-19 19:13:47] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/2f/fe/5c10bf9dfaa50e4e1234e81e022638b3ef20c821e939dae4cdc3da332e46/bigeda-0.0.8.tar.gz
+[2024-05-19 19:13:47] INFO root fetch - processPackages [pysma-plus]: Downloading https://files.pythonhosted.org/packages/e6/3d/6bd9c7f226bd388b78b90c5764eb28115abc8affab4adc8a5d3b8c760c70/pysma_plus-0.2.7.tar.gz
+[2024-05-19 19:13:47] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/b1/5d/ec41b2b9af7223a14c0e82d4f64cbeb0d0339a0d8bca37dbb041af6ef14d/bigeda-0.0.9.tar.gz
+[2024-05-19 19:13:47] INFO root fetch - processPackages [chalpak]: Downloading https://files.pythonhosted.org/packages/bf/88/9f16a13a6c0b3d3e17493505c354bf53f3bddbc4adaa6b739ba9e24f149b/chalpak-0.2.2.tar.gz
+[2024-05-19 19:13:47] INFO root fetch - processPackages [BigEDA]: executing diffoscope
+[2024-05-19 19:13:47] INFO root fetch - processPackages [BigEDA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigeda-0.0.8.tar.gz tmp/bigeda-0.0.9.tar.gz --markdown 20240519/B/BigEDA/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 19:13:47] INFO root fetch - processPackages [chalpak]: executing diffoscope
+[2024-05-19 19:13:47] INFO root fetch - processPackages [chalpak]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalpak-0.2.1.tar.gz tmp/chalpak-0.2.2.tar.gz --markdown 20240519/c/chalpak/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-19 19:13:47] INFO root fetch - processPackages [pysma-plus]: Downloading https://files.pythonhosted.org/packages/e9/5e/2817a08023a46713bca2ff5d68ccb33c24a1c84f9637fee4c61b02fbd389/pysma_plus-0.2.8.tar.gz
+[2024-05-19 19:13:47] INFO root fetch - processPackages [pysma-plus]: executing diffoscope
+[2024-05-19 19:13:47] INFO root fetch - processPackages [pysma-plus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysma_plus-0.2.7.tar.gz tmp/pysma_plus-0.2.8.tar.gz --markdown 20240519/p/pysma-plus/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-05-19 19:13:48] INFO root fetch - processPackages [chalpak]: Remove: archive file [/home/abi/fetcher/tmp/chalpak-0.2.1.tar.gz]
+[2024-05-19 19:13:48] INFO root fetch - processPackages [chalpak]: Remove: archive file [/home/abi/fetcher/tmp/chalpak-0.2.2.tar.gz]
+[2024-05-19 19:13:48] INFO root fetch - main [MainThread]: End processing [chalpak]: success
+[2024-05-19 19:13:48] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.8.tar.gz]
+[2024-05-19 19:13:48] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.9.tar.gz]
+[2024-05-19 19:13:48] INFO root fetch - main [MainThread]: End processing [BigEDA]: success
+[2024-05-19 19:13:48] INFO root fetch - processPackages [pysma-plus]: Remove: archive file [/home/abi/fetcher/tmp/pysma_plus-0.2.7.tar.gz]
+[2024-05-19 19:13:48] INFO root fetch - processPackages [pysma-plus]: Remove: archive file [/home/abi/fetcher/tmp/pysma_plus-0.2.8.tar.gz]
+[2024-05-19 19:13:48] INFO root fetch - main [MainThread]: End processing [pysma-plus]: success
+[2024-05-19 19:13:48] INFO root fetch - main [MainThread]: Store serial: [23278461]
