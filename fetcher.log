@@ -9881,3 +9881,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 13:59:49] INFO root fetch - processPackages [openplantbook-sdk]: Remove: archive file [/home/abi/fetcher/tmp/openplantbook_sdk-0.4.6.tar.gz]
 [2024-05-19 13:59:49] INFO root fetch - main [MainThread]: End processing [openplantbook-sdk]: success
 [2024-05-19 13:59:49] INFO root fetch - main [MainThread]: Store serial: [23276071]
+[2024-05-19 14:01:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276071]
+[2024-05-19 14:01:58] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-19 14:01:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: that-depends
+[2024-05-19 14:01:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bank-scrapers
+[2024-05-19 14:01:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: brq
+[2024-05-19 14:01:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: smo_rejection
+[2024-05-19 14:01:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: shuttleasgi
+[2024-05-19 14:01:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: flatpack
+[2024-05-19 14:01:58] INFO root fetch - processPackages [flatpack]: New version: [3.4.9] Old Version: [3.4.8]
+[2024-05-19 14:01:58] INFO root fetch - processPackages [bank-scrapers]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-19 14:01:58] INFO root fetch - processPackages [smo_rejection]: New version: [0.4.0] Old Version: [0.3.1]
+[2024-05-19 14:01:58] INFO root fetch - processPackages [shuttleasgi]: New version: [3.0.4] Old Version: [3.0.1]
+[2024-05-19 14:01:58] WARNING root fetch - processPackages [brq]: Skipping, unable to determine old version
+[2024-05-19 14:01:58] INFO root fetch - main [MainThread]: End processing [brq] error
+[2024-05-19 14:01:58] INFO root fetch - processPackages [that-depends]: New version: [1.7.1] Old Version: [1.7.0]
+[2024-05-19 14:01:58] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/92/5a/46a0817bd1cfcbeb0f041626a2cc2b28a97a17caa6609495cfb355a5d90e/flatpack-3.4.8.tar.gz
+[2024-05-19 14:01:58] INFO root fetch - processPackages [bank-scrapers]: Downloading https://files.pythonhosted.org/packages/13/b0/1f956c44e81b935506ae8660d8aaaa4a975dba8db964492a98a3131961cc/bank_scrapers-1.0.8.tar.gz
+[2024-05-19 14:01:58] INFO root fetch - processPackages [that-depends]: Downloading https://files.pythonhosted.org/packages/62/09/017e6f23d85f7159db412f0a62962b99bfbe1561a9d9f3148f3afd8af118/that_depends-1.7.0.tar.gz
+[2024-05-19 14:01:58] INFO root fetch - processPackages [smo_rejection]: Downloading https://files.pythonhosted.org/packages/0b/43/4ba8cb02454fe41595fe11003576bc3609cac42165efbe1a461b4aef00df/smo_rejection-0.3.1.tar.gz
+[2024-05-19 14:01:58] INFO root fetch - processPackages [shuttleasgi]: Downloading https://files.pythonhosted.org/packages/6d/9e/657b99d86a81d85c4d3613216a03ecb7b77a9082d253cd7ac64b94483199/shuttleasgi-3.0.1.tar.gz
+[2024-05-19 14:01:58] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/29/b6/9545d80064161872f90e25faa6bb7dc31698e88762b3d442b5fb491967fd/flatpack-3.4.9.tar.gz
+[2024-05-19 14:01:58] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-05-19 14:01:58] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.4.8.tar.gz tmp/flatpack-3.4.9.tar.gz --markdown 20240519/f/flatpack/3.4.8-3.4.9/README.md --exclude *.pyd
+[2024-05-19 14:01:58] INFO root fetch - processPackages [bank-scrapers]: Downloading https://files.pythonhosted.org/packages/db/25/d10a43b636dad83822f69f512ddd3d27631c7cd08175c2ab11593e1bdd8c/bank_scrapers-1.0.9.tar.gz
+[2024-05-19 14:01:58] INFO root fetch - processPackages [that-depends]: Downloading https://files.pythonhosted.org/packages/dc/16/0e1e6e1805162a7509cc02d6435dc40c456190c2f58863518bccc16a5b28/that_depends-1.7.1.tar.gz
+[2024-05-19 14:01:58] INFO root fetch - processPackages [smo_rejection]: Downloading https://files.pythonhosted.org/packages/08/63/e1724dbaead3a704e0c787defd18af6538dcdab778a49613edd8982fa418/smo_rejection-0.4.0.tar.gz
+[2024-05-19 14:01:59] INFO root fetch - processPackages [bank-scrapers]: executing diffoscope
+[2024-05-19 14:01:59] INFO root fetch - processPackages [bank-scrapers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bank_scrapers-1.0.8.tar.gz tmp/bank_scrapers-1.0.9.tar.gz --markdown 20240519/b/bank-scrapers/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-19 14:01:59] INFO root fetch - processPackages [that-depends]: executing diffoscope
+[2024-05-19 14:01:59] INFO root fetch - processPackages [that-depends]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/that_depends-1.7.0.tar.gz tmp/that_depends-1.7.1.tar.gz --markdown 20240519/t/that-depends/1.7.0-1.7.1/README.md --exclude *.pyd
+[2024-05-19 14:01:59] INFO root fetch - processPackages [smo_rejection]: executing diffoscope
+[2024-05-19 14:01:59] INFO root fetch - processPackages [smo_rejection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smo_rejection-0.3.1.tar.gz tmp/smo_rejection-0.4.0.tar.gz --markdown 20240519/s/smo_rejection/0.3.1-0.4.0/README.md --exclude *.pyd
+[2024-05-19 14:01:59] INFO root fetch - processPackages [shuttleasgi]: Downloading https://files.pythonhosted.org/packages/86/2c/30c8a986423f71fe7d4b8cf43369f737c9dcb4ca917facbc7deea0757310/shuttleasgi-3.0.4-cp312-cp312-win_amd64.whl
+[2024-05-19 14:01:59] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.8.tar.gz]
+[2024-05-19 14:01:59] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.9.tar.gz]
+[2024-05-19 14:01:59] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-05-19 14:01:59] INFO root fetch - processPackages [that-depends]: Remove: archive file [/home/abi/fetcher/tmp/that_depends-1.7.0.tar.gz]
+[2024-05-19 14:01:59] INFO root fetch - processPackages [that-depends]: Remove: archive file [/home/abi/fetcher/tmp/that_depends-1.7.1.tar.gz]
+[2024-05-19 14:01:59] INFO root fetch - main [MainThread]: End processing [that-depends]: success
+[2024-05-19 14:01:59] INFO root fetch - processPackages [smo_rejection]: Remove: archive file [/home/abi/fetcher/tmp/smo_rejection-0.3.1.tar.gz]
+[2024-05-19 14:01:59] INFO root fetch - processPackages [smo_rejection]: Remove: archive file [/home/abi/fetcher/tmp/smo_rejection-0.4.0.tar.gz]
+[2024-05-19 14:01:59] INFO root fetch - main [MainThread]: End processing [smo_rejection]: success
+[2024-05-19 14:01:59] INFO root fetch - processPackages [bank-scrapers]: Remove: archive file [/home/abi/fetcher/tmp/bank_scrapers-1.0.8.tar.gz]
+[2024-05-19 14:01:59] INFO root fetch - processPackages [bank-scrapers]: Remove: archive file [/home/abi/fetcher/tmp/bank_scrapers-1.0.9.tar.gz]
+[2024-05-19 14:01:59] INFO root fetch - main [MainThread]: End processing [bank-scrapers]: success
+[2024-05-19 14:01:59] INFO root fetch - processPackages [shuttleasgi]: executing diffoscope
+[2024-05-19 14:01:59] INFO root fetch - processPackages [shuttleasgi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shuttleasgi-3.0.1.tar.gz tmp/shuttleasgi-3.0.4-cp312-cp312-win_amd64.whl.zip --markdown 20240519/s/shuttleasgi/3.0.1-3.0.4/README.md --exclude *.pyd
+[2024-05-19 14:02:00] INFO root fetch - processPackages [shuttleasgi]: Remove: archive file [/home/abi/fetcher/tmp/shuttleasgi-3.0.1.tar.gz]
+[2024-05-19 14:02:00] INFO root fetch - processPackages [shuttleasgi]: Remove: archive file [/home/abi/fetcher/tmp/shuttleasgi-3.0.4-cp312-cp312-win_amd64.whl.zip]
+[2024-05-19 14:02:00] INFO root fetch - main [MainThread]: End processing [shuttleasgi]: success
+[2024-05-19 14:02:00] INFO root fetch - main [MainThread]: Store serial: [23276090]
