@@ -13432,3 +13432,28 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 17:33:12] INFO root fetch - main [MainThread]: End processing [ixasernrrtlmmlwd]: success
 [2024-05-19 17:33:12] INFO root fetch - main [MainThread]: End processing [ixasernrrtlmmlwd]: success
 [2024-05-19 17:33:12] INFO root fetch - main [MainThread]: Store serial: [23277822]
+[2024-05-19 17:35:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277822]
+[2024-05-19 17:35:24] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 17:35:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: alzihiddlcxljozz
+[2024-05-19 17:35:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qvzhmzexbiekfdfe
+[2024-05-19 17:35:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: icodes
+[2024-05-19 17:35:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: islingz
+[2024-05-19 17:35:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: coti-sdk
+[2024-05-19 17:35:25] WARNING root fetch - processPackages [qvzhmzexbiekfdfe]: Skipping, unable to determine old version
+[2024-05-19 17:35:25] WARNING root fetch - processPackages [alzihiddlcxljozz]: Skipping, unable to determine old version
+[2024-05-19 17:35:25] INFO root fetch - main [MainThread]: End processing [qvzhmzexbiekfdfe] error
+[2024-05-19 17:35:25] INFO root fetch - main [MainThread]: End processing [alzihiddlcxljozz] error
+[2024-05-19 17:35:25] INFO root fetch - processPackages [coti-sdk]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-19 17:35:25] WARNING root fetch - processPackages [islingz]: Skipping, unable to determine old version
+[2024-05-19 17:35:25] INFO root fetch - main [MainThread]: End processing [islingz] error
+[2024-05-19 17:35:25] INFO root fetch - processPackages [icodes]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-19 17:35:25] ERROR root fetch - processPackages [coti-sdk]: Unable to fetch info: No such project/version 'coti-sdk' 0.1.0
+[2024-05-19 17:35:25] INFO root fetch - main [MainThread]: End processing [coti-sdk] error
+[2024-05-19 17:35:25] INFO root fetch - processPackages [icodes]: Downloading https://files.pythonhosted.org/packages/35/14/1844fdb149050214ceb1f347a4689a7cf638d89f1d5e4f3e8fbfd0c0406b/icodes-0.1.3.tar.gz
+[2024-05-19 17:35:25] INFO root fetch - processPackages [icodes]: Downloading https://files.pythonhosted.org/packages/d5/4b/da0a6bf00be8db6d3e10a733de61d42a680536f8e3f4c1f4703b5cddf49f/icodes-0.1.4.tar.gz
+[2024-05-19 17:35:25] INFO root fetch - processPackages [icodes]: executing diffoscope
+[2024-05-19 17:35:25] INFO root fetch - processPackages [icodes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/icodes-0.1.3.tar.gz tmp/icodes-0.1.4.tar.gz --markdown 20240519/i/icodes/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-19 17:35:26] INFO root fetch - processPackages [icodes]: Remove: archive file [/home/abi/fetcher/tmp/icodes-0.1.3.tar.gz]
+[2024-05-19 17:35:26] INFO root fetch - processPackages [icodes]: Remove: archive file [/home/abi/fetcher/tmp/icodes-0.1.4.tar.gz]
+[2024-05-19 17:35:26] INFO root fetch - main [MainThread]: End processing [icodes]: success
+[2024-05-19 17:35:26] INFO root fetch - main [MainThread]: Store serial: [23277837]
