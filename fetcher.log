@@ -5532,3 +5532,33 @@
 [2024-05-19 08:55:14] INFO root fetch - processPackages [wiliot-testers]: Remove: archive file [/home/abi/fetcher/tmp/wiliot-testers-5.4.13.tar.gz]
 [2024-05-19 08:55:14] INFO root fetch - main [MainThread]: End processing [wiliot-testers]: success
 [2024-05-19 08:55:14] INFO root fetch - main [MainThread]: Store serial: [23273968]
+[2024-05-19 08:57:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273968]
+[2024-05-19 08:57:22] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 08:57:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-sale-order-restrict-cancel-existing-invoice
+[2024-05-19 08:57:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-sale-procurement-group-by-commitment-date
+[2024-05-19 08:57:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: palatinianz
+[2024-05-19 08:57:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo14-addons-oca-sale-workflow
+[2024-05-19 08:57:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addons-oca-sale-workflow
+[2024-05-19 08:57:23] WARNING root fetch - processPackages [odoo-addon-sale-order-restrict-cancel-existing-invoice]: Skipping, unable to determine old version
+[2024-05-19 08:57:23] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-order-restrict-cancel-existing-invoice] error
+[2024-05-19 08:57:23] WARNING root fetch - processPackages [odoo-addon-sale-procurement-group-by-commitment-date]: Skipping, unable to determine old version
+[2024-05-19 08:57:23] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-procurement-group-by-commitment-date] error
+[2024-05-19 08:57:23] WARNING root fetch - processPackages [palatinianz]: Skipping, unable to determine old version
+[2024-05-19 08:57:23] INFO root fetch - main [MainThread]: End processing [palatinianz] error
+[2024-05-19 08:57:23] INFO root fetch - processPackages [odoo14-addons-oca-sale-workflow]: New version: [14.0.20240518.0] Old Version: [14.0.20240319.0]
+[2024-05-19 08:57:23] INFO root fetch - processPackages [odoo-addons-oca-sale-workflow]: New version: [16.0.20240502.1] Old Version: [16.0.20240213.0]
+[2024-05-19 08:57:23] INFO root fetch - processPackages [odoo14-addons-oca-sale-workflow]: Downloading https://files.pythonhosted.org/packages/67/80/67dabdf420ec13838bdbd3b1dce7af113fed43d061c29a35710db9b05eb2/odoo14_addons_oca_sale_workflow-14.0.20240319.0-py3-none-any.whl
+[2024-05-19 08:57:23] INFO root fetch - processPackages [odoo-addons-oca-sale-workflow]: Downloading https://files.pythonhosted.org/packages/e6/9d/df5e0ce3613ec4510ce7cc5e8bcca93c415b973b0fdca158d2ea701d2a3c/odoo_addons_oca_sale_workflow-16.0.20240213.0-py3-none-any.whl
+[2024-05-19 08:57:23] INFO root fetch - processPackages [odoo14-addons-oca-sale-workflow]: Downloading https://files.pythonhosted.org/packages/8c/1f/42063656428e763b95a81602d3efc54d7d3d0cd92555d09af6e016ca3a19/odoo14_addons_oca_sale_workflow-14.0.20240518.0-py3-none-any.whl
+[2024-05-19 08:57:23] INFO root fetch - processPackages [odoo-addons-oca-sale-workflow]: Downloading https://files.pythonhosted.org/packages/31/3d/163b2ea43dada577af8fb1d3062ef3bcdb67a172374847a71db194270694/odoo_addons_oca_sale_workflow-16.0.20240502.1-py3-none-any.whl
+[2024-05-19 08:57:23] INFO root fetch - processPackages [odoo14-addons-oca-sale-workflow]: executing diffoscope
+[2024-05-19 08:57:23] INFO root fetch - processPackages [odoo14-addons-oca-sale-workflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addons_oca_sale_workflow-14.0.20240319.0-py3-none-any.whl.zip tmp/odoo14_addons_oca_sale_workflow-14.0.20240518.0-py3-none-any.whl.zip --markdown 20240519/o/odoo14-addons-oca-sale-workflow/14.0.20240319.0-14.0.20240518.0/README.md --exclude *.pyd
+[2024-05-19 08:57:23] INFO root fetch - processPackages [odoo-addons-oca-sale-workflow]: executing diffoscope
+[2024-05-19 08:57:23] INFO root fetch - processPackages [odoo-addons-oca-sale-workflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_sale_workflow-16.0.20240213.0-py3-none-any.whl.zip tmp/odoo_addons_oca_sale_workflow-16.0.20240502.1-py3-none-any.whl.zip --markdown 20240519/o/odoo-addons-oca-sale-workflow/16.0.20240213.0-16.0.20240502.1/README.md --exclude *.pyd
+[2024-05-19 08:57:24] INFO root fetch - processPackages [odoo-addons-oca-sale-workflow]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_sale_workflow-16.0.20240213.0-py3-none-any.whl.zip]
+[2024-05-19 08:57:24] INFO root fetch - processPackages [odoo-addons-oca-sale-workflow]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_sale_workflow-16.0.20240502.1-py3-none-any.whl.zip]
+[2024-05-19 08:57:24] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-sale-workflow]: success
+[2024-05-19 08:57:24] INFO root fetch - processPackages [odoo14-addons-oca-sale-workflow]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addons_oca_sale_workflow-14.0.20240319.0-py3-none-any.whl.zip]
+[2024-05-19 08:57:24] INFO root fetch - processPackages [odoo14-addons-oca-sale-workflow]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addons_oca_sale_workflow-14.0.20240518.0-py3-none-any.whl.zip]
+[2024-05-19 08:57:24] INFO root fetch - main [MainThread]: End processing [odoo14-addons-oca-sale-workflow]: success
+[2024-05-19 08:57:24] INFO root fetch - main [MainThread]: Store serial: [23273982]
