@@ -7550,3 +7550,15 @@
 [2024-05-19 11:16:38] INFO root fetch - processPackages [pix2text]: Remove: archive file [/home/abi/fetcher/tmp/pix2text-1.1.0.3.tar.gz]
 [2024-05-19 11:16:38] INFO root fetch - main [MainThread]: End processing [pix2text]: success
 [2024-05-19 11:16:38] INFO root fetch - main [MainThread]: Store serial: [23275016]
+[2024-05-19 11:18:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275016]
+[2024-05-19 11:18:47] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 11:18:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: soco-cli
+[2024-05-19 11:18:47] INFO root fetch - processPackages [soco-cli]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-19 11:18:47] INFO root fetch - processPackages [soco-cli]: Downloading https://files.pythonhosted.org/packages/08/77/18dc625b150748a1c5cd44aaf95740bd0a39b53399acd07bf3c461e2b10d/soco-cli-0.4.8.tar.gz
+[2024-05-19 11:18:48] INFO root fetch - processPackages [soco-cli]: Downloading https://files.pythonhosted.org/packages/9c/20/022b3752b29a24cf2ab7a66eff45702404292a0de61533d8eeea70de84d0/soco-cli-0.4.9.tar.gz
+[2024-05-19 11:18:48] INFO root fetch - processPackages [soco-cli]: executing diffoscope
+[2024-05-19 11:18:48] INFO root fetch - processPackages [soco-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soco-cli-0.4.8.tar.gz tmp/soco-cli-0.4.9.tar.gz --markdown 20240519/s/soco-cli/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-19 11:18:49] INFO root fetch - processPackages [soco-cli]: Remove: archive file [/home/abi/fetcher/tmp/soco-cli-0.4.8.tar.gz]
+[2024-05-19 11:18:49] INFO root fetch - processPackages [soco-cli]: Remove: archive file [/home/abi/fetcher/tmp/soco-cli-0.4.9.tar.gz]
+[2024-05-19 11:18:49] INFO root fetch - main [MainThread]: End processing [soco-cli]: success
+[2024-05-19 11:18:49] INFO root fetch - main [MainThread]: Store serial: [23275020]
