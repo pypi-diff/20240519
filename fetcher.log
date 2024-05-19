@@ -20632,3 +20632,81 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 23:27:54] INFO root fetch - processPackages [tencentcloud-sdk-python-soe]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-soe-3.0.999.tar.gz]
 [2024-05-19 23:27:54] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-soe]: success
 [2024-05-19 23:27:54] INFO root fetch - main [MainThread]: Store serial: [23281101]
+[2024-05-19 23:29:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23281101]
+[2024-05-19 23:30:03] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-19 23:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tencentcloud-sdk-python-solar
+[2024-05-19 23:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: betterschema
+[2024-05-19 23:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tencentcloud-sdk-python-sqlserver
+[2024-05-19 23:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zaku
+[2024-05-19 23:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: py-build-cmake
+[2024-05-19 23:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tencentcloud-sdk-python-ssa
+[2024-05-19 23:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mobspy
+[2024-05-19 23:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: s5learn
+[2024-05-19 23:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: uploadthing.py
+[2024-05-19 23:30:03] INFO root fetch - processPackages [zaku]: New version: [0.0.9] Old Version: [0.0.8rc1]
+[2024-05-19 23:30:03] INFO root fetch - processPackages [s5learn]: New version: [0.4] Old Version: [0.3]
+[2024-05-19 23:30:03] INFO root fetch - processPackages [betterschema]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-19 23:30:03] INFO root fetch - processPackages [tencentcloud-sdk-python-solar]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-19 23:30:03] INFO root fetch - processPackages [py-build-cmake]: New version: [0.2.0a9] Old Version: [0.2.0a8]
+[2024-05-19 23:30:03] INFO root fetch - processPackages [zaku]: Downloading https://files.pythonhosted.org/packages/36/63/843de81065e8c450c9dd14f7dd36425a40393dc131450c91bebeb4c5dd43/zaku-0.0.8rc1-py3-none-any.whl
+[2024-05-19 23:30:03] WARNING root fetch - processPackages [uploadthing.py]: Skipping, unable to determine old version
+[2024-05-19 23:30:03] INFO root fetch - main [MainThread]: End processing [uploadthing.py] error
+[2024-05-19 23:30:03] INFO root fetch - processPackages [mobspy]: New version: [2.4.5] Old Version: [2.4.4]
+[2024-05-19 23:30:03] INFO root fetch - processPackages [tencentcloud-sdk-python-sqlserver]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-19 23:30:03] INFO root fetch - processPackages [s5learn]: Downloading https://files.pythonhosted.org/packages/b0/0a/12b95e6fc17adf9d59adc8d5fd77b1645ad2e3805512032d2596312fc9cf/s5learn-0.3.tar.gz
+[2024-05-19 23:30:03] INFO root fetch - processPackages [betterschema]: Downloading https://files.pythonhosted.org/packages/1e/38/c4454b42d2fdf99df61a25551a6a06ccb4ca66e340946fe223ee1ab9c001/betterschema-0.1.8.tar.gz
+[2024-05-19 23:30:03] INFO root fetch - processPackages [tencentcloud-sdk-python-ssa]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-19 23:30:03] INFO root fetch - processPackages [tencentcloud-sdk-python-solar]: Downloading https://files.pythonhosted.org/packages/bc/b6/5c349cd00b785a244c850a0147abb052434563e11dda2aff1c5b0ac49aa6/tencentcloud-sdk-python-solar-3.0.998.tar.gz
+[2024-05-19 23:30:03] INFO root fetch - processPackages [mobspy]: Downloading https://files.pythonhosted.org/packages/c2/59/f33b3b4822f8d28964a3e9dbf366cd115a4f92ad8b296ae7e9c303aabe73/mobspy-2.4.4.tar.gz
+[2024-05-19 23:30:03] INFO root fetch - processPackages [py-build-cmake]: Downloading https://files.pythonhosted.org/packages/ec/ff/8232ea8fca6a450503bc983418211114078afe2017b459be2b54f9103f37/py_build_cmake-0.2.0a8.tar.gz
+[2024-05-19 23:30:03] INFO root fetch - processPackages [zaku]: Downloading https://files.pythonhosted.org/packages/cf/0e/96a80c4cc62c4a2fa75fb4a3fbfabb21a029116202d8e513617930bcdd4a/zaku-0.0.9-py3-none-any.whl
+[2024-05-19 23:30:03] INFO root fetch - processPackages [betterschema]: Downloading https://files.pythonhosted.org/packages/9f/0d/826ff1e3b4772c505194babfcc2ab7784bd5f7f13f65bfb0aa861b1c63c0/betterschema-0.1.9.tar.gz
+[2024-05-19 23:30:03] INFO root fetch - processPackages [tencentcloud-sdk-python-sqlserver]: Downloading https://files.pythonhosted.org/packages/b1/6d/d5d83514290f6f5c677c0bbc2faf94ec64743305dfb978ccddbf15585d94/tencentcloud-sdk-python-sqlserver-3.0.998.tar.gz
+[2024-05-19 23:30:03] INFO root fetch - processPackages [tencentcloud-sdk-python-ssa]: Downloading https://files.pythonhosted.org/packages/66/41/bcd8cb80b1f56f8da992801ae9273de9c55605de4a428787c2835ccf9081/tencentcloud-sdk-python-ssa-3.0.998.tar.gz
+[2024-05-19 23:30:03] INFO root fetch - processPackages [tencentcloud-sdk-python-solar]: Downloading https://files.pythonhosted.org/packages/63/78/526a3fd2b6413207aa937a1d9bb08c211093bb2a3c3b4cdfdfcdf754a97a/tencentcloud-sdk-python-solar-3.0.999.tar.gz
+[2024-05-19 23:30:03] INFO root fetch - processPackages [zaku]: executing diffoscope
+[2024-05-19 23:30:03] INFO root fetch - processPackages [zaku]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zaku-0.0.8rc1-py3-none-any.whl.zip tmp/zaku-0.0.9-py3-none-any.whl.zip --markdown 20240519/z/zaku/0.0.8rc1-0.0.9/README.md --exclude *.pyd
+[2024-05-19 23:30:03] INFO root fetch - processPackages [s5learn]: Downloading https://files.pythonhosted.org/packages/c2/52/86fced69e5b201f2646fd23469842740511e1c4326317b00a85487503c8f/s5learn-0.4.tar.gz
+[2024-05-19 23:30:03] INFO root fetch - processPackages [betterschema]: executing diffoscope
+[2024-05-19 23:30:03] INFO root fetch - processPackages [betterschema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/betterschema-0.1.8.tar.gz tmp/betterschema-0.1.9.tar.gz --markdown 20240519/b/betterschema/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-19 23:30:03] INFO root fetch - processPackages [tencentcloud-sdk-python-solar]: executing diffoscope
+[2024-05-19 23:30:03] INFO root fetch - processPackages [tencentcloud-sdk-python-solar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-solar-3.0.998.tar.gz tmp/tencentcloud-sdk-python-solar-3.0.999.tar.gz --markdown 20240519/t/tencentcloud-sdk-python-solar/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-19 23:30:03] INFO root fetch - processPackages [s5learn]: executing diffoscope
+[2024-05-19 23:30:03] INFO root fetch - processPackages [s5learn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/s5learn-0.3.tar.gz tmp/s5learn-0.4.tar.gz --markdown 20240519/s/s5learn/0.3-0.4/README.md --exclude *.pyd
+[2024-05-19 23:30:04] INFO root fetch - processPackages [tencentcloud-sdk-python-sqlserver]: Downloading https://files.pythonhosted.org/packages/68/9a/7d61431790d28d6c4b20ab3c34966f4b234043354b6054e457beab9aeb64/tencentcloud-sdk-python-sqlserver-3.0.999.tar.gz
+[2024-05-19 23:30:04] INFO root fetch - processPackages [tencentcloud-sdk-python-ssa]: Downloading https://files.pythonhosted.org/packages/54/c7/45e78dc4bf209c634b83e14e0632a4b21c85e71049f309540b1f281c9602/tencentcloud-sdk-python-ssa-3.0.999.tar.gz
+[2024-05-19 23:30:04] INFO root fetch - processPackages [py-build-cmake]: Downloading https://files.pythonhosted.org/packages/44/88/0a825be851610eb89c06bf9234316c26716aafa3e55746cf631aa2d64eae/py_build_cmake-0.2.0a9.tar.gz
+[2024-05-19 23:30:04] INFO root fetch - processPackages [mobspy]: Downloading https://files.pythonhosted.org/packages/0a/6a/e670b11906c27f7eba419661268b0b5908a440d4988890e293f3cda6e6d9/mobspy-2.4.5.tar.gz
+[2024-05-19 23:30:04] INFO root fetch - processPackages [tencentcloud-sdk-python-sqlserver]: executing diffoscope
+[2024-05-19 23:30:04] INFO root fetch - processPackages [tencentcloud-sdk-python-sqlserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-sqlserver-3.0.998.tar.gz tmp/tencentcloud-sdk-python-sqlserver-3.0.999.tar.gz --markdown 20240519/t/tencentcloud-sdk-python-sqlserver/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-19 23:30:04] INFO root fetch - processPackages [tencentcloud-sdk-python-ssa]: executing diffoscope
+[2024-05-19 23:30:04] INFO root fetch - processPackages [tencentcloud-sdk-python-ssa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-ssa-3.0.998.tar.gz tmp/tencentcloud-sdk-python-ssa-3.0.999.tar.gz --markdown 20240519/t/tencentcloud-sdk-python-ssa/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-19 23:30:04] INFO root fetch - processPackages [py-build-cmake]: executing diffoscope
+[2024-05-19 23:30:04] INFO root fetch - processPackages [py-build-cmake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_build_cmake-0.2.0a8.tar.gz tmp/py_build_cmake-0.2.0a9.tar.gz --markdown 20240519/p/py-build-cmake/0.2.0a8-0.2.0a9/README.md --exclude *.pyd
+[2024-05-19 23:30:04] INFO root fetch - processPackages [tencentcloud-sdk-python-solar]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-solar-3.0.998.tar.gz]
+[2024-05-19 23:30:04] INFO root fetch - processPackages [tencentcloud-sdk-python-solar]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-solar-3.0.999.tar.gz]
+[2024-05-19 23:30:04] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-solar]: success
+[2024-05-19 23:30:04] INFO root fetch - processPackages [betterschema]: Remove: archive file [/home/abi/fetcher/tmp/betterschema-0.1.8.tar.gz]
+[2024-05-19 23:30:04] INFO root fetch - processPackages [betterschema]: Remove: archive file [/home/abi/fetcher/tmp/betterschema-0.1.9.tar.gz]
+[2024-05-19 23:30:04] INFO root fetch - main [MainThread]: End processing [betterschema]: success
+[2024-05-19 23:30:04] INFO root fetch - processPackages [s5learn]: Remove: archive file [/home/abi/fetcher/tmp/s5learn-0.3.tar.gz]
+[2024-05-19 23:30:04] INFO root fetch - processPackages [s5learn]: Remove: archive file [/home/abi/fetcher/tmp/s5learn-0.4.tar.gz]
+[2024-05-19 23:30:04] INFO root fetch - main [MainThread]: End processing [s5learn]: success
+[2024-05-19 23:30:04] INFO root fetch - processPackages [zaku]: Remove: archive file [/home/abi/fetcher/tmp/zaku-0.0.8rc1-py3-none-any.whl.zip]
+[2024-05-19 23:30:04] INFO root fetch - processPackages [zaku]: Remove: archive file [/home/abi/fetcher/tmp/zaku-0.0.9-py3-none-any.whl.zip]
+[2024-05-19 23:30:04] INFO root fetch - main [MainThread]: End processing [zaku]: success
+[2024-05-19 23:30:04] INFO root fetch - processPackages [tencentcloud-sdk-python-ssa]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-ssa-3.0.998.tar.gz]
+[2024-05-19 23:30:04] INFO root fetch - processPackages [tencentcloud-sdk-python-ssa]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-ssa-3.0.999.tar.gz]
+[2024-05-19 23:30:04] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-ssa]: success
+[2024-05-19 23:30:05] INFO root fetch - processPackages [tencentcloud-sdk-python-sqlserver]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-sqlserver-3.0.998.tar.gz]
+[2024-05-19 23:30:05] INFO root fetch - processPackages [tencentcloud-sdk-python-sqlserver]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-sqlserver-3.0.999.tar.gz]
+[2024-05-19 23:30:05] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-sqlserver]: success
+[2024-05-19 23:30:05] INFO root fetch - processPackages [mobspy]: executing diffoscope
+[2024-05-19 23:30:05] INFO root fetch - processPackages [mobspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mobspy-2.4.4.tar.gz tmp/mobspy-2.4.5.tar.gz --markdown 20240519/m/mobspy/2.4.4-2.4.5/README.md --exclude *.pyd
+[2024-05-19 23:30:05] INFO root fetch - processPackages [py-build-cmake]: Remove: archive file [/home/abi/fetcher/tmp/py_build_cmake-0.2.0a8.tar.gz]
+[2024-05-19 23:30:05] INFO root fetch - processPackages [py-build-cmake]: Remove: archive file [/home/abi/fetcher/tmp/py_build_cmake-0.2.0a9.tar.gz]
+[2024-05-19 23:30:05] INFO root fetch - main [MainThread]: End processing [py-build-cmake]: success
+[2024-05-19 23:30:07] INFO root fetch - processPackages [mobspy]: Remove: archive file [/home/abi/fetcher/tmp/mobspy-2.4.4.tar.gz]
+[2024-05-19 23:30:07] INFO root fetch - processPackages [mobspy]: Remove: archive file [/home/abi/fetcher/tmp/mobspy-2.4.5.tar.gz]
+[2024-05-19 23:30:07] INFO root fetch - main [MainThread]: End processing [mobspy]: success
+[2024-05-19 23:30:07] INFO root fetch - main [MainThread]: Store serial: [23281128]
