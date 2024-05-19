@@ -21691,3 +21691,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 23:56:28] INFO root fetch - processPackages [ScreenPro2]: Remove: archive file [/home/abi/fetcher/tmp/ScreenPro2-0.3.2-py2.py3-none-any.whl.zip]
 [2024-05-19 23:56:28] INFO root fetch - main [MainThread]: End processing [ScreenPro2]: success
 [2024-05-19 23:56:28] INFO root fetch - main [MainThread]: Store serial: [23281463]
+[2024-05-19 23:58:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23281463]
+[2024-05-19 23:58:37] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 23:58:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyUnfoldedCircleRemote
+[2024-05-19 23:58:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: smutchedz
+[2024-05-19 23:58:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: snRNAtools
+[2024-05-19 23:58:37] WARNING root fetch - processPackages [snRNAtools]: Skipping, unable to determine old version
+[2024-05-19 23:58:37] INFO root fetch - main [MainThread]: End processing [snRNAtools] error
+[2024-05-19 23:58:37] INFO root fetch - processPackages [pyUnfoldedCircleRemote]: New version: [0.8.0] Old Version: [0.7.3]
+[2024-05-19 23:58:37] WARNING root fetch - processPackages [smutchedz]: Skipping, unable to determine old version
+[2024-05-19 23:58:37] INFO root fetch - main [MainThread]: End processing [smutchedz] error
+[2024-05-19 23:58:37] INFO root fetch - processPackages [pyUnfoldedCircleRemote]: Downloading https://files.pythonhosted.org/packages/17/25/690a286e9dbc61768f0de62bcf25335e1711013fb5ab1c534d3014fce3ec/pyunfoldedcircleremote-0.7.3.tar.gz
+[2024-05-19 23:58:38] INFO root fetch - processPackages [pyUnfoldedCircleRemote]: Downloading https://files.pythonhosted.org/packages/b7/27/1cec62e2168b621b42aac0ef5558cfa885b8c8ce266ae2274fac5002ad0d/pyunfoldedcircleremote-0.8.0.tar.gz
+[2024-05-19 23:58:38] INFO root fetch - processPackages [pyUnfoldedCircleRemote]: executing diffoscope
+[2024-05-19 23:58:38] INFO root fetch - processPackages [pyUnfoldedCircleRemote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyunfoldedcircleremote-0.7.3.tar.gz tmp/pyunfoldedcircleremote-0.8.0.tar.gz --markdown 20240519/p/pyUnfoldedCircleRemote/0.7.3-0.8.0/README.md --exclude *.pyd
+[2024-05-19 23:58:38] INFO root fetch - processPackages [pyUnfoldedCircleRemote]: Remove: archive file [/home/abi/fetcher/tmp/pyunfoldedcircleremote-0.7.3.tar.gz]
+[2024-05-19 23:58:38] INFO root fetch - processPackages [pyUnfoldedCircleRemote]: Remove: archive file [/home/abi/fetcher/tmp/pyunfoldedcircleremote-0.8.0.tar.gz]
+[2024-05-19 23:58:38] INFO root fetch - main [MainThread]: End processing [pyUnfoldedCircleRemote]: success
+[2024-05-19 23:58:38] INFO root fetch - main [MainThread]: Store serial: [23281475]
