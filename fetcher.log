@@ -11231,3 +11231,81 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 15:27:26] INFO root fetch - processPackages [apysc]: Remove: archive file [/home/abi/fetcher/tmp/apysc-4.3.2.tar.gz]
 [2024-05-19 15:27:26] INFO root fetch - main [MainThread]: End processing [apysc]: success
 [2024-05-19 15:27:26] INFO root fetch - main [MainThread]: Store serial: [23276741]
+[2024-05-19 15:29:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23276741]
+[2024-05-19 15:29:35] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-19 15:29:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: reynard-the-robot
+[2024-05-19 15:29:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nectaapi
+[2024-05-19 15:29:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: osbparser
+[2024-05-19 15:29:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pytask-stata
+[2024-05-19 15:29:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: scipion-em-relion
+[2024-05-19 15:29:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pysubs2
+[2024-05-19 15:29:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: abses
+[2024-05-19 15:29:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: simplebox
+[2024-05-19 15:29:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: MailMagician
+[2024-05-19 15:29:35] INFO root fetch - processPackages [MailMagician]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-05-19 15:29:35] INFO root fetch - processPackages [MailMagician]: Downloading https://files.pythonhosted.org/packages/e4/4c/3881e740599f090bb67be841c30b7547f227a30aa22eff46b8bed1c9fc5c/MailMagician-0.2.0.tar.gz
+[2024-05-19 15:29:35] WARNING root fetch - processPackages [osbparser]: Skipping, unable to determine old version
+[2024-05-19 15:29:35] INFO root fetch - main [MainThread]: End processing [osbparser] error
+[2024-05-19 15:29:35] INFO root fetch - processPackages [reynard-the-robot]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-19 15:29:35] INFO root fetch - processPackages [simplebox]: New version: [0.0.1a209] Old Version: [0.0.1a208]
+[2024-05-19 15:29:35] INFO root fetch - processPackages [abses]: New version: [0.6.6] Old Version: [0.6.5]
+[2024-05-19 15:29:35] INFO root fetch - processPackages [pytask-stata]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-05-19 15:29:35] INFO root fetch - processPackages [nectaapi]: New version: [2.0.6] Old Version: [2.0.5]
+[2024-05-19 15:29:35] INFO root fetch - processPackages [pysubs2]: New version: [1.7.1] Old Version: [1.7.0]
+[2024-05-19 15:29:35] INFO root fetch - processPackages [scipion-em-relion]: New version: [5.0.0b4] Old Version: [5.0.0b2]
+[2024-05-19 15:29:35] INFO root fetch - processPackages [nectaapi]: Downloading https://files.pythonhosted.org/packages/46/c9/32dd1ff85c36d5c3587ccb2ae729fa3fad67d2b949c98ee24ba4a031bc4c/nectaapi-2.0.5.tar.gz
+[2024-05-19 15:29:35] INFO root fetch - processPackages [reynard-the-robot]: Downloading https://files.pythonhosted.org/packages/14/e2/ad638c6104a627d717ec6009f850024653e0806eb00b5632147bb1883a0c/reynard_the_robot-0.2.1-py3-none-any.whl
+[2024-05-19 15:29:35] INFO root fetch - processPackages [MailMagician]: Downloading https://files.pythonhosted.org/packages/9c/7e/4e477a5d20f13238f81a35f5ad18fd7c67f703f2e1cce59b5cb78dd1fff8/MailMagician-0.3.0.tar.gz
+[2024-05-19 15:29:35] INFO root fetch - processPackages [simplebox]: Downloading https://files.pythonhosted.org/packages/1d/8b/a385dadb847c441c9a4afe326ca681cc014848ce2e4b9cecbe7b98960c59/simplebox-0.0.1a208-py3-none-any.whl
+[2024-05-19 15:29:35] INFO root fetch - processPackages [pytask-stata]: Downloading https://files.pythonhosted.org/packages/ec/1a/57fb1329e0f142da290bfab545d371bae45acdd00abc0ed7ff97a74fee97/pytask_stata-0.3.0.tar.gz
+[2024-05-19 15:29:35] INFO root fetch - processPackages [abses]: Downloading https://files.pythonhosted.org/packages/fc/28/73925780aa2e39e60e11932b2182f3d36bf75538ad423edceaaba401a822/abses-0.6.5.tar.gz
+[2024-05-19 15:29:35] INFO root fetch - processPackages [pysubs2]: Downloading https://files.pythonhosted.org/packages/92/09/b7b0547044994e357b5f0ada7ddff2c94509ec8ba071a0e2e4d03958a3dd/pysubs2-1.7.0.tar.gz
+[2024-05-19 15:29:35] INFO root fetch - processPackages [scipion-em-relion]: Downloading https://files.pythonhosted.org/packages/8d/5c/49e2eb29b43451417528d8f06610787170de125474cfe23514bc69a9d2bf/scipion-em-relion-5.0.0b2.tar.gz
+[2024-05-19 15:29:35] INFO root fetch - processPackages [MailMagician]: executing diffoscope
+[2024-05-19 15:29:35] INFO root fetch - processPackages [MailMagician]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MailMagician-0.2.0.tar.gz tmp/MailMagician-0.3.0.tar.gz --markdown 20240519/M/MailMagician/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-05-19 15:29:36] INFO root fetch - processPackages [nectaapi]: Downloading https://files.pythonhosted.org/packages/a4/a0/388c06baa947bab9a86037b7e5ade99483d385f3a4f194737e1555748d08/nectaapi-2.0.6.tar.gz
+[2024-05-19 15:29:36] INFO root fetch - processPackages [reynard-the-robot]: Downloading https://files.pythonhosted.org/packages/56/69/d262ed1d6035f3f788bd355f79165fe4f523fed08d7a4eea89bebe5c1a06/reynard_the_robot-0.2.2-py3-none-any.whl
+[2024-05-19 15:29:36] INFO root fetch - processPackages [pytask-stata]: Downloading https://files.pythonhosted.org/packages/08/a8/7f9a377c08fb53d41741675e96a9bd4c5c00d01784b0cfff691db319c1cb/pytask_stata-0.4.0.tar.gz
+[2024-05-19 15:29:36] INFO root fetch - processPackages [simplebox]: Downloading https://files.pythonhosted.org/packages/85/39/caef6f0802f57fbb0728be30a561a29a45d75f5a59b9c5ab76f93ca40178/simplebox-0.0.1a209-py3-none-any.whl
+[2024-05-19 15:29:36] INFO root fetch - processPackages [nectaapi]: executing diffoscope
+[2024-05-19 15:29:36] INFO root fetch - processPackages [nectaapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nectaapi-2.0.5.tar.gz tmp/nectaapi-2.0.6.tar.gz --markdown 20240519/n/nectaapi/2.0.5-2.0.6/README.md --exclude *.pyd
+[2024-05-19 15:29:36] INFO root fetch - processPackages [scipion-em-relion]: Downloading https://files.pythonhosted.org/packages/4b/82/fc8d029e3eb48b7607a312afa3ad21aad0669f3ffe97bd5f35c60135ff38/scipion-em-relion-5.0.0b4.tar.gz
+[2024-05-19 15:29:36] INFO root fetch - processPackages [pysubs2]: Downloading https://files.pythonhosted.org/packages/d1/cd/309b63ee53e9ead3305d4f622ee3c57b02633da251877b8ab959db6360f0/pysubs2-1.7.1.tar.gz
+[2024-05-19 15:29:36] INFO root fetch - processPackages [pytask-stata]: executing diffoscope
+[2024-05-19 15:29:36] INFO root fetch - processPackages [pytask-stata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytask_stata-0.3.0.tar.gz tmp/pytask_stata-0.4.0.tar.gz --markdown 20240519/p/pytask-stata/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-05-19 15:29:36] INFO root fetch - processPackages [reynard-the-robot]: executing diffoscope
+[2024-05-19 15:29:36] INFO root fetch - processPackages [reynard-the-robot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reynard_the_robot-0.2.1-py3-none-any.whl.zip tmp/reynard_the_robot-0.2.2-py3-none-any.whl.zip --markdown 20240519/r/reynard-the-robot/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-19 15:29:36] INFO root fetch - processPackages [scipion-em-relion]: executing diffoscope
+[2024-05-19 15:29:36] INFO root fetch - processPackages [scipion-em-relion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scipion-em-relion-5.0.0b2.tar.gz tmp/scipion-em-relion-5.0.0b4.tar.gz --markdown 20240519/s/scipion-em-relion/5.0.0b2-5.0.0b4/README.md --exclude *.pyd
+[2024-05-19 15:29:36] INFO root fetch - processPackages [simplebox]: executing diffoscope
+[2024-05-19 15:29:36] INFO root fetch - processPackages [simplebox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simplebox-0.0.1a208-py3-none-any.whl.zip tmp/simplebox-0.0.1a209-py3-none-any.whl.zip --markdown 20240519/s/simplebox/0.0.1a208-0.0.1a209/README.md --exclude *.pyd
+[2024-05-19 15:29:36] INFO root fetch - processPackages [pysubs2]: executing diffoscope
+[2024-05-19 15:29:36] INFO root fetch - processPackages [pysubs2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysubs2-1.7.0.tar.gz tmp/pysubs2-1.7.1.tar.gz --markdown 20240519/p/pysubs2/1.7.0-1.7.1/README.md --exclude *.pyd
+[2024-05-19 15:29:36] INFO root fetch - processPackages [abses]: Downloading https://files.pythonhosted.org/packages/05/f8/9a4707cf6c358bab59d58de836f0a5314321ee256c36f5f3041007eff6bd/abses-0.6.6.tar.gz
+[2024-05-19 15:29:36] INFO root fetch - processPackages [MailMagician]: Remove: archive file [/home/abi/fetcher/tmp/MailMagician-0.2.0.tar.gz]
+[2024-05-19 15:29:36] INFO root fetch - processPackages [MailMagician]: Remove: archive file [/home/abi/fetcher/tmp/MailMagician-0.3.0.tar.gz]
+[2024-05-19 15:29:36] INFO root fetch - main [MainThread]: End processing [MailMagician]: success
+[2024-05-19 15:29:37] INFO root fetch - processPackages [nectaapi]: Remove: archive file [/home/abi/fetcher/tmp/nectaapi-2.0.5.tar.gz]
+[2024-05-19 15:29:37] INFO root fetch - processPackages [nectaapi]: Remove: archive file [/home/abi/fetcher/tmp/nectaapi-2.0.6.tar.gz]
+[2024-05-19 15:29:37] INFO root fetch - main [MainThread]: End processing [nectaapi]: success
+[2024-05-19 15:29:37] INFO root fetch - processPackages [pytask-stata]: Remove: archive file [/home/abi/fetcher/tmp/pytask_stata-0.3.0.tar.gz]
+[2024-05-19 15:29:37] INFO root fetch - processPackages [pytask-stata]: Remove: archive file [/home/abi/fetcher/tmp/pytask_stata-0.4.0.tar.gz]
+[2024-05-19 15:29:37] INFO root fetch - main [MainThread]: End processing [pytask-stata]: success
+[2024-05-19 15:29:37] INFO root fetch - processPackages [abses]: executing diffoscope
+[2024-05-19 15:29:37] INFO root fetch - processPackages [abses]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abses-0.6.5.tar.gz tmp/abses-0.6.6.tar.gz --markdown 20240519/a/abses/0.6.5-0.6.6/README.md --exclude *.pyd
+[2024-05-19 15:29:37] INFO root fetch - processPackages [reynard-the-robot]: Remove: archive file [/home/abi/fetcher/tmp/reynard_the_robot-0.2.1-py3-none-any.whl.zip]
+[2024-05-19 15:29:37] INFO root fetch - processPackages [reynard-the-robot]: Remove: archive file [/home/abi/fetcher/tmp/reynard_the_robot-0.2.2-py3-none-any.whl.zip]
+[2024-05-19 15:29:37] INFO root fetch - main [MainThread]: End processing [reynard-the-robot]: success
+[2024-05-19 15:29:37] INFO root fetch - processPackages [pysubs2]: Remove: archive file [/home/abi/fetcher/tmp/pysubs2-1.7.0.tar.gz]
+[2024-05-19 15:29:37] INFO root fetch - processPackages [pysubs2]: Remove: archive file [/home/abi/fetcher/tmp/pysubs2-1.7.1.tar.gz]
+[2024-05-19 15:29:37] INFO root fetch - main [MainThread]: End processing [pysubs2]: success
+[2024-05-19 15:29:37] INFO root fetch - processPackages [simplebox]: Remove: archive file [/home/abi/fetcher/tmp/simplebox-0.0.1a208-py3-none-any.whl.zip]
+[2024-05-19 15:29:37] INFO root fetch - processPackages [simplebox]: Remove: archive file [/home/abi/fetcher/tmp/simplebox-0.0.1a209-py3-none-any.whl.zip]
+[2024-05-19 15:29:37] INFO root fetch - main [MainThread]: End processing [simplebox]: success
+[2024-05-19 15:29:37] INFO root fetch - processPackages [scipion-em-relion]: Remove: archive file [/home/abi/fetcher/tmp/scipion-em-relion-5.0.0b2.tar.gz]
+[2024-05-19 15:29:37] INFO root fetch - processPackages [scipion-em-relion]: Remove: archive file [/home/abi/fetcher/tmp/scipion-em-relion-5.0.0b4.tar.gz]
+[2024-05-19 15:29:37] INFO root fetch - main [MainThread]: End processing [scipion-em-relion]: success
+[2024-05-19 15:29:38] INFO root fetch - processPackages [abses]: Remove: archive file [/home/abi/fetcher/tmp/abses-0.6.5.tar.gz]
+[2024-05-19 15:29:38] INFO root fetch - processPackages [abses]: Remove: archive file [/home/abi/fetcher/tmp/abses-0.6.6.tar.gz]
+[2024-05-19 15:29:38] INFO root fetch - main [MainThread]: End processing [abses]: success
+[2024-05-19 15:29:38] INFO root fetch - main [MainThread]: Store serial: [23276779]
