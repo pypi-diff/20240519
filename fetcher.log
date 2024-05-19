@@ -16848,3 +16848,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 20:49:41] INFO root fetch - processPackages [orbit-cli]: Remove: archive file [/home/abi/fetcher/tmp/orbit_cli-0.1.26.tar.gz]
 [2024-05-19 20:49:41] INFO root fetch - main [MainThread]: End processing [orbit-cli]: success
 [2024-05-19 20:49:41] INFO root fetch - main [MainThread]: Store serial: [23279412]
+[2024-05-19 20:51:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279412]
+[2024-05-19 20:51:50] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 20:51:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: needto
+[2024-05-19 20:51:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-kubernetes-the-hard-way
+[2024-05-19 20:51:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sdkfabric-discord
+[2024-05-19 20:51:50] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: New version: [0.0.21a1716139671] Old Version: [0.0.21a1716094984]
+[2024-05-19 20:51:50] INFO root fetch - processPackages [needto]: New version: [0.1.0] Old Version: [0.0.4]
+[2024-05-19 20:51:50] INFO root fetch - processPackages [sdkfabric-discord]: New version: [0.2.3] Old Version: [0.1.0]
+[2024-05-19 20:51:50] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/40/5b/32832252521ac92014d0ce6a5a54f1eb676edfdcf8bbba0fed1f9af7ed97/pulumi_kubernetes_the_hard_way-0.0.21a1716094984.tar.gz
+[2024-05-19 20:51:51] INFO root fetch - processPackages [sdkfabric-discord]: Downloading https://files.pythonhosted.org/packages/de/fb/a5b28f586a06878765d7bdbf0d04133aa1b24b7a52f102f9fde28c6f2064/sdkfabric_discord-0.1.0.tar.gz
+[2024-05-19 20:51:51] INFO root fetch - processPackages [needto]: Downloading https://files.pythonhosted.org/packages/50/dc/38500075dfc1ae7c7def9b06f9190288ae63d2f40f76f336aac4fa0c6d63/needto-0.0.4.tar.gz
+[2024-05-19 20:51:51] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/69/f6/cbe741afa9e1b2ad180ab6eafcd1ca3be2cca84deedfd30ea36bac5309d1/pulumi_kubernetes_the_hard_way-0.0.21a1716139671.tar.gz
+[2024-05-19 20:51:51] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: executing diffoscope
+[2024-05-19 20:51:51] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kubernetes_the_hard_way-0.0.21a1716094984.tar.gz tmp/pulumi_kubernetes_the_hard_way-0.0.21a1716139671.tar.gz --markdown 20240519/p/pulumi-kubernetes-the-hard-way/0.0.21a1716094984-0.0.21a1716139671/README.md --exclude *.pyd
+[2024-05-19 20:51:51] INFO root fetch - processPackages [sdkfabric-discord]: Downloading https://files.pythonhosted.org/packages/f2/0d/9ef08bc9c8451b2e56e956e3a032d420116e6da10ff61a1057bd1cdb1948/sdkfabric_discord-0.2.3.tar.gz
+[2024-05-19 20:51:51] INFO root fetch - processPackages [needto]: Downloading https://files.pythonhosted.org/packages/c9/95/9885b4b7d549dfb6c250742a4e5d78b64b76fd4e848ec1305d07bbda74fc/needto-0.1.0.tar.gz
+[2024-05-19 20:51:51] INFO root fetch - processPackages [sdkfabric-discord]: executing diffoscope
+[2024-05-19 20:51:51] INFO root fetch - processPackages [sdkfabric-discord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdkfabric_discord-0.1.0.tar.gz tmp/sdkfabric_discord-0.2.3.tar.gz --markdown 20240519/s/sdkfabric-discord/0.1.0-0.2.3/README.md --exclude *.pyd
+[2024-05-19 20:51:51] INFO root fetch - processPackages [needto]: executing diffoscope
+[2024-05-19 20:51:51] INFO root fetch - processPackages [needto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/needto-0.0.4.tar.gz tmp/needto-0.1.0.tar.gz --markdown 20240519/n/needto/0.0.4-0.1.0/README.md --exclude *.pyd
+[2024-05-19 20:51:51] INFO root fetch - processPackages [sdkfabric-discord]: Remove: archive file [/home/abi/fetcher/tmp/sdkfabric_discord-0.1.0.tar.gz]
+[2024-05-19 20:51:51] INFO root fetch - processPackages [sdkfabric-discord]: Remove: archive file [/home/abi/fetcher/tmp/sdkfabric_discord-0.2.3.tar.gz]
+[2024-05-19 20:51:51] INFO root fetch - main [MainThread]: End processing [sdkfabric-discord]: success
+[2024-05-19 20:51:52] INFO root fetch - processPackages [needto]: Remove: archive file [/home/abi/fetcher/tmp/needto-0.0.4.tar.gz]
+[2024-05-19 20:51:52] INFO root fetch - processPackages [needto]: Remove: archive file [/home/abi/fetcher/tmp/needto-0.1.0.tar.gz]
+[2024-05-19 20:51:52] INFO root fetch - main [MainThread]: End processing [needto]: success
+[2024-05-19 20:51:52] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.21a1716094984.tar.gz]
+[2024-05-19 20:51:52] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.21a1716139671.tar.gz]
+[2024-05-19 20:51:52] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
+[2024-05-19 20:51:52] INFO root fetch - main [MainThread]: Store serial: [23279421]
