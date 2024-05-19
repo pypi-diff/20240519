@@ -5463,3 +5463,21 @@
 [2024-05-19 08:50:53] INFO root fetch - processPackages [llm-parametrizer]: Remove: archive file [/home/abi/fetcher/tmp/llm_parametrizer-0.1.2.tar.gz]
 [2024-05-19 08:50:53] INFO root fetch - main [MainThread]: End processing [llm-parametrizer]: success
 [2024-05-19 08:50:53] INFO root fetch - main [MainThread]: Store serial: [23273932]
+[2024-05-19 08:52:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273932]
+[2024-05-19 08:53:01] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 08:53:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: docugami-langchain
+[2024-05-19 08:53:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dcm2nii
+[2024-05-19 08:53:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sulungz
+[2024-05-19 08:53:01] WARNING root fetch - processPackages [sulungz]: Skipping, unable to determine old version
+[2024-05-19 08:53:01] INFO root fetch - main [MainThread]: End processing [sulungz] error
+[2024-05-19 08:53:01] ERROR root fetch - processPackages [dcm2nii]: Unable to get metadata: No such project 'dcm2nii'
+[2024-05-19 08:53:01] INFO root fetch - main [MainThread]: End processing [dcm2nii] error
+[2024-05-19 08:53:01] INFO root fetch - processPackages [docugami-langchain]: New version: [0.0.9rc9] Old Version: [0.0.9rc8]
+[2024-05-19 08:53:02] INFO root fetch - processPackages [docugami-langchain]: Downloading https://files.pythonhosted.org/packages/2d/82/2d13050a1c94760818565c09bfbddb6b1c5e72e7dd098faada8a8b560a19/docugami_langchain-0.0.9rc8.tar.gz
+[2024-05-19 08:53:02] INFO root fetch - processPackages [docugami-langchain]: Downloading https://files.pythonhosted.org/packages/f2/b2/d83b55cc8691eecf7a64a63a120a668c5ff1f8edee1994b69cf50d8ed91b/docugami_langchain-0.0.9rc9.tar.gz
+[2024-05-19 08:53:02] INFO root fetch - processPackages [docugami-langchain]: executing diffoscope
+[2024-05-19 08:53:02] INFO root fetch - processPackages [docugami-langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docugami_langchain-0.0.9rc8.tar.gz tmp/docugami_langchain-0.0.9rc9.tar.gz --markdown 20240519/d/docugami-langchain/0.0.9rc8-0.0.9rc9/README.md --exclude *.pyd
+[2024-05-19 08:53:03] INFO root fetch - processPackages [docugami-langchain]: Remove: archive file [/home/abi/fetcher/tmp/docugami_langchain-0.0.9rc8.tar.gz]
+[2024-05-19 08:53:03] INFO root fetch - processPackages [docugami-langchain]: Remove: archive file [/home/abi/fetcher/tmp/docugami_langchain-0.0.9rc9.tar.gz]
+[2024-05-19 08:53:03] INFO root fetch - main [MainThread]: End processing [docugami-langchain]: success
+[2024-05-19 08:53:03] INFO root fetch - main [MainThread]: Store serial: [23273944]
