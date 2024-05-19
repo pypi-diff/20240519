@@ -17069,3 +17069,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 21:04:52] INFO root fetch - processPackages [tcrutils]: Remove: archive file [/home/abi/fetcher/tmp/tcrutils-12.0.164.tar.gz]
 [2024-05-19 21:04:52] INFO root fetch - main [MainThread]: End processing [tcrutils]: success
 [2024-05-19 21:04:52] INFO root fetch - main [MainThread]: Store serial: [23279507]
+[2024-05-19 21:06:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279507]
+[2024-05-19 21:07:01] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 21:07:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: process-boss
+[2024-05-19 21:07:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-alpaca-daily-losers
+[2024-05-19 21:07:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: movoid-debug
+[2024-05-19 21:07:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: altstore-proxy
+[2024-05-19 21:07:01] WARNING root fetch - processPackages [movoid-debug]: Skipping, unable to determine old version
+[2024-05-19 21:07:01] INFO root fetch - main [MainThread]: End processing [movoid-debug] error
+[2024-05-19 21:07:01] INFO root fetch - processPackages [altstore-proxy]: New version: [1.2.3] Old Version: [1.2.2]
+[2024-05-19 21:07:01] INFO root fetch - processPackages [altstore-proxy]: Downloading https://files.pythonhosted.org/packages/f6/74/d4bbc8f5840f09bc170c92bc6be55a37c1c95b9deebc54b5bf085fc28ea0/altstore_proxy-1.2.2.tar.gz
+[2024-05-19 21:07:01] WARNING root fetch - processPackages [process-boss]: Skipping, unable to determine old version
+[2024-05-19 21:07:01] INFO root fetch - main [MainThread]: End processing [process-boss] error
+[2024-05-19 21:07:01] INFO root fetch - processPackages [py-alpaca-daily-losers]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-05-19 21:07:01] INFO root fetch - processPackages [py-alpaca-daily-losers]: Downloading https://files.pythonhosted.org/packages/6b/d4/50df38b606c5abd7711925bbc46530a0edda22e60d1cc2486937f8bea7ac/py_alpaca_daily_losers-0.1.1.tar.gz
+[2024-05-19 21:07:01] INFO root fetch - processPackages [altstore-proxy]: Downloading https://files.pythonhosted.org/packages/79/fd/c72d3f948e433a658f458956aaab1afdcfc6d54f5e774c01e9197c07d098/altstore_proxy-1.2.3.tar.gz
+[2024-05-19 21:07:02] INFO root fetch - processPackages [altstore-proxy]: executing diffoscope
+[2024-05-19 21:07:02] INFO root fetch - processPackages [altstore-proxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altstore_proxy-1.2.2.tar.gz tmp/altstore_proxy-1.2.3.tar.gz --markdown 20240519/a/altstore-proxy/1.2.2-1.2.3/README.md --exclude *.pyd
+[2024-05-19 21:07:02] INFO root fetch - processPackages [py-alpaca-daily-losers]: Downloading https://files.pythonhosted.org/packages/eb/30/77394d043e92aeda888079526cde138679191a1aa8f14b20301e20d6bd8e/py_alpaca_daily_losers-0.2.0.tar.gz
+[2024-05-19 21:07:02] INFO root fetch - processPackages [py-alpaca-daily-losers]: executing diffoscope
+[2024-05-19 21:07:02] INFO root fetch - processPackages [py-alpaca-daily-losers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_alpaca_daily_losers-0.1.1.tar.gz tmp/py_alpaca_daily_losers-0.2.0.tar.gz --markdown 20240519/p/py-alpaca-daily-losers/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-05-19 21:07:02] INFO root fetch - processPackages [altstore-proxy]: Remove: archive file [/home/abi/fetcher/tmp/altstore_proxy-1.2.2.tar.gz]
+[2024-05-19 21:07:02] INFO root fetch - processPackages [altstore-proxy]: Remove: archive file [/home/abi/fetcher/tmp/altstore_proxy-1.2.3.tar.gz]
+[2024-05-19 21:07:02] INFO root fetch - main [MainThread]: End processing [altstore-proxy]: success
+[2024-05-19 21:07:02] INFO root fetch - processPackages [py-alpaca-daily-losers]: Remove: archive file [/home/abi/fetcher/tmp/py_alpaca_daily_losers-0.1.1.tar.gz]
+[2024-05-19 21:07:02] INFO root fetch - processPackages [py-alpaca-daily-losers]: Remove: archive file [/home/abi/fetcher/tmp/py_alpaca_daily_losers-0.2.0.tar.gz]
+[2024-05-19 21:07:02] INFO root fetch - main [MainThread]: End processing [py-alpaca-daily-losers]: success
+[2024-05-19 21:07:02] INFO root fetch - main [MainThread]: Store serial: [23279521]
