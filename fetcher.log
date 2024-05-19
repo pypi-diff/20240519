@@ -3736,3 +3736,18 @@
 [2024-05-19 06:05:11] INFO root fetch - processPackages [dvr-scan]: Remove: archive file [/home/abi/fetcher/tmp/dvr_scan-1.6.1.tar.gz]
 [2024-05-19 06:05:11] INFO root fetch - main [MainThread]: End processing [dvr-scan]: success
 [2024-05-19 06:05:11] INFO root fetch - main [MainThread]: Store serial: [23273180]
+[2024-05-19 06:07:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273180]
+[2024-05-19 06:07:19] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 06:07:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xarizmi
+[2024-05-19 06:07:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bttc
+[2024-05-19 06:07:19] WARNING root fetch - processPackages [xarizmi]: Skipping, unable to determine old version
+[2024-05-19 06:07:19] INFO root fetch - main [MainThread]: End processing [xarizmi] error
+[2024-05-19 06:07:19] INFO root fetch - processPackages [bttc]: New version: [0.0.79] Old Version: [0.0.77.4]
+[2024-05-19 06:07:19] INFO root fetch - processPackages [bttc]: Downloading https://files.pythonhosted.org/packages/2f/4a/c8b46be121ace1e64eb7da189dd7edea330a5552b0ae2a7ec0c838459d9c/bttc-0.0.77.4.tar.gz
+[2024-05-19 06:07:20] INFO root fetch - processPackages [bttc]: Downloading https://files.pythonhosted.org/packages/a8/e7/450ff45c84261b9c669460a79c6a310d5954a54669a75f5255ec33d44b77/bttc-0.0.79.tar.gz
+[2024-05-19 06:07:20] INFO root fetch - processPackages [bttc]: executing diffoscope
+[2024-05-19 06:07:20] INFO root fetch - processPackages [bttc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bttc-0.0.77.4.tar.gz tmp/bttc-0.0.79.tar.gz --markdown 20240519/b/bttc/0.0.77.4-0.0.79/README.md --exclude *.pyd
+[2024-05-19 06:07:21] INFO root fetch - processPackages [bttc]: Remove: archive file [/home/abi/fetcher/tmp/bttc-0.0.77.4.tar.gz]
+[2024-05-19 06:07:21] INFO root fetch - processPackages [bttc]: Remove: archive file [/home/abi/fetcher/tmp/bttc-0.0.79.tar.gz]
+[2024-05-19 06:07:21] INFO root fetch - main [MainThread]: End processing [bttc]: success
+[2024-05-19 06:07:21] INFO root fetch - main [MainThread]: Store serial: [23273188]
