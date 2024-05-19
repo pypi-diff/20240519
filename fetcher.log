@@ -17156,3 +17156,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 21:09:18] INFO root fetch - processPackages [pedalboard]: Remove: archive file [/home/abi/fetcher/tmp/pedalboard-0.9.6-pp37-pypy37_pp73-macosx_10_13_x86_64.whl.zip]
 [2024-05-19 21:09:18] INFO root fetch - main [MainThread]: End processing [pedalboard]: success
 [2024-05-19 21:09:18] INFO root fetch - main [MainThread]: Store serial: [23279587]
+[2024-05-19 21:11:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279587]
+[2024-05-19 21:11:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 21:11:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: calcographicz
+[2024-05-19 21:11:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: netbox-validity
+[2024-05-19 21:11:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ipyslides
+[2024-05-19 21:11:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fleepit
+[2024-05-19 21:11:28] INFO root fetch - processPackages [ipyslides]: New version: [3.9.2] Old Version: [3.9.1]
+[2024-05-19 21:11:28] WARNING root fetch - processPackages [calcographicz]: Skipping, unable to determine old version
+[2024-05-19 21:11:28] INFO root fetch - main [MainThread]: End processing [calcographicz] error
+[2024-05-19 21:11:28] INFO root fetch - processPackages [fleepit]: New version: [5] Old Version: [4]
+[2024-05-19 21:11:28] INFO root fetch - processPackages [netbox-validity]: New version: [2.2.1] Old Version: [2.2.0]
+[2024-05-19 21:11:28] INFO root fetch - processPackages [ipyslides]: Downloading https://files.pythonhosted.org/packages/bc/45/69854461ddce7cde8454421dd98117210ab3977bf3bf8f78c9068e2d9867/ipyslides-3.9.1.tar.gz
+[2024-05-19 21:11:28] INFO root fetch - processPackages [netbox-validity]: Downloading https://files.pythonhosted.org/packages/17/f6/2086f7f37c0e523adec9b74ce3e4c197a17753b707432a1f82640cfa3c10/netbox_validity-2.2.0.tar.gz
+[2024-05-19 21:11:28] INFO root fetch - processPackages [fleepit]: Downloading https://files.pythonhosted.org/packages/ad/73/4c613612688e6d4cc940689d7ad3dfe54e146504851da2385468916cd6dc/fleepit-4.tar.gz
+[2024-05-19 21:11:28] INFO root fetch - processPackages [ipyslides]: Downloading https://files.pythonhosted.org/packages/b7/79/441b4fd9227f267c60a56363d612255de773340a4c627a92683e4cf32371/ipyslides-3.9.2.tar.gz
+[2024-05-19 21:11:28] INFO root fetch - processPackages [ipyslides]: executing diffoscope
+[2024-05-19 21:11:28] INFO root fetch - processPackages [ipyslides]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipyslides-3.9.1.tar.gz tmp/ipyslides-3.9.2.tar.gz --markdown 20240519/i/ipyslides/3.9.1-3.9.2/README.md --exclude *.pyd
+[2024-05-19 21:11:28] INFO root fetch - processPackages [fleepit]: Downloading https://files.pythonhosted.org/packages/92/17/cb1571fcbdd9552b4ee834842478963759f002a0caa88c4c3eb55ac57dae/fleepit-5.tar.gz
+[2024-05-19 21:11:28] INFO root fetch - processPackages [netbox-validity]: Downloading https://files.pythonhosted.org/packages/eb/17/67149b088f1fffb6950baed8e96f05017a8d3c96cecab60cfaac4b49a5c5/netbox_validity-2.2.1.tar.gz
+[2024-05-19 21:11:28] INFO root fetch - processPackages [netbox-validity]: executing diffoscope
+[2024-05-19 21:11:28] INFO root fetch - processPackages [netbox-validity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netbox_validity-2.2.0.tar.gz tmp/netbox_validity-2.2.1.tar.gz --markdown 20240519/n/netbox-validity/2.2.0-2.2.1/README.md --exclude *.pyd
+[2024-05-19 21:11:28] INFO root fetch - processPackages [fleepit]: executing diffoscope
+[2024-05-19 21:11:28] INFO root fetch - processPackages [fleepit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fleepit-4.tar.gz tmp/fleepit-5.tar.gz --markdown 20240519/f/fleepit/4-5/README.md --exclude *.pyd
+[2024-05-19 21:11:29] INFO root fetch - processPackages [ipyslides]: Remove: archive file [/home/abi/fetcher/tmp/ipyslides-3.9.1.tar.gz]
+[2024-05-19 21:11:29] INFO root fetch - processPackages [ipyslides]: Remove: archive file [/home/abi/fetcher/tmp/ipyslides-3.9.2.tar.gz]
+[2024-05-19 21:11:29] INFO root fetch - main [MainThread]: End processing [ipyslides]: success
+[2024-05-19 21:11:29] INFO root fetch - processPackages [fleepit]: Remove: archive file [/home/abi/fetcher/tmp/fleepit-4.tar.gz]
+[2024-05-19 21:11:29] INFO root fetch - processPackages [fleepit]: Remove: archive file [/home/abi/fetcher/tmp/fleepit-5.tar.gz]
+[2024-05-19 21:11:29] INFO root fetch - main [MainThread]: End processing [fleepit]: success
+[2024-05-19 21:11:29] INFO root fetch - processPackages [netbox-validity]: Remove: archive file [/home/abi/fetcher/tmp/netbox_validity-2.2.0.tar.gz]
+[2024-05-19 21:11:29] INFO root fetch - processPackages [netbox-validity]: Remove: archive file [/home/abi/fetcher/tmp/netbox_validity-2.2.1.tar.gz]
+[2024-05-19 21:11:29] INFO root fetch - main [MainThread]: End processing [netbox-validity]: success
+[2024-05-19 21:11:29] INFO root fetch - main [MainThread]: Store serial: [23279613]
