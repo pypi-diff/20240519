@@ -14330,3 +14330,38 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 18:36:30] INFO root fetch - processPackages [plsp]: Remove: archive file [/home/abi/fetcher/tmp/plsp-0.26.tar.gz]
 [2024-05-19 18:36:30] INFO root fetch - main [MainThread]: End processing [plsp]: success
 [2024-05-19 18:36:30] INFO root fetch - main [MainThread]: Store serial: [23278237]
+[2024-05-19 18:38:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23278237]
+[2024-05-19 18:38:39] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 18:38:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: StockHero
+[2024-05-19 18:38:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sh1106-framework
+[2024-05-19 18:38:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kitchenware_model_package
+[2024-05-19 18:38:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flops-utils
+[2024-05-19 18:38:39] INFO root fetch - processPackages [sh1106-framework]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-19 18:38:39] INFO root fetch - processPackages [flops-utils]: New version: [0.4.6] Old Version: [0.4.5]
+[2024-05-19 18:38:39] INFO root fetch - processPackages [sh1106-framework]: Downloading https://files.pythonhosted.org/packages/80/ff/425c9262db48044e7cfb75d7d9465897eea6de4afd70eba9a477cf91a3a1/sh1106-framework-0.0.1.tar.gz
+[2024-05-19 18:38:39] INFO root fetch - processPackages [kitchenware_model_package]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-19 18:38:39] INFO root fetch - processPackages [flops-utils]: Downloading https://files.pythonhosted.org/packages/15/27/5f65772eb36e420198bc08163abd1e9aac916a00d2a4268bde09c92f0363/flops_utils-0.4.5.tar.gz
+[2024-05-19 18:38:39] INFO root fetch - processPackages [StockHero]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-19 18:38:39] INFO root fetch - processPackages [kitchenware_model_package]: Downloading https://files.pythonhosted.org/packages/0f/00/a2f6142005e9833687d04ff21bc37d271b1a58514c749fb189cdceb1fa28/kitchenware_model_package-0.0.2.tar.gz
+[2024-05-19 18:38:39] INFO root fetch - processPackages [StockHero]: Downloading https://files.pythonhosted.org/packages/4c/46/8ddddec9b60443a2a2eba2a8cea23220ac962e93f5ef396a8813ef51b9af/stockhero-0.4.8.tar.gz
+[2024-05-19 18:38:39] INFO root fetch - processPackages [sh1106-framework]: Downloading https://files.pythonhosted.org/packages/45/7a/a4d5a19ec06f4e961291e84cf51c09654d02012a9a77066a2e1884a04e26/sh1106_framework-0.0.2.tar.gz
+[2024-05-19 18:38:39] WARNING root fetch - processPackages [kitchenware_model_package]: Skipping package: exceeds size limit 83117961>=10485760
+[2024-05-19 18:38:39] INFO root fetch - main [MainThread]: End processing [kitchenware_model_package] error
+[2024-05-19 18:38:39] INFO root fetch - processPackages [flops-utils]: Downloading https://files.pythonhosted.org/packages/e1/e3/03bcb7777b7502cf5a792878b24178e324ae5414d58673f2041400e4ab8f/flops_utils-0.4.6.tar.gz
+[2024-05-19 18:38:39] INFO root fetch - processPackages [sh1106-framework]: executing diffoscope
+[2024-05-19 18:38:39] INFO root fetch - processPackages [sh1106-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sh1106-framework-0.0.1.tar.gz tmp/sh1106_framework-0.0.2.tar.gz --markdown 20240519/s/sh1106-framework/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-19 18:38:39] INFO root fetch - processPackages [flops-utils]: executing diffoscope
+[2024-05-19 18:38:39] INFO root fetch - processPackages [flops-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flops_utils-0.4.5.tar.gz tmp/flops_utils-0.4.6.tar.gz --markdown 20240519/f/flops-utils/0.4.5-0.4.6/README.md --exclude *.pyd
+[2024-05-19 18:38:39] INFO root fetch - processPackages [StockHero]: Downloading https://files.pythonhosted.org/packages/30/07/5adda17a847eca5b8730281afc8b43d92b184d8968a20d36b86ef6801bc7/stockhero-0.4.9.tar.gz
+[2024-05-19 18:38:39] INFO root fetch - processPackages [StockHero]: executing diffoscope
+[2024-05-19 18:38:39] INFO root fetch - processPackages [StockHero]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stockhero-0.4.8.tar.gz tmp/stockhero-0.4.9.tar.gz --markdown 20240519/S/StockHero/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-19 18:38:40] INFO root fetch - processPackages [sh1106-framework]: Remove: archive file [/home/abi/fetcher/tmp/sh1106-framework-0.0.1.tar.gz]
+[2024-05-19 18:38:40] INFO root fetch - processPackages [sh1106-framework]: Remove: archive file [/home/abi/fetcher/tmp/sh1106_framework-0.0.2.tar.gz]
+[2024-05-19 18:38:40] INFO root fetch - main [MainThread]: End processing [sh1106-framework]: success
+[2024-05-19 18:38:40] INFO root fetch - processPackages [flops-utils]: Remove: archive file [/home/abi/fetcher/tmp/flops_utils-0.4.5.tar.gz]
+[2024-05-19 18:38:40] INFO root fetch - processPackages [flops-utils]: Remove: archive file [/home/abi/fetcher/tmp/flops_utils-0.4.6.tar.gz]
+[2024-05-19 18:38:40] INFO root fetch - main [MainThread]: End processing [flops-utils]: success
+[2024-05-19 18:38:40] INFO root fetch - processPackages [StockHero]: Remove: archive file [/home/abi/fetcher/tmp/stockhero-0.4.8.tar.gz]
+[2024-05-19 18:38:40] INFO root fetch - processPackages [StockHero]: Remove: archive file [/home/abi/fetcher/tmp/stockhero-0.4.9.tar.gz]
+[2024-05-19 18:38:40] INFO root fetch - main [MainThread]: End processing [StockHero]: success
+[2024-05-19 18:38:40] INFO root fetch - main [MainThread]: Store serial: [23278249]
