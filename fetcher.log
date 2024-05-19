@@ -2845,3 +2845,42 @@
 [2024-05-19 04:38:02] INFO root fetch - processPackages [nuon]: Remove: archive file [/home/abi/fetcher/tmp/nuon-0.19.99.tar.gz]
 [2024-05-19 04:38:02] INFO root fetch - main [MainThread]: End processing [nuon]: success
 [2024-05-19 04:38:02] INFO root fetch - main [MainThread]: Store serial: [23272830]
+[2024-05-19 04:40:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272830]
+[2024-05-19 04:40:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 04:40:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torchao-nightly
+[2024-05-19 04:40:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: way3
+[2024-05-19 04:40:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kaizen-cloudcode
+[2024-05-19 04:40:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: py4web
+[2024-05-19 04:40:12] INFO root fetch - processPackages [way3]: New version: [0.0.29] Old Version: [0.0.28]
+[2024-05-19 04:40:12] INFO root fetch - processPackages [kaizen-cloudcode]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-19 04:40:12] INFO root fetch - processPackages [py4web]: New version: [1.20240518.1] Old Version: [1.20240509.1]
+[2024-05-19 04:40:12] INFO root fetch - processPackages [torchao-nightly]: New version: [2024.5.19] Old Version: [2024.5.17]
+[2024-05-19 04:40:12] INFO root fetch - processPackages [way3]: Downloading https://files.pythonhosted.org/packages/c8/ef/5b8f58b9c06d75c3e5605a214ed7a4bbb9672041a8454c4213610621c88e/way3-0.0.28.tar.gz
+[2024-05-19 04:40:12] INFO root fetch - processPackages [kaizen-cloudcode]: Downloading https://files.pythonhosted.org/packages/aa/e3/29300f2453abf24f3443558b02a526859a5860f3c7431bdec9ae76b5d94c/kaizen_cloudcode-0.1.5.tar.gz
+[2024-05-19 04:40:12] INFO root fetch - processPackages [py4web]: Downloading https://files.pythonhosted.org/packages/37/ac/ce82bb9662bc1a3134afec41988a93d6e101081276ab396a6d789d5d851c/py4web-1.20240509.1.tar.gz
+[2024-05-19 04:40:12] INFO root fetch - processPackages [torchao-nightly]: Downloading https://files.pythonhosted.org/packages/4c/29/57ad2feb2b4affbcd58fc813ed996485a67746a0e691ef21bcb544697548/torchao_nightly-2024.5.17-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-19 04:40:12] INFO root fetch - processPackages [kaizen-cloudcode]: Downloading https://files.pythonhosted.org/packages/d7/41/c6f720ceefd61b444dcab9bbdbfdb1a8ad5538b62c00b23142d86d1388ed/kaizen_cloudcode-0.1.6.tar.gz
+[2024-05-19 04:40:12] INFO root fetch - processPackages [kaizen-cloudcode]: executing diffoscope
+[2024-05-19 04:40:12] INFO root fetch - processPackages [kaizen-cloudcode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kaizen_cloudcode-0.1.5.tar.gz tmp/kaizen_cloudcode-0.1.6.tar.gz --markdown 20240519/k/kaizen-cloudcode/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-19 04:40:12] INFO root fetch - processPackages [way3]: Downloading https://files.pythonhosted.org/packages/83/9d/4855db03b885cf1b19eb1275f650da38fe6612fa86358d3024968fb4e67a/way3-0.0.29.tar.gz
+[2024-05-19 04:40:12] INFO root fetch - processPackages [way3]: executing diffoscope
+[2024-05-19 04:40:12] INFO root fetch - processPackages [way3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/way3-0.0.28.tar.gz tmp/way3-0.0.29.tar.gz --markdown 20240519/w/way3/0.0.28-0.0.29/README.md --exclude *.pyd
+[2024-05-19 04:40:13] INFO root fetch - processPackages [torchao-nightly]: Downloading https://files.pythonhosted.org/packages/d3/11/01925d3952fa50cf6b913d921502e5debac92ab7ea137cb702524b300ab3/torchao_nightly-2024.5.19-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-19 04:40:13] INFO root fetch - processPackages [py4web]: Downloading https://files.pythonhosted.org/packages/f0/66/17185838ab1f8280bcc85f41c58367d92323105d529a02d67d38fa9ae9f5/py4web-1.20240518.1.tar.gz
+[2024-05-19 04:40:13] INFO root fetch - processPackages [torchao-nightly]: executing diffoscope
+[2024-05-19 04:40:13] INFO root fetch - processPackages [torchao-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchao_nightly-2024.5.17-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/torchao_nightly-2024.5.19-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240519/t/torchao-nightly/2024.5.17-2024.5.19/README.md --exclude *.pyd
+[2024-05-19 04:40:13] INFO root fetch - processPackages [kaizen-cloudcode]: Remove: archive file [/home/abi/fetcher/tmp/kaizen_cloudcode-0.1.5.tar.gz]
+[2024-05-19 04:40:13] INFO root fetch - processPackages [kaizen-cloudcode]: Remove: archive file [/home/abi/fetcher/tmp/kaizen_cloudcode-0.1.6.tar.gz]
+[2024-05-19 04:40:13] INFO root fetch - main [MainThread]: End processing [kaizen-cloudcode]: success
+[2024-05-19 04:40:13] INFO root fetch - processPackages [way3]: Remove: archive file [/home/abi/fetcher/tmp/way3-0.0.28.tar.gz]
+[2024-05-19 04:40:13] INFO root fetch - processPackages [way3]: Remove: archive file [/home/abi/fetcher/tmp/way3-0.0.29.tar.gz]
+[2024-05-19 04:40:13] INFO root fetch - main [MainThread]: End processing [way3]: success
+[2024-05-19 04:40:13] INFO root fetch - processPackages [py4web]: executing diffoscope
+[2024-05-19 04:40:13] INFO root fetch - processPackages [py4web]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py4web-1.20240509.1.tar.gz tmp/py4web-1.20240518.1.tar.gz --markdown 20240519/p/py4web/1.20240509.1-1.20240518.1/README.md --exclude *.pyd
+[2024-05-19 04:40:15] INFO root fetch - processPackages [torchao-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchao_nightly-2024.5.17-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-19 04:40:15] INFO root fetch - processPackages [torchao-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchao_nightly-2024.5.19-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-19 04:40:15] INFO root fetch - main [MainThread]: End processing [torchao-nightly]: success
+[2024-05-19 04:40:16] INFO root fetch - processPackages [py4web]: Remove: archive file [/home/abi/fetcher/tmp/py4web-1.20240509.1.tar.gz]
+[2024-05-19 04:40:16] INFO root fetch - processPackages [py4web]: Remove: archive file [/home/abi/fetcher/tmp/py4web-1.20240518.1.tar.gz]
+[2024-05-19 04:40:16] INFO root fetch - main [MainThread]: End processing [py4web]: success
+[2024-05-19 04:40:16] INFO root fetch - main [MainThread]: Store serial: [23272844]
