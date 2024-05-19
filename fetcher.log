@@ -17264,3 +17264,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 21:20:19] INFO root fetch - processPackages [astrometry-net-client]: Remove: archive file [/home/abi/fetcher/tmp/astrometry_net_client-0.5.0.tar.gz]
 [2024-05-19 21:20:19] INFO root fetch - main [MainThread]: End processing [astrometry-net-client]: success
 [2024-05-19 21:20:19] INFO root fetch - main [MainThread]: Store serial: [23279644]
+[2024-05-19 21:22:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279644]
+[2024-05-19 21:22:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-19 21:22:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: eras
+[2024-05-19 21:22:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pypomes-core
+[2024-05-19 21:22:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lptp
+[2024-05-19 21:22:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dann5
+[2024-05-19 21:22:27] INFO root fetch - processPackages [dann5]: New version: [3.0.0] Old Version: [2.2.2]
+[2024-05-19 21:22:27] WARNING root fetch - processPackages [lptp]: Skipping, unable to determine old version
+[2024-05-19 21:22:27] INFO root fetch - main [MainThread]: End processing [lptp] error
+[2024-05-19 21:22:27] INFO root fetch - processPackages [dann5]: Downloading https://files.pythonhosted.org/packages/d2/c5/10f5f62108a2568531fe450d2e771707453870945bab24e76015978c4dd8/dann5-2.2.2.tar.gz
+[2024-05-19 21:22:27] WARNING root fetch - processPackages [eras]: Skipping, unable to determine old version
+[2024-05-19 21:22:27] INFO root fetch - main [MainThread]: End processing [eras] error
+[2024-05-19 21:22:27] INFO root fetch - processPackages [pypomes-core]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-19 21:22:27] INFO root fetch - processPackages [pypomes-core]: Downloading https://files.pythonhosted.org/packages/7d/9e/e0cd91e3f52d695a978ca7d264b61c7dc2ce3e03764bb4ad59eec940c1cf/pypomes_core-1.0.4.tar.gz
+[2024-05-19 21:22:27] INFO root fetch - processPackages [dann5]: Downloading https://files.pythonhosted.org/packages/86/ec/e75b3385b087967d7a03189cd2b7f44bdb44b906cbb7dfd066be4a296576/dann5-3.0.0.tar.gz
+[2024-05-19 21:22:28] INFO root fetch - processPackages [pypomes-core]: Downloading https://files.pythonhosted.org/packages/ab/1b/8e54f9ccb61e73a833c6b0f0f49de5fdec3f8f54241deac47ed116665801/pypomes_core-1.0.5.tar.gz
+[2024-05-19 21:22:28] INFO root fetch - processPackages [pypomes-core]: executing diffoscope
+[2024-05-19 21:22:28] INFO root fetch - processPackages [pypomes-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypomes_core-1.0.4.tar.gz tmp/pypomes_core-1.0.5.tar.gz --markdown 20240519/p/pypomes-core/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-19 21:22:28] INFO root fetch - processPackages [dann5]: executing diffoscope
+[2024-05-19 21:22:28] INFO root fetch - processPackages [dann5]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dann5-2.2.2.tar.gz tmp/dann5-3.0.0.tar.gz --markdown 20240519/d/dann5/2.2.2-3.0.0/README.md --exclude *.pyd
+[2024-05-19 21:22:28] INFO root fetch - processPackages [pypomes-core]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_core-1.0.4.tar.gz]
+[2024-05-19 21:22:28] INFO root fetch - processPackages [pypomes-core]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_core-1.0.5.tar.gz]
+[2024-05-19 21:22:28] INFO root fetch - main [MainThread]: End processing [pypomes-core]: success
+[2024-05-19 21:23:08] INFO root fetch - processPackages [dann5]: Remove: archive file [/home/abi/fetcher/tmp/dann5-2.2.2.tar.gz]
+[2024-05-19 21:23:08] INFO root fetch - processPackages [dann5]: Remove: archive file [/home/abi/fetcher/tmp/dann5-3.0.0.tar.gz]
+[2024-05-19 21:23:08] INFO root fetch - main [MainThread]: End processing [dann5]: success
+[2024-05-19 21:23:08] INFO root fetch - main [MainThread]: Store serial: [23279658]
