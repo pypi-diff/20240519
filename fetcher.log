@@ -5031,3 +5031,21 @@
 [2024-05-19 08:13:27] WARNING root fetch - processPackages [sentry-k8s-libsonnet]: Skipping, unable to determine old version
 [2024-05-19 08:13:27] INFO root fetch - main [MainThread]: End processing [sentry-k8s-libsonnet] error
 [2024-05-19 08:13:27] INFO root fetch - main [MainThread]: Store serial: [23273731]
+[2024-05-19 08:15:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273731]
+[2024-05-19 08:15:37] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 08:15:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: turbolpc
+[2024-05-19 08:15:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pretext
+[2024-05-19 08:15:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: embedlit
+[2024-05-19 08:15:37] INFO root fetch - processPackages [pretext]: New version: [2.4.1.dev20240511] Old Version: [2.4.1.dev20240509]
+[2024-05-19 08:15:37] WARNING root fetch - processPackages [embedlit]: Skipping, unable to determine old version
+[2024-05-19 08:15:37] INFO root fetch - main [MainThread]: End processing [embedlit] error
+[2024-05-19 08:15:37] WARNING root fetch - processPackages [turbolpc]: Skipping, unable to determine old version
+[2024-05-19 08:15:37] INFO root fetch - main [MainThread]: End processing [turbolpc] error
+[2024-05-19 08:15:37] INFO root fetch - processPackages [pretext]: Downloading https://files.pythonhosted.org/packages/2a/95/d227b89660bb7a23d845386534ae4b36fc1ffac2238a12e1028efc6491c2/pretext-2.4.1.dev20240509.tar.gz
+[2024-05-19 08:15:37] INFO root fetch - processPackages [pretext]: Downloading https://files.pythonhosted.org/packages/30/bd/fd85f5d8f1c503b19cb6898fc09a9386fa63094970070e90812119cf66c1/pretext-2.4.1.dev20240511.tar.gz
+[2024-05-19 08:15:38] INFO root fetch - processPackages [pretext]: executing diffoscope
+[2024-05-19 08:15:38] INFO root fetch - processPackages [pretext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretext-2.4.1.dev20240509.tar.gz tmp/pretext-2.4.1.dev20240511.tar.gz --markdown 20240519/p/pretext/2.4.1.dev20240509-2.4.1.dev20240511/README.md --exclude *.pyd
+[2024-05-19 08:15:41] INFO root fetch - processPackages [pretext]: Remove: archive file [/home/abi/fetcher/tmp/pretext-2.4.1.dev20240509.tar.gz]
+[2024-05-19 08:15:41] INFO root fetch - processPackages [pretext]: Remove: archive file [/home/abi/fetcher/tmp/pretext-2.4.1.dev20240511.tar.gz]
+[2024-05-19 08:15:41] INFO root fetch - main [MainThread]: End processing [pretext]: success
+[2024-05-19 08:15:41] INFO root fetch - main [MainThread]: Store serial: [23273744]
