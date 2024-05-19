@@ -14365,3 +14365,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 18:38:40] INFO root fetch - processPackages [StockHero]: Remove: archive file [/home/abi/fetcher/tmp/stockhero-0.4.9.tar.gz]
 [2024-05-19 18:38:40] INFO root fetch - main [MainThread]: End processing [StockHero]: success
 [2024-05-19 18:38:40] INFO root fetch - main [MainThread]: Store serial: [23278249]
+[2024-05-19 18:40:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23278249]
+[2024-05-19 18:40:48] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 18:40:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chalpak
+[2024-05-19 18:40:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: script-background-music
+[2024-05-19 18:40:48] WARNING root fetch - processPackages [chalpak]: Skipping, unable to determine old version
+[2024-05-19 18:40:48] INFO root fetch - main [MainThread]: End processing [chalpak] error
+[2024-05-19 18:40:48] INFO root fetch - processPackages [script-background-music]: New version: [1.5.0] Old Version: [1.4.0]
+[2024-05-19 18:40:49] INFO root fetch - processPackages [script-background-music]: Downloading https://files.pythonhosted.org/packages/c3/a4/98205a16e018df0249f0bd4346778e0912bd35b45d93a7d561b801a2c2bc/script-background-music-1.4.0.tar.gz
+[2024-05-19 18:40:50] INFO root fetch - processPackages [script-background-music]: Downloading https://files.pythonhosted.org/packages/5c/99/015e8ccc1607708f1910b3af7e47c7fe559aa65c0562f3247fb08f03152d/script-background-music-1.5.0.tar.gz
+[2024-05-19 18:40:52] INFO root fetch - processPackages [script-background-music]: executing diffoscope
+[2024-05-19 18:40:52] INFO root fetch - processPackages [script-background-music]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/script-background-music-1.4.0.tar.gz tmp/script-background-music-1.5.0.tar.gz --markdown 20240519/s/script-background-music/1.4.0-1.5.0/README.md --exclude *.pyd
+[2024-05-19 18:40:52] INFO root fetch - processPackages [script-background-music]: Remove: archive file [/home/abi/fetcher/tmp/script-background-music-1.4.0.tar.gz]
+[2024-05-19 18:40:52] INFO root fetch - processPackages [script-background-music]: Remove: archive file [/home/abi/fetcher/tmp/script-background-music-1.5.0.tar.gz]
+[2024-05-19 18:40:52] INFO root fetch - main [MainThread]: End processing [script-background-music]: success
+[2024-05-19 18:40:52] INFO root fetch - main [MainThread]: Store serial: [23278258]
