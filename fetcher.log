@@ -14213,3 +14213,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 18:25:40] INFO root fetch - processPackages [ParliamentArch]: Remove: archive file [/home/abi/fetcher/tmp/parliamentarch-1.0.tar.gz]
 [2024-05-19 18:25:40] INFO root fetch - main [MainThread]: End processing [ParliamentArch]: success
 [2024-05-19 18:25:40] INFO root fetch - main [MainThread]: Store serial: [23278194]
+[2024-05-19 18:27:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23278194]
+[2024-05-19 18:27:48] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-19 18:27:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: LLMSmith
+[2024-05-19 18:27:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: interruptoryz
+[2024-05-19 18:27:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: elicznik
+[2024-05-19 18:27:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yeref
+[2024-05-19 18:27:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jaims-py
+[2024-05-19 18:27:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: func2stream
+[2024-05-19 18:27:49] INFO root fetch - processPackages [jaims-py]: New version: [2.0.0b2] Old Version: [2.0.0b1]
+[2024-05-19 18:27:49] INFO root fetch - processPackages [elicznik]: New version: [2.2.0] Old Version: [2.1.0]
+[2024-05-19 18:27:49] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-19 18:27:49] INFO root fetch - processPackages [func2stream]: New version: [0.0.1.dev2405191627] Old Version: [0.0.1.dev2405190653]
+[2024-05-19 18:27:49] INFO root fetch - processPackages [jaims-py]: Downloading https://files.pythonhosted.org/packages/3c/15/9ec2191387af627af3989a85e4e7cd2f5182be1b21b54b1e08066c816eb9/jaims_py-2.0.0b1.tar.gz
+[2024-05-19 18:27:49] WARNING root fetch - processPackages [interruptoryz]: Skipping, unable to determine old version
+[2024-05-19 18:27:49] INFO root fetch - main [MainThread]: End processing [interruptoryz] error
+[2024-05-19 18:27:49] INFO root fetch - processPackages [LLMSmith]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-05-19 18:27:49] INFO root fetch - processPackages [elicznik]: Downloading https://files.pythonhosted.org/packages/da/f7/dd1789de9f901eaf6d87f5a27921dd5865170485a135cb52456238aa578e/elicznik-2.1.0.tar.gz
+[2024-05-19 18:27:49] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-19 18:27:49] INFO root fetch - processPackages [func2stream]: Downloading https://files.pythonhosted.org/packages/cc/39/1567e7075586c8fee5ddfafa3cc172e8801f8ab404f3408336d3cb49b6bc/func2stream-0.0.1.dev2405190653.tar.gz
+[2024-05-19 18:27:49] INFO root fetch - processPackages [LLMSmith]: Downloading https://files.pythonhosted.org/packages/2e/eb/883d36dba1bf562cbf3c2bcd8aba7d54a7cce5bd2704d0ad269041d4231d/llmsmith-0.5.0.tar.gz
+[2024-05-19 18:27:49] INFO root fetch - processPackages [elicznik]: Downloading https://files.pythonhosted.org/packages/eb/9e/314a3e8d1bebb2650f9935bf7e965b0f105221942b60e2316adbe2658042/elicznik-2.2.0.tar.gz
+[2024-05-19 18:27:49] INFO root fetch - processPackages [jaims-py]: Downloading https://files.pythonhosted.org/packages/ca/70/f3273dc7b95f23230841db7d759f9bacf9e88177afe3f2ee4cc26a9942f7/jaims_py-2.0.0b2.tar.gz
+[2024-05-19 18:27:49] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-19 18:27:49] INFO root fetch - processPackages [elicznik]: executing diffoscope
+[2024-05-19 18:27:49] INFO root fetch - processPackages [elicznik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elicznik-2.1.0.tar.gz tmp/elicznik-2.2.0.tar.gz --markdown 20240519/e/elicznik/2.1.0-2.2.0/README.md --exclude *.pyd
+[2024-05-19 18:27:49] INFO root fetch - processPackages [jaims-py]: executing diffoscope
+[2024-05-19 18:27:49] INFO root fetch - processPackages [jaims-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaims_py-2.0.0b1.tar.gz tmp/jaims_py-2.0.0b2.tar.gz --markdown 20240519/j/jaims-py/2.0.0b1-2.0.0b2/README.md --exclude *.pyd
+[2024-05-19 18:27:49] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-19 18:27:49] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240519/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-19 18:27:49] INFO root fetch - processPackages [func2stream]: Downloading https://files.pythonhosted.org/packages/34/c2/99e479d13a77b218f661fa7ad633dd8b63a12ee85b59d78b8520e7fd8235/func2stream-0.0.1.dev2405191627.tar.gz
+[2024-05-19 18:27:49] INFO root fetch - processPackages [LLMSmith]: Downloading https://files.pythonhosted.org/packages/21/ec/48c12434c6d23b6411e149ce2dbc0e0a10a68a5cfe67583d2e2eb14a0e59/llmsmith-0.6.0.tar.gz
+[2024-05-19 18:27:49] INFO root fetch - processPackages [func2stream]: executing diffoscope
+[2024-05-19 18:27:49] INFO root fetch - processPackages [func2stream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/func2stream-0.0.1.dev2405190653.tar.gz tmp/func2stream-0.0.1.dev2405191627.tar.gz --markdown 20240519/f/func2stream/0.0.1.dev2405190653-0.0.1.dev2405191627/README.md --exclude *.pyd
+[2024-05-19 18:27:49] INFO root fetch - processPackages [LLMSmith]: executing diffoscope
+[2024-05-19 18:27:49] INFO root fetch - processPackages [LLMSmith]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llmsmith-0.5.0.tar.gz tmp/llmsmith-0.6.0.tar.gz --markdown 20240519/L/LLMSmith/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-05-19 18:27:50] INFO root fetch - processPackages [elicznik]: Remove: archive file [/home/abi/fetcher/tmp/elicznik-2.1.0.tar.gz]
+[2024-05-19 18:27:50] INFO root fetch - processPackages [elicznik]: Remove: archive file [/home/abi/fetcher/tmp/elicznik-2.2.0.tar.gz]
+[2024-05-19 18:27:50] INFO root fetch - main [MainThread]: End processing [elicznik]: success
+[2024-05-19 18:27:50] INFO root fetch - processPackages [jaims-py]: Remove: archive file [/home/abi/fetcher/tmp/jaims_py-2.0.0b1.tar.gz]
+[2024-05-19 18:27:50] INFO root fetch - processPackages [jaims-py]: Remove: archive file [/home/abi/fetcher/tmp/jaims_py-2.0.0b2.tar.gz]
+[2024-05-19 18:27:50] INFO root fetch - main [MainThread]: End processing [jaims-py]: success
+[2024-05-19 18:27:50] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-19 18:27:50] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-19 18:27:50] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-19 18:27:50] INFO root fetch - processPackages [LLMSmith]: Remove: archive file [/home/abi/fetcher/tmp/llmsmith-0.5.0.tar.gz]
+[2024-05-19 18:27:50] INFO root fetch - processPackages [LLMSmith]: Remove: archive file [/home/abi/fetcher/tmp/llmsmith-0.6.0.tar.gz]
+[2024-05-19 18:27:50] INFO root fetch - main [MainThread]: End processing [LLMSmith]: success
+[2024-05-19 18:27:50] INFO root fetch - processPackages [func2stream]: Remove: archive file [/home/abi/fetcher/tmp/func2stream-0.0.1.dev2405190653.tar.gz]
+[2024-05-19 18:27:50] INFO root fetch - processPackages [func2stream]: Remove: archive file [/home/abi/fetcher/tmp/func2stream-0.0.1.dev2405191627.tar.gz]
+[2024-05-19 18:27:50] INFO root fetch - main [MainThread]: End processing [func2stream]: success
+[2024-05-19 18:27:50] INFO root fetch - main [MainThread]: Store serial: [23278213]
