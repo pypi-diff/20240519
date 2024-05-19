@@ -9528,3 +9528,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 13:38:05] INFO root fetch - processPackages [LnkParse3]: Remove: archive file [/home/abi/fetcher/tmp/lnkparse3-1.5.0.tar.gz]
 [2024-05-19 13:38:05] INFO root fetch - main [MainThread]: End processing [LnkParse3]: success
 [2024-05-19 13:38:05] INFO root fetch - main [MainThread]: Store serial: [23275943]
+[2024-05-19 13:40:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275943]
+[2024-05-19 13:40:14] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 13:40:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: topsyturnz
+[2024-05-19 13:40:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ezcord
+[2024-05-19 13:40:14] WARNING root fetch - processPackages [topsyturnz]: Skipping, unable to determine old version
+[2024-05-19 13:40:14] INFO root fetch - main [MainThread]: End processing [topsyturnz] error
+[2024-05-19 13:40:14] INFO root fetch - processPackages [ezcord]: New version: [0.6.4] Old Version: [0.6.3]
+[2024-05-19 13:40:14] INFO root fetch - processPackages [ezcord]: Downloading https://files.pythonhosted.org/packages/d2/69/0bf7143cdc99164faf378342e6e2da4f6d49ed6e8c2ee4db947f8c358d0a/ezcord-0.6.3.tar.gz
+[2024-05-19 13:40:14] INFO root fetch - processPackages [ezcord]: Downloading https://files.pythonhosted.org/packages/7e/40/940ad2c42feacb5c725d09282d873dbcf41c55b376defcc9bf8ebb6c58c1/ezcord-0.6.4.tar.gz
+[2024-05-19 13:40:14] INFO root fetch - processPackages [ezcord]: executing diffoscope
+[2024-05-19 13:40:14] INFO root fetch - processPackages [ezcord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezcord-0.6.3.tar.gz tmp/ezcord-0.6.4.tar.gz --markdown 20240519/e/ezcord/0.6.3-0.6.4/README.md --exclude *.pyd
+[2024-05-19 13:40:15] INFO root fetch - processPackages [ezcord]: Remove: archive file [/home/abi/fetcher/tmp/ezcord-0.6.3.tar.gz]
+[2024-05-19 13:40:15] INFO root fetch - processPackages [ezcord]: Remove: archive file [/home/abi/fetcher/tmp/ezcord-0.6.4.tar.gz]
+[2024-05-19 13:40:15] INFO root fetch - main [MainThread]: End processing [ezcord]: success
+[2024-05-19 13:40:15] INFO root fetch - main [MainThread]: Store serial: [23275951]
