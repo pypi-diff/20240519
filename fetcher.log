@@ -7646,3 +7646,15 @@
 [2024-05-19 11:27:28] INFO root fetch - processPackages [clean-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/clean-alchemy-0.1.9.tar.gz]
 [2024-05-19 11:27:28] INFO root fetch - main [MainThread]: End processing [clean-alchemy]: success
 [2024-05-19 11:27:28] INFO root fetch - main [MainThread]: Store serial: [23275052]
+[2024-05-19 11:29:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275052]
+[2024-05-19 11:29:36] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 11:29:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sqlman
+[2024-05-19 11:29:36] INFO root fetch - processPackages [sqlman]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-05-19 11:29:36] INFO root fetch - processPackages [sqlman]: Downloading https://files.pythonhosted.org/packages/ab/99/16dff4e6dba3e4e1d621b9c9862706f64215d0e7ac34568fc9e418cb1ae4/sqlman-0.3.3.tar.gz
+[2024-05-19 11:29:36] INFO root fetch - processPackages [sqlman]: Downloading https://files.pythonhosted.org/packages/2c/7f/1b8529d8d6aff94e924164edfeaa09fd0a8b278214ec2c8e21021001cd9f/sqlman-0.3.4.tar.gz
+[2024-05-19 11:29:36] INFO root fetch - processPackages [sqlman]: executing diffoscope
+[2024-05-19 11:29:36] INFO root fetch - processPackages [sqlman]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlman-0.3.3.tar.gz tmp/sqlman-0.3.4.tar.gz --markdown 20240519/s/sqlman/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-05-19 11:29:37] INFO root fetch - processPackages [sqlman]: Remove: archive file [/home/abi/fetcher/tmp/sqlman-0.3.3.tar.gz]
+[2024-05-19 11:29:37] INFO root fetch - processPackages [sqlman]: Remove: archive file [/home/abi/fetcher/tmp/sqlman-0.3.4.tar.gz]
+[2024-05-19 11:29:37] INFO root fetch - main [MainThread]: End processing [sqlman]: success
+[2024-05-19 11:29:37] INFO root fetch - main [MainThread]: Store serial: [23275055]
