@@ -8944,3 +8944,49 @@
 [2024-05-19 13:09:21] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.99.tar.gz]
 [2024-05-19 13:09:21] INFO root fetch - main [MainThread]: End processing [akshare]: success
 [2024-05-19 13:09:21] INFO root fetch - main [MainThread]: Store serial: [23275725]
+[2024-05-19 13:11:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275725]
+[2024-05-19 13:11:30] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 13:11:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyCutee
+[2024-05-19 13:11:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sabctools
+[2024-05-19 13:11:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lazygit-py
+[2024-05-19 13:11:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PyCutee
+[2024-05-19 13:11:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: metaffi-api
+[2024-05-19 13:11:30] INFO root fetch - processPackages [PyCutee]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-19 13:11:30] INFO root fetch - processPackages [metaffi-api]: New version: [0.0.25] Old Version: [0.0.24]
+[2024-05-19 13:11:30] INFO root fetch - processPackages [PyCutee]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-19 13:11:30] INFO root fetch - processPackages [lazygit-py]: New version: [0.42.0] Old Version: [0.41.0]
+[2024-05-19 13:11:30] INFO root fetch - processPackages [metaffi-api]: Downloading https://files.pythonhosted.org/packages/b9/31/4ef6d71f5a7877d41b8daf2097a42abece123ed6f2176a7220037f5d01d2/metaffi_api-0.0.24.tar.gz
+[2024-05-19 13:11:30] INFO root fetch - processPackages [sabctools]: New version: [8.2.2] Old Version: [8.2.1]
+[2024-05-19 13:11:30] INFO root fetch - processPackages [PyCutee]: Downloading https://files.pythonhosted.org/packages/e8/de/0b07908632adf12ff1feaa8bdf377ed0867f5530f19a466f3c55d1bd2bf2/pycutee-0.0.3.tar.gz
+[2024-05-19 13:11:30] INFO root fetch - processPackages [PyCutee]: Downloading https://files.pythonhosted.org/packages/e8/de/0b07908632adf12ff1feaa8bdf377ed0867f5530f19a466f3c55d1bd2bf2/pycutee-0.0.3.tar.gz
+[2024-05-19 13:11:30] INFO root fetch - processPackages [lazygit-py]: Downloading https://files.pythonhosted.org/packages/f3/49/902ba85e3d4d4970f17218de06fc811ded8b254f2081931890779c70d36c/lazygit_py-0.41.0.tar.gz
+[2024-05-19 13:11:30] INFO root fetch - processPackages [metaffi-api]: Downloading https://files.pythonhosted.org/packages/e0/96/0e6ad2796cc75a49af53934c75220a08e91a677b7298b09ef17782fb9854/metaffi_api-0.0.25.tar.gz
+[2024-05-19 13:11:30] INFO root fetch - processPackages [sabctools]: Downloading https://files.pythonhosted.org/packages/10/de/97672884bb19f918d0209992e4529ae3816a6f427ee0bb0a61548b40d7d1/sabctools-8.2.1.tar.gz
+[2024-05-19 13:11:31] INFO root fetch - processPackages [metaffi-api]: executing diffoscope
+[2024-05-19 13:11:31] INFO root fetch - processPackages [metaffi-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metaffi_api-0.0.24.tar.gz tmp/metaffi_api-0.0.25.tar.gz --markdown 20240519/m/metaffi-api/0.0.24-0.0.25/README.md --exclude *.pyd
+[2024-05-19 13:11:31] INFO root fetch - processPackages [PyCutee]: Downloading https://files.pythonhosted.org/packages/78/b9/f1de0c3a9870726e9a190067bac0166db8017bfb2cb41dc994712c9f6a16/pycutee-0.0.4.tar.gz
+[2024-05-19 13:11:31] INFO root fetch - processPackages [PyCutee]: Downloading https://files.pythonhosted.org/packages/78/b9/f1de0c3a9870726e9a190067bac0166db8017bfb2cb41dc994712c9f6a16/pycutee-0.0.4.tar.gz
+[2024-05-19 13:11:31] INFO root fetch - processPackages [PyCutee]: executing diffoscope
+[2024-05-19 13:11:31] INFO root fetch - processPackages [PyCutee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycutee-0.0.3.tar.gz tmp/pycutee-0.0.4.tar.gz --markdown 20240519/P/PyCutee/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-19 13:11:31] INFO root fetch - processPackages [PyCutee]: executing diffoscope
+[2024-05-19 13:11:31] INFO root fetch - processPackages [PyCutee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycutee-0.0.3.tar.gz tmp/pycutee-0.0.4.tar.gz --markdown 20240519/P/PyCutee/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-19 13:11:31] INFO root fetch - processPackages [sabctools]: Downloading https://files.pythonhosted.org/packages/28/41/e88fd9e9e99fa2cb709c004ab64ea1393ba6128d65b05fb0d413d36c2346/sabctools-8.2.2.tar.gz
+[2024-05-19 13:11:31] INFO root fetch - processPackages [sabctools]: executing diffoscope
+[2024-05-19 13:11:31] INFO root fetch - processPackages [sabctools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sabctools-8.2.1.tar.gz tmp/sabctools-8.2.2.tar.gz --markdown 20240519/s/sabctools/8.2.1-8.2.2/README.md --exclude *.pyd
+[2024-05-19 13:11:31] INFO root fetch - processPackages [lazygit-py]: Downloading https://files.pythonhosted.org/packages/48/af/0e65534b1cfa5e586d61e14c3ea1c9d109d352314d94e82ba9f92ff51174/lazygit_py-0.42.0.tar.gz
+[2024-05-19 13:11:31] INFO root fetch - processPackages [metaffi-api]: Remove: archive file [/home/abi/fetcher/tmp/metaffi_api-0.0.24.tar.gz]
+[2024-05-19 13:11:31] INFO root fetch - processPackages [metaffi-api]: Remove: archive file [/home/abi/fetcher/tmp/metaffi_api-0.0.25.tar.gz]
+[2024-05-19 13:11:31] INFO root fetch - main [MainThread]: End processing [metaffi-api]: success
+[2024-05-19 13:11:31] INFO root fetch - processPackages [PyCutee]: Remove: archive file [/home/abi/fetcher/tmp/pycutee-0.0.3.tar.gz]
+[2024-05-19 13:11:31] INFO root fetch - processPackages [PyCutee]: Remove: archive file [/home/abi/fetcher/tmp/pycutee-0.0.4.tar.gz]
+[2024-05-19 13:11:31] INFO root fetch - main [MainThread]: End processing [PyCutee]: success
+[2024-05-19 13:11:31] INFO root fetch - processPackages [lazygit-py]: executing diffoscope
+[2024-05-19 13:11:31] INFO root fetch - processPackages [lazygit-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lazygit_py-0.41.0.tar.gz tmp/lazygit_py-0.42.0.tar.gz --markdown 20240519/l/lazygit-py/0.41.0-0.42.0/README.md --exclude *.pyd
+[2024-05-19 13:11:31] INFO root fetch - main [MainThread]: End processing [PyCutee]: success
+[2024-05-19 13:11:32] INFO root fetch - processPackages [sabctools]: Remove: archive file [/home/abi/fetcher/tmp/sabctools-8.2.1.tar.gz]
+[2024-05-19 13:11:32] INFO root fetch - processPackages [sabctools]: Remove: archive file [/home/abi/fetcher/tmp/sabctools-8.2.2.tar.gz]
+[2024-05-19 13:11:32] INFO root fetch - main [MainThread]: End processing [sabctools]: success
+[2024-05-19 13:11:46] INFO root fetch - processPackages [lazygit-py]: Remove: archive file [/home/abi/fetcher/tmp/lazygit_py-0.41.0.tar.gz]
+[2024-05-19 13:11:46] INFO root fetch - processPackages [lazygit-py]: Remove: archive file [/home/abi/fetcher/tmp/lazygit_py-0.42.0.tar.gz]
+[2024-05-19 13:11:46] INFO root fetch - main [MainThread]: End processing [lazygit-py]: success
+[2024-05-19 13:11:46] INFO root fetch - main [MainThread]: Store serial: [23275761]
