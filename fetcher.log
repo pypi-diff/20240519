@@ -7897,3 +7897,33 @@
 [2024-05-19 11:51:20] WARNING root fetch - processPackages [pharyngotyphoidz]: Skipping, unable to determine old version
 [2024-05-19 11:51:20] INFO root fetch - main [MainThread]: End processing [pharyngotyphoidz] error
 [2024-05-19 11:51:20] INFO root fetch - main [MainThread]: Store serial: [23275223]
+[2024-05-19 11:53:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275223]
+[2024-05-19 11:53:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 11:53:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: e2D
+[2024-05-19 11:53:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: smol_k8s_lab
+[2024-05-19 11:53:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: entity-type-local
+[2024-05-19 11:53:28] INFO root fetch - processPackages [entity-type-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 11:53:29] INFO root fetch - processPackages [entity-type-local]: Downloading https://files.pythonhosted.org/packages/e1/49/dae38bddfbf5a5379aa666cc312ab320273bd0087679dac56d18476bd2e0/entity-type-local-0.0.8.tar.gz
+[2024-05-19 11:53:29] INFO root fetch - processPackages [e2D]: New version: [1.4.9] Old Version: [1.4.8]
+[2024-05-19 11:53:29] INFO root fetch - processPackages [smol_k8s_lab]: New version: [5.0.3] Old Version: [5.0.2]
+[2024-05-19 11:53:29] INFO root fetch - processPackages [e2D]: Downloading https://files.pythonhosted.org/packages/a2/39/087d58cf233d4c6289836e45c8e323314e296a8b2003aae2d323e4825d27/e2D-1.4.8.tar.gz
+[2024-05-19 11:53:29] INFO root fetch - processPackages [smol_k8s_lab]: Downloading https://files.pythonhosted.org/packages/47/02/8242fe689c44a18047d1896411bdd4b0de19011394ec3c6e13db81226f4f/smol_k8s_lab-5.0.2.tar.gz
+[2024-05-19 11:53:29] INFO root fetch - processPackages [entity-type-local]: Downloading https://files.pythonhosted.org/packages/6d/56/eb9f4b8a5bb633ce9314fab5889a48bc8776e95725798bddf4a63e205caa/entity-type-local-0.0.9.tar.gz
+[2024-05-19 11:53:29] INFO root fetch - processPackages [entity-type-local]: executing diffoscope
+[2024-05-19 11:53:29] INFO root fetch - processPackages [entity-type-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/entity-type-local-0.0.8.tar.gz tmp/entity-type-local-0.0.9.tar.gz --markdown 20240519/e/entity-type-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 11:53:29] INFO root fetch - processPackages [e2D]: Downloading https://files.pythonhosted.org/packages/47/12/031ca53d9e362b23f3ea269bb07d4fb775672ba75137247394dc5e0ed92e/e2D-1.4.9.tar.gz
+[2024-05-19 11:53:29] INFO root fetch - processPackages [e2D]: executing diffoscope
+[2024-05-19 11:53:29] INFO root fetch - processPackages [e2D]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/e2D-1.4.8.tar.gz tmp/e2D-1.4.9.tar.gz --markdown 20240519/e/e2D/1.4.8-1.4.9/README.md --exclude *.pyd
+[2024-05-19 11:53:29] INFO root fetch - processPackages [smol_k8s_lab]: Downloading https://files.pythonhosted.org/packages/90/03/b105f0d04fa3f987772f099d268adfb269f566f4a5e6ba77393cb2f3d95f/smol_k8s_lab-5.0.3.tar.gz
+[2024-05-19 11:53:29] INFO root fetch - processPackages [entity-type-local]: Remove: archive file [/home/abi/fetcher/tmp/entity-type-local-0.0.8.tar.gz]
+[2024-05-19 11:53:29] INFO root fetch - processPackages [entity-type-local]: Remove: archive file [/home/abi/fetcher/tmp/entity-type-local-0.0.9.tar.gz]
+[2024-05-19 11:53:29] INFO root fetch - main [MainThread]: End processing [entity-type-local]: success
+[2024-05-19 11:53:30] INFO root fetch - processPackages [e2D]: Remove: archive file [/home/abi/fetcher/tmp/e2D-1.4.8.tar.gz]
+[2024-05-19 11:53:30] INFO root fetch - processPackages [e2D]: Remove: archive file [/home/abi/fetcher/tmp/e2D-1.4.9.tar.gz]
+[2024-05-19 11:53:30] INFO root fetch - main [MainThread]: End processing [e2D]: success
+[2024-05-19 11:53:30] INFO root fetch - processPackages [smol_k8s_lab]: executing diffoscope
+[2024-05-19 11:53:30] INFO root fetch - processPackages [smol_k8s_lab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smol_k8s_lab-5.0.2.tar.gz tmp/smol_k8s_lab-5.0.3.tar.gz --markdown 20240519/s/smol_k8s_lab/5.0.2-5.0.3/README.md --exclude *.pyd
+[2024-05-19 11:53:31] INFO root fetch - processPackages [smol_k8s_lab]: Remove: archive file [/home/abi/fetcher/tmp/smol_k8s_lab-5.0.2.tar.gz]
+[2024-05-19 11:53:31] INFO root fetch - processPackages [smol_k8s_lab]: Remove: archive file [/home/abi/fetcher/tmp/smol_k8s_lab-5.0.3.tar.gz]
+[2024-05-19 11:53:31] INFO root fetch - main [MainThread]: End processing [smol_k8s_lab]: success
+[2024-05-19 11:53:31] INFO root fetch - main [MainThread]: Store serial: [23275232]
