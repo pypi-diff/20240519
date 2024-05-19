@@ -13820,3 +13820,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 17:55:17] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
 [2024-05-19 17:55:17] INFO root fetch - main [MainThread]: End processing [yeref]: success
 [2024-05-19 17:55:17] INFO root fetch - main [MainThread]: Store serial: [23278006]
+[2024-05-19 17:57:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23278006]
+[2024-05-19 17:57:26] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 17:57:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fargoingz
+[2024-05-19 17:57:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Flask-Limiter
+[2024-05-19 17:57:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CryptoLyzer
+[2024-05-19 17:57:26] WARNING root fetch - processPackages [fargoingz]: Skipping, unable to determine old version
+[2024-05-19 17:57:26] INFO root fetch - main [MainThread]: End processing [fargoingz] error
+[2024-05-19 17:57:26] INFO root fetch - processPackages [CryptoLyzer]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-05-19 17:57:26] INFO root fetch - processPackages [Flask-Limiter]: New version: [3.7.0] Old Version: [3.6.0]
+[2024-05-19 17:57:26] INFO root fetch - processPackages [Flask-Limiter]: Downloading https://files.pythonhosted.org/packages/29/7c/016bf646de30a4bf741367de13517cfc4b1bf658d11d56a35cc46ee429aa/flask_limiter-3.6.0.tar.gz
+[2024-05-19 17:57:26] INFO root fetch - processPackages [CryptoLyzer]: Downloading https://files.pythonhosted.org/packages/5d/87/fd43a7a0c9ce446dda1c01266a4cf2f62026c1a37decf9f245b77f1ea2df/CryptoLyzer-0.9.0.tar.gz
+[2024-05-19 17:57:27] INFO root fetch - processPackages [Flask-Limiter]: Downloading https://files.pythonhosted.org/packages/ee/81/271b526492252d1befe67f1f8239a21d192e002decbb27396147a478fd4c/flask_limiter-3.7.0.tar.gz
+[2024-05-19 17:57:27] INFO root fetch - processPackages [CryptoLyzer]: Downloading https://files.pythonhosted.org/packages/82/f6/dd4fd3151e4c1cb48102dbb19f5625b8be8d72dfbcc78d2f60b2db49ec7c/CryptoLyzer-0.9.1.tar.gz
+[2024-05-19 17:57:27] INFO root fetch - processPackages [CryptoLyzer]: executing diffoscope
+[2024-05-19 17:57:27] INFO root fetch - processPackages [CryptoLyzer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CryptoLyzer-0.9.0.tar.gz tmp/CryptoLyzer-0.9.1.tar.gz --markdown 20240519/C/CryptoLyzer/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-05-19 17:57:27] INFO root fetch - processPackages [Flask-Limiter]: executing diffoscope
+[2024-05-19 17:57:27] INFO root fetch - processPackages [Flask-Limiter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask_limiter-3.6.0.tar.gz tmp/flask_limiter-3.7.0.tar.gz --markdown 20240519/F/Flask-Limiter/3.6.0-3.7.0/README.md --exclude *.pyd
+[2024-05-19 17:57:28] INFO root fetch - processPackages [Flask-Limiter]: Remove: archive file [/home/abi/fetcher/tmp/flask_limiter-3.6.0.tar.gz]
+[2024-05-19 17:57:28] INFO root fetch - processPackages [Flask-Limiter]: Remove: archive file [/home/abi/fetcher/tmp/flask_limiter-3.7.0.tar.gz]
+[2024-05-19 17:57:28] INFO root fetch - main [MainThread]: End processing [Flask-Limiter]: success
+[2024-05-19 17:57:28] INFO root fetch - processPackages [CryptoLyzer]: Remove: archive file [/home/abi/fetcher/tmp/CryptoLyzer-0.9.0.tar.gz]
+[2024-05-19 17:57:28] INFO root fetch - processPackages [CryptoLyzer]: Remove: archive file [/home/abi/fetcher/tmp/CryptoLyzer-0.9.1.tar.gz]
+[2024-05-19 17:57:28] INFO root fetch - main [MainThread]: End processing [CryptoLyzer]: success
+[2024-05-19 17:57:28] INFO root fetch - main [MainThread]: Store serial: [23278019]
