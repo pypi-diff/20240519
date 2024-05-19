@@ -2031,3 +2031,27 @@
 [2024-05-19 03:34:14] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.8.4.tar.gz]
 [2024-05-19 03:34:14] INFO root fetch - main [MainThread]: End processing [pypomes-db]: success
 [2024-05-19 03:34:14] INFO root fetch - main [MainThread]: Store serial: [23272409]
+[2024-05-19 03:36:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272409]
+[2024-05-19 03:36:24] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 03:36:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scgt
+[2024-05-19 03:36:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: misologistz
+[2024-05-19 03:36:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: contact-person-profile-csv-imp-local
+[2024-05-19 03:36:24] INFO root fetch - processPackages [contact-person-profile-csv-imp-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 03:36:24] INFO root fetch - processPackages [contact-person-profile-csv-imp-local]: Downloading https://files.pythonhosted.org/packages/38/8e/697a7a19f7efccb43ada97483628a3b05cd2c0ecf731e43238d4c94beb46/contact_person_profile_csv_imp_local-0.0.8.tar.gz
+[2024-05-19 03:36:24] INFO root fetch - processPackages [scgt]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 03:36:24] WARNING root fetch - processPackages [misologistz]: Skipping, unable to determine old version
+[2024-05-19 03:36:24] INFO root fetch - main [MainThread]: End processing [misologistz] error
+[2024-05-19 03:36:24] INFO root fetch - processPackages [scgt]: Downloading https://files.pythonhosted.org/packages/ae/e4/c914a126774ed72d28c26c9050c74dfdfd52c6abc2eabfcba773f37a2ccb/scgt-0.0.8.tar.gz
+[2024-05-19 03:36:24] INFO root fetch - processPackages [contact-person-profile-csv-imp-local]: Downloading https://files.pythonhosted.org/packages/2c/27/f654a86e934199e979e23917591a3a16a0877f5bfff9aa07956945918b8b/contact_person_profile_csv_imp_local-0.0.9.tar.gz
+[2024-05-19 03:36:24] INFO root fetch - processPackages [contact-person-profile-csv-imp-local]: executing diffoscope
+[2024-05-19 03:36:24] INFO root fetch - processPackages [contact-person-profile-csv-imp-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contact_person_profile_csv_imp_local-0.0.8.tar.gz tmp/contact_person_profile_csv_imp_local-0.0.9.tar.gz --markdown 20240519/c/contact-person-profile-csv-imp-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 03:36:24] INFO root fetch - processPackages [scgt]: Downloading https://files.pythonhosted.org/packages/17/fc/7bbf49ac8d878d7a7bb836f07c9201faa1bacc76aa63d48670b0770a533b/scgt-0.0.9.tar.gz
+[2024-05-19 03:36:25] INFO root fetch - processPackages [scgt]: executing diffoscope
+[2024-05-19 03:36:25] INFO root fetch - processPackages [scgt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scgt-0.0.8.tar.gz tmp/scgt-0.0.9.tar.gz --markdown 20240519/s/scgt/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 03:36:25] INFO root fetch - processPackages [contact-person-profile-csv-imp-local]: Remove: archive file [/home/abi/fetcher/tmp/contact_person_profile_csv_imp_local-0.0.8.tar.gz]
+[2024-05-19 03:36:25] INFO root fetch - processPackages [contact-person-profile-csv-imp-local]: Remove: archive file [/home/abi/fetcher/tmp/contact_person_profile_csv_imp_local-0.0.9.tar.gz]
+[2024-05-19 03:36:25] INFO root fetch - main [MainThread]: End processing [contact-person-profile-csv-imp-local]: success
+[2024-05-19 03:36:25] INFO root fetch - processPackages [scgt]: Remove: archive file [/home/abi/fetcher/tmp/scgt-0.0.8.tar.gz]
+[2024-05-19 03:36:25] INFO root fetch - processPackages [scgt]: Remove: archive file [/home/abi/fetcher/tmp/scgt-0.0.9.tar.gz]
+[2024-05-19 03:36:25] INFO root fetch - main [MainThread]: End processing [scgt]: success
+[2024-05-19 03:36:25] INFO root fetch - main [MainThread]: Store serial: [23272418]
