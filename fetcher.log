@@ -17611,3 +17611,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 21:42:38] INFO root fetch - processPackages [objectbox]: Remove: archive file [/home/abi/fetcher/tmp/objectbox-4.0.0a1-py3-none-any.whl.zip]
 [2024-05-19 21:42:38] INFO root fetch - main [MainThread]: End processing [objectbox]: success
 [2024-05-19 21:42:38] INFO root fetch - main [MainThread]: Store serial: [23279786]
+[2024-05-19 21:44:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279786]
+[2024-05-19 21:44:54] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 21:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: retriever-search
+[2024-05-19 21:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: file-renamer
+[2024-05-19 21:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: panoptes-aag
+[2024-05-19 21:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: woningwaardering
+[2024-05-19 21:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Simba-UW-tf-dev
+[2024-05-19 21:44:55] INFO root fetch - processPackages [retriever-search]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-05-19 21:44:55] INFO root fetch - processPackages [Simba-UW-tf-dev]: New version: [1.93.1] Old Version: [1.92.9]
+[2024-05-19 21:44:55] INFO root fetch - processPackages [retriever-search]: Downloading https://files.pythonhosted.org/packages/02/b9/65c722a5539f14517d956f972ec9c2604aa95fa721c97a9ee11cf4fa863a/retriever_search-0.2.2.tar.gz
+[2024-05-19 21:44:55] INFO root fetch - processPackages [file-renamer]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-19 21:44:55] INFO root fetch - processPackages [woningwaardering]: New version: [0.2.14a0] Old Version: [0.2.0a1]
+[2024-05-19 21:44:55] INFO root fetch - processPackages [panoptes-aag]: New version: [0.0.5] Old Version: [0.0.3]
+[2024-05-19 21:44:55] INFO root fetch - processPackages [Simba-UW-tf-dev]: Downloading https://files.pythonhosted.org/packages/aa/74/e62ddc0227e4034c17cb36bac589a3fe8f7197a9315b1282c8fd1b62c646/Simba-UW-tf-dev-1.92.9.tar.gz
+[2024-05-19 21:44:55] INFO root fetch - processPackages [file-renamer]: Downloading https://files.pythonhosted.org/packages/6a/06/65fe1021c69a2fedcb5ae777311abe95366c2d4caf318c9f75c559d3a0eb/file_renamer-1.0.4.tar.gz
+[2024-05-19 21:44:55] INFO root fetch - processPackages [panoptes-aag]: Downloading https://files.pythonhosted.org/packages/84/76/7d5966282c1b869374debe03be08a7f3e4a7f6c5df3f0a4bb45021281051/panoptes-aag-0.0.3.tar.gz
+[2024-05-19 21:44:55] INFO root fetch - processPackages [woningwaardering]: Downloading https://files.pythonhosted.org/packages/9b/75/cf8335aa18bbecc1694754b3b1fe7a045aace36a6763b0b3003142dda316/woningwaardering-0.2.0a1.tar.gz
+[2024-05-19 21:44:55] INFO root fetch - processPackages [file-renamer]: Downloading https://files.pythonhosted.org/packages/d3/43/802cd16776f17bf115572a4259883bbed274dc97abbeceecb4d51e9aade7/file_renamer-1.0.5.tar.gz
+[2024-05-19 21:44:55] INFO root fetch - processPackages [retriever-search]: Downloading https://files.pythonhosted.org/packages/c8/fd/4dd824eccadb6d6e853054cbaf966e6bf9c9eab31a0419967f915a7a7403/retriever_search-0.2.3.tar.gz
+[2024-05-19 21:44:55] INFO root fetch - processPackages [file-renamer]: executing diffoscope
+[2024-05-19 21:44:55] INFO root fetch - processPackages [file-renamer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/file_renamer-1.0.4.tar.gz tmp/file_renamer-1.0.5.tar.gz --markdown 20240519/f/file-renamer/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-19 21:44:55] INFO root fetch - processPackages [panoptes-aag]: Downloading https://files.pythonhosted.org/packages/66/a5/de169e7f7835b932076653d274f5678efef3aa39639d2ac6747e1d4dabcb/panoptes_aag-0.0.5.tar.gz
+[2024-05-19 21:44:55] INFO root fetch - processPackages [woningwaardering]: Downloading https://files.pythonhosted.org/packages/71/10/70bd4c83b5eca22d7be75758c32fc78e58fe396cbe1bd219a38caece87bc/woningwaardering-0.2.14a0.tar.gz
+[2024-05-19 21:44:55] INFO root fetch - processPackages [Simba-UW-tf-dev]: Downloading https://files.pythonhosted.org/packages/bd/13/0af2dc261cddaa591b236e99ad7ab9f20638c7bfcd308630569a765585ea/Simba-UW-tf-dev-1.93.1.tar.gz
+[2024-05-19 21:44:55] INFO root fetch - processPackages [panoptes-aag]: executing diffoscope
+[2024-05-19 21:44:55] INFO root fetch - processPackages [panoptes-aag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/panoptes-aag-0.0.3.tar.gz tmp/panoptes_aag-0.0.5.tar.gz --markdown 20240519/p/panoptes-aag/0.0.3-0.0.5/README.md --exclude *.pyd
+[2024-05-19 21:44:56] INFO root fetch - processPackages [woningwaardering]: executing diffoscope
+[2024-05-19 21:44:56] INFO root fetch - processPackages [woningwaardering]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/woningwaardering-0.2.0a1.tar.gz tmp/woningwaardering-0.2.14a0.tar.gz --markdown 20240519/w/woningwaardering/0.2.0a1-0.2.14a0/README.md --exclude *.pyd
+[2024-05-19 21:44:56] INFO root fetch - processPackages [retriever-search]: executing diffoscope
+[2024-05-19 21:44:56] INFO root fetch - processPackages [retriever-search]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/retriever_search-0.2.2.tar.gz tmp/retriever_search-0.2.3.tar.gz --markdown 20240519/r/retriever-search/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-05-19 21:44:56] INFO root fetch - processPackages [Simba-UW-tf-dev]: executing diffoscope
+[2024-05-19 21:44:56] INFO root fetch - processPackages [Simba-UW-tf-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Simba-UW-tf-dev-1.92.9.tar.gz tmp/Simba-UW-tf-dev-1.93.1.tar.gz --markdown 20240519/S/Simba-UW-tf-dev/1.92.9-1.93.1/README.md --exclude *.pyd
+[2024-05-19 21:44:56] INFO root fetch - processPackages [file-renamer]: Remove: archive file [/home/abi/fetcher/tmp/file_renamer-1.0.4.tar.gz]
+[2024-05-19 21:44:56] INFO root fetch - processPackages [file-renamer]: Remove: archive file [/home/abi/fetcher/tmp/file_renamer-1.0.5.tar.gz]
+[2024-05-19 21:44:56] INFO root fetch - main [MainThread]: End processing [file-renamer]: success
+[2024-05-19 21:44:56] INFO root fetch - processPackages [panoptes-aag]: Remove: archive file [/home/abi/fetcher/tmp/panoptes-aag-0.0.3.tar.gz]
+[2024-05-19 21:44:56] INFO root fetch - processPackages [panoptes-aag]: Remove: archive file [/home/abi/fetcher/tmp/panoptes_aag-0.0.5.tar.gz]
+[2024-05-19 21:44:56] INFO root fetch - main [MainThread]: End processing [panoptes-aag]: success
+[2024-05-19 21:44:57] INFO root fetch - processPackages [retriever-search]: Remove: archive file [/home/abi/fetcher/tmp/retriever_search-0.2.2.tar.gz]
+[2024-05-19 21:44:57] INFO root fetch - processPackages [retriever-search]: Remove: archive file [/home/abi/fetcher/tmp/retriever_search-0.2.3.tar.gz]
+[2024-05-19 21:44:57] INFO root fetch - main [MainThread]: End processing [retriever-search]: success
+[2024-05-19 21:44:57] INFO root fetch - processPackages [woningwaardering]: Remove: archive file [/home/abi/fetcher/tmp/woningwaardering-0.2.0a1.tar.gz]
+[2024-05-19 21:44:57] INFO root fetch - processPackages [woningwaardering]: Remove: archive file [/home/abi/fetcher/tmp/woningwaardering-0.2.14a0.tar.gz]
+[2024-05-19 21:44:57] INFO root fetch - main [MainThread]: End processing [woningwaardering]: success
+[2024-05-19 21:44:59] INFO root fetch - processPackages [Simba-UW-tf-dev]: Remove: archive file [/home/abi/fetcher/tmp/Simba-UW-tf-dev-1.92.9.tar.gz]
+[2024-05-19 21:44:59] INFO root fetch - processPackages [Simba-UW-tf-dev]: Remove: archive file [/home/abi/fetcher/tmp/Simba-UW-tf-dev-1.93.1.tar.gz]
+[2024-05-19 21:44:59] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
+[2024-05-19 21:44:59] INFO root fetch - main [MainThread]: Store serial: [23279800]
