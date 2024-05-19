@@ -8035,3 +8035,21 @@
 [2024-05-19 12:00:59] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.99.tar.gz]
 [2024-05-19 12:00:59] INFO root fetch - main [MainThread]: End processing [akshare]: success
 [2024-05-19 12:00:59] INFO root fetch - main [MainThread]: Store serial: [23275278]
+[2024-05-19 12:03:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275278]
+[2024-05-19 12:03:08] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 12:03:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: unearlyz
+[2024-05-19 12:03:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gradio-textlabeler
+[2024-05-19 12:03:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: HiggsML
+[2024-05-19 12:03:08] INFO root fetch - processPackages [HiggsML]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-19 12:03:08] WARNING root fetch - processPackages [unearlyz]: Skipping, unable to determine old version
+[2024-05-19 12:03:08] WARNING root fetch - processPackages [gradio-textlabeler]: Skipping, unable to determine old version
+[2024-05-19 12:03:08] INFO root fetch - main [MainThread]: End processing [unearlyz] error
+[2024-05-19 12:03:08] INFO root fetch - main [MainThread]: End processing [gradio-textlabeler] error
+[2024-05-19 12:03:08] INFO root fetch - processPackages [HiggsML]: Downloading https://files.pythonhosted.org/packages/e7/47/ebca73ca9b716fe1772f135efe1f29f8ffe3a47694af04ff2ce5ee583199/higgsml-0.0.1.tar.gz
+[2024-05-19 12:03:09] INFO root fetch - processPackages [HiggsML]: Downloading https://files.pythonhosted.org/packages/69/e6/477c65a2986b3e5d9130d0f64074a67efe586b64bb89da56a4c735eb0f93/higgsml-0.0.2.tar.gz
+[2024-05-19 12:03:09] INFO root fetch - processPackages [HiggsML]: executing diffoscope
+[2024-05-19 12:03:09] INFO root fetch - processPackages [HiggsML]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/higgsml-0.0.1.tar.gz tmp/higgsml-0.0.2.tar.gz --markdown 20240519/H/HiggsML/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-19 12:03:09] INFO root fetch - processPackages [HiggsML]: Remove: archive file [/home/abi/fetcher/tmp/higgsml-0.0.1.tar.gz]
+[2024-05-19 12:03:09] INFO root fetch - processPackages [HiggsML]: Remove: archive file [/home/abi/fetcher/tmp/higgsml-0.0.2.tar.gz]
+[2024-05-19 12:03:09] INFO root fetch - main [MainThread]: End processing [HiggsML]: success
+[2024-05-19 12:03:09] INFO root fetch - main [MainThread]: Store serial: [23275290]
