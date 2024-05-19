@@ -1080,3 +1080,26 @@
 [2024-05-19 01:58:25] WARNING root fetch - processPackages [chompz]: Skipping, unable to determine old version
 [2024-05-19 01:58:25] INFO root fetch - main [MainThread]: End processing [chompz] error
 [2024-05-19 01:58:25] INFO root fetch - main [MainThread]: Store serial: [23271977]
+[2024-05-19 02:00:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271977]
+[2024-05-19 02:00:33] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-19 02:02:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271977]
+[2024-05-19 02:02:39] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 02:02:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: expyre-wfl
+[2024-05-19 02:02:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ibis-framework
+[2024-05-19 02:02:39] INFO root fetch - processPackages [expyre-wfl]: New version: [0.1.5b0] Old Version: [0.1.5]
+[2024-05-19 02:02:39] INFO root fetch - processPackages [ibis-framework]: New version: [v0.6.0] Old Version: [9.0.0.dev686]
+[2024-05-19 02:02:39] INFO root fetch - processPackages [expyre-wfl]: Downloading https://files.pythonhosted.org/packages/ea/bd/da580f423f4f3e2235eb08a6ed51be776be4ac50bef769defa1e942cd89a/expyre_wfl-0.1.5.tar.gz
+[2024-05-19 02:02:39] INFO root fetch - processPackages [ibis-framework]: Downloading https://files.pythonhosted.org/packages/25/27/d42cad7d2f3e8dfcb90f08cf43c86239cd0e143735dd698a882ee93975cc/ibis_framework-9.0.0.dev686.tar.gz
+[2024-05-19 02:02:40] INFO root fetch - processPackages [expyre-wfl]: Downloading https://files.pythonhosted.org/packages/43/aa/e1d46b6e53da88e945a8465a3d0c37da52e46333912a981c7fc2f0a75497/expyre_wfl-0.1.5b0.tar.gz
+[2024-05-19 02:02:40] INFO root fetch - processPackages [expyre-wfl]: executing diffoscope
+[2024-05-19 02:02:40] INFO root fetch - processPackages [expyre-wfl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/expyre_wfl-0.1.5.tar.gz tmp/expyre_wfl-0.1.5b0.tar.gz --markdown 20240519/e/expyre-wfl/0.1.5-0.1.5b0/README.md --exclude *.pyd
+[2024-05-19 02:02:40] INFO root fetch - processPackages [ibis-framework]: Downloading https://files.pythonhosted.org/packages/0b/3d/fbf4278e9e436717a6fe476a81d1abec511869bba1cf642b601472bf6408/ibis-framework-v0.6.0.tar.gz
+[2024-05-19 02:02:40] INFO root fetch - processPackages [ibis-framework]: executing diffoscope
+[2024-05-19 02:02:40] INFO root fetch - processPackages [ibis-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ibis_framework-9.0.0.dev686.tar.gz tmp/ibis-framework-v0.6.0.tar.gz --markdown 20240519/i/ibis-framework/9.0.0.dev686-v0.6.0/README.md --exclude *.pyd
+[2024-05-19 02:02:40] INFO root fetch - processPackages [expyre-wfl]: Remove: archive file [/home/abi/fetcher/tmp/expyre_wfl-0.1.5.tar.gz]
+[2024-05-19 02:02:40] INFO root fetch - processPackages [expyre-wfl]: Remove: archive file [/home/abi/fetcher/tmp/expyre_wfl-0.1.5b0.tar.gz]
+[2024-05-19 02:02:40] INFO root fetch - main [MainThread]: End processing [expyre-wfl]: success
+[2024-05-19 02:02:42] INFO root fetch - processPackages [ibis-framework]: Remove: archive file [/home/abi/fetcher/tmp/ibis_framework-9.0.0.dev686.tar.gz]
+[2024-05-19 02:02:42] INFO root fetch - processPackages [ibis-framework]: Remove: archive file [/home/abi/fetcher/tmp/ibis-framework-v0.6.0.tar.gz]
+[2024-05-19 02:02:42] INFO root fetch - main [MainThread]: End processing [ibis-framework]: success
+[2024-05-19 02:02:42] INFO root fetch - main [MainThread]: Store serial: [23271983]
