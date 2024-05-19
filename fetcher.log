@@ -4856,3 +4856,27 @@
 [2024-05-19 07:56:14] INFO root fetch - processPackages [aioqzone]: Remove: archive file [/home/abi/fetcher/tmp/aioqzone-1.8.2.dev3.tar.gz]
 [2024-05-19 07:56:14] INFO root fetch - main [MainThread]: End processing [aioqzone]: success
 [2024-05-19 07:56:14] INFO root fetch - main [MainThread]: Store serial: [23273656]
+[2024-05-19 07:58:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273656]
+[2024-05-19 07:58:22] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 07:58:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llm-parametrizer
+[2024-05-19 07:58:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: carbon-registry-indexer
+[2024-05-19 07:58:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ziya
+[2024-05-19 07:58:22] INFO root fetch - processPackages [carbon-registry-indexer]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-19 07:58:22] INFO root fetch - processPackages [ziya]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-19 07:58:22] WARNING root fetch - processPackages [llm-parametrizer]: Skipping, unable to determine old version
+[2024-05-19 07:58:22] INFO root fetch - main [MainThread]: End processing [llm-parametrizer] error
+[2024-05-19 07:58:22] INFO root fetch - processPackages [carbon-registry-indexer]: Downloading https://files.pythonhosted.org/packages/6a/ea/27f744d6e0e724c6e0575edb2c67737c6a70147e7ebcd97674a2959d66dd/carbon-registry-indexer-0.1.8.tar.gz
+[2024-05-19 07:58:22] INFO root fetch - processPackages [ziya]: Downloading https://files.pythonhosted.org/packages/ec/d9/c132e3d3bb3131f4f7bb39f9ffbfcd6ab71db3e4b23813e75962970fdbc0/ziya-0.1.8.tar.gz
+[2024-05-19 07:58:23] INFO root fetch - processPackages [ziya]: Downloading https://files.pythonhosted.org/packages/b4/86/a2ff21e28f4db4b1b8e94fe73a5ae18bf459c135ea7489a3772c612b45d3/ziya-0.1.9.tar.gz
+[2024-05-19 07:58:23] INFO root fetch - processPackages [carbon-registry-indexer]: Downloading https://files.pythonhosted.org/packages/e5/cd/1e1e95e6852f521936093508bcf7bbf278df34c6892a3bcd86aa33caf947/carbon-registry-indexer-0.1.9.tar.gz
+[2024-05-19 07:58:23] INFO root fetch - processPackages [carbon-registry-indexer]: executing diffoscope
+[2024-05-19 07:58:23] INFO root fetch - processPackages [carbon-registry-indexer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/carbon-registry-indexer-0.1.8.tar.gz tmp/carbon-registry-indexer-0.1.9.tar.gz --markdown 20240519/c/carbon-registry-indexer/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-19 07:58:23] INFO root fetch - processPackages [ziya]: executing diffoscope
+[2024-05-19 07:58:23] INFO root fetch - processPackages [ziya]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ziya-0.1.8.tar.gz tmp/ziya-0.1.9.tar.gz --markdown 20240519/z/ziya/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-19 07:58:23] INFO root fetch - processPackages [ziya]: Remove: archive file [/home/abi/fetcher/tmp/ziya-0.1.8.tar.gz]
+[2024-05-19 07:58:23] INFO root fetch - processPackages [ziya]: Remove: archive file [/home/abi/fetcher/tmp/ziya-0.1.9.tar.gz]
+[2024-05-19 07:58:23] INFO root fetch - main [MainThread]: End processing [ziya]: success
+[2024-05-19 07:58:24] INFO root fetch - processPackages [carbon-registry-indexer]: Remove: archive file [/home/abi/fetcher/tmp/carbon-registry-indexer-0.1.8.tar.gz]
+[2024-05-19 07:58:24] INFO root fetch - processPackages [carbon-registry-indexer]: Remove: archive file [/home/abi/fetcher/tmp/carbon-registry-indexer-0.1.9.tar.gz]
+[2024-05-19 07:58:24] INFO root fetch - main [MainThread]: End processing [carbon-registry-indexer]: success
+[2024-05-19 07:58:24] INFO root fetch - main [MainThread]: Store serial: [23273667]
