@@ -12314,3 +12314,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 16:31:57] INFO root fetch - processPackages [indipyclient]: Remove: archive file [/home/abi/fetcher/tmp/indipyclient-0.1.5.tar.gz]
 [2024-05-19 16:31:57] INFO root fetch - main [MainThread]: End processing [indipyclient]: success
 [2024-05-19 16:31:57] INFO root fetch - main [MainThread]: Store serial: [23277280]
+[2024-05-19 16:34:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277280]
+[2024-05-19 16:34:05] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-19 16:34:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: examkiller
+[2024-05-19 16:34:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: clusterfun
+[2024-05-19 16:34:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mix-n-match
+[2024-05-19 16:34:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: DFPlayer
+[2024-05-19 16:34:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: scenographyz
+[2024-05-19 16:34:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: RiskQuantLib
+[2024-05-19 16:34:06] INFO root fetch - processPackages [clusterfun]: New version: [0.3.3a7] Old Version: [0.3.1a7]
+[2024-05-19 16:34:06] WARNING root fetch - processPackages [DFPlayer]: Skipping, unable to determine old version
+[2024-05-19 16:34:06] INFO root fetch - main [MainThread]: End processing [DFPlayer] error
+[2024-05-19 16:34:06] WARNING root fetch - processPackages [examkiller]: Skipping, unable to determine old version
+[2024-05-19 16:34:06] INFO root fetch - main [MainThread]: End processing [examkiller] error
+[2024-05-19 16:34:06] INFO root fetch - processPackages [clusterfun]: Downloading https://files.pythonhosted.org/packages/8c/0e/3c3d432a3e013834a21b6f8bd05f6ed45bb63051f0fff1e7996762666744/clusterfun-0.3.1a7.tar.gz
+[2024-05-19 16:34:06] INFO root fetch - processPackages [mix-n-match]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-05-19 16:34:06] INFO root fetch - processPackages [RiskQuantLib]: New version: [0.3.8] Old Version: [0.3.7]
+[2024-05-19 16:34:06] WARNING root fetch - processPackages [scenographyz]: Skipping, unable to determine old version
+[2024-05-19 16:34:06] INFO root fetch - main [MainThread]: End processing [scenographyz] error
+[2024-05-19 16:34:06] INFO root fetch - processPackages [mix-n-match]: Downloading https://files.pythonhosted.org/packages/0a/1a/dd3bc757210703ee877e362898d098e8f38eb45f1c4a8a1e3608871de9b0/mix-n-match-0.2.0.tar.gz
+[2024-05-19 16:34:06] INFO root fetch - processPackages [RiskQuantLib]: Downloading https://files.pythonhosted.org/packages/8e/c9/3ef6044a840ae19526dbf7931b05205c79f75535d8b4ec6e54395a457c9a/RiskQuantLib-0.3.7.tar.gz
+[2024-05-19 16:34:06] INFO root fetch - processPackages [clusterfun]: Downloading https://files.pythonhosted.org/packages/b8/98/716cc1e2a17611ab8acc9c4ee37ce277a7f4c94119ff697af2e38b17acca/clusterfun-0.3.3a7.tar.gz
+[2024-05-19 16:34:06] INFO root fetch - processPackages [RiskQuantLib]: Downloading https://files.pythonhosted.org/packages/fc/33/a73277c470c572a4b438b8e2c26a8fce19cde4809b39bbf796cc57c0c481/riskquantlib-0.3.8.tar.gz
+[2024-05-19 16:34:06] INFO root fetch - processPackages [mix-n-match]: Downloading https://files.pythonhosted.org/packages/58/9c/d2e2fcd863cbf1e2741161769e2a29b8c2ff126571e4c4bf5147841331bd/mix_n_match-0.3.0.tar.gz
+[2024-05-19 16:34:06] INFO root fetch - processPackages [mix-n-match]: executing diffoscope
+[2024-05-19 16:34:06] INFO root fetch - processPackages [mix-n-match]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mix-n-match-0.2.0.tar.gz tmp/mix_n_match-0.3.0.tar.gz --markdown 20240519/m/mix-n-match/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-05-19 16:34:06] INFO root fetch - processPackages [RiskQuantLib]: executing diffoscope
+[2024-05-19 16:34:06] INFO root fetch - processPackages [RiskQuantLib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RiskQuantLib-0.3.7.tar.gz tmp/riskquantlib-0.3.8.tar.gz --markdown 20240519/R/RiskQuantLib/0.3.7-0.3.8/README.md --exclude *.pyd
+[2024-05-19 16:34:07] INFO root fetch - processPackages [clusterfun]: executing diffoscope
+[2024-05-19 16:34:07] INFO root fetch - processPackages [clusterfun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clusterfun-0.3.1a7.tar.gz tmp/clusterfun-0.3.3a7.tar.gz --markdown 20240519/c/clusterfun/0.3.1a7-0.3.3a7/README.md --exclude *.pyd
+[2024-05-19 16:34:07] INFO root fetch - processPackages [mix-n-match]: Remove: archive file [/home/abi/fetcher/tmp/mix-n-match-0.2.0.tar.gz]
+[2024-05-19 16:34:07] INFO root fetch - processPackages [mix-n-match]: Remove: archive file [/home/abi/fetcher/tmp/mix_n_match-0.3.0.tar.gz]
+[2024-05-19 16:34:07] INFO root fetch - main [MainThread]: End processing [mix-n-match]: success
+[2024-05-19 16:34:07] INFO root fetch - processPackages [RiskQuantLib]: Remove: archive file [/home/abi/fetcher/tmp/RiskQuantLib-0.3.7.tar.gz]
+[2024-05-19 16:34:07] INFO root fetch - processPackages [RiskQuantLib]: Remove: archive file [/home/abi/fetcher/tmp/riskquantlib-0.3.8.tar.gz]
+[2024-05-19 16:34:07] INFO root fetch - main [MainThread]: End processing [RiskQuantLib]: success
+[2024-05-19 16:34:08] INFO root fetch - processPackages [clusterfun]: Remove: archive file [/home/abi/fetcher/tmp/clusterfun-0.3.1a7.tar.gz]
+[2024-05-19 16:34:08] INFO root fetch - processPackages [clusterfun]: Remove: archive file [/home/abi/fetcher/tmp/clusterfun-0.3.3a7.tar.gz]
+[2024-05-19 16:34:08] INFO root fetch - main [MainThread]: End processing [clusterfun]: success
+[2024-05-19 16:34:08] INFO root fetch - main [MainThread]: Store serial: [23277301]
