@@ -3612,3 +3612,28 @@
 [2024-05-19 05:54:10] INFO root fetch - processPackages [PyMyGekko]: Remove: archive file [/home/abi/fetcher/tmp/pymygekko-1.2.0rc1.tar.gz]
 [2024-05-19 05:54:10] INFO root fetch - main [MainThread]: End processing [PyMyGekko]: success
 [2024-05-19 05:54:10] INFO root fetch - main [MainThread]: Store serial: [23273134]
+[2024-05-19 05:56:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273134]
+[2024-05-19 05:56:20] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 05:56:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addons-oca-delivery-carrier
+[2024-05-19 05:56:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sjwt
+[2024-05-19 05:56:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo14-addons-oca-delivery-carrier
+[2024-05-19 05:56:20] INFO root fetch - processPackages [sjwt]: New version: [0.3.2] Old Version: [0.2.4]
+[2024-05-19 05:56:20] INFO root fetch - processPackages [odoo14-addons-oca-delivery-carrier]: New version: [14.0.20240518.0] Old Version: [14.0.20240314.0]
+[2024-05-19 05:56:20] INFO root fetch - processPackages [odoo-addons-oca-delivery-carrier]: New version: [16.0.20240401.0] Old Version: [16.0.20240215.0]
+[2024-05-19 05:56:20] ERROR root fetch - processPackages [sjwt]: Unable to fetch info: No such project/version 'sjwt' 0.3.2
+[2024-05-19 05:56:20] INFO root fetch - main [MainThread]: End processing [sjwt] error
+[2024-05-19 05:56:20] INFO root fetch - processPackages [odoo14-addons-oca-delivery-carrier]: Downloading https://files.pythonhosted.org/packages/2b/bf/79edafe5aacedd0f0eff765b7ae557b2f9679f484c912e20c7e58e5f981c/odoo14_addons_oca_delivery_carrier-14.0.20240314.0-py3-none-any.whl
+[2024-05-19 05:56:20] INFO root fetch - processPackages [odoo-addons-oca-delivery-carrier]: Downloading https://files.pythonhosted.org/packages/dd/8c/70f3bed81c46a0a54675a270ef808daa96a47cba6d0284f9f30aeeaee5ac/odoo_addons_oca_delivery_carrier-16.0.20240215.0-py3-none-any.whl
+[2024-05-19 05:56:21] INFO root fetch - processPackages [odoo-addons-oca-delivery-carrier]: Downloading https://files.pythonhosted.org/packages/37/bd/2441910e253bf344b324c06a71ad99c3716b96867573e30d888deb4914bd/odoo_addons_oca_delivery_carrier-16.0.20240401.0-py3-none-any.whl
+[2024-05-19 05:56:21] INFO root fetch - processPackages [odoo14-addons-oca-delivery-carrier]: Downloading https://files.pythonhosted.org/packages/c9/e0/58dd1ffbce77d5da98286bc2d54913009ce04588ec1a701742b0ccd4faf2/odoo14_addons_oca_delivery_carrier-14.0.20240518.0-py3-none-any.whl
+[2024-05-19 05:56:21] INFO root fetch - processPackages [odoo-addons-oca-delivery-carrier]: executing diffoscope
+[2024-05-19 05:56:21] INFO root fetch - processPackages [odoo-addons-oca-delivery-carrier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_delivery_carrier-16.0.20240215.0-py3-none-any.whl.zip tmp/odoo_addons_oca_delivery_carrier-16.0.20240401.0-py3-none-any.whl.zip --markdown 20240519/o/odoo-addons-oca-delivery-carrier/16.0.20240215.0-16.0.20240401.0/README.md --exclude *.pyd
+[2024-05-19 05:56:21] INFO root fetch - processPackages [odoo14-addons-oca-delivery-carrier]: executing diffoscope
+[2024-05-19 05:56:21] INFO root fetch - processPackages [odoo14-addons-oca-delivery-carrier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addons_oca_delivery_carrier-14.0.20240314.0-py3-none-any.whl.zip tmp/odoo14_addons_oca_delivery_carrier-14.0.20240518.0-py3-none-any.whl.zip --markdown 20240519/o/odoo14-addons-oca-delivery-carrier/14.0.20240314.0-14.0.20240518.0/README.md --exclude *.pyd
+[2024-05-19 05:56:21] INFO root fetch - processPackages [odoo-addons-oca-delivery-carrier]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_delivery_carrier-16.0.20240215.0-py3-none-any.whl.zip]
+[2024-05-19 05:56:21] INFO root fetch - processPackages [odoo-addons-oca-delivery-carrier]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_delivery_carrier-16.0.20240401.0-py3-none-any.whl.zip]
+[2024-05-19 05:56:21] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-delivery-carrier]: success
+[2024-05-19 05:56:21] INFO root fetch - processPackages [odoo14-addons-oca-delivery-carrier]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addons_oca_delivery_carrier-14.0.20240314.0-py3-none-any.whl.zip]
+[2024-05-19 05:56:21] INFO root fetch - processPackages [odoo14-addons-oca-delivery-carrier]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addons_oca_delivery_carrier-14.0.20240518.0-py3-none-any.whl.zip]
+[2024-05-19 05:56:21] INFO root fetch - main [MainThread]: End processing [odoo14-addons-oca-delivery-carrier]: success
+[2024-05-19 05:56:21] INFO root fetch - main [MainThread]: Store serial: [23273141]
