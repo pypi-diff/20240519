@@ -13492,3 +13492,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 17:37:36] INFO root fetch - processPackages [gotrackit]: Remove: archive file [/home/abi/fetcher/tmp/gotrackit-0.2.6.tar.gz]
 [2024-05-19 17:37:36] INFO root fetch - main [MainThread]: End processing [gotrackit]: success
 [2024-05-19 17:37:36] INFO root fetch - main [MainThread]: Store serial: [23277849]
+[2024-05-19 17:39:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23277849]
+[2024-05-19 17:39:45] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 17:39:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rpa-finder
+[2024-05-19 17:39:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: GEOdb
+[2024-05-19 17:39:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pqsdk
+[2024-05-19 17:39:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: solarium
+[2024-05-19 17:39:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: textlong
+[2024-05-19 17:39:45] WARNING root fetch - processPackages [rpa-finder]: Skipping, unable to determine old version
+[2024-05-19 17:39:45] INFO root fetch - main [MainThread]: End processing [rpa-finder] error
+[2024-05-19 17:39:45] INFO root fetch - processPackages [pqsdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-19 17:39:45] INFO root fetch - processPackages [textlong]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-19 17:39:45] INFO root fetch - processPackages [solarium]: New version: [0.4.0] Old Version: [0.3.3]
+[2024-05-19 17:39:45] INFO root fetch - processPackages [pqsdk]: Downloading https://files.pythonhosted.org/packages/7d/ef/e1606d8c88536e329ff51d20c43d8c3a8fbf1f139463353e46ce9c5714b7/pqsdk-0.0.8.tar.gz
+[2024-05-19 17:39:45] WARNING root fetch - processPackages [GEOdb]: Skipping, unable to determine old version
+[2024-05-19 17:39:45] INFO root fetch - main [MainThread]: End processing [GEOdb] error
+[2024-05-19 17:39:45] INFO root fetch - processPackages [pqsdk]: Downloading https://files.pythonhosted.org/packages/fa/43/18693ceeb86b0759e282a7f78e07c1b9f619ad0a4c2cbb972444d8f2a224/pqsdk-0.0.9.tar.gz
+[2024-05-19 17:39:45] INFO root fetch - processPackages [solarium]: Downloading https://files.pythonhosted.org/packages/91/22/558b5bf8cfa5092ce04c4df3e3ed75fb300368353b16aedadffcd2d4611f/solarium-0.3.3.tar.gz
+[2024-05-19 17:39:45] INFO root fetch - processPackages [textlong]: Downloading https://files.pythonhosted.org/packages/ca/f3/28a5d573bbe3ef2d5767b2271954398b17e88007ebb19b4ff7adda8c62c4/textlong-0.1.5.tar.gz
+[2024-05-19 17:39:45] INFO root fetch - processPackages [pqsdk]: executing diffoscope
+[2024-05-19 17:39:45] INFO root fetch - processPackages [pqsdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pqsdk-0.0.8.tar.gz tmp/pqsdk-0.0.9.tar.gz --markdown 20240519/p/pqsdk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-19 17:39:45] INFO root fetch - processPackages [textlong]: Downloading https://files.pythonhosted.org/packages/d7/19/7329ff9a0cfdde3ec5fe375ebc5318010a18d66eb47a56b9d7a7ee9f98b6/textlong-0.1.6.tar.gz
+[2024-05-19 17:39:45] INFO root fetch - processPackages [solarium]: Downloading https://files.pythonhosted.org/packages/d6/90/2130b222093520fdde9e7e2036b1882eb9fc4a3d6e5b8376ef94555f891a/solarium-0.4.0.tar.gz
+[2024-05-19 17:39:45] INFO root fetch - processPackages [textlong]: executing diffoscope
+[2024-05-19 17:39:45] INFO root fetch - processPackages [textlong]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textlong-0.1.5.tar.gz tmp/textlong-0.1.6.tar.gz --markdown 20240519/t/textlong/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-19 17:39:46] INFO root fetch - processPackages [solarium]: executing diffoscope
+[2024-05-19 17:39:46] INFO root fetch - processPackages [solarium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/solarium-0.3.3.tar.gz tmp/solarium-0.4.0.tar.gz --markdown 20240519/s/solarium/0.3.3-0.4.0/README.md --exclude *.pyd
+[2024-05-19 17:39:46] INFO root fetch - processPackages [pqsdk]: Remove: archive file [/home/abi/fetcher/tmp/pqsdk-0.0.8.tar.gz]
+[2024-05-19 17:39:46] INFO root fetch - processPackages [pqsdk]: Remove: archive file [/home/abi/fetcher/tmp/pqsdk-0.0.9.tar.gz]
+[2024-05-19 17:39:46] INFO root fetch - main [MainThread]: End processing [pqsdk]: success
+[2024-05-19 17:39:46] INFO root fetch - processPackages [textlong]: Remove: archive file [/home/abi/fetcher/tmp/textlong-0.1.5.tar.gz]
+[2024-05-19 17:39:46] INFO root fetch - processPackages [textlong]: Remove: archive file [/home/abi/fetcher/tmp/textlong-0.1.6.tar.gz]
+[2024-05-19 17:39:46] INFO root fetch - main [MainThread]: End processing [textlong]: success
+[2024-05-19 17:39:46] INFO root fetch - processPackages [solarium]: Remove: archive file [/home/abi/fetcher/tmp/solarium-0.3.3.tar.gz]
+[2024-05-19 17:39:46] INFO root fetch - processPackages [solarium]: Remove: archive file [/home/abi/fetcher/tmp/solarium-0.4.0.tar.gz]
+[2024-05-19 17:39:46] INFO root fetch - main [MainThread]: End processing [solarium]: success
+[2024-05-19 17:39:46] INFO root fetch - main [MainThread]: Store serial: [23277865]
