@@ -7589,3 +7589,33 @@
 [2024-05-19 11:20:59] INFO root fetch - processPackages [pymscada]: Remove: archive file [/home/abi/fetcher/tmp/pymscada-0.1.1a2.tar.gz]
 [2024-05-19 11:20:59] INFO root fetch - main [MainThread]: End processing [pymscada]: success
 [2024-05-19 11:20:59] INFO root fetch - main [MainThread]: Store serial: [23275033]
+[2024-05-19 11:23:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275033]
+[2024-05-19 11:23:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 11:23:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arclet-alconna-ariadne
+[2024-05-19 11:23:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arclet-alconna-avilla
+[2024-05-19 11:23:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: arclet-alconna-graia
+[2024-05-19 11:23:07] INFO root fetch - processPackages [arclet-alconna-avilla]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-05-19 11:23:07] INFO root fetch - processPackages [arclet-alconna-ariadne]: New version: [0.18.3] Old Version: [0.18.2]
+[2024-05-19 11:23:07] INFO root fetch - processPackages [arclet-alconna-graia]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-05-19 11:23:08] INFO root fetch - processPackages [arclet-alconna-ariadne]: Downloading https://files.pythonhosted.org/packages/8e/04/98d37dbf634ef544a78fe191c337bbfa90bb26beaec548bb020ac5ef7b53/arclet_alconna_ariadne-0.18.2.tar.gz
+[2024-05-19 11:23:08] INFO root fetch - processPackages [arclet-alconna-avilla]: Downloading https://files.pythonhosted.org/packages/71/1b/b06f39dfa4b73497f68d84cfacc42f0cb0e49dc08bbc18b4706059ffaadc/arclet-alconna-avilla-0.2.0.tar.gz
+[2024-05-19 11:23:08] INFO root fetch - processPackages [arclet-alconna-graia]: Downloading https://files.pythonhosted.org/packages/81/33/d4915aeae59920c0f2ed22afcc7ded2a9a7758f6a2732921f67476ad60af/arclet-alconna-graia-0.9.0.tar.gz
+[2024-05-19 11:23:08] INFO root fetch - processPackages [arclet-alconna-ariadne]: Downloading https://files.pythonhosted.org/packages/41/b5/2d974cb86672f7fd5db279d4f50f6e9a01ee9237e9ab59a5d3760c43afc6/arclet_alconna_ariadne-0.18.3.tar.gz
+[2024-05-19 11:23:08] INFO root fetch - processPackages [arclet-alconna-avilla]: Downloading https://files.pythonhosted.org/packages/56/a1/7cb5ff9f274fdb76460249eba125a3125af806bc273601be741f982aaf8c/arclet-alconna-avilla-0.3.0.tar.gz
+[2024-05-19 11:23:08] INFO root fetch - processPackages [arclet-alconna-ariadne]: executing diffoscope
+[2024-05-19 11:23:08] INFO root fetch - processPackages [arclet-alconna-ariadne]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arclet_alconna_ariadne-0.18.2.tar.gz tmp/arclet_alconna_ariadne-0.18.3.tar.gz --markdown 20240519/a/arclet-alconna-ariadne/0.18.2-0.18.3/README.md --exclude *.pyd
+[2024-05-19 11:23:08] INFO root fetch - processPackages [arclet-alconna-graia]: Downloading https://files.pythonhosted.org/packages/dc/96/d3e155e743ed52df7ba0ccbfae61b3bd016965286eea7f049d5455905674/arclet-alconna-graia-0.9.1.tar.gz
+[2024-05-19 11:23:08] INFO root fetch - processPackages [arclet-alconna-avilla]: executing diffoscope
+[2024-05-19 11:23:08] INFO root fetch - processPackages [arclet-alconna-avilla]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arclet-alconna-avilla-0.2.0.tar.gz tmp/arclet-alconna-avilla-0.3.0.tar.gz --markdown 20240519/a/arclet-alconna-avilla/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-05-19 11:23:08] INFO root fetch - processPackages [arclet-alconna-graia]: executing diffoscope
+[2024-05-19 11:23:08] INFO root fetch - processPackages [arclet-alconna-graia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arclet-alconna-graia-0.9.0.tar.gz tmp/arclet-alconna-graia-0.9.1.tar.gz --markdown 20240519/a/arclet-alconna-graia/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-05-19 11:23:09] INFO root fetch - processPackages [arclet-alconna-avilla]: Remove: archive file [/home/abi/fetcher/tmp/arclet-alconna-avilla-0.2.0.tar.gz]
+[2024-05-19 11:23:09] INFO root fetch - processPackages [arclet-alconna-avilla]: Remove: archive file [/home/abi/fetcher/tmp/arclet-alconna-avilla-0.3.0.tar.gz]
+[2024-05-19 11:23:09] INFO root fetch - main [MainThread]: End processing [arclet-alconna-avilla]: success
+[2024-05-19 11:23:09] INFO root fetch - processPackages [arclet-alconna-ariadne]: Remove: archive file [/home/abi/fetcher/tmp/arclet_alconna_ariadne-0.18.2.tar.gz]
+[2024-05-19 11:23:09] INFO root fetch - processPackages [arclet-alconna-ariadne]: Remove: archive file [/home/abi/fetcher/tmp/arclet_alconna_ariadne-0.18.3.tar.gz]
+[2024-05-19 11:23:09] INFO root fetch - main [MainThread]: End processing [arclet-alconna-ariadne]: success
+[2024-05-19 11:23:09] INFO root fetch - processPackages [arclet-alconna-graia]: Remove: archive file [/home/abi/fetcher/tmp/arclet-alconna-graia-0.9.0.tar.gz]
+[2024-05-19 11:23:09] INFO root fetch - processPackages [arclet-alconna-graia]: Remove: archive file [/home/abi/fetcher/tmp/arclet-alconna-graia-0.9.1.tar.gz]
+[2024-05-19 11:23:09] INFO root fetch - main [MainThread]: End processing [arclet-alconna-graia]: success
+[2024-05-19 11:23:09] INFO root fetch - main [MainThread]: Store serial: [23275042]
