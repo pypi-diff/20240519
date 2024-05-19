@@ -19354,3 +19354,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 22:54:52] INFO root fetch - main [MainThread]: End processing [lqxagcwnkfgkykdb]: success
 [2024-05-19 22:54:53] INFO root fetch - main [MainThread]: End processing [lqxagcwnkfgkykdb]: success
 [2024-05-19 22:54:53] INFO root fetch - main [MainThread]: Store serial: [23280509]
+[2024-05-19 22:56:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23280509]
+[2024-05-19 22:57:04] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 22:57:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tencentcloud-sdk-python-dbbrain
+[2024-05-19 22:57:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tencentcloud-sdk-python-dbdc
+[2024-05-19 22:57:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tencentcloud-sdk-python-intl-en
+[2024-05-19 22:57:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gstools
+[2024-05-19 22:57:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: preanaphoralz
+[2024-05-19 22:57:04] WARNING root fetch - processPackages [preanaphoralz]: Skipping, unable to determine old version
+[2024-05-19 22:57:04] INFO root fetch - main [MainThread]: End processing [preanaphoralz] error
+[2024-05-19 22:57:04] INFO root fetch - processPackages [gstools]: New version: [1.6.0rc1] Old Version: [1.5.2]
+[2024-05-19 22:57:04] INFO root fetch - processPackages [tencentcloud-sdk-python-dbbrain]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-19 22:57:04] INFO root fetch - processPackages [tencentcloud-sdk-python-dbdc]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-19 22:57:04] INFO root fetch - processPackages [gstools]: Downloading https://files.pythonhosted.org/packages/89/5a/e8ef69dd3e2bd43437d8a6a326399a3f8707fe6d1e498d755e31fcb86e2b/gstools-1.5.2.tar.gz
+[2024-05-19 22:57:04] INFO root fetch - processPackages [tencentcloud-sdk-python-intl-en]: New version: [3.0.99] Old Version: [3.0.98]
+[2024-05-19 22:57:04] INFO root fetch - processPackages [tencentcloud-sdk-python-dbbrain]: Downloading https://files.pythonhosted.org/packages/37/f3/1ed52fac9bbdded74faf6dca54784eafb26cfbc300b9af21409b0167b8da/tencentcloud-sdk-python-dbbrain-3.0.998.tar.gz
+[2024-05-19 22:57:04] INFO root fetch - processPackages [tencentcloud-sdk-python-dbdc]: Downloading https://files.pythonhosted.org/packages/d1/87/a3c242dcbc3177d28a091f094ca58a9c94c9232317262e2a132f178885ec/tencentcloud-sdk-python-dbdc-3.0.998.tar.gz
+[2024-05-19 22:57:04] INFO root fetch - processPackages [tencentcloud-sdk-python-intl-en]: Downloading https://files.pythonhosted.org/packages/47/ec/491739e9cb7da970b8f280ea2383dc94da0c3d39e938ac559e0f2e52aea8/tencentcloud-sdk-python-intl-en-3.0.98.tar.gz
+[2024-05-19 22:57:04] INFO root fetch - processPackages [tencentcloud-sdk-python-dbdc]: Downloading https://files.pythonhosted.org/packages/ae/d3/7f97324dfd9f8d25d79d40674754fbea75c89a0ac071908a4144e1f43b5d/tencentcloud-sdk-python-dbdc-3.0.999.tar.gz
+[2024-05-19 22:57:04] INFO root fetch - processPackages [tencentcloud-sdk-python-dbbrain]: Downloading https://files.pythonhosted.org/packages/75/54/c994a2a7ded327b5cb6bc22c210ba5f353a97bbc2588792a095e4120aaaf/tencentcloud-sdk-python-dbbrain-3.0.999.tar.gz
+[2024-05-19 22:57:04] INFO root fetch - processPackages [gstools]: Downloading https://files.pythonhosted.org/packages/65/a8/57f39c2060415493a8d5dcd7a2ca41e2a2edddd9c6583ced1e83dd335a28/gstools-1.6.0rc1.tar.gz
+[2024-05-19 22:57:05] INFO root fetch - processPackages [tencentcloud-sdk-python-dbdc]: executing diffoscope
+[2024-05-19 22:57:05] INFO root fetch - processPackages [tencentcloud-sdk-python-dbdc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-dbdc-3.0.998.tar.gz tmp/tencentcloud-sdk-python-dbdc-3.0.999.tar.gz --markdown 20240519/t/tencentcloud-sdk-python-dbdc/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-19 22:57:05] INFO root fetch - processPackages [tencentcloud-sdk-python-dbbrain]: executing diffoscope
+[2024-05-19 22:57:05] INFO root fetch - processPackages [tencentcloud-sdk-python-dbbrain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-dbbrain-3.0.998.tar.gz tmp/tencentcloud-sdk-python-dbbrain-3.0.999.tar.gz --markdown 20240519/t/tencentcloud-sdk-python-dbbrain/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-19 22:57:05] INFO root fetch - processPackages [gstools]: executing diffoscope
+[2024-05-19 22:57:05] INFO root fetch - processPackages [gstools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gstools-1.5.2.tar.gz tmp/gstools-1.6.0rc1.tar.gz --markdown 20240519/g/gstools/1.5.2-1.6.0rc1/README.md --exclude *.pyd
+[2024-05-19 22:57:05] INFO root fetch - processPackages [tencentcloud-sdk-python-intl-en]: Downloading https://files.pythonhosted.org/packages/ee/9c/2dcfed598218dfd2d81fa3078c736962b265e5ae724bec2686e853a74d71/tencentcloud-sdk-python-intl-en-3.0.99.tar.gz
+[2024-05-19 22:57:05] INFO root fetch - processPackages [tencentcloud-sdk-python-intl-en]: executing diffoscope
+[2024-05-19 22:57:05] INFO root fetch - processPackages [tencentcloud-sdk-python-intl-en]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-intl-en-3.0.98.tar.gz tmp/tencentcloud-sdk-python-intl-en-3.0.99.tar.gz --markdown 20240519/t/tencentcloud-sdk-python-intl-en/3.0.98-3.0.99/README.md --exclude *.pyd
+[2024-05-19 22:57:05] INFO root fetch - processPackages [tencentcloud-sdk-python-dbdc]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-dbdc-3.0.998.tar.gz]
+[2024-05-19 22:57:05] INFO root fetch - processPackages [tencentcloud-sdk-python-dbdc]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-dbdc-3.0.999.tar.gz]
+[2024-05-19 22:57:05] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-dbdc]: success
+[2024-05-19 22:57:05] INFO root fetch - processPackages [tencentcloud-sdk-python-dbbrain]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-dbbrain-3.0.998.tar.gz]
+[2024-05-19 22:57:05] INFO root fetch - processPackages [tencentcloud-sdk-python-dbbrain]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-dbbrain-3.0.999.tar.gz]
+[2024-05-19 22:57:05] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-dbbrain]: success
+[2024-05-19 22:57:06] INFO root fetch - processPackages [gstools]: Remove: archive file [/home/abi/fetcher/tmp/gstools-1.5.2.tar.gz]
+[2024-05-19 22:57:06] INFO root fetch - processPackages [gstools]: Remove: archive file [/home/abi/fetcher/tmp/gstools-1.6.0rc1.tar.gz]
+[2024-05-19 22:57:06] INFO root fetch - main [MainThread]: End processing [gstools]: success
+[2024-05-19 22:57:07] INFO root fetch - processPackages [tencentcloud-sdk-python-intl-en]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-intl-en-3.0.98.tar.gz]
+[2024-05-19 22:57:07] INFO root fetch - processPackages [tencentcloud-sdk-python-intl-en]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-intl-en-3.0.99.tar.gz]
+[2024-05-19 22:57:07] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-intl-en]: success
+[2024-05-19 22:57:07] INFO root fetch - main [MainThread]: Store serial: [23280545]
