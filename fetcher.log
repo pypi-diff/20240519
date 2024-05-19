@@ -17096,3 +17096,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 21:07:02] INFO root fetch - processPackages [py-alpaca-daily-losers]: Remove: archive file [/home/abi/fetcher/tmp/py_alpaca_daily_losers-0.2.0.tar.gz]
 [2024-05-19 21:07:02] INFO root fetch - main [MainThread]: End processing [py-alpaca-daily-losers]: success
 [2024-05-19 21:07:02] INFO root fetch - main [MainThread]: Store serial: [23279521]
+[2024-05-19 21:09:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279521]
+[2024-05-19 21:09:12] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-19 21:09:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pedalboard
+[2024-05-19 21:09:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyKozo
+[2024-05-19 21:09:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: myjd-api
+[2024-05-19 21:09:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pytest
+[2024-05-19 21:09:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wol-api
+[2024-05-19 21:09:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: prompts.py
+[2024-05-19 21:09:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gadapt
+[2024-05-19 21:09:12] INFO root fetch - processPackages [wol-api]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-19 21:09:12] INFO root fetch - processPackages [gadapt]: New version: [0.4.3] Old Version: [0.4.2]
+[2024-05-19 21:09:12] INFO root fetch - processPackages [myjd-api]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-05-19 21:09:12] INFO root fetch - processPackages [pytest]: New version: [8.2.0] Old Version: [8.1.2]
+[2024-05-19 21:09:12] WARNING root fetch - processPackages [PyKozo]: Skipping, unable to determine old version
+[2024-05-19 21:09:12] INFO root fetch - main [MainThread]: End processing [PyKozo] error
+[2024-05-19 21:09:12] INFO root fetch - processPackages [prompts.py]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-19 21:09:12] INFO root fetch - processPackages [wol-api]: Downloading https://files.pythonhosted.org/packages/29/9b/07375780b12803f99c1844e6a1039d1fce26325241c32e28ca9c94e069de/wol_api-1.0.0.tar.gz
+[2024-05-19 21:09:13] INFO root fetch - processPackages [pedalboard]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-05-19 21:09:13] INFO root fetch - processPackages [myjd-api]: Downloading https://files.pythonhosted.org/packages/d5/f7/29fbb5fbcec4057c86774cb3dee22513aec7ad0fa7d1e9aab0fdfa2de5af/myjd_api-1.2.1.tar.gz
+[2024-05-19 21:09:13] INFO root fetch - processPackages [gadapt]: Downloading https://files.pythonhosted.org/packages/a6/a1/dcc81aab2d97e0ff428d6902fe4a69efe59d73ed285bf69dbae865e0b92d/gadapt-0.4.2.tar.gz
+[2024-05-19 21:09:13] INFO root fetch - processPackages [pytest]: Downloading https://files.pythonhosted.org/packages/f8/1f/dd3960a2369182720e8cbd580523a4f75292c0c75197dd0254c95f4a0add/pytest-8.1.2.tar.gz
+[2024-05-19 21:09:13] INFO root fetch - processPackages [prompts.py]: Downloading https://files.pythonhosted.org/packages/9b/9e/415061383072925f7ecf7925b60678c22a6417434c5ebdfedddda19e1267/prompts_py-0.1.0.tar.gz
+[2024-05-19 21:09:13] INFO root fetch - processPackages [pedalboard]: Downloading https://files.pythonhosted.org/packages/f1/d0/dd08861ac1f785b2b57cadf7393a369686b70fe8dec46032c1cfca52c7c4/pedalboard-0.9.5-pp39-pypy39_pp73-win_amd64.whl
+[2024-05-19 21:09:13] INFO root fetch - processPackages [wol-api]: Downloading https://files.pythonhosted.org/packages/e0/f4/c54126c1ab7594ab1396442d9c795498443b18d43f888f25d14dd2769096/wol_api-1.0.1.tar.gz
+[2024-05-19 21:09:13] INFO root fetch - processPackages [myjd-api]: Downloading https://files.pythonhosted.org/packages/a6/01/bbb32fcab87add280511806a17c99a7b1f208c95c0d2c90d6979b5721f98/myjd_api-1.2.2.tar.gz
+[2024-05-19 21:09:13] INFO root fetch - processPackages [gadapt]: Downloading https://files.pythonhosted.org/packages/9d/ac/1c74f88ff5507d8f757bf9dfbe0251aad31e8d2a0a773a009c38000f0da3/gadapt-0.4.3.tar.gz
+[2024-05-19 21:09:13] INFO root fetch - processPackages [wol-api]: executing diffoscope
+[2024-05-19 21:09:13] INFO root fetch - processPackages [wol-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wol_api-1.0.0.tar.gz tmp/wol_api-1.0.1.tar.gz --markdown 20240519/w/wol-api/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-19 21:09:13] INFO root fetch - processPackages [myjd-api]: executing diffoscope
+[2024-05-19 21:09:13] INFO root fetch - processPackages [myjd-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myjd_api-1.2.1.tar.gz tmp/myjd_api-1.2.2.tar.gz --markdown 20240519/m/myjd-api/1.2.1-1.2.2/README.md --exclude *.pyd
+[2024-05-19 21:09:13] INFO root fetch - processPackages [pytest]: Downloading https://files.pythonhosted.org/packages/09/9d/78b3785134306efe9329f40815af45b9215068d6ae4747ec0bc91ff1f4aa/pytest-8.2.0.tar.gz
+[2024-05-19 21:09:13] INFO root fetch - processPackages [prompts.py]: Downloading https://files.pythonhosted.org/packages/4e/4b/89aaad88df47e95b83bb4e2344e9cc3df80fe171d3f3be5d0555216607e9/prompts_py-0.1.1.tar.gz
+[2024-05-19 21:09:13] INFO root fetch - processPackages [gadapt]: executing diffoscope
+[2024-05-19 21:09:13] INFO root fetch - processPackages [gadapt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gadapt-0.4.2.tar.gz tmp/gadapt-0.4.3.tar.gz --markdown 20240519/g/gadapt/0.4.2-0.4.3/README.md --exclude *.pyd
+[2024-05-19 21:09:13] INFO root fetch - processPackages [pytest]: executing diffoscope
+[2024-05-19 21:09:13] INFO root fetch - processPackages [pytest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-8.1.2.tar.gz tmp/pytest-8.2.0.tar.gz --markdown 20240519/p/pytest/8.1.2-8.2.0/README.md --exclude *.pyd
+[2024-05-19 21:09:13] INFO root fetch - processPackages [prompts.py]: executing diffoscope
+[2024-05-19 21:09:13] INFO root fetch - processPackages [prompts.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prompts_py-0.1.0.tar.gz tmp/prompts_py-0.1.1.tar.gz --markdown 20240519/p/prompts.py/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-19 21:09:14] INFO root fetch - processPackages [myjd-api]: Remove: archive file [/home/abi/fetcher/tmp/myjd_api-1.2.1.tar.gz]
+[2024-05-19 21:09:14] INFO root fetch - processPackages [myjd-api]: Remove: archive file [/home/abi/fetcher/tmp/myjd_api-1.2.2.tar.gz]
+[2024-05-19 21:09:14] INFO root fetch - main [MainThread]: End processing [myjd-api]: success
+[2024-05-19 21:09:14] INFO root fetch - processPackages [wol-api]: Remove: archive file [/home/abi/fetcher/tmp/wol_api-1.0.0.tar.gz]
+[2024-05-19 21:09:14] INFO root fetch - processPackages [wol-api]: Remove: archive file [/home/abi/fetcher/tmp/wol_api-1.0.1.tar.gz]
+[2024-05-19 21:09:14] INFO root fetch - main [MainThread]: End processing [wol-api]: success
+[2024-05-19 21:09:14] INFO root fetch - processPackages [prompts.py]: Remove: archive file [/home/abi/fetcher/tmp/prompts_py-0.1.0.tar.gz]
+[2024-05-19 21:09:14] INFO root fetch - processPackages [prompts.py]: Remove: archive file [/home/abi/fetcher/tmp/prompts_py-0.1.1.tar.gz]
+[2024-05-19 21:09:14] INFO root fetch - main [MainThread]: End processing [prompts.py]: success
+[2024-05-19 21:09:14] INFO root fetch - processPackages [gadapt]: Remove: archive file [/home/abi/fetcher/tmp/gadapt-0.4.2.tar.gz]
+[2024-05-19 21:09:14] INFO root fetch - processPackages [gadapt]: Remove: archive file [/home/abi/fetcher/tmp/gadapt-0.4.3.tar.gz]
+[2024-05-19 21:09:14] INFO root fetch - main [MainThread]: End processing [gadapt]: success
+[2024-05-19 21:09:15] INFO root fetch - processPackages [pedalboard]: Downloading https://files.pythonhosted.org/packages/be/09/e2cb87623285d6d1c63b781090177fc3777282c682df35e3cf38f7a304cc/pedalboard-0.9.6-pp37-pypy37_pp73-macosx_10_13_x86_64.whl
+[2024-05-19 21:09:17] INFO root fetch - processPackages [pytest]: Remove: archive file [/home/abi/fetcher/tmp/pytest-8.1.2.tar.gz]
+[2024-05-19 21:09:17] INFO root fetch - processPackages [pytest]: Remove: archive file [/home/abi/fetcher/tmp/pytest-8.2.0.tar.gz]
+[2024-05-19 21:09:17] INFO root fetch - main [MainThread]: End processing [pytest]: success
+[2024-05-19 21:09:17] INFO root fetch - processPackages [pedalboard]: executing diffoscope
+[2024-05-19 21:09:17] INFO root fetch - processPackages [pedalboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pedalboard-0.9.5-pp39-pypy39_pp73-win_amd64.whl.zip tmp/pedalboard-0.9.6-pp37-pypy37_pp73-macosx_10_13_x86_64.whl.zip --markdown 20240519/p/pedalboard/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-05-19 21:09:18] INFO root fetch - processPackages [pedalboard]: Remove: archive file [/home/abi/fetcher/tmp/pedalboard-0.9.5-pp39-pypy39_pp73-win_amd64.whl.zip]
+[2024-05-19 21:09:18] INFO root fetch - processPackages [pedalboard]: Remove: archive file [/home/abi/fetcher/tmp/pedalboard-0.9.6-pp37-pypy37_pp73-macosx_10_13_x86_64.whl.zip]
+[2024-05-19 21:09:18] INFO root fetch - main [MainThread]: End processing [pedalboard]: success
+[2024-05-19 21:09:18] INFO root fetch - main [MainThread]: Store serial: [23279587]
