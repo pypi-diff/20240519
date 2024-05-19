@@ -8803,3 +8803,21 @@
 [2024-05-19 12:57:44] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.6.3.tar.gz]
 [2024-05-19 12:57:44] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
 [2024-05-19 12:57:44] INFO root fetch - main [MainThread]: Store serial: [23275665]
+[2024-05-19 12:59:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275665]
+[2024-05-19 12:59:52] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-19 12:59:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: geneserinz
+[2024-05-19 12:59:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonToSW
+[2024-05-19 12:59:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyCutee
+[2024-05-19 12:59:53] WARNING root fetch - processPackages [PyCutee]: Skipping, unable to determine old version
+[2024-05-19 12:59:53] INFO root fetch - main [MainThread]: End processing [PyCutee] error
+[2024-05-19 12:59:53] WARNING root fetch - processPackages [geneserinz]: Skipping, unable to determine old version
+[2024-05-19 12:59:53] INFO root fetch - main [MainThread]: End processing [geneserinz] error
+[2024-05-19 12:59:53] INFO root fetch - processPackages [PythonToSW]: New version: [1.2.5] Old Version: [1.2.4]
+[2024-05-19 12:59:53] INFO root fetch - processPackages [PythonToSW]: Downloading https://files.pythonhosted.org/packages/6d/74/3221570072d2bcef41e6493268ad4ba6ed7e692456a227ca00cb70a82ca8/PythonToSW-1.2.4.tar.gz
+[2024-05-19 12:59:53] INFO root fetch - processPackages [PythonToSW]: Downloading https://files.pythonhosted.org/packages/d2/97/818a85847288dddde78fb36b9ca74137e9e2095e5c5b28cad0b8281d3088/PythonToSW-1.2.5.tar.gz
+[2024-05-19 12:59:53] INFO root fetch - processPackages [PythonToSW]: executing diffoscope
+[2024-05-19 12:59:53] INFO root fetch - processPackages [PythonToSW]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PythonToSW-1.2.4.tar.gz tmp/PythonToSW-1.2.5.tar.gz --markdown 20240519/P/PythonToSW/1.2.4-1.2.5/README.md --exclude *.pyd
+[2024-05-19 12:59:54] INFO root fetch - processPackages [PythonToSW]: Remove: archive file [/home/abi/fetcher/tmp/PythonToSW-1.2.4.tar.gz]
+[2024-05-19 12:59:54] INFO root fetch - processPackages [PythonToSW]: Remove: archive file [/home/abi/fetcher/tmp/PythonToSW-1.2.5.tar.gz]
+[2024-05-19 12:59:54] INFO root fetch - main [MainThread]: End processing [PythonToSW]: success
+[2024-05-19 12:59:54] INFO root fetch - main [MainThread]: Store serial: [23275676]
