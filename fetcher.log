@@ -17929,3 +17929,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 22:06:53] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-1.3.0b1.tar.gz]
 [2024-05-19 22:06:53] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
 [2024-05-19 22:06:53] INFO root fetch - main [MainThread]: Store serial: [23279934]
+[2024-05-19 22:08:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279934]
+[2024-05-19 22:09:02] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-19 22:09:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: eras
+[2024-05-19 22:09:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aim-ui
+[2024-05-19 22:09:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ManipulaPy
+[2024-05-19 22:09:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: astro-SPLASH
+[2024-05-19 22:09:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aim
+[2024-05-19 22:09:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: woningwaardering
+[2024-05-19 22:09:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: crownstone-cloud
+[2024-05-19 22:09:02] INFO root fetch - processPackages [woningwaardering]: New version: [0.2.15a0] Old Version: [0.2.0a1]
+[2024-05-19 22:09:02] INFO root fetch - processPackages [eras]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-19 22:09:02] INFO root fetch - processPackages [aim-ui]: New version: [4.1.0.dev20230930] Old Version: [4.1.0.dev20230929]
+[2024-05-19 22:09:02] INFO root fetch - processPackages [astro-SPLASH]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-19 22:09:02] INFO root fetch - processPackages [crownstone-cloud]: New version: [1.4.9] Old Version: [1.4.8]
+[2024-05-19 22:09:02] INFO root fetch - processPackages [woningwaardering]: Downloading https://files.pythonhosted.org/packages/9b/75/cf8335aa18bbecc1694754b3b1fe7a045aace36a6763b0b3003142dda316/woningwaardering-0.2.0a1.tar.gz
+[2024-05-19 22:09:02] INFO root fetch - processPackages [ManipulaPy]: New version: [1.0.1] Old Version: [1.0.0.2]
+[2024-05-19 22:09:02] INFO root fetch - processPackages [eras]: Downloading https://files.pythonhosted.org/packages/a3/be/7ca5dbde6b1b434db21d8ccf3a1c35c39587dd83f8067e9fc2a97a3a37c5/eras-0.1.3.tar.gz
+[2024-05-19 22:09:02] INFO root fetch - processPackages [aim-ui]: Downloading https://files.pythonhosted.org/packages/2a/05/f8c2e155a815903b692d80c9a1647ba25d4a1f119791eaeb671026bcfa33/aim-ui-4.1.0.dev20230929.tar.gz
+[2024-05-19 22:09:02] WARNING root fetch - processPackages [aim-ui]: Skipping package: exceeds size limit 19246573>=10485760
+[2024-05-19 22:09:02] INFO root fetch - main [MainThread]: End processing [aim-ui] error
+[2024-05-19 22:09:02] INFO root fetch - processPackages [aim]: New version: [4.0.3] Old Version: [4.0.2]
+[2024-05-19 22:09:02] INFO root fetch - processPackages [astro-SPLASH]: Downloading https://files.pythonhosted.org/packages/ea/43/a774b971ecfadd2405f67ec83ff98ba8c5537ff8d9a54e4d4424786284fd/astro_SPLASH-0.1.4.tar.gz
+[2024-05-19 22:09:02] INFO root fetch - processPackages [ManipulaPy]: Downloading https://files.pythonhosted.org/packages/a4/e2/dd209353a3416f64516b72b286b36e795ebdf8523588ef89aed7feb20c20/ManipulaPy-1.0.0.2.tar.gz
+[2024-05-19 22:09:02] WARNING root fetch - processPackages [astro-SPLASH]: Skipping package: exceeds size limit 39592836>=10485760
+[2024-05-19 22:09:02] INFO root fetch - main [MainThread]: End processing [astro-SPLASH] error
+[2024-05-19 22:09:02] INFO root fetch - processPackages [crownstone-cloud]: Downloading https://files.pythonhosted.org/packages/fb/41/d3ab161dfc01ec8c09fb2c340744c67b36df17cc647a970abebb5a6d6a8b/crownstone-cloud-1.4.8.tar.gz
+[2024-05-19 22:09:02] INFO root fetch - processPackages [eras]: Downloading https://files.pythonhosted.org/packages/22/bc/9961ba55708d5ec4e45bd0e1300fc74687f7d88648f261e064df9475684a/eras-0.1.4.tar.gz
+[2024-05-19 22:09:02] ERROR root fetch - processPackages [woningwaardering]: Unable to fetch info: No such project/version 'woningwaardering' 0.2.15a0
+[2024-05-19 22:09:02] INFO root fetch - main [MainThread]: End processing [woningwaardering] error
+[2024-05-19 22:09:02] INFO root fetch - processPackages [aim]: Downloading https://files.pythonhosted.org/packages/4a/00/f7e303a3bd0a6d75c08ccd60562a0c5f00fa9f4c16c945fbffa86d96ab7d/aim-4.0.2.tar.gz
+[2024-05-19 22:09:02] INFO root fetch - processPackages [eras]: executing diffoscope
+[2024-05-19 22:09:02] INFO root fetch - processPackages [eras]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eras-0.1.3.tar.gz tmp/eras-0.1.4.tar.gz --markdown 20240519/e/eras/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-19 22:09:03] INFO root fetch - processPackages [ManipulaPy]: Downloading https://files.pythonhosted.org/packages/98/81/74ab4982022a8041c22070f84db69690b689b77b55012785faf10454d39f/ManipulaPy-1.0.1.tar.gz
+[2024-05-19 22:09:03] INFO root fetch - processPackages [crownstone-cloud]: Downloading https://files.pythonhosted.org/packages/76/01/889a7f4e05fbd266689ddf5ebde96a45eb4814a0907c5316969ddc7f3257/crownstone-cloud-1.4.9.tar.gz
+[2024-05-19 22:09:03] INFO root fetch - processPackages [ManipulaPy]: executing diffoscope
+[2024-05-19 22:09:03] INFO root fetch - processPackages [ManipulaPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ManipulaPy-1.0.0.2.tar.gz tmp/ManipulaPy-1.0.1.tar.gz --markdown 20240519/M/ManipulaPy/1.0.0.2-1.0.1/README.md --exclude *.pyd
+[2024-05-19 22:09:03] INFO root fetch - processPackages [crownstone-cloud]: executing diffoscope
+[2024-05-19 22:09:03] INFO root fetch - processPackages [crownstone-cloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crownstone-cloud-1.4.8.tar.gz tmp/crownstone-cloud-1.4.9.tar.gz --markdown 20240519/c/crownstone-cloud/1.4.8-1.4.9/README.md --exclude *.pyd
+[2024-05-19 22:09:03] INFO root fetch - processPackages [aim]: Downloading https://files.pythonhosted.org/packages/50/12/a5a7bf25fd6105558d11afbd3f7500aa63283494e429296746c821354590/aim-4.0.3.tar.gz
+[2024-05-19 22:09:03] INFO root fetch - processPackages [eras]: Remove: archive file [/home/abi/fetcher/tmp/eras-0.1.3.tar.gz]
+[2024-05-19 22:09:03] INFO root fetch - processPackages [eras]: Remove: archive file [/home/abi/fetcher/tmp/eras-0.1.4.tar.gz]
+[2024-05-19 22:09:03] INFO root fetch - main [MainThread]: End processing [eras]: success
+[2024-05-19 22:09:03] INFO root fetch - processPackages [ManipulaPy]: Remove: archive file [/home/abi/fetcher/tmp/ManipulaPy-1.0.0.2.tar.gz]
+[2024-05-19 22:09:03] INFO root fetch - processPackages [ManipulaPy]: Remove: archive file [/home/abi/fetcher/tmp/ManipulaPy-1.0.1.tar.gz]
+[2024-05-19 22:09:03] INFO root fetch - main [MainThread]: End processing [ManipulaPy]: success
+[2024-05-19 22:09:03] INFO root fetch - processPackages [crownstone-cloud]: Remove: archive file [/home/abi/fetcher/tmp/crownstone-cloud-1.4.8.tar.gz]
+[2024-05-19 22:09:03] INFO root fetch - processPackages [crownstone-cloud]: Remove: archive file [/home/abi/fetcher/tmp/crownstone-cloud-1.4.9.tar.gz]
+[2024-05-19 22:09:03] INFO root fetch - main [MainThread]: End processing [crownstone-cloud]: success
+[2024-05-19 22:09:03] INFO root fetch - processPackages [aim]: executing diffoscope
+[2024-05-19 22:09:03] INFO root fetch - processPackages [aim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aim-4.0.2.tar.gz tmp/aim-4.0.3.tar.gz --markdown 20240519/a/aim/4.0.2-4.0.3/README.md --exclude *.pyd
+[2024-05-19 22:09:08] INFO root fetch - processPackages [aim]: Remove: archive file [/home/abi/fetcher/tmp/aim-4.0.2.tar.gz]
+[2024-05-19 22:09:08] INFO root fetch - processPackages [aim]: Remove: archive file [/home/abi/fetcher/tmp/aim-4.0.3.tar.gz]
+[2024-05-19 22:09:08] INFO root fetch - main [MainThread]: End processing [aim]: success
+[2024-05-19 22:09:08] INFO root fetch - main [MainThread]: Store serial: [23279954]
