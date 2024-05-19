@@ -14512,3 +14512,11 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 18:47:34] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
 [2024-05-19 18:47:34] INFO root fetch - main [MainThread]: End processing [yeref]: success
 [2024-05-19 18:47:34] INFO root fetch - main [MainThread]: Store serial: [23278313]
+[2024-05-19 18:49:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23278313]
+[2024-05-19 18:49:43] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 18:49:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-tinywiki
+[2024-05-19 18:49:43] INFO root fetch - processPackages [django-tinywiki]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-19 18:49:43] INFO root fetch - processPackages [django-tinywiki]: Downloading https://files.pythonhosted.org/packages/e9/59/a47c98feba7d406040741ebd234cbc7861d8654467ff720696ae6de00283/django_tinywiki-0.0.7.tar.gz
+[2024-05-19 18:49:43] WARNING root fetch - processPackages [django-tinywiki]: Skipping package: exceeds size limit 24509041>=10485760
+[2024-05-19 18:49:43] INFO root fetch - main [MainThread]: End processing [django-tinywiki] error
+[2024-05-19 18:49:43] INFO root fetch - main [MainThread]: Store serial: [23278316]
