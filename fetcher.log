@@ -8125,3 +8125,60 @@
 [2024-05-19 12:07:32] INFO root fetch - processPackages [invenio-records-marc21]: Remove: archive file [/home/abi/fetcher/tmp/invenio-records-marc21-0.9.2.tar.gz]
 [2024-05-19 12:07:32] INFO root fetch - main [MainThread]: End processing [invenio-records-marc21]: success
 [2024-05-19 12:07:32] INFO root fetch - main [MainThread]: Store serial: [23275315]
+[2024-05-19 12:09:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23275315]
+[2024-05-19 12:09:40] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-19 12:09:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nai3api
+[2024-05-19 12:09:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cpt-python
+[2024-05-19 12:09:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mergemate
+[2024-05-19 12:09:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: txt2ebook
+[2024-05-19 12:09:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: auto-coder
+[2024-05-19 12:09:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: kiclearance
+[2024-05-19 12:09:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ctrip-app-ui
+[2024-05-19 12:09:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: meltdown
+[2024-05-19 12:09:40] INFO root fetch - processPackages [auto-coder]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-19 12:09:40] WARNING root fetch - processPackages [nai3api]: Skipping, unable to determine old version
+[2024-05-19 12:09:40] INFO root fetch - main [MainThread]: End processing [nai3api] error
+[2024-05-19 12:09:40] INFO root fetch - processPackages [ctrip-app-ui]: New version: [0.6.1] Old Version: [0.6.0]
+[2024-05-19 12:09:40] WARNING root fetch - processPackages [mergemate]: Skipping, unable to determine old version
+[2024-05-19 12:09:40] INFO root fetch - main [MainThread]: End processing [mergemate] error
+[2024-05-19 12:09:40] INFO root fetch - processPackages [auto-coder]: Downloading https://files.pythonhosted.org/packages/d1/69/520c5552e42e8901e930364867dc863b8beb917b52544194a46c864a7385/auto-coder-0.1.8.tar.gz
+[2024-05-19 12:09:40] INFO root fetch - processPackages [kiclearance]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-19 12:09:40] WARNING root fetch - processPackages [cpt-python]: Skipping, unable to determine old version
+[2024-05-19 12:09:40] INFO root fetch - main [MainThread]: End processing [cpt-python] error
+[2024-05-19 12:09:40] INFO root fetch - processPackages [meltdown]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-19 12:09:40] INFO root fetch - processPackages [txt2ebook]: New version: [0.1.9] Old Version: [0.1.88]
+[2024-05-19 12:09:40] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/bc/d7/3dd9ba484855c40b29d1de09dddf73edfd9da05f657bdf3edf2d71a05e6d/ctrip-app-ui-0.6.0.tar.gz
+[2024-05-19 12:09:40] INFO root fetch - processPackages [auto-coder]: Downloading https://files.pythonhosted.org/packages/4d/9a/1bad03fbe8fd6d47cd359f857b05e28efaa8cba07c33aa029696a40dd646/auto-coder-0.1.9.tar.gz
+[2024-05-19 12:09:40] INFO root fetch - processPackages [kiclearance]: Downloading https://files.pythonhosted.org/packages/b1/0c/569b4aa35cc96cca3ffcddf8591dbbc6c20bf386520ed2720d3db3e50764/kiclearance-0.0.1.tar.gz
+[2024-05-19 12:09:40] INFO root fetch - processPackages [meltdown]: Downloading https://files.pythonhosted.org/packages/18/81/13f44e573fe33bb6ee6898c539512a138ac3d2b4c0a46629ef02244e6cbb/meltdown-0.0.3.tar.gz
+[2024-05-19 12:09:40] INFO root fetch - processPackages [txt2ebook]: Downloading https://files.pythonhosted.org/packages/f4/1d/0a6d94c8863043725199434a59aade8e80326c30b5b0fdaa5f7dc6869166/txt2ebook-0.1.88.tar.gz
+[2024-05-19 12:09:41] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/b7/dd/fcba3f1c346269d10c3a110a2b8e6d0f236fbfc3507b66e1814ddf87a852/ctrip-app-ui-0.6.1.tar.gz
+[2024-05-19 12:09:41] INFO root fetch - processPackages [auto-coder]: executing diffoscope
+[2024-05-19 12:09:41] INFO root fetch - processPackages [auto-coder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto-coder-0.1.8.tar.gz tmp/auto-coder-0.1.9.tar.gz --markdown 20240519/a/auto-coder/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-19 12:09:41] INFO root fetch - processPackages [ctrip-app-ui]: executing diffoscope
+[2024-05-19 12:09:41] INFO root fetch - processPackages [ctrip-app-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctrip-app-ui-0.6.0.tar.gz tmp/ctrip-app-ui-0.6.1.tar.gz --markdown 20240519/c/ctrip-app-ui/0.6.0-0.6.1/README.md --exclude *.pyd
+[2024-05-19 12:09:41] INFO root fetch - processPackages [kiclearance]: Downloading https://files.pythonhosted.org/packages/78/bc/fe4ff5f3d6e3cb703af425e725d9f0492faa3717503a776c8e11fe4be68d/kiclearance-0.0.2.tar.gz
+[2024-05-19 12:09:41] INFO root fetch - processPackages [meltdown]: Downloading https://files.pythonhosted.org/packages/5d/c4/ab221e1727c939496f9f0cfe296c31cd4179fbe05dfb77a090f4271f9712/meltdown-0.0.4.tar.gz
+[2024-05-19 12:09:41] INFO root fetch - processPackages [txt2ebook]: Downloading https://files.pythonhosted.org/packages/2a/b8/8ad395f87b8f7685da9b3f389de9870183f09446c9f0624dfed431e3b9b8/txt2ebook-0.1.9.tar.gz
+[2024-05-19 12:09:41] INFO root fetch - processPackages [kiclearance]: executing diffoscope
+[2024-05-19 12:09:41] INFO root fetch - processPackages [kiclearance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kiclearance-0.0.1.tar.gz tmp/kiclearance-0.0.2.tar.gz --markdown 20240519/k/kiclearance/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-19 12:09:41] INFO root fetch - processPackages [meltdown]: executing diffoscope
+[2024-05-19 12:09:41] INFO root fetch - processPackages [meltdown]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meltdown-0.0.3.tar.gz tmp/meltdown-0.0.4.tar.gz --markdown 20240519/m/meltdown/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-19 12:09:41] INFO root fetch - processPackages [txt2ebook]: executing diffoscope
+[2024-05-19 12:09:41] INFO root fetch - processPackages [txt2ebook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/txt2ebook-0.1.88.tar.gz tmp/txt2ebook-0.1.9.tar.gz --markdown 20240519/t/txt2ebook/0.1.88-0.1.9/README.md --exclude *.pyd
+[2024-05-19 12:09:41] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.6.0.tar.gz]
+[2024-05-19 12:09:41] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.6.1.tar.gz]
+[2024-05-19 12:09:41] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
+[2024-05-19 12:09:41] INFO root fetch - processPackages [auto-coder]: Remove: archive file [/home/abi/fetcher/tmp/auto-coder-0.1.8.tar.gz]
+[2024-05-19 12:09:41] INFO root fetch - processPackages [auto-coder]: Remove: archive file [/home/abi/fetcher/tmp/auto-coder-0.1.9.tar.gz]
+[2024-05-19 12:09:41] INFO root fetch - main [MainThread]: End processing [auto-coder]: success
+[2024-05-19 12:09:41] INFO root fetch - processPackages [meltdown]: Remove: archive file [/home/abi/fetcher/tmp/meltdown-0.0.3.tar.gz]
+[2024-05-19 12:09:41] INFO root fetch - processPackages [meltdown]: Remove: archive file [/home/abi/fetcher/tmp/meltdown-0.0.4.tar.gz]
+[2024-05-19 12:09:41] INFO root fetch - main [MainThread]: End processing [meltdown]: success
+[2024-05-19 12:09:42] INFO root fetch - processPackages [kiclearance]: Remove: archive file [/home/abi/fetcher/tmp/kiclearance-0.0.1.tar.gz]
+[2024-05-19 12:09:42] INFO root fetch - processPackages [kiclearance]: Remove: archive file [/home/abi/fetcher/tmp/kiclearance-0.0.2.tar.gz]
+[2024-05-19 12:09:42] INFO root fetch - main [MainThread]: End processing [kiclearance]: success
+[2024-05-19 12:09:42] INFO root fetch - processPackages [txt2ebook]: Remove: archive file [/home/abi/fetcher/tmp/txt2ebook-0.1.88.tar.gz]
+[2024-05-19 12:09:42] INFO root fetch - processPackages [txt2ebook]: Remove: archive file [/home/abi/fetcher/tmp/txt2ebook-0.1.9.tar.gz]
+[2024-05-19 12:09:42] INFO root fetch - main [MainThread]: End processing [txt2ebook]: success
+[2024-05-19 12:09:42] INFO root fetch - main [MainThread]: Store serial: [23275350]
