@@ -2177,3 +2177,15 @@
 [2024-05-19 03:45:30] INFO root fetch - processPackages [pydumpck]: Remove: archive file [/home/abi/fetcher/tmp/pydumpck-1.7.62.tar.gz]
 [2024-05-19 03:45:30] INFO root fetch - main [MainThread]: End processing [pydumpck]: success
 [2024-05-19 03:45:30] INFO root fetch - main [MainThread]: Store serial: [23272495]
+[2024-05-19 03:47:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23272495]
+[2024-05-19 03:47:38] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-19 03:47:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aa-ledger
+[2024-05-19 03:47:38] INFO root fetch - processPackages [aa-ledger]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-05-19 03:47:39] INFO root fetch - processPackages [aa-ledger]: Downloading https://files.pythonhosted.org/packages/bf/71/12103a164f247517183c7237a4673eaf10d682068ee55d393f48ae766a52/aa_ledger-0.3.4.tar.gz
+[2024-05-19 03:47:39] INFO root fetch - processPackages [aa-ledger]: Downloading https://files.pythonhosted.org/packages/94/6d/4fa9ace6d0602ca0f53b77af5bf6e52ffa390c5a69745fd2f6f02e538d90/aa_ledger-0.3.5.tar.gz
+[2024-05-19 03:47:39] INFO root fetch - processPackages [aa-ledger]: executing diffoscope
+[2024-05-19 03:47:39] INFO root fetch - processPackages [aa-ledger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aa_ledger-0.3.4.tar.gz tmp/aa_ledger-0.3.5.tar.gz --markdown 20240519/a/aa-ledger/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-05-19 03:47:40] INFO root fetch - processPackages [aa-ledger]: Remove: archive file [/home/abi/fetcher/tmp/aa_ledger-0.3.4.tar.gz]
+[2024-05-19 03:47:40] INFO root fetch - processPackages [aa-ledger]: Remove: archive file [/home/abi/fetcher/tmp/aa_ledger-0.3.5.tar.gz]
+[2024-05-19 03:47:40] INFO root fetch - main [MainThread]: End processing [aa-ledger]: success
+[2024-05-19 03:47:40] INFO root fetch - main [MainThread]: Store serial: [23272506]
