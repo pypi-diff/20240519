@@ -19744,3 +19744,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 23:03:47] INFO root fetch - processPackages [tencentcloud-sdk-python-habo]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-habo-3.0.999.tar.gz]
 [2024-05-19 23:03:47] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-habo]: success
 [2024-05-19 23:03:47] INFO root fetch - main [MainThread]: Store serial: [23280664]
+[2024-05-19 23:05:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23280664]
+[2024-05-19 23:05:55] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-19 23:05:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tencentcloud-sdk-python-habo
+[2024-05-19 23:05:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tencentcloud-sdk-python-hasim
+[2024-05-19 23:05:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nadeo-api
+[2024-05-19 23:05:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: s5learn
+[2024-05-19 23:05:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tencentcloud-sdk-python-hcm
+[2024-05-19 23:05:56] INFO root fetch - processPackages [s5learn]: New version: [0.3] Old Version: [0.2]
+[2024-05-19 23:05:56] INFO root fetch - processPackages [tencentcloud-sdk-python-habo]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-19 23:05:56] INFO root fetch - processPackages [nadeo-api]: New version: [0.4.0] Old Version: [0.3.4]
+[2024-05-19 23:05:56] INFO root fetch - processPackages [s5learn]: Downloading https://files.pythonhosted.org/packages/c9/80/0051e84a792f52ff59f569f34eb8ded186cda12ec743f526abad0f98ffea/s5learn-0.2.tar.gz
+[2024-05-19 23:05:56] INFO root fetch - processPackages [tencentcloud-sdk-python-hasim]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-19 23:05:56] INFO root fetch - processPackages [tencentcloud-sdk-python-hcm]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-19 23:05:56] INFO root fetch - processPackages [tencentcloud-sdk-python-habo]: Downloading https://files.pythonhosted.org/packages/3e/f9/408ad8967e1c86af4405c75bb31f04f25b6f60105f22d7397161e0d1152a/tencentcloud-sdk-python-habo-3.0.998.tar.gz
+[2024-05-19 23:05:56] INFO root fetch - processPackages [nadeo-api]: Downloading https://files.pythonhosted.org/packages/34/8d/09c54fcd4bbe46e1abd3e619ee19086767614770d5b8d55d3e58bbb46232/nadeo_api-0.3.4.tar.gz
+[2024-05-19 23:05:56] INFO root fetch - processPackages [tencentcloud-sdk-python-habo]: Downloading https://files.pythonhosted.org/packages/bf/f6/f56e56def0fb77e2e74658453f68dc375b8a59e1d12fe99551c0a0868c37/tencentcloud-sdk-python-habo-3.0.999.tar.gz
+[2024-05-19 23:05:56] INFO root fetch - processPackages [tencentcloud-sdk-python-hcm]: Downloading https://files.pythonhosted.org/packages/96/2a/0150d61f4e501f162bee63f1ddeee4ae01889d8fb99fa43e5b3b467f3d78/tencentcloud-sdk-python-hcm-3.0.998.tar.gz
+[2024-05-19 23:05:56] INFO root fetch - processPackages [tencentcloud-sdk-python-hasim]: Downloading https://files.pythonhosted.org/packages/e7/33/c0fdc90dfc13b734de4f8b458d7cd0917925272e793e4ee00d161c0b5406/tencentcloud-sdk-python-hasim-3.0.998.tar.gz
+[2024-05-19 23:05:56] INFO root fetch - processPackages [s5learn]: Downloading https://files.pythonhosted.org/packages/b0/0a/12b95e6fc17adf9d59adc8d5fd77b1645ad2e3805512032d2596312fc9cf/s5learn-0.3.tar.gz
+[2024-05-19 23:05:56] INFO root fetch - processPackages [tencentcloud-sdk-python-habo]: executing diffoscope
+[2024-05-19 23:05:56] INFO root fetch - processPackages [tencentcloud-sdk-python-habo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-habo-3.0.998.tar.gz tmp/tencentcloud-sdk-python-habo-3.0.999.tar.gz --markdown 20240519/t/tencentcloud-sdk-python-habo/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-19 23:05:56] INFO root fetch - processPackages [s5learn]: executing diffoscope
+[2024-05-19 23:05:56] INFO root fetch - processPackages [s5learn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/s5learn-0.2.tar.gz tmp/s5learn-0.3.tar.gz --markdown 20240519/s/s5learn/0.2-0.3/README.md --exclude *.pyd
+[2024-05-19 23:05:56] INFO root fetch - processPackages [nadeo-api]: Downloading https://files.pythonhosted.org/packages/fe/5a/65a13cd57e8d4257cdc224bc298376fd795433bea296a5381c8c8fb15b9b/nadeo_api-0.4.0.tar.gz
+[2024-05-19 23:05:56] INFO root fetch - processPackages [nadeo-api]: executing diffoscope
+[2024-05-19 23:05:56] INFO root fetch - processPackages [nadeo-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nadeo_api-0.3.4.tar.gz tmp/nadeo_api-0.4.0.tar.gz --markdown 20240519/n/nadeo-api/0.3.4-0.4.0/README.md --exclude *.pyd
+[2024-05-19 23:05:56] INFO root fetch - processPackages [tencentcloud-sdk-python-hcm]: Downloading https://files.pythonhosted.org/packages/c5/41/8e8c6127ebf5e5b95c323557bd91c58c5d0b32bc51dea67f0108b7dadc07/tencentcloud-sdk-python-hcm-3.0.999.tar.gz
+[2024-05-19 23:05:57] INFO root fetch - processPackages [tencentcloud-sdk-python-hasim]: Downloading https://files.pythonhosted.org/packages/0c/7b/42614c4a92725429aabb6923498b4ff0c3d23a291b561ec153ef716ee88b/tencentcloud-sdk-python-hasim-3.0.999.tar.gz
+[2024-05-19 23:05:57] INFO root fetch - processPackages [tencentcloud-sdk-python-hcm]: executing diffoscope
+[2024-05-19 23:05:57] INFO root fetch - processPackages [tencentcloud-sdk-python-hcm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-hcm-3.0.998.tar.gz tmp/tencentcloud-sdk-python-hcm-3.0.999.tar.gz --markdown 20240519/t/tencentcloud-sdk-python-hcm/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-19 23:05:57] INFO root fetch - processPackages [tencentcloud-sdk-python-hasim]: executing diffoscope
+[2024-05-19 23:05:57] INFO root fetch - processPackages [tencentcloud-sdk-python-hasim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-hasim-3.0.998.tar.gz tmp/tencentcloud-sdk-python-hasim-3.0.999.tar.gz --markdown 20240519/t/tencentcloud-sdk-python-hasim/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-19 23:05:57] INFO root fetch - processPackages [s5learn]: Remove: archive file [/home/abi/fetcher/tmp/s5learn-0.2.tar.gz]
+[2024-05-19 23:05:57] INFO root fetch - processPackages [s5learn]: Remove: archive file [/home/abi/fetcher/tmp/s5learn-0.3.tar.gz]
+[2024-05-19 23:05:57] INFO root fetch - main [MainThread]: End processing [s5learn]: success
+[2024-05-19 23:05:57] INFO root fetch - processPackages [tencentcloud-sdk-python-habo]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-habo-3.0.998.tar.gz]
+[2024-05-19 23:05:57] INFO root fetch - processPackages [tencentcloud-sdk-python-habo]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-habo-3.0.999.tar.gz]
+[2024-05-19 23:05:57] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-habo]: success
+[2024-05-19 23:05:57] INFO root fetch - processPackages [nadeo-api]: Remove: archive file [/home/abi/fetcher/tmp/nadeo_api-0.3.4.tar.gz]
+[2024-05-19 23:05:57] INFO root fetch - processPackages [nadeo-api]: Remove: archive file [/home/abi/fetcher/tmp/nadeo_api-0.4.0.tar.gz]
+[2024-05-19 23:05:57] INFO root fetch - main [MainThread]: End processing [nadeo-api]: success
+[2024-05-19 23:05:57] INFO root fetch - processPackages [tencentcloud-sdk-python-hcm]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-hcm-3.0.998.tar.gz]
+[2024-05-19 23:05:57] INFO root fetch - processPackages [tencentcloud-sdk-python-hcm]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-hcm-3.0.999.tar.gz]
+[2024-05-19 23:05:57] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-hcm]: success
+[2024-05-19 23:05:57] INFO root fetch - processPackages [tencentcloud-sdk-python-hasim]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-hasim-3.0.998.tar.gz]
+[2024-05-19 23:05:57] INFO root fetch - processPackages [tencentcloud-sdk-python-hasim]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-hasim-3.0.999.tar.gz]
+[2024-05-19 23:05:57] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-hasim]: success
+[2024-05-19 23:05:57] INFO root fetch - main [MainThread]: Store serial: [23280679]
