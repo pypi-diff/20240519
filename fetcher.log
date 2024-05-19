@@ -5244,3 +5244,24 @@
 [2024-05-19 08:29:10] INFO root fetch - processPackages [odoo13-addons-oca-purchase-workflow]: Remove: archive file [/home/abi/fetcher/tmp/odoo13_addons_oca_purchase_workflow-13.0.20240518.0-py3-none-any.whl.zip]
 [2024-05-19 08:29:10] INFO root fetch - main [MainThread]: End processing [odoo13-addons-oca-purchase-workflow]: success
 [2024-05-19 08:29:10] INFO root fetch - main [MainThread]: Store serial: [23273825]
+[2024-05-19 08:31:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23273825]
+[2024-05-19 08:31:19] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-19 08:31:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bridgecrew
+[2024-05-19 08:31:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mp2c
+[2024-05-19 08:31:19] INFO root fetch - processPackages [mp2c]: New version: [0.9.0] Old Version: [0.1.1]
+[2024-05-19 08:31:19] INFO root fetch - processPackages [bridgecrew]: New version: [3.2.96] Old Version: [3.2.95]
+[2024-05-19 08:31:20] INFO root fetch - processPackages [mp2c]: Downloading https://files.pythonhosted.org/packages/17/c9/95b4b75a8476f782aa679ad5c25d7b6838239070775899388be1aaa11281/mp2c-0.1.1.tar.gz
+[2024-05-19 08:31:20] INFO root fetch - processPackages [bridgecrew]: Downloading https://files.pythonhosted.org/packages/22/5f/ac0c3610940f5de9c60430470ee59e43204e15127b7bef5cf9d518e04022/bridgecrew-3.2.95.tar.gz
+[2024-05-19 08:31:20] INFO root fetch - processPackages [mp2c]: Downloading https://files.pythonhosted.org/packages/60/5f/a265185b79e5c8a44dbdd51fc76391f0cf2d5fd9c00ff1fdd53266570a55/mp2c-0.9.0.tar.gz
+[2024-05-19 08:31:20] INFO root fetch - processPackages [bridgecrew]: Downloading https://files.pythonhosted.org/packages/fc/82/c9951aacb6977009bd11e7a1faf43ed2bbc86381cc50badea5c8a9fd8432/bridgecrew-3.2.96.tar.gz
+[2024-05-19 08:31:20] INFO root fetch - processPackages [mp2c]: executing diffoscope
+[2024-05-19 08:31:20] INFO root fetch - processPackages [mp2c]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mp2c-0.1.1.tar.gz tmp/mp2c-0.9.0.tar.gz --markdown 20240519/m/mp2c/0.1.1-0.9.0/README.md --exclude *.pyd
+[2024-05-19 08:31:20] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2024-05-19 08:31:20] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-3.2.95.tar.gz tmp/bridgecrew-3.2.96.tar.gz --markdown 20240519/b/bridgecrew/3.2.95-3.2.96/README.md --exclude *.pyd
+[2024-05-19 08:31:20] INFO root fetch - processPackages [bridgecrew]: Remove: archive file [/home/abi/fetcher/tmp/bridgecrew-3.2.95.tar.gz]
+[2024-05-19 08:31:20] INFO root fetch - processPackages [bridgecrew]: Remove: archive file [/home/abi/fetcher/tmp/bridgecrew-3.2.96.tar.gz]
+[2024-05-19 08:31:20] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
+[2024-05-19 08:31:21] INFO root fetch - processPackages [mp2c]: Remove: archive file [/home/abi/fetcher/tmp/mp2c-0.1.1.tar.gz]
+[2024-05-19 08:31:21] INFO root fetch - processPackages [mp2c]: Remove: archive file [/home/abi/fetcher/tmp/mp2c-0.9.0.tar.gz]
+[2024-05-19 08:31:21] INFO root fetch - main [MainThread]: End processing [mp2c]: success
+[2024-05-19 08:31:21] INFO root fetch - main [MainThread]: Store serial: [23273832]
