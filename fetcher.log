@@ -18025,3 +18025,59 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 22:12:40] INFO root fetch - processPackages [tccli]: Remove: archive file [/home/abi/fetcher/tmp/tccli-3.0.999.1.tar.gz]
 [2024-05-19 22:12:40] INFO root fetch - main [MainThread]: End processing [tccli]: success
 [2024-05-19 22:12:40] INFO root fetch - main [MainThread]: Store serial: [23279983]
+[2024-05-19 22:14:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279983]
+[2024-05-19 22:14:56] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-19 22:14:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: crownstone-sse
+[2024-05-19 22:14:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pymobiledevice3
+[2024-05-19 22:14:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: easy_gui_jupyter
+[2024-05-19 22:14:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: MobileInventoryCLI
+[2024-05-19 22:14:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spanishconjugator
+[2024-05-19 22:14:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pianosdk
+[2024-05-19 22:14:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gadapt
+[2024-05-19 22:14:56] INFO root fetch - processPackages [gadapt]: New version: [0.4.7] Old Version: [0.4.6]
+[2024-05-19 22:14:56] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.99] Old Version: [0.4.98]
+[2024-05-19 22:14:56] INFO root fetch - processPackages [pymobiledevice3]: New version: [4.7.0] Old Version: [4.6.0]
+[2024-05-19 22:14:56] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-19 22:14:56] WARNING root fetch - processPackages [pianosdk]: Skipping, unable to determine old version
+[2024-05-19 22:14:56] INFO root fetch - processPackages [crownstone-sse]: New version: [2.0.5] Old Version: [2.0.4]
+[2024-05-19 22:14:56] INFO root fetch - processPackages [easy_gui_jupyter]: New version: [2024.5.8] Old Version: [2024.5.19]
+[2024-05-19 22:14:56] INFO root fetch - main [MainThread]: End processing [pianosdk] error
+[2024-05-19 22:14:56] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/34/2d/1e50d7f512e3d39590afb4a6c37340af98e5c4eadc77d9de653aab0cb49f/MobileInventoryCLI-0.4.98.tar.gz
+[2024-05-19 22:14:56] INFO root fetch - processPackages [pymobiledevice3]: Downloading https://files.pythonhosted.org/packages/82/d3/e4eb122b6ccf88b694c7304bbac7423529520df6231debc1874cebad5383/pymobiledevice3-4.6.0.tar.gz
+[2024-05-19 22:14:56] INFO root fetch - processPackages [gadapt]: Downloading https://files.pythonhosted.org/packages/78/94/b218f48c436f4c006a2da21fecc62394348dda8cde261142e3d01a93a8d5/gadapt-0.4.6.tar.gz
+[2024-05-19 22:14:56] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-19 22:14:56] WARNING root fetch - processPackages [pymobiledevice3]: Skipping package: exceeds size limit 31546943>=10485760
+[2024-05-19 22:14:56] INFO root fetch - main [MainThread]: End processing [pymobiledevice3] error
+[2024-05-19 22:14:56] INFO root fetch - processPackages [crownstone-sse]: Downloading https://files.pythonhosted.org/packages/4e/ae/52f03cbd85a575f3ea0c77d7bd935f4fc31aa309ceba0fbc075b1d79875d/crownstone-sse-2.0.4.tar.gz
+[2024-05-19 22:14:56] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-19 22:14:56] INFO root fetch - processPackages [easy_gui_jupyter]: Downloading https://files.pythonhosted.org/packages/16/41/2e6a9fea7073d0dcbf69caa81bc078cde4d46e40302fdc6c6854f2cf954a/easy_gui_jupyter-2024.5.19.tar.gz
+[2024-05-19 22:14:56] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/44/8c/14cdf7fc3f0b69cae35ba7ee2852fb70e3cab687142869ee3deb104ffc71/MobileInventoryCLI-0.4.99.tar.gz
+[2024-05-19 22:14:56] INFO root fetch - processPackages [gadapt]: Downloading https://files.pythonhosted.org/packages/99/b1/52cd305b11153f67f596f576b34c4048768273611df7d8b3c04719e4c608/gadapt-0.4.7.tar.gz
+[2024-05-19 22:14:56] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-19 22:14:56] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240519/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-19 22:14:57] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-05-19 22:14:57] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.98.tar.gz tmp/MobileInventoryCLI-0.4.99.tar.gz --markdown 20240519/M/MobileInventoryCLI/0.4.98-0.4.99/README.md --exclude *.pyd
+[2024-05-19 22:14:57] INFO root fetch - processPackages [crownstone-sse]: Downloading https://files.pythonhosted.org/packages/ac/12/15b146db1fbae092dd15e5356b1f2cd98a2a926e7e52e1e34aea9cefc78c/crownstone_sse-2.0.5.tar.gz
+[2024-05-19 22:14:57] INFO root fetch - processPackages [gadapt]: executing diffoscope
+[2024-05-19 22:14:57] INFO root fetch - processPackages [gadapt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gadapt-0.4.6.tar.gz tmp/gadapt-0.4.7.tar.gz --markdown 20240519/g/gadapt/0.4.6-0.4.7/README.md --exclude *.pyd
+[2024-05-19 22:14:57] INFO root fetch - processPackages [easy_gui_jupyter]: Downloading https://files.pythonhosted.org/packages/59/db/ba2f06b3e999d322f2bdd23527591c426cb385666443d5425f709f9f5fd6/easy_gui_jupyter-2024.5.8.tar.gz
+[2024-05-19 22:14:57] INFO root fetch - processPackages [crownstone-sse]: executing diffoscope
+[2024-05-19 22:14:57] INFO root fetch - processPackages [crownstone-sse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crownstone-sse-2.0.4.tar.gz tmp/crownstone_sse-2.0.5.tar.gz --markdown 20240519/c/crownstone-sse/2.0.4-2.0.5/README.md --exclude *.pyd
+[2024-05-19 22:14:57] INFO root fetch - processPackages [easy_gui_jupyter]: executing diffoscope
+[2024-05-19 22:14:57] INFO root fetch - processPackages [easy_gui_jupyter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy_gui_jupyter-2024.5.19.tar.gz tmp/easy_gui_jupyter-2024.5.8.tar.gz --markdown 20240519/e/easy_gui_jupyter/2024.5.19-2024.5.8/README.md --exclude *.pyd
+[2024-05-19 22:14:57] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-05-19 22:14:57] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-05-19 22:14:57] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-19 22:14:57] INFO root fetch - processPackages [easy_gui_jupyter]: Remove: archive file [/home/abi/fetcher/tmp/easy_gui_jupyter-2024.5.19.tar.gz]
+[2024-05-19 22:14:57] INFO root fetch - processPackages [easy_gui_jupyter]: Remove: archive file [/home/abi/fetcher/tmp/easy_gui_jupyter-2024.5.8.tar.gz]
+[2024-05-19 22:14:57] INFO root fetch - main [MainThread]: End processing [easy_gui_jupyter]: success
+[2024-05-19 22:14:57] INFO root fetch - processPackages [gadapt]: Remove: archive file [/home/abi/fetcher/tmp/gadapt-0.4.6.tar.gz]
+[2024-05-19 22:14:57] INFO root fetch - processPackages [gadapt]: Remove: archive file [/home/abi/fetcher/tmp/gadapt-0.4.7.tar.gz]
+[2024-05-19 22:14:57] INFO root fetch - main [MainThread]: End processing [gadapt]: success
+[2024-05-19 22:14:58] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.98.tar.gz]
+[2024-05-19 22:14:58] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.99.tar.gz]
+[2024-05-19 22:14:58] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-05-19 22:14:58] INFO root fetch - processPackages [crownstone-sse]: Remove: archive file [/home/abi/fetcher/tmp/crownstone-sse-2.0.4.tar.gz]
+[2024-05-19 22:14:58] INFO root fetch - processPackages [crownstone-sse]: Remove: archive file [/home/abi/fetcher/tmp/crownstone_sse-2.0.5.tar.gz]
+[2024-05-19 22:14:58] INFO root fetch - main [MainThread]: End processing [crownstone-sse]: success
+[2024-05-19 22:14:58] INFO root fetch - main [MainThread]: Store serial: [23280004]
