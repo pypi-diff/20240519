@@ -17414,3 +17414,72 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 21:29:51] INFO root fetch - processPackages [repoqa]: Remove: archive file [/home/abi/fetcher/tmp/repoqa-0.1.1.tar.gz]
 [2024-05-19 21:29:51] INFO root fetch - main [MainThread]: End processing [repoqa]: success
 [2024-05-19 21:29:51] INFO root fetch - main [MainThread]: Store serial: [23279702]
+[2024-05-19 21:31:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279702]
+[2024-05-19 21:32:00] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-19 21:32:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ciphertextz
+[2024-05-19 21:32:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: skrutable
+[2024-05-19 21:32:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: modelmerge
+[2024-05-19 21:32:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: polyaxon
+[2024-05-19 21:32:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: haupt
+[2024-05-19 21:32:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: polyaxon-sdk
+[2024-05-19 21:32:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: latch
+[2024-05-19 21:32:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sleipnirgroup-jormungandr
+[2024-05-19 21:32:00] INFO root fetch - processPackages [modelmerge]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-19 21:32:00] WARNING root fetch - processPackages [ciphertextz]: Skipping, unable to determine old version
+[2024-05-19 21:32:00] INFO root fetch - main [MainThread]: End processing [ciphertextz] error
+[2024-05-19 21:32:00] INFO root fetch - processPackages [polyaxon]: New version: [2.2.0rc0] Old Version: [2.1.8]
+[2024-05-19 21:32:00] INFO root fetch - processPackages [modelmerge]: Downloading https://files.pythonhosted.org/packages/60/9c/6d76457c36ac188f0e08917fafb2ff3dc893318e73901e92eff2cc72569a/modelmerge-0.4.8.tar.gz
+[2024-05-19 21:32:00] INFO root fetch - processPackages [skrutable]: New version: [1.3.0.dev5] Old Version: [1.3.0.dev4]
+[2024-05-19 21:32:00] INFO root fetch - processPackages [polyaxon-sdk]: New version: [2.2.0rc0] Old Version: [2.1.8]
+[2024-05-19 21:32:00] INFO root fetch - processPackages [latch]: New version: [2.9.6] Old Version: [2.9.5]
+[2024-05-19 21:32:00] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: New version: [0.0.1.dev99] Old Version: [0.0.1.dev98]
+[2024-05-19 21:32:00] INFO root fetch - processPackages [polyaxon]: Downloading https://files.pythonhosted.org/packages/8a/02/725790167a9b6c4da378df8794729ba4815044a2dd5073800c7c45714855/polyaxon-2.1.8.tar.gz
+[2024-05-19 21:32:01] INFO root fetch - processPackages [skrutable]: Downloading https://files.pythonhosted.org/packages/89/c4/5763791cc2dc23621c12060ee548db10415456b09b9168f7d70ac4f4f23c/skrutable-1.3.0.dev4.tar.gz
+[2024-05-19 21:32:01] INFO root fetch - processPackages [haupt]: New version: [2.2.0rc0] Old Version: [2.1.8]
+[2024-05-19 21:32:01] INFO root fetch - processPackages [polyaxon-sdk]: Downloading https://files.pythonhosted.org/packages/6c/b3/f718f964933cc139d72cc24a72d9384102fd7a7d3a44be733df8d56bf9d5/polyaxon-sdk-2.1.8.tar.gz
+[2024-05-19 21:32:01] INFO root fetch - processPackages [modelmerge]: Downloading https://files.pythonhosted.org/packages/46/43/60af7eb9cd19b018b9509958f07001de6e87b9d78dab4bd30639c40396fc/modelmerge-0.4.9.tar.gz
+[2024-05-19 21:32:01] INFO root fetch - processPackages [latch]: Downloading https://files.pythonhosted.org/packages/79/f7/1912dae713dbd539910745289141bab27e2ec23827c1f7112accaf98bdda/latch-2.9.5.tar.gz
+[2024-05-19 21:32:01] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: Downloading https://files.pythonhosted.org/packages/cc/12/913e734462cf5d457ad69ec174744b76c771c8b63ebfb55efeb3cf02373e/sleipnirgroup_jormungandr-0.0.1.dev98.tar.gz
+[2024-05-19 21:32:01] INFO root fetch - processPackages [modelmerge]: executing diffoscope
+[2024-05-19 21:32:01] INFO root fetch - processPackages [modelmerge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modelmerge-0.4.8.tar.gz tmp/modelmerge-0.4.9.tar.gz --markdown 20240519/m/modelmerge/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-19 21:32:01] INFO root fetch - processPackages [haupt]: Downloading https://files.pythonhosted.org/packages/3a/fd/03561d57f6d6d2aa8e979605b7eede63292b306367adaa4b7003ea5b66fc/haupt-2.1.8.tar.gz
+[2024-05-19 21:32:01] INFO root fetch - processPackages [polyaxon]: Downloading https://files.pythonhosted.org/packages/6f/b4/dad63c21c14d29c938baccfd384e856ee1fd53d5c6a511e239842c40a390/polyaxon-2.2.0rc0.tar.gz
+[2024-05-19 21:32:01] INFO root fetch - processPackages [polyaxon-sdk]: Downloading https://files.pythonhosted.org/packages/c9/39/1cfd2ae7d66ce5a2b7a306d4607e55b50a63b2f111c51771ab9208d23333/polyaxon-sdk-2.2.0rc0.tar.gz
+[2024-05-19 21:32:01] INFO root fetch - processPackages [latch]: Downloading https://files.pythonhosted.org/packages/5e/5a/e91171b6eca0ba929f7259719a3d389fd86242408d94dbf266925a9f4d21/latch-2.9.6.tar.gz
+[2024-05-19 21:32:01] INFO root fetch - processPackages [skrutable]: Downloading https://files.pythonhosted.org/packages/57/84/8680e28300895d852955be11c8f773cd02610432ed3010edfad201895882/skrutable-1.3.0.dev5.tar.gz
+[2024-05-19 21:32:01] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: Downloading https://files.pythonhosted.org/packages/c4/65/9e9a4eafe0a550c5be12a69cf1665a71a4b5c434089722b18386b65569f5/sleipnirgroup_jormungandr-0.0.1.dev99.tar.gz
+[2024-05-19 21:32:01] INFO root fetch - processPackages [polyaxon]: executing diffoscope
+[2024-05-19 21:32:01] INFO root fetch - processPackages [polyaxon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polyaxon-2.1.8.tar.gz tmp/polyaxon-2.2.0rc0.tar.gz --markdown 20240519/p/polyaxon/2.1.8-2.2.0rc0/README.md --exclude *.pyd
+[2024-05-19 21:32:01] INFO root fetch - processPackages [polyaxon-sdk]: executing diffoscope
+[2024-05-19 21:32:01] INFO root fetch - processPackages [polyaxon-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polyaxon-sdk-2.1.8.tar.gz tmp/polyaxon-sdk-2.2.0rc0.tar.gz --markdown 20240519/p/polyaxon-sdk/2.1.8-2.2.0rc0/README.md --exclude *.pyd
+[2024-05-19 21:32:01] INFO root fetch - processPackages [latch]: executing diffoscope
+[2024-05-19 21:32:01] INFO root fetch - processPackages [latch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latch-2.9.5.tar.gz tmp/latch-2.9.6.tar.gz --markdown 20240519/l/latch/2.9.5-2.9.6/README.md --exclude *.pyd
+[2024-05-19 21:32:01] INFO root fetch - processPackages [skrutable]: executing diffoscope
+[2024-05-19 21:32:01] INFO root fetch - processPackages [skrutable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skrutable-1.3.0.dev4.tar.gz tmp/skrutable-1.3.0.dev5.tar.gz --markdown 20240519/s/skrutable/1.3.0.dev4-1.3.0.dev5/README.md --exclude *.pyd
+[2024-05-19 21:32:01] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: executing diffoscope
+[2024-05-19 21:32:01] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sleipnirgroup_jormungandr-0.0.1.dev98.tar.gz tmp/sleipnirgroup_jormungandr-0.0.1.dev99.tar.gz --markdown 20240519/s/sleipnirgroup-jormungandr/0.0.1.dev98-0.0.1.dev99/README.md --exclude *.pyd
+[2024-05-19 21:32:01] INFO root fetch - processPackages [haupt]: Downloading https://files.pythonhosted.org/packages/4b/13/93559791ce6f092c4001df98219c4484b8b33dbf898bdca195ca2d20f3c5/haupt-2.2.0rc0.tar.gz
+[2024-05-19 21:32:01] INFO root fetch - processPackages [modelmerge]: Remove: archive file [/home/abi/fetcher/tmp/modelmerge-0.4.8.tar.gz]
+[2024-05-19 21:32:01] INFO root fetch - processPackages [modelmerge]: Remove: archive file [/home/abi/fetcher/tmp/modelmerge-0.4.9.tar.gz]
+[2024-05-19 21:32:01] INFO root fetch - main [MainThread]: End processing [modelmerge]: success
+[2024-05-19 21:32:02] INFO root fetch - processPackages [haupt]: executing diffoscope
+[2024-05-19 21:32:02] INFO root fetch - processPackages [haupt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/haupt-2.1.8.tar.gz tmp/haupt-2.2.0rc0.tar.gz --markdown 20240519/h/haupt/2.1.8-2.2.0rc0/README.md --exclude *.pyd
+[2024-05-19 21:32:02] INFO root fetch - processPackages [skrutable]: Remove: archive file [/home/abi/fetcher/tmp/skrutable-1.3.0.dev4.tar.gz]
+[2024-05-19 21:32:02] INFO root fetch - processPackages [skrutable]: Remove: archive file [/home/abi/fetcher/tmp/skrutable-1.3.0.dev5.tar.gz]
+[2024-05-19 21:32:02] INFO root fetch - main [MainThread]: End processing [skrutable]: success
+[2024-05-19 21:32:02] INFO root fetch - processPackages [latch]: Remove: archive file [/home/abi/fetcher/tmp/latch-2.9.5.tar.gz]
+[2024-05-19 21:32:02] INFO root fetch - processPackages [latch]: Remove: archive file [/home/abi/fetcher/tmp/latch-2.9.6.tar.gz]
+[2024-05-19 21:32:02] INFO root fetch - main [MainThread]: End processing [latch]: success
+[2024-05-19 21:32:02] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: Remove: archive file [/home/abi/fetcher/tmp/sleipnirgroup_jormungandr-0.0.1.dev98.tar.gz]
+[2024-05-19 21:32:02] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: Remove: archive file [/home/abi/fetcher/tmp/sleipnirgroup_jormungandr-0.0.1.dev99.tar.gz]
+[2024-05-19 21:32:02] INFO root fetch - main [MainThread]: End processing [sleipnirgroup-jormungandr]: success
+[2024-05-19 21:32:04] INFO root fetch - processPackages [polyaxon]: Remove: archive file [/home/abi/fetcher/tmp/polyaxon-2.1.8.tar.gz]
+[2024-05-19 21:32:04] INFO root fetch - processPackages [polyaxon]: Remove: archive file [/home/abi/fetcher/tmp/polyaxon-2.2.0rc0.tar.gz]
+[2024-05-19 21:32:04] INFO root fetch - main [MainThread]: End processing [polyaxon]: success
+[2024-05-19 21:32:04] INFO root fetch - processPackages [polyaxon-sdk]: Remove: archive file [/home/abi/fetcher/tmp/polyaxon-sdk-2.1.8.tar.gz]
+[2024-05-19 21:32:04] INFO root fetch - processPackages [polyaxon-sdk]: Remove: archive file [/home/abi/fetcher/tmp/polyaxon-sdk-2.2.0rc0.tar.gz]
+[2024-05-19 21:32:04] INFO root fetch - main [MainThread]: End processing [polyaxon-sdk]: success
+[2024-05-19 21:32:23] INFO root fetch - processPackages [haupt]: Remove: archive file [/home/abi/fetcher/tmp/haupt-2.1.8.tar.gz]
+[2024-05-19 21:32:23] INFO root fetch - processPackages [haupt]: Remove: archive file [/home/abi/fetcher/tmp/haupt-2.2.0rc0.tar.gz]
+[2024-05-19 21:32:23] INFO root fetch - main [MainThread]: End processing [haupt]: success
+[2024-05-19 21:32:23] INFO root fetch - main [MainThread]: Store serial: [23279738]
