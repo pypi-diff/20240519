@@ -16884,3 +16884,68 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-19 20:54:01] WARNING root fetch - processPackages [macvoice-utils]: Skipping, unable to determine old version
 [2024-05-19 20:54:01] INFO root fetch - main [MainThread]: End processing [macvoice-utils] error
 [2024-05-19 20:54:01] INFO root fetch - main [MainThread]: Store serial: [23279425]
+[2024-05-19 20:56:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23279425]
+[2024-05-19 20:56:09] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-19 20:56:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: reportXlsx
+[2024-05-19 20:56:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aulacodusz
+[2024-05-19 20:56:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fastapi-cli-slim
+[2024-05-19 20:56:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fastapi-cli
+[2024-05-19 20:56:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: shenko
+[2024-05-19 20:56:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: article-to-podcast
+[2024-05-19 20:56:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: qualystbx
+[2024-05-19 20:56:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: biliup
+[2024-05-19 20:56:10] INFO root fetch - processPackages [qualystbx]: New version: [0.8.0] Old Version: [0.7.0]
+[2024-05-19 20:56:10] INFO root fetch - processPackages [fastapi-cli]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-19 20:56:10] INFO root fetch - processPackages [biliup]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-19 20:56:10] INFO root fetch - processPackages [article-to-podcast]: New version: [0.1.9] Old Version: [0.1.6]
+[2024-05-19 20:56:10] INFO root fetch - processPackages [fastapi-cli-slim]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-19 20:56:10] WARNING root fetch - processPackages [aulacodusz]: Skipping, unable to determine old version
+[2024-05-19 20:56:10] INFO root fetch - main [MainThread]: End processing [aulacodusz] error
+[2024-05-19 20:56:10] INFO root fetch - processPackages [shenko]: New version: [0.1.84] Old Version: [0.1.83]
+[2024-05-19 20:56:10] INFO root fetch - processPackages [reportXlsx]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-05-19 20:56:10] INFO root fetch - processPackages [qualystbx]: Downloading https://files.pythonhosted.org/packages/3d/13/d82c3acb0e9ea3a9ff76fe6e73a521edc75e84ab686d483a4f360a6a88cb/qualystbx-0.7.0.tar.gz
+[2024-05-19 20:56:10] INFO root fetch - processPackages [biliup]: Downloading https://files.pythonhosted.org/packages/33/26/87446b9e80024414938248abd6d5d23524d52b9a0e07980909695db33a0a/biliup-0.4.8.tar.gz
+[2024-05-19 20:56:10] INFO root fetch - processPackages [fastapi-cli]: Downloading https://files.pythonhosted.org/packages/39/1a/132f46e6a7122970a102fca6f71baa3b574be1ecac0f6888c68e6625fa33/fastapi_cli-0.0.2.tar.gz
+[2024-05-19 20:56:10] INFO root fetch - processPackages [fastapi-cli-slim]: Downloading https://files.pythonhosted.org/packages/7c/c2/356c28757e9ce203e20d75a16584a1382a35d6633729970508ccf8fad130/fastapi_cli_slim-0.0.3.tar.gz
+[2024-05-19 20:56:10] INFO root fetch - processPackages [reportXlsx]: Downloading https://files.pythonhosted.org/packages/b2/92/5f816a6f126bf4b428db3343baf400bedfaa068e6c97f38a59e92d28d067/reportXlsx-0.3.0.tar.gz
+[2024-05-19 20:56:10] INFO root fetch - processPackages [article-to-podcast]: Downloading https://files.pythonhosted.org/packages/42/07/20eccf1ba7ffd37b55eb1b6a111aebd3da71bf388e41d7954ce0ebe6832e/article_to_podcast-0.1.6.tar.gz
+[2024-05-19 20:56:10] INFO root fetch - processPackages [shenko]: Downloading https://files.pythonhosted.org/packages/69/78/f4e77b4495fed0aaeb98a761eb3827f673402e3a30ede927590b41d92a2e/shenko-0.1.83-py2.py3-none-any.whl
+[2024-05-19 20:56:10] WARNING root fetch - processPackages [reportXlsx]: Skipping package: exceeds size limit 15594154>=10485760
+[2024-05-19 20:56:10] INFO root fetch - main [MainThread]: End processing [reportXlsx] error
+[2024-05-19 20:56:10] INFO root fetch - processPackages [qualystbx]: Downloading https://files.pythonhosted.org/packages/88/de/04f9bde377b2e4f3959a99661bf58cb5824a3b55cd37d179c781c0db6773/qualystbx-0.8.0.tar.gz
+[2024-05-19 20:56:10] INFO root fetch - processPackages [biliup]: Downloading https://files.pythonhosted.org/packages/ca/50/28c81627954370eeba7075b44c9ef20597ed8f140a1390c814dd976e6c70/biliup-0.4.9.tar.gz
+[2024-05-19 20:56:10] INFO root fetch - processPackages [fastapi-cli]: Downloading https://files.pythonhosted.org/packages/e6/3b/3562b2d5502a976612030c4326541dc24a1c55c5f62acbe2d9bfa4cb934f/fastapi_cli-0.0.3.tar.gz
+[2024-05-19 20:56:10] INFO root fetch - processPackages [qualystbx]: executing diffoscope
+[2024-05-19 20:56:10] INFO root fetch - processPackages [qualystbx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qualystbx-0.7.0.tar.gz tmp/qualystbx-0.8.0.tar.gz --markdown 20240519/q/qualystbx/0.7.0-0.8.0/README.md --exclude *.pyd
+[2024-05-19 20:56:10] INFO root fetch - processPackages [biliup]: executing diffoscope
+[2024-05-19 20:56:10] INFO root fetch - processPackages [biliup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biliup-0.4.8.tar.gz tmp/biliup-0.4.9.tar.gz --markdown 20240519/b/biliup/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-19 20:56:10] INFO root fetch - processPackages [fastapi-cli-slim]: Downloading https://files.pythonhosted.org/packages/47/96/65e1b5a4e724b1edadcceef23abb5973ecab0c13ae2d2534fbe0493a5159/fastapi_cli_slim-0.0.4.tar.gz
+[2024-05-19 20:56:10] INFO root fetch - processPackages [fastapi-cli]: executing diffoscope
+[2024-05-19 20:56:10] INFO root fetch - processPackages [fastapi-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_cli-0.0.2.tar.gz tmp/fastapi_cli-0.0.3.tar.gz --markdown 20240519/f/fastapi-cli/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-19 20:56:10] INFO root fetch - processPackages [article-to-podcast]: Downloading https://files.pythonhosted.org/packages/2e/07/473bccf843f66b8762ccf33a3fe152d380bd0c10885fc2feb8d49918045a/article_to_podcast-0.1.9.tar.gz
+[2024-05-19 20:56:10] INFO root fetch - processPackages [shenko]: Downloading https://files.pythonhosted.org/packages/f8/be/a665c304b7496acff33f48cfbe4b117c01a60fc0f82a7cbe5c5e35c83272/shenko-0.1.84-py2.py3-none-any.whl
+[2024-05-19 20:56:10] INFO root fetch - processPackages [fastapi-cli-slim]: executing diffoscope
+[2024-05-19 20:56:10] INFO root fetch - processPackages [fastapi-cli-slim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_cli_slim-0.0.3.tar.gz tmp/fastapi_cli_slim-0.0.4.tar.gz --markdown 20240519/f/fastapi-cli-slim/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-19 20:56:10] INFO root fetch - processPackages [article-to-podcast]: executing diffoscope
+[2024-05-19 20:56:10] INFO root fetch - processPackages [article-to-podcast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/article_to_podcast-0.1.6.tar.gz tmp/article_to_podcast-0.1.9.tar.gz --markdown 20240519/a/article-to-podcast/0.1.6-0.1.9/README.md --exclude *.pyd
+[2024-05-19 20:56:10] INFO root fetch - processPackages [shenko]: executing diffoscope
+[2024-05-19 20:56:10] INFO root fetch - processPackages [shenko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240519:/home/abi/fetcher/20240519:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shenko-0.1.83-py2.py3-none-any.whl.zip tmp/shenko-0.1.84-py2.py3-none-any.whl.zip --markdown 20240519/s/shenko/0.1.83-0.1.84/README.md --exclude *.pyd
+[2024-05-19 20:56:11] INFO root fetch - processPackages [fastapi-cli]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_cli-0.0.2.tar.gz]
+[2024-05-19 20:56:11] INFO root fetch - processPackages [fastapi-cli]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_cli-0.0.3.tar.gz]
+[2024-05-19 20:56:11] INFO root fetch - main [MainThread]: End processing [fastapi-cli]: success
+[2024-05-19 20:56:11] INFO root fetch - processPackages [qualystbx]: Remove: archive file [/home/abi/fetcher/tmp/qualystbx-0.7.0.tar.gz]
+[2024-05-19 20:56:11] INFO root fetch - processPackages [qualystbx]: Remove: archive file [/home/abi/fetcher/tmp/qualystbx-0.8.0.tar.gz]
+[2024-05-19 20:56:11] INFO root fetch - main [MainThread]: End processing [qualystbx]: success
+[2024-05-19 20:56:11] INFO root fetch - processPackages [article-to-podcast]: Remove: archive file [/home/abi/fetcher/tmp/article_to_podcast-0.1.6.tar.gz]
+[2024-05-19 20:56:11] INFO root fetch - processPackages [article-to-podcast]: Remove: archive file [/home/abi/fetcher/tmp/article_to_podcast-0.1.9.tar.gz]
+[2024-05-19 20:56:11] INFO root fetch - main [MainThread]: End processing [article-to-podcast]: success
+[2024-05-19 20:56:11] INFO root fetch - processPackages [fastapi-cli-slim]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_cli_slim-0.0.3.tar.gz]
+[2024-05-19 20:56:11] INFO root fetch - processPackages [fastapi-cli-slim]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_cli_slim-0.0.4.tar.gz]
+[2024-05-19 20:56:11] INFO root fetch - main [MainThread]: End processing [fastapi-cli-slim]: success
+[2024-05-19 20:56:11] INFO root fetch - processPackages [shenko]: Remove: archive file [/home/abi/fetcher/tmp/shenko-0.1.83-py2.py3-none-any.whl.zip]
+[2024-05-19 20:56:11] INFO root fetch - processPackages [shenko]: Remove: archive file [/home/abi/fetcher/tmp/shenko-0.1.84-py2.py3-none-any.whl.zip]
+[2024-05-19 20:56:11] INFO root fetch - main [MainThread]: End processing [shenko]: success
+[2024-05-19 20:56:11] INFO root fetch - processPackages [biliup]: Remove: archive file [/home/abi/fetcher/tmp/biliup-0.4.8.tar.gz]
+[2024-05-19 20:56:11] INFO root fetch - processPackages [biliup]: Remove: archive file [/home/abi/fetcher/tmp/biliup-0.4.9.tar.gz]
+[2024-05-19 20:56:11] INFO root fetch - main [MainThread]: End processing [biliup]: success
+[2024-05-19 20:56:11] INFO root fetch - main [MainThread]: Store serial: [23279449]
